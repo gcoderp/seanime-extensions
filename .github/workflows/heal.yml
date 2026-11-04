@@ -1,0 +1,66 @@
+name: heal
+
+# One-click repair for the repository.
+#
+# Upgrades every generated bundle in src/ to the Seanime contract currently declared in
+# seanime/types/seanime-env.d.ts and in the templates, then commits the result. It downloads
+# and converts nothing, so it finishes in a couple of minutes and works even when upstream
+# .cs3 packages are unreachable.
+#
+# Run this when validate.yml reports "N bundle(s) were generated against an older Seanime
+# contract". A normal conversion run (convert.yml, any mode) also heals the repository, but
+# this is the fast, deliberate way to do it.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: heal
+  cancel-in-progress: false
+
+jobs:
+  heal:
+    name: Upgrade bundles and commit
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Node
+        uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install TypeScript (needed to recompile bundles)
+        run: npm ci
+
+      - name: Upgrade generated bundles
+        run: python3 scripts/migrate-contract.py
+
+      - name: Verify the repository is clean
+        run: |
+          set -euo pipefail
+          python3 scripts/migrate-contract.py --check
+          node scripts/typecheck.mjs
+          node scripts/validate.mjs
+          python3 scripts/check_schema.py
+
+      - name: Commit the healed bundles
+        run: |
+          set -euo pipefail
+          git config user.name "seanime-heal[bot]"
+          git config user.email "seanime-heal@users.noreply.github.com"
+          git add -A src generated marketplace.json reports README.md manifest-urls.txt
+          if git diff --cached --quiet; then
+            echo "Nothing to heal: the repository already matches the current contract."
+            exit 0
+          fi
+          git commit -m "chore(heal): upgrade generated bundles to the current Seanime contract"
+          git push
