@@ -105,7 +105,11 @@ def run_pipeline(mode: str = "live", limit: int = 0, only: str = "", skip_downlo
     )
     compiler = tsc_mod.TypeScriptCompiler(repo_root=ROOT)
     generator = gen_mod.SeanimeExtensionGenerator(repo_root=ROOT)
-    validator = val_mod.SeanimeExtensionValidator(repo_root=ROOT, allowed_licenses=allowed_licenses)
+    validator = val_mod.SeanimeExtensionValidator(
+        repo_root=ROOT,
+        allowed_licenses=allowed_licenses,
+        allow_unknown_license=licensing.get("unknown_license_policy") == "publish_with_notice",
+    )
 
     build_dir = os.path.join(ROOT, ".cache/build")
     os.makedirs(build_dir, exist_ok=True)
@@ -234,6 +238,7 @@ def run_pipeline(mode: str = "live", limit: int = 0, only: str = "", skip_downlo
                 "sha256_checksum": pkg.sha256,
                 "license_spdx": license_spdx,
                 "detected_provider_type": translation.provider_type,
+                "strategy": strategy,
                 "source_recovery_status": "RECOVERED" if recovered.found else "DEX_FALLBACK",
                 "decompilation_status": "JADX_OK" if dex_res.jadx_available else "BINARY_DEX_IR_OK",
                 "kotlin_reconstruction_status": "SUCCESS" if recovered.found else "PARTIAL",
@@ -247,6 +252,7 @@ def run_pipeline(mode: str = "live", limit: int = 0, only: str = "", skip_downlo
                 "extractor_test_status": val_res["extractor_test"],
                 "overall_status": val_res["overall_status"],
                 "review_reasons": val_res["review_reasons"],
+                "license_notice": val_res.get("license_notice", False),
                 "known_unsupported_methods": [],
                 "warnings": translation.warnings + val_res["warnings"],
                 "error_messages": val_res["errors"],
@@ -284,6 +290,17 @@ def run_pipeline(mode: str = "live", limit: int = 0, only: str = "", skip_downlo
 
     # ---------------------------------------------------------------- reporting
     marketplace_entries = generator.regenerate_marketplace()
+
+    readme_mod = load_mod("readme_generator", "engine/seanime-generator/readme.py")
+    readme_gen = readme_mod.ReadmeGenerator(
+        ROOT,
+        generator._resolve_owner(),
+        settings.get("github_repo", "seanime-extensions"),
+        settings.get("github_branch", "main"),
+        settings.get("converter_version", "2.5.0"),
+    )
+    readme_gen.write(withheld=len(needs_review) + len(failed))
+    readme_gen.write_url_list()
 
     reports_dir = os.path.join(ROOT, "reports")
     os.makedirs(reports_dir, exist_ok=True)

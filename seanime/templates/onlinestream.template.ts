@@ -9,6 +9,8 @@
 
 __COMPAT_SHIM__
 
+__ANILIST_RESOLVER__
+
 __EXTRACTOR_HELPERS__
 
 class Provider {
@@ -21,6 +23,10 @@ class Provider {
             episodeServers: __EPISODE_SERVERS__,
             supportsDub: __SUPPORTS_DUB__,
         };
+    }
+
+    private async searchSite(query: string): Promise<SearchResult[]> {
+__SEARCH_SITE_BODY__
     }
 
     async search(opts: SearchOptions): Promise<SearchResult[]> {

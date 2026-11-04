@@ -1,8 +1,8 @@
 {
-  "github_owner": "ghanshyam501cg",
-  "github_repo": "cloudstream-seanime-converter",
+  "github_owner": "gcoderp",
+  "github_repo": "seanime-extensions",
   "github_branch": "main",
-  "converter_version": "2.5.0",
+  "converter_version": "2.6.0",
   "security": {
     "max_zip_entries": 2500,
     "max_uncompressed_bytes": 52428800,
@@ -41,6 +41,7 @@
     ],
     "redact_secrets_patterns": [
       "(?i)(api[_-]?key|secret|token|authorization)\\s*[:=]\\s*['\"][A-Za-z0-9_\\-]{16,}['\"]"
-    ]
+    ],
+    "unknown_license_policy": "publish_with_notice"
   }
 }

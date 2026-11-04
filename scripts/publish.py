@@ -11,7 +11,7 @@ import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TRACKED = ["src", "generated", "marketplace.json", "reports", "config/license-cache.json"]
+TRACKED = ["src", "generated", "marketplace.json", "reports", "README.md", "manifest-urls.txt", "config/license-cache.json"]
 COMMIT_USER = "seanime-converter[bot]"
 COMMIT_EMAIL = "seanime-converter@users.noreply.github.com"
 

@@ -9,6 +9,8 @@
 
 __COMPAT_SHIM__
 
+__ANILIST_RESOLVER__
+
 class Provider {
     private mainUrl: string = __MAIN_URL__;
     private defaultHeaders: Record<string, string> = __DEFAULT_HEADERS__;

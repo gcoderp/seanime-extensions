@@ -57,9 +57,17 @@ class SeanimeExtensionValidator:
         "manga-provider": ["getSettings", "search", "findChapters", "findChapterPages"],
     }
 
-    def __init__(self, repo_root: str = ".", allowed_licenses: Optional[List[str]] = None):
+    def __init__(
+        self,
+        repo_root: str = ".",
+        allowed_licenses: Optional[List[str]] = None,
+        allow_unknown_license: bool = False
+    ):
         self.repo_root = os.path.abspath(repo_root)
         self.allowed_licenses = allowed_licenses or []
+        # "publish_with_notice" policy: an undetectable upstream licence becomes a recorded
+        # notice instead of a blocking review reason. The operator opts into this explicitly.
+        self.allow_unknown_license = allow_unknown_license
         self.generic = _load_generic_fallbacks()
 
     # ------------------------------------------------------------------ public
@@ -132,9 +140,17 @@ class SeanimeExtensionValidator:
             review_reasons.append("All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.")
 
         # 8. Soft gate: licence -------------------------------------------------
-        if license_spdx and self.allowed_licenses:
-            if license_spdx not in self.allowed_licenses:
-                review_reasons.append(f"Upstream licence '{license_spdx}' is not on the redistribution allowlist.")
+        license_notice = False
+        if self.allowed_licenses and (license_spdx or "UNKNOWN") not in self.allowed_licenses:
+            effective = license_spdx or "UNKNOWN"
+            if self.allow_unknown_license and effective in ("UNKNOWN", "NOASSERTION"):
+                license_notice = True
+                warnings.append(
+                    f"Upstream licence is '{effective}'. Published under the 'publish_with_notice' "
+                    f"policy: attribution only, verify redistribution rights before relying on it."
+                )
+            else:
+                review_reasons.append(f"Upstream licence '{effective}' is not on the redistribution allowlist.")
 
         warnings.append("Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN).")
 
@@ -160,6 +176,7 @@ class SeanimeExtensionValidator:
             "episode_test": ("MOCK_PASS" if mock_passed else "FAIL") if provider_type == "onlinestream-provider" else "N/A",
             "extractor_test": ("MOCK_PASS" if mock_passed else "FAIL") if provider_type == "onlinestream-provider" else "N/A",
             "review_reasons": review_reasons,
+            "license_notice": license_notice,
             "errors": errors,
             "warnings": warnings,
         }

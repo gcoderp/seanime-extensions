@@ -118,6 +118,44 @@ reasons (strategy 3 only, generic selectors, unknown upstream licence). That is 
 correct outcome: the package ships no source and no JADX output was available, so the
 scraper logic genuinely could not be recovered.
 
+## 2.6.0 — AniList-driven matching
+
+Seanime only speaks AniList. The previous `search()` used `opts.query` as-is, so a provider
+returned whatever the site's own ranking produced: the wrong season, the wrong adaptation, or
+a special. Every generated provider now resolves through `seanime/compatibility/anilist-resolver.ts`:
+
+- `search()` queries by the AniList english → romaji → native title (max three requests,
+  stopping at the first non-empty result) instead of the raw query.
+- Results are ranked against every AniList title and synonym with a Dice coefficient over
+  normalised tokens; `(Dub)`, `[1080p]`, `(TV)` qualifiers are stripped before comparison.
+- Season/part markers are compared explicitly: a mismatch costs 0.2, a season-2+ match earns
+  0.1, which stops "Season 2" resolving to the season 1 page.
+- Year and format are tie-breakers only.
+- `opts.dub` orders dub-tagged results first without dropping the subbed ones.
+- Torrent providers query by the AniList title, then apply Seanime's episode/resolution
+  filters in `smartSearch`.
+- Five behavioural tests compile the resolver with the real TypeScript compiler and assert
+  the ranking in Node (`tests/test_anilist.py`).
+
+## Added after the first 2.5.0 drop
+
+- **`scripts/reindex.py`** (`npm run reindex`): re-publishes existing bundles without
+  re-downloading or re-converting. It rewrites every manifest/metadata URL to the configured
+  owner, re-triages each bundle against the current licence policy, re-checks that each
+  `code.js` parses, rewrites `reports/{successful,needs-review,failed}.json`, rebuilds
+  `marketplace.json`, regenerates the README section and writes `manifest-urls.txt`.
+- **`engine/seanime-generator/readme.py`**: generates the README block that lists every
+  published extension with its `manifest.json` link, plus the marketplace URL and the
+  install steps. It is delimited by `<!-- BEGIN GENERATED:EXTENSIONS -->` markers, so
+  hand-written documentation above and below survives every run.
+- **`licensing.unknown_license_policy`**: `hold` (default) or `publish_with_notice`. The
+  second publishes conversions whose upstream declares no detectable licence and records a
+  notice in the manifest, the metadata and the report.
+- README generation is wired into `scripts/convert.py`, so a normal conversion run keeps the
+  extension table current.
+- The workflows and `publish.py` now commit `README.md` and `manifest-urls.txt` alongside
+  `src/` and `marketplace.json`.
+
 ## Still missing (the honest list)
 
 1. **Live testing.** No conversion is verified against a live site; `live_test_status` is

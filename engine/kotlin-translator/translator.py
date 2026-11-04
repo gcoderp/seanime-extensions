@@ -33,11 +33,13 @@ class CloudstreamToSeanimeTranslator:
         self,
         compat_shim_path: str = "seanime/compatibility/cloudstream-runtime-shim.ts",
         templates_dir: str = "seanime/templates",
-        env_types_path: str = "../../../seanime/types/seanime-env.d.ts"
+        env_types_path: str = "../../../seanime/types/seanime-env.d.ts",
+        anilist_resolver_path: str = "seanime/compatibility/anilist-resolver.ts"
     ):
         self.compat_shim_path = compat_shim_path
         self.templates_dir = templates_dir
         self.env_types_path = env_types_path
+        self.anilist_resolver_path = anilist_resolver_path
 
     # ------------------------------------------------------------------ helpers
 
@@ -45,6 +47,13 @@ class CloudstreamToSeanimeTranslator:
         if os.path.exists(self.compat_shim_path):
             with open(self.compat_shim_path, "r", encoding="utf-8") as f:
                 return f.read().replace("export class CsCompat", "class CsCompat")
+        return ""
+
+    def _read_anilist_resolver(self) -> str:
+        """Seanime is an AniList client; every provider matches results against AniList metadata."""
+        if os.path.exists(self.anilist_resolver_path):
+            with open(self.anilist_resolver_path, "r", encoding="utf-8") as f:
+                return f.read().replace("export class AniListResolver", "class AniListResolver")
         return ""
 
     def _load_template(self, name: str) -> str:
@@ -93,7 +102,7 @@ class CloudstreamToSeanimeTranslator:
 
     # ------------------------------------------------------------------ onlinestream
 
-    SEARCH_BODY = r"""        const queryEncoded = encodeURIComponent((opts.query || "").trim());
+    SEARCH_SITE_BODY = r"""        const queryEncoded = encodeURIComponent((query || "").trim());
         const searchPath = __SEARCH_URL_PATTERN__.replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
@@ -104,8 +113,7 @@ class CloudstreamToSeanimeTranslator:
         const $ = LoadDoc(html);
         const itemSelector = __SEARCH_ITEM_SELECTOR__;
         const titleSelector = __SEARCH_TITLE_SELECTOR__;
-        const dubResults: SearchResult[] = [];
-        const subResults: SearchResult[] = [];
+        const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
             const titleEl = el.find(titleSelector).first();
@@ -117,21 +125,44 @@ class CloudstreamToSeanimeTranslator:
             const isDubItem = /\b(dub|dubbed|dual[\s-]?audio)\b/i.test(rawTitle)
                 || /(^|[-/])dub([-/]|$)/i.test(fullUrl);
 
-            const result: SearchResult = {
+            results.push({
                 id: fullUrl,
                 title: rawTitle,
                 url: fullUrl,
                 subOrDub: isDubItem ? "dub" : "sub",
-            };
-            if (isDubItem) {
-                dubResults.push(result);
-            } else {
-                subResults.push(result);
-            }
+            });
         });
 
-        // Honour opts.dub by ordering matching entries first rather than dropping results.
-        return opts.dub ? dubResults.concat(subResults) : subResults.concat(dubResults);"""
+        return results;"""
+
+    SEARCH_BODY = r"""        // AniList is the source of truth: Seanime passes the AniList media object, so the
+        // provider searches by the AniList titles and then ranks what the site returned
+        // against the same metadata. This is what keeps season 2 from resolving to season 1.
+        const media = opts.media;
+        const fallbackQuery = (opts.query || "").trim();
+        const candidates = AniListResolver.queries(media, fallbackQuery, 3);
+
+        let results: SearchResult[] = [];
+        for (const candidate of candidates) {
+            results = await this.searchSite(candidate);
+            if (results.length > 0) break;
+        }
+
+        if (results.length === 0 && fallbackQuery && candidates.indexOf(fallbackQuery) === -1) {
+            results = await this.searchSite(fallbackQuery);
+        }
+
+        const year = media && typeof media.year === "number" ? media.year : undefined;
+        results = AniListResolver.rank(results, (r: SearchResult) => r.title, media, year);
+
+        if (opts.dub) {
+            const dubs = results.filter((r: SearchResult) => r.subOrDub === "dub");
+            if (dubs.length > 0) {
+                results = dubs.concat(results.filter((r: SearchResult) => r.subOrDub !== "dub"));
+            }
+        }
+
+        return results;"""
 
     FIND_EPISODES_BODY = r"""        const targetUrl = CsCompat.fixUrl(id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
@@ -233,6 +264,7 @@ class CloudstreamToSeanimeTranslator:
         template = self._load_template("onlinestream.template.ts")
         ts_code = self._fill(template, {
             "__ENV_TYPES_PATH__": self.env_types_path,
+            "__ANILIST_RESOLVER__": self._read_anilist_resolver().strip(),
             "__PLUGIN_ID__": plugin_id,
             "__ORIGINAL_CLASS__": ast_model.class_name,
             "__CONVERSION_STRATEGY__": strategy_label,
@@ -243,11 +275,12 @@ class CloudstreamToSeanimeTranslator:
             "__DEFAULT_HEADERS__": json.dumps(ast_model.custom_headers),
             "__EPISODE_SERVERS__": json.dumps(servers),
             "__SUPPORTS_DUB__": "true" if ast_model.has_dub_support else "false",
-            "__SEARCH_BODY__": self._fill(self.SEARCH_BODY, {
+            "__SEARCH_SITE_BODY__": self._fill(self.SEARCH_SITE_BODY, {
                 "__SEARCH_URL_PATTERN__": json.dumps(ast_model.search_url_pattern),
                 "__SEARCH_ITEM_SELECTOR__": json.dumps(ast_model.search_item_selector),
                 "__SEARCH_TITLE_SELECTOR__": json.dumps(ast_model.search_title_selector),
             }),
+            "__SEARCH_BODY__": self.SEARCH_BODY,
             "__FIND_EPISODES_BODY__": self._fill(self.FIND_EPISODES_BODY, {
                 "__EPISODE_LIST_SELECTOR__": json.dumps(ast_model.episode_list_selector),
                 "__EPISODE_NUM_SELECTOR__": json.dumps(ast_model.episode_num_selector),
@@ -269,7 +302,12 @@ class CloudstreamToSeanimeTranslator:
 
     # ------------------------------------------------------------------ torrent
 
-    TORRENT_SEARCH_BODY = r"""        const q = encodeURIComponent((opts.query || "").trim());
+    TORRENT_SEARCH_BODY = r"""        // Query by the AniList title so the tracker is searched for the exact show Seanime
+        // is displaying, not for whatever string the caller happened to pass in.
+        const media = opts.media;
+        const fallbackQuery = (opts.query || "").trim();
+        const candidates = AniListResolver.queries(media, fallbackQuery, 2);
+        const q = encodeURIComponent(candidates[0] || fallbackQuery);
         const searchUrl = CsCompat.fixUrl(__SEARCH_URL_PATTERN__.replace("{query}", q), this.mainUrl);
         const res = await fetch(searchUrl, { headers: this.defaultHeaders });
         if (!res || res.status >= 400) {
@@ -320,9 +358,11 @@ class CloudstreamToSeanimeTranslator:
 
         return torrents;"""
 
-    TORRENT_SMART_SEARCH_BODY = r"""        const epTag = opts.episodeNumber > 0 ? (" " + String(opts.episodeNumber).padStart(2, "0")) : "";
+    TORRENT_SMART_SEARCH_BODY = r"""        // AniList title first, then the episode/resolution filters Seanime collected.
+        const baseQuery = AniListResolver.queries(opts.media, (opts.query || "").trim(), 1)[0] || (opts.query || "");
+        const epTag = opts.episodeNumber > 0 ? (" " + String(opts.episodeNumber).padStart(2, "0")) : "";
         const resTag = opts.resolution ? (" " + opts.resolution) : "";
-        const combinedQuery = ((opts.query || "") + epTag + resTag).trim();
+        const combinedQuery = (baseQuery + epTag + resTag).trim();
         const results = await this.search({ media: opts.media, query: combinedQuery });
         if (!opts.episodeNumber || opts.episodeNumber <= 0) {
             return results;
@@ -341,6 +381,7 @@ class CloudstreamToSeanimeTranslator:
         template = self._load_template("torrent.template.ts")
         ts_code = self._fill(template, {
             "__ENV_TYPES_PATH__": self.env_types_path,
+            "__ANILIST_RESOLVER__": self._read_anilist_resolver().strip(),
             "__PLUGIN_ID__": plugin_id,
             "__ORIGINAL_CLASS__": ast_model.class_name,
             "__CONVERSION_STRATEGY__": strategy_label,
