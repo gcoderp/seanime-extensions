@@ -114,6 +114,20 @@ def run_pipeline(mode: str = "live", limit: int = 0, only: str = "", skip_downlo
     build_dir = os.path.join(ROOT, ".cache/build")
     os.makedirs(build_dir, exist_ok=True)
 
+    # ---------------------------------------------------------------- normalise
+    # Generated bundles outlive the converter that produced them. Before anything is
+    # converted, upgrade every bundle in src/ to the contract currently declared in
+    # seanime/types/seanime-env.d.ts, so a repo can never drift out of sync with the
+    # templates and leave CI red with hundreds of stale type errors.
+    migrate_mod = load_mod("migrate_contract", "scripts/migrate-contract.py")
+    try:
+        stale = migrate_mod.scan(ROOT)
+        if stale:
+            print(f"[migrate] upgrading {len(stale)} bundle(s) to the current Seanime contract")
+            migrate_mod.run(ROOT, reindex=False, quiet=True)
+    except Exception as exc:  # a migration failure must not block new conversions
+        print(f"[migrate] WARNING: could not normalise existing bundles: {exc}")
+
     # ---------------------------------------------------------------- discovery
     fixtures_dir = os.path.join(ROOT, "tests/fixtures")
     if mode == "fixtures":

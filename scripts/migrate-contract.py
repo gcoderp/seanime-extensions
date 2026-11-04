@@ -104,49 +104,65 @@ def migrate_source(source: str, resolver: str) -> tuple[str, list[str]]:
     return source, applied
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser(description="Migrate generated bundles to the corrected Seanime contract")
-    ap.add_argument("--dry-run", action="store_true", help="report what would change without writing")
-    ap.add_argument("--no-reindex", action="store_true", help="skip marketplace/README regeneration")
-    args = ap.parse_args()
-
+def scan(root: str = ROOT) -> list[tuple[str, list[str], str]]:
+    """Returns (relative path, applied fixes, migrated source) for every stale bundle."""
     resolver = load_resolver()
-    touched: list[tuple[str, list[str]]] = []
-    ts_paths: list[str] = []
-
+    stale: list[tuple[str, list[str], str]] = []
     for p_type in PROVIDER_TYPES:
-        type_dir = os.path.join(ROOT, "src", p_type)
+        type_dir = os.path.join(root, "src", p_type)
         if not os.path.isdir(type_dir):
             continue
         for ext_id in sorted(os.listdir(type_dir)):
-            ext_dir = os.path.join(type_dir, ext_id)
-            ts_path = os.path.join(ext_dir, "code.ts")
+            ts_path = os.path.join(type_dir, ext_id, "code.ts")
             if not os.path.exists(ts_path):
                 continue
             with open(ts_path, "r", encoding="utf-8") as f:
                 source = f.read()
-
             migrated, applied = migrate_source(source, resolver)
-            if not applied:
-                continue
-            touched.append((os.path.relpath(ts_path, ROOT), applied))
-            ts_paths.append(ts_path)
-            if not args.dry_run:
-                with open(ts_path, "w", encoding="utf-8") as f:
-                    f.write(migrated)
+            if applied:
+                stale.append((os.path.relpath(ts_path, root), applied, migrated))
+    return stale
 
-    print(f"Bundles needing migration: {len(touched)}")
-    for rel, applied in touched[:15]:
-        print(f"  {rel}: {', '.join(applied)}")
-    if len(touched) > 15:
-        print(f"  ... and {len(touched) - 15} more")
 
-    if args.dry_run or not ts_paths:
+def run(root: str = ROOT, dry_run: bool = False, check: bool = False, reindex: bool = True,
+        quiet: bool = False) -> int:
+    """Normalises every bundle to the current contract. Safe to call from other scripts.
+
+    check=True  -> write nothing, return 1 when any bundle is stale (for CI gates)
+    dry_run     -> write nothing, return 0
+    """
+    stale = scan(root)
+    if not quiet:
+        print(f"Bundles needing migration: {len(stale)}")
+        for rel, applied, _ in stale[:10]:
+            print(f"  {rel}: {', '.join(applied)}")
+        if len(stale) > 10:
+            print(f"  ... and {len(stale) - 10} more")
+
+    if check:
+        if stale:
+            print(
+                f"\n{len(stale)} bundle(s) were generated against an older Seanime contract.\n"
+                f"Run `python3 scripts/convert.py` (any mode) or `python3 scripts/migrate-contract.py` "
+                f"to upgrade them in place.",
+                file=sys.stderr,
+            )
+            return 1
         return 0
+
+    if dry_run or not stale:
+        return 0
+
+    ts_paths: list[str] = []
+    for rel, _applied, migrated in stale:
+        path = os.path.join(root, rel)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(migrated)
+        ts_paths.append(path)
 
     # Recompile with the real TypeScript compiler, in batches.
     compiler_mod = _load("ts_compiler", "engine/ts-compiler/compiler.py")
-    compiler = compiler_mod.TypeScriptCompiler(repo_root=ROOT)
+    compiler = compiler_mod.TypeScriptCompiler(repo_root=root)
     ok, reason = compiler.is_available()
     if not ok:
         print(f"Cannot recompile: {reason}", file=sys.stderr)
@@ -171,14 +187,24 @@ def main() -> int:
             print(f"  {failure}", file=sys.stderr)
         return 1
 
-    if not args.no_reindex:
-        reindex = os.path.join(ROOT, "scripts", "reindex.py")
-        if os.path.exists(reindex):
+    if reindex:
+        reindex_script = os.path.join(root, "scripts", "reindex.py")
+        if os.path.exists(reindex_script):
             print("\nRefreshing reports, marketplace and README...")
-            subprocess.run([sys.executable, reindex], cwd=ROOT, check=False)
+            subprocess.run([sys.executable, reindex_script], cwd=root, check=False)
 
-    print("\nMigration complete. Run `node scripts/typecheck.mjs` to confirm.")
+    if not quiet:
+        print("\nMigration complete. Run `node scripts/typecheck.mjs` to confirm.")
     return 0
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description="Migrate generated bundles to the corrected Seanime contract")
+    ap.add_argument("--dry-run", action="store_true", help="report what would change without writing")
+    ap.add_argument("--check", action="store_true", help="exit 1 if any bundle is stale (CI gate)")
+    ap.add_argument("--no-reindex", action="store_true", help="skip marketplace/README regeneration")
+    args = ap.parse_args()
+    return run(ROOT, dry_run=args.dry_run, check=args.check, reindex=not args.no_reindex)
 
 
 def _load(name: str, rel_path: str):
