@@ -14,5 +14,5 @@ Automatically converted Seanime `anime-torrent-provider` extension from Cloudstr
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:
 ```text
-https://raw.githubusercontent.com/ghanshyam501cg/cloudstream-seanime-converter/main/src/anime-torrent-provider/nyaa-torrent-provider/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/nyaa-torrent-provider/manifest.json
 ```

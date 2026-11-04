@@ -11,10 +11,10 @@
   ],
   "license": "UNKNOWN",
   "cs3Sha256": "b03ca3a0888cfcb7388233b65fe70add8ca08a5ea0b52cda0ffd9742ffd2127f",
-  "converterVersion": "2.5.0",
+  "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_1_EMBEDDED_KOTLIN_SOURCE",
   "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [],
-  "convertedAt": "2026-11-04T05:42:43.317987+00:00"
+  "convertedAt": "2026-11-04T12:29:23.115065+00:00"
 }

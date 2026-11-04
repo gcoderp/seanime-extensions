@@ -2,13 +2,13 @@
   "id": "hi-anime-provider",
   "name": "HiAnime",
   "description": "HiAnime online streaming provider reconstructed from DEX bytecode with multi-mirror fallback.",
-  "manifestURI": "https://raw.githubusercontent.com/ghanshyam501cg/cloudstream-seanime-converter/main/src/onlinestream-provider/hi-anime-provider/manifest.json",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hi-anime-provider/manifest.json",
   "version": "1.9.0",
   "author": "hexated, Cloudstream Community",
   "type": "onlinestream-provider",
   "language": "typescript",
   "lang": "en",
-  "readme": "https://github.com/ghanshyam501cg/cloudstream-seanime-converter/blob/main/src/onlinestream-provider/hi-anime-provider/README.md",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/hi-anime-provider/README.md",
   "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
-  "payloadURI": "https://raw.githubusercontent.com/ghanshyam501cg/cloudstream-seanime-converter/main/src/onlinestream-provider/hi-anime-provider/code.js"
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hi-anime-provider/code.js"
 }

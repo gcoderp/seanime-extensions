@@ -8,6 +8,7 @@
   "sha256_checksum": "0bb89a23678e63c42db14eee69d4a597be847baf16343df788c8651e56e60784",
   "license_spdx": "TEST_FIXTURE",
   "detected_provider_type": "onlinestream-provider",
+  "strategy": "STRATEGY_3_DEX_STRING_IR",
   "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "BINARY_DEX_IR_OK",
   "kotlin_reconstruction_status": "PARTIAL",
@@ -23,12 +24,13 @@
   "review_reasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
+  "license_notice": false,
   "known_unsupported_methods": [],
   "warnings": [
     "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T05:42:43.319687+00:00",
+  "conversion_timestamp": "2026-11-04T12:29:23.115398+00:00",
   "passed": false
 }

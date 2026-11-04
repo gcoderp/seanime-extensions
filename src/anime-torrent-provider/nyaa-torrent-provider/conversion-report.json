@@ -8,6 +8,7 @@
   "sha256_checksum": "aacd6e8f4e4fc8401c0b8fe03aa17f8e9abeb3df38fb5a53d87cf9a19f6d93e4",
   "license_spdx": "TEST_FIXTURE",
   "detected_provider_type": "anime-torrent-provider",
+  "strategy": "STRATEGY_1_EMBEDDED_KOTLIN_SOURCE",
   "source_recovery_status": "RECOVERED",
   "decompilation_status": "BINARY_DEX_IR_OK",
   "kotlin_reconstruction_status": "SUCCESS",
@@ -21,12 +22,13 @@
   "extractor_test_status": "N/A",
   "overall_status": "SUCCESS",
   "review_reasons": [],
+  "license_notice": false,
   "known_unsupported_methods": [],
   "warnings": [
     "Torrent row selectors are heuristic; live verification against the tracker is required.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T05:42:44.544846+00:00",
+  "conversion_timestamp": "2026-11-04T12:29:24.101773+00:00",
   "passed": true
 }
