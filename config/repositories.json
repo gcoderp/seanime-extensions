@@ -1,28 +1,219 @@
 {
   "repositories": [
     {
-      "name": "Phisher Cloudstream Extensions",
-      "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/repo.json",
+      "name": "Cloudstream Providers (recloudstream)",
+      "url": "https://raw.githubusercontent.com/recloudstream/extensions/master/repo.json",
       "enabled": true,
-      "categories": [
-        "Anime",
-        "AnimeMovie",
-        "OVA"
-      ],
-      "conversion": "auto",
       "priority": 1,
+      "conversion": "auto",
       "allow_mirror_discovery": true
     },
     {
-      "name": "Hexated Cloudstream Extensions (direct plugin list)",
-      "url": "https://raw.githubusercontent.com/hexated/cloudstream-extensions-hexated/builds/plugins.json",
+      "name": "MegaRepo (self-similarity)",
+      "url": "https://raw.githubusercontent.com/self-similarity/MegaRepo/builds/repo.json",
       "enabled": true,
-      "categories": [
-        "Anime",
-        "Torrent"
-      ],
-      "conversion": "auto",
       "priority": 2,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "Phisher Repo",
+      "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/refs/heads/builds/repo.json",
+      "enabled": true,
+      "priority": 3,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "Megix Repo (Hindi & English)",
+      "url": "https://raw.githubusercontent.com/SaurabhKaperwan/CSX/builds/CS.json",
+      "enabled": true,
+      "priority": 4,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "3rabi (Arabic)",
+      "url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/repo",
+      "enabled": true,
+      "priority": 5,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "IndoStream Repo",
+      "url": "https://raw.githubusercontent.com/TeKuma25/IndoStream/builds/repo.json",
+      "enabled": true,
+      "priority": 6,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "ExtCloud (duro92) - URL currently returns 404",
+      "url": "https://raw.githubusercontent.com/duro92/ExtCloud/main/repo.json",
+      "enabled": false,
+      "priority": 7,
+      "conversion": "auto",
+      "allow_mirror_discovery": true,
+      "note": "Verified 404 on 2026-11-04 for main/, master/ and builds/. Repository may have been renamed or deleted; re-enable with a working URL."
+    },
+    {
+      "name": "CloudX",
+      "url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/repo.json",
+      "enabled": true,
+      "priority": 8,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "doGior's Had Enough",
+      "url": "https://raw.githubusercontent.com/doGior/doGiorsHadEnough/refs/heads/builds/repo.json",
+      "enabled": true,
+      "priority": 9,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "CNC Repo (All Language)",
+      "url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/refs/heads/builds/CNC.json",
+      "enabled": true,
+      "priority": 10,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "Pastebin Repo (qndZtL6D) - unverified",
+      "url": "https://pastebin.com/raw/qndZtL6D",
+      "enabled": true,
+      "priority": 11,
+      "conversion": "auto",
+      "allow_mirror_discovery": true,
+      "note": "Could not be fetched from the build environment (pastebin is blocked there). Works only if the paste content is a repo.json or plugins list; otherwise discovery logs a warning and skips it."
+    },
+    {
+      "name": "cs-karma",
+      "url": "https://raw.githubusercontent.com/Kraptor123/cs-Karma/refs/heads/master/repo.json",
+      "enabled": true,
+      "priority": 12,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "CakesTwix Ukrainian Extensions (Codeberg)",
+      "url": "https://codeberg.org/CakesTwix/cloudstream-extensions-uk/raw/branch/master/repo.json",
+      "enabled": true,
+      "priority": 13,
+      "conversion": "auto",
+      "allow_mirror_discovery": true,
+      "note": "Host is not reachable from the build sandbox; it is fetched normally from GitHub Actions."
+    },
+    {
+      "name": "Pitipitii (sarapcanagii) - URL currently returns 404",
+      "url": "https://raw.githubusercontent.com/sarapcanagii/Pitipitii/master/repo.json",
+      "enabled": false,
+      "priority": 14,
+      "conversion": "auto",
+      "allow_mirror_discovery": true,
+      "note": "Verified 404 on 2026-11-04 for master/, main/ and builds/."
+    },
+    {
+      "name": "lietrepo",
+      "url": "https://raw.githubusercontent.com/lawlietbr/lietrepo/refs/heads/main/builds/repo.json",
+      "enabled": true,
+      "priority": 15,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "Italian providers repository",
+      "url": "https://raw.githubusercontent.com/Gian-Fr/ItalianProvider/builds/repo.json",
+      "enabled": true,
+      "priority": 16,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "NetMirror",
+      "url": "https://raw.githubusercontent.com/Sushan64/NetMirror-Extension/refs/heads/builds/Netflix.json",
+      "enabled": true,
+      "priority": 17,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "Redowan's BDIX repository",
+      "url": "https://raw.githubusercontent.com/redowan99/Redowan-CloudStream/master/repo.json",
+      "enabled": true,
+      "priority": 18,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "saimuel repo",
+      "url": "https://raw.githubusercontent.com/saimuelbr/saimuelrepo/refs/heads/main/builds/repo.json",
+      "enabled": true,
+      "priority": 19,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "CuxPlug (ycngmn) - URL currently returns 404",
+      "url": "https://raw.githubusercontent.com/ycngmn/CuxPlug/refs/heads/main/repo.json",
+      "enabled": false,
+      "priority": 20,
+      "conversion": "auto",
+      "allow_mirror_discovery": true,
+      "note": "Verified 404 on 2026-11-04 for main/, master/ and builds/."
+    },
+    {
+      "name": "Cloudstream Vietnamese (GitLab)",
+      "url": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/repo.json",
+      "enabled": true,
+      "priority": 21,
+      "conversion": "auto",
+      "allow_mirror_discovery": true,
+      "note": "Host is not reachable from the build sandbox; it is fetched normally from GitHub Actions."
+    },
+    {
+      "name": "cs-kraptor - URL currently returns 404",
+      "url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/refs/heads/master/repo.json",
+      "enabled": false,
+      "priority": 22,
+      "conversion": "auto",
+      "allow_mirror_discovery": true,
+      "note": "Verified 404 on 2026-11-04 for master/, main/ and builds/."
+    },
+    {
+      "name": "German providers repository",
+      "url": "https://raw.githubusercontent.com/Bnyro/GermanProviders/refs/heads/master/repo.json",
+      "enabled": true,
+      "priority": 23,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "Luna712's CloudStream extension repository",
+      "url": "https://raw.githubusercontent.com/Luna712/Luna712-CloudStream-Extensions/28885d17ceb7f24782b732b6056085c14c1fd027/repo.json",
+      "enabled": true,
+      "priority": 24,
+      "conversion": "auto",
+      "allow_mirror_discovery": true,
+      "note": "Pinned to a commit SHA; replace it with a branch name (for example main) if you want upstream updates."
+    },
+    {
+      "name": "French Repo",
+      "url": "https://raw.githubusercontent.com/zzikozz/frenchCS/refs/heads/main/repo.json",
+      "enabled": true,
+      "priority": 25,
+      "conversion": "auto",
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "GramFlix Extensions",
+      "url": "https://raw.githubusercontent.com/tOntOnbOuLii/GramFlix/main/repo.json",
+      "enabled": true,
+      "priority": 26,
+      "conversion": "auto",
       "allow_mirror_discovery": true
     }
   ],
