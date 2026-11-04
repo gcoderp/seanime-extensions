@@ -57,6 +57,9 @@ jobs:
           set -euo pipefail
           pip install -r requirements.txt
           npm ci
+      - name: Check generated bundles match the current contract
+        run: python3 scripts/migrate-contract.py --check
+
       - name: Type-check extension TypeScript
         run: node scripts/typecheck.mjs
       - name: Verify generated JavaScript parses

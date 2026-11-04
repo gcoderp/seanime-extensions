@@ -62,7 +62,7 @@ jobs:
           set -euo pipefail
           git config user.name "seanime-converter[bot]"
           git config user.email "seanime-converter@users.noreply.github.com"
-          git add -A src generated marketplace.json reports
+          git add -A src generated marketplace.json reports README.md manifest-urls.txt
           [ -f config/license-cache.json ] && git add config/license-cache.json
           if git diff --cached --quiet; then
             echo "No upstream changes detected."
