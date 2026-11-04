@@ -47,16 +47,25 @@ class DexAnalyzer:
         with open(dex_path, "rb") as f:
             data = f.read()
 
+        def _string_scan() -> List[str]:
+            ascii_strings = re.findall(rb"[\x20-\x7E]{4,}", data)
+            return [s.decode("utf-8", errors="ignore") for s in ascii_strings]
+
         if len(data) < 112 or not data.startswith(self.DEX_MAGIC):
             # Fallback regex string scan if synthetic/minimal test DEX
-            ascii_strings = re.findall(rb"[\x20-\x7E]{4,}", data)
-            decoded = [s.decode("utf-8", errors="ignore") for s in ascii_strings]
-            return decoded, [], []
+            return _string_scan(), [], []
 
         # Parse standard Dalvik header offsets (little-endian uint32)
-        string_ids_size, string_ids_off = struct.unpack_from("<II", data, 56)
-        type_ids_size, type_ids_off = struct.unpack_from("<II", data, 64)
-        method_ids_size, method_ids_off = struct.unpack_from("<II", data, 88)
+        try:
+            string_ids_size, string_ids_off = struct.unpack_from("<II", data, 56)
+            type_ids_size, type_ids_off = struct.unpack_from("<II", data, 64)
+            method_ids_size, method_ids_off = struct.unpack_from("<II", data, 88)
+        except struct.error:
+            return _string_scan(), [], []
+
+        # A corrupt or truncated header must not take the whole pipeline down.
+        if string_ids_off + 4 * min(string_ids_size, 50000) > len(data) or string_ids_off == 0:
+            return _string_scan(), [], []
 
         strings: List[str] = []
         for i in range(min(string_ids_size, 50000)):
@@ -135,7 +144,7 @@ class DexAnalyzer:
             elif css_hint.match(s_clean) and len(s_clean) < 120:
                 if s_clean not in selectors:
                     selectors.append(s_clean)
-            elif ("(" in s_clean and ")" in s_clean and any(tok in s_clean for tok in ("\d+", "[^", ".*?", "m3u8", "mp4"))):
+            elif ("(" in s_clean and ")" in s_clean and any(tok in s_clean for tok in (r"\d+", "[^", ".*?", "m3u8", "mp4"))):
                 if len(s_clean) < 160 and s_clean not in regexes:
                     regexes.append(s_clean)
             elif s_clean.lower() in ("referer", "user-agent", "origin", "x-requested-with"):

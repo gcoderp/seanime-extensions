@@ -1,18 +1,19 @@
 {
   "name": "cloudstream-seanime-converter",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "private": true,
   "description": "Automated Cloudstream (.cs3) to Seanime TypeScript/Goja JavaScript Extension Converter & Marketplace Generator",
   "scripts": {
     "discover": "python3 scripts/discover.py",
     "convert": "python3 scripts/convert.py",
-    "build": "bun run scripts/build.ts",
-    "marketplace": "bun run scripts/marketplace.ts",
-    "validate": "bun run scripts/validate.ts",
-    "test": "pytest tests/ -v"
+    "convert:fixtures": "python3 scripts/convert.py --fixtures",
+    "typecheck": "node scripts/typecheck.mjs",
+    "validate": "node scripts/validate.mjs && python3 scripts/check_schema.py",
+    "publish": "python3 scripts/publish.py",
+    "fixtures:build": "python3 tests/fixtures/build_fixtures.py",
+    "test": "python3 -m pytest tests/ -v"
   },
   "devDependencies": {
-    "@types/node": "^20.14.0",
-    "typescript": "^5.5.4"
+    "typescript": "5.5.4"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "_comment": "Single source of truth for the generic selector sets used when no provider-specific selector could be recovered. The validator uses these to detect 'template only' conversions and refuse to publish them as working extensions.",
+  "search_item": "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item",
+  "search_title": "h3 a, .film-name a, .title, a",
+  "episode_list": "ul.episodes li a, div.eplister ul li a, .ep-item a, a.ep-link",
+  "server_link": "iframe[src], div.server-item[data-embed], a[data-video], source[src]",
+  "search_url_pattern": "/search?keyword={query}"
+}

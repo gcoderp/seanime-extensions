@@ -3,23 +3,32 @@
   "original_plugin_id": "HiAnimeProvider",
   "original_author": "hexated, Cloudstream Community",
   "original_repository": "https://github.com/hexated/cloudstream-extensions-hexated",
-  "original_download_url": "/home/bard/cloudstream-seanime-converter/tests/fixtures/HiAnimeProvider.cs3",
+  "original_download_url": "HiAnimeProvider.cs3",
   "original_version": 9,
-  "sha256_checksum": "2988aa722ffd3a576ff315f122dd3590c8375903aa0654a7d48e361e0a6d19d9",
+  "sha256_checksum": "0bb89a23678e63c42db14eee69d4a597be847baf16343df788c8651e56e60784",
+  "license_spdx": "TEST_FIXTURE",
   "detected_provider_type": "onlinestream-provider",
   "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "BINARY_DEX_IR_OK",
-  "kotlin_reconstruction_status": "SUCCESS",
+  "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
   "seanime_compatibility_status": "PASS",
-  "search_test_status": "PASS",
-  "episode_test_status": "PASS",
-  "extractor_test_status": "PASS",
-  "overall_status": "SUCCESS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+  ],
   "known_unsupported_methods": [],
-  "warnings": [],
+  "warnings": [
+    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T04:47:48.593386+00:00",
-  "passed": true
+  "conversion_timestamp": "2026-11-04T05:42:43.319687+00:00",
+  "passed": false
 }

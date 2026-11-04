@@ -105,7 +105,6 @@ class CsCompat {
     }
 }
 
-
 class Provider {
     private mainUrl: string = "https://nyaa.si";
     private defaultHeaders: Record<string, string> = {"Referer": "https://nyaa.si/"};
@@ -120,38 +119,52 @@ class Provider {
     }
 
     async search(opts: TorrentSearchOptions): Promise<AnimeTorrent[]> {
-        const q = encodeURIComponent(opts.query.trim());
+        const q = encodeURIComponent((opts.query || "").trim());
         const searchUrl = CsCompat.fixUrl("/?f=0&c=1_2&q={query}".replace("{query}", q), this.mainUrl);
         const res = await fetch(searchUrl, { headers: this.defaultHeaders });
+        if (!res || res.status >= 400) {
+            return [];
+        }
+
         const html = await res.text();
         const $ = LoadDoc(html);
         const torrents: AnimeTorrent[] = [];
 
-        $("table tbody tr, div.torrent-item, ul.list li").each((_: number, el: GojaDocElement) => {
-            const title = (el.find("a.title, td.name a, a").first().text() || "").trim();
-            const magnet = el.find("a[href^='magnet:?']").first().attr("href") || "";
-            const link = CsCompat.fixUrl(el.find("a").first().attr("href") || "", this.mainUrl);
-            if (!title || (!magnet && !link)) return;
+        $("table.torrent-list tbody tr, table tbody tr, div.torrent-item, ul.list li").each((_: number, el: GojaDocElement) => {
+            const titleEl = el.find("a.title, td.name a, td:nth-child(2) a, a").first();
+            const title = (titleEl.text() || "").trim();
+            if (!title) return;
 
-            const hashMatch = magnet.match(/btih:([a-fA-F0-9]40|[a-zA-Z2-7]32)/i);
-            const seedersText = el.find(".seeders, td.seeds").first().text() || "1";
-            const leechersText = el.find(".leechers, td.leeches").first().text() || "0";
+            const magnet = el.find("a[href^='magnet:?']").first().attr("href") || "";
+            const pageHref = el.find("a[href*='/view/'], td:nth-child(2) a").first().attr("href")
+                || titleEl.attr("href") || "";
+            const pageUrl = pageHref ? CsCompat.fixUrl(pageHref, this.mainUrl) : "";
+            if (!magnet && !pageUrl) return;
+
+            const hashMatch = magnet.match(/btih:([a-fA-F0-9]{40}|[a-zA-Z2-7]{32})/i);
+            const seedersText = el.find("td:nth-child(6), .seeders, td.seeds").first().text() || "";
+            const leechersText = el.find("td:nth-child(7), .leechers, td.leeches").first().text() || "";
+            const sizeText = el.find("td:nth-child(4), .size, td.size").first().text() || "";
+            const dateText = el.find("td:nth-child(5), .date").first().text() || "";
+            const epMatch = title.match(/(?:^|[\s\-_])S\d{1,2}E(\d{1,4})|(?:^|[\s\-_])E(?:p(?:isode)?)?\.?\s?(\d{1,4})(?:\D|$)/i);
+            const epNum = epMatch ? parseInt(epMatch[1] || epMatch[2], 10) : 0;
 
             torrents.push({
                 name: title,
-                date: new Date().toISOString(),
+                date: dateText.trim(),
                 size: 0,
-                formattedSize: el.find(".size, td.size").first().text() || "Unknown",
-                seeders: parseInt(seedersText, 10) || 1,
+                formattedSize: sizeText.trim() || "Unknown",
+                seeders: parseInt(seedersText, 10) || 0,
                 leechers: parseInt(leechersText, 10) || 0,
                 downloadCount: 0,
-                link: link || magnet,
-                downloadUrl: magnet || link,
+                link: pageUrl || magnet,
+                downloadUrl: magnet || pageUrl,
                 magnetLink: magnet,
                 infoHash: hashMatch ? hashMatch[1].toLowerCase() : "",
                 resolution: CsCompat.inferQuality(title),
-                isBatch: /batch|complete/i.test(title),
-                confirmed: true,
+                isBatch: /batch|complete|\bS\d{1,2}\b(?!E)/i.test(title),
+                episodeNumber: epNum > 0 ? epNum : undefined,
+                confirmed: !!magnet,
             });
         });
 
@@ -161,12 +174,19 @@ class Provider {
     async smartSearch(opts: TorrentSmartSearchOptions): Promise<AnimeTorrent[]> {
         const epTag = opts.episodeNumber > 0 ? (" " + String(opts.episodeNumber).padStart(2, "0")) : "";
         const resTag = opts.resolution ? (" " + opts.resolution) : "";
-        const combinedQuery = (opts.query + epTag + resTag).trim();
-        return await this.search({ media: opts.media, query: combinedQuery });
+        const combinedQuery = ((opts.query || "") + epTag + resTag).trim();
+        const results = await this.search({ media: opts.media, query: combinedQuery });
+        if (!opts.episodeNumber || opts.episodeNumber <= 0) {
+            return results;
+        }
+        const matching = results.filter((t: AnimeTorrent) => t.episodeNumber === opts.episodeNumber);
+        return matching.length > 0 ? matching : results;
     }
 
     async getTorrentInfoHash(torrent: AnimeTorrent): Promise<string> {
-        return torrent.infoHash || "";
+        if (torrent.infoHash) return torrent.infoHash;
+        const m = (torrent.magnetLink || "").match(/btih:([a-fA-F0-9]{40}|[a-zA-Z2-7]{32})/i);
+        return m ? m[1].toLowerCase() : "";
     }
 
     async getTorrentMagnetLink(torrent: AnimeTorrent): Promise<string> {

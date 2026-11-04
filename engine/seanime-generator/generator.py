@@ -25,6 +25,30 @@ class SeanimeExtensionGenerator:
         }
 
     @staticmethod
+    def public_url(url: str) -> str:
+        """Never publish local filesystem paths in manifests or metadata."""
+        if not url:
+            return ""
+        if str(url).startswith(("http://", "https://")):
+            return str(url)
+        return os.path.basename(str(url))
+
+    def _resolve_owner(self) -> str:
+        """GITHUB_REPOSITORY_OWNER / GITHUB_REPOSITORY win over config, so Actions needs no editing."""
+        repo_slug = os.environ.get("GITHUB_REPOSITORY", "")
+        if "/" in repo_slug:
+            owner, _, repo = repo_slug.partition("/")
+            if owner and repo:
+                self.settings.setdefault("github_owner", owner)
+                self.settings["github_owner"] = owner
+                self.settings["github_repo"] = repo
+                return owner
+        owner_env = os.environ.get("GITHUB_REPOSITORY_OWNER")
+        if owner_env:
+            return owner_env
+        return self.settings.get("github_owner", "OWNER")
+
+    @staticmethod
     def to_kebab_id(raw_name: str) -> str:
         s = re.sub(r"([a-z0-9])([A-Z])", r"\1-\2", raw_name)
         s = re.sub(r"[^a-zA-Z0-9]+", "-", s).strip("-").lower()
@@ -34,18 +58,30 @@ class SeanimeExtensionGenerator:
         self,
         plugin_meta: Any,
         translation: Any,
+        javascript_code: str,
         sha256_hex: str,
         validation_report: Dict[str, Any],
         source_info: Any
     ) -> Dict[str, Any]:
         ext_id = self.to_kebab_id(plugin_meta.internal_name)
         provider_type = translation.provider_type
+
+        # An unconfigured owner would publish URLs that 404 for every Seanime user.
+        if self._resolve_owner() in ("OWNER", "", "owner"):
+            validation_report = dict(validation_report)
+            validation_report["overall_status"] = "NEEDS_REVIEW"
+            validation_report["passed"] = False
+            validation_report.setdefault("review_reasons", []).append(
+                "github_owner is still the OWNER placeholder; set it in config/settings.json "
+                "(or run in Actions, where GITHUB_REPOSITORY is provided) before publishing."
+            )
         ext_dir = os.path.join(self.repo_root, "src", provider_type, ext_id)
         backup_dir = os.path.join(self.repo_root, ".cache", "rollback", provider_type, ext_id)
 
-        # Atomic rollback protection: if valid extension already exists and new validation failed, keep existing!
+        # Atomic rollback protection: if a valid extension already exists and the new
+        # conversion failed, keep the previously published bundle untouched.
         existing_manifest = os.path.join(ext_dir, "manifest.json")
-        if not validation_report.get("passed", False):
+        if validation_report.get("overall_status") == "FAILED":
             if os.path.exists(existing_manifest):
                 return {
                     "id": ext_id,
@@ -65,7 +101,7 @@ class SeanimeExtensionGenerator:
             shutil.copytree(ext_dir, backup_dir)
 
         os.makedirs(ext_dir, exist_ok=True)
-        owner = self.settings.get("github_owner", "OWNER")
+        owner = self._resolve_owner()
         repo = self.settings.get("github_repo", "cloudstream-seanime-converter")
         branch = self.settings.get("github_branch", "main")
 
@@ -87,7 +123,7 @@ class SeanimeExtensionGenerator:
             "language": "typescript",
             "lang": lang_code,
             "readme": f"{base_blob}/README.md",
-            "notes": f"Automatically converted via strategy {translation.strategy_used} and validated for Seanime Goja.",
+            "notes": f"Automatically converted via strategy {translation.strategy_used}; validation status {validation_report.get('overall_status')}.",
             "payloadURI": f"{base_raw}/code.js"
         }
         if plugin_meta.icon_url:
@@ -98,13 +134,16 @@ class SeanimeExtensionGenerator:
             "originalPluginName": plugin_meta.name,
             "originalInternalName": plugin_meta.internal_name,
             "originalVersion": plugin_meta.version,
-            "originalDownloadUrl": plugin_meta.url,
+            "originalDownloadUrl": self.public_url(plugin_meta.url),
             "originalRepositoryUrl": plugin_meta.repository_url or source_info.repository_url,
             "originalAuthors": plugin_meta.authors,
             "license": source_info.license_spdx,
             "cs3Sha256": sha256_hex,
             "converterVersion": self.settings.get("converter_version", "2.4.0"),
             "conversionStrategy": translation.strategy_used,
+            "validationStatus": validation_report.get("overall_status"),
+            "liveTestStatus": validation_report.get("live_test_status", "NOT_RUN"),
+            "reviewReasons": validation_report.get("review_reasons", []),
             "convertedAt": datetime.now(timezone.utc).isoformat()
         }
 
@@ -131,7 +170,7 @@ Use the direct manifest URL below in Seanime's Extension settings:
         with open(os.path.join(ext_dir, "code.ts"), "w", encoding="utf-8") as f:
             f.write(translation.typescript_code)
         with open(os.path.join(ext_dir, "code.js"), "w", encoding="utf-8") as f:
-            f.write(translation.javascript_code)
+            f.write(javascript_code)
         with open(os.path.join(ext_dir, "manifest.json"), "w", encoding="utf-8") as f:
             json.dump(manifest_payload, f, indent=2)
         with open(os.path.join(ext_dir, "metadata.json"), "w", encoding="utf-8") as f:
@@ -143,7 +182,7 @@ Use the direct manifest URL below in Seanime's Extension settings:
 
         return {
             "id": ext_id,
-            "status": "SUCCESS",
+            "status": validation_report.get("overall_status", "NEEDS_REVIEW"),
             "directory": ext_dir,
             "manifest": manifest_payload
         }

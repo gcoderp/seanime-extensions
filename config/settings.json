@@ -1,8 +1,8 @@
 {
-  "github_owner": "OWNER",
+  "github_owner": "ghanshyam501cg",
   "github_repo": "cloudstream-seanime-converter",
   "github_branch": "main",
-  "converter_version": "2.4.0",
+  "converter_version": "2.5.0",
   "security": {
     "max_zip_entries": 2500,
     "max_uncompressed_bytes": 52428800,
@@ -12,14 +12,23 @@
       "https"
     ]
   },
+  "publish_gates": {
+    "require_js_parse": true,
+    "require_known_license": true,
+    "require_recovered_selectors": true,
+    "require_live_test": false,
+    "reject_placeholder_hosts": true
+  },
   "ai_fallback": {
-    "enabled_if_secret_present": true,
+    "enabled_if_secret_present": false,
     "provider": "openai_compatible",
     "model": "gpt-4o-mini",
     "max_tokens": 4096,
-    "strict_goja_validation": true
+    "strict_goja_validation": true,
+    "note": "Not implemented. Reserved for a future strategy 4; must be opt-in and validated like any other strategy."
   },
   "licensing": {
+    "require_known_license": true,
     "allowed_spdx": [
       "MIT",
       "GPL-3.0",
@@ -28,7 +37,7 @@
       "Apache-2.0",
       "BSD-3-Clause",
       "Unlicense",
-      "UNKNOWN_PUBLIC_REPO"
+      "TEST_FIXTURE"
     ],
     "redact_secrets_patterns": [
       "(?i)(api[_-]?key|secret|token|authorization)\\s*[:=]\\s*['\"][A-Za-z0-9_\\-]{16,}['\"]"

@@ -1,4 +1,4 @@
-/// <reference path="../../../seanime/types/seanime-env.d.ts" />
+/// <reference path="__ENV_TYPES_PATH__" />
 
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
@@ -12,7 +12,7 @@ __COMPAT_SHIM__
 __EXTRACTOR_HELPERS__
 
 class Provider {
-    private mainUrl: string = "__MAIN_URL__";
+    private mainUrl: string = __MAIN_URL__;
     private mirrorDomains: string[] = __MIRROR_DOMAINS__;
     private defaultHeaders: Record<string, string> = __DEFAULT_HEADERS__;
 

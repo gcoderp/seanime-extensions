@@ -9,10 +9,10 @@ Automatically converted Seanime `anime-torrent-provider` extension from Cloudstr
 - **Language:** `en`
 - **Original Author(s):** recloudstream
 - **Conversion Strategy:** `STRATEGY_1_EMBEDDED_KOTLIN_SOURCE`
-- **CS3 SHA-256:** `a1a7519c812dc1ce160185b1641108daac58520ee46d7110635e0297a252f18e`
+- **CS3 SHA-256:** `aacd6e8f4e4fc8401c0b8fe03aa17f8e9abeb3df38fb5a53d87cf9a19f6d93e4`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:
 ```text
-https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/anime-torrent-provider/nyaa-torrent-provider/manifest.json
+https://raw.githubusercontent.com/ghanshyam501cg/cloudstream-seanime-converter/main/src/anime-torrent-provider/nyaa-torrent-provider/manifest.json
 ```

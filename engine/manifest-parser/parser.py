@@ -20,6 +20,7 @@ class CloudstreamPluginEntry:
     file_size: Optional[int]
     sha256: Optional[str]
     source_repo_name: str
+    license: Optional[str] = None
 
 class CloudstreamManifestParser:
     """Parses Cloudstream repo.json and plugins.json manifests across v1, v2, and v3 formats."""
@@ -34,7 +35,10 @@ class CloudstreamManifestParser:
             return target_url
         return urllib.parse.urljoin(base_url, target_url)
 
-    def parse_repo_manifest(self, raw_json: Dict[str, Any], repo_url: str) -> List[str]:
+    def parse_repo_manifest(self, raw_json: Any, repo_url: str) -> List[str]:
+        if not isinstance(raw_json, dict):
+            # A plugins.json passed where a repo.json was expected
+            return []
         plugin_lists = raw_json.get("pluginLists", [])
         if isinstance(plugin_lists, str):
             plugin_lists = [plugin_lists]
@@ -103,7 +107,8 @@ class CloudstreamManifestParser:
                 repository_url=entry.get("repositoryUrl"),
                 file_size=entry.get("fileSize"),
                 sha256=entry.get("sha256") or entry.get("hash"),
-                source_repo_name=repo_name
+                source_repo_name=repo_name,
+                license=entry.get("license")
             ))
 
         return results

@@ -12,8 +12,11 @@
     ]
   },
   "include": [
-    "seanime/**/*.ts",
-    "src/**/*.ts",
-    "scripts/**/*.ts"
+    "seanime/types/**/*.ts",
+    "seanime/compatibility/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "seanime/templates/**"
   ]
 }

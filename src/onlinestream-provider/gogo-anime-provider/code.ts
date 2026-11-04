@@ -105,7 +105,6 @@ class CsCompat {
     }
 }
 
-
 class ExtractorDispatcher {
     static MAX_DEPTH = 3;
 
@@ -137,15 +136,21 @@ class ExtractorDispatcher {
         }
 
         const res = await fetch(embedUrl, { headers });
+        if (!res || res.status >= 400) {
+            return { videoSources: [], headers };
+        }
         let body = await res.text();
 
         // 2. Unpack p,a,c,k,e,r obfuscated scripts if present
-        if (body.includes("function(p,a,c,k,e")) {
-            body = body + "\n" + CsCompat.unpackJs(body);
+        if (body.indexOf("function(p,a,c,k,e") !== -1) {
+            const unpacked = CsCompat.unpackJs(body);
+            if (unpacked !== body) {
+                body = unpacked;
+            }
         }
 
         const subtitles: VideoSubtitle[] = [];
-        const subRegex = /["']?file["']?\s*:\s*["'](https?:\/\/[^"']+\.(?:vtt|srt|ass))["'](?:[^>]*?["']?label["']?\s*:\s*["']([^"']+)["'])?/gi;
+        const subRegex = /["']?file["']?\s*:\s*["'](https?:\/\/[^"']+\.(?:vtt|srt|ass))["'](?:[^}]*?["']?label["']?\s*:\s*["']([^"']+)["'])?/gi;
         let subMatch: RegExpExecArray | null;
         let subIdx = 0;
         while ((subMatch = subRegex.exec(body)) !== null) {
@@ -161,10 +166,10 @@ class ExtractorDispatcher {
         const seenUrls = new Set<string>();
 
         // 3. Extract HLS (.m3u8) and MP4 links from player configuration or JSON payloads
-        const mediaRegex = /(https?:\?\/\?\/[^"'\s<>]+?\.(?:m3u8|mp4)(?:\?[^"'\s<>]*)?)/gi;
+        const mediaRegex = /(https?:\/\/[^"'\s<>]+?\.(?:m3u8|mp4)(?:\?[^"'\s<>]*)?)/gi;
         let m: RegExpExecArray | null;
         while ((m = mediaRegex.exec(body)) !== null) {
-            const cleanUrl = m[1].replace(/\\//g, "/");
+            const cleanUrl = m[1].replace(/\\\//g, "/");
             if (!seenUrls.has(cleanUrl)) {
                 seenUrls.add(cleanUrl);
                 sources.push({
@@ -206,10 +211,9 @@ class ExtractorDispatcher {
     }
 }
 
-
 class Provider {
     private mainUrl: string = "https://anitaku.pe";
-    private mirrorDomains: string[] = ["https://anitaku.pe"];
+    private mirrorDomains: string[] = ["https://anitaku.pe", "https://anitaku.pe"];
     private defaultHeaders: Record<string, string> = {"Referer": "https://anitaku.pe/"};
 
     getSettings(): Settings {
@@ -220,18 +224,19 @@ class Provider {
     }
 
     async search(opts: SearchOptions): Promise<SearchResult[]> {
-        const queryEncoded = encodeURIComponent(opts.query.trim());
+        const queryEncoded = encodeURIComponent((opts.query || "").trim());
         const searchPath = "/search.html?keyword={query}".replace("{query}", queryEncoded);
-        const { text: html, url: usedUrl } = await CsCompat.fetchWithMirrorFallback(
+        const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
             { headers: this.defaultHeaders }
         );
 
         const $ = LoadDoc(html);
-        const results: SearchResult[] = [];
         const itemSelector = "ul.items li";
         const titleSelector = "p.name a";
+        const dubResults: SearchResult[] = [];
+        const subResults: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
             const titleEl = el.find(titleSelector).first();
@@ -240,20 +245,24 @@ class Provider {
             if (!rawTitle || !rawHref) return;
 
             const fullUrl = CsCompat.fixUrl(rawHref, this.mainUrl);
-            const isDubItem = /(dub|dubbed|dual[\s-]?audio)/i.test(rawTitle) || /dub/i.test(fullUrl);
-            if (opts.dub && !isDubItem && true) {
-                // Keep item if dub status is ambiguous, otherwise prefer matching subOrDub
-            }
+            const isDubItem = /\b(dub|dubbed|dual[\s-]?audio)\b/i.test(rawTitle)
+                || /(^|[-/])dub([-/]|$)/i.test(fullUrl);
 
-            results.push({
+            const result: SearchResult = {
                 id: fullUrl,
                 title: rawTitle,
                 url: fullUrl,
                 subOrDub: isDubItem ? "dub" : "sub",
-            });
+            };
+            if (isDubItem) {
+                dubResults.push(result);
+            } else {
+                subResults.push(result);
+            }
         });
 
-        return results;
+        // Honour opts.dub by ordering matching entries first rather than dropping results.
+        return opts.dub ? dubResults.concat(subResults) : subResults.concat(dubResults);
     }
 
     async findEpisodes(id: string): Promise<EpisodeDetails[]> {
@@ -267,21 +276,23 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = "ul#episode_related li a";
+        const epNumSelector = "div.name";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref) return;
+
             const epUrl = CsCompat.fixUrl(rawHref, this.mainUrl);
-            const numAttr = el.attr("data-number") || el.attr("data-ep") || el.find("div.name").text() || el.text();
-            const numMatch = (numAttr || "").match(/(\d+(?:\.\d+)?)/);
+            const numAttr = el.attr("data-number") || el.attr("data-ep")
+                || el.find(epNumSelector).text() || el.text() || "";
+            const numMatch = String(numAttr).match(/(\d+(?:\.\d+)?)/);
             const epNum = numMatch ? parseFloat(numMatch[1]) : idx + 1;
-            const epTitle = (el.attr("title") || el.text() || ("Episode " + epNum)).trim();
 
             episodes.push({
                 id: epUrl,
                 number: epNum,
                 url: epUrl,
-                title: epTitle,
+                title: (el.attr("title") || el.text() || ("Episode " + epNum)).trim(),
             });
         });
 
@@ -298,46 +309,48 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const candidateEmbeds: string[] = [];
         const serverSelector = "div.anime_muti_link ul li a";
+        const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
-            const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src") || el.attr("src") || el.attr("href") || "";
-            if (rawEmbed && !rawEmbed.startsWith("javascript:") && rawEmbed !== "#") {
-                candidateEmbeds.push(CsCompat.fixUrl(rawEmbed, this.mainUrl));
+            const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
+                || el.attr("src") || el.attr("href") || "";
+            if (!rawEmbed || rawEmbed.indexOf("javascript:") === 0 || rawEmbed === "#") return;
+            const embedUrl = CsCompat.fixUrl(rawEmbed, this.mainUrl);
+            if (candidateEmbeds.indexOf(embedUrl) === -1) {
+                candidateEmbeds.push(embedUrl);
             }
         });
 
-        const selectedServer = (!server || server === "default") ? ("vidstream") : server;
-        let resolvedSources: VideoSource[] = [];
-        let resolvedHeaders: Record<string, string> = { ...this.defaultHeaders, Referer: epUrl };
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidstream";
+        const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
+        const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 
-        for (const embedUrl of candidateEmbeds) {
-            if (selectedServer !== "default" && candidateEmbeds.length > 1) {
-                if (!embedUrl.toLowerCase().includes(selectedServer.toLowerCase()) && candidateEmbeds.indexOf(embedUrl) > 0) {
-                    continue;
-                }
-            }
+        const videoSources: VideoSource[] = [];
+        let headers: Record<string, string> = { ...this.defaultHeaders, Referer: epUrl };
+
+        for (const embedUrl of ordered) {
             const extracted = await ExtractorDispatcher.resolve(embedUrl, epUrl, 0);
             if (extracted.videoSources.length > 0) {
-                resolvedSources.push(...extracted.videoSources);
-                resolvedHeaders = { ...resolvedHeaders, ...extracted.headers };
+                videoSources.push(...extracted.videoSources);
+                headers = { ...headers, ...extracted.headers };
             }
         }
 
-        if (resolvedSources.length === 0) {
+        if (videoSources.length === 0) {
             const fallback = await ExtractorDispatcher.resolve(epUrl, this.mainUrl, 0);
-            resolvedSources = fallback.videoSources;
+            videoSources.push(...fallback.videoSources);
+            headers = { ...headers, ...fallback.headers };
         }
 
-        if (resolvedSources.length === 0) {
+        if (videoSources.length === 0) {
             throw new Error("No playable video streams extracted for episode: " + epUrl);
         }
 
         return {
-            server: selectedServer,
-            headers: resolvedHeaders,
-            videoSources: resolvedSources,
+            server: requestedServer,
+            headers,
+            videoSources,
         };
     }
 }

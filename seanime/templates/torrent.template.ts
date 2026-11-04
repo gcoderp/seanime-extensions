@@ -1,4 +1,4 @@
-/// <reference path="../../../seanime/types/seanime-env.d.ts" />
+/// <reference path="__ENV_TYPES_PATH__" />
 
 // ============================================================================
 // AUTO-GENERATED SEANIME TORRENT EXTENSION FROM CLOUDSTREAM (.cs3)
@@ -10,7 +10,7 @@
 __COMPAT_SHIM__
 
 class Provider {
-    private mainUrl: string = "__MAIN_URL__";
+    private mainUrl: string = __MAIN_URL__;
     private defaultHeaders: Record<string, string> = __DEFAULT_HEADERS__;
 
     getSettings(): TorrentProviderSettings {

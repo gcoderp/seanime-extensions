@@ -1,52 +1,13 @@
 [
   {
-    "last_run_timestamp": "2026-11-04T04:41:15.976951+00:00",
-    "converter_version": "2.4.0",
+    "last_run_timestamp": "2026-11-04T05:42:45.676524+00:00",
+    "converter_version": "2.5.0",
+    "mode": "fixtures",
     "total_processed": 3,
-    "successful_count": 0,
-    "failed_count": 3,
-    "needs_review_count": 0,
-    "skipped_count": 0,
-    "published_in_marketplace": 0
-  },
-  {
-    "last_run_timestamp": "2026-11-04T04:46:00.297864+00:00",
-    "converter_version": "2.4.0",
-    "total_processed": 3,
-    "successful_count": 0,
-    "failed_count": 3,
-    "needs_review_count": 0,
-    "skipped_count": 0,
-    "published_in_marketplace": 0
-  },
-  {
-    "last_run_timestamp": "2026-11-04T04:46:41.022185+00:00",
-    "converter_version": "2.4.0",
-    "total_processed": 3,
-    "successful_count": 0,
-    "failed_count": 3,
-    "needs_review_count": 0,
-    "skipped_count": 0,
-    "published_in_marketplace": 0
-  },
-  {
-    "last_run_timestamp": "2026-11-04T04:47:06.269949+00:00",
-    "converter_version": "2.4.0",
-    "total_processed": 3,
-    "successful_count": 1,
-    "failed_count": 2,
-    "needs_review_count": 0,
-    "skipped_count": 0,
-    "published_in_marketplace": 1
-  },
-  {
-    "last_run_timestamp": "2026-11-04T04:47:48.677044+00:00",
-    "converter_version": "2.4.0",
-    "total_processed": 3,
-    "successful_count": 3,
+    "successful_count": 2,
     "failed_count": 0,
-    "needs_review_count": 0,
+    "needs_review_count": 1,
     "skipped_count": 0,
-    "published_in_marketplace": 3
+    "published_in_marketplace": 2
   }
 ]

@@ -3,15 +3,20 @@
   "originalPluginName": "HiAnime",
   "originalInternalName": "HiAnimeProvider",
   "originalVersion": 9,
-  "originalDownloadUrl": "/home/bard/cloudstream-seanime-converter/tests/fixtures/HiAnimeProvider.cs3",
+  "originalDownloadUrl": "HiAnimeProvider.cs3",
   "originalRepositoryUrl": "https://github.com/hexated/cloudstream-extensions-hexated",
   "originalAuthors": [
     "hexated",
     "Cloudstream Community"
   ],
-  "license": "UNKNOWN_PUBLIC_REPO",
-  "cs3Sha256": "2988aa722ffd3a576ff315f122dd3590c8375903aa0654a7d48e361e0a6d19d9",
-  "converterVersion": "2.4.0",
-  "conversionStrategy": "STRATEGY_3_DEX_SMALI_IR_RECONSTRUCTION",
-  "convertedAt": "2026-11-04T04:47:48.650567+00:00"
+  "license": "UNKNOWN",
+  "cs3Sha256": "0bb89a23678e63c42db14eee69d4a597be847baf16343df788c8651e56e60784",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+  ],
+  "convertedAt": "2026-11-04T05:42:44.542509+00:00"
 }

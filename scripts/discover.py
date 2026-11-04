@@ -46,6 +46,9 @@ def discover_all_repositories(config_path: str = "config/repositories.json", off
         try:
             repo_json = downloader.fetch_json(repo_url)
             plugin_list_urls = manifest_parser.parse_repo_manifest(repo_json, repo_url)
+            if not plugin_list_urls and (isinstance(repo_json, list) or "plugins" in (repo_json or {})):
+                # The URL points straight at a plugins.json rather than a repo.json
+                plugin_list_urls = [repo_url]
             for pl_url in plugin_list_urls:
                 try:
                     raw_plugins = downloader.fetch_json(pl_url)

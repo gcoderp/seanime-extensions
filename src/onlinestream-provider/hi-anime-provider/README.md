@@ -8,11 +8,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 - **Version:** `1.9.0` (Upstream CS3 v9)
 - **Language:** `en`
 - **Original Author(s):** hexated, Cloudstream Community
-- **Conversion Strategy:** `STRATEGY_3_DEX_SMALI_IR_RECONSTRUCTION`
-- **CS3 SHA-256:** `2988aa722ffd3a576ff315f122dd3590c8375903aa0654a7d48e361e0a6d19d9`
+- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
+- **CS3 SHA-256:** `0bb89a23678e63c42db14eee69d4a597be847baf16343df788c8651e56e60784`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:
 ```text
-https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/onlinestream-provider/hi-anime-provider/manifest.json
+https://raw.githubusercontent.com/ghanshyam501cg/cloudstream-seanime-converter/main/src/onlinestream-provider/hi-anime-provider/manifest.json
 ```

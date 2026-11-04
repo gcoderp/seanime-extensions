@@ -2,13 +2,13 @@
   "id": "nyaa-torrent-provider",
   "name": "NyaaTorrents",
   "description": "Nyaa.si anime torrent & magnet provider with smart episode/resolution filtering.",
-  "manifestURI": "https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/anime-torrent-provider/nyaa-torrent-provider/manifest.json",
+  "manifestURI": "https://raw.githubusercontent.com/ghanshyam501cg/cloudstream-seanime-converter/main/src/anime-torrent-provider/nyaa-torrent-provider/manifest.json",
   "version": "1.5.0",
   "author": "recloudstream",
   "type": "anime-torrent-provider",
   "language": "typescript",
   "lang": "en",
-  "readme": "https://github.com/OWNER/cloudstream-seanime-converter/blob/main/src/anime-torrent-provider/nyaa-torrent-provider/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_1_EMBEDDED_KOTLIN_SOURCE and validated for Seanime Goja.",
-  "payloadURI": "https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/anime-torrent-provider/nyaa-torrent-provider/code.js"
+  "readme": "https://github.com/ghanshyam501cg/cloudstream-seanime-converter/blob/main/src/anime-torrent-provider/nyaa-torrent-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_1_EMBEDDED_KOTLIN_SOURCE; validation status SUCCESS.",
+  "payloadURI": "https://raw.githubusercontent.com/ghanshyam501cg/cloudstream-seanime-converter/main/src/anime-torrent-provider/nyaa-torrent-provider/code.js"
 }
