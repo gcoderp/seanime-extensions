@@ -12,10 +12,12 @@
   "cs3Sha256": "006b2f19719b16393adafcf5f9a76deeb1c1d50ae5b5b9fbcbec91d7a52c0dd6",
   "converterVersion": "2.5.0",
   "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
-  "validationStatus": "NEEDS_REVIEW",
+  "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
     "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
   ],
-  "convertedAt": "2026-11-04T08:01:09.709324+00:00"
+  "convertedAt": "2026-11-04T08:01:09.709324+00:00",
+  "licenseNotice": true,
+  "republishedAt": "2026-11-04T16:41:09.704649+00:00"
 }

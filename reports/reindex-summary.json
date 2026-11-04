@@ -1,0 +1,14 @@
+{
+  "republished_at": "2026-11-04T16:41:10.440077+00:00",
+  "owner": "gcoderp",
+  "repository": "seanime-extensions",
+  "branch": "main",
+  "unknown_license_policy": "publish_with_notice",
+  "bundles": 383,
+  "success": 300,
+  "needs_review": 83,
+  "failed": 0,
+  "published_in_marketplace": 300,
+  "manifest_urls": "manifest-urls.txt",
+  "manifests_rewritten": 338
+}

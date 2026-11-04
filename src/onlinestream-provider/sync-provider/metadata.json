@@ -19,5 +19,7 @@
     "No upstream base URL could be recovered.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-04T10:28:09.311000+00:00"
+  "convertedAt": "2026-11-04T10:28:09.311000+00:00",
+  "licenseNotice": true,
+  "republishedAt": "2026-11-04T16:41:08.455603+00:00"
 }

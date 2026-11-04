@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "ar",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/cee/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW. Licence: upstream repository declares no detectable licence; distributed with attribution only.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cee/code.js",
   "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEnHalnMz2EfG48BZUI6iC86seq09uafFngG8gz1OWQ&s=10"
 }

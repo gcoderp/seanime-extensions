@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "en",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/wcoflix/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS.",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS. Licence: upstream repository declares no detectable licence; distributed with attribution only.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/wcoflix/code.js",
   "icon": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wcoflix.tv/&size=128"
 }

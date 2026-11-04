@@ -101,7 +101,7 @@ class CsCompat {
         if (/\.m3u8(\?|$)/i.test(url) || url.includes("hls"))
             return "m3u8";
         if (/\.mpd(\?|$)/i.test(url))
-            return "dash";
+            return "unknown";
         if (/\.mp4(\?|$)/i.test(url))
             return "mp4";
         return "m3u8";
@@ -163,6 +163,7 @@ class Provider {
                 resolution: CsCompat.inferQuality(title),
                 isBatch: /batch|complete|\bS\d{1,2}\b(?!E)/i.test(title),
                 episodeNumber: epNum > 0 ? epNum : undefined,
+                isBestRelease: false,
                 confirmed: !!magnet,
             });
         });

@@ -101,7 +101,7 @@ class CsCompat {
         if (/\.m3u8(\?|$)/i.test(url) || url.includes("hls"))
             return "m3u8";
         if (/\.mpd(\?|$)/i.test(url))
-            return "dash";
+            return "unknown";
         if (/\.mp4(\?|$)/i.test(url))
             return "mp4";
         return "m3u8";
@@ -176,21 +176,23 @@ class AniListResolver {
         }
         return (2 * hits) / (ta.length + tb.length);
     }
-    /** Every title AniList knows for this media, most specific first, de-duplicated. */
+    /**
+     * Every title AniList knows for this media, in Seanime's GetAllTitles() order:
+     * romaji, english, then synonyms. De-duplicated case-insensitively.
+     */
     static titles(media, fallback) {
         const out = [];
         const push = (value) => {
             if (value && String(value).trim().length > 0)
                 out.push(String(value).trim());
         };
-        if (media && media.title) {
-            push(media.title.english);
-            push(media.title.romaji);
-            push(media.title.native);
-        }
-        if (media && media.synonyms && media.synonyms.length) {
-            for (const synonym of media.synonyms)
-                push(synonym);
+        if (media) {
+            push(media.romajiTitle);
+            push(media.englishTitle);
+            if (media.synonyms && media.synonyms.length) {
+                for (const synonym of media.synonyms)
+                    push(synonym);
+            }
         }
         push(fallback);
         const seen = new Set();
@@ -257,9 +259,37 @@ class AniListResolver {
         scored.sort((a, b) => (b.score - a.score) || (a.index - b.index));
         return scored.map((entry) => entry.item);
     }
-    /** Query strings to try, best first. Callers should stop at the first non-empty result. */
+    /**
+     * Query strings to try, best first. Seanime's own title for this call wins because that
+     * is the one the app selected; the remaining AniList titles are fallbacks for sites that
+     * index a different language.
+     */
     static queries(media, fallback, limit = 3) {
-        return AniListResolver.titles(media, fallback).slice(0, limit);
+        const ordered = [];
+        const seen = new Set();
+        const add = (value) => {
+            if (!value)
+                return;
+            const trimmed = String(value).trim();
+            const key = trimmed.toLowerCase();
+            if (trimmed && !seen.has(key)) {
+                seen.add(key);
+                ordered.push(trimmed);
+            }
+        };
+        add(fallback);
+        for (const title of AniListResolver.titles(media, ""))
+            add(title);
+        return ordered.slice(0, limit);
+    }
+    /** Release year: Seanime passes it at the top level, with startDate as the fallback. */
+    static yearOf(opts) {
+        if (opts && typeof opts.year === "number" && opts.year > 0)
+            return opts.year;
+        const media = opts && opts.media;
+        if (media && media.startDate && typeof media.startDate.year === "number")
+            return media.startDate.year;
+        return undefined;
     }
 }
 class ExtractorDispatcher {
@@ -406,7 +436,8 @@ class Provider {
         if (results.length === 0 && fallbackQuery && candidates.indexOf(fallbackQuery) === -1) {
             results = await this.searchSite(fallbackQuery);
         }
-        const year = media && typeof media.year === "number" ? media.year : undefined;
+        // Seanime passes the release year at the top level of SearchOptions.
+        const year = AniListResolver.yearOf(opts);
         results = AniListResolver.rank(results, (r) => r.title, media, year);
         if (opts.dub) {
             const dubs = results.filter((r) => r.subOrDub === "dub");

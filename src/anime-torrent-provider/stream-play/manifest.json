@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "en",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/anime-torrent-provider/stream-play/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS.",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS. Licence: upstream repository declares no detectable licence; distributed with attribution only.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stream-play/code.js",
   "icon": "https://i3.wp.com/yt3.googleusercontent.com/ytc/AIdro_nCBArSmvOc6o-k2hTYpLtQMPrKqGtAw_nC20rxm70akA=s900-c-k-c0x00ffffff-no-rj?ssl=1"
 }

@@ -17,5 +17,7 @@
   "reviewReasons": [
     "Base URL is a placeholder (example.com); scraper logic was not recovered."
   ],
-  "convertedAt": "2026-11-04T10:10:32.651162+00:00"
+  "convertedAt": "2026-11-04T10:10:32.651162+00:00",
+  "licenseNotice": true,
+  "republishedAt": "2026-11-04T16:41:10.206867+00:00"
 }
