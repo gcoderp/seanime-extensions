@@ -1,0 +1,80 @@
+name: publish
+
+# Manual publishing gate. Runs the full validation suite and only then commits the
+# already-generated bundles. Publishing never re-runs conversion, so a bad upstream
+# package cannot reach the marketplace through this path.
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "publish" to confirm'
+        required: true
+        default: ""
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check confirmation input
+        run: |
+          if [ "${{ github.event.inputs.confirm }}" != "publish" ]; then
+            echo "Confirmation input must be exactly 'publish'." >&2
+            exit 1
+          fi
+
+  validate:
+    needs: guard
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Install dependencies
+        run: |
+          set -euo pipefail
+          pip install -r requirements.txt
+          npm ci
+      - name: Unit tests
+        run: python3 -m pytest tests/ -q
+      - name: Type-check extension TypeScript
+        run: node scripts/typecheck.mjs
+      - name: Verify generated JavaScript parses
+        run: node scripts/validate.mjs
+      - name: Validate manifests and marketplace schema
+        run: python3 scripts/check_schema.py
+
+  publish:
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Commit and push validated extensions
+        run: |
+          set -euo pipefail
+          git config user.name "seanime-converter[bot]"
+          git config user.email "seanime-converter@users.noreply.github.com"
+          git add -A src generated marketplace.json reports
+          [ -f config/license-cache.json ] && git add config/license-cache.json
+          if git diff --cached --quiet; then
+            echo "Nothing to publish."
+            exit 0
+          fi
+          COUNT=$(python3 -c "import json;print(len(json.load(open('marketplace.json'))))")
+          git commit -m "chore(publish): ${COUNT} validated extension(s)"
+          git push

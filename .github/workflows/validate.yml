@@ -1,0 +1,70 @@
+name: validate
+
+# Quality gate for pull requests and pushes: unit tests, TypeScript type-check of the
+# generated sources, JavaScript parse check, manifest/marketplace schema and the
+# conversion of the offline fixture set (no network required).
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Install dependencies
+        run: |
+          set -euo pipefail
+          pip install -r requirements.txt
+          npm ci
+      - name: Run unit tests
+        run: python3 -m pytest tests/ -v
+
+  artifacts:
+    name: Generated artifacts
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Install dependencies
+        run: |
+          set -euo pipefail
+          pip install -r requirements.txt
+          npm ci
+      - name: Type-check extension TypeScript
+        run: node scripts/typecheck.mjs
+      - name: Verify generated JavaScript parses
+        run: node scripts/validate.mjs
+      - name: Validate manifests and marketplace schema
+        run: python3 scripts/check_schema.py
+      - name: Rebuild fixtures and confirm the pipeline is reproducible
+        run: |
+          set -euo pipefail
+          python3 scripts/convert.py --fixtures
+          node scripts/validate.mjs
