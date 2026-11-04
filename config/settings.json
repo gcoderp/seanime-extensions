@@ -1,0 +1,37 @@
+{
+  "github_owner": "OWNER",
+  "github_repo": "cloudstream-seanime-converter",
+  "github_branch": "main",
+  "converter_version": "2.4.0",
+  "security": {
+    "max_zip_entries": 2500,
+    "max_uncompressed_bytes": 52428800,
+    "max_compression_ratio": 80.0,
+    "block_private_ips": true,
+    "allowed_schemes": [
+      "https"
+    ]
+  },
+  "ai_fallback": {
+    "enabled_if_secret_present": true,
+    "provider": "openai_compatible",
+    "model": "gpt-4o-mini",
+    "max_tokens": 4096,
+    "strict_goja_validation": true
+  },
+  "licensing": {
+    "allowed_spdx": [
+      "MIT",
+      "GPL-3.0",
+      "GPL-3.0-only",
+      "GPL-3.0-or-later",
+      "Apache-2.0",
+      "BSD-3-Clause",
+      "Unlicense",
+      "UNKNOWN_PUBLIC_REPO"
+    ],
+    "redact_secrets_patterns": [
+      "(?i)(api[_-]?key|secret|token|authorization)\\s*[:=]\\s*['\"][A-Za-z0-9_\\-]{16,}['\"]"
+    ]
+  }
+}

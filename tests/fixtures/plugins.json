@@ -1,0 +1,62 @@
+[
+  {
+    "name": "GogoAnime",
+    "internalName": "GogoAnimeProvider",
+    "url": "GogoAnimeProvider.cs3",
+    "version": 12,
+    "apiVersion": 3,
+    "status": 1,
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "authors": [
+      "recloudstream",
+      "Cloudstream Community"
+    ],
+    "description": "High-speed GogoAnime / Anitaku provider with sub/dub and multi-server extraction.",
+    "language": "en",
+    "repositoryUrl": "https://github.com/recloudstream/cloudstream-extensions",
+    "sha256": "c5baffd7ae5d5b055267b794652f528100e31ad52a4242e81a88bbe3d14baf9c"
+  },
+  {
+    "name": "HiAnime",
+    "internalName": "HiAnimeProvider",
+    "url": "HiAnimeProvider.cs3",
+    "version": 9,
+    "apiVersion": 3,
+    "status": 1,
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie"
+    ],
+    "authors": [
+      "hexated",
+      "Cloudstream Community"
+    ],
+    "description": "HiAnime online streaming provider reconstructed from DEX bytecode with multi-mirror fallback.",
+    "language": "en",
+    "repositoryUrl": "https://github.com/hexated/cloudstream-extensions-hexated",
+    "sha256": "faac9f3846d9cee43ae351d3515cb6210a122524c1b78c228018051b6a28bf73"
+  },
+  {
+    "name": "NyaaTorrents",
+    "internalName": "NyaaTorrentProvider",
+    "url": "NyaaTorrentProvider.cs3",
+    "version": 5,
+    "apiVersion": 3,
+    "status": 1,
+    "tvTypes": [
+      "Torrent",
+      "Anime"
+    ],
+    "authors": [
+      "recloudstream"
+    ],
+    "description": "Nyaa.si anime torrent & magnet provider with smart episode/resolution filtering.",
+    "language": "en",
+    "repositoryUrl": "https://github.com/recloudstream/cloudstream-extensions",
+    "sha256": "652a2ddc81e1814d8712c01bca7c8a6d80078cb3bfd2d37fe901eb67a1de5e47"
+  }
+]

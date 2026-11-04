@@ -1,0 +1,17 @@
+{
+  "extensionId": "hi-anime-provider",
+  "originalPluginName": "HiAnime",
+  "originalInternalName": "HiAnimeProvider",
+  "originalVersion": 9,
+  "originalDownloadUrl": "/home/bard/cloudstream-seanime-converter/tests/fixtures/HiAnimeProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/hexated/cloudstream-extensions-hexated",
+  "originalAuthors": [
+    "hexated",
+    "Cloudstream Community"
+  ],
+  "license": "UNKNOWN_PUBLIC_REPO",
+  "cs3Sha256": "2988aa722ffd3a576ff315f122dd3590c8375903aa0654a7d48e361e0a6d19d9",
+  "converterVersion": "2.4.0",
+  "conversionStrategy": "STRATEGY_3_DEX_SMALI_IR_RECONSTRUCTION",
+  "convertedAt": "2026-11-04T04:47:48.650567+00:00"
+}

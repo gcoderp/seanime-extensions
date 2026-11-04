@@ -1,0 +1,30 @@
+{
+  "online_streaming": [
+    {
+      "query": "Frieren",
+      "anilist_id": 154587,
+      "expected_min_episodes": 1,
+      "dub": false
+    },
+    {
+      "query": "One Piece",
+      "anilist_id": 21,
+      "expected_min_episodes": 1,
+      "dub": false
+    }
+  ],
+  "anime_torrent": [
+    {
+      "query": "Solo Leveling",
+      "anilist_id": 151807,
+      "episode_number": 1,
+      "resolution": "1080p"
+    }
+  ],
+  "validation_policy": {
+    "require_static_ast_pass": true,
+    "require_goja_sandbox_pass": true,
+    "require_mock_contract_pass": true,
+    "allow_live_network_soft_fail_on_cloudflare": true
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "nyaa-torrent-provider",
+    "name": "NyaaTorrents",
+    "description": "Nyaa.si anime torrent & magnet provider with smart episode/resolution filtering.",
+    "manifestURI": "https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/anime-torrent-provider/nyaa-torrent-provider/manifest.json",
+    "version": "1.5.0",
+    "author": "recloudstream",
+    "type": "anime-torrent-provider",
+    "language": "typescript",
+    "lang": "en",
+    "readme": "https://github.com/OWNER/cloudstream-seanime-converter/blob/main/src/anime-torrent-provider/nyaa-torrent-provider/README.md",
+    "notes": "Automatically converted via strategy STRATEGY_1_EMBEDDED_KOTLIN_SOURCE and validated for Seanime Goja.",
+    "payloadURI": "https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/anime-torrent-provider/nyaa-torrent-provider/code.js"
+  },
+  {
+    "id": "gogo-anime-provider",
+    "name": "GogoAnime",
+    "description": "High-speed GogoAnime / Anitaku provider with sub/dub and multi-server extraction.",
+    "manifestURI": "https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/onlinestream-provider/gogo-anime-provider/manifest.json",
+    "version": "1.12.0",
+    "author": "recloudstream, Cloudstream Community",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "en",
+    "readme": "https://github.com/OWNER/cloudstream-seanime-converter/blob/main/src/onlinestream-provider/gogo-anime-provider/README.md",
+    "notes": "Automatically converted via strategy STRATEGY_1_EMBEDDED_KOTLIN_SOURCE and validated for Seanime Goja.",
+    "payloadURI": "https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/onlinestream-provider/gogo-anime-provider/code.js"
+  },
+  {
+    "id": "hi-anime-provider",
+    "name": "HiAnime",
+    "description": "HiAnime online streaming provider reconstructed from DEX bytecode with multi-mirror fallback.",
+    "manifestURI": "https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/onlinestream-provider/hi-anime-provider/manifest.json",
+    "version": "1.9.0",
+    "author": "hexated, Cloudstream Community",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "en",
+    "readme": "https://github.com/OWNER/cloudstream-seanime-converter/blob/main/src/onlinestream-provider/hi-anime-provider/README.md",
+    "notes": "Automatically converted via strategy STRATEGY_3_DEX_SMALI_IR_RECONSTRUCTION and validated for Seanime Goja.",
+    "payloadURI": "https://raw.githubusercontent.com/OWNER/cloudstream-seanime-converter/main/src/onlinestream-provider/hi-anime-provider/code.js"
+  }
+]

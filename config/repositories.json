@@ -1,0 +1,45 @@
+{
+  "repositories": [
+    {
+      "name": "Cloudstream Anime Providers",
+      "url": "https://raw.githubusercontent.com/recloudstream/cloudstream-extensions/builds/repo.json",
+      "enabled": true,
+      "categories": [
+        "Anime",
+        "AnimeMovie",
+        "OVA"
+      ],
+      "conversion": "auto",
+      "priority": 1,
+      "allow_mirror_discovery": true
+    },
+    {
+      "name": "Cloudstream Multilingual & Torrent Providers",
+      "url": "https://raw.githubusercontent.com/hexated/cloudstream-extensions-hexated/builds/repo.json",
+      "enabled": true,
+      "categories": [
+        "Anime",
+        "Torrent",
+        "AsianDrama"
+      ],
+      "conversion": "auto",
+      "priority": 2,
+      "allow_mirror_discovery": true
+    }
+  ],
+  "settings": {
+    "automatic_updates": true,
+    "preserve_original_packages": false,
+    "generate_typescript": true,
+    "generate_javascript": true,
+    "generate_manifests": true,
+    "generate_marketplace": true,
+    "publish_only_valid_extensions": true,
+    "enable_self_healing_ast_repair": true,
+    "enable_cloudflare_clearance_bridge": true,
+    "enable_domain_auto_updater": true,
+    "max_parallel_workers": 4,
+    "request_timeout_seconds": 25,
+    "max_cs3_size_mb": 25
+  }
+}

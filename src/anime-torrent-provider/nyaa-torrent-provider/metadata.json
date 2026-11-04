@@ -1,0 +1,16 @@
+{
+  "extensionId": "nyaa-torrent-provider",
+  "originalPluginName": "NyaaTorrents",
+  "originalInternalName": "NyaaTorrentProvider",
+  "originalVersion": 5,
+  "originalDownloadUrl": "/home/bard/cloudstream-seanime-converter/tests/fixtures/NyaaTorrentProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/recloudstream/cloudstream-extensions",
+  "originalAuthors": [
+    "recloudstream"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "a1a7519c812dc1ce160185b1641108daac58520ee46d7110635e0297a252f18e",
+  "converterVersion": "2.4.0",
+  "conversionStrategy": "STRATEGY_1_EMBEDDED_KOTLIN_SOURCE",
+  "convertedAt": "2026-11-04T04:47:48.671302+00:00"
+}

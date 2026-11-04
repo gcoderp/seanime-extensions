@@ -1,0 +1,107 @@
+{
+  "version": "2.4.0",
+  "source_of_truth": "https://github.com/recloudstream/cloudstream",
+  "target_runtime": "Seanime Goja Engine",
+  "mappings": [
+    {
+      "cloudstream_api": "MainAPI.search(query: String): List<SearchResponse>",
+      "parameter_types": [
+        "String"
+      ],
+      "expected_behavior": "Queries upstream site and returns list of matching anime/series entries",
+      "seanime_target": "Provider.search(opts: SearchOptions): Promise<SearchResult[]>",
+      "transformation": "Map opts.query into search URL, parse HTML/JSON, map newAnimeSearchResponse to {id, title, url, subOrDub}",
+      "compatibility_status": "FULL"
+    },
+    {
+      "cloudstream_api": "MainAPI.load(url: String): LoadResponse",
+      "parameter_types": [
+        "String"
+      ],
+      "expected_behavior": "Loads anime details page and extracts episode list (sub/dub)",
+      "seanime_target": "Provider.findEpisodes(id: string): Promise<EpisodeDetails[]>",
+      "transformation": "Fetch anime detail page from id/url, extract episode elements, map newEpisode to {id, number, url, title}",
+      "compatibility_status": "FULL"
+    },
+    {
+      "cloudstream_api": "MainAPI.loadLinks(data: String, isCasting: Boolean, subtitleCallback, callback)",
+      "parameter_types": [
+        "String",
+        "Boolean",
+        "(SubtitleFile) -> Unit",
+        "(ExtractorLink) -> Unit"
+      ],
+      "expected_behavior": "Resolves video servers and stream links (m3u8/mp4/dash) plus subtitles",
+      "seanime_target": "Provider.findEpisodeServer(episode: EpisodeDetails, server: string): Promise<EpisodeServer>",
+      "transformation": "Collect callback(ExtractorLink) and subtitleCallback(SubtitleFile) into EpisodeServer.videoSources and subtitles",
+      "compatibility_status": "FULL"
+    },
+    {
+      "cloudstream_api": "app.get(url, headers, referer, params)",
+      "parameter_types": [
+        "String",
+        "Map<String, String>",
+        "String?",
+        "Map<String, String>"
+      ],
+      "expected_behavior": "Performs asynchronous HTTP GET using NiceHttp/OkHttp",
+      "seanime_target": "fetch(url, { method: 'GET', headers })",
+      "transformation": "Convert referer into headers['Referer'], serialize params via URLSearchParams, parse .document via LoadDoc(await res.text())",
+      "compatibility_status": "FULL"
+    },
+    {
+      "cloudstream_api": "app.post(url, headers, data, json)",
+      "parameter_types": [
+        "String",
+        "Map<String, String>",
+        "Map<String, String>?",
+        "Any?"
+      ],
+      "expected_behavior": "Performs asynchronous HTTP POST",
+      "seanime_target": "fetch(url, { method: 'POST', headers, body })",
+      "transformation": "Encode form data or JSON.stringify payload",
+      "compatibility_status": "FULL"
+    },
+    {
+      "cloudstream_api": "NiceResponse.document (Jsoup Document)",
+      "parameter_types": [],
+      "expected_behavior": "Parses HTML response into DOM tree supporting CSS selectors",
+      "seanime_target": "LoadDoc(html)",
+      "transformation": "Convert doc.select(sel) to $(sel), el.attr('href') to el.attr('href'), el.text() to el.text()",
+      "compatibility_status": "FULL"
+    },
+    {
+      "cloudstream_api": "loadExtractor(url, referer, subtitleCallback, callback)",
+      "parameter_types": [
+        "String",
+        "String?",
+        "(SubtitleFile) -> Unit",
+        "(ExtractorLink) -> Unit"
+      ],
+      "expected_behavior": "Dispatches embedded player URL to matching Cloudstream ExtractorApi implementation",
+      "seanime_target": "Built-in ExtractorDispatcher.resolve(url, referer)",
+      "transformation": "Route embed URL through generated multi-host TypeScript extractor library",
+      "compatibility_status": "FULL"
+    },
+    {
+      "cloudstream_api": "getAndUnpack(string)",
+      "parameter_types": [
+        "String"
+      ],
+      "expected_behavior": "Unpacks Dean Edwards p,a,c,k,e,r obfuscated JS script blocks",
+      "seanime_target": "CsCompat.unpackJs(string)",
+      "transformation": "Deterministic pure-TS base-N symbol table unpacker (no eval)",
+      "compatibility_status": "FULL"
+    },
+    {
+      "cloudstream_api": "WebViewResolver / CloudflareKillerInterceptor",
+      "parameter_types": [
+        "Regex"
+      ],
+      "expected_behavior": "Uses Android headless WebView to bypass interactive JS challenges or CAPTCHAs",
+      "seanime_target": "Unsupported in pure Goja (flagged or routed via optional CF clearance headers)",
+      "transformation": "Emit warning in conversion report; use mirror fallback if available",
+      "compatibility_status": "PARTIAL"
+    }
+  ]
+}
