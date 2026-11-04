@@ -1,0 +1,21 @@
+{
+  "extensionId": "krmzy",
+  "originalPluginName": "Krmzy",
+  "originalInternalName": "Krmzy",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Krmzy.cs3",
+  "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
+  "originalAuthors": [
+    "kraptor"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "9d37682df1393aa01f4ae3adb584912ce19629bd5dca8256aa2f136206729040",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:00:36.786755+00:00"
+}

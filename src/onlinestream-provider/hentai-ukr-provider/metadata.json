@@ -1,0 +1,19 @@
+{
+  "extensionId": "hentai-ukr-provider",
+  "originalPluginName": "HentaiUkrProvider",
+  "originalInternalName": "HentaiUkrProvider",
+  "originalVersion": 6,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/HentaiUkrProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "bd9a0f9ada45b059123adb3593c8c5853ec5c2af43c3a91438165ec548a93d09",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:01:35.420663+00:00"
+}

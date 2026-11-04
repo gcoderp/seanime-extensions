@@ -1,0 +1,21 @@
+{
+  "extensionId": "moviebox",
+  "originalPluginName": "Moviebox",
+  "originalInternalName": "Moviebox",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Moviebox.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "66248c4ae03c9278aa45f9facc67ca0c0d329d102daa33ecf0cd048d48753e1f",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+  ],
+  "convertedAt": "2026-11-04T07:56:17.457948+00:00"
+}

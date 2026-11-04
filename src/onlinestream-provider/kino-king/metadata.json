@@ -1,0 +1,21 @@
+{
+  "extensionId": "kino-king",
+  "originalPluginName": "KinoKing",
+  "originalInternalName": "KinoKing",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/KinoKing.cs3",
+  "originalRepositoryUrl": "https://github.com/Bnyro/GermanProviders",
+  "originalAuthors": [
+    "Bnyro"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "d8109caff4f539bcff50a0afffa857e2ecac4a25d4d5a48ba5358b6a1a7ef6d8",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:04:19.035179+00:00"
+}

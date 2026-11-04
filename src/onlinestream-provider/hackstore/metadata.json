@@ -1,0 +1,22 @@
+{
+  "extensionId": "hackstore",
+  "originalPluginName": "Hackstore",
+  "originalInternalName": "Hackstore",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Hackstore.cs3",
+  "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
+  "originalAuthors": [
+    "ByAyzen"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "d0ae64df7d3de29e9bdbf4e229a91c44ba2c1aa91926665f6e47229e191f52ad",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:00:27.063462+00:00"
+}

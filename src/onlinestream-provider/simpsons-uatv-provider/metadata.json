@@ -1,0 +1,19 @@
+{
+  "extensionId": "simpsons-uatv-provider",
+  "originalPluginName": "SimpsonsUATvProvider",
+  "originalInternalName": "SimpsonsUATvProvider",
+  "originalVersion": 6,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/SimpsonsUATvProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "deleteBlack666"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "54c79ce42b2d45fcca183af3e10490f5e486892dc7b2040d90d0676a105808c9",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:01:50.651273+00:00"
+}

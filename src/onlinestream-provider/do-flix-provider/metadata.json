@@ -1,0 +1,22 @@
+{
+  "extensionId": "do-flix-provider",
+  "originalPluginName": "DoFlixProvider",
+  "originalInternalName": "DoFlixProvider",
+  "originalVersion": 38,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/DoFlixProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
+  "originalAuthors": [
+    "NivinCNC"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "628b3a92208fd980bd7b52bbafeab6338a8561349470af21f8f57e8e3a346acb",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:57:50.428408+00:00"
+}

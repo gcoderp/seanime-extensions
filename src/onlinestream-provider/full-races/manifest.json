@@ -1,0 +1,15 @@
+{
+  "id": "full-races",
+  "name": "FullRaces",
+  "description": "Formula 1 is one of the most popular and dramatic sports in the world. You can watch Formula One races replays videos online and enjoy every moment of this exciting sports event. We offer to watch F1 Full Races replays FREE in HD",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/full-races/manifest.json",
+  "version": "1.16.0",
+  "author": "kraptor123, kerimmkirac",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/full-races/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/full-races/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=fullraces.com&sz=%size%"
+}

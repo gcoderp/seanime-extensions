@@ -1,0 +1,15 @@
+{
+  "id": "kawanfilm",
+  "name": "Kawanfilm",
+  "description": "\ud83d\udcfa Streaming Movie and TV Series",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kawanfilm/manifest.json",
+  "version": "1.1.0",
+  "author": "Asm0d3usX",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "id",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/kawanfilm/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kawanfilm/code.js",
+  "icon": "https://i.ibb.co.com/KjQdk4YC/kawanfilm.png"
+}

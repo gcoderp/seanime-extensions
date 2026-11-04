@@ -1,0 +1,15 @@
+{
+  "id": "embed-tv",
+  "name": "EmbedTV",
+  "description": "Embed TV - O melhor site de TV online. ",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/embed-tv/manifest.json",
+  "version": "1.3.0",
+  "author": "lawlietbr",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "pt-br",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/embed-tv/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/embed-tv/code.js",
+  "icon": "https://embedtv.best/assets/icon.png"
+}

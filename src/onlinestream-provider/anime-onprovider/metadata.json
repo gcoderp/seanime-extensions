@@ -1,0 +1,22 @@
+{
+  "extensionId": "anime-onprovider",
+  "originalPluginName": "AnimeONProvider",
+  "originalInternalName": "AnimeONProvider",
+  "originalVersion": 48,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/AnimeONProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix",
+    "deleteBlack666"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "d6d259c6eacc06342e629ec84a75d2528630948be91f54c1cb8a24e593215334",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+  ],
+  "convertedAt": "2026-11-04T08:01:15.956168+00:00"
+}

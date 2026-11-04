@@ -1,0 +1,15 @@
+{
+  "id": "hdhub4u",
+  "name": "HDhub4u",
+  "description": "Converted from HDhub4u",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hdhub4u/manifest.json",
+  "version": "1.57.0",
+  "author": "Phisher98",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "hi",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/hdhub4u/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hdhub4u/code.js",
+  "icon": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/HDHUB.png"
+}

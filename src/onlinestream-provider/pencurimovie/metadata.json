@@ -1,0 +1,20 @@
+{
+  "extensionId": "pencurimovie",
+  "originalPluginName": "Pencurimovie",
+  "originalInternalName": "Pencurimovie",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pencurimovie.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Phisher98",
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "21060e44e73398f189700f39d02fe238228a7c678a5732fd6f0171cea5ddef87",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:23.761728+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "extensionId": "mass-tamilan-provider",
+  "originalPluginName": "MassTamilanProvider",
+  "originalInternalName": "MassTamilanProvider",
+  "originalVersion": 9,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/MassTamilanProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "Phisher98,LikDev-256"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "041f1252705051490939ccfe93b428b4b7e5d5065d9ff84e2f59878618e3b7b5",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:50:26.302917+00:00"
+}

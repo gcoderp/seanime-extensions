@@ -1,0 +1,34 @@
+{
+  "plugin_name": "Movix",
+  "original_plugin_id": "Movix",
+  "original_author": "ByAyzen",
+  "original_repository": "https://github.com/Kraptor123/Cs-Karma",
+  "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Movix.cs3",
+  "original_version": 33,
+  "sha256_checksum": "ced9099329347aa0cd994a5cacb1cad1283a265c27ccbbf947c849d6aa78f646",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "RECOVERED",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "SUCCESS",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T08:00:42.102272+00:00",
+  "passed": false
+}

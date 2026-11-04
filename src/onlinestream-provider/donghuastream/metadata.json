@@ -1,0 +1,21 @@
+{
+  "extensionId": "donghuastream",
+  "originalPluginName": "Donghuastream",
+  "originalInternalName": "Donghuastream",
+  "originalVersion": 22,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Donghuastream.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "Phisher98"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "834c0bcbcbf8f11a632583cc484670a007db19fa283ea379f662b86f611cbf56",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:49:24.296520+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "extensionId": "uaflix-provider",
+  "originalPluginName": "UAFlixProvider",
+  "originalInternalName": "UAFlixProvider",
+  "originalVersion": 23,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UAFlixProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "6ffeea729e8f89a99d17088cbfa8eee6c002b524f0d6e5645aa1a7f827bdbb38",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:01:57.517017+00:00"
+}

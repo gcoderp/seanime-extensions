@@ -1,0 +1,31 @@
+{
+  "plugin_name": "SerialnoProvider",
+  "original_plugin_id": "SerialnoProvider",
+  "original_author": "CakesTwix",
+  "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/SerialnoProvider.cs3",
+  "original_version": 13,
+  "sha256_checksum": "a17631fb29dd710d59144cb1b80e9b0fdd17fe2b0f1eb816fba66f239855bf54",
+  "license_spdx": "GPL-3.0",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "RECOVERED",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "SUCCESS",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "SUCCESS",
+  "review_reasons": [],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T08:01:45.175181+00:00",
+  "passed": true
+}

@@ -1,0 +1,15 @@
+{
+  "id": "coflix",
+  "name": "Coflix",
+  "description": "Movies,Series and Anime French Extension ",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/coflix/manifest.json",
+  "version": "1.19.0",
+  "author": "Phisher98",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "fr",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/coflix/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/coflix/code.js",
+  "icon": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Coflix.png"
+}

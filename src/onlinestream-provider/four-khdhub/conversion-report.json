@@ -1,0 +1,33 @@
+{
+  "plugin_name": "FourKHDHub",
+  "original_plugin_id": "FourKHDHub",
+  "original_author": "Phisher98",
+  "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/FourKHDHub.cs3",
+  "original_version": 41,
+  "sha256_checksum": "96edfe1a8ed1a54cc3739a2aff68175b2413d79e5d6466ab781cee9c4475168e",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T07:49:35.980575+00:00",
+  "passed": false
+}

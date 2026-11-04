@@ -1,0 +1,24 @@
+{
+  "extensionId": "french-stream-provider",
+  "originalPluginName": "FrenchStreamProvider",
+  "originalInternalName": "FrenchStreamProvider",
+  "originalVersion": 27,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/zzikozz/frenchCS/refs/heads/builds/FrenchStreamProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/zzikozz/frenchCS",
+  "originalAuthors": [
+    "Sarlay",
+    "Eddy976",
+    "AirbnbEcoPlus",
+    "zzikozz"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "c3267dbce616a7d74a5ae9efb62a5ff76c948416f396ea7d7b05981bd66e195d",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:04:47.526786+00:00"
+}

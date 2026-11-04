@@ -1,0 +1,21 @@
+{
+  "extensionId": "replaymatch",
+  "originalPluginName": "FullMatchShows",
+  "originalInternalName": "Replaymatch",
+  "originalVersion": 3,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Replaymatch.cs3",
+  "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+  "originalAuthors": [
+    "Abodabodd"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "2ea8e3af37bb0ddfb3020e80c29eff6dedfc761641228d61d4c6575c3eccb3b9",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:54:13.012597+00:00"
+}

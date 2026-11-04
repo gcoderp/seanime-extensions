@@ -1,0 +1,33 @@
+{
+  "plugin_name": "Tuktukcima",
+  "original_plugin_id": "TukTukcima",
+  "original_author": "Abodabodd",
+  "original_repository": "https://github.com/Abodabodd/re-3arabi",
+  "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/TukTukcima.cs3",
+  "original_version": 2,
+  "sha256_checksum": "c3269d7f149e53773adb026be70248cb9f88581f1eb9a7df8d670057e7bd1a31",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T07:54:22.775580+00:00",
+  "passed": false
+}

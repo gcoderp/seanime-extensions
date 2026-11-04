@@ -1,0 +1,21 @@
+{
+  "extensionId": "animesalt",
+  "originalPluginName": "Animesalt",
+  "originalInternalName": "Animesalt",
+  "originalVersion": 18,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animesalt.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "Phisher98"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "9c1c6571a5ef379d50ee6f3c6d4bf491c1600c16913fafda18c30dbcecc9a745",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:48:40.229643+00:00"
+}

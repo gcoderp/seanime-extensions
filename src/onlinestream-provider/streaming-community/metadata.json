@@ -1,0 +1,22 @@
+{
+  "extensionId": "streaming-community",
+  "originalPluginName": "StreamingCommunity",
+  "originalInternalName": "StreamingCommunity",
+  "originalVersion": 53,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/StreamingCommunity.cs3",
+  "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
+  "originalAuthors": [
+    "Nanduuu03",
+    "DieGon"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "2e486e3958b9ab50ee7c0951b142dea870bcbf69db059cef3af0ea7bc109d5f0",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:59:32.944301+00:00"
+}

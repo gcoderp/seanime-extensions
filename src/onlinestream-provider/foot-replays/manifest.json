@@ -1,0 +1,15 @@
+{
+  "id": "foot-replays",
+  "name": "FootReplays",
+  "description": "Converted from FootReplays",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/foot-replays/manifest.json",
+  "version": "1.2.0",
+  "author": "ByAyzen",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/foot-replays/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/foot-replays/code.js",
+  "icon": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.footreplays.com/&size=128"
+}

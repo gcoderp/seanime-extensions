@@ -1,0 +1,22 @@
+{
+  "extensionId": "netzkino",
+  "originalPluginName": "Netzkino",
+  "originalInternalName": "Netzkino",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/Netzkino.cs3",
+  "originalRepositoryUrl": "https://github.com/Bnyro/GermanProviders",
+  "originalAuthors": [
+    "Bnyro"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "ad0dcc0bad379949e5bb339597e9faaf61515c7f14c109bd8bd544362cb40363",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:04:26.183614+00:00"
+}

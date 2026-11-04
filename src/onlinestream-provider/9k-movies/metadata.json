@@ -1,0 +1,21 @@
+{
+  "extensionId": "9k-movies",
+  "originalPluginName": "9kMovies",
+  "originalInternalName": "9kMovies",
+  "originalVersion": 11,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/redowan99/Redowan-CloudStream/builds/9kMovies.cs3",
+  "originalRepositoryUrl": "https://github.com/redowan99/Redowan-CloudStream",
+  "originalAuthors": [
+    "Redowan"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "f1db082792182fa5b2ee25c13e963268666a6fa855a0de7cadb7348fef92907f",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:02:50.293060+00:00"
+}

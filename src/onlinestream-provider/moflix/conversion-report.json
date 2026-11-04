@@ -1,0 +1,33 @@
+{
+  "plugin_name": "Moflix",
+  "original_plugin_id": "Moflix",
+  "original_author": "Hexated, Bnyro",
+  "original_repository": "https://github.com/Bnyro/GermanProviders",
+  "original_download_url": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/Moflix.cs3",
+  "original_version": 5,
+  "sha256_checksum": "0dd11c5462a14d004c7f39e74a038e16c6993933d004e7f2c1cd6744ad0d1608",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "RECOVERED",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "SUCCESS",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T08:04:20.860131+00:00",
+  "passed": false
+}

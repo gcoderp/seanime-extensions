@@ -1,0 +1,22 @@
+{
+  "extensionId": "ntvprovider",
+  "originalPluginName": "NTVProvider",
+  "originalInternalName": "NTVProvider",
+  "originalVersion": 5,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/NTVProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
+  "originalAuthors": [
+    "NivinCNC"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "01e2789a325b34f632698d97ed1c6e3251003131ee3d12ad38137d0857c2c2cd",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:58:23.073093+00:00"
+}

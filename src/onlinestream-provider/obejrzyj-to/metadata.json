@@ -1,0 +1,22 @@
+{
+  "extensionId": "obejrzyj-to",
+  "originalPluginName": "ObejrzyjTo",
+  "originalInternalName": "ObejrzyjTo",
+  "originalVersion": 3,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/ObejrzyjTo.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "Phisher98"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "092780e3c767dde14b48304205655f25ad06cb30c1bc1351d0b620c0fa2b0f37",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:50:54.303265+00:00"
+}

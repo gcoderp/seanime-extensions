@@ -1,0 +1,22 @@
+{
+  "extensionId": "kartoons",
+  "originalPluginName": "Kartoons",
+  "originalInternalName": "Kartoons",
+  "originalVersion": 6,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Kartoons.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "Phisher98"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "a9d7aa2d9b9719b11f52b8e2790b1b7598686594e0fad77bdbef2813d1a0e9cb",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:50:13.090547+00:00"
+}

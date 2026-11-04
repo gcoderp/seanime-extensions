@@ -1,0 +1,20 @@
+{
+  "extensionId": "guarda-serie-provider",
+  "originalPluginName": "GuardaSerieProvider",
+  "originalInternalName": "GuardaSerieProvider",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Gian-Fr/ItalianProvider/builds/GuardaSerieProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/Gian-Fr/ItalianProvider",
+  "originalAuthors": [
+    "Gian-Fr",
+    "Adippe"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "1bc6f551461dbfa6a851265d8e50ea6a51c3bfc13e8ad5ccebeeea838e5d56bf",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:02:44.595236+00:00"
+}

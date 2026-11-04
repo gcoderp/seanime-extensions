@@ -1,0 +1,22 @@
+{
+  "extensionId": "torrentio",
+  "originalPluginName": "Torrentio",
+  "originalInternalName": "Torrentio",
+  "originalVersion": 9,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/Torrentio.cs3",
+  "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
+  "originalAuthors": [
+    "doGior",
+    "DieGon"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "ca50d64ae259c7b9167d5fddf03902ec418a0a9d57230f84545ca97cd9df147c",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:59:41.050068+00:00"
+}

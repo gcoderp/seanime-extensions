@@ -1,0 +1,15 @@
+{
+  "id": "3isk",
+  "name": "3isk",
+  "description": "Automatically converted Cloudstream 3isk extension",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/3isk/manifest.json",
+  "version": "1.2.0",
+  "author": "Abodabodd",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "ar",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/3isk/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/3isk/code.js",
+  "icon": "https://3esk.onl/wp-content/uploads/2021/01/3isk-logo.png"
+}

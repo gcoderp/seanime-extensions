@@ -1,0 +1,15 @@
+{
+  "id": "esheaq",
+  "name": "Esheaq",
+  "description": "\u0642\u0635\u0629 \u0639\u0634\u0642 \u0627\u0644\u0623\u0635\u0644\u064a \u0644\u0623\u062d\u062f\u062b \u0627\u0644\u0645\u0633\u0644\u0633\u0644\u0627\u062a \u0627\u0644\u062a\u0631\u0643\u064a\u0629 \u0648\u0627\u0644\u062f\u0631\u0627\u0645\u0627 \u0627\u0644\u0645\u062a\u0631\u062c\u0645\u0629 \u0639\u0644\u064a \u0642\u0635\u0647 \u0639\u0634\u0642 \u060c \u064a\u0645\u0643\u0646\u0643 \u0645\u0646 \u062e\u0644\u0627\u0644 \u0645\u0648\u0642\u0639 \u0642\u0635\u0629 \u0639\u0634\u0642 \u0645\u0634\u0627\u0647\u062f\u0629 \u0643\u0644 \u062c\u062f\u064a\u062f \u0641\u064a \u0639\u0627\u0644\u0645 \u0627\u0644\u062f\u0631\u0627\u0645\u0627 \u0627\u0644\u062a\u0631\u0643\u064a\u0629",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/esheaq/manifest.json",
+  "version": "1.22.0",
+  "author": "kraptor",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "ar",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/esheaq/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/esheaq/code.js",
+  "icon": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://esheeq.study&size=128"
+}

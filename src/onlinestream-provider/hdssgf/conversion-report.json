@@ -1,0 +1,33 @@
+{
+  "plugin_name": "HDssGF",
+  "original_plugin_id": "hdssgf",
+  "original_author": "tOntOnbOuLii, x-R0b0T-x",
+  "original_repository": "https://github.com/tOntOnbOuLii/GramFlix",
+  "original_download_url": "https://raw.githubusercontent.com/tOntOnbOuLii/GramFlix/main/hdssgf.cs3",
+  "original_version": 1,
+  "sha256_checksum": "e0ab40a5c7f7af37acb532ab7c20b147826899a331b20bf0475098ed0801d7d6",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T08:05:51.689387+00:00",
+  "passed": false
+}

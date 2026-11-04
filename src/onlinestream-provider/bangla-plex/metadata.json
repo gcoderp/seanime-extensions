@@ -1,0 +1,21 @@
+{
+  "extensionId": "bangla-plex",
+  "originalPluginName": "BanglaPlex",
+  "originalInternalName": "BanglaPlex",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/redowan99/Redowan-CloudStream/builds/BanglaPlex.cs3",
+  "originalRepositoryUrl": "https://github.com/redowan99/Redowan-CloudStream",
+  "originalAuthors": [
+    "Redowan"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "0e087450fa944b505ffdad56d21cc7e9413ff4c8d1db586d8040a76c0db345c3",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:02:53.155793+00:00"
+}

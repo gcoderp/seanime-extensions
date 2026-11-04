@@ -1,0 +1,21 @@
+{
+  "extensionId": "dubbindo",
+  "originalPluginName": "Dubbindo",
+  "originalInternalName": "Dubbindo",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Dubbindo.cs3",
+  "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
+  "originalAuthors": [
+    "ByAyzen"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "da0ee98dff970cd82ae55f2a1d0e3247f2888cac3bc962f2965778931f74bf51",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:00:09.213759+00:00"
+}

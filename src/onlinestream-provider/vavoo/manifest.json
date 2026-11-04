@@ -1,0 +1,15 @@
+{
+  "id": "vavoo",
+  "name": "Vavoo",
+  "description": "\u26a0\ufe0f W.I.P. \u26a0\ufe0f TV channels from vavoo.to",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/vavoo/manifest.json",
+  "version": "1.7.0",
+  "author": "doGior",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/vavoo/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/vavoo/code.js",
+  "icon": "https://vavoo.tv/favicon.ico"
+}

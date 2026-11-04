@@ -1,0 +1,33 @@
+{
+  "plugin_name": "Animejara",
+  "original_plugin_id": "Animejara",
+  "original_author": "ByAyzen",
+  "original_repository": "https://github.com/Kraptor123/Cs-Karma",
+  "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Animejara.cs3",
+  "original_version": 4,
+  "sha256_checksum": "54f4e096c14cd8715976b1ac96823973d19685d1fd39df6252674964e5f48bc8",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T07:59:51.760084+00:00",
+  "passed": false
+}

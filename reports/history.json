@@ -9,5 +9,16 @@
     "needs_review_count": 1,
     "skipped_count": 0,
     "published_in_marketplace": 2
+  },
+  {
+    "last_run_timestamp": "2026-11-04T08:06:27.483913+00:00",
+    "converter_version": "2.5.0",
+    "mode": "live",
+    "total_processed": 418,
+    "successful_count": 36,
+    "failed_count": 21,
+    "needs_review_count": 361,
+    "skipped_count": 0,
+    "published_in_marketplace": 38
   }
 ]

@@ -1,0 +1,21 @@
+{
+  "extensionId": "sadisflix-provider",
+  "originalPluginName": "SadisflixProvider",
+  "originalInternalName": "SadisflixProvider",
+  "originalVersion": 5,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/zzikozz/frenchCS/refs/heads/builds/SadisflixProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/zzikozz/frenchCS",
+  "originalAuthors": [
+    "zzikozz"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "f749ccaed1e17fc39a50b8866b6e5c7f154faeecb586883ec97ee0b508d309b5",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:05:07.853932+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "uaflix-provider",
+  "name": "UAFlixProvider",
+  "description": "UAFLIX - \u0444\u0456\u043b\u044c\u043c\u0438 \u0456 \u0441\u0435\u0440\u0456\u0430\u043b\u0438 NETFLIX \u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u043e\u044e",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/uaflix-provider/manifest.json",
+  "version": "1.23.0",
+  "author": "CakesTwix",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "uk",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/uaflix-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/uaflix-provider/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=uafix.net&sz=%size%"
+}

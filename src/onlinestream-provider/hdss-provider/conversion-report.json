@@ -1,0 +1,33 @@
+{
+  "plugin_name": "HdssProvider",
+  "original_plugin_id": "HdssProvider",
+  "original_author": "zzikozz",
+  "original_repository": "https://github.com/zzikozz/frenchCS",
+  "original_download_url": "https://raw.githubusercontent.com/zzikozz/frenchCS/refs/heads/builds/HdssProvider.cs3",
+  "original_version": 3,
+  "sha256_checksum": "95d55a33fbe67f421ba4301e01a073373d876909a392a4f73bcf1108fa818db0",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T08:04:57.555239+00:00",
+  "passed": false
+}

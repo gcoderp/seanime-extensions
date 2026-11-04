@@ -1,0 +1,21 @@
+{
+  "extensionId": "anime-ytx",
+  "originalPluginName": "AnimeYTX",
+  "originalInternalName": "AnimeYTX",
+  "originalVersion": 11,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/AnimeYTX.cs3",
+  "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
+  "originalAuthors": [
+    "ByAyzen"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "68b0e28fd1a94c8a557675dac4db7cb1a424a27f699618f5dfddc691ef6908e7",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:59:58.928952+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "extensionId": "anizone",
+  "originalPluginName": "Anizone",
+  "originalInternalName": "Anizone",
+  "originalVersion": 10,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anizone.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "ycngmn"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "37f9a3068a45855b94194b8cc569203ad8e805b47b0770dd628642c72ca15bc6",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:48:59.578553+00:00"
+}

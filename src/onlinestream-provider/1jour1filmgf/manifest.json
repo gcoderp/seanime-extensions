@@ -1,0 +1,15 @@
+{
+  "id": "1jour1filmgf",
+  "name": "1JOUR1FILMGF",
+  "description": "FONCTIONNEL",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/1jour1filmgf/manifest.json",
+  "version": "1.1.0",
+  "author": "tOntOnbOuLii, x-R0b0T-x",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "fr",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/1jour1filmgf/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/1jour1filmgf/code.js",
+  "icon": "https://raw.githubusercontent.com/tOntOnbOuLii/GramFlix/main/logo_gf.png"
+}

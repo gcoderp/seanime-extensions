@@ -1,0 +1,21 @@
+{
+  "extensionId": "animes-cloud",
+  "originalPluginName": "AnimesCloud",
+  "originalInternalName": "AnimesCloud",
+  "originalVersion": 4,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/saimuelbr/saimuelrepo/main/builds/AnimesCloud.cs3",
+  "originalRepositoryUrl": "https://github.com/saimuelbr/saimuelrepo",
+  "originalAuthors": [
+    "saimuelbr"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "524c7b561d6ddb94a7c3ec05f92a869b6e101807a3e4f325a59ebf14eb12cb6d",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:03:11.665283+00:00"
+}

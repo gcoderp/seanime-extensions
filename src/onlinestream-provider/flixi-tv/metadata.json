@@ -1,0 +1,21 @@
+{
+  "extensionId": "flixi-tv",
+  "originalPluginName": "FlixiTV",
+  "originalInternalName": "FlixiTV",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/FlixiTV.cs3",
+  "originalRepositoryUrl": "https://github.com/Bnyro/GermanProviders",
+  "originalAuthors": [
+    "Bnyro"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "a03158b15d70809454d8445ab6b9c1013ed10b586fc4d5e2637169fffdbba600",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:04:05.711514+00:00"
+}

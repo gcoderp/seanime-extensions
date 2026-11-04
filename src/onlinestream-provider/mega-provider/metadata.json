@@ -1,0 +1,23 @@
+{
+  "extensionId": "mega-provider",
+  "originalPluginName": "MegaProvider",
+  "originalInternalName": "MegaProvider",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/self-similarity/MegaRepo/builds/MegaProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/self-similarity/MegaRepo",
+  "originalAuthors": [
+    "Cloudstream Community"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "7062fa86531ad8b8c34244c564adcba97176870a186499adbc369189ac848dbe",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "No upstream base URL could be recovered.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:47:55.708605+00:00"
+}

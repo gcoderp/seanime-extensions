@@ -1,0 +1,22 @@
+{
+  "extensionId": "youtube-provider",
+  "originalPluginName": "YoutubeProvider",
+  "originalInternalName": "YoutubeProvider",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/recloudstream/extensions/builds/YoutubeProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/recloudstream/extensions",
+  "originalAuthors": [
+    "KaifTaufiq"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "a246eb1584cec9e69ba8c50136b9e8dc11a2fc0ab225710c31ad66c2ec4f4efe",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:47:53.458465+00:00"
+}

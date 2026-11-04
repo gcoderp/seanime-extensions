@@ -1,0 +1,19 @@
+{
+  "extensionId": "kino-tron-provider",
+  "originalPluginName": "KinoTronProvider",
+  "originalInternalName": "KinoTronProvider",
+  "originalVersion": 18,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/KinoTronProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "00a3b39f321eefd88e2b7144d522659eaed08907e65389f38d89e3c3efaccc1a",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:01:39.438305+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "anime-onprovider",
+  "name": "AnimeONProvider",
+  "description": "AnimeON - \u0414\u0438\u0432\u0438\u0442\u0438\u0441\u044f \u0430\u043d\u0456\u043c\u0435 \u0443\u043a\u0440\u0430\u0457\u043d\u044c\u0441\u043a\u043e\u044e",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-onprovider/manifest.json",
+  "version": "1.48.0",
+  "author": "CakesTwix, deleteBlack666",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "uk",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/anime-onprovider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-onprovider/code.js",
+  "icon": "https://animeon.club/assets/images/short-logo.png"
+}

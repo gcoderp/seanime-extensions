@@ -1,0 +1,15 @@
+{
+  "id": "kisskh-provider",
+  "name": "KisskhProvider",
+  "description": "Converted from KisskhProvider",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kisskh-provider/manifest.json",
+  "version": "1.24.0",
+  "author": "Phisher98,Hexated,Peerless",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/kisskh-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kisskh-provider/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=kisskh.co&sz=%size%"
+}

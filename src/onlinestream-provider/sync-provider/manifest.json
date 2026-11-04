@@ -1,0 +1,15 @@
+{
+  "id": "sync-provider",
+  "name": "Cross-Device Sync",
+  "description": "\u0110\u1ed3ng b\u1ed9 c\u00e0i \u0111\u1eb7t v\u00e0 l\u1ecbch s\u1eed xem gi\u1eefa c\u00e1c thi\u1ebft b\u1ecb",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sync-provider/manifest.json",
+  "version": "1.9.0",
+  "author": "anhdaden, RowdyRushya",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/sync-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sync-provider/code.js",
+  "icon": "https://clouding.vn/wp-content/uploads/2022/10/cropped-Cloud-Services-192x192.png"
+}

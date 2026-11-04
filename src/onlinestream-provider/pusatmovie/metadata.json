@@ -1,0 +1,19 @@
+{
+  "extensionId": "pusatmovie",
+  "originalPluginName": "Pusatmovie",
+  "originalInternalName": "Pusatmovie",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Pusatmovie.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "d1ac2b4bad4cfec0fd5fc357cf30b5be259c7ba56031428c13a07cd9024c9826",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:25.767187+00:00"
+}

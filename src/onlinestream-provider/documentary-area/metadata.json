@@ -1,0 +1,21 @@
+{
+  "extensionId": "documentary-area",
+  "originalPluginName": "DocumentaryArea",
+  "originalInternalName": "DocumentaryArea",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/DocumentaryArea.cs3",
+  "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
+  "originalAuthors": [
+    "ByAyzen"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "021886e32fcf3b9b9de3354d568fca7654547d25192c35ae2628074461dba083",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:00:03.923639+00:00"
+}

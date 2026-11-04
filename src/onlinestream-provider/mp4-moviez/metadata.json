@@ -1,0 +1,21 @@
+{
+  "extensionId": "mp4-moviez",
+  "originalPluginName": "Mp4Moviez",
+  "originalInternalName": "Mp4Moviez",
+  "originalVersion": 3,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/redowan99/Redowan-CloudStream/builds/Mp4Moviez.cs3",
+  "originalRepositoryUrl": "https://github.com/redowan99/Redowan-CloudStream",
+  "originalAuthors": [
+    "salman731"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "3b2254838b38792f54f0b014fc8a4401a7e83f90d3d8ca12043a36b1c9c8c9b1",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:03:04.368843+00:00"
+}

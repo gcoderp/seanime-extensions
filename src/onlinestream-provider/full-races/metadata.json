@@ -1,0 +1,22 @@
+{
+  "extensionId": "full-races",
+  "originalPluginName": "FullRaces",
+  "originalInternalName": "FullRaces",
+  "originalVersion": 16,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/FullRaces.cs3",
+  "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
+  "originalAuthors": [
+    "kraptor123",
+    "kerimmkirac"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "9cbdc07955ac1327632cdc6136339e067cb1cf35ffdf5acfe64ecc23c3a2e107",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:00:21.225030+00:00"
+}

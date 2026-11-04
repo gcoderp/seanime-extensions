@@ -1,0 +1,34 @@
+{
+  "plugin_name": "Senpai-Stream",
+  "original_plugin_id": "SenpaiStreamProvider",
+  "original_author": "zzikozz",
+  "original_repository": "https://github.com/zzikozz/frenchCS",
+  "original_download_url": "https://raw.githubusercontent.com/zzikozz/frenchCS/refs/heads/builds/SenpaiStreamProvider.cs3",
+  "original_version": 5,
+  "sha256_checksum": "a784f2a3a664d66accedb9712c5bbb2372cb4bcaad3d9b2c66e72352c3120c3d",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T08:05:07.854290+00:00",
+  "passed": false
+}

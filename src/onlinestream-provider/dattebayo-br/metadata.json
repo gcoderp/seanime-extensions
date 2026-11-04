@@ -1,0 +1,21 @@
+{
+  "extensionId": "dattebayo-br",
+  "originalPluginName": "DattebayoBR",
+  "originalInternalName": "DattebayoBR",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/DattebayoBR.cs3",
+  "originalRepositoryUrl": "https://github.com/lawlietbr/lietrepo",
+  "originalAuthors": [
+    "lawlietbr"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "1494eee14531a69087839019ee25a4a4e3f5d27393b5ec2b6f216d6a96282b5c",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:02:20.811409+00:00"
+}

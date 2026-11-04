@@ -1,0 +1,21 @@
+{
+  "extensionId": "topcartoons",
+  "originalPluginName": "Topcartoons",
+  "originalInternalName": "Topcartoons",
+  "originalVersion": 5,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Topcartoons.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "Phisher98"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "eab039d3265c9815c701fc3e715aa1d557def7d442f6b0c781f5b366d20db21d",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:52:11.850641+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "extensionId": "gomunime",
+  "originalPluginName": "Gomunime",
+  "originalInternalName": "Gomunime",
+  "originalVersion": 9,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/TeKuma25/IndoStream/builds/Gomunime.cs3",
+  "originalRepositoryUrl": "https://github.com/TeKuma25/IndoStream",
+  "originalAuthors": [
+    "TeKuma25"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "b946791e43e4105e2dbcf2f563b66d3fb3e48dcde15f5518b460135dd836188c",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:55:09.447630+00:00"
+}

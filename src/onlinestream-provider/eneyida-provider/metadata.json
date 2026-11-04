@@ -1,0 +1,19 @@
+{
+  "extensionId": "eneyida-provider",
+  "originalPluginName": "EneyidaProvider",
+  "originalInternalName": "EneyidaProvider",
+  "originalVersion": 19,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/EneyidaProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "41d81d5332832599e174637cbe7884ac6b302be61612a978b684c2fddfb3b286",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:01:33.485828+00:00"
+}

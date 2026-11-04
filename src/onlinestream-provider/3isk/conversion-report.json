@@ -1,0 +1,33 @@
+{
+  "plugin_name": "3isk",
+  "original_plugin_id": "3isk",
+  "original_author": "Abodabodd",
+  "original_repository": "https://github.com/Abodabodd/re-3arabi",
+  "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/3isk.cs3",
+  "original_version": 2,
+  "sha256_checksum": "c94b00a5faf005851769037c2f2158117fdcf0faa015a52ba42beab05aa2f8aa",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T07:53:04.033934+00:00",
+  "passed": false
+}

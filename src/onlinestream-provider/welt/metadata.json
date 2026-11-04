@@ -1,0 +1,21 @@
+{
+  "extensionId": "welt",
+  "originalPluginName": "Welt",
+  "originalInternalName": "Welt",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/Welt.cs3",
+  "originalRepositoryUrl": "https://github.com/Bnyro/GermanProviders",
+  "originalAuthors": [
+    "Bnyro"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "ab6991040b581a62d1a0b0f6763fbdf6514f650b4a2cd8e3ed7c89e2fc15b7e2",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:04:38.865255+00:00"
+}

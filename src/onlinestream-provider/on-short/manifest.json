@@ -1,0 +1,15 @@
+{
+  "id": "on-short",
+  "name": "OnShort",
+  "description": "Discover dubbed and subtitled short dramas from multiple platforms and open every available episode on ONShort.",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/on-short/manifest.json",
+  "version": "1.3.0",
+  "author": "kraptor",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/on-short/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/on-short/code.js",
+  "icon": "https://www.google.com/s2/favicons?sz=64&domain=https://onshort.net"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "iptv",
+  "name": "IPTV",
+  "description": "General IPTV player. Add a list in the settings and you'll see it in the plugins list in the home",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/iptv/manifest.json",
+  "version": "1.1.0",
+  "author": "anhdaden, dogior",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/iptv/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/iptv/code.js",
+  "icon": "https://www.shutterstock.com/image-vector/iptv-vector-line-icon-ip-260nw-1841427610.jpg"
+}

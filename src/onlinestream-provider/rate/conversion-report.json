@@ -1,0 +1,35 @@
+{
+  "plugin_name": ".Extension Rating \u062a\u0642\u064a\u064a\u0645 \u0627\u0644\u0627\u0636\u0627\u0641\u0627\u062a",
+  "original_plugin_id": "Rate",
+  "original_author": "Abodabodd",
+  "original_repository": "https://github.com/Abodabodd/re-3arabi",
+  "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Rate.cs3",
+  "original_version": 2,
+  "sha256_checksum": "f6a5142e72c662cdc1b113081106c346bf3242126631f85975c018d23e25c44c",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T07:54:08.627289+00:00",
+  "passed": false
+}

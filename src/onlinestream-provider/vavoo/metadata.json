@@ -1,0 +1,22 @@
+{
+  "extensionId": "vavoo",
+  "originalPluginName": "Vavoo",
+  "originalInternalName": "Vavoo",
+  "originalVersion": 7,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/doGior/doGiorsHadEnough/builds/Vavoo.cs3",
+  "originalRepositoryUrl": "https://github.com/doGior/doGiorsHadEnough",
+  "originalAuthors": [
+    "doGior"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "7344294448821ac3215ae67b0a1527b0078f5f92774ce10a1015fb7e09f36863",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:57:13.846862+00:00"
+}

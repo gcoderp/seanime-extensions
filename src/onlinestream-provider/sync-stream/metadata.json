@@ -1,0 +1,23 @@
+{
+  "extensionId": "sync-stream",
+  "originalPluginName": "SyncStream",
+  "originalInternalName": "SyncStream",
+  "originalVersion": 11,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/SyncStream.cs3",
+  "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
+  "originalAuthors": [
+    "DieGon"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "5d8c1ebc0965ee437f009fa89d0f5145c94ec3b37bd2acc12c19d115bc84b0a1",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "No upstream base URL could be recovered.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:59:38.651401+00:00"
+}

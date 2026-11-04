@@ -1,0 +1,15 @@
+{
+  "id": "topstreamfilm",
+  "name": "Topstreamfilm",
+  "description": "Filme  and Serien (German)",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/topstreamfilm/manifest.json",
+  "version": "1.9.0",
+  "author": "Phisher",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "de",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/topstreamfilm/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/topstreamfilm/code.js",
+  "icon": "https://www.topstreamfilm.live/templates/topstreamfilm/images/logo-1.png"
+}

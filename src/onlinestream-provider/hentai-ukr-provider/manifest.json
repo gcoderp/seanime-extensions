@@ -1,0 +1,15 @@
+{
+  "id": "hentai-ukr-provider",
+  "name": "HentaiUkrProvider",
+  "description": "\u0421\u0430\u0439\u0442 \u0432\u0438\u043a\u043e\u043d\u0430\u043d\u0438\u0439 \u043d\u0430 \u043d\u0435\u043a\u043e\u043c\u0435\u0440\u0446\u0456\u0439\u043d\u0456\u0439 \u043e\u0441\u043d\u043e\u0432\u0456 \u0437 \u0432\u0456\u0440\u043e\u044e \u0443 \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0443 \u0441\u043f\u0456\u043b\u044c\u043d\u043e\u0442\u0443.",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hentai-ukr-provider/manifest.json",
+  "version": "1.6.0",
+  "author": "CakesTwix",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "uk",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/hentai-ukr-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hentai-ukr-provider/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=hentaiukr.com&sz=%size%"
+}

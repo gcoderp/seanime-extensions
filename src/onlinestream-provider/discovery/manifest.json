@@ -1,0 +1,15 @@
+{
+  "id": "discovery",
+  "name": "Discovery",
+  "description": "Enth\u00e4lt: Dmax, Tele5, TLC",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/discovery/manifest.json",
+  "version": "1.2.0",
+  "author": "Bnyro",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "de",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/discovery/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/discovery/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=https://dmax.de&sz=%size%"
+}

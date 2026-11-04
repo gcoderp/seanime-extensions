@@ -1,0 +1,19 @@
+{
+  "extensionId": "sarangfilm",
+  "originalPluginName": "Sarangfilm",
+  "originalInternalName": "Sarangfilm",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Sarangfilm.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "9be9cb884a6c83fc441be4406cd1fe3a1b026813f818b5b19ceab7662fa210e7",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:27.916670+00:00"
+}

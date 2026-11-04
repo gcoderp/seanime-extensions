@@ -1,0 +1,19 @@
+{
+  "extensionId": "indomax",
+  "originalPluginName": "Indomax",
+  "originalInternalName": "Indomax",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Indomax.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "f5b4f2e370485114cf775a6e0a21de3f53d3a6d3d177457222194590c1c66d54",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:00.690310+00:00"
+}

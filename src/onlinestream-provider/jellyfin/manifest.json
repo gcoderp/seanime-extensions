@@ -1,0 +1,15 @@
+{
+  "id": "jellyfin",
+  "name": "Jellyfin",
+  "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/jellyfin/manifest.json",
+  "version": "1.7.0",
+  "author": "Phisher98",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/jellyfin/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/jellyfin/code.js",
+  "icon": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/jellyfin.png"
+}

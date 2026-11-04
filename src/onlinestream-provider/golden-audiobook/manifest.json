@@ -1,0 +1,15 @@
+{
+  "id": "golden-audiobook",
+  "name": "GoldenAudiobook",
+  "description": "Audiobooks - Use Picture in Picture or VLC as external player",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/golden-audiobook/manifest.json",
+  "version": "1.35.0",
+  "author": "NivinCNC",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/golden-audiobook/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/golden-audiobook/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=goldenaudiobook.com/&sz=%size%"
+}

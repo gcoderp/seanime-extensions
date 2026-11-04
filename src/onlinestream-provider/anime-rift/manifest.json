@@ -1,0 +1,15 @@
+{
+  "id": "anime-rift",
+  "name": "AnimeRift",
+  "description": "\u26a0\ufe0f \u062a\u0646\u0628\u064a\u0647: \u064a\u064f\u0631\u062c\u0649 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 VPN \u0644\u062a\u062c\u0646\u0628 \u062d\u0638\u0631 \u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0640 IP \u0627\u0644\u062e\u0627\u0635 \u0628\u0643",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-rift/manifest.json",
+  "version": "1.2.0",
+  "author": "Abodabodd",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "ar",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/anime-rift/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-rift/code.js",
+  "icon": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/AnimeRift/icon.png"
+}

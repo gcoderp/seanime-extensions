@@ -1,0 +1,18 @@
+# PlayFyProvider (`play-fy-provider`)
+
+Automatically converted Seanime `onlinestream-provider` extension from Cloudstream `.cs3` package.
+
+## Overview
+- **Extension ID:** `play-fy-provider`
+- **Provider Type:** `onlinestream-provider`
+- **Version:** `1.19.0` (Upstream CS3 v19)
+- **Language:** `ta`
+- **Original Author(s):** NivinCNC
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `e6a861d77f99b87e6e0dc6ba436fa407091be8b9916ac2869a13b8176e84b7d7`
+
+## Installation in Seanime
+Use the direct manifest URL below in Seanime's Extension settings:
+```text
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/play-fy-provider/manifest.json
+```

@@ -1,0 +1,19 @@
+{
+  "extensionId": "klik-xxi",
+  "originalPluginName": "KlikXXi",
+  "originalInternalName": "KlikXXi",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/KlikXXi.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "527c442274ffa62662eb1b3b7b2611c3be856852cd68083ad5726932d771c0bf",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:04.882122+00:00"
+}

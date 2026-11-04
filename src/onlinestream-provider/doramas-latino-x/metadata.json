@@ -1,0 +1,21 @@
+{
+  "extensionId": "doramas-latino-x",
+  "originalPluginName": "DoramasLatinoX",
+  "originalInternalName": "DoramasLatinoX",
+  "originalVersion": 8,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/DoramasLatinoX.cs3",
+  "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
+  "originalAuthors": [
+    "ByAyzen"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "612dd16c4ad5bd3b6be5359c162c96fa0298885ac14e84cfb6c2e1ad0cd83e6e",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:00:06.848217+00:00"
+}

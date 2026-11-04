@@ -1,0 +1,15 @@
+{
+  "id": "layar-kaca-provider",
+  "name": "LayarKacaProvider",
+  "description": "Converted from LayarKacaProvider",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/layar-kaca-provider/manifest.json",
+  "version": "1.10.0",
+  "author": "Hexated,Phisher98",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "id",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/layar-kaca-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/layar-kaca-provider/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=d21.team&sz=%size%"
+}

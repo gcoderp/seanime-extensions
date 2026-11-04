@@ -1,0 +1,19 @@
+{
+  "extensionId": "midas-xxi",
+  "originalPluginName": "MidasXXi",
+  "originalInternalName": "MidasXXi",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/MidasXXi.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "d3dd46ed56af6a704f689541a717f8f99c3c02f907125531f42d80b11041684b",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:12.285371+00:00"
+}

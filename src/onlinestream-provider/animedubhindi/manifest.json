@@ -1,0 +1,15 @@
+{
+  "id": "animedubhindi",
+  "name": "Animedubhindi",
+  "description": "Anime in Multi Lang",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/animedubhindi/manifest.json",
+  "version": "1.9.0",
+  "author": "Phisher98",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "hi",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/animedubhindi/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/animedubhindi/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=animedubhindi.cc&sz=%size%"
+}

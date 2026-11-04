@@ -1,0 +1,21 @@
+{
+  "extensionId": "desicinemas",
+  "originalPluginName": "Desicinemas",
+  "originalInternalName": "Desicinemas",
+  "originalVersion": 19,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Desicinemas.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "Phisher98"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "bbf2019564d3d3f66a4138a9f968aa5a7e353dc15731412e7cff778ad54a099d",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:49:21.810013+00:00"
+}

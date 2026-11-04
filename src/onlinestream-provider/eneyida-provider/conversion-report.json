@@ -1,0 +1,31 @@
+{
+  "plugin_name": "EneyidaProvider",
+  "original_plugin_id": "EneyidaProvider",
+  "original_author": "CakesTwix",
+  "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/EneyidaProvider.cs3",
+  "original_version": 19,
+  "sha256_checksum": "41d81d5332832599e174637cbe7884ac6b302be61612a978b684c2fddfb3b286",
+  "license_spdx": "GPL-3.0",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "SUCCESS",
+  "review_reasons": [],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T08:01:31.023550+00:00",
+  "passed": true
+}

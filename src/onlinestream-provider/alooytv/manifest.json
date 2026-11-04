@@ -1,0 +1,15 @@
+{
+  "id": "alooytv",
+  "name": "Alooytv",
+  "description": "Automatically converted Cloudstream Alooytv extension",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/alooytv/manifest.json",
+  "version": "1.2.0",
+  "author": "Abodabodd",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "ar",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/alooytv/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/alooytv/code.js",
+  "icon": "https://fitnur.com/uploads/avatars/c5ae8dadf88bcea9549657ec451a1563.jpg"
+}

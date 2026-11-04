@@ -1,0 +1,15 @@
+{
+  "id": "kinoger",
+  "name": "Kinoger",
+  "description": "Filme und Serien streamen",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kinoger/manifest.json",
+  "version": "1.6.0",
+  "author": "Hexated, Bnyro",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "de",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/kinoger/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kinoger/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=kinoger.com&sz=%size%"
+}

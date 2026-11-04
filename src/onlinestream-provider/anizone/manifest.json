@@ -1,0 +1,15 @@
+{
+  "id": "anizone",
+  "name": "Anizone",
+  "description": "Anizone.to streams latest anime content in multiple language.",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anizone/manifest.json",
+  "version": "1.10.0",
+  "author": "ycngmn",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/anizone/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anizone/code.js",
+  "icon": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/anizone.png"
+}

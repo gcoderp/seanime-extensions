@@ -1,0 +1,15 @@
+{
+  "id": "mon-player-provider",
+  "name": "MonPlayerProvider",
+  "description": "D\u00f9ng \u0111\u01b0\u1ee3c nh\u1eefng link ghim tr\u00ean nh\u00f3m tele",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mon-player-provider/manifest.json",
+  "version": "1.9.0",
+  "author": "anhdaden",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/mon-player-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mon-player-provider/code.js",
+  "icon": "https://monplayer.org/images/favicon.ico"
+}

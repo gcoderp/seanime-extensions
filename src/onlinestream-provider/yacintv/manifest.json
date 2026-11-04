@@ -1,0 +1,15 @@
+{
+  "id": "yacintv",
+  "name": "Yacintv",
+  "description": "Automatically converted Cloudstream Yacintv extension",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/yacintv/manifest.json",
+  "version": "1.2.0",
+  "author": "Abodabodd",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "ar",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/yacintv/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/yacintv/code.js",
+  "icon": "https://yt3.googleusercontent.com/ulm35tweg3do5istps0TgCjMmJSVczGUL2NIrXMwI1DDRi5ty29BIzQSUHVgqZN5CSo1PHhiA6M=s900-c-k-c0x00ffffff-no-rj"
+}

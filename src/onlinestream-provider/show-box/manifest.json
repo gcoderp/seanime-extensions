@@ -1,0 +1,15 @@
+{
+  "id": "show-box",
+  "name": "ShowBox",
+  "description": "ShowBox (Retrieve the cookie using Login with Google to properly utilize ShowBox.",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/show-box/manifest.json",
+  "version": "1.10.0",
+  "author": "Phisher98",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/show-box/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/show-box/code.js",
+  "icon": "https://miro.medium.com/v2/1*DyU8bmnyyEiJbFROEXO2VA.png"
+}

@@ -1,0 +1,22 @@
+{
+  "extensionId": "senpaistreamgf",
+  "originalPluginName": "Senpai-StreamGF",
+  "originalInternalName": "senpaistreamgf",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/tOntOnbOuLii/GramFlix/main/senpaistreamgf.cs3",
+  "originalRepositoryUrl": "https://github.com/tOntOnbOuLii/GramFlix",
+  "originalAuthors": [
+    "tOntOnbOuLii",
+    "x-R0b0T-x"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "1595cdfae23b1d51ffa7a2da72859e07a985dc01f356142367fd8035a5caf1e2",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:06:17.972072+00:00"
+}

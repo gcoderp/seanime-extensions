@@ -1,0 +1,19 @@
+{
+  "extensionId": "uaserials-pro-provider",
+  "originalPluginName": "UASerialsProProvider",
+  "originalInternalName": "UASerialsProProvider",
+  "originalVersion": 28,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UASerialsProProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "b9725c353ca62643099a0b3b7b0fab85d3652250ac9a2e3985505d0412499610",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:02:05.538633+00:00"
+}

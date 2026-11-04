@@ -1,0 +1,21 @@
+{
+  "extensionId": "twitch-provider",
+  "originalPluginName": "TwitchProvider",
+  "originalInternalName": "TwitchProvider",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/recloudstream/extensions/builds/TwitchProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/recloudstream/extensions",
+  "originalAuthors": [
+    "CranberrySoup"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "a7cc95f77bbd00a311d122201c63babe70b63fb398641fa28bf2b2c77346150a",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:47:51.038149+00:00"
+}

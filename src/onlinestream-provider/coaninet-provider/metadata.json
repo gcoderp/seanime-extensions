@@ -1,0 +1,20 @@
+{
+  "extensionId": "coaninet-provider",
+  "originalPluginName": "CoaninetProvider",
+  "originalInternalName": "CoaninetProvider",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/CoaninetProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix",
+    "Partizanin"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "7f4c9defedee0bba30b77866dab0e32d94c4f8b7570b2818afd634cd4ea8aa7e",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:01:29.138777+00:00"
+}

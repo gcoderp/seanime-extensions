@@ -1,0 +1,15 @@
+{
+  "id": "serie-center-provider",
+  "name": "SerieCenterProvider",
+  "description": "SerieCenter est le coin des films et s\u00e9ries en fran\u00e7ais par excellence avec une multitude d\u2019avantages qu\u2019offre notre plateforme intelligente de streaming ! Que ce soit en VF ou en VOSTFR, seriecenter.live est le meilleur site qui vous permet de regarder les films et les s\u00e9ries en streaming gratuitement. Des s\u00e9ries compl\u00e8tes, toutes les saisons, tous les \u00e9pisodes, ainsi que les nouveaux films Box-Office, sont disponibles sur notre site, class\u00e9 num\u00e9ro 1 dans le streaming complet des s\u00e9ries et des films.",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/serie-center-provider/manifest.json",
+  "version": "1.2.0",
+  "author": "zzikozz",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "fr",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/serie-center-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/serie-center-provider/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=https://seriecenter.live&sz=128"
+}

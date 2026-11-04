@@ -1,0 +1,22 @@
+{
+  "extensionId": "fstreamzz-provider",
+  "originalPluginName": "FStreamzz",
+  "originalInternalName": "FStreamzzProvider",
+  "originalVersion": 16,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/zzikozz/frenchCS/refs/heads/builds/FStreamzzProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/zzikozz/frenchCS",
+  "originalAuthors": [
+    "ayza",
+    "zzikozz"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "9827751faf6f69edd699ba4c64a2c5a2e578962c7980b77ed83c53a562728b8d",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:05:17.517154+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "extensionId": "shahid4u",
+  "originalPluginName": "Shahid4u",
+  "originalInternalName": "Shahid4u",
+  "originalVersion": 3,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Shahid4u.cs3",
+  "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+  "originalAuthors": [
+    "Abodabodd"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "00a54b90e58154fd0e2fe6f603264b3c0896be7b3ea99318494709d35bd3dafb",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:54:15.366925+00:00"
+}

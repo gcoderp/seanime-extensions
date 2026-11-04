@@ -1,0 +1,19 @@
+{
+  "extensionId": "wgfilm21",
+  "originalPluginName": "WGFilm21",
+  "originalInternalName": "WGFilm21",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/WGFilm21.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "35832a5e612b5931564a24fbbe042b125fc92ba495c4734d157f54375eead0d8",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:31.750171+00:00"
+}

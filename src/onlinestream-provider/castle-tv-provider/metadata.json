@@ -1,0 +1,22 @@
+{
+  "extensionId": "castle-tv-provider",
+  "originalPluginName": "CastleTvProvider",
+  "originalInternalName": "CastleTvProvider",
+  "originalVersion": 41,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CastleTvProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
+  "originalAuthors": [
+    "NivinCNC"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "fc1308cc9ad0a53b021e757338435c507800ef846b5662d072e6e81766be6db0",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:57:29.403593+00:00"
+}

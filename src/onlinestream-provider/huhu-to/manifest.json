@@ -1,0 +1,15 @@
+{
+  "id": "huhu-to",
+  "name": "HuhuTo",
+  "description": "Filme und Serien streamen",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/huhu-to/manifest.json",
+  "version": "1.2.0",
+  "author": "Bnyro",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "de",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/huhu-to/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/huhu-to/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=huhu.to&sz=%size%"
+}

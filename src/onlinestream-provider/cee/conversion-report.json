@@ -1,0 +1,35 @@
+{
+  "plugin_name": "Cee (\ud83c\uddee\ud83c\uddf6)",
+  "original_plugin_id": "Cee",
+  "original_author": "Abodabodd",
+  "original_repository": "https://github.com/Abodabodd/re-3arabi",
+  "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Cee.cs3",
+  "original_version": 2,
+  "sha256_checksum": "ba0b10a5996a1de5cbf2a072efff564dad504ad10eebc503309e64b1a0af3176",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T07:53:33.719154+00:00",
+  "passed": false
+}

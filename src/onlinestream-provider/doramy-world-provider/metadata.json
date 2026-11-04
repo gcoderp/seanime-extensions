@@ -1,0 +1,19 @@
+{
+  "extensionId": "doramy-world-provider",
+  "originalPluginName": "DoramyWorldProvider",
+  "originalInternalName": "DoramyWorldProvider",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/DoramyWorldProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "87f49601ced2329805caecb60cdc4892b3176df75c77d42a1a1b514651b62dfd",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:01:31.023203+00:00"
+}

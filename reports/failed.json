@@ -1,1 +1,397 @@
-[]
+[
+  {
+    "plugin_name": "Asia2tv 2",
+    "original_plugin_id": "Aia2tv 2",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "URL can't contain control characters. '/Abodabodd/re-3arabi/builds/Aia2tv 2.cs3' (found at least ' ')"
+    ],
+    "conversion_timestamp": "2026-11-04T07:53:10.276980+00:00"
+  },
+  {
+    "plugin_name": "LodyNet",
+    "original_plugin_id": "Lodynet",
+    "original_author": "Abodabodd",
+    "original_repository": "https://github.com/Abodabodd/re-3arabi",
+    "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Lodynet.cs3",
+    "original_version": 3,
+    "sha256_checksum": "79a853a9b5a84ead13bc7ee474d2acf58c734758c4ab0741d98300b6539fdf2e",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [
+      "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    ],
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-04T07:54:03.283325+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "Shahidwbas",
+    "original_plugin_id": "Shahidwbas",
+    "original_author": "Abodabodd",
+    "original_repository": "https://github.com/Abodabodd/re-3arabi",
+    "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Shahidwbas.cs3",
+    "original_version": 2,
+    "sha256_checksum": "07da67cd795d17b5b8189cfdfb544b429563260c6182397ccdb2244f193a622d",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [
+      "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    ],
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-04T07:54:15.367250+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "TopCinema",
+    "original_plugin_id": "Topcinema",
+    "original_author": "Abodabodd",
+    "original_repository": "https://github.com/Abodabodd/re-3arabi",
+    "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Topcinema.cs3",
+    "original_version": 2,
+    "sha256_checksum": "df67b3c8f47a04bcf892d54bc794507ee0998a46d710d0c4046a2c2bf7e456a2",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [
+      "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    ],
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-04T07:54:20.105599+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "WeCima",
+    "original_plugin_id": "Wecima",
+    "original_author": "Abodabodd",
+    "original_repository": "https://github.com/Abodabodd/re-3arabi",
+    "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Wecima.cs3",
+    "original_version": 2,
+    "sha256_checksum": "bd63bcb260505a009108c719af078be842f70705382f79abe9684f845c71af61",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [
+      "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    ],
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-04T07:54:35.828517+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "CNC Verse",
+    "original_plugin_id": "CNC Verse",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "URL can't contain control characters. '/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CNC Verse.cs3' (found at least ' ')"
+    ],
+    "conversion_timestamp": "2026-11-04T07:57:38.777074+00:00"
+  },
+  {
+    "plugin_name": "CNC Verse Mobile",
+    "original_plugin_id": "CNC Verse Mobile",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "URL can't contain control characters. '/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CNC Verse Mobile.cs3' (found at least ' ')"
+    ],
+    "conversion_timestamp": "2026-11-04T07:57:38.778023+00:00"
+  },
+  {
+    "plugin_name": "LayarKaca",
+    "original_plugin_id": "LayarKaca",
+    "original_author": "kraptor, Phisher98, Hexated",
+    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
+    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/LayarKaca.cs3",
+    "original_version": 16,
+    "sha256_checksum": "d0a3842a9fe05b428a9dbe41def7bd502e4b1ab5c1f8ea911f8ff48da3cc45c8",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [
+      "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    ],
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-04T08:00:39.308572+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "OK",
+    "original_plugin_id": "OK",
+    "original_author": "ByAyzen",
+    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
+    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/OK.cs3",
+    "original_version": 9,
+    "sha256_checksum": "91b4686bd7c505b7a97ad3676add3c4c43114d166ba8caabebceaaeef9f81bcd",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [
+      "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    ],
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-04T08:00:48.979488+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "AnitubeinuaProvider",
+    "original_plugin_id": "AnitubeinuaProvider",
+    "original_author": "CakesTwix",
+    "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+    "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/AnitubeinuaProvider.cs3",
+    "original_version": 22,
+    "sha256_checksum": "7403502cc562abe59a66f49b612c00ef74a9302c228df1d5a4a222cc7fb09d10",
+    "license_spdx": "GPL-3.0",
+    "detected_provider_type": "onlinestream-provider",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [],
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-04T08:01:19.019377+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "KinostrainProvider",
+    "original_plugin_id": "KinostrainProvider",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "Unsubstituted template tokens remain: ['__NUXT_DATA__']"
+    ],
+    "conversion_timestamp": "2026-11-04T08:01:35.421019+00:00"
+  },
+  {
+    "plugin_name": "UakinoProvider",
+    "original_plugin_id": "UakinoProvider",
+    "original_author": "CakesTwix",
+    "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+    "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UakinoProvider.cs3",
+    "original_version": 33,
+    "sha256_checksum": "3271a40740ef1ee96cb5d071cb61d4bd419e53ce62645f462839ac2dac7ecfa9",
+    "license_spdx": "GPL-3.0",
+    "detected_provider_type": "onlinestream-provider",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [],
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-04T08:02:00.360231+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "MuiflixGF",
+    "original_plugin_id": "muiflixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-04T08:05:32.127240+00:00"
+  },
+  {
+    "plugin_name": "FanStreamGF",
+    "original_plugin_id": "fanstreamgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-04T08:06:22.003298+00:00"
+  },
+  {
+    "plugin_name": "GogoFlixGF",
+    "original_plugin_id": "gogoflixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-04T08:06:22.102149+00:00"
+  },
+  {
+    "plugin_name": "FrembedGF",
+    "original_plugin_id": "frembedgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-04T08:06:22.219888+00:00"
+  },
+  {
+    "plugin_name": "FilmoFlixGF",
+    "original_plugin_id": "filmoflixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-04T08:06:22.325920+00:00"
+  },
+  {
+    "plugin_name": "MovixGF",
+    "original_plugin_id": "movixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-04T08:06:22.524237+00:00"
+  },
+  {
+    "plugin_name": "AfterDarkGF",
+    "original_plugin_id": "afterdarkgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-04T08:06:22.711392+00:00"
+  },
+  {
+    "plugin_name": "SadisflixGF",
+    "original_plugin_id": "sadisflixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-04T08:06:27.202153+00:00"
+  },
+  {
+    "plugin_name": "WookafrGF",
+    "original_plugin_id": "wookafrgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-04T08:06:27.325872+00:00"
+  }
+]

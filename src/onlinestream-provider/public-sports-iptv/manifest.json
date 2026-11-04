@@ -1,0 +1,15 @@
+{
+  "id": "public-sports-iptv",
+  "name": "PublicSportsIPTV",
+  "description": "Sports Live Streams (FanCode)",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/public-sports-iptv/manifest.json",
+  "version": "1.5.0",
+  "author": "Phisher98",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/public-sports-iptv/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/public-sports-iptv/code.js",
+  "icon": "https://www.thestatesman.com/wp-content/uploads/2021/05/fancode.jpg"
+}

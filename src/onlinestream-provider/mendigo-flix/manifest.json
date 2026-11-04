@@ -1,0 +1,15 @@
+{
+  "id": "mendigo-flix",
+  "name": "MendigoFlix",
+  "description": "MendigoFlix - Filmes e S\u00e9ries em Portugu\u00eas",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mendigo-flix/manifest.json",
+  "version": "1.3.0",
+  "author": "lawlietbr",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "pt-br",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/mendigo-flix/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mendigo-flix/code.js",
+  "icon": "https://mendigoflix.lol/assets/favicon.png"
+}

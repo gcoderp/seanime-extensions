@@ -1,0 +1,21 @@
+{
+  "extensionId": "show-box",
+  "originalPluginName": "ShowBox",
+  "originalInternalName": "ShowBox",
+  "originalVersion": 10,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/ShowBox.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "Phisher98"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "fbed80b9386f4e689f9c88c47feb17722d9d6cd1bdded65088e21ca78b9cf7e1",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:51:28.974343+00:00"
+}

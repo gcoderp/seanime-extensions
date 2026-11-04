@@ -1,0 +1,22 @@
+{
+  "extensionId": "zdf",
+  "originalPluginName": "ZDF",
+  "originalInternalName": "ZDF",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/ZDF.cs3",
+  "originalRepositoryUrl": "https://github.com/Bnyro/GermanProviders",
+  "originalAuthors": [
+    "Bnyro"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "2389355e0229911f3519f63ebb60ffb7049807b20e6d7229072ad7281073f31f",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:04:41.761039+00:00"
+}

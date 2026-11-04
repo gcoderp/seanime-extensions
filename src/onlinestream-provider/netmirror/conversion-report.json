@@ -1,0 +1,31 @@
+{
+  "plugin_name": "Netmirror",
+  "original_plugin_id": "Netmirror",
+  "original_author": "Sushan64",
+  "original_repository": "https://github.com/Sushan64/NetMirror-Extension",
+  "original_download_url": "https://raw.githubusercontent.com/Sushan64/NetMirror-Extension/builds/Netmirror.cs3",
+  "original_version": 43,
+  "sha256_checksum": "26ea2b1d7c7b3f5ccc2e5bdb7a5dc01376fc767d72d8b62345fe2c6600531079",
+  "license_spdx": "GPL-3.0",
+  "detected_provider_type": "onlinestream-provider",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "SUCCESS",
+  "review_reasons": [],
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T08:02:44.595545+00:00",
+  "passed": true
+}

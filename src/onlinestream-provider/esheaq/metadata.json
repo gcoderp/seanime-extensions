@@ -1,0 +1,21 @@
+{
+  "extensionId": "esheaq",
+  "originalPluginName": "Esheaq",
+  "originalInternalName": "Esheaq",
+  "originalVersion": 22,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Esheaq.cs3",
+  "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
+  "originalAuthors": [
+    "kraptor"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "16bda1dbb502620efe1406708207c8f167f6e2cd95937858e51f6ba22fa40543",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:00:11.579544+00:00"
+}

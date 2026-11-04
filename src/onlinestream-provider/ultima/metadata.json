@@ -1,0 +1,22 @@
+{
+  "extensionId": "ultima",
+  "originalPluginName": "Ultima",
+  "originalInternalName": "Ultima",
+  "originalVersion": 70,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Ultima.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "RowdyRushya,Phisher98"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "c12cd44f99c8e46dae2c2403168454ec964de93ed251bdde898ee905e440e775",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:52:28.149631+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "stremio-provider",
+  "name": "StremioProvider",
+  "description": "Addon use Streamio",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-provider/manifest.json",
+  "version": "1.7.0",
+  "author": "anhdaden, hexated",
+  "type": "anime-torrent-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/anime-torrent-provider/stremio-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-provider/code.js",
+  "icon": "https://www.stremio.com/website/favicon.ico"
+}

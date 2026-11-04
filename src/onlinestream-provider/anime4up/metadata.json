@@ -1,0 +1,21 @@
+{
+  "extensionId": "anime4up",
+  "originalPluginName": "Anime4up",
+  "originalInternalName": "Anime4up",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Anime4up.cs3",
+  "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+  "originalAuthors": [
+    "Abodabodd"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "80b5d5f87fb0da6bbe42e0977c765bcce2c6cb918e251d9c17e996f7144d01da",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:53:20.527056+00:00"
+}

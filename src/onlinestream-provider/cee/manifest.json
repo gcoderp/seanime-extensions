@@ -1,0 +1,15 @@
+{
+  "id": "cee",
+  "name": "Cee (\ud83c\uddee\ud83c\uddf6)",
+  "description": "\u0644\u0627 \u064a\u0639\u0645\u0644 \u062e\u0627\u0631\u062c \u0627\u0644\u0639\u0631\u0627\u0642",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cee/manifest.json",
+  "version": "1.2.0",
+  "author": "Abodabodd",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "ar",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/cee/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cee/code.js",
+  "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEnHalnMz2EfG48BZUI6iC86seq09uafFngG8gz1OWQ&s=10"
+}

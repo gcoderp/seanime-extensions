@@ -1,0 +1,21 @@
+{
+  "extensionId": "witanime",
+  "originalPluginName": "Witanime",
+  "originalInternalName": "Witanime",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Witanime.cs3",
+  "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+  "originalAuthors": [
+    "Abodabodd"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "61567898515085b543b7a1b17399c93fcbaafca1ca09bdf903546836b0972078",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:54:41.480290+00:00"
+}

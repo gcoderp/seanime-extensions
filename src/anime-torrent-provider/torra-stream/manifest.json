@@ -1,0 +1,15 @@
+{
+  "id": "torra-stream",
+  "name": "TorraStream",
+  "description": "#1 Best Extension \u2013 MultiAPI-Based with 4K Torrent Support (Debian) Use Extension Settings",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/torra-stream/manifest.json",
+  "version": "1.97.0",
+  "author": "Phisher98",
+  "type": "anime-torrent-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/anime-torrent-provider/torra-stream/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/torra-stream/code.js",
+  "icon": "https://torrentio.strem.fun/images/logo_v1.png"
+}

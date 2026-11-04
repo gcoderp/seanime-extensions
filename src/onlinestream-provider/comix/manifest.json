@@ -1,0 +1,15 @@
+{
+  "id": "comix",
+  "name": "Comix",
+  "description": "Comix \u2014 Read Manga, Manhwa, and Comics directly in CloudStream with custom reader.",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/comix/manifest.json",
+  "version": "1.3.0",
+  "author": "phisher98",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/comix/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/comix/code.js",
+  "icon": "https://comix.to/assets/uploads/35595e3de3c99889c1bd2c56f3e3714fc0c457.png"
+}

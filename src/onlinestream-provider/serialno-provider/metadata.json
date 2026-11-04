@@ -1,0 +1,19 @@
+{
+  "extensionId": "serialno-provider",
+  "originalPluginName": "SerialnoProvider",
+  "originalInternalName": "SerialnoProvider",
+  "originalVersion": 13,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/SerialnoProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "a17631fb29dd710d59144cb1b80e9b0fdd17fe2b0f1eb816fba66f239855bf54",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:01:48.187058+00:00"
+}

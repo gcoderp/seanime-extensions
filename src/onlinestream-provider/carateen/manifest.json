@@ -1,0 +1,15 @@
+{
+  "id": "carateen",
+  "name": "Carateen",
+  "description": "\u0639\u062f \u0628\u0627\u0644\u0632\u0645\u0646 \u0644\u0644\u0648\u0631\u0627\u0621 \u0648\u0634\u0627\u0647\u062f \u0643\u0627\u0631\u062a\u0648\u0646 \u0627\u0644\u0637\u0641\u0648\u0644\u0629 \u2728",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/carateen/manifest.json",
+  "version": "1.2.0",
+  "author": "abodabodd",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "ar",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/carateen/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/carateen/code.js",
+  "icon": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/main/Carateen/icon.png"
+}

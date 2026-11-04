@@ -1,0 +1,22 @@
+{
+  "extensionId": "moiflixgf",
+  "originalPluginName": "MoiFliXGF",
+  "originalInternalName": "moiflixgf",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/tOntOnbOuLii/GramFlix/main/moiflixgf.cs3",
+  "originalRepositoryUrl": "https://github.com/tOntOnbOuLii/GramFlix",
+  "originalAuthors": [
+    "tOntOnbOuLii",
+    "x-R0b0T-x"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "be23692d3cacb0f6e5aca7ba54ec258bbf9bfc9f07d3a00cce052d7f1c648974",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:05:59.851736+00:00"
+}

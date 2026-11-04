@@ -1,0 +1,21 @@
+{
+  "extensionId": "anime-phoenix",
+  "originalPluginName": "Anime-Phoenix",
+  "originalInternalName": "Anime-Phoenix",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Anime-Phoenix.cs3",
+  "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+  "originalAuthors": [
+    "Abodabodd"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "d3f0c1e3ad811774615c40c7bb88cadd34bc56118020090b3605e7b5c57ac6a6",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:53:18.678857+00:00"
+}

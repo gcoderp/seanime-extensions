@@ -1,0 +1,20 @@
+{
+  "extensionId": "altadefinizione-provider",
+  "originalPluginName": "AltadefinizioneProvider",
+  "originalInternalName": "AltadefinizioneProvider",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Gian-Fr/ItalianProvider/builds/AltadefinizioneProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/Gian-Fr/ItalianProvider",
+  "originalAuthors": [
+    "Gian-Fr",
+    "Adippe"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "905b0b1ef8b722a1599ecfee3f65d37954dd6a87e8c13e0624d36f74776441ba",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:02:42.307511+00:00"
+}

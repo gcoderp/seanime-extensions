@@ -1,0 +1,22 @@
+{
+  "extensionId": "fivemovierulz",
+  "originalPluginName": "Fivemovierulz",
+  "originalInternalName": "Fivemovierulz",
+  "originalVersion": 8,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Fivemovierulz.cs3",
+  "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+  "originalAuthors": [
+    "darkdemon",
+    "Dilip"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "aeb7fd17b95a9286d1b7b54f7c21db2c15e577f342ee9e2dbb18a28562e03e9b",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:49:35.980251+00:00"
+}

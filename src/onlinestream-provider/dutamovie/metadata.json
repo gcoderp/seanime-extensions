@@ -1,0 +1,20 @@
+{
+  "extensionId": "dutamovie",
+  "originalPluginName": "Dutamovie",
+  "originalInternalName": "Dutamovie",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Dutamovie.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Hexated",
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "602e9e7655cddf7ba9e2c5f61b4741920daec20bed2df3d770276fabd215da0c",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:55:52.935804+00:00"
+}

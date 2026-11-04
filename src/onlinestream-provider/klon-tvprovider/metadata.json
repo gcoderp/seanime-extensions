@@ -1,0 +1,19 @@
+{
+  "extensionId": "klon-tvprovider",
+  "originalPluginName": "KlonTVProvider",
+  "originalInternalName": "KlonTVProvider",
+  "originalVersion": 24,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/KlonTVProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "d39d0bdf3cf9a8a9f8b0bdb8aff7b3048ba5bc4b7f8f7154fde1aac5407137da",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T08:01:45.174829+00:00"
+}

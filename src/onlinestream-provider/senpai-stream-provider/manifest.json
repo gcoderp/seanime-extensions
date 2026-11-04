@@ -1,0 +1,15 @@
+{
+  "id": "senpai-stream-provider",
+  "name": "Senpai-Stream",
+  "description": "Senpai-Stream est une plateforme qui vous permet d'explorez du divertissement en streaming sans interruption publicitaire. B\u00e9n\u00e9ficiez d'une grande s\u00e9lection de films, s\u00e9ries, anim\u00e9s avec une lecture fluide et sans interruption.",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/senpai-stream-provider/manifest.json",
+  "version": "1.5.0",
+  "author": "zzikozz",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "fr",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/senpai-stream-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/senpai-stream-provider/code.js",
+  "icon": "https://senpai-stream.net/favicon/favicon-32x32.png"
+}

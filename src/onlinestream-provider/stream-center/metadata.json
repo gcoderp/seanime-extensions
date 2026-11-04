@@ -1,0 +1,21 @@
+{
+  "extensionId": "stream-center",
+  "originalPluginName": "StreamCenter",
+  "originalInternalName": "StreamCenter",
+  "originalVersion": 13,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/doGior/doGiorsHadEnough/builds/StreamCenter.cs3",
+  "originalRepositoryUrl": "https://github.com/doGior/doGiorsHadEnough",
+  "originalAuthors": [
+    "Italiani"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "83ce15b0ce2f19a8f4d528c12c20f7ef3b9f06f593dd9c64127923b5795afe75",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T07:57:05.895688+00:00"
+}

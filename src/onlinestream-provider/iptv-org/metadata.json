@@ -1,0 +1,23 @@
+{
+  "extensionId": "iptv-org",
+  "originalPluginName": "IptvOrg",
+  "originalInternalName": "IptvOrg",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/IptvOrg.cs3",
+  "originalRepositoryUrl": "https://github.com/Bnyro/GermanProviders",
+  "originalAuthors": [
+    "Adippe",
+    "Phisher98",
+    "Bnyro"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "24705c400af61e9c05222bb70f951755e36d41e3be756d59df13f11cbff2ea67",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:04:12.650085+00:00"
+}

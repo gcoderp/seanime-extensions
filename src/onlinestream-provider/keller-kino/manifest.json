@@ -1,0 +1,15 @@
+{
+  "id": "keller-kino",
+  "name": "KellerKino",
+  "description": "Filme per Stream anschauen",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/keller-kino/manifest.json",
+  "version": "1.1.0",
+  "author": "Bnyro",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "de",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/keller-kino/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/keller-kino/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=www.kellerkino.com&sz=%size%"
+}

@@ -1,0 +1,19 @@
+{
+  "extensionId": "nomat",
+  "originalPluginName": "Nomat",
+  "originalInternalName": "Nomat",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/Nomat.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "acea324975bbd3715af5ad0a15623cfe671c62f547e8448e98abb2636ac5f640",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:21.417741+00:00"
+}

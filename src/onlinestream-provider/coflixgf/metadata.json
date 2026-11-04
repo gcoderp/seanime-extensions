@@ -1,0 +1,22 @@
+{
+  "extensionId": "coflixgf",
+  "originalPluginName": "CoFliXGF",
+  "originalInternalName": "coflixgf",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/tOntOnbOuLii/GramFlix/main/coflixgf.cs3",
+  "originalRepositoryUrl": "https://github.com/tOntOnbOuLii/GramFlix",
+  "originalAuthors": [
+    "tOntOnbOuLii",
+    "x-R0b0T-x"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "78c0fcb58938b3bce51a218ab6a6c08fa822925a55c1ccb98ff561a0671b00ee",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+  ],
+  "convertedAt": "2026-11-04T08:05:37.327424+00:00"
+}

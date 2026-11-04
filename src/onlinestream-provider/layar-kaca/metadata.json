@@ -1,0 +1,20 @@
+{
+  "extensionId": "layar-kaca",
+  "originalPluginName": "LayarKaca",
+  "originalInternalName": "LayarKaca",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarKaca.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Hexated",
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "e7a563424684c5c8c1e19781ef5e0eafafbfc8c1516acdda45af354d09dea7d1",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:07.822984+00:00"
+}

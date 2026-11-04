@@ -1,0 +1,19 @@
+{
+  "extensionId": "layar-warna",
+  "originalPluginName": "LayarWarna",
+  "originalInternalName": "LayarWarna",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarWarna.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
+  "originalAuthors": [
+    "Asm0d3usX"
+  ],
+  "license": "MIT",
+  "cs3Sha256": "cfaa4f793682813187ffc3a0ae284b20233dc2612d2cfef250bbccf72ec3e616",
+  "converterVersion": "2.5.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T07:56:09.989783+00:00"
+}
