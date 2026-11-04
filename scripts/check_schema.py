@@ -73,7 +73,7 @@ def main() -> int:
                 if download_url.startswith("/") or "\\" in download_url:
                     fail(f"{p_type}/{ext_id}: metadata leaks a local filesystem path ({download_url})")
 
-            manifests[manifest.get("id")] = (p_type, ext_dir, manifest)
+            manifests.setdefault(manifest.get("id"), []).append((p_type, ext_dir, manifest))
 
     mkt_path = os.path.join(ROOT, "marketplace.json")
     if not os.path.exists(mkt_path):
@@ -93,7 +93,17 @@ def main() -> int:
             if ext_id not in manifests:
                 fail(f"marketplace: {ext_id} has no extension under src/")
                 continue
-            p_type, ext_dir, manifest = manifests[ext_id]
+            # Two provider types can share a kebab-case id: pick the bundle whose payloadURI
+            # matches the published entry, then the one that passed validation.
+            candidates = manifests[ext_id]
+            match = [c for c in candidates if c[2].get("payloadURI") == item.get("payloadURI")]
+            if match:
+                p_type, ext_dir, manifest = match[0]
+            else:
+                passed = [c for c in candidates
+                          if os.path.exists(os.path.join(c[1], "conversion-report.json"))
+                          and json.load(open(os.path.join(c[1], "conversion-report.json"), encoding="utf-8")).get("overall_status") == "SUCCESS"]
+                p_type, ext_dir, manifest = (passed or candidates)[0]
             if item.get("manifestURI") != manifest.get("manifestURI"):
                 fail(f"marketplace: {ext_id} manifestURI differs from its manifest.json")
             if "/OWNER/" in str(item.get("manifestURI", "")):
@@ -111,6 +121,10 @@ def main() -> int:
             print(f"  - {e}", file=sys.stderr)
         return 1
 
+    duplicates = {k: v for k, v in manifests.items() if len(v) > 1}
+    if duplicates:
+        print(f"note: {len(duplicates)} id(s) exist under more than one provider type: "
+              f"{', '.join(sorted(duplicates))} (see reports/duplicate-ids.json)")
     print(f"Schema OK: {len(manifests)} extension manifest(s), marketplace consistent.")
     return 0
 

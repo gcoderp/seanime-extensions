@@ -97,9 +97,18 @@ if (!existsSync(marketplacePath)) {
                 errors.push(`${item.id}: manifestURI still contains the OWNER placeholder -- set github_owner in config/settings.json`);
             }
 
-            const ext = extensions.find((e) => {
+            // Resolve by payloadURI first: two provider types can produce the same id, and
+            // matching on id alone used to check a different bundle than the one published.
+            const manifestOf = (e) => {
                 const mPath = join(e.dir, "manifest.json");
-                return existsSync(mPath) && JSON.parse(readFileSync(mPath, "utf8")).id === item.id;
+                return existsSync(mPath) ? JSON.parse(readFileSync(mPath, "utf8")) : null;
+            };
+            const ext = extensions.find((e) => {
+                const m = manifestOf(e);
+                return m && m.payloadURI && m.payloadURI === item.payloadURI;
+            }) || extensions.find((e) => {
+                const m = manifestOf(e);
+                return m && m.id === item.id;
             });
             if (!ext) {
                 errors.push(`${item.id}: published in marketplace but no matching extension under src/`);

@@ -32,6 +32,17 @@ class SecureCS3Downloader:
             json.dump(self.state, f, indent=2)
 
     @staticmethod
+    def normalize_url(url: str) -> str:
+        """Percent-encodes characters that urllib refuses, e.g. the space in "Aia2tv 2.cs3".
+
+        Cloudstream repositories routinely ship package names with spaces and non-ASCII
+        characters. '%' is kept safe so already-encoded URLs are not double-encoded.
+        """
+        if not url:
+            return url
+        return urllib.parse.quote(url, safe=":/?#[]@!$&'()*+,;=%~")
+
+    @staticmethod
     def validate_url_security(url: str) -> None:
         parsed = urllib.parse.urlparse(url)
         if parsed.scheme not in ("https", "http"):
@@ -55,7 +66,7 @@ class SecureCS3Downloader:
     def fetch_json(self, url: str) -> Any:
         self.validate_url_security(url)
         req = urllib.request.Request(
-            url,
+            self.normalize_url(url),
             headers={"User-Agent": "Cloudstream-Seanime-Converter/2.4 (+https://github.com)"}
         )
         with urllib.request.urlopen(req, timeout=self.timeout) as resp:
@@ -82,7 +93,7 @@ class SecureCS3Downloader:
                     return dest_path, cached_sha, True
 
         req = urllib.request.Request(
-            url,
+            self.normalize_url(url),
             headers={"User-Agent": "Cloudstream-Seanime-Converter/2.4"}
         )
         hasher = hashlib.sha256()

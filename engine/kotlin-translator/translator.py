@@ -65,10 +65,14 @@ class CloudstreamToSeanimeTranslator:
 
     @staticmethod
     def _fill(template: str, mapping: Dict[str, str]) -> str:
+        # Only the tokens this template declares must be substituted. Recovered provider
+        # source legitimately contains identifiers such as __NUXT_DATA__ (a Nuxt global used
+        # as a CSS selector), which must not be mistaken for an unsubstituted template token.
+        expected = set(TOKEN_RE.findall(template))
         out = template
         for key, value in mapping.items():
             out = out.replace(key, value)
-        leftovers = sorted(set(TOKEN_RE.findall(out)))
+        leftovers = sorted(token for token in expected if token in out)
         if leftovers:
             raise ValueError(f"Unsubstituted template tokens remain: {leftovers}")
         return out

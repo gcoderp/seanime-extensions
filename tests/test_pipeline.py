@@ -214,6 +214,76 @@ def test_licence_notice_policy_publishes_with_a_recorded_notice(sample_bundle):
     assert any("licence" in w.lower() for w in result["warnings"])
 
 
+# --------------------------------------------------------------------------- regressions
+
+
+def test_marketplace_prefers_the_validated_bundle_when_ids_collide(tmp_path):
+    """A plugin listed as both Anime and Torrent produces the same kebab-case id.
+
+    Publishing used to depend on directory order, so the marketplace could point at one
+    bundle while the report that validate.mjs checked belonged to another. That is the
+    failure that stopped the 2.6.0 workflow on `cine-stream`.
+    """
+    gen_mod = load_mod("seanime-generator", "engine/seanime-generator/generator.py")
+    for p_type, status in (("onlinestream-provider", "NEEDS_REVIEW"), ("anime-torrent-provider", "SUCCESS")):
+        ext = tmp_path / "src" / p_type / "cine-stream"
+        ext.mkdir(parents=True)
+        (ext / "manifest.json").write_text(json.dumps({
+            "id": "cine-stream", "name": "CineStream", "type": p_type, "version": "1.1.0",
+            "manifestURI": f"https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/{p_type}/cine-stream/manifest.json",
+            "payloadURI": f"https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/{p_type}/cine-stream/code.js",
+        }), encoding="utf-8")
+        (ext / "conversion-report.json").write_text(json.dumps({"overall_status": status}), encoding="utf-8")
+        (ext / "code.js").write_text("class Provider {}\n", encoding="utf-8")
+
+    generator = gen_mod.SeanimeExtensionGenerator(repo_root=str(tmp_path))
+    marketplace = generator.regenerate_marketplace()
+
+    assert len(marketplace) == 1
+    assert "anime-torrent-provider/cine-stream/code.js" in marketplace[0]["payloadURI"]
+    duplicates = json.loads((tmp_path / "reports" / "duplicate-ids.json").read_text(encoding="utf-8"))
+    assert duplicates and duplicates[0]["id"] == "cine-stream"
+    assert set(duplicates[0]["statuses"]) == {"NEEDS_REVIEW", "SUCCESS"}
+
+
+def test_marketplace_skips_a_bundle_that_did_not_pass(tmp_path):
+    gen_mod = load_mod("seanime-generator", "engine/seanime-generator/generator.py")
+    ext = tmp_path / "src" / "onlinestream-provider" / "held"
+    ext.mkdir(parents=True)
+    (ext / "manifest.json").write_text(json.dumps({
+        "id": "held", "name": "Held", "type": "onlinestream-provider", "version": "1.0.0",
+        "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/held/code.js",
+    }), encoding="utf-8")
+    (ext / "conversion-report.json").write_text(json.dumps({"overall_status": "NEEDS_REVIEW"}), encoding="utf-8")
+    (ext / "code.js").write_text("class Provider {}\n", encoding="utf-8")
+
+    assert gen_mod.SeanimeExtensionGenerator(repo_root=str(tmp_path)).regenerate_marketplace() == []
+
+
+def test_template_guard_ignores_provider_identifiers_that_look_like_tokens():
+    """__NUXT_DATA__ is a real Nuxt global used as a selector, not an unsubstituted token."""
+    trans_mod = load_mod("translator", "engine/kotlin-translator/translator.py")
+    filled = trans_mod.CloudstreamToSeanimeTranslator._fill(
+        "const sel = __SELECTOR__;",
+        {"__SELECTOR__": json.dumps("script#__NUXT_DATA__")},
+    )
+    assert "__NUXT_DATA__" in filled
+
+    with pytest.raises(ValueError, match="Unsubstituted template tokens"):
+        trans_mod.CloudstreamToSeanimeTranslator._fill("const a = __MISSING__;", {})
+
+
+def test_downloader_encodes_spaces_in_package_urls():
+    dl_mod = load_mod("downloader", "engine/downloader/downloader.py")
+    encoded = dl_mod.SecureCS3Downloader.normalize_url(
+        "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Aia2tv 2.cs3"
+    )
+    assert " " not in encoded
+    assert encoded.endswith("Aia2tv%202.cs3")
+    # an already-encoded URL must not be encoded twice
+    assert dl_mod.SecureCS3Downloader.normalize_url("https://x.test/a%20b.cs3") == "https://x.test/a%20b.cs3"
+
+
 # --------------------------------------------------------------------------- repository state
 
 

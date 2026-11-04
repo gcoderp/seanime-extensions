@@ -187,41 +187,80 @@ Use the direct manifest URL below in Seanime's Extension settings:
             "manifest": manifest_payload
         }
 
-    def regenerate_marketplace(self) -> List[Dict[str, Any]]:
-        """Scans all valid extension manifests under src/ and writes both marketplace.json and generated/marketplace.json."""
+    def scan_bundles(self) -> List[Dict[str, Any]]:
+        """Every extension directory on disk, with its validation status."""
         provider_types = ["onlinestream-provider", "anime-torrent-provider", "manga-provider", "custom-source"]
-        entries: List[Dict[str, Any]] = []
-        seen_ids = set()
-
+        bundles: List[Dict[str, Any]] = []
         for p_type in provider_types:
             type_dir = os.path.join(self.repo_root, "src", p_type)
             if not os.path.exists(type_dir):
                 continue
             for folder in sorted(os.listdir(type_dir)):
                 ext_dir = os.path.join(type_dir, folder)
+                if not os.path.isdir(ext_dir):
+                    continue
                 manifest_path = os.path.join(ext_dir, "manifest.json")
                 code_js_path = os.path.join(ext_dir, "code.js")
                 report_path = os.path.join(ext_dir, "conversion-report.json")
                 if not (os.path.exists(manifest_path) and os.path.exists(code_js_path)):
                     continue
-
                 try:
                     with open(manifest_path, "r", encoding="utf-8") as mf:
                         manifest = json.load(mf)
-                    if os.path.exists(report_path):
-                        with open(report_path, "r", encoding="utf-8") as rf:
-                            rep = json.load(rf)
-                        if rep.get("overall_status") not in ("SUCCESS", None):
-                            continue
-                    ext_id = manifest.get("id")
-                    if not ext_id or ext_id in seen_ids:
-                        continue
-                    if not manifest.get("payloadURI", "").endswith("/code.js"):
-                        continue
-                    seen_ids.add(ext_id)
-                    entries.append(manifest)
                 except Exception:
                     continue
+                status = None
+                if os.path.exists(report_path):
+                    try:
+                        with open(report_path, "r", encoding="utf-8") as rf:
+                            status = json.load(rf).get("overall_status")
+                    except Exception:
+                        status = None
+                bundles.append({
+                    "type": p_type,
+                    "dir": ext_dir,
+                    "relative": os.path.relpath(ext_dir, self.repo_root).replace(os.sep, "/"),
+                    "manifest": manifest,
+                    "status": status,
+                })
+        return bundles
+
+    def regenerate_marketplace(self) -> List[Dict[str, Any]]:
+        """Writes marketplace.json and generated/marketplace.json from the bundles on disk.
+
+        Two different provider types can produce the same kebab-case id (for example a plugin
+        listed as both Anime and Torrent), so ids are resolved deterministically: the bundle
+        that passed validation wins, and the collision is recorded in
+        reports/duplicate-ids.json. Publishing used to depend on directory order, which made
+        the published payload and the report that validate.mjs checked disagree.
+        """
+        bundles = self.scan_bundles()
+        by_id: Dict[str, List[Dict[str, Any]]] = {}
+        for bundle in bundles:
+            ext_id = bundle["manifest"].get("id")
+            if not ext_id:
+                continue
+            by_id.setdefault(ext_id, []).append(bundle)
+
+        entries: List[Dict[str, Any]] = []
+        duplicates: List[Dict[str, Any]] = []
+
+        for ext_id in sorted(by_id):
+            group = by_id[ext_id]
+            if len(group) > 1:
+                duplicates.append({
+                    "id": ext_id,
+                    "paths": [b["relative"] for b in group],
+                    "statuses": [b["status"] for b in group],
+                })
+            passed = [b for b in group if b["status"] == "SUCCESS"]
+            if not passed:
+                continue
+            chosen = passed[0]
+            manifest = chosen["manifest"]
+            if not str(manifest.get("payloadURI", "")).endswith("/code.js"):
+                continue
+            entries.append(manifest)
 
         entries.sort(key=lambda x: (x.get("type", ""), x.get("id", "")))
 
@@ -233,5 +272,11 @@ Use the direct manifest URL below in Seanime's Extension settings:
             json.dump(entries, f, indent=2)
         with open(gen_mkt, "w", encoding="utf-8") as f:
             json.dump(entries, f, indent=2)
+
+        reports_dir = os.path.join(self.repo_root, "reports")
+        os.makedirs(reports_dir, exist_ok=True)
+        with open(os.path.join(reports_dir, "duplicate-ids.json"), "w", encoding="utf-8") as f:
+            json.dump(duplicates, f, indent=2)
+            f.write("\n")
 
         return entries
