@@ -1,0 +1,104 @@
+name: checker
+
+# Downloads every extension published in this repository's marketplace, runs it inside a
+# Seanime-compatible runtime, drives it with real AniList metadata (search -> episodes ->
+# stream), and commits working-extensions.json with the verdict.
+#
+# This is the only workflow that proves an extension *works* rather than merely compiles.
+# It never converts anything and never writes to src/.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Check at most N extensions (0 = all)"
+        type: string
+        default: "0"
+      ids:
+        description: "Explicit AniList IDs, comma separated (overrides checker/targets.json)"
+        type: string
+        default: ""
+      concurrency:
+        description: "Parallel extensions"
+        type: string
+        default: "4"
+      type:
+        description: "onlinestream-provider | anime-torrent-provider | all"
+        type: choice
+        options: [onlinestream-provider, anime-torrent-provider, all]
+        default: onlinestream-provider
+      marketplace:
+        description: "marketplace.json to check (default: this repository)"
+        type: string
+        default: ""
+  schedule:
+    # Daily, after the update workflow has refreshed the collection.
+    - cron: "0 9 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checker
+  cancel-in-progress: false
+
+jobs:
+  check:
+    name: Check extensions against AniList
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Node
+        uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install TypeScript (used to transpile .ts payloads)
+        run: npm ci
+
+      - name: Run checker
+        env:
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          MARKETPLACE="${{ github.event.inputs.marketplace }}"
+          if [ -z "$MARKETPLACE" ]; then
+            MARKETPLACE="https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/main/marketplace.json"
+          fi
+          ARGS=(--marketplace "$MARKETPLACE" --out working-extensions.json)
+          ARGS+=(--limit "${{ github.event.inputs.limit || '0' }}")
+          ARGS+=(--concurrency "${{ github.event.inputs.concurrency || '4' }}")
+          ARGS+=(--type "${{ github.event.inputs.type || 'onlinestream-provider' }}")
+          IDS="${{ github.event.inputs.ids }}"
+          if [ -n "$IDS" ]; then ARGS+=(--ids "$IDS"); fi
+          node checker/run.mjs "${ARGS[@]}"
+
+      - name: Upload report
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: working-extensions
+          path: working-extensions.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Commit report
+        run: |
+          set -euo pipefail
+          git config user.name "seanime-checker[bot]"
+          git config user.email "seanime-checker@users.noreply.github.com"
+          git add working-extensions.json
+          if git diff --cached --quiet; then
+            echo "No change in working-extensions.json."
+            exit 0
+          fi
+          WORKING=$(python3 -c "import json;print(json.load(open('working-extensions.json'))['summary']['working'])")
+          CHECKED=$(python3 -c "import json;print(json.load(open('working-extensions.json'))['summary']['checked'])")
+          git commit -m "chore(checker): ${WORKING}/${CHECKED} extensions verified against AniList"
+          git push
