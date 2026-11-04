@@ -8,9 +8,10 @@
   "sha256_checksum": "9bd1f22bd17cc965822d7632a06ce1bd05abfb0912f4197a6f8bd26f35bee06b",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
-  "source_recovery_status": "DEX_FALLBACK",
+  "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "source_recovery_status": "RECOVERED",
   "decompilation_status": "JADX_OK",
-  "kotlin_reconstruction_status": "PARTIAL",
+  "kotlin_reconstruction_status": "SUCCESS",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
   "seanime_compatibility_status": "PASS",
@@ -19,15 +20,15 @@
   "search_test_status": "MOCK_PASS",
   "episode_test_status": "MOCK_PASS",
   "extractor_test_status": "MOCK_PASS",
-  "overall_status": "NEEDS_REVIEW",
-  "review_reasons": [
-    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
-  ],
+  "overall_status": "SUCCESS",
+  "review_reasons": [],
+  "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
+    "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T07:53:53.654267+00:00",
-  "passed": false
+  "conversion_timestamp": "2026-11-04T10:13:35.617441+00:00",
+  "passed": true
 }

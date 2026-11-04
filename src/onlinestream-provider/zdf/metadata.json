@@ -10,13 +10,12 @@
   ],
   "license": "UNKNOWN",
   "cs3Sha256": "2389355e0229911f3519f63ebb60ffb7049807b20e6d7229072ad7281073f31f",
-  "converterVersion": "2.5.0",
+  "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
-    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
-    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-04T08:04:41.761039+00:00"
+  "convertedAt": "2026-11-04T10:29:55.661088+00:00"
 }

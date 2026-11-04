@@ -10,7 +10,7 @@
   ],
   "license": "GPL-3.0",
   "cs3Sha256": "b5ed63681b50514b7e0fb292a2db264c2cd5beed256bd873777c4e10593751f7",
-  "converterVersion": "2.5.0",
+  "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
@@ -18,5 +18,5 @@
     "No upstream base URL could be recovered.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-04T08:01:54.612899+00:00"
+  "convertedAt": "2026-11-04T10:25:55.435292+00:00"
 }

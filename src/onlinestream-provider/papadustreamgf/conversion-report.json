@@ -8,6 +8,7 @@
   "sha256_checksum": "63f0186342291d3c9405f5728784a13994db3818280abc8c40ff6ea7f1955999",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
   "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "JADX_OK",
   "kotlin_reconstruction_status": "PARTIAL",
@@ -19,15 +20,15 @@
   "search_test_status": "MOCK_PASS",
   "episode_test_status": "MOCK_PASS",
   "extractor_test_status": "MOCK_PASS",
-  "overall_status": "NEEDS_REVIEW",
-  "review_reasons": [
-    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
-  ],
+  "overall_status": "SUCCESS",
+  "review_reasons": [],
+  "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
+    "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T08:06:04.437422+00:00",
-  "passed": false
+  "conversion_timestamp": "2026-11-04T10:32:03.208228+00:00",
+  "passed": true
 }

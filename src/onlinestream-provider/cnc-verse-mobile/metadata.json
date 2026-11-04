@@ -1,0 +1,19 @@
+{
+  "extensionId": "cnc-verse-mobile",
+  "originalPluginName": "CNC Verse Mobile",
+  "originalInternalName": "CNC Verse Mobile",
+  "originalVersion": 13,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CNC Verse Mobile.cs3",
+  "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
+  "originalAuthors": [
+    "NivinCNC"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "6ebd3135b4731ea7154275426570d9948011e1dec5fd600357d303f3fb683167",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T10:19:38.142227+00:00"
+}

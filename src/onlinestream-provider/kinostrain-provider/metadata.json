@@ -1,0 +1,20 @@
+{
+  "extensionId": "kinostrain-provider",
+  "originalPluginName": "KinostrainProvider",
+  "originalInternalName": "KinostrainProvider",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/KinostrainProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+  "originalAuthors": [
+    "CakesTwix",
+    "Partizanin"
+  ],
+  "license": "GPL-3.0",
+  "cs3Sha256": "c1cc40a54f5b6265af8efd93ced48a829e26cf0886dbc5f1a90a3d6e8c21ec8b",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T10:25:30.929823+00:00"
+}

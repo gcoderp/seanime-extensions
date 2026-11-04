@@ -10,12 +10,10 @@
   ],
   "license": "UNKNOWN",
   "cs3Sha256": "c153da49787d03b50dcb70568bf70bf342927b3492cf90eab5d7912f1c19795b",
-  "converterVersion": "2.5.0",
-  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
-  "validationStatus": "NEEDS_REVIEW",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
-  "reviewReasons": [
-    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
-  ],
-  "convertedAt": "2026-11-04T08:04:31.621916+00:00"
+  "reviewReasons": [],
+  "convertedAt": "2026-11-04T10:29:40.666398+00:00"
 }

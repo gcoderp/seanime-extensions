@@ -8,9 +8,10 @@
   "sha256_checksum": "31647bcf6bdd87404e7df5a8db621ee1d100c605ef3d9f2a342d389cd8a386a8",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
-  "source_recovery_status": "RECOVERED",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
+  "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "JADX_OK",
-  "kotlin_reconstruction_status": "SUCCESS",
+  "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
   "seanime_compatibility_status": "PASS",
@@ -21,11 +22,12 @@
   "extractor_test_status": "MOCK_PASS",
   "overall_status": "SUCCESS",
   "review_reasons": [],
+  "license_notice": false,
   "known_unsupported_methods": [],
   "warnings": [
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T08:01:15.956513+00:00",
+  "conversion_timestamp": "2026-11-04T10:24:59.489067+00:00",
   "passed": true
 }

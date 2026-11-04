@@ -10,10 +10,10 @@
   ],
   "license": "MIT",
   "cs3Sha256": "f5b4f2e370485114cf775a6e0a21de3f53d3a6d3d177457222194590c1c66d54",
-  "converterVersion": "2.5.0",
+  "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
   "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [],
-  "convertedAt": "2026-11-04T07:56:00.690310+00:00"
+  "convertedAt": "2026-11-04T10:16:52.773171+00:00"
 }

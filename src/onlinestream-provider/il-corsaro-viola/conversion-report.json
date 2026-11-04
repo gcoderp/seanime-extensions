@@ -1,0 +1,37 @@
+{
+  "plugin_name": "IlCorsaroViola",
+  "original_plugin_id": "IlCorsaroViola",
+  "original_author": "doGior",
+  "original_repository": "https://github.com/doGior/doGiorsHadEnough",
+  "original_download_url": "https://raw.githubusercontent.com/doGior/doGiorsHadEnough/builds/IlCorsaroViola.cs3",
+  "original_version": 1,
+  "sha256_checksum": "189750d23df33b723669995522024fda5ee0ddfd873c3bae333132dc3dcb1822",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "source_recovery_status": "RECOVERED",
+  "decompilation_status": "JADX_OK",
+  "kotlin_reconstruction_status": "SUCCESS",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+  ],
+  "license_notice": true,
+  "known_unsupported_methods": [],
+  "warnings": [
+    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+    "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-04T10:18:07.532886+00:00",
+  "passed": false
+}

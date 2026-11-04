@@ -10,13 +10,12 @@
   ],
   "license": "UNKNOWN",
   "cs3Sha256": "64367e011b28a7626bfdffb0515d512fdc3cfb7faa0fb786c9ad3980529af2da",
-  "converterVersion": "2.5.0",
+  "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
-    "Base URL is a placeholder (example.com); scraper logic was not recovered.",
-    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    "Base URL is a placeholder (example.com); scraper logic was not recovered."
   ],
-  "convertedAt": "2026-11-04T07:51:51.875381+00:00"
+  "convertedAt": "2026-11-04T10:10:32.651162+00:00"
 }

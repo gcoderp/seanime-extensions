@@ -1,0 +1,13 @@
+[
+  {
+    "id": "il-corsaro-viola",
+    "paths": [
+      "src/onlinestream-provider/il-corsaro-viola",
+      "src/anime-torrent-provider/il-corsaro-viola"
+    ],
+    "statuses": [
+      "NEEDS_REVIEW",
+      "NEEDS_REVIEW"
+    ]
+  }
+]

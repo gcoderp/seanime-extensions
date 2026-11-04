@@ -10,10 +10,10 @@
   ],
   "license": "GPL-3.0",
   "cs3Sha256": "2756b2e60e56c4e512864ccd1fb2626ffcdae241d2786baf31631e523adafe5e",
-  "converterVersion": "2.5.0",
+  "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
   "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [],
-  "convertedAt": "2026-11-04T08:01:42.266082+00:00"
+  "convertedAt": "2026-11-04T10:25:38.161260+00:00"
 }

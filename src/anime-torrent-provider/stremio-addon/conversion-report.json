@@ -8,6 +8,7 @@
   "sha256_checksum": "64367e011b28a7626bfdffb0515d512fdc3cfb7faa0fb786c9ad3980529af2da",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "anime-torrent-provider",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
   "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "JADX_OK",
   "kotlin_reconstruction_status": "PARTIAL",
@@ -21,16 +22,17 @@
   "extractor_test_status": "N/A",
   "overall_status": "NEEDS_REVIEW",
   "review_reasons": [
-    "Base URL is a placeholder (example.com); scraper logic was not recovered.",
-    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    "Base URL is a placeholder (example.com); scraper logic was not recovered."
   ],
+  "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
     "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Torrent row selectors are heuristic; live verification against the tracker is required.",
+    "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T07:51:48.868030+00:00",
+  "conversion_timestamp": "2026-11-04T10:10:28.322222+00:00",
   "passed": false
 }

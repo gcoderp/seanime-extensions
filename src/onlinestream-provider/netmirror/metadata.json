@@ -10,10 +10,10 @@
   ],
   "license": "GPL-3.0",
   "cs3Sha256": "26ea2b1d7c7b3f5ccc2e5bdb7a5dc01376fc767d72d8b62345fe2c6600531079",
-  "converterVersion": "2.5.0",
+  "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
   "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [],
-  "convertedAt": "2026-11-04T08:02:47.770502+00:00"
+  "convertedAt": "2026-11-04T10:27:11.491051+00:00"
 }

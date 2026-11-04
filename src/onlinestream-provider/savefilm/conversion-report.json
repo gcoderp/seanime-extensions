@@ -8,6 +8,7 @@
   "sha256_checksum": "5bb52630a1c5fc326ace7665c43a645cd2555dc7b925f32cdb740908334e4329",
   "license_spdx": "MIT",
   "detected_provider_type": "onlinestream-provider",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
   "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "JADX_OK",
   "kotlin_reconstruction_status": "PARTIAL",
@@ -21,11 +22,12 @@
   "extractor_test_status": "MOCK_PASS",
   "overall_status": "SUCCESS",
   "review_reasons": [],
+  "license_notice": false,
   "known_unsupported_methods": [],
   "warnings": [
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T07:56:27.917038+00:00",
+  "conversion_timestamp": "2026-11-04T10:17:45.367084+00:00",
   "passed": true
 }

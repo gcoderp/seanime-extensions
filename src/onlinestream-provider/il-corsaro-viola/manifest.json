@@ -1,0 +1,15 @@
+{
+  "id": "il-corsaro-viola",
+  "name": "IlCorsaroViola",
+  "description": "Torrents from Il Corsaro Viola",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/il-corsaro-viola/manifest.json",
+  "version": "1.1.0",
+  "author": "doGior",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "it",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/il-corsaro-viola/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/il-corsaro-viola/code.js",
+  "icon": "https://i.imgur.com/OPM9e9p.png"
+}

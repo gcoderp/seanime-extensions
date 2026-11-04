@@ -8,6 +8,7 @@
   "sha256_checksum": "6ffeea729e8f89a99d17088cbfa8eee6c002b524f0d6e5645aa1a7f827bdbb38",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
+  "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
   "source_recovery_status": "RECOVERED",
   "decompilation_status": "JADX_OK",
   "kotlin_reconstruction_status": "SUCCESS",
@@ -21,11 +22,12 @@
   "extractor_test_status": "MOCK_PASS",
   "overall_status": "SUCCESS",
   "review_reasons": [],
+  "license_notice": false,
   "known_unsupported_methods": [],
   "warnings": [
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T08:01:54.613229+00:00",
+  "conversion_timestamp": "2026-11-04T10:25:55.436642+00:00",
   "passed": true
 }

@@ -8,6 +8,7 @@
   "sha256_checksum": "7090bf29b73a06f60714874a7f2d66c3881ef67acdf00445b2278fbb9be07e6c",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "anime-torrent-provider",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
   "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "JADX_OK",
   "kotlin_reconstruction_status": "PARTIAL",
@@ -19,16 +20,16 @@
   "search_test_status": "MOCK_PASS",
   "episode_test_status": "N/A",
   "extractor_test_status": "N/A",
-  "overall_status": "NEEDS_REVIEW",
-  "review_reasons": [
-    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
-  ],
+  "overall_status": "SUCCESS",
+  "review_reasons": [],
+  "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
     "Torrent row selectors are heuristic; live verification against the tracker is required.",
+    "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T07:51:51.875697+00:00",
-  "passed": false
+  "conversion_timestamp": "2026-11-04T10:10:32.652296+00:00",
+  "passed": true
 }

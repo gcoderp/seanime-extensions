@@ -8,9 +8,10 @@
   "sha256_checksum": "1bc6f551461dbfa6a851265d8e50ea6a51c3bfc13e8ad5ccebeeea838e5d56bf",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
-  "source_recovery_status": "RECOVERED",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
+  "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "JADX_OK",
-  "kotlin_reconstruction_status": "SUCCESS",
+  "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
   "seanime_compatibility_status": "PASS",
@@ -21,12 +22,13 @@
   "extractor_test_status": "MOCK_PASS",
   "overall_status": "SUCCESS",
   "review_reasons": [],
+  "license_notice": false,
   "known_unsupported_methods": [],
   "warnings": [
     "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T08:02:42.307813+00:00",
+  "conversion_timestamp": "2026-11-04T10:27:04.509404+00:00",
   "passed": true
 }

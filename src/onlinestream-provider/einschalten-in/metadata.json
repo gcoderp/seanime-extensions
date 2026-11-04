@@ -10,13 +10,12 @@
   ],
   "license": "UNKNOWN",
   "cs3Sha256": "9f18ca2c8e4000a909d6856d3f8f3742966daeaf2ceb57e0a5982a385e3f9e80",
-  "converterVersion": "2.5.0",
-  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
-    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered.",
-    "Upstream licence 'UNKNOWN' is not on the redistribution allowlist."
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-04T08:03:56.752699+00:00"
+  "convertedAt": "2026-11-04T10:28:57.673460+00:00"
 }
