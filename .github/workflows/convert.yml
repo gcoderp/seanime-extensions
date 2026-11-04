@@ -1,0 +1,163 @@
+name: convert
+
+# Main conversion workflow: discover Cloudstream plugins, download .cs3 packages,
+# reconstruct providers, compile TypeScript, validate, and publish validated bundles.
+#
+# Trust boundary: the `build` job runs third-party downloaded code with a read-only
+# token. Only the `publish` job holds `contents: write`, and it receives nothing but
+# the generated artifacts.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "live = convert configured repositories, fixtures = offline sample set"
+        type: choice
+        options: [live, fixtures]
+        default: live
+      limit:
+        description: "Process at most N plugins (0 = all)"
+        type: string
+        default: "0"
+      only:
+        description: "Comma-separated internal plugin names (optional)"
+        type: string
+        default: ""
+  push:
+    paths:
+      - "config/repositories.json"
+      - "engine/**"
+      - "seanime/**"
+      - "scripts/**"
+  schedule:
+    - cron: "0 3 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: convert-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Convert and validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Set up Java
+        uses: actions/setup-java@v6.1.0
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install TypeScript compiler
+        run: npm ci
+
+      - name: Install JADX (optional decompiler)
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          VERSION="1.5.1"
+          curl -fsSL -o /tmp/jadx.zip \
+            "https://github.com/skylot/jadx/releases/download/v${VERSION}/jadx-${VERSION}.zip"
+          mkdir -p "$HOME/jadx" && unzip -q -o /tmp/jadx.zip -d "$HOME/jadx"
+          echo "$HOME/jadx/bin" >> "$GITHUB_PATH"
+
+      - name: Validate configuration
+        run: python3 -c "import json,sys; [json.load(open(p)) for p in ['config/repositories.json','config/settings.json']]; print('config OK')"
+
+      - name: Convert
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          MODE="${{ github.event.inputs.mode || 'live' }}"
+          LIMIT="${{ github.event.inputs.limit || '0' }}"
+          ONLY="${{ github.event.inputs.only || '' }}"
+          ARGS="--limit ${LIMIT:-0}"
+          if [ -n "$ONLY" ]; then ARGS="$ARGS --only $ONLY"; fi
+          if [ "$MODE" = "fixtures" ]; then ARGS="$ARGS --fixtures"; fi
+          python3 scripts/convert.py $ARGS
+
+      - name: Verify generated JavaScript parses
+        run: node scripts/validate.mjs
+
+      - name: Upload converted bundles
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: converted-bundles
+          path: |
+            src/
+            generated/
+            marketplace.json
+            reports/
+            config/license-cache.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Workflow summary
+        if: always()
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          p = "reports/conversion-summary.json"
+          if os.path.exists(p):
+              s = json.load(open(p))
+              print("## Conversion summary\n")
+              print("| metric | value |")
+              print("| --- | --- |")
+              for k in ("mode","total_processed","successful_count","needs_review_count","failed_count","skipped_count","published_in_marketplace"):
+                  print(f"| {k} | {s.get(k)} |")
+          else:
+              print("No conversion summary produced.")
+          PY
+
+  publish:
+    name: Publish validated bundles
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Download converted bundles
+        uses: actions/download-artifact@v7.0.0
+        with:
+          name: converted-bundles
+
+      - name: Commit validated changes
+        run: |
+          set -euo pipefail
+          git config user.name "seanime-converter[bot]"
+          git config user.email "seanime-converter@users.noreply.github.com"
+          git add -A src generated marketplace.json reports
+          [ -f config/license-cache.json ] && git add config/license-cache.json
+          if git diff --cached --quiet; then
+            echo "No validated changes to publish."
+            exit 0
+          fi
+          COUNT=$(python3 -c "import json;print(len(json.load(open('marketplace.json'))))")
+          git commit -m "chore(convert): publish ${COUNT} validated extension(s)"
+          git push
