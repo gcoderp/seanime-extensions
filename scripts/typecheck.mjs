@@ -28,7 +28,14 @@ for (const type of PROVIDER_TYPES) {
     }
 }
 
+const STALE_CONTRACT_PATTERNS = [
+    "Property 'year' does not exist on type 'Media'",
+    'is not assignable to type \'VideoSourceType\'',
+    "Property 'isBestRelease' is missing",
+];
+
 let failed = 0;
+const staleBundles = [];
 for (const file of files) {
     try {
         execFileSync(process.execPath, [
@@ -43,6 +50,9 @@ for (const file of files) {
     } catch (err) {
         failed++;
         const out = String(err.stdout || err.stderr || err.message).trim();
+        if (STALE_CONTRACT_PATTERNS.some((pattern) => out.includes(pattern))) {
+            staleBundles.push(file.replace(ROOT + "/", ""));
+        }
         console.error(`\n${file.replace(ROOT + "/", "")}:`);
         console.error(out.split("\n").slice(0, 12).join("\n"));
     }
@@ -52,6 +62,14 @@ if (files.length === 0) {
     console.log("No extension TypeScript files found.");
 } else if (failed > 0) {
     console.error(`\nType-check failed for ${failed}/${files.length} extension(s).`);
+    if (staleBundles.length > 0) {
+        console.error(
+            `\n${staleBundles.length} of them were generated against an older Seanime contract ` +
+            `(media.year, VideoSourceType "dash", missing isBestRelease).\n` +
+            `They are stale artifacts, not new bugs -- upgrade them in place without re-downloading:\n` +
+            `\n    python3 scripts/migrate-contract.py\n`
+        );
+    }
     process.exit(1);
 } else {
     console.log(`Type-checked ${files.length} extension(s) successfully.`);
