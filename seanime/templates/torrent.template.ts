@@ -41,4 +41,10 @@ __TORRENT_SMART_SEARCH_BODY__
     async getTorrentMagnetLink(torrent: AnimeTorrent): Promise<string> {
         return torrent.magnetLink || torrent.downloadUrl || torrent.link;
     }
+
+    // Seanime's torrent interface requires getLatest(); a converted Cloudstream provider has
+    // no "latest" listing to scrape, so it returns an empty page instead of throwing.
+    async getLatest(): Promise<AnimeTorrent[]> {
+        return [];
+    }
 }

@@ -60,10 +60,14 @@ def run_js(resolver_source: str, script: str) -> str:
         os.unlink(path)
 
 
+# The exact shape Seanime sends: flattened AniList titles, no `title` object.
 FRIEREN = """const media = {
-    id: 154587, idMal: 52991, year: 2023, format: "TV",
-    title: { romaji: "Sousou no Frieren", english: "Frieren: Beyond Journey's End", native: "葬送のフリーレン" },
-    synonyms: ["Frieren at the Funeral", "Frieren"]
+    id: 154587, idMal: 52991, format: "TV", status: "FINISHED",
+    romajiTitle: "Sousou no Frieren",
+    englishTitle: "Frieren: Beyond Journey's End",
+    synonyms: ["Frieren at the Funeral", "Frieren"],
+    isAdult: false,
+    startDate: { year: 2023, month: 9, day: 29 }
 };"""
 
 
@@ -72,8 +76,10 @@ def test_queries_follow_anilist_title_order(resolver_js):
 console.log(JSON.stringify(AniListResolver.queries(media, "frieren", 3)));
 """)
     queries = json.loads(out)
-    assert queries[0] == "Frieren: Beyond Journey's End"
+    # The caller's query wins, then Seanime's GetAllTitles order: romaji, english, synonyms.
+    assert queries[0] == "frieren"
     assert queries[1] == "Sousou no Frieren"
+    assert queries[2] == "Frieren: Beyond Journey's End"
     assert len(queries) == 3
 
 
@@ -85,7 +91,7 @@ const siteOrder = [
   { title: "Sousou no Frieren (Dub)" },
   { title: "Frieren: Beyond Journey's End" }
 ];
-const ranked = AniListResolver.rank(siteOrder, (r) => r.title, media, media.year);
+const ranked = AniListResolver.rank(siteOrder, (r) => r.title, media, AniListResolver.yearOf({ year: 2023, media }));
 console.log(JSON.stringify(ranked.map((r) => r.title)));
 """)
     ranked = json.loads(out)
@@ -96,15 +102,17 @@ console.log(JSON.stringify(ranked.map((r) => r.title)));
 def test_sequel_does_not_resolve_to_the_first_season(resolver_js):
     out = run_js(resolver_js, """
 const media = {
-    year: 2024, format: "TV",
-    title: { romaji: "Mushoku Tensei II: Isekai Ittara Honki Dasu", english: "Mushoku Tensei: Jobless Reincarnation Season 2" },
-    synonyms: []
+    format: "TV",
+    romajiTitle: "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+    englishTitle: "Mushoku Tensei: Jobless Reincarnation Season 2",
+    synonyms: [],
+    startDate: { year: 2024 }
 };
 const siteOrder = [
   { title: "Mushoku Tensei: Jobless Reincarnation" },
   { title: "Mushoku Tensei: Jobless Reincarnation Season 2" }
 ];
-const ranked = AniListResolver.rank(siteOrder, (r) => r.title, media, media.year);
+const ranked = AniListResolver.rank(siteOrder, (r) => r.title, media, AniListResolver.yearOf({ year: 2023, media }));
 console.log(JSON.stringify(ranked.map((r) => r.title)));
 """)
     ranked = json.loads(out)
@@ -147,4 +155,8 @@ def test_generated_extension_uses_the_resolver(tmp_path):
     assert "class AniListResolver" in ts
     assert "AniListResolver.queries(" in ts
     assert "AniListResolver.rank(" in ts
+    assert "AniListResolver.yearOf(opts)" in ts
     assert "private async searchSite(" in ts
+    # Seanime sends flattened titles, never a `title` object
+    assert "media.romajiTitle" in ts
+    assert "media.title.romaji" not in ts

@@ -1,11 +1,18 @@
 // AniList-driven matching for converted Seanime providers.
 //
-// Seanime is an AniList client: it never hands a provider a bare search string in isolation,
-// it hands it the AniList media object (id, idMal, english/romaji/native titles, synonyms,
-// year, format). A converted Cloudstream provider that searches by `opts.query` alone picks
-// whatever the site's own ranking returns, which is frequently the wrong season, the wrong
-// adaptation, or a sequel. This resolver makes the AniList metadata the source of truth:
-// query by the AniList titles, then rank the site's results against the same titles.
+// Seanime is an AniList client. Before it calls a provider it resolves the media and builds
+// the `Media` object declared in Seanime's own onlinestream-provider.d.ts:
+//
+//   { id, idMal?, status?, format?, englishTitle?, romajiTitle?, episodeCount?,
+//     absoluteSeasonOffset?, synonyms: string[], isAdult, startDate?: { year, month?, day? } }
+//
+// and then calls search() once per title from GetAllTitles() (romaji, english, synonyms),
+// passing that title as `query` and the release year as `year`.
+//
+// So a converted Cloudstream provider must read *that* shape. Searching by `opts.query`
+// alone picks whatever the site's own ranking returns — frequently the wrong season, the
+// wrong adaptation, or a special. This resolver makes the AniList metadata the source of
+// truth: query by the AniList titles, then rank the site's results against the same titles.
 
 class AniListResolver {
     /** Lowercase, de-accent, drop bracketed qualifiers, collapse punctuation. */
@@ -67,19 +74,22 @@ class AniListResolver {
         return (2 * hits) / (ta.length + tb.length);
     }
 
-    /** Every title AniList knows for this media, most specific first, de-duplicated. */
+    /**
+     * Every title AniList knows for this media, in Seanime's GetAllTitles() order:
+     * romaji, english, then synonyms. De-duplicated case-insensitively.
+     */
     static titles(media: any, fallback?: string): string[] {
         const out: string[] = [];
         const push = (value?: string) => {
             if (value && String(value).trim().length > 0) out.push(String(value).trim());
         };
-        if (media && media.title) {
-            push(media.title.english);
-            push(media.title.romaji);
-            push(media.title.native);
-        }
-        if (media && media.synonyms && media.synonyms.length) {
-            for (const synonym of media.synonyms) push(synonym);
+
+        if (media) {
+            push(media.romajiTitle);
+            push(media.englishTitle);
+            if (media.synonyms && media.synonyms.length) {
+                for (const synonym of media.synonyms) push(synonym);
+            }
         }
         push(fallback);
 
@@ -150,8 +160,35 @@ class AniListResolver {
         return scored.map((entry) => entry.item);
     }
 
-    /** Query strings to try, best first. Callers should stop at the first non-empty result. */
+    /**
+     * Query strings to try, best first. Seanime's own title for this call wins because that
+     * is the one the app selected; the remaining AniList titles are fallbacks for sites that
+     * index a different language.
+     */
     static queries(media: any, fallback?: string, limit: number = 3): string[] {
-        return AniListResolver.titles(media, fallback).slice(0, limit);
+        const ordered: string[] = [];
+        const seen = new Set<string>();
+        const add = (value?: string) => {
+            if (!value) return;
+            const trimmed = String(value).trim();
+            const key = trimmed.toLowerCase();
+            if (trimmed && !seen.has(key)) {
+                seen.add(key);
+                ordered.push(trimmed);
+            }
+        };
+
+        add(fallback);
+        for (const title of AniListResolver.titles(media, "")) add(title);
+
+        return ordered.slice(0, limit);
+    }
+
+    /** Release year: Seanime passes it at the top level, with startDate as the fallback. */
+    static yearOf(opts: any): number | undefined {
+        if (opts && typeof opts.year === "number" && opts.year > 0) return opts.year;
+        const media = opts && opts.media;
+        if (media && media.startDate && typeof media.startDate.year === "number") return media.startDate.year;
+        return undefined;
     }
 }

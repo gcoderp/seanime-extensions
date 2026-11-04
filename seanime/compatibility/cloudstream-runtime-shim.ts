@@ -89,9 +89,9 @@ export class CsCompat {
     }
 
     static inferVideoType(url: string): VideoSourceType {
+        // Seanime's VideoSourceType is "mp4" | "m3u8" | "unknown" — there is no "dash".
         if (/\.m3u8(\?|$)/i.test(url) || url.includes("hls")) return "m3u8";
-        if (/\.mpd(\?|$)/i.test(url)) return "dash";
         if (/\.mp4(\?|$)/i.test(url)) return "mp4";
-        return "m3u8";
+        return "unknown";
     }
 }

@@ -156,7 +156,8 @@ class CloudstreamToSeanimeTranslator:
             results = await this.searchSite(fallbackQuery);
         }
 
-        const year = media && typeof media.year === "number" ? media.year : undefined;
+        // Seanime passes the release year at the top level of SearchOptions.
+        const year = AniListResolver.yearOf(opts);
         results = AniListResolver.rank(results, (r: SearchResult) => r.title, media, year);
 
         if (opts.dub) {
@@ -355,6 +356,7 @@ class CloudstreamToSeanimeTranslator:
                 infoHash: hashMatch ? hashMatch[1].toLowerCase() : "",
                 resolution: CsCompat.inferQuality(title),
                 isBatch: /batch|complete|\bS\d{1,2}\b(?!E)/i.test(title),
+                isBestRelease: false,
                 episodeNumber: epNum > 0 ? epNum : undefined,
                 confirmed: !!magnet,
             });
