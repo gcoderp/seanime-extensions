@@ -8,9 +8,9 @@
   "sha256_checksum": "64367e011b28a7626bfdffb0515d512fdc3cfb7faa0fb786c9ad3980529af2da",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "anime-torrent-provider",
-  "strategy": "STRATEGY_2_JADX_JAVA_AST",
+  "strategy": "STRATEGY_3_DEX_STRING_IR",
   "source_recovery_status": "DEX_FALLBACK",
-  "decompilation_status": "JADX_OK",
+  "decompilation_status": "BINARY_DEX_IR_OK",
   "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
@@ -22,7 +22,7 @@
   "extractor_test_status": "N/A",
   "overall_status": "NEEDS_REVIEW",
   "review_reasons": [
-    "Base URL is a placeholder (example.com); scraper logic was not recovered."
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
   "license_notice": true,
   "known_unsupported_methods": [],
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-05T10:07:12.353966+00:00",
+  "conversion_timestamp": "2026-11-05T13:41:04.206444+00:00",
   "passed": false
 }

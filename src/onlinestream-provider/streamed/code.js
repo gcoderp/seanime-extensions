@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Streamed
-// Original Class: Streamed
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: StreamedPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://streamed.pk";
-        this.mirrorDomains = ["https://streamed.pk", "https://streamed.pk"];
-        this.defaultHeaders = { "Referer": "https://streamed.pk/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0" };
+        this.mainUrl = "https://embed.st";
+        this.mirrorDomains = ["https://embed.st", "https://embed.st", "https://embed.st/embed"];
+        this.defaultHeaders = { "Referer": "https://embed.st/" };
     }
     getSettings() {
         return {

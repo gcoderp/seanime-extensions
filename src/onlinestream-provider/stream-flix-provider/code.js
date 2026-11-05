@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: StreamFlixProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: StreamFlixProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://api.streamflix.app";
-        this.mirrorDomains = ["https://api.streamflix.app", "https://api.streamflix.app", "https://api.streamflix.app"];
-        this.defaultHeaders = { "Referer": "https://api.streamflix.app/" };
+        this.mainUrl = "https://image.tmdb.org";
+        this.mirrorDomains = ["https://image.tmdb.org", "https://image.tmdb.org/t/p/original", "https://image.tmdb.org/t/p/w500"];
+        this.defaultHeaders = { "Referer": "https://image.tmdb.org/" };
     }
     getSettings() {
         return {

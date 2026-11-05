@@ -1,0 +1,22 @@
+{
+  "extensionId": "vi-stream-provider",
+  "originalPluginName": "ViStreamProvider",
+  "originalInternalName": "ViStreamProvider",
+  "originalVersion": 35,
+  "originalDownloadUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/ViStreamProvider.cs3",
+  "originalRepositoryUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese",
+  "originalAuthors": [
+    "anhdaden",
+    "hexated"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "2f83a4ffacc087efe993e2719d9e6e2f187bc6289b1ffd3e3e35f6928ed8337a",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+  ],
+  "convertedAt": "2026-11-05T13:45:37.700349+00:00"
+}

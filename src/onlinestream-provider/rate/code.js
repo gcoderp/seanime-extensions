@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Rate
-// Original Class: Rate
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ratePlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json";
-        this.mirrorDomains = ["https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json", "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json"];
-        this.defaultHeaders = { "Referer": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json/" };
+        this.mainUrl = "https://counterapi.com";
+        this.mirrorDomains = ["https://counterapi.com", "https://counterapi.com/api", "https://counterapi.com/api/cs-"];
+        this.defaultHeaders = { "Referer": "https://counterapi.com/" };
     }
     getSettings() {
         return {

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: BilibiliProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: BilibiliProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.bilibili.tv";
-    private mirrorDomains: string[] = ["https://www.bilibili.tv", "https://api.bilibili.tv", "https://api.bilibili.tv/intl/gateway/web/playurl", "https://api.bilibili.tv/intl/gateway/web/playurl?ep_id="];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.bilibili.tv/"};
+    private mainUrl: string = "https://api.bilibili.tv";
+    private mirrorDomains: string[] = ["https://api.bilibili.tv", "https://api.bilibili.tv", "https://api.bilibili.tv/intl/gateway/web/playurl", "https://api.bilibili.tv/intl/gateway/web/playurl?ep_id="];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.bilibili.tv/"};
 
     getSettings(): Settings {
         return {

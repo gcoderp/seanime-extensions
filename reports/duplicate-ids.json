@@ -7,7 +7,7 @@
     ],
     "statuses": [
       "SUCCESS",
-      "SUCCESS"
+      "NEEDS_REVIEW"
     ]
   },
   {
@@ -18,7 +18,7 @@
     ],
     "statuses": [
       "NEEDS_REVIEW",
-      "SUCCESS"
+      "NEEDS_REVIEW"
     ]
   },
   {
@@ -29,6 +29,61 @@
     ],
     "statuses": [
       "SUCCESS",
+      "NEEDS_REVIEW"
+    ]
+  },
+  {
+    "id": "stream-play",
+    "paths": [
+      "src/onlinestream-provider/stream-play",
+      "src/anime-torrent-provider/stream-play"
+    ],
+    "statuses": [
+      "NEEDS_REVIEW",
+      "SUCCESS"
+    ]
+  },
+  {
+    "id": "stremio",
+    "paths": [
+      "src/onlinestream-provider/stremio",
+      "src/anime-torrent-provider/stremio"
+    ],
+    "statuses": [
+      "NEEDS_REVIEW",
+      "SUCCESS"
+    ]
+  },
+  {
+    "id": "stremio-provider",
+    "paths": [
+      "src/onlinestream-provider/stremio-provider",
+      "src/anime-torrent-provider/stremio-provider"
+    ],
+    "statuses": [
+      "NEEDS_REVIEW",
+      "SUCCESS"
+    ]
+  },
+  {
+    "id": "stremio-x",
+    "paths": [
+      "src/onlinestream-provider/stremio-x",
+      "src/anime-torrent-provider/stremio-x"
+    ],
+    "statuses": [
+      "NEEDS_REVIEW",
+      "SUCCESS"
+    ]
+  },
+  {
+    "id": "vi-stream-provider",
+    "paths": [
+      "src/onlinestream-provider/vi-stream-provider",
+      "src/anime-torrent-provider/vi-stream-provider"
+    ],
+    "statuses": [
+      "NEEDS_REVIEW",
       "SUCCESS"
     ]
   }

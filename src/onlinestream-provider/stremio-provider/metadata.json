@@ -1,0 +1,23 @@
+{
+  "extensionId": "stremio-provider",
+  "originalPluginName": "StremioProvider",
+  "originalInternalName": "StremioProvider",
+  "originalVersion": 7,
+  "originalDownloadUrl": "https://gitlab.com/tearrs/cloudstream-vietnamese/-/raw/main/StremioProvider.cs3",
+  "originalRepositoryUrl": "https://codeberg.org/frezza147/test",
+  "originalAuthors": [
+    "anhdaden",
+    "hexated"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "5d7c4d6f65b974f82d2edf454b3343d309b1dc04b627cb9e519beff66799d7a7",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+  ],
+  "convertedAt": "2026-11-05T13:45:39.184715+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "vi-stream-provider",
+  "name": "ViStreamProvider",
+  "description": "Download FullHD, 2K, 4K from torrent and cloud driver",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/vi-stream-provider/manifest.json",
+  "version": "1.35.0",
+  "author": "anhdaden, hexated",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/vi-stream-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/vi-stream-provider/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=uncutmaza.cc&sz=%size%"
+}

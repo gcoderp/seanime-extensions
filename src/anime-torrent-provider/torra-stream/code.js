@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME TORRENT EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: TorraStream
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: TorraStreamProvider
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -300,8 +300,8 @@ class AniListResolver {
 }
 class Provider {
     constructor() {
-        this.mainUrl = "https://anilist.co";
-        this.defaultHeaders = { "Referer": "https://anilist.co/" };
+        this.mainUrl = "https://api.themoviedb.org";
+        this.defaultHeaders = { "Referer": "https://api.themoviedb.org/" };
     }
     getSettings() {
         return {

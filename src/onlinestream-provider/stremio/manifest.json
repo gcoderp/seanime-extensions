@@ -1,0 +1,15 @@
+{
+  "id": "stremio",
+  "name": "Stremio",
+  "description": "Addon di Stremio su Cloudstream",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stremio/manifest.json",
+  "version": "1.14.0",
+  "author": "Hexated, phisher98, DieGon",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "it",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/stremio/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stremio/code.js",
+  "icon": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/Stremio/stremio_icon.png"
+}

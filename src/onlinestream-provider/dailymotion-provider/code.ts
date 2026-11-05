@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: DailymotionProvider
-// Original Class: DailymotionProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: DailymotionPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.dailymotion.com";
-    private mirrorDomains: string[] = ["https://api.dailymotion.com", "https://api.dailymotion.com", "https://www.dailymotion.com/embed/video", "https://www.dailymotion.com/video"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.dailymotion.com/"};
+    private mainUrl: string = "https://www.dailymotion.com";
+    private mirrorDomains: string[] = ["https://www.dailymotion.com", "https://api.dailymotion.com", "https://www.dailymotion.com/embed/video", "https://www.dailymotion.com/video"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.dailymotion.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/videos?fields=id,title,thumbnail_360_url&limit=26&page=$page&search={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

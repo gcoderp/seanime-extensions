@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: MovieBoxProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: MovieBoxProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api3.aoneroom.com";
-    private mirrorDomains: string[] = ["https://api3.aoneroom.com", "https://api3.aoneroom.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api3.aoneroom.com/"};
+    private mainUrl: string = "https://movie-box.co";
+    private mirrorDomains: string[] = ["https://movie-box.co", "https://movie-box.co", "https://movie-box.co", "https://movie-box.co/wefeed-h5api-bff/detail?detailPath="];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://movie-box.co/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/wefeed-mobile-bff/subject-api/search/v2?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Vavoo
-// Original Class: Vavoo
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: VavooPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -392,7 +392,7 @@ class Provider {
     constructor() {
         this.mainUrl = "https://vavoo.to";
         this.mirrorDomains = ["https://vavoo.to", "https://vavoo.to", "https://vavoo.to/mediahubmx-catalog.json", "https://vavoo.to/mediahubmx-resolve.json"];
-        this.defaultHeaders = { "Referer": "https://vavoo.to/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.100 Safari/537.36" };
+        this.defaultHeaders = { "Referer": "https://vavoo.to/" };
     }
     getSettings() {
         return {

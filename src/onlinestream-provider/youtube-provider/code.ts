@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: YoutubeProvider
-// Original Class: YoutubeProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: YoutubePlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.youtube.com";
-    private mirrorDomains: string[] = ["https://www.youtube.com", "https://www.youtube.com", "https://youtube.com/watch?v="];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.youtube.com/"};
+    private mainUrl: string = "";
+    private mirrorDomains: string[] = [""];
+    private defaultHeaders: Record<string, string> = {};
 
     getSettings(): Settings {
         return {

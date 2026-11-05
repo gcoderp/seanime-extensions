@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "en",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/iptv-org/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS.",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/iptv-org/code.js",
   "icon": "https://avatars.githubusercontent.com/iptv-org?s=%size%"
 }

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Netzkino
-// Original Class: NetzkinoProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: NetzkinoPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.netzkino.de.simplecache.net";
-    private mirrorDomains: string[] = ["https://api.netzkino.de.simplecache.net", "https://api.netzkino.de.simplecache.net"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.netzkino.de.simplecache.net/"};
+    private mainUrl: string = "https://www.netzkino.de";
+    private mirrorDomains: string[] = ["https://www.netzkino.de", "https://pmd.netzkino-seite.netzkino.de", "https://www.netzkino.de"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.netzkino.de/"};
 
     getSettings(): Settings {
         return {

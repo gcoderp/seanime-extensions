@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Moviebox
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: MovieboxPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://netnaija.film";
-        this.mirrorDomains = ["https://netnaija.film", "https://netnaija.film"];
-        this.defaultHeaders = { "Referer": "https://netnaija.film/" };
+        this.mainUrl = "https://h5.aoneroom.com";
+        this.mirrorDomains = ["https://h5.aoneroom.com", "https://h5-api.aoneroom.com", "https://h5-api.aoneroom.com/wefeed-h5api-bff/subject/search", "https://h5.aoneroom.com"];
+        this.defaultHeaders = { "Referer": "https://h5.aoneroom.com/" };
     }
     getSettings() {
         return {

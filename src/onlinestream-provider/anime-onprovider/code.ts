@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeONProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: AnimeONProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://animeon.club";
-    private mirrorDomains: string[] = ["https://animeon.club", "https://animeon.club", "https://animeon.club"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://animeon.club/"};
+    private mainUrl: string = "https://fenixplay.xyz";
+    private mirrorDomains: string[] = ["https://fenixplay.xyz", "https://fenixplay.xyz", "https://fenixplay.xyz", "https://fenixplay.xyz/api/playback"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://fenixplay.xyz/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/api/anime?search={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

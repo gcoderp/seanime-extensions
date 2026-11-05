@@ -1,0 +1,22 @@
+{
+  "extensionId": "stremio",
+  "originalPluginName": "Stremio",
+  "originalInternalName": "Stremio",
+  "originalVersion": 14,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/Stremio.cs3",
+  "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
+  "originalAuthors": [
+    "Hexated, phisher98, DieGon"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "16db0443680843005563f4a32d85a7b35559015aaa6d28f032f2405251d99ee4",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+  ],
+  "convertedAt": "2026-11-05T13:43:45.476262+00:00"
+}

@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: DailymotionProvider
-// Original Class: DailymotionProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: DailymotionPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://api.dailymotion.com";
-        this.mirrorDomains = ["https://api.dailymotion.com", "https://api.dailymotion.com", "https://www.dailymotion.com/embed/video", "https://www.dailymotion.com/video"];
-        this.defaultHeaders = { "Referer": "https://api.dailymotion.com/" };
+        this.mainUrl = "https://www.dailymotion.com";
+        this.mirrorDomains = ["https://www.dailymotion.com", "https://api.dailymotion.com", "https://www.dailymotion.com/embed/video", "https://www.dailymotion.com/video"];
+        this.defaultHeaders = { "Referer": "https://www.dailymotion.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/videos?fields=id,title,thumbnail_360_url&limit=26&page=$page&search={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";

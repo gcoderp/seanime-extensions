@@ -8,9 +8,9 @@
   "sha256_checksum": "b5ed63681b50514b7e0fb292a2db264c2cd5beed256bd873777c4e10593751f7",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
-  "strategy": "STRATEGY_2_JADX_JAVA_AST",
+  "strategy": "STRATEGY_3_DEX_STRING_IR",
   "source_recovery_status": "DEX_FALLBACK",
-  "decompilation_status": "JADX_OK",
+  "decompilation_status": "BINARY_DEX_IR_OK",
   "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
@@ -23,6 +23,7 @@
   "overall_status": "NEEDS_REVIEW",
   "review_reasons": [
     "No upstream base URL could be recovered.",
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
   "license_notice": false,
@@ -32,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-05T10:18:39.585678+00:00",
+  "conversion_timestamp": "2026-11-05T13:44:56.338246+00:00",
   "passed": false
 }

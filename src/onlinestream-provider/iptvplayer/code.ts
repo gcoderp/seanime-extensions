@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: IPTVPlayer
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: IPTVPlayerPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://raw.githubusercontent.com/phisher98/TVVVV/main/15APR2024.m3u";
-    private mirrorDomains: string[] = ["https://raw.githubusercontent.com/phisher98/TVVVV/main/15APR2024.m3u", "https://raw.githubusercontent.com/phisher98/TVVVV/main/15APR2024.m3u", "https://raw.githubusercontent.com/phisher98/TVVVV/main/goal.json"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://raw.githubusercontent.com/phisher98/TVVVV/main/15APR2024.m3u/"};
+    private mainUrl: string = "https://omg10.com";
+    private mirrorDomains: string[] = ["https://omg10.com", "https://omg10.com/4/11733824"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://omg10.com/"};
 
     getSettings(): Settings {
         return {

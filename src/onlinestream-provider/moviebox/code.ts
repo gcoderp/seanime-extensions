@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Moviebox
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: MovieboxPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://netnaija.film";
-    private mirrorDomains: string[] = ["https://netnaija.film", "https://netnaija.film"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://netnaija.film/"};
+    private mainUrl: string = "https://h5.aoneroom.com";
+    private mirrorDomains: string[] = ["https://h5.aoneroom.com", "https://h5-api.aoneroom.com", "https://h5-api.aoneroom.com/wefeed-h5api-bff/subject/search", "https://h5.aoneroom.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://h5.aoneroom.com/"};
 
     getSettings(): Settings {
         return {

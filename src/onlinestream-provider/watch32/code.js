@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Watch32
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: Watch32Plugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://watch32.bar";
-        this.mirrorDomains = ["https://watch32.bar", "https://watch32.bar"];
-        this.defaultHeaders = { "Referer": "https://watch32.bar/" };
+        this.mainUrl = "https://providers.peestream.in";
+        this.mirrorDomains = ["https://providers.peestream.in", "https://providers.peestream.in", "https://providers.peestream.in/api/subtitles?", "https://providers.peestream.in/embed/?"];
+        this.defaultHeaders = { "Referer": "https://providers.peestream.in/" };
     }
     getSettings() {
         return {
