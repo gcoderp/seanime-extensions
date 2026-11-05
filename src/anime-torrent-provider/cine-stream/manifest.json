@@ -1,0 +1,15 @@
+{
+  "id": "cine-stream",
+  "name": "CineStream",
+  "description": "One stop solution for Movies, Series, Anime, AsianDrama and Torrents",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/cine-stream/manifest.json",
+  "version": "1.487.0",
+  "author": "megix",
+  "type": "anime-torrent-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/anime-torrent-provider/cine-stream/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/cine-stream/code.js",
+  "icon": "https://github.com/SaurabhKaperwan/CSX/raw/refs/heads/master/CineStream/icon.png"
+}

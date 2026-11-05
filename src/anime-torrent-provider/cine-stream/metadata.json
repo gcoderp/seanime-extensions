@@ -1,0 +1,19 @@
+{
+  "extensionId": "cine-stream",
+  "originalPluginName": "CineStream",
+  "originalInternalName": "CineStream",
+  "originalVersion": 487,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/SaurabhKaperwan/CSX/builds/CineStream.cs3",
+  "originalRepositoryUrl": "https://github.com/SaurabhKaperwan/CSX",
+  "originalAuthors": [
+    "megix"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "30dc643628702d6b2fe139339e59996783c95a0c1d41efe0a31872ae4d10908b",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-05T03:49:03.136231+00:00"
+}

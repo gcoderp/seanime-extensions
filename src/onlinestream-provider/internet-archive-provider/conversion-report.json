@@ -2,16 +2,16 @@
   "plugin_name": "InternetArchiveProvider",
   "original_plugin_id": "InternetArchiveProvider",
   "original_author": "Luna712",
-  "original_repository": "https://github.com/recloudstream/extensions",
-  "original_download_url": "https://raw.githubusercontent.com/recloudstream/extensions/builds/InternetArchiveProvider.cs3",
-  "original_version": 1,
-  "sha256_checksum": "54f3de560bebeff2e4a10d1163f6146313c59061d21c3a230125611f01b531eb",
+  "original_repository": "https://github.com/Luna712/Luna712-CloudStream-Extensions",
+  "original_download_url": "https://raw.githubusercontent.com/Luna712/Luna712-CloudStream-Extensions/builds/InternetArchiveProvider.cs3",
+  "original_version": 22,
+  "sha256_checksum": "dd70f0e9d706d9885e3ce268b426eb24277399adb01c6e2ef1fd1528398686a3",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
-  "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
-  "source_recovery_status": "RECOVERED",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
+  "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "JADX_OK",
-  "kotlin_reconstruction_status": "SUCCESS",
+  "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
   "seanime_compatibility_status": "PASS",
@@ -20,18 +20,15 @@
   "search_test_status": "MOCK_PASS",
   "episode_test_status": "MOCK_PASS",
   "extractor_test_status": "MOCK_PASS",
-  "overall_status": "NEEDS_REVIEW",
-  "review_reasons": [
-    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
-  ],
+  "overall_status": "SUCCESS",
+  "review_reasons": [],
   "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
-    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-05T03:40:22.579065+00:00",
-  "passed": false
+  "conversion_timestamp": "2026-11-05T04:05:18.908975+00:00",
+  "passed": true
 }

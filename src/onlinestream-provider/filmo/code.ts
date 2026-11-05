@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Filmo
-// Original Class: Filmo
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -98,21 +98,28 @@ class CsCompat {
     }
 
     static inferVideoType(url: string): VideoSourceType {
+        // Seanime's VideoSourceType is "mp4" | "m3u8" | "unknown" — there is no "dash".
         if (/\.m3u8(\?|$)/i.test(url) || url.includes("hls")) return "m3u8";
-        if (/\.mpd(\?|$)/i.test(url)) return "unknown";
         if (/\.mp4(\?|$)/i.test(url)) return "mp4";
-        return "m3u8";
+        return "unknown";
     }
 }
 
 // AniList-driven matching for converted Seanime providers.
 //
-// Seanime is an AniList client: it never hands a provider a bare search string in isolation,
-// it hands it the AniList media object (id, idMal, english/romaji/native titles, synonyms,
-// year, format). A converted Cloudstream provider that searches by `opts.query` alone picks
-// whatever the site's own ranking returns, which is frequently the wrong season, the wrong
-// adaptation, or a sequel. This resolver makes the AniList metadata the source of truth:
-// query by the AniList titles, then rank the site's results against the same titles.
+// Seanime is an AniList client. Before it calls a provider it resolves the media and builds
+// the `Media` object declared in Seanime's own onlinestream-provider.d.ts:
+//
+//   { id, idMal?, status?, format?, englishTitle?, romajiTitle?, episodeCount?,
+//     absoluteSeasonOffset?, synonyms: string[], isAdult, startDate?: { year, month?, day? } }
+//
+// and then calls search() once per title from GetAllTitles() (romaji, english, synonyms),
+// passing that title as `query` and the release year as `year`.
+//
+// So a converted Cloudstream provider must read *that* shape. Searching by `opts.query`
+// alone picks whatever the site's own ranking returns — frequently the wrong season, the
+// wrong adaptation, or a special. This resolver makes the AniList metadata the source of
+// truth: query by the AniList titles, then rank the site's results against the same titles.
 
 class AniListResolver {
     /** Lowercase, de-accent, drop bracketed qualifiers, collapse punctuation. */
@@ -402,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://filmo.to";
     private mirrorDomains: string[] = ["https://filmo.to", "https://filmo.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://filmo.to/", "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://filmo.to/"};
 
     getSettings(): Settings {
         return {
@@ -413,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -421,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "section.search-top-results article > a, a.movie-poster-grid-card";
-        const titleSelector = "img";
+        const itemSelector = "section.popular-spotlight, div.video-row";
+        const titleSelector = "p.movie-detail-synopsis";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -488,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.details-group dl";
-        const epNumSelector = "dt";
+        const epSelector = "section.popular-spotlight, div.video-row";
+        const epNumSelector = ".popular-spotlight-card__link, a.video-card";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -522,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = ".provider-chip";
+        const serverSelector = "p.movie-detail-synopsis";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

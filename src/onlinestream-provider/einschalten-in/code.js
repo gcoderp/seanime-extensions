@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: EinschaltenIn
-// Original Class: EinschaltenInProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -98,23 +98,29 @@ class CsCompat {
         return "auto";
     }
     static inferVideoType(url) {
+        // Seanime's VideoSourceType is "mp4" | "m3u8" | "unknown" — there is no "dash".
         if (/\.m3u8(\?|$)/i.test(url) || url.includes("hls"))
             return "m3u8";
-        if (/\.mpd(\?|$)/i.test(url))
-            return "unknown";
         if (/\.mp4(\?|$)/i.test(url))
             return "mp4";
-        return "m3u8";
+        return "unknown";
     }
 }
 // AniList-driven matching for converted Seanime providers.
 //
-// Seanime is an AniList client: it never hands a provider a bare search string in isolation,
-// it hands it the AniList media object (id, idMal, english/romaji/native titles, synonyms,
-// year, format). A converted Cloudstream provider that searches by `opts.query` alone picks
-// whatever the site's own ranking returns, which is frequently the wrong season, the wrong
-// adaptation, or a sequel. This resolver makes the AniList metadata the source of truth:
-// query by the AniList titles, then rank the site's results against the same titles.
+// Seanime is an AniList client. Before it calls a provider it resolves the media and builds
+// the `Media` object declared in Seanime's own onlinestream-provider.d.ts:
+//
+//   { id, idMal?, status?, format?, englishTitle?, romajiTitle?, episodeCount?,
+//     absoluteSeasonOffset?, synonyms: string[], isAdult, startDate?: { year, month?, day? } }
+//
+// and then calls search() once per title from GetAllTitles() (romaji, english, synonyms),
+// passing that title as `query` and the release year as `year`.
+//
+// So a converted Cloudstream provider must read *that* shape. Searching by `opts.query`
+// alone picks whatever the site's own ranking returns — frequently the wrong season, the
+// wrong adaptation, or a special. This resolver makes the AniList metadata the source of
+// truth: query by the AniList titles, then rank the site's results against the same titles.
 class AniListResolver {
     /** Lowercase, de-accent, drop bracketed qualifiers, collapse punctuation. */
     static normalize(value) {
@@ -390,7 +396,7 @@ class Provider {
     }
     getSettings() {
         return {
-            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
+            episodeServers: ["dood", "filemoon"],
             supportsDub: false,
         };
     }
@@ -489,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

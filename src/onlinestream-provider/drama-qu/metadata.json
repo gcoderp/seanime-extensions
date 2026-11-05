@@ -12,10 +12,10 @@
   "cs3Sha256": "e4ac763554f7afe951c043b17b3d508f9dee0230fbfffcbc74cb3159c7a19cc5",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
-  "validationStatus": "SUCCESS",
+  "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
-  "reviewReasons": [],
-  "convertedAt": "2026-11-04T10:15:15.588211+00:00",
-  "licenseNotice": true,
-  "republishedAt": "2026-11-05T03:35:52.384669+00:00"
+  "reviewReasons": [
+    "No upstream base URL could be recovered."
+  ],
+  "convertedAt": "2026-11-05T03:51:56.122181+00:00"
 }

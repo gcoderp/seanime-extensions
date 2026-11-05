@@ -1,0 +1,19 @@
+{
+  "extensionId": "lodynet",
+  "originalPluginName": "LodyNet",
+  "originalInternalName": "Lodynet",
+  "originalVersion": 3,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Lodynet.cs3",
+  "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
+  "originalAuthors": [
+    "Abodabodd"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "79a853a9b5a84ead13bc7ee474d2acf58c734758c4ab0741d98300b6539fdf2e",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [],
+  "convertedAt": "2026-11-05T03:50:43.642473+00:00"
+}

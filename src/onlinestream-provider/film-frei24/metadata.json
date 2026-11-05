@@ -11,13 +11,11 @@
   "license": "UNKNOWN",
   "cs3Sha256": "72019ba56d822763c3b09b27feab8607c09b38834b408acb14853d20a50cfa13",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-04T10:29:01.349429+00:00",
-  "licenseNotice": true,
-  "republishedAt": "2026-11-05T03:35:52.720482+00:00"
+  "convertedAt": "2026-11-05T04:04:27.344309+00:00"
 }

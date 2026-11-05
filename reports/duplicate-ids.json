@@ -1,5 +1,16 @@
 [
   {
+    "id": "cine-stream",
+    "paths": [
+      "src/onlinestream-provider/cine-stream",
+      "src/anime-torrent-provider/cine-stream"
+    ],
+    "statuses": [
+      "SUCCESS",
+      "SUCCESS"
+    ]
+  },
+  {
     "id": "il-corsaro-viola",
     "paths": [
       "src/onlinestream-provider/il-corsaro-viola",
@@ -7,6 +18,17 @@
     ],
     "statuses": [
       "NEEDS_REVIEW",
+      "SUCCESS"
+    ]
+  },
+  {
+    "id": "stream-center",
+    "paths": [
+      "src/onlinestream-provider/stream-center",
+      "src/anime-torrent-provider/stream-center"
+    ],
+    "statuses": [
+      "SUCCESS",
       "SUCCESS"
     ]
   }

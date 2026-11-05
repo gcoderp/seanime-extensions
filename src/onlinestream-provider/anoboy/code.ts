@@ -98,21 +98,28 @@ class CsCompat {
     }
 
     static inferVideoType(url: string): VideoSourceType {
+        // Seanime's VideoSourceType is "mp4" | "m3u8" | "unknown" — there is no "dash".
         if (/\.m3u8(\?|$)/i.test(url) || url.includes("hls")) return "m3u8";
-        if (/\.mpd(\?|$)/i.test(url)) return "unknown";
         if (/\.mp4(\?|$)/i.test(url)) return "mp4";
-        return "m3u8";
+        return "unknown";
     }
 }
 
 // AniList-driven matching for converted Seanime providers.
 //
-// Seanime is an AniList client: it never hands a provider a bare search string in isolation,
-// it hands it the AniList media object (id, idMal, english/romaji/native titles, synonyms,
-// year, format). A converted Cloudstream provider that searches by `opts.query` alone picks
-// whatever the site's own ranking returns, which is frequently the wrong season, the wrong
-// adaptation, or a sequel. This resolver makes the AniList metadata the source of truth:
-// query by the AniList titles, then rank the site's results against the same titles.
+// Seanime is an AniList client. Before it calls a provider it resolves the media and builds
+// the `Media` object declared in Seanime's own onlinestream-provider.d.ts:
+//
+//   { id, idMal?, status?, format?, englishTitle?, romajiTitle?, episodeCount?,
+//     absoluteSeasonOffset?, synonyms: string[], isAdult, startDate?: { year, month?, day? } }
+//
+// and then calls search() once per title from GetAllTitles() (romaji, english, synonyms),
+// passing that title as `query` and the release year as `year`.
+//
+// So a converted Cloudstream provider must read *that* shape. Searching by `opts.query`
+// alone picks whatever the site's own ranking returns — frequently the wrong season, the
+// wrong adaptation, or a special. This resolver makes the AniList metadata the source of
+// truth: query by the AniList titles, then rank the site's results against the same titles.
 
 class AniListResolver {
     /** Lowercase, de-accent, drop bracketed qualifiers, collapse punctuation. */
@@ -400,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidmoly.biz";
-    private mirrorDomains: string[] = ["https://vidmoly.biz", "https://vidmoly.biz"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidmoly.biz/"};
+    private mainUrl: string = "https://gogoanime.me.uk";
+    private mirrorDomains: string[] = ["https://gogoanime.me.uk", "https://gogoanime.me.uk"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://gogoanime.me.uk/"};
 
     getSettings(): Settings {
         return {
@@ -421,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#megaplay-player[data-id], [data-id]";
+        const itemSelector = "iframe[src]";
         const titleSelector = "a[href*='/anime/'], .info a.watch, a";
         const results: SearchResult[] = [];
 
@@ -488,7 +495,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "#megaplay-player[data-id], [data-id]";
+        const epSelector = "iframe[src]";
         const epNumSelector = "iframe";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
@@ -522,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "#megaplay-player[data-id], [data-id]";
+        const serverSelector = "iframe[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

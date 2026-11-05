@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: DailymotionProvider
-// Original Class: DailymotionProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/videos?fields=id,title,thumbnail_360_url&limit=26&page=$page&search={query}.encodeUri()}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "plugin_name": "MuiflixGF",
+    "original_plugin_id": "muiflixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-05T04:06:31.992481+00:00"
+  },
+  {
+    "plugin_name": "FanStreamGF",
+    "original_plugin_id": "fanstreamgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-05T04:07:46.634351+00:00"
+  },
+  {
+    "plugin_name": "GogoFlixGF",
+    "original_plugin_id": "gogoflixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-05T04:07:46.744663+00:00"
+  },
+  {
+    "plugin_name": "FrembedGF",
+    "original_plugin_id": "frembedgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-05T04:07:46.840210+00:00"
+  },
+  {
+    "plugin_name": "FilmoFlixGF",
+    "original_plugin_id": "filmoflixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-05T04:07:46.976081+00:00"
+  },
+  {
+    "plugin_name": "MovixGF",
+    "original_plugin_id": "movixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-05T04:07:47.103851+00:00"
+  },
+  {
+    "plugin_name": "AfterDarkGF",
+    "original_plugin_id": "afterdarkgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-05T04:07:47.225896+00:00"
+  },
+  {
+    "plugin_name": "SadisflixGF",
+    "original_plugin_id": "sadisflixgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-05T04:07:53.434157+00:00"
+  },
+  {
+    "plugin_name": "WookafrGF",
+    "original_plugin_id": "wookafrgf",
+    "overall_status": "FAILED",
+    "error_messages": [
+      "HTTP Error 404: Not Found"
+    ],
+    "conversion_timestamp": "2026-11-05T04:07:53.563504+00:00"
+  }
+]
