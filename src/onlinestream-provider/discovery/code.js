@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Discovery
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: DiscoveryPlugin
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://tele5.de";
-        this.mirrorDomains = ["https://tele5.de", "https://tele5.de"];
-        this.defaultHeaders = { "Referer": "https://tele5.de/" };
+        this.mainUrl = "https://tlc.de";
+        this.mirrorDomains = ["https://tlc.de", "https://tlc.de"];
+        this.defaultHeaders = { "Referer": "https://tlc.de/" };
     }
     getSettings() {
         return {

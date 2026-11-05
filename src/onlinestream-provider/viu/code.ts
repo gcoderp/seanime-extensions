@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Viu
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: Viu
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://www.viu.com";
     private mirrorDomains: string[] = ["https://www.viu.com", "https://api-gateway-global.viu.com/api/auth/token", "https://api-gateway-global.viu.com/api/mobile", "https://api-gateway-global.viu.com/api/playback/distribute"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.viu.com/"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.viu.com/", "User-Agent": "okhttp/4.12.0", "Origin": "https://www.viu.com"};
 
     getSettings(): Settings {
         return {

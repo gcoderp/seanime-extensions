@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Discovery
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: DiscoveryPlugin
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://tele5.de";
-    private mirrorDomains: string[] = ["https://tele5.de", "https://tele5.de"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://tele5.de/"};
+    private mainUrl: string = "https://tlc.de";
+    private mirrorDomains: string[] = ["https://tlc.de", "https://tlc.de"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://tlc.de/"};
 
     getSettings(): Settings {
         return {

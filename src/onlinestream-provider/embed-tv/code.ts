@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: EmbedTV
-// Original Class: EmbedTvProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://embedtv.cv";
     private mirrorDomains: string[] = ["https://embedtv.cv", "https://embedtv.cv", "https://www4.embedtv.cv"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://embedtv.cv/", "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://embedtv.cv/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".card";
+        const itemSelector = ".session.futebol";
         const titleSelector = "h3";
         const results: SearchResult[] = [];
 
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = ".session.futebol";
-        const epNumSelector = "img";
+        const epNumSelector = ".card";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script";
+        const serverSelector = ".session.futebol";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Viu
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: Viu
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -392,7 +392,7 @@ class Provider {
     constructor() {
         this.mainUrl = "https://www.viu.com";
         this.mirrorDomains = ["https://www.viu.com", "https://api-gateway-global.viu.com/api/auth/token", "https://api-gateway-global.viu.com/api/mobile", "https://api-gateway-global.viu.com/api/playback/distribute"];
-        this.defaultHeaders = { "Referer": "https://www.viu.com/" };
+        this.defaultHeaders = { "Referer": "https://www.viu.com/", "User-Agent": "okhttp/4.12.0", "Origin": "https://www.viu.com" };
     }
     getSettings() {
         return {
