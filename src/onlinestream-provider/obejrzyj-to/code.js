@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://bysekoze.com";
-        this.mirrorDomains = ["https://bysekoze.com", "https://bysekoze.com"];
-        this.defaultHeaders = { "Referer": "https://bysekoze.com/" };
+        this.mainUrl = "https://bysevepoin.com";
+        this.mirrorDomains = ["https://bysevepoin.com", "https://bysevepoin.com"];
+        this.defaultHeaders = { "Referer": "https://bysevepoin.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/titles/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Latanime
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: Latanime
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/animes?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/buscar?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.col-6, div.col-md-6, div.col-md-4, div.item, article.group\\\\/item";
-        const titleSelector = "a";
+        const itemSelector = "div.col-6, div.col-md-6, div.col-md-4, div.item";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.col-6, div.col-md-6, div.col-md-4, div.item, article.group\\\\/item";
-        const epNumSelector = "div.col-6, div.col-md-6, div.col-md-4, div.item";
+        const epSelector = "div.col-lg-9 h2";
+        const epNumSelector = "div.serieimgficha img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.col-6, div.col-md-6, div.col-md-4, div.item, article.group\\\\/item";
+        const serverSelector = "ul.cap_repro li a";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

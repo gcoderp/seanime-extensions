@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://embedplay.upns.ink";
-        this.mirrorDomains = ["https://embedplay.upns.ink", "https://embedplay.upns.ink"];
-        this.defaultHeaders = { "Referer": "https://embedplay.upns.ink/" };
+        this.mainUrl = "https://doramasonline.co";
+        this.mirrorDomains = ["https://doramasonline.co", "https://doramasonline.co"];
+        this.defaultHeaders = { "Referer": "https://doramasonline.co/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/category/lancamentos/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.aa-cn div#movies-a ul.post-lst li";

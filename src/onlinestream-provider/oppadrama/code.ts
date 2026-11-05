@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vid.oppadrama.cc";
-    private mirrorDomains: string[] = ["https://vid.oppadrama.cc", "https://v1.oppadrama.cc", "https://v1.oppadrama.cc", "https://vid.oppadrama.cc"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vid.oppadrama.cc/"};
+    private mainUrl: string = "https://morencius.com";
+    private mirrorDomains: string[] = ["https://morencius.com", "https://morencius.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://morencius.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article.bs, .listupd article, article";
+        const itemSelector = "script:containsData(sources:)";
         const titleSelector = "a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.bs, .listupd article, article";
-        const epNumSelector = "h2, .tt, .entry-title";
+        const epSelector = "script:containsData(sources:)";
+        const epNumSelector = "article.bs, .listupd article, article";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "article.bs, .listupd article, article";
+        const serverSelector = "script:containsData(sources:)";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

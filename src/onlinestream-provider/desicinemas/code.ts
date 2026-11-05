@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://flow.tellygossips.net";
-    private mirrorDomains: string[] = ["https://flow.tellygossips.net", "http://tellygossips.net", "https://flow.tellygossips.net"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://flow.tellygossips.net/"};
+    private mainUrl: string = "https://desicinemas.to";
+    private mirrorDomains: string[] = ["https://desicinemas.to", "https://desicinemas.to"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://desicinemas.to/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/series/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#Proceed a[href], a.button.button1, a.button1";
+        const itemSelector = ".Description p";
         const titleSelector = "p.AAIco-dns";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "#Proceed a[href], a.button.button1, a.button1";
-        const epNumSelector = "IFRAME";
+        const epSelector = ".Description p";
+        const epNumSelector = ".Genre a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "p.AAIco-dns";
+        const serverSelector = ".Description p";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

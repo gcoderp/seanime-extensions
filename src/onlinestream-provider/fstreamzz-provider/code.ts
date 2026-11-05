@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.uqload.cx";
-    private mirrorDomains: string[] = ["https://www.uqload.cx", "https://www.uqload.cx"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.uqload.cx/"};
+    private mainUrl: string = "https://dropload.io";
+    private mirrorDomains: string[] = ["https://dropload.io", "https://dropload.io"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://dropload.io/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["dood", "voe"],
+            episodeServers: ["voe", "dood"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/embed-?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "video#vjsplayer";
-        const titleSelector = "h3";
+        const itemSelector = ".embed > iframe";
+        const titleSelector = "img";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "video#vjsplayer";
-        const epNumSelector = "track";
+        const epSelector = ".embed > iframe";
+        const epNumSelector = "div.OD > li";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "video#vjsplayer";
+        const serverSelector = ".embed > iframe";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

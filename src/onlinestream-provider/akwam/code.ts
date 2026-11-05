@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Akwam
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: Akwam
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://akwam.ss";
     private mirrorDomains: string[] = ["https://akwam.ss", "https://akwam.ss"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://akwam.ss/"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://akwam.ss/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"};
 
     getSettings(): Settings {
         return {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.col-lg-auto.col-md-4.col-6";
-        const epNumSelector = "div.font-size-16.text-white a[href*='/genre/'], div.font-size-16.text-white a[href*='/category/']";
+        const epSelector = "div.font-size-16.text-white a[href*='/genre/'], div.font-size-16.text-white a[href*='/category/']";
+        const epNumSelector = "div.font-size-16.text-white a[href*='/year/']";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.col-lg-auto.col-md-4.col-6";
+        const serverSelector = "a.link-download, a[href*='/download/']";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

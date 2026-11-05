@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://vidhidepro.com";
-        this.mirrorDomains = ["https://vidhidepro.com", "https://vidhidepro.com"];
-        this.defaultHeaders = { "Referer": "https://vidhidepro.com/" };
+        this.mainUrl = "https://mivalyo.com";
+        this.mirrorDomains = ["https://mivalyo.com", "https://mivalyo.com"];
+        this.defaultHeaders = { "Referer": "https://mivalyo.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "#main .cont_display";

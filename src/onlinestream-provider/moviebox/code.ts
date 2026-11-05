@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://sflix.film";
-    private mirrorDomains: string[] = ["https://sflix.film", "https://sflix.film"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://sflix.film/"};
+    private mainUrl: string = "https://netnaija.film";
+    private mirrorDomains: string[] = ["https://netnaija.film", "https://netnaija.film"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://netnaija.film/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/wefeed-h5-bff/web/ranking-list/content?id={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://voeunblock2.com";
-    private mirrorDomains: string[] = ["https://voeunblock2.com", "https://voeunblock2.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://voeunblock2.com/"};
+    private mainUrl: string = "https://cindyeyefinal.com";
+    private mirrorDomains: string[] = ["https://cindyeyefinal.com", "https://cindyeyefinal.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://cindyeyefinal.com/"};
 
     getSettings(): Settings {
         return {
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "ul.pm-ul-browse-videos div.thumbnail";
+        const serverSelector = "a:not(.pm-watch-later-add)";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://videonode.de";
-    private mirrorDomains: string[] = ["https://videonode.de", "https://videonode.de"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://videonode.de/"};
+    private mainUrl: string = "https://tv9.nontondrama.my";
+    private mirrorDomains: string[] = ["https://tv9.nontondrama.my", "https://tv9.nontondrama.my"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://tv9.nontondrama.my/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

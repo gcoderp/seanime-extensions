@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://ups2up.fun";
-    private mirrorDomains: string[] = ["https://ups2up.fun", "https://ups2up.fun"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://ups2up.fun/"};
+    private mainUrl: string = "https://alejandrocenturyoil.com";
+    private mirrorDomains: string[] = ["https://alejandrocenturyoil.com", "https://alejandrocenturyoil.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://alejandrocenturyoil.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["streamwish", "vidhide", "dood", "voe"],
+            episodeServers: ["voe", "vidhide", "dood", "streamwish"],
             supportsDub: true,
         };
     }
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

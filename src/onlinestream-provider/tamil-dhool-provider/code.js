@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://www.tamildhool.tech";
-        this.mirrorDomains = ["https://www.tamildhool.tech", "https://www.tamildhool.tech", "https://www.tamildhool.tech"];
-        this.defaultHeaders = { "Referer": "https://www.tamildhool.tech/" };
+        this.mainUrl = "https://www.dailymotion.com";
+        this.mirrorDomains = ["https://www.dailymotion.com", "https://www.dailymotion.com", "https://www.dailymotion.com/embed/video"];
+        this.defaultHeaders = { "Referer": "https://www.dailymotion.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "article.regular-post";

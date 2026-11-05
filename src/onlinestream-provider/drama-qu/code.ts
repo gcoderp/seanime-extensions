@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidhide.org";
-    private mirrorDomains: string[] = ["https://vidhide.org", "https://s1.vidhide.org/api-config", "https://vidhide.org", "https://vidhide.org"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidhide.org/"};
+    private mainUrl: string = "";
+    private mirrorDomains: string[] = [""];
+    private defaultHeaders: Record<string, string> = {};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

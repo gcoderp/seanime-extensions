@@ -396,7 +396,7 @@ class Provider {
     }
     getSettings() {
         return {
-            episodeServers: ["voe", "dood"],
+            episodeServers: ["dood", "voe"],
             supportsDub: true,
         };
     }
@@ -405,8 +405,8 @@ class Provider {
         const searchPath = "/index.php?do=search&subaction=search&story={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div#dle-content > article.movie-box";
-        const titleSelector = "span.icon-voicer";
+        const itemSelector = "iframe";
+        const titleSelector = "img";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div#dle-content > article.movie-box";
-        const epNumSelector = "div.img img";
+        const epSelector = "iframe";
+        const epNumSelector = "div#dle-content > article.movie-box";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "div#dle-content > article.movie-box";
+        const serverSelector = "img";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

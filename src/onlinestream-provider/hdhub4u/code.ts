@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.themoviedb.org";
-    private mirrorDomains: string[] = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/find"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
+    private mainUrl: string = "https://hdstream4u.com";
+    private mirrorDomains: string[] = ["https://hdstream4u.com", "https://hdstream4u.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://hdstream4u.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["streamtape", "vidhide"],
+            episodeServers: ["vidhide", "streamtape"],
             supportsDub: true,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
+        const itemSelector = "script:containsData(var reurl)";
         const titleSelector = "a[hx-get*='download']";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
-        const epNumSelector = "script:containsData(var reurl)";
+        const epSelector = "script:containsData(var reurl)";
+        const epNumSelector = "script";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "a[hx-get*='download']";
+        const serverSelector = "script:containsData(var reurl)";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamtape";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

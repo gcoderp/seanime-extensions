@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://streamruby.com";
-    private mirrorDomains: string[] = ["https://streamruby.com", "https://streamruby.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://streamruby.com/"};
+    private mainUrl: string = "https://v20.kuramanime.ing";
+    private mirrorDomains: string[] = ["https://v20.kuramanime.ing", "https://v20.kuramanime.ing"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://v20.kuramanime.ing/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/anime?search={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script:containsData(sources:)";
-        const titleSelector = "meta[name=csrf-token]";
+        const itemSelector = "div#animeList div.product__item, div.product__item";
+        const titleSelector = "a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script:containsData(sources:)";
-        const epNumSelector = "script[src]";
+        const epSelector = "div#animeList div.product__item, div.product__item";
+        const epNumSelector = "div.product__item__pic.set-bg, div.set-bg";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script:containsData(sources:)";
+        const serverSelector = "div#animeList div.product__item, div.product__item";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

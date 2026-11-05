@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://kwik.cx";
-    private mirrorDomains: string[] = ["https://kwik.cx", "https://kwik.cx", "https://kwik.cx"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://kwik.cx/"};
+    private mainUrl: string = "https://pahe.win";
+    private mirrorDomains: string[] = ["https://pahe.win", "https://pahe.win"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://pahe.win/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/api?m=airing&page={query}".replace("{query}", queryEncoded);
+        const searchPath = "/api?m=search&l=8&q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script";
+        const itemSelector = "#resolutionMenu button";
         const titleSelector = "span.badge-warning";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script";
-        const epNumSelector = "script:containsData(eval)";
+        const epSelector = "#resolutionMenu button";
+        const epNumSelector = "div#pickDownload > a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script";
+        const serverSelector = "#resolutionMenu button";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://allinonedownloader.fun";
-    private mirrorDomains: string[] = ["https://allinonedownloader.fun", "https://allinonedownloader.fun"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://allinonedownloader.fun/"};
+    private mainUrl: string = "https://multimovies.cloud";
+    private mirrorDomains: string[] = ["https://multimovies.cloud", "https://multimovies.cloud"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://multimovies.cloud/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

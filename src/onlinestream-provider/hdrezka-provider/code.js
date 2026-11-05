@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/films/?filter=watching&q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search/?do=search&subaction=search&q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.b-content__inline_items div.b-content__inline_item";

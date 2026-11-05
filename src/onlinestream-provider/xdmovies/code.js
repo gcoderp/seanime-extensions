@@ -402,11 +402,11 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/php/search_api.php?query={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
-        const titleSelector = "a[href*='hubcloud.php']";
+        const titleSelector = "img";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -459,7 +459,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes = [];
         const epSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
-        const epNumSelector = "i#size";
+        const epNumSelector = "div.container div.movie-grid a";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

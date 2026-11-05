@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://luluvdo.store";
-    private mirrorDomains: string[] = ["https://luluvdo.store", "https://luluvdo.store"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://luluvdo.store/"};
+    private mainUrl: string = "https://vidhideplus.com";
+    private mirrorDomains: string[] = ["https://vidhideplus.com", "https://vidhideplus.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidhideplus.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["streamwish", "dood", "vidhide", "voe"],
+            episodeServers: ["vidhide", "streamwish", "dood", "voe"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/wp-admin/admin-ajax.php?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.data > h1";
-        const titleSelector = "meta[property=og:image]";
+        const itemSelector = "div.items.normal article, div#archive-content article, div.items.full article";
+        const titleSelector = "h3 > a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,7 +495,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.data > h1";
+        const epSelector = "div.items.normal article, div#archive-content article, div.items.full article";
         const epNumSelector = "div.poster img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.data > h1";
+        const serverSelector = "div.items.normal article, div#archive-content article, div.items.full article";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

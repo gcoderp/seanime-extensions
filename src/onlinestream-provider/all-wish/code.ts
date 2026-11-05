@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://player.sgsgsgsr.site";
-    private mirrorDomains: string[] = ["https://player.sgsgsgsr.site", "https://player.sgsgsgsr.site"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://player.sgsgsgsr.site/"};
+    private mainUrl: string = "https://vidwish.live";
+    private mirrorDomains: string[] = ["https://vidwish.live", "https://vidwish.live"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidwish.live/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/filter?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.description > div.full > div";
+        const itemSelector = "script[type=module]";
         const titleSelector = "span";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.description > div.full > div";
-        const epNumSelector = "div.media-bg";
+        const epSelector = "script[type=module]";
+        const epNumSelector = "div.server-list > div.server";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.description > div.full > div";
+        const serverSelector = "script[type=module]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

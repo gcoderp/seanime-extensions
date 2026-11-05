@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://videonode.de";
-        this.mirrorDomains = ["https://videonode.de", "https://videonode.de"];
-        this.defaultHeaders = { "Referer": "https://videonode.de/" };
+        this.mainUrl = "https://tv9.nontondrama.my";
+        this.mirrorDomains = ["https://tv9.nontondrama.my", "https://tv9.nontondrama.my"];
+        this.defaultHeaders = { "Referer": "https://tv9.nontondrama.my/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "ul.sliders a, .items a, figure a, article a";

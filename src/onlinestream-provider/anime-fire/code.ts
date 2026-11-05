@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "iframe[src*='blogger.com/video.g']";
+        const itemSelector = ".numEp";
         const titleSelector = "meta[property='og:image']";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "iframe[src*='blogger.com/video.g']";
-        const epNumSelector = ".numEp";
+        const epSelector = ".numEp";
+        const epNumSelector = "article, .card, .anime-item";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src*='blogger.com/video.g']";
+        const serverSelector = "meta[property='og:image']";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

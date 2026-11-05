@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.wootly.ch";
-    private mirrorDomains: string[] = ["https://www.wootly.ch", "https://web.wootly.ch/grabm?t=", "https://www.wootly.ch"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.wootly.ch/"};
+    private mainUrl: string = "https://streamplay.to";
+    private mirrorDomains: string[] = ["https://streamplay.to", "https://streamplay.to"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://streamplay.to/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "iframe";
+        const itemSelector = "div.imrl img";
         const titleSelector = "span.mtl";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "iframe";
-        const epNumSelector = "div.imrl img";
+        const epSelector = "div.imrl img";
+        const epNumSelector = "div.snfo h1 a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe";
+        const serverSelector = "div.imrl img";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

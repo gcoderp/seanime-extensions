@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://streamhg.com";
-        this.mirrorDomains = ["https://streamhg.com", "https://streamhg.com"];
-        this.defaultHeaders = { "Referer": "https://streamhg.com/" };
+        this.mainUrl = "https://banglaplex.biz";
+        this.mirrorDomains = ["https://banglaplex.biz", "https://banglaplex.biz"];
+        this.defaultHeaders = { "Referer": "https://banglaplex.biz/" };
     }
     getSettings() {
         return {
@@ -402,11 +402,11 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "'?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.text-center a[href]";
-        const titleSelector = "a[href]";
+        const itemSelector = ".latest-movie-img-container, .movie-img, div.movie";
+        const titleSelector = "a[href*='/watch/']";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.text-center a[href]";
-        const epNumSelector = "form input[name]";
+        const epSelector = ".latest-movie-img-container, .movie-img, div.movie";
+        const epNumSelector = ".movie-title, h3, h2, h1";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "div.text-center a[href]";
+        const serverSelector = ".latest-movie-img-container, .movie-img, div.movie";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

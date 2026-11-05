@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://minioppai.org";
-    private mirrorDomains: string[] = ["https://minioppai.org", "https://minioppai.org", "https://tv.minioppai.org"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://minioppai.org/"};
+    private mainUrl: string = "https://streampai.my.id";
+    private mirrorDomains: string[] = ["https://streampai.my.id", "https://paistream.my.id", "https://streampai.my.id"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://streampai.my.id/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/populars?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "iframe";
+        const itemSelector = "article.seventh, article.bs, div.bs, div.latest a, div.listupd article a";
         const titleSelector = "img";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "iframe";
-        const epNumSelector = "article.seventh, article.bs, div.bs, div.latest a, div.listupd article a";
+        const epSelector = "article.seventh, article.bs, div.bs, div.latest a, div.listupd article a";
+        const epNumSelector = "a[itemprop=url], h2 a, .tt a, a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe";
+        const serverSelector = "article.seventh, article.bs, div.bs, div.latest a, div.listupd article a";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

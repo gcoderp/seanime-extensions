@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://desustream.me/beta";
-        this.mirrorDomains = ["https://desustream.me/beta", "https://desustream.me/beta", "https://desustream.me/desudesuhd", "https://desustream.me/moedesu"];
-        this.defaultHeaders = { "Referer": "https://desustream.me/beta/" };
+        this.mainUrl = "https://desustream.me/desudesuhd";
+        this.mirrorDomains = ["https://desustream.me/desudesuhd", "https://desustream.me/beta", "https://desustream.me/desudesuhd", "https://desustream.me/moedesu"];
+        this.defaultHeaders = { "Referer": "https://desustream.me/desudesuhd/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.mirrorstream > ul > li";

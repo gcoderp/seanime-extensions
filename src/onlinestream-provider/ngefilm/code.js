@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://gdriveplayer.to";
-        this.mirrorDomains = ["https://gdriveplayer.to", "https://gdriveplayer.to"];
-        this.defaultHeaders = { "Referer": "https://gdriveplayer.to/" };
+        this.mainUrl = "https://nf21.p2pplay.pro";
+        this.mirrorDomains = ["https://nf21.p2pplay.pro", "https://nf21.p2pplay.pro"];
+        this.defaultHeaders = { "Referer": "https://nf21.p2pplay.pro/" };
     }
     getSettings() {
         return {
@@ -459,7 +459,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes = [];
         const epSelector = "script:containsData(sources:)";
-        const epNumSelector = "article.item-infinite";
+        const epNumSelector = "div.gmr-embed-responsive iframe";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

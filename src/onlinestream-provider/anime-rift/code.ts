@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeRift
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: AnimeRift
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,18 +409,18 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://gateway.embrassme.top/api/v4";
     private mirrorDomains: string[] = ["https://gateway.embrassme.top/api/v4", "https://gateway.embrassme.top/api/v4"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://gateway.embrassme.top/api/v4/"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://gateway.embrassme.top/api/v4/", "User-Agent": "libmpv"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
+            episodeServers: ["streamtape"],
             supportsDub: true,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/library/search?page={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamtape";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

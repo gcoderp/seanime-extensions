@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://sflix.film";
-        this.mirrorDomains = ["https://sflix.film", "https://sflix.film"];
-        this.defaultHeaders = { "Referer": "https://sflix.film/" };
+        this.mainUrl = "https://netnaija.film";
+        this.mirrorDomains = ["https://netnaija.film", "https://netnaija.film"];
+        this.defaultHeaders = { "Referer": "https://netnaija.film/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/wefeed-h5-bff/web/ranking-list/content?id={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";

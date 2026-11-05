@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://voeunblock2.com";
-        this.mirrorDomains = ["https://voeunblock2.com", "https://voeunblock2.com"];
-        this.defaultHeaders = { "Referer": "https://voeunblock2.com/" };
+        this.mainUrl = "https://cindyeyefinal.com";
+        this.mirrorDomains = ["https://cindyeyefinal.com", "https://cindyeyefinal.com"];
+        this.defaultHeaders = { "Referer": "https://cindyeyefinal.com/" };
     }
     getSettings() {
         return {
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "ul.pm-ul-browse-videos div.thumbnail";
+        const serverSelector = "a:not(.pm-watch-later-add)";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

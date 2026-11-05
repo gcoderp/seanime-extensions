@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://hubdrive.space";
-        this.mirrorDomains = ["https://hubdrive.space", "https://hubdrive.space"];
-        this.defaultHeaders = { "Referer": "https://hubdrive.space/" };
+        this.mainUrl = "https://api.themoviedb.org";
+        this.mirrorDomains = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/search"];
+        this.defaultHeaders = { "Referer": "https://api.themoviedb.org/" };
     }
     getSettings() {
         return {
@@ -402,10 +402,10 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
+        const itemSelector = "script:containsData(var reurl)";
         const titleSelector = "a[href*='hubcloud.php']";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
-        const epNumSelector = "script:containsData(var reurl)";
+        const epSelector = "script:containsData(var reurl)";
+        const epNumSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
+        const serverSelector = "script:containsData(var reurl)";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

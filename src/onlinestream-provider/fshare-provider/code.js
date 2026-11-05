@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/api/movie/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "#limit-name > div:nth-child(2)";
@@ -459,7 +459,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes = [];
         const epSelector = "#limit-name > div:nth-child(2)";
-        const epNumSelector = "#content > div > div.post";
+        const epNumSelector = "div.data > h3 > a";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://xcloud.tattoo";
-        this.mirrorDomains = ["https://xcloud.tattoo", "https://xcloud.tattoo"];
-        this.defaultHeaders = { "Referer": "https://xcloud.tattoo/" };
+        this.mainUrl = "https://new.microtv.st";
+        this.mirrorDomains = ["https://new.microtv.st", "https://new.microtv.st"];
+        this.defaultHeaders = { "Referer": "https://new.microtv.st/" };
     }
     getSettings() {
         return {
@@ -402,11 +402,11 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?search={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.vd a.btn-primary";
-        const titleSelector = "h2 a.btn";
+        const itemSelector = "div.post-grid div.post-card";
+        const titleSelector = "a";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.vd a.btn-primary";
-        const epNumSelector = "iframe";
+        const epSelector = "div.post-grid div.post-card";
+        const epNumSelector = "div.pagination a";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "div.vd a.btn-primary";
+        const serverSelector = "div.post-grid div.post-card";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

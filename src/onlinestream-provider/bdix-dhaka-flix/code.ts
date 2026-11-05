@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = "td.fb-n > a";
-        const epNumSelector = "td.fb-n > a[href~=(?i)\\\\.(png|jpe?g)]";
+        const epNumSelector = "tbody > tr:gt(1):lt(12)";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

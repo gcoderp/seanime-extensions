@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://uqload.cx";
-    private mirrorDomains: string[] = ["https://uqload.cx", "https://uqload.cx"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://uqload.cx/"};
+    private mainUrl: string = "https://bigwarp.io";
+    private mirrorDomains: string[] = ["https://bigwarp.io", "https://bigwarp.io"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://bigwarp.io/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["voe", "dood", "filemoon"],
+            episodeServers: ["filemoon", "voe", "dood"],
             supportsDub: true,
         };
     }
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script:containsData(eval)";
+        const itemSelector = "div#dle-content > div.short";
         const titleSelector = "h1#s-title";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script:containsData(eval)";
-        const epNumSelector = "div#dle-content > div.short";
+        const epSelector = "div#dle-content > div.short";
+        const epNumSelector = "div.fdesc";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script:containsData(eval)";
+        const serverSelector = "div#dle-content > div.short";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

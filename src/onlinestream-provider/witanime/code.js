@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://witanime.site";
-        this.mirrorDomains = ["https://witanime.site", "https://witanime.site", "https://witanime.site/watch"];
-        this.defaultHeaders = { "Referer": "https://witanime.site/" };
+        this.mainUrl = "https://videa.hu";
+        this.mirrorDomains = ["https://videa.hu", "https://videa.hu", "https://videa.hu/player/xml?platform=desktop"];
+        this.defaultHeaders = { "Referer": "https://videa.hu/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/+/video/meta/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.shrink-0 img";

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://dingtezuni.com";
-    private mirrorDomains: string[] = ["https://dingtezuni.com", "https://dingtezuni.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://dingtezuni.com/"};
+    private mainUrl: string = "https://offshorebankservices.com";
+    private mirrorDomains: string[] = ["https://offshorebankservices.com", "https://offshorebankservices.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://offshorebankservices.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/dist/js/alljs.js?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script:containsData(sources:)";
+        const itemSelector = "article.item";
         const titleSelector = "h2.entry-title > a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script:containsData(sources:)";
-        const epNumSelector = "div.gmr-embed-responsive iframe";
+        const epSelector = "article.item";
+        const epNumSelector = "div.gmr-qual, div.gmr-quality-item > a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script:containsData(sources:)";
+        const serverSelector = "article.item";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

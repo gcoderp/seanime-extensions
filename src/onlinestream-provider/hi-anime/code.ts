@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidtube.site";
-    private mirrorDomains: string[] = ["https://vidtube.site", "https://vidtube.site"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidtube.site/"};
+    private mainUrl: string = "https://zokoanime.video";
+    private mirrorDomains: string[] = ["https://zokoanime.video", "https://zokoanime.video"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://zokoanime.video/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/recently-updated?page={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

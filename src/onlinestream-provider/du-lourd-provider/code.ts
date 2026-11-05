@@ -413,7 +413,7 @@ class Provider {
 
     getSettings(): Settings {
         return {
-            episodeServers: ["voe", "dood"],
+            episodeServers: ["dood", "voe"],
             supportsDub: true,
         };
     }
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div#dle-content > article.movie-box";
-        const titleSelector = "span.icon-voicer";
+        const itemSelector = "iframe";
+        const titleSelector = "img";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div#dle-content > article.movie-box";
-        const epNumSelector = "div.img img";
+        const epSelector = "iframe";
+        const epNumSelector = "div#dle-content > article.movie-box";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div#dle-content > article.movie-box";
+        const serverSelector = "img";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

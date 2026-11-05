@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://multimovies.garden";
-        this.mirrorDomains = ["https://multimovies.garden", "https://multimovies.garden", "https://multimovies.garden"];
-        this.defaultHeaders = { "Referer": "https://multimovies.garden/" };
+        this.mainUrl = "https://multimovies.cloud";
+        this.mirrorDomains = ["https://multimovies.cloud", "https://multimovies.cloud"];
+        this.defaultHeaders = { "Referer": "https://multimovies.cloud/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "article.poster-card, article.item, .items article";
+        const itemSelector = ".cinejoy-ep-card";
         const titleSelector = "img";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "article.poster-card, article.item, .items article";
-        const epNumSelector = "article.poster-card, .result-item article, div.result-item";
+        const epSelector = ".cinejoy-ep-card";
+        const epNumSelector = "article.poster-card, article.item, .items article";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "img";
+        const serverSelector = ".cinejoy-ep-card";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

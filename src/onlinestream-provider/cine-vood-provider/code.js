@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://cinevood.net";
-        this.mirrorDomains = ["https://cinevood.net", "https://cinevood.net", "https://cinevood.net"];
-        this.defaultHeaders = { "Referer": "https://cinevood.net/" };
+        this.mainUrl = "https://one.1cinevood.beer";
+        this.mirrorDomains = ["https://one.1cinevood.beer", "https://one.1cinevood.beer"];
+        this.defaultHeaders = { "Referer": "https://one.1cinevood.beer/" };
     }
     getSettings() {
         return {
@@ -405,8 +405,8 @@ class Provider {
         const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "article.latestPost";
-        const titleSelector = "h2.title a, a[title]";
+        const itemSelector = "article.latestpost";
+        const titleSelector = "a[href*=cinevood]";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "article.latestPost";
-        const epNumSelector = ".thecontent h6, .thecontent a[href], article h6, article a[href]";
+        const epSelector = "article.latestpost";
+        const epNumSelector = "article.latestpost, article.post";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "article.latestPost";
+        const serverSelector = "article.latestpost";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

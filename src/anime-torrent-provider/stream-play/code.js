@@ -300,8 +300,8 @@ class AniListResolver {
 }
 class Provider {
     constructor() {
-        this.mainUrl = "https://myvidplay.com";
-        this.defaultHeaders = { "Referer": "https://myvidplay.com/" };
+        this.mainUrl = "https://enc-dec.app";
+        this.defaultHeaders = { "Referer": "https://enc-dec.app/" };
     }
     getSettings() {
         return {
@@ -318,7 +318,7 @@ class Provider {
         const fallbackQuery = (opts.query || "").trim();
         const candidates = AniListResolver.queries(media, fallbackQuery, 2);
         const q = encodeURIComponent(candidates[0] || fallbackQuery);
-        const searchUrl = CsCompat.fixUrl("/{query}".replace("{query}", q), this.mainUrl);
+        const searchUrl = CsCompat.fixUrl("/browse?q={query}".replace("{query}", q), this.mainUrl);
         const res = await fetch(searchUrl, { headers: this.defaultHeaders });
         if (!res || res.status >= 400) {
             return [];

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://fireani.me";
-    private mirrorDomains: string[] = ["https://fireani.me", "https://fireani.me"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://fireani.me/"};
+    private mainUrl: string = "https://luluvdo.com";
+    private mirrorDomains: string[] = ["https://luluvdo.com", "https://luluvdo.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://luluvdo.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/proxy/player/adehu1awmdxx?csrftkn={query}".replace("{query}", queryEncoded);
+        const searchPath = "/api.v1.AnimeSearchService/SearchAnimes?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "form#wrapper input[name=csrftkn]";
-        const titleSelector = "form#wrapper input[name=csrftkn]";
+        const itemSelector = "script:containsData(vplayer)";
+        const titleSelector = "script:containsData(vplayer)";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "form#wrapper input[name=csrftkn]";
-        const epNumSelector = "script:containsData(vplayer)";
+        const epSelector = "script:containsData(vplayer)";
+        const epNumSelector = "form#wrapper input[name=csrftkn]";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "form#wrapper input[name=csrftkn]";
+        const serverSelector = "script:containsData(vplayer)";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

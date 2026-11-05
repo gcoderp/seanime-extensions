@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://mp4upload.com";
-    private mirrorDomains: string[] = ["https://mp4upload.com", "http://mp4upload.com", "https://mp4upload.com", "https://mp4upload.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://mp4upload.com/"};
+    private mainUrl: string = "https://bysevepoin.com";
+    private mirrorDomains: string[] = ["https://bysevepoin.com", "https://bysevepoin.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://bysevepoin.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["mp4upload", "okru", "streamwish", "filemoon", "dood"],
+            episodeServers: ["filemoon", "mp4upload", "okru", "streamwish", "dood"],
             supportsDub: true,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const itemSelector = "script";
         const titleSelector = "script";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script:containsData(function(p,a,c,k,e,d))";
-        const epNumSelector = "script";
+        const epSelector = "script";
+        const epNumSelector = "script:containsData(sources:)";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const serverSelector = "script";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "mp4upload";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

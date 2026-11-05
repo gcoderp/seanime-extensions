@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://cinevood.net";
-    private mirrorDomains: string[] = ["https://cinevood.net", "https://cinevood.net", "https://cinevood.net"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://cinevood.net/"};
+    private mainUrl: string = "https://one.1cinevood.beer";
+    private mirrorDomains: string[] = ["https://one.1cinevood.beer", "https://one.1cinevood.beer"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://one.1cinevood.beer/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article.latestPost";
-        const titleSelector = "h2.title a, a[title]";
+        const itemSelector = "article.latestpost";
+        const titleSelector = "a[href*=cinevood]";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.latestPost";
-        const epNumSelector = ".thecontent h6, .thecontent a[href], article h6, article a[href]";
+        const epSelector = "article.latestpost";
+        const epNumSelector = "article.latestpost, article.post";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "article.latestPost";
+        const serverSelector = "article.latestpost";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vk.com";
-    private mirrorDomains: string[] = ["https://vk.com", "https://api.vk.com/method/video.get?v=5.269&client_id=52461373", "https://vk.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vk.com/"};
+    private mainUrl: string = "https://abyssplayer.com";
+    private mirrorDomains: string[] = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://abyssplayer.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["okru", "filemoon", "streamtape", "dood"],
+            episodeServers: ["filemoon", "okru", "streamtape", "dood"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/f1-race-replays?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search/?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.short_item";
+        const itemSelector = "[data-module=OKVideo]";
         const titleSelector = "h1";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.short_item";
-        const epNumSelector = "div.short_content h3 a";
+        const epSelector = "[data-module=OKVideo]";
+        const epNumSelector = "b";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.short_item";
+        const serverSelector = "[data-module=OKVideo]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "okru";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

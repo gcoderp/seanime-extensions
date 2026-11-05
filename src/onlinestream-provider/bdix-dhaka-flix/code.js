@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "td.fb-n > a";
@@ -459,7 +459,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes = [];
         const epSelector = "td.fb-n > a";
-        const epNumSelector = "td.fb-n > a[href~=(?i)\\\\.(png|jpe?g)]";
+        const epNumSelector = "tbody > tr:gt(1):lt(12)";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

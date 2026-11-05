@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeRift
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: AnimeRift
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -392,17 +392,17 @@ class Provider {
     constructor() {
         this.mainUrl = "https://gateway.embrassme.top/api/v4";
         this.mirrorDomains = ["https://gateway.embrassme.top/api/v4", "https://gateway.embrassme.top/api/v4"];
-        this.defaultHeaders = { "Referer": "https://gateway.embrassme.top/api/v4/" };
+        this.defaultHeaders = { "Referer": "https://gateway.embrassme.top/api/v4/", "User-Agent": "libmpv" };
     }
     getSettings() {
         return {
-            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
+            episodeServers: ["streamtape"],
             supportsDub: true,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/library/search?page={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamtape";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

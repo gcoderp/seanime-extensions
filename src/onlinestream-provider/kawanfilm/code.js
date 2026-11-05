@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://vidshare.rpmvid.com";
-        this.mirrorDomains = ["https://vidshare.rpmvid.com", "https://vidshare.rpmvid.com"];
-        this.defaultHeaders = { "Referer": "https://vidshare.rpmvid.com/" };
+        this.mainUrl = "https://ghbrisk.com";
+        this.mirrorDomains = ["https://ghbrisk.com", "https://ghbrisk.com"];
+        this.defaultHeaders = { "Referer": "https://ghbrisk.com/" };
     }
     getSettings() {
         return {
@@ -459,7 +459,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes = [];
         const epSelector = "script:containsData(sources:)";
-        const epNumSelector = "div.gmr-embed-responsive iframe";
+        const epNumSelector = "iframe";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

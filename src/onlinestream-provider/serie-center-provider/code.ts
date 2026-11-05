@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://turbovid.co";
-    private mirrorDomains: string[] = ["https://turbovid.co", "https://turbovid.co"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://turbovid.co/"};
+    private mainUrl: string = "https://illvid.net";
+    private mirrorDomains: string[] = ["https://illvid.net", "https://illvid.net"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://illvid.net/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.items > div.item > a";
+        const itemSelector = "iframe#iframe";
         const titleSelector = "meta[name=csrf-token]";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.items > div.item > a";
-        const epNumSelector = "div.col-data > p";
+        const epSelector = "iframe#iframe";
+        const epNumSelector = "script:containsData(\uff9f\u03c9\uff9f\uff89= /\uff40\uff4d\u00b4\uff09\uff89 ~\u253b\u2501\u253b)";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "meta[name=csrf-token]";
+        const serverSelector = "iframe#iframe";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

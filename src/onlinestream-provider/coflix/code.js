@@ -390,22 +390,22 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://wishonly.site";
-        this.mirrorDomains = ["https://wishonly.site", "https://wishonly.site"];
-        this.defaultHeaders = { "Referer": "https://wishonly.site/" };
+        this.mainUrl = "https://vidhideplus.com";
+        this.mirrorDomains = ["https://vidhideplus.com", "https://vidhideplus.com"];
+        this.defaultHeaders = { "Referer": "https://vidhideplus.com/" };
     }
     getSettings() {
         return {
-            episodeServers: ["streamwish", "filemoon", "vidhide", "voe"],
+            episodeServers: ["vidhide", "streamwish", "filemoon", "voe"],
             supportsDub: false,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/recherche/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "#vplayer > #player source";
+        const itemSelector = "div.md-manga-card";
         const titleSelector = "p.md-manga-card-name";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "#vplayer > #player source";
-        const epNumSelector = "div.md-manga-card";
+        const epSelector = "div.md-manga-card";
+        const epNumSelector = "div.cf-movie-cover-wrap a";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "#vplayer > #player source";
+        const serverSelector = "div.md-manga-card";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/api/3/discover/movie?api_key=qNhKLJiZVyoKdi9NCQGz8CIGrpUijujE&language=en&sort_by=primary_release_date.desc&watch_region=IN&page=1&q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/api/3/search/movie?api_key={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";

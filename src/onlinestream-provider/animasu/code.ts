@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://player.abyssplayer.com";
-    private mirrorDomains: string[] = ["https://player.abyssplayer.com", "https://player.abyssplayer.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://player.abyssplayer.com/"};
+    private mainUrl: string = "https://www.blogger.com";
+    private mirrorDomains: string[] = ["https://www.blogger.com", "https://www.blogger.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.blogger.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.listupd div.bs";
-        const titleSelector = "a";
+        const itemSelector = "script";
+        const titleSelector = "span:contains(Genre:) a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.listupd div.bs";
-        const epNumSelector = "div.tt";
+        const epSelector = "script";
+        const epNumSelector = "div.sinopsis p";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.listupd div.bs";
+        const serverSelector = "script";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

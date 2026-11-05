@@ -8,10 +8,10 @@
   "sha256_checksum": "60549f8a6def2dc2455c6d2aba476104ca676e7c935d09e6f8e41ca6a3d51d67",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
-  "strategy": "STRATEGY_2_JADX_JAVA_AST",
-  "source_recovery_status": "DEX_FALLBACK",
+  "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "source_recovery_status": "RECOVERED",
   "decompilation_status": "JADX_OK",
-  "kotlin_reconstruction_status": "PARTIAL",
+  "kotlin_reconstruction_status": "SUCCESS",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
   "seanime_compatibility_status": "PASS",
@@ -25,10 +25,11 @@
   "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
+    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-05T09:30:45.597901+00:00",
+  "conversion_timestamp": "2026-11-05T10:08:56.466392+00:00",
   "passed": true
 }

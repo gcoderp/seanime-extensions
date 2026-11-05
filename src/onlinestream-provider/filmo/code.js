@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Filmo
-// Original Class: Filmo
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -392,7 +392,7 @@ class Provider {
     constructor() {
         this.mainUrl = "https://filmo.to";
         this.mirrorDomains = ["https://filmo.to", "https://filmo.to"];
-        this.defaultHeaders = { "Referer": "https://filmo.to/", "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0" };
+        this.defaultHeaders = { "Referer": "https://filmo.to/" };
     }
     getSettings() {
         return {
@@ -405,8 +405,8 @@ class Provider {
         const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "section.search-top-results article > a, a.movie-poster-grid-card";
-        const titleSelector = "img";
+        const itemSelector = "section.popular-spotlight, div.video-row";
+        const titleSelector = "p.movie-detail-synopsis";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.details-group dl";
-        const epNumSelector = "dt";
+        const epSelector = "section.popular-spotlight, div.video-row";
+        const epNumSelector = ".popular-spotlight-card__link, a.video-card";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = ".provider-chip";
+        const serverSelector = "p.movie-detail-synopsis";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

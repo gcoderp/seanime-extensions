@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidnest.fun";
-    private mirrorDomains: string[] = ["https://vidnest.fun", "https://vidnest.fun"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidnest.fun/"};
+    private mainUrl: string = "https://gogoanime.me.uk";
+    private mirrorDomains: string[] = ["https://gogoanime.me.uk", "https://gogoanime.me.uk"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://gogoanime.me.uk/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "iframe";
+        const itemSelector = "iframe[src]";
         const titleSelector = "a[href*='/anime/'], .info a.watch, a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "iframe";
-        const epNumSelector = "article.bs";
+        const epSelector = "iframe[src]";
+        const epNumSelector = "iframe";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe";
+        const serverSelector = "iframe[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://streamhg.com";
-    private mirrorDomains: string[] = ["https://streamhg.com", "https://streamhg.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://streamhg.com/"};
+    private mainUrl: string = "https://banglaplex.biz";
+    private mirrorDomains: string[] = ["https://banglaplex.biz", "https://banglaplex.biz"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://banglaplex.biz/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "'?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.text-center a[href]";
-        const titleSelector = "a[href]";
+        const itemSelector = ".latest-movie-img-container, .movie-img, div.movie";
+        const titleSelector = "a[href*='/watch/']";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.text-center a[href]";
-        const epNumSelector = "form input[name]";
+        const epSelector = ".latest-movie-img-container, .movie-img, div.movie";
+        const epNumSelector = ".movie-title, h3, h2, h1";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.text-center a[href]";
+        const serverSelector = ".latest-movie-img-container, .movie-img, div.movie";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://filemoon.sx";
-        this.mirrorDomains = ["https://filemoon.sx", "https://filemoon.sx"];
-        this.defaultHeaders = { "Referer": "https://filemoon.sx/" };
+        this.mainUrl = "https://wishfast.top";
+        this.mirrorDomains = ["https://wishfast.top", "https://wishfast.top"];
+        this.defaultHeaders = { "Referer": "https://wishfast.top/" };
     }
     getSettings() {
         return {
@@ -402,10 +402,10 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "iframe";
+        const itemSelector = "script:containsData(function(p,a,c,k,e,d))";
         const titleSelector = "h1.entry-title";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "iframe";
-        const epNumSelector = "div.listupd > article";
+        const epSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const epNumSelector = "iframe";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "iframe";
+        const serverSelector = "script:containsData(function(p,a,c,k,e,d))";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

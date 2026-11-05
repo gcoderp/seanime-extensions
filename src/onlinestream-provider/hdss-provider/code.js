@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://fembed.one";
-        this.mirrorDomains = ["https://fembed.one", "https://fembed.one"];
-        this.defaultHeaders = { "Referer": "https://fembed.one/" };
+        this.mainUrl = "https://d000d.net";
+        this.mirrorDomains = ["https://d000d.net", "https://d000d.net"];
+        this.defaultHeaders = { "Referer": "https://d000d.net/" };
     }
     getSettings() {
         return {

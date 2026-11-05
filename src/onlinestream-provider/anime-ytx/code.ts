@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://ytplay.rpmvid.com";
-    private mirrorDomains: string[] = ["https://ytplay.rpmvid.com", "https://ytplay.rpmvid.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://ytplay.rpmvid.com/"};
+    private mainUrl: string = "https://abyssplayer.com";
+    private mirrorDomains: string[] = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://abyssplayer.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article.aniyt-episode-card";
+        const itemSelector = "[data-module=OKVideo]";
         const titleSelector = "a.aniyt-anime-poster";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.aniyt-episode-card";
-        const epNumSelector = ".aniyt-pagination a.next";
+        const epSelector = "[data-module=OKVideo]";
+        const epNumSelector = "div#player";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "article.aniyt-episode-card";
+        const serverSelector = "[data-module=OKVideo]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://filedon.co";
-        this.mirrorDomains = ["https://filedon.co", "https://filedon.co"];
-        this.defaultHeaders = { "Referer": "https://filedon.co/" };
+        this.mainUrl = "https://www.blogger.com";
+        this.mirrorDomains = ["https://www.blogger.com", "https://www.blogger.com"];
+        this.defaultHeaders = { "Referer": "https://www.blogger.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "video source[src], video[src]";

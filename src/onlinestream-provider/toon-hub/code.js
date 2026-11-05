@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://allinonedownloader.fun";
-        this.mirrorDomains = ["https://allinonedownloader.fun", "https://allinonedownloader.fun"];
-        this.defaultHeaders = { "Referer": "https://allinonedownloader.fun/" };
+        this.mainUrl = "https://multimovies.cloud";
+        this.mirrorDomains = ["https://multimovies.cloud", "https://multimovies.cloud"];
+        this.defaultHeaders = { "Referer": "https://multimovies.cloud/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "li.post-item";

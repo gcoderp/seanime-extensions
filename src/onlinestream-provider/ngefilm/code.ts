@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://gdriveplayer.to";
-    private mirrorDomains: string[] = ["https://gdriveplayer.to", "https://gdriveplayer.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://gdriveplayer.to/"};
+    private mainUrl: string = "https://nf21.p2pplay.pro";
+    private mirrorDomains: string[] = ["https://nf21.p2pplay.pro", "https://nf21.p2pplay.pro"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://nf21.p2pplay.pro/"};
 
     getSettings(): Settings {
         return {
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = "script:containsData(sources:)";
-        const epNumSelector = "article.item-infinite";
+        const epNumSelector = "div.gmr-embed-responsive iframe";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

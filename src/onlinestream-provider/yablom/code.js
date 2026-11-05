@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://sharecloudy.com";
-        this.mirrorDomains = ["https://sharecloudy.com", "https://sharecloudy.com"];
-        this.defaultHeaders = { "Referer": "https://sharecloudy.com/" };
+        this.mainUrl = "https://yakmov.com";
+        this.mirrorDomains = ["https://yakmov.com", "https://yakmov.com"];
+        this.defaultHeaders = { "Referer": "https://yakmov.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/0003909/api_category.php?catid={query}".replace("{query}", queryEncoded);
+        const searchPath = "/0003909/api_search.php?searchword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.film-detail-title";

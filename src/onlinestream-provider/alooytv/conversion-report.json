@@ -8,10 +8,10 @@
   "sha256_checksum": "8dc3850bb169fad209b545cd6de5ef4a1c666db7ec0c45bea95ae26d373961b9",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
-  "strategy": "STRATEGY_2_JADX_JAVA_AST",
-  "source_recovery_status": "DEX_FALLBACK",
+  "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "source_recovery_status": "RECOVERED",
   "decompilation_status": "JADX_OK",
-  "kotlin_reconstruction_status": "PARTIAL",
+  "kotlin_reconstruction_status": "SUCCESS",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
   "seanime_compatibility_status": "PASS",
@@ -29,6 +29,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-05T09:30:43.705365+00:00",
+  "conversion_timestamp": "2026-11-05T10:08:53.982036+00:00",
   "passed": true
 }

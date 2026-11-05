@@ -301,8 +301,8 @@ class AniListResolver {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.themoviedb.org";
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
+    private mainUrl: string = "https://streameeeeee.site";
+    private defaultHeaders: Record<string, string> = {"Referer": "https://streameeeeee.site/"};
 
     getSettings(): TorrentProviderSettings {
         return {
@@ -320,7 +320,7 @@ class Provider {
         const fallbackQuery = (opts.query || "").trim();
         const candidates = AniListResolver.queries(media, fallbackQuery, 2);
         const q = encodeURIComponent(candidates[0] || fallbackQuery);
-        const searchUrl = CsCompat.fixUrl("/api/m3u8/{query}".replace("{query}", q), this.mainUrl);
+        const searchUrl = CsCompat.fixUrl("/search?keyword={query}".replace("{query}", q), this.mainUrl);
         const res = await fetch(searchUrl, { headers: this.defaultHeaders });
         if (!res || res.status >= 400) {
             return [];

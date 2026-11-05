@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "http://iptvidn.com";
-    private mirrorDomains: string[] = ["http://iptvidn.com", "http://iptvidn.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "http://iptvidn.com/"};
+    private mainUrl: string = "http://tv.bdiptv.net";
+    private mirrorDomains: string[] = ["http://tv.bdiptv.net", "http://tv.bdiptv.net"];
+    private defaultHeaders: Record<string, string> = {"Referer": "http://tv.bdiptv.net/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/play.php?stream={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.item_content > a";
+        const itemSelector = "iframe";
         const titleSelector = "img";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.item_content > a";
-        const epNumSelector = "iframe";
+        const epSelector = "iframe";
+        const epNumSelector = "div.item_content > a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "img";
+        const serverSelector = "iframe";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

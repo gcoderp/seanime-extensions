@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://guarda-serie.ovh";
-    private mirrorDomains: string[] = ["https://guarda-serie.ovh", "https://guarda-serie.ovh"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://guarda-serie.ovh/"};
+    private mainUrl: string = "https://vixsrc.to";
+    private mirrorDomains: string[] = ["https://vixsrc.to", "https://vixsrc.to", "https://vixsrc.to/tv"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vixsrc.to/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

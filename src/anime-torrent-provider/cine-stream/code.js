@@ -300,8 +300,8 @@ class AniListResolver {
 }
 class Provider {
     constructor() {
-        this.mainUrl = "https://enc-dec.app";
-        this.defaultHeaders = { "Referer": "https://enc-dec.app/" };
+        this.mainUrl = "https://hdstream4u.com";
+        this.defaultHeaders = { "Referer": "https://hdstream4u.com/" };
     }
     getSettings() {
         return {
@@ -318,7 +318,7 @@ class Provider {
         const fallbackQuery = (opts.query || "").trim();
         const candidates = AniListResolver.queries(media, fallbackQuery, 2);
         const q = encodeURIComponent(candidates[0] || fallbackQuery);
-        const searchUrl = CsCompat.fixUrl("/embed-1/v3/e-1/getSources?id={query}".replace("{query}", q), this.mainUrl);
+        const searchUrl = CsCompat.fixUrl("/search?keyword={query}".replace("{query}", q), this.mainUrl);
         const res = await fetch(searchUrl, { headers: this.defaultHeaders });
         if (!res || res.status >= 400) {
             return [];

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.footreplays.com";
-    private mirrorDomains: string[] = ["https://www.footreplays.com", "https://www.footreplays.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.footreplays.com/"};
+    private mainUrl: string = "https://abyssplayer.com";
+    private mirrorDomains: string[] = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://abyssplayer.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/england/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.p-wrap";
+        const itemSelector = "[data-module=OKVideo]";
         const titleSelector = "a.p-category";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.p-wrap";
-        const epNumSelector = "div.s-feat img";
+        const epSelector = "[data-module=OKVideo]";
+        const epNumSelector = "div.p-wrap";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.p-wrap";
+        const serverSelector = "[data-module=OKVideo]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -390,23 +390,23 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://ghbrisk.com";
-        this.mirrorDomains = ["https://ghbrisk.com", "https://ghbrisk.com"];
-        this.defaultHeaders = { "Referer": "https://ghbrisk.com/" };
+        this.mainUrl = "https://abyssplayer.com";
+        this.mirrorDomains = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
+        this.defaultHeaders = { "Referer": "https://abyssplayer.com/" };
     }
     getSettings() {
         return {
-            episodeServers: ["streamwish", "voe", "vidhide", "sibnet", "dood", "filemoon", "okru"],
+            episodeServers: ["filemoon", "okru", "vidhide", "streamwish", "dood", "voe", "sibnet"],
             supportsDub: false,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "a.asn-search-result, a[href*=/catalogue/]";
-        const titleSelector = "a.asn-search-result, a[href*=/catalogue/]";
+        const itemSelector = "[data-module=OKVideo]";
+        const titleSelector = "[data-module=OKVideo]";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "a.asn-search-result, a[href*=/catalogue/]";
-        const epNumSelector = "script";
+        const epSelector = "[data-module=OKVideo]";
+        const epNumSelector = "a.asn-search-result, a[href*=/catalogue/]";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "a.asn-search-result, a[href*=/catalogue/]";
+        const serverSelector = "[data-module=OKVideo]";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

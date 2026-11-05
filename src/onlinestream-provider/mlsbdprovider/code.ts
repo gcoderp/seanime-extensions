@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://gdxfiles.com";
-    private mirrorDomains: string[] = ["https://gdxfiles.com", "https://gdxfiles.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://gdxfiles.com/"};
+    private mainUrl: string = "https://new2.multicloudlinks.com";
+    private mirrorDomains: string[] = ["https://new2.multicloudlinks.com", "https://new2.multicloudlinks.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://new2.multicloudlinks.com/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.title";
-        const titleSelector = "a[href*='/file/r2/']";
+        const itemSelector = "h1, h2, h3, title";
+        const titleSelector = "a[href]";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.title";
-        const epNumSelector = "div.container a";
+        const epSelector = "h1, h2, h3, title";
+        const epNumSelector = "ul > li.list-group-item:contains(Name)";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "a[href*='/file/r2/']";
+        const serverSelector = "h1, h2, h3, title";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

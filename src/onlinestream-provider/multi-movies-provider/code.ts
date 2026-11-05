@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://multimovies.garden";
-    private mirrorDomains: string[] = ["https://multimovies.garden", "https://multimovies.garden", "https://multimovies.garden"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://multimovies.garden/"};
+    private mainUrl: string = "https://multimovies.cloud";
+    private mirrorDomains: string[] = ["https://multimovies.cloud", "https://multimovies.cloud"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://multimovies.cloud/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article.poster-card, article.item, .items article";
+        const itemSelector = ".cinejoy-ep-card";
         const titleSelector = "img";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.poster-card, article.item, .items article";
-        const epNumSelector = "article.poster-card, .result-item article, div.result-item";
+        const epSelector = ".cinejoy-ep-card";
+        const epNumSelector = "article.poster-card, article.item, .items article";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "img";
+        const serverSelector = ".cinejoy-ep-card";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

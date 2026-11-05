@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://filemoon.in";
-    private mirrorDomains: string[] = ["https://filemoon.in", "https://filemoon.in"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://filemoon.in/"};
+    private mainUrl: string = "https://dorabash.in";
+    private mirrorDomains: string[] = ["https://dorabash.in", "https://dorabash.in", "https://dorabash.in"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://dorabash.in/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "streamwish"],
+            episodeServers: ["streamwish", "filemoon"],
             supportsDub: true,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script";
+        const itemSelector = "article";
         const titleSelector = "h3 a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script";
-        const epNumSelector = "div.player-selection";
+        const epSelector = "article";
+        const epNumSelector = "div.anime-data h4 a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script";
+        const serverSelector = "article";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://wishonly.site";
-    private mirrorDomains: string[] = ["https://wishonly.site", "https://wishonly.site"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://wishonly.site/"};
+    private mainUrl: string = "https://vidhideplus.com";
+    private mirrorDomains: string[] = ["https://vidhideplus.com", "https://vidhideplus.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidhideplus.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["streamwish", "filemoon", "vidhide", "voe"],
+            episodeServers: ["vidhide", "streamwish", "filemoon", "voe"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/recherche/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#vplayer > #player source";
+        const itemSelector = "div.md-manga-card";
         const titleSelector = "p.md-manga-card-name";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "#vplayer > #player source";
-        const epNumSelector = "div.md-manga-card";
+        const epSelector = "div.md-manga-card";
+        const epNumSelector = "div.cf-movie-cover-wrap a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "#vplayer > #player source";
+        const serverSelector = "div.md-manga-card";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

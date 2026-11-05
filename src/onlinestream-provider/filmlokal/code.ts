@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://jorivet.com";
-    private mirrorDomains: string[] = ["https://jorivet.com", "https://jorivet.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://jorivet.com/"};
+    private mainUrl: string = "https://ghbrisk.com";
+    private mirrorDomains: string[] = ["https://ghbrisk.com", "https://ghbrisk.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://ghbrisk.com/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article.item";
+        const itemSelector = "script:containsData(sources:)";
         const titleSelector = "h2.entry-title > a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.item";
-        const epNumSelector = "div.gmr-rating-item";
+        const epSelector = "script:containsData(sources:)";
+        const epNumSelector = "iframe";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "article.item";
+        const serverSelector = "script:containsData(sources:)";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

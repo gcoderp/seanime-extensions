@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://video.nimegami.id";
-        this.mirrorDomains = ["https://video.nimegami.id", "https://nimegami.id", "https://nimegami.id", "https://video.nimegami.id"];
-        this.defaultHeaders = { "Referer": "https://video.nimegami.id/" };
+        this.mainUrl = "https://vsys-srv.berkasdrive.com";
+        this.mirrorDomains = ["https://vsys-srv.berkasdrive.com", "https://dl.berkasdrive.com", "https://vsys-srv.berkasdrive.com", "https://vsys-srv.berkasdrive.com"];
+        this.defaultHeaders = { "Referer": "https://vsys-srv.berkasdrive.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/anime/?search={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "#player[data-src], video[data-src]";
@@ -459,7 +459,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes = [];
         const epSelector = "#player[data-src], video[data-src]";
-        const epNumSelector = "video#player source, video source";
+        const epNumSelector = "video source[src]";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "#player[data-src], video[data-src]";
+        const serverSelector = "a[href^='http']";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

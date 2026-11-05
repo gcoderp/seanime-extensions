@@ -390,22 +390,22 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://urochsunloath.com";
-        this.mirrorDomains = ["https://urochsunloath.com", "https://urochsunloath.com"];
-        this.defaultHeaders = { "Referer": "https://urochsunloath.com/" };
+        this.mainUrl = "https://abyssplayer.com";
+        this.mirrorDomains = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
+        this.defaultHeaders = { "Referer": "https://abyssplayer.com/" };
     }
     getSettings() {
         return {
-            episodeServers: ["filemoon", "voe", "okru"],
+            episodeServers: ["filemoon", "okru", "voe"],
             supportsDub: true,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/ver/peliculas/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/wp-json/gnrd/v1/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.gnrd-grid a.gnrd-card";
+        const itemSelector = "[data-module=OKVideo]";
         const titleSelector = "img";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.gnrd-grid a.gnrd-card";
-        const epNumSelector = "div.gnrd-qf:has(span.gnrd-qf-l:matchesOwn((?i)a[\u00f1n]o)) span.gnrd-qf-v";
+        const epSelector = "[data-module=OKVideo]";
+        const epNumSelector = "div.gnrd-grid a.gnrd-card";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "img";
+        const serverSelector = "[data-module=OKVideo]";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

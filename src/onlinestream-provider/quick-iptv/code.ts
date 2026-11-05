@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://raw.githubusercontent.com/dtankdempse/streamed-su-sports/refs/heads/main/vlc_playlist.m3u8";
-    private mirrorDomains: string[] = ["https://raw.githubusercontent.com/dtankdempse/streamed-su-sports/refs/heads/main/vlc_playlist.m3u8", "https://raw.githubusercontent.com/FunctionError/PiratesTvPlus/refs/heads/main/PiratesPlus.m3u", "https://raw.githubusercontent.com/SonyIPTV/Sony-IPTV-Live/refs/heads/main/Sony%20IPTV%20Live.m3u", "https://raw.githubusercontent.com/dtankdempse/streamed-su-sports/refs/heads/main/vlc_playlist.m3u8"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://raw.githubusercontent.com/dtankdempse/streamed-su-sports/refs/heads/main/vlc_playlist.m3u8/"};
+    private mainUrl: string = "https://raw.githubusercontent.com/luongz/iptv-jp/refs/heads/main/jp.m3u";
+    private mirrorDomains: string[] = ["https://raw.githubusercontent.com/luongz/iptv-jp/refs/heads/main/jp.m3u", "https://raw.githubusercontent.com/FunctionError/PiratesTvPlus/refs/heads/main/PiratesPlus.m3u", "https://raw.githubusercontent.com/SonyIPTV/Sony-IPTV-Live/refs/heads/main/Sony%20IPTV%20Live.m3u", "https://raw.githubusercontent.com/dtankdempse/streamed-su-sports/refs/heads/main/vlc_playlist.m3u8"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://raw.githubusercontent.com/luongz/iptv-jp/refs/heads/main/jp.m3u/"};
 
     getSettings(): Settings {
         return {

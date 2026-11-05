@@ -390,22 +390,22 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://api.themoviedb.org";
-        this.mirrorDomains = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/find"];
-        this.defaultHeaders = { "Referer": "https://api.themoviedb.org/" };
+        this.mainUrl = "https://hdstream4u.com";
+        this.mirrorDomains = ["https://hdstream4u.com", "https://hdstream4u.com"];
+        this.defaultHeaders = { "Referer": "https://hdstream4u.com/" };
     }
     getSettings() {
         return {
-            episodeServers: ["streamtape", "vidhide"],
+            episodeServers: ["vidhide", "streamtape"],
             supportsDub: true,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
+        const itemSelector = "script:containsData(var reurl)";
         const titleSelector = "a[hx-get*='download']";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
-        const epNumSelector = "script:containsData(var reurl)";
+        const epSelector = "script:containsData(var reurl)";
+        const epNumSelector = "script";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "a[hx-get*='download']";
+        const serverSelector = "script:containsData(var reurl)";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamtape";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

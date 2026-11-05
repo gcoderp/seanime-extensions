@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Animewitcher
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: AnimeWitcherProvider
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://animewitcher.com";
     private mirrorDomains: string[] = ["https://animewitcher.com", "https://animewitcher.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://animewitcher.com/"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://animewitcher.com/", "User-Agent": "Algolia for Android (3.27.0); Android (16)"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/watch/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

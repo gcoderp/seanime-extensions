@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://dingtezuni.com";
-    private mirrorDomains: string[] = ["https://dingtezuni.com", "https://dingtezuni.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://dingtezuni.com/"};
+    private mainUrl: string = "https://ghbrisk.com";
+    private mirrorDomains: string[] = ["https://ghbrisk.com", "https://ghbrisk.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://ghbrisk.com/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script:containsData(sources:)";
+        const itemSelector = "article.item-infinite";
         const titleSelector = "h2.entry-title > a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script:containsData(sources:)";
-        const epNumSelector = "article.item-infinite";
+        const epSelector = "article.item-infinite";
+        const epNumSelector = "div.content-thumbnail img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script:containsData(sources:)";
+        const serverSelector = "article.item-infinite";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

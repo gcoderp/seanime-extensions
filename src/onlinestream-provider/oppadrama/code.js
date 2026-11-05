@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://vid.oppadrama.cc";
-        this.mirrorDomains = ["https://vid.oppadrama.cc", "https://v1.oppadrama.cc", "https://v1.oppadrama.cc", "https://vid.oppadrama.cc"];
-        this.defaultHeaders = { "Referer": "https://vid.oppadrama.cc/" };
+        this.mainUrl = "https://morencius.com";
+        this.mirrorDomains = ["https://morencius.com", "https://morencius.com"];
+        this.defaultHeaders = { "Referer": "https://morencius.com/" };
     }
     getSettings() {
         return {
@@ -402,10 +402,10 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "article.bs, .listupd article, article";
+        const itemSelector = "script:containsData(sources:)";
         const titleSelector = "a";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "article.bs, .listupd article, article";
-        const epNumSelector = "h2, .tt, .entry-title";
+        const epSelector = "script:containsData(sources:)";
+        const epNumSelector = "article.bs, .listupd article, article";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "article.bs, .listupd article, article";
+        const serverSelector = "script:containsData(sources:)";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

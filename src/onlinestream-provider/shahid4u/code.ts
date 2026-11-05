@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Shahid4u
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: Shahid4u
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://fastved.cam";
-    private mirrorDomains: string[] = ["https://fastved.cam", "https://fastved.cam"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://fastved.cam/"};
+    private mainUrl: string = "https://shahed4u.im";
+    private mirrorDomains: string[] = ["https://shahed4u.im", "https://shahed4u.im"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://shahed4u.im/", "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "category/\u0645\u0633\u0644\u0633\u0644\u0627\u062a-\u0627\u062c\u0646\u0628\u064a?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.card-content";
-        const titleSelector = "a.show.card, a.glide_post, a";
+        const itemSelector = "div.shows-container.row div[class*=col-]";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.card-content";
-        const epNumSelector = ".ep_num, .\u0627\u0644\u062d\u0644\u0642\u0629";
+        const epSelector = "div.poster-side div.poster";
+        const epNumSelector = "div.poster-side img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "a.show.card, a.glide_post, a";
+        const serverSelector = "iframe[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

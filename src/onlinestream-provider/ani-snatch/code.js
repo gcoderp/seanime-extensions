@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://vidwish.live";
-        this.mirrorDomains = ["https://vidwish.live", "https://vidwish.live"];
-        this.defaultHeaders = { "Referer": "https://vidwish.live/" };
+        this.mainUrl = "https://vidtube.site";
+        this.mirrorDomains = ["https://vidtube.site", "https://vidtube.site"];
+        this.defaultHeaders = { "Referer": "https://vidtube.site/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/home?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "#megaplay-player";

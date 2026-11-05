@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.nk-post-card, div.nk-search-results ul li, a.nk-search-item, div.result ul li, div.eropost, article";
+        const itemSelector = "div.name";
         const titleSelector = "a#download-url";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.nk-post-card, div.nk-search-results ul li, a.nk-search-item, div.result ul li, div.eropost, article";
-        const epNumSelector = "h2 a, h3 a, a.nk-search-item, a";
+        const epSelector = "div.name";
+        const epNumSelector = "div.nk-post-card, div.nk-search-results ul li, a.nk-search-item, div.result ul li, div.eropost, article";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

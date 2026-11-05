@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://exposeworld.art";
-        this.mirrorDomains = ["https://exposeworld.art", "https://exposeworld.art"];
-        this.defaultHeaders = { "Referer": "https://exposeworld.art/" };
+        this.mainUrl = "https://istreamcdn.com";
+        this.mirrorDomains = ["https://istreamcdn.com", "https://istreamcdn.com"];
+        this.defaultHeaders = { "Referer": "https://istreamcdn.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/android/searchContent/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";

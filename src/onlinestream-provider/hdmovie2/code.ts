@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://prvs.top";
-    private mirrorDomains: string[] = ["https://prvs.top", "https://prvs.top"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://prvs.top/"};
+    private mainUrl: string = "https://hdm2.biz";
+    private mirrorDomains: string[] = ["https://hdm2.biz", "https://hdm2.biz", "https://hdm2.biz"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://hdm2.biz/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/episodes/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.items.normal article, div#archive-content article, div.items.full article,article";
+        const itemSelector = "button";
         const titleSelector = "a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.items.normal article, div#archive-content article, div.items.full article,article";
-        const epNumSelector = "div.poster img";
+        const epSelector = "button";
+        const epNumSelector = "div.items.normal article, div#archive-content article, div.items.full article,article";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "a";
+        const serverSelector = "button";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

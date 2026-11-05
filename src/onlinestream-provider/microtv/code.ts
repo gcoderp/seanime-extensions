@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://xcloud.tattoo";
-    private mirrorDomains: string[] = ["https://xcloud.tattoo", "https://xcloud.tattoo"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://xcloud.tattoo/"};
+    private mainUrl: string = "https://new.microtv.st";
+    private mirrorDomains: string[] = ["https://new.microtv.st", "https://new.microtv.st"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://new.microtv.st/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?search={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.vd a.btn-primary";
-        const titleSelector = "h2 a.btn";
+        const itemSelector = "div.post-grid div.post-card";
+        const titleSelector = "a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.vd a.btn-primary";
-        const epNumSelector = "iframe";
+        const epSelector = "div.post-grid div.post-card";
+        const epNumSelector = "div.pagination a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.vd a.btn-primary";
+        const serverSelector = "div.post-grid div.post-card";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

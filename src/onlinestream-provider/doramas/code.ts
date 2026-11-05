@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://embedplay.upns.ink";
-    private mirrorDomains: string[] = ["https://embedplay.upns.ink", "https://embedplay.upns.ink"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://embedplay.upns.ink/"};
+    private mainUrl: string = "https://doramasonline.co";
+    private mirrorDomains: string[] = ["https://doramasonline.co", "https://doramasonline.co"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://doramasonline.co/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/category/lancamentos/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

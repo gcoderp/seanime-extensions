@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://donghuastream.org";
-        this.mirrorDomains = ["https://donghuastream.org", "https://donghuastream.org"];
-        this.defaultHeaders = { "Referer": "https://donghuastream.org/" };
+        this.mainUrl = "https://rumble.com";
+        this.mirrorDomains = ["https://rumble.com", "https://rumble.com"];
+        this.defaultHeaders = { "Referer": "https://rumble.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "iframe";
@@ -459,7 +459,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes = [];
         const epSelector = "iframe";
-        const epNumSelector = "div.listupd > article";
+        const epNumSelector = "meta[itemprop=embedUrl]";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

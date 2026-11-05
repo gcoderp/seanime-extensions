@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://vidhide.org";
-        this.mirrorDomains = ["https://vidhide.org", "https://s1.vidhide.org/api-config", "https://vidhide.org", "https://vidhide.org"];
-        this.defaultHeaders = { "Referer": "https://vidhide.org/" };
+        this.mainUrl = "";
+        this.mirrorDomains = [""];
+        this.defaultHeaders = {};
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "article, .gmr-box-content";

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://z.awstream.net";
-        this.mirrorDomains = ["https://z.awstream.net", "https://z.awstream.net"];
-        this.defaultHeaders = { "Referer": "https://z.awstream.net/" };
+        this.mainUrl = "https://ghbrisk.com";
+        this.mirrorDomains = ["https://ghbrisk.com", "https://ghbrisk.com"];
+        this.defaultHeaders = { "Referer": "https://ghbrisk.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/player/index.php?data={query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "script:containsData(function(p,a,c,k,e,d))";

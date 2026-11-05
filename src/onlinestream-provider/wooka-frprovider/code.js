@@ -390,13 +390,13 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://www.uqload.cx";
-        this.mirrorDomains = ["https://www.uqload.cx", "https://uqload.cx", "https://www.uqload.cx"];
-        this.defaultHeaders = { "Referer": "https://www.uqload.cx/" };
+        this.mainUrl = "https://vidhideplus.com";
+        this.mirrorDomains = ["https://vidhideplus.com", "https://vidhideplus.com"];
+        this.defaultHeaders = { "Referer": "https://vidhideplus.com/" };
     }
     getSettings() {
         return {
-            episodeServers: ["voe", "filemoon", "vidhide", "streamwish", "dood"],
+            episodeServers: ["vidhide", "streamwish", "filemoon", "dood", "voe"],
             supportsDub: false,
         };
     }
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.row:not(.slider-container) > article > figure.hoverable";
+        const itemSelector = "#vplayer > #player source";
         const titleSelector = "img.img-fluid";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.row:not(.slider-container) > article > figure.hoverable";
-        const epNumSelector = "figcaption.meta-footer > a";
+        const epSelector = "#vplayer > #player source";
+        const epNumSelector = "video#vjsplayer";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "div.row:not(.slider-container) > article > figure.hoverable";
+        const serverSelector = "#vplayer > #player source";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

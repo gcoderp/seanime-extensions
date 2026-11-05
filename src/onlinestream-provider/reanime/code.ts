@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://reanime.to";
-    private mirrorDomains: string[] = ["https://reanime.to", "https://reanime.to", "https://reanime.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://reanime.to/"};
+    private mainUrl: string = "https://flixcloud.cc";
+    private mirrorDomains: string[] = ["https://flixcloud.cc", "https://flixcloud.cc", "https://flixcloud.cc"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://flixcloud.cc/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "iframe[src]";
+        const itemSelector = "script:containsData(video_id)";
         const titleSelector = "iframe[src]";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "iframe[src]";
-        const epNumSelector = "script:containsData(video_id)";
+        const epSelector = "script:containsData(video_id)";
+        const epNumSelector = "iframe[src]";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src]";
+        const serverSelector = "script:containsData(video_id)";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

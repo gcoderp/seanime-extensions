@@ -390,22 +390,22 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://doramasfoxito.p2pplay.online";
-        this.mirrorDomains = ["https://doramasfoxito.p2pplay.online", "https://doramasfoxito.p2pplay.online"];
-        this.defaultHeaders = { "Referer": "https://doramasfoxito.p2pplay.online/" };
+        this.mainUrl = "https://abyssplayer.com";
+        this.mirrorDomains = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
+        this.defaultHeaders = { "Referer": "https://abyssplayer.com/" };
     }
     getSettings() {
         return {
-            episodeServers: ["okru", "filemoon"],
+            episodeServers: ["filemoon", "okru"],
             supportsDub: false,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/movies/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "article.item";
+        const itemSelector = "[data-module=OKVideo]";
         const titleSelector = "h1";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "article.item";
-        const epNumSelector = "div.data h3 a";
+        const epSelector = "[data-module=OKVideo]";
+        const epNumSelector = "article.item";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "article.item";
+        const serverSelector = "[data-module=OKVideo]";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "okru";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

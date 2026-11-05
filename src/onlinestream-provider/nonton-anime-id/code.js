@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://embed2.kotakanimeid.com";
-        this.mirrorDomains = ["https://embed2.kotakanimeid.com", "https://embed2.kotakanimeid.com", "https://kotakanimeid.com"];
-        this.defaultHeaders = { "Referer": "https://embed2.kotakanimeid.com/" };
+        this.mainUrl = "https://nontonanimeid.com";
+        this.mirrorDomains = ["https://nontonanimeid.com", "https://nontonanimeid.com"];
+        this.defaultHeaders = { "Referer": "https://nontonanimeid.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/live-search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = ".anime-card-title-v1";

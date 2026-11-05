@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Filmo
-// Original Class: Filmo
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://filmo.to";
     private mirrorDomains: string[] = ["https://filmo.to", "https://filmo.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://filmo.to/", "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:152.0) Gecko/20100101 Firefox/152.0"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://filmo.to/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "section.search-top-results article > a, a.movie-poster-grid-card";
-        const titleSelector = "img";
+        const itemSelector = "section.popular-spotlight, div.video-row";
+        const titleSelector = "p.movie-detail-synopsis";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.details-group dl";
-        const epNumSelector = "dt";
+        const epSelector = "section.popular-spotlight, div.video-row";
+        const epNumSelector = ".popular-spotlight-card__link, a.video-card";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = ".provider-chip";
+        const serverSelector = "p.movie-detail-synopsis";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
