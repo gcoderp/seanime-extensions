@@ -9,6 +9,7 @@
  * Usage:
  *   node checker/run.mjs --marketplace https://raw.githubusercontent.com/OWNER/REPO/main/marketplace.json
  *   node checker/run.mjs --limit 20 --concurrency 6
+ *   node checker/run.mjs --only anichi,hi-anime     # just these extensions
  *   node checker/run.mjs --ids 154587,21            # explicit AniList IDs
  *   node checker/run.mjs --type all --verbose
  *
@@ -41,6 +42,7 @@ const DEFAULTS = {
     retries: 2,
     verbose: false,
     failOnEmpty: false,
+    only: [],
 };
 
 function parseArgs(argv) {
@@ -55,6 +57,7 @@ function parseArgs(argv) {
             case "--ids": opts.ids = String(next() || "").split(",").map((s) => s.trim()).filter(Boolean); break;
             case "--concurrency": opts.concurrency = Math.max(1, Number(next()) || 1); break;
             case "--limit": opts.limit = Math.max(0, Number(next()) || 0); break;
+            case "--only": opts.only = String(next() || "").split(",").map((v) => v.trim().toLowerCase()).filter(Boolean); break;
             case "--type": opts.type = next(); break;
             case "--timeout-ms": opts.timeoutMs = Math.max(1000, Number(next()) || 12000); break;
             case "--extension-timeout-ms": opts.extensionTimeoutMs = Math.max(5000, Number(next()) || 90000); break;
@@ -70,6 +73,7 @@ function parseArgs(argv) {
   --targets <file>           AniList target config (default: checker/targets.json)
   --ids 1,2,3                explicit AniList IDs, overrides the target config
   --type <type|all>          onlinestream-provider (default) | anime-torrent-provider | all
+  --only a,b,c               check only these extensions (id or name substring)
   --limit <n>                check at most n extensions
   --concurrency <n>          parallel extensions (default 4)
   --dub                      search for dubs
@@ -288,6 +292,16 @@ async function main() {
         ? ["onlinestream-provider", "anime-torrent-provider"]
         : [opts.type];
     let entries = marketplace.filter((e) => types.includes(e.type) && e.manifestURI && e.payloadURI);
+    if (opts.only.length > 0) {
+        entries = entries.filter((entry) =>
+            opts.only.some((needle) =>
+                String(entry.id || "").toLowerCase().includes(needle) ||
+                String(entry.name || "").toLowerCase().includes(needle)));
+        if (entries.length === 0) {
+            console.error(`--only matched no extension in ${types.join(", ")}`);
+            process.exit(2);
+        }
+    }
     if (opts.limit > 0) entries = entries.slice(0, opts.limit);
 
     console.log(`Checking ${entries.length} extension(s) of type ${types.join(", ")}`);
