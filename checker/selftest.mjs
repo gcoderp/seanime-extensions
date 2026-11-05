@@ -155,8 +155,8 @@ function startServer() {
     return new Promise((resolve) => server.listen(0, "127.0.0.1", () => resolve(server)));
 }
 
-async function loadAndProbe(code, base) {
-    const { runtime, values } = createRuntime({ providerId: "selftest", manifest: { name: "SelfTest" }, timeoutMs: 8000 });
+async function loadAndProbe(code, base, targetOverride) {
+    const { runtime, values, requests } = createRuntime({ providerId: "selftest", manifest: { name: "SelfTest" }, timeoutMs: 4000 });
     const ProviderClass = loadProvider(code, values);
     const provider = new ProviderClass();
     assertContract(provider, "onlinestream-provider");
@@ -174,7 +174,7 @@ async function loadAndProbe(code, base) {
             format: "TV",
         },
     };
-    return probeOnlinestream(provider, target, { dub: false });
+    return probeOnlinestream(provider, targetOverride || target, { dub: false, requests });
 }
 
 async function main() {
@@ -235,6 +235,65 @@ async function main() {
 
         const noEps = await loadAndProbe(NO_EPISODES_PROVIDER, base);
         check("no episodes -> no_episodes", noEps.status === "no_episodes", noEps.status);
+
+        console.log("\ndiagnostics");
+
+        // A provider whose site never answers must fail fast, not burn the whole budget.
+        const deadPort = 9;
+        const deadProvider = `
+class Provider {
+    getSettings() { return { episodeServers: ["default"], supportsDub: false }; }
+    async search(opts) {
+        const res = await fetch("http://127.0.0.1:${deadPort}/search?q=" + encodeURIComponent(opts.query));
+        return [{ id: "/x", title: "x", url: "/x", subOrDub: "sub" }];
+    }
+    async findEpisodes(id) { return []; }
+    async findEpisodeServer(e, s) { return { server: "default", headers: {}, videoSources: [] }; }
+}`;
+        const startedDead = Date.now();
+        const dead = await loadAndProbe(deadProvider, base);
+        const deadMs = Date.now() - startedDead;
+        check("unreachable site -> search_timeout", dead.status === "search_timeout", dead.status);
+        check("unreachable site fails fast (<8s)", deadMs < 8000, `${deadMs}ms`);
+        check("dead attempt records the network failure", (dead.search?.attempts?.[0]?.networkFailures ?? 0) > 0);
+
+        // A site that answers 200 but has no matching markup is a selector problem, and the
+        // report must be able to say so.
+        const noMatchProvider = `
+class Provider {
+    mainUrl = ${JSON.stringify(base)};
+    getSettings() { return { episodeServers: ["default"], supportsDub: false }; }
+    async search(opts) {
+        const res = await fetch(this.mainUrl + "/site/search?q=" + encodeURIComponent(opts.query));
+        const $ = LoadDoc(await res.text());
+        const out = [];
+        $("div.never-matches-anything").each((i, el) => { out.push({ id: "x", title: "x", url: "x", subOrDub: "sub" }); });
+        return out;
+    }
+    async findEpisodes(id) { return []; }
+    async findEpisodeServer(e, s) { return { server: "default", headers: {}, videoSources: [] }; }
+}`;
+        const noMatch = await loadAndProbe(noMatchProvider, base);
+        check("200 with no match -> no_search_results", noMatch.status === "no_search_results", noMatch.status);
+        check("records HTTP 200 for the attempt", noMatch.search?.attempts?.[0]?.httpStatus === 200, JSON.stringify(noMatch.search?.attempts?.[0]));
+
+        const missingProvider = `
+class Provider {
+    mainUrl = ${JSON.stringify(base)};
+    getSettings() { return { episodeServers: ["default"], supportsDub: false }; }
+    async search(opts) {
+        const res = await fetch(this.mainUrl + "/site/moved-away?q=" + encodeURIComponent(opts.query));
+        if (!res.ok) throw new Error("search page returned " + res.status);
+        return [];
+    }
+    async findEpisodes(id) { return []; }
+    async findEpisodeServer(e, s) { return { server: "default", headers: {}, videoSources: [] }; }
+}`;
+        // The provider threw on a non-2xx page: that is a search_error, but the 404 must be
+        // recorded so the report can say "the search path moved" instead of "provider bug".
+        const missing = await loadAndProbe(missingProvider, base);
+        check("404 search path -> search_error", missing.status === "search_error", missing.status);
+        check("records HTTP 404 for the attempt", missing.search?.attempts?.[0]?.httpStatus === 404, JSON.stringify(missing.search?.attempts?.[0]));
 
         console.log("\ncontract");
         const { values: v2 } = createRuntime({ providerId: "c", manifest: {} });

@@ -30,8 +30,11 @@ const DEFAULT_USER_AGENT =
  * Builds the runtime context handed to one provider.
  * Every network call is bounded by `timeoutMs`; nothing is shared between providers.
  */
-export function createRuntime({ providerId, manifest, timeoutMs = 20000, log = () => {} }) {
+export function createRuntime({ providerId, manifest, timeoutMs = 12000, log = () => {} }) {
     const logs = [];
+    // Every outbound request, so the checker can tell "the site refused us" apart from
+    // "the site answered but our selectors matched nothing".
+    const requests = [];
 
     const record = (level, args) => {
         const line = args.map((a) => {
@@ -58,6 +61,7 @@ export function createRuntime({ providerId, manifest, timeoutMs = 20000, log = (
         const url = typeof input === "string" ? input : String(input && input.url);
         const controller = new AbortController();
         const timer = setTimeout(() => controller.abort(), timeoutMs);
+        const startedAt = Date.now();
         try {
             const res = await fetch(url, {
                 ...init,
@@ -65,6 +69,7 @@ export function createRuntime({ providerId, manifest, timeoutMs = 20000, log = (
                 signal: controller.signal,
                 headers: { "User-Agent": DEFAULT_USER_AGENT, ...(init.headers || {}) },
             });
+            requests.push({ url, status: res.status, ms: Date.now() - startedAt });
             // Goja's fetch lets a provider read the body more than once; Node's Response does not.
             const body = await res.text();
             return {
@@ -81,6 +86,14 @@ export function createRuntime({ providerId, manifest, timeoutMs = 20000, log = (
                 json: async () => JSON.parse(body),
                 arrayBuffer: async () => new TextEncoder().encode(body).buffer,
             };
+        } catch (err) {
+            requests.push({
+                url,
+                status: 0,
+                ms: Date.now() - startedAt,
+                error: String(err && err.name === "AbortError" ? `timeout after ${timeoutMs}ms` : (err && err.message) || err).slice(0, 160),
+            });
+            throw err;
         } finally {
             clearTimeout(timer);
         }
@@ -113,7 +126,7 @@ export function createRuntime({ providerId, manifest, timeoutMs = 20000, log = (
         },
     };
 
-    return { runtime, logs, values: GLOBALS.map((name) => runtime[name]) };
+    return { runtime, logs, requests, values: GLOBALS.map((name) => runtime[name]) };
 }
 
 /**

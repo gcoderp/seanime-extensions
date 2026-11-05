@@ -5,9 +5,28 @@
 // "working" means a playable URL (or magnet) came back and the network agreed, not merely that
 // the methods returned without throwing.
 
-const SEARCH_TIMEOUT_MS = 30000;
-const STEP_TIMEOUT_MS = 25000;
-const STREAM_TIMEOUT_MS = 15000;
+// Tight budgets on purpose. A dead or blocking site used to burn ~104s per extension
+// (three AniList queries x three provider-side retries x a 30s ceiling), which is most of a
+// 662s run spent waiting on hosts that were never going to answer.
+const SEARCH_TIMEOUT_MS = 20000;
+const STEP_TIMEOUT_MS = 15000;
+const STREAM_TIMEOUT_MS = 12000;
+
+const NETWORK_FAILURE = /timed out|timeout|abort|fetch failed|ECONN|ENOTFOUND|socket|network/i;
+
+/** What the provider's own fetches did during one search attempt. */
+function requestSummary(requests, from) {
+    const slice = (requests || []).slice(from);
+    if (slice.length === 0) return {};
+    const failures = slice.filter((r) => r.status === 0);
+    const statuses = [...new Set(slice.map((r) => r.status))];
+    return {
+        requests: slice.length,
+        httpStatus: statuses.length === 1 ? statuses[0] : statuses,
+        networkFailures: failures.length,
+        lastError: failures.length > 0 ? failures[failures.length - 1].error : undefined,
+    };
+}
 
 function withTimeout(promise, ms, label) {
     let timer;
@@ -115,30 +134,42 @@ function describeSource(source) {
  * Full online-stream chain for one extension against one AniList target.
  * Returns a result object; never throws.
  */
-export async function probeOnlinestream(provider, target, { dub = false } = {}) {
+export async function probeOnlinestream(provider, target, { dub = false, requests = [] } = {}) {
     const result = { status: "error", error: null, target: target.anilistId, search: null, episodes: null, stream: null };
 
     let results = [];
     const attempts = [];
-    try {
-        for (const query of target.queries.slice(0, 3)) {
+    let cursor = requests.length;
+
+    for (const query of target.queries.slice(0, 3)) {
+        let list;
+        try {
             const res = await withTimeout(
                 Promise.resolve(provider.search({ media: target.media, query, dub, year: target.year ?? undefined })),
                 SEARCH_TIMEOUT_MS,
                 "search()"
             );
-            const list = Array.isArray(res) ? res : [];
-            attempts.push({ query, results: list.length });
-            if (list.length > 0) {
-                results = list;
-                break;
-            }
+            list = Array.isArray(res) ? res : [];
+        } catch (err) {
+            const message = String(err && err.message ? err.message : err).slice(0, 300);
+            const info = requestSummary(requests, cursor);
+            const unreachable = info.networkFailures > 0 || NETWORK_FAILURE.test(message);
+            attempts.push({ query, results: 0, ...info, error: message });
+            result.search = { attempts, count: 0 };
+            // The site never answered: further titles would just repeat the same wait.
+            result.status = unreachable ? "search_timeout" : "search_error";
+            result.error = message;
+            return result;
         }
-    } catch (err) {
-        result.status = "search_error";
-        result.error = String(err && err.message ? err.message : err).slice(0, 300);
-        result.search = { attempts };
-        return result;
+
+        const info = requestSummary(requests, cursor);
+        attempts.push({ query, results: list.length, ...info });
+        cursor = requests.length;
+
+        if (list.length > 0) {
+            results = list;
+            break;
+        }
     }
 
     result.search = { attempts, count: results.length };
@@ -213,30 +244,41 @@ export async function probeOnlinestream(provider, target, { dub = false } = {}) 
 }
 
 /** Torrent chain: search -> magnet/info hash. */
-export async function probeTorrent(provider, target) {
+export async function probeTorrent(provider, target, { requests = [] } = {}) {
     const result = { status: "error", error: null, target: target.anilistId, search: null, torrent: null };
 
     let results = [];
     const attempts = [];
-    try {
-        for (const query of target.queries.slice(0, 2)) {
+    let cursor = requests.length;
+
+    for (const query of target.queries.slice(0, 2)) {
+        let list;
+        try {
             const res = await withTimeout(
                 Promise.resolve(provider.search({ media: target.media, query })),
                 SEARCH_TIMEOUT_MS,
                 "search()"
             );
-            const list = Array.isArray(res) ? res : [];
-            attempts.push({ query, results: list.length });
-            if (list.length > 0) {
-                results = list;
-                break;
-            }
+            list = Array.isArray(res) ? res : [];
+        } catch (err) {
+            const message = String(err && err.message ? err.message : err).slice(0, 300);
+            const info = requestSummary(requests, cursor);
+            const unreachable = info.networkFailures > 0 || NETWORK_FAILURE.test(message);
+            attempts.push({ query, results: 0, ...info, error: message });
+            result.search = { attempts, count: 0 };
+            result.status = unreachable ? "search_timeout" : "search_error";
+            result.error = message;
+            return result;
         }
-    } catch (err) {
-        result.status = "search_error";
-        result.error = String(err && err.message ? err.message : err).slice(0, 300);
-        result.search = { attempts };
-        return result;
+
+        const info = requestSummary(requests, cursor);
+        attempts.push({ query, results: list.length, ...info });
+        cursor = requests.length;
+
+        if (list.length > 0) {
+            results = list;
+            break;
+        }
     }
 
     result.search = { attempts, count: results.length };

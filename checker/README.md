@@ -60,17 +60,32 @@ esbuild does inside Seanime.
 
 ## AniList targets
 
-`checker/targets.json` decides which media each extension is tested against. By default it
-resolves targets live from AniList — no hardcoded IDs to go stale:
+`checker/targets.json` decides which media each extension is tested against.
+
+**The default is a hand-picked list of titles that virtually every streaming site carries**
+(One Piece, Naruto, Attack on Titan, Death Note, …), resolved through AniList search at run
+time — so the IDs, synonyms, year and format still come from AniList, nothing is hardcoded:
 
 ```json
-{ "mode": "anilist", "queries": [ { "name": "trending", "sort": ["TRENDING_DESC"], "perPage": 3 } ] }
+{ "mode": "anilist", "searches": [ { "term": "One Piece" }, { "term": "Naruto" } ] }
 ```
 
-To pin IDs instead:
+This matters. The first version of this checker used AniList *trending* and *popular*, which
+returned whatever was hot that week — a Bocchi the Rock spin-off film and four Chinese
+donghua. Most sites in the list do not carry those, so 205 of 304 extensions reported
+"no search results" and the run looked like a total failure. It was not: the test corpus was
+wrong. A target is only useful if the site is likely to have it.
+
+To pin exact AniList IDs instead:
 
 ```json
-{ "mode": "ids", "ids": [154587, 21, 151807] }
+{ "mode": "ids", "ids": [21, 1735, 16498] }
+```
+
+or, for a fully offline run, supply the media literally:
+
+```json
+{ "mode": "static", "targets": [ { "anilistId": 21, "romajiTitle": "One Piece", "year": 1999 } ] }
 ```
 
 or pass `--ids 154587,21` on the command line, or the `ids` input on the workflow. Titles,
@@ -98,9 +113,16 @@ one genre is still working, it just does not have the first title we tried.
 }
 ```
 
-Statuses: `working`, `no_search_results`, `no_episodes`, `no_stream`, `stream_unreachable`,
-`no_magnet`, `contract_error`, `load_error`, `unsupported_payload`, `search_error`,
-`episodes_error`, `stream_error`, `torrent_error`, `timeout`, `error`.
+Statuses: `working`, `no_search_results`, `search_timeout`, `no_episodes`, `no_stream`,
+`stream_unreachable`, `no_magnet`, `contract_error`, `load_error`, `unsupported_payload`,
+`search_error`, `episodes_error`, `stream_error`, `torrent_error`, `timeout`, `error`.
+
+`no_search_results` and `search_timeout` are deliberately different. The first means the site
+answered but nothing matched — usually a selector problem. The second means the host never
+answered at all, and the checker stops after the first target instead of repeating the wait.
+Each attempt records the HTTP status it got, and the summary breaks empty searches down by
+status, so "205 sites returned HTTP 200 with no match" reads very differently from
+"205 sites were unreachable".
 
 The run exits 0 even when most extensions fail — a broken provider is data, not a build
 error. Pass `--fail-on-empty` if you want CI to fail when nothing works.
@@ -117,6 +139,8 @@ writes to `src/`.
 - `$torrentUtils` is not implemented; a provider that calls it reports an error rather than a
   false pass.
 - Only the first three video sources per episode are probed.
+- Default network budget is 12s per request and 90s per extension; a host that stalls is cut
+  off rather than allowed to consume the run.
 - A site that blocks datacentre IPs will fail here and may still work for a home user.
 - `liveTestStatus` in the conversion reports is separate: the checker's verdict lives in
   `working-extensions.json`.

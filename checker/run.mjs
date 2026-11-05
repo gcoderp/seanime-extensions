@@ -36,8 +36,8 @@ const DEFAULTS = {
     limit: 0,
     type: "onlinestream-provider",
     dub: false,
-    timeoutMs: 20000,
-    extensionTimeoutMs: 150000,
+    timeoutMs: 12000,
+    extensionTimeoutMs: 90000,
     retries: 2,
     verbose: false,
     failOnEmpty: false,
@@ -56,8 +56,8 @@ function parseArgs(argv) {
             case "--concurrency": opts.concurrency = Math.max(1, Number(next()) || 1); break;
             case "--limit": opts.limit = Math.max(0, Number(next()) || 0); break;
             case "--type": opts.type = next(); break;
-            case "--timeout-ms": opts.timeoutMs = Math.max(1000, Number(next()) || 20000); break;
-            case "--extension-timeout-ms": opts.extensionTimeoutMs = Math.max(5000, Number(next()) || 150000); break;
+            case "--timeout-ms": opts.timeoutMs = Math.max(1000, Number(next()) || 12000); break;
+            case "--extension-timeout-ms": opts.extensionTimeoutMs = Math.max(5000, Number(next()) || 90000); break;
             case "--dub": opts.dub = true; break;
             case "--verbose": opts.verbose = true; break;
             case "--fail-on-empty": opts.failOnEmpty = true; break;
@@ -73,8 +73,8 @@ function parseArgs(argv) {
   --limit <n>                check at most n extensions
   --concurrency <n>          parallel extensions (default 4)
   --dub                      search for dubs
-  --timeout-ms <n>           per network call (default 20000)
-  --extension-timeout-ms <n> per extension ceiling (default 150000)
+  --timeout-ms <n>           per network call (default 12000)
+  --extension-timeout-ms <n> per extension ceiling (default 90000)
   --verbose                  log provider console output
   --fail-on-empty            exit 1 when no extension works`);
                 process.exit(0);
@@ -199,7 +199,7 @@ async function checkExtension(entry, targets, opts) {
             code = transpiled;
         }
 
-        const { runtime, values, logs } = createRuntime({
+        const { runtime, values, logs, requests } = createRuntime({
             providerId: entry.id,
             manifest: entry,
             timeoutMs: opts.timeoutMs,
@@ -227,16 +227,18 @@ async function checkExtension(entry, targets, opts) {
         }
 
         // Try each AniList target until one works: a provider that only covers one genre is
-        // still working, it just does not have the first title we tried.
+        // still working, it just does not have the first title we tried. A search_timeout
+        // means the site never answered, so the remaining titles would only repeat the wait.
         let lastResult = null;
         for (const target of targets) {
             const result = entry.type === "anime-torrent-provider"
-                ? await probeTorrent(provider, target)
-                : await probeOnlinestream(provider, target, { dub: opts.dub });
+                ? await probeTorrent(provider, target, { requests })
+                : await probeOnlinestream(provider, target, { dub: opts.dub, requests });
 
             lastResult = result;
             if (result.status === "working") break;
             if (opts.verbose) console.log(`  [${entry.id}] ${target.title}: ${result.status}`);
+            if (result.status === "search_timeout") break;
         }
 
         Object.assign(record, lastResult || {});

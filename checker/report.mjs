@@ -10,6 +10,7 @@ export const SCHEMA_VERSION = 1;
 const STATUS_ORDER = [
     "working",
     "no_search_results",
+    "search_timeout",
     "no_episodes",
     "no_stream",
     "stream_unreachable",
@@ -100,6 +101,7 @@ export async function writeReport(filePath, report) {
 const MARK = {
     working: "PASS",
     no_search_results: "no search results",
+    search_timeout: "site unreachable / timed out",
     no_episodes: "no episodes",
     no_stream: "no stream",
     stream_unreachable: "stream unreachable",
@@ -133,6 +135,27 @@ export function toMarkdown(report) {
             const stream = w.stream?.source || {};
             lines.push(`| \`${w.id}\` | ${w.matchedTitle ?? "-"} | ${stream.quality ?? "-"} | ${stream.type ?? "torrent"} |`);
         }
+        lines.push("");
+    }
+
+    // Distinguishes "the site answered but our selectors matched nothing" from
+    // "the site refused or never answered", which are completely different problems.
+    const answered = report.results.filter((r) =>
+        ["no_search_results", "search_error", "search_timeout"].includes(r.status));
+    const withHttp = answered.flatMap((r) =>
+        (r.search?.attempts || []).map((a) => a.httpStatus).filter((s) => typeof s === "number"));
+    if (withHttp.length > 0) {
+        const ok = withHttp.filter((s) => s === 200).length;
+        const blocked = withHttp.filter((s) => s === 403 || s === 401).length;
+        const missing = withHttp.filter((s) => s === 404).length;
+        lines.push("### Why searches came back empty");
+        lines.push("");
+        lines.push("| the site answered with | attempts |");
+        lines.push("| --- | --- |");
+        lines.push(`| HTTP 200 (page loaded, no match -> selector problem) | ${ok} |`);
+        lines.push(`| HTTP 403/401 (blocked) | ${blocked} |`);
+        lines.push(`| HTTP 404 (search path moved) | ${missing} |`);
+        lines.push(`| other | ${withHttp.length - ok - blocked - missing} |`);
         lines.push("");
     }
 

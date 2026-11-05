@@ -23,6 +23,7 @@ const MEDIA_FIELDS = `
 `;
 
 const BY_ID = `query ($id: Int) { Media(id: $id, type: ANIME) { ${MEDIA_FIELDS} } }`;
+const BY_SEARCH = `query ($search: String) { Media(search: $search, type: ANIME, isAdult: false) { ${MEDIA_FIELDS} } }`;
 const BY_QUERY = `query ($page: Int, $perPage: Int, $sort: [MediaSort], $season: MediaSeason, $seasonYear: Int) {
     Page(page: $page, perPage: $perPage) {
         media(type: ANIME, sort: $sort, season: $season, seasonYear: $seasonYear, isAdult: false) { ${MEDIA_FIELDS} }
@@ -142,10 +143,81 @@ export async function targetsFromQueries(queries) {
     return out;
 }
 
+/**
+ * Resolves a hand-picked list of well-known titles through AniList search.
+ *
+ * This is the default because trending/popular media is a terrible test corpus: it returns
+ * whatever is hot on AniList right now (regional donghua, a spin-off movie), which most
+ * streaming sites simply do not carry. A provider then reports "no results" and looks broken
+ * when it is fine. Titles below are resolved by name, so the AniList IDs, synonyms, year and
+ * format all still come from AniList -- nothing is hardcoded or invented.
+ */
+export async function targetsFromSearches(searches) {
+    const out = [];
+    const seen = new Set();
+    for (const item of searches) {
+        const term = typeof item === "string" ? item : item.term;
+        if (!term) continue;
+        try {
+            const data = await gql(BY_SEARCH, { search: term });
+            if (!data?.Media) {
+                console.log(`  [targets] "${term}" did not resolve on AniList, skipping`);
+                continue;
+            }
+            if (seen.has(data.Media.id)) continue;
+            seen.add(data.Media.id);
+            out.push(target(data.Media, term));
+        } catch (err) {
+            console.log(`  [targets] "${term}" failed: ${String(err.message).slice(0, 80)}`);
+        }
+    }
+    return out;
+}
+
+/**
+ * Targets supplied literally in the config. No network: used for offline testing and for
+ * pinning an exact media object when you do not want AniList to be consulted.
+ */
+export function targetsFromStatic(entries) {
+    return entries.map((entry, index) => {
+        const media = {
+            id: entry.anilistId ?? index + 1,
+            idMal: entry.idMal ?? undefined,
+            status: entry.status ?? undefined,
+            format: entry.format ?? "TV",
+            englishTitle: entry.englishTitle ?? undefined,
+            romajiTitle: entry.romajiTitle ?? entry.title ?? "",
+            episodeCount: entry.episodeCount ?? -1,
+            absoluteSeasonOffset: 0,
+            synonyms: entry.synonyms ?? [],
+            isAdult: entry.isAdult === true,
+            startDate: entry.year ? { year: entry.year } : undefined,
+        };
+        return {
+            label: entry.label || "static",
+            anilistId: media.id,
+            idMal: media.idMal ?? null,
+            title: media.romajiTitle,
+            englishTitle: media.englishTitle ?? null,
+            year: entry.year ?? null,
+            format: media.format,
+            episodeCount: media.episodeCount,
+            media,
+            queries: seanimeTitles(media),
+        };
+    });
+}
+
 export async function resolveTargets(config, { ids = [] } = {}) {
     if (ids.length > 0) return targetsFromIds(ids);
     if (config.mode === "ids" && Array.isArray(config.ids) && config.ids.length > 0) {
         return targetsFromIds(config.ids);
+    }
+    if (config.mode === "static" && Array.isArray(config.targets) && config.targets.length > 0) {
+        return targetsFromStatic(config.targets);
+    }
+    if (Array.isArray(config.searches) && config.searches.length > 0) {
+        return targetsFromSearches(config.searches);
     }
     return targetsFromQueries(config.queries || [{ name: "trending", sort: ["TRENDING_DESC"], perPage: 3 }]);
 }

@@ -1,8 +1,45 @@
 {
+  "_why": "Targets must be titles every streaming site actually carries. The previous default used AniList trending/popular, which returned niche and regional titles (a Bocchi the Rock movie, Chinese donghua), so 205 of 304 extensions honestly reported 'no search results' -- not because they are broken, but because no site in the list has those shows.",
   "mode": "anilist",
-  "queries": [
-    { "name": "trending", "sort": ["TRENDING_DESC"], "perPage": 3 },
-    { "name": "popular", "sort": ["POPULARITY_DESC"], "perPage": 2 }
+  "searches": [
+    {
+      "term": "One Piece",
+      "note": "the single most widely carried anime title"
+    },
+    {
+      "term": "Naruto"
+    },
+    {
+      "term": "Attack on Titan"
+    },
+    {
+      "term": "Demon Slayer: Kimetsu no Yaiba"
+    },
+    {
+      "term": "Jujutsu Kaisen"
+    },
+    {
+      "term": "Death Note"
+    },
+    {
+      "term": "Sword Art Online"
+    },
+    {
+      "term": "Fullmetal Alchemist: Brotherhood"
+    },
+    {
+      "term": "Bleach"
+    },
+    {
+      "term": "Hunter x Hunter"
+    },
+    {
+      "term": "Detective Conan"
+    },
+    {
+      "term": "Doraemon"
+    }
   ],
+  "queries": [],
   "ids": []
 }
