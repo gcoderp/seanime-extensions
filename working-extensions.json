@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T10:27:55.882Z",
+  "generatedAt": "2026-11-05T10:52:18.694Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -23,11 +23,11 @@
     "checked": 294,
     "working": 0,
     "failed": 294,
-    "durationMs": 98158,
+    "durationMs": 99894,
     "byStatus": {
       "working": 0,
-      "no_search_results": 190,
-      "search_timeout": 51,
+      "no_search_results": 188,
+      "search_timeout": 53,
       "no_episodes": 12,
       "no_stream": 0,
       "stream_unreachable": 1,
@@ -51,7 +51,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 153
+      "durationMs": 255
     },
     {
       "id": "3isk",
@@ -59,7 +59,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1413
+      "durationMs": 827
     },
     {
       "id": "5-tv",
@@ -67,7 +67,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 295
+      "durationMs": 399
     },
     {
       "id": "9k-movies",
@@ -75,7 +75,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 837
+      "durationMs": 617
     },
     {
       "id": "aflaam",
@@ -83,7 +83,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 225
+      "durationMs": 156
     },
     {
       "id": "aia2tv-2",
@@ -91,7 +91,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2011
+      "durationMs": 1914
     },
     {
       "id": "akwam",
@@ -99,7 +99,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 1275
+      "durationMs": 937
     },
     {
       "id": "all-movie-land-provider",
@@ -107,7 +107,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(HDVBPlayer)\"",
-      "durationMs": 673
+      "durationMs": 248
     },
     {
       "id": "all-wish",
@@ -115,7 +115,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 726
+      "durationMs": 598
     },
     {
       "id": "alooytv",
@@ -123,7 +123,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1159
+      "durationMs": 432
     },
     {
       "id": "altadefinizione-provider",
@@ -131,7 +131,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 205
+      "durationMs": 364
     },
     {
       "id": "ani-koto",
@@ -139,7 +139,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 470
+      "durationMs": 388
     },
     {
       "id": "ani-snatch",
@@ -147,7 +147,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 471
+      "durationMs": 150
     },
     {
       "id": "ani-tube",
@@ -155,7 +155,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 1905
+      "durationMs": 949
     },
     {
       "id": "ani-vortex",
@@ -163,7 +163,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"section:\"",
-      "durationMs": 580
+      "durationMs": 431
     },
     {
       "id": "anichi",
@@ -171,7 +171,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 670
+      "durationMs": 507
     },
     {
       "id": "anichin",
@@ -179,7 +179,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 322
+      "durationMs": 200
     },
     {
       "id": "anilight",
@@ -187,7 +187,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 381
+      "durationMs": 303
     },
     {
       "id": "anim3rb",
@@ -195,7 +195,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 231
+      "durationMs": 185
     },
     {
       "id": "animasu",
@@ -203,7 +203,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 243
+      "durationMs": 229
     },
     {
       "id": "anime-av",
@@ -211,7 +211,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: unexpected \"\\\" in \"article.group\\\\/item\"",
-      "durationMs": 520
+      "durationMs": 275
     },
     {
       "id": "anime-cloud",
@@ -219,7 +219,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(vplayer)\"",
-      "durationMs": 191
+      "durationMs": 131
     },
     {
       "id": "anime-dekho-provider",
@@ -227,7 +227,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 227
+      "durationMs": 145
     },
     {
       "id": "anime-fire",
@@ -235,7 +235,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 219
+      "durationMs": 117
     },
     {
       "id": "anime-indo",
@@ -243,7 +243,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 891
+      "durationMs": 666
     },
     {
       "id": "anime-pahe",
@@ -251,7 +251,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 233
+      "durationMs": 162
     },
     {
       "id": "anime-phoenix",
@@ -259,7 +259,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 270
+      "durationMs": 157
     },
     {
       "id": "anime-sail",
@@ -267,7 +267,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 667
+      "durationMs": 528
     },
     {
       "id": "anime-suge",
@@ -275,7 +275,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 793
+      "durationMs": 632
     },
     {
       "id": "anime-uaprovider",
@@ -283,7 +283,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 780
+      "durationMs": 568
     },
     {
       "id": "anime-unity",
@@ -291,7 +291,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 883
+      "durationMs": 685
     },
     {
       "id": "anime-world",
@@ -299,7 +299,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 1430
+      "durationMs": 1449
     },
     {
       "id": "anime-ytx",
@@ -307,7 +307,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 766
+      "durationMs": 584
     },
     {
       "id": "anime4up",
@@ -315,7 +315,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 231
+      "durationMs": 195
     },
     {
       "id": "animeav1",
@@ -323,7 +323,7 @@
       "type": "onlinestream-provider",
       "status": "stream_unreachable",
       "error": "fetch failed",
-      "durationMs": 1107
+      "durationMs": 1029
     },
     {
       "id": "animedubhindi",
@@ -331,7 +331,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 344
+      "durationMs": 114
     },
     {
       "id": "animejara",
@@ -339,7 +339,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 218
+      "durationMs": 165
     },
     {
       "id": "animekhor",
@@ -347,7 +347,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 396
+      "durationMs": 250
     },
     {
       "id": "animenosub",
@@ -355,7 +355,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 252
+      "durationMs": 155
     },
     {
       "id": "animerco",
@@ -363,7 +363,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 4601
+      "durationMs": 4104
     },
     {
       "id": "animes-cloud",
@@ -371,7 +371,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 732
+      "durationMs": 551
     },
     {
       "id": "animes-digital",
@@ -379,7 +379,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 1671
+      "durationMs": 1451
     },
     {
       "id": "animesalt",
@@ -387,7 +387,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 904
+      "durationMs": 723
     },
     {
       "id": "animesamagf",
@@ -395,7 +395,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 159
+      "durationMs": 81
     },
     {
       "id": "animexin",
@@ -403,7 +403,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: unterminated pseudo in \"script:containsData(function(p\"",
-      "durationMs": 340
+      "durationMs": 318
     },
     {
       "id": "anitubeinua-provider",
@@ -411,7 +411,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 334
+      "durationMs": 219
     },
     {
       "id": "aniworld",
@@ -419,7 +419,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 714
+      "durationMs": 533
     },
     {
       "id": "anizone",
@@ -427,7 +427,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 209
+      "durationMs": 122
     },
     {
       "id": "anoboy",
@@ -435,7 +435,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 592
+      "durationMs": 372
     },
     {
       "id": "bamboo-uaprovider",
@@ -443,7 +443,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1885
+      "durationMs": 1844
     },
     {
       "id": "bangla-plex",
@@ -451,7 +451,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 225
+      "durationMs": 174
     },
     {
       "id": "basketball-replays",
@@ -459,7 +459,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 696
+      "durationMs": 500
     },
     {
       "id": "bdix-bdip-tv",
@@ -467,7 +467,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "search() timed out after 20000ms",
-      "durationMs": 20108
+      "durationMs": 20073
     },
     {
       "id": "bdix-dflix",
@@ -475,7 +475,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "search() timed out after 20000ms",
-      "durationMs": 20106
+      "durationMs": 20067
     },
     {
       "id": "bdix-dhaka-flix",
@@ -483,7 +483,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 394
+      "durationMs": 315
     },
     {
       "id": "bollyflix",
@@ -491,7 +491,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 282
+      "durationMs": 540
     },
     {
       "id": "bristege",
@@ -499,7 +499,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 359
+      "durationMs": 194
     },
     {
       "id": "budi",
@@ -507,7 +507,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2207
+      "durationMs": 2507
     },
     {
       "id": "buzz-monclick-provider",
@@ -515,7 +515,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 342
+      "durationMs": 152
     },
     {
       "id": "calcio-streaming",
@@ -523,7 +523,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1525
+      "durationMs": 1104
     },
     {
       "id": "chikianimation",
@@ -531,7 +531,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 698
+      "durationMs": 578
     },
     {
       "id": "cikava-ideya-provider",
@@ -539,7 +539,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2014
+      "durationMs": 1914
     },
     {
       "id": "cima-club",
@@ -547,7 +547,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1955
+      "durationMs": 1675
     },
     {
       "id": "cimalight",
@@ -555,7 +555,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 251
+      "durationMs": 144
     },
     {
       "id": "cimatn",
@@ -563,7 +563,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 597
+      "durationMs": 1615
     },
     {
       "id": "cine-agora",
@@ -571,7 +571,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "search() timed out after 20000ms",
-      "durationMs": 20112
+      "durationMs": 20065
     },
     {
       "id": "cine-doze-provider",
@@ -579,7 +579,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1181
+      "durationMs": 989
     },
     {
       "id": "cine-stream",
@@ -587,7 +587,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 692
+      "durationMs": 594
     },
     {
       "id": "cine-vood-provider",
@@ -595,7 +595,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 247
+      "durationMs": 343
     },
     {
       "id": "cinefreak",
@@ -603,7 +603,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(var reurl)\"",
-      "durationMs": 228
+      "durationMs": 213
     },
     {
       "id": "cinemacity",
@@ -611,7 +611,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 250
+      "durationMs": 189
     },
     {
       "id": "cineplateformegf",
@@ -619,7 +619,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 141
+      "durationMs": 90
     },
     {
       "id": "cnc-verse",
@@ -627,7 +627,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 753
+      "durationMs": 586
     },
     {
       "id": "cnc-verse-mobile",
@@ -635,7 +635,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 423
+      "durationMs": 349
     },
     {
       "id": "coaninet-provider",
@@ -643,7 +643,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 931
+      "durationMs": 734
     },
     {
       "id": "coflix",
@@ -651,7 +651,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "All mirror domains failed for /recherche/?s=Jujutsu%20Kaisen",
-      "durationMs": 787
+      "durationMs": 605
     },
     {
       "id": "coflixgf",
@@ -659,7 +659,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 141
+      "durationMs": 81
     },
     {
       "id": "comix",
@@ -667,7 +667,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 209
+      "durationMs": 145
     },
     {
       "id": "cricify-provider",
@@ -675,7 +675,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXTHTTP:\"",
-      "durationMs": 1133
+      "durationMs": 878
     },
     {
       "id": "daddy-live-provider",
@@ -683,7 +683,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 633
+      "durationMs": 2722
     },
     {
       "id": "darkiworldgf",
@@ -691,7 +691,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 142
+      "durationMs": 105
     },
     {
       "id": "dattebayo-br",
@@ -699,7 +699,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 269
+      "durationMs": 166
     },
     {
       "id": "desi-serials-provider",
@@ -707,7 +707,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 214
+      "durationMs": 140
     },
     {
       "id": "desicinemas",
@@ -715,7 +715,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 172
+      "durationMs": 104
     },
     {
       "id": "dima-toon",
@@ -723,7 +723,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1705
+      "durationMs": 2293
     },
     {
       "id": "documentary-area",
@@ -731,7 +731,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1876
+      "durationMs": 1573
     },
     {
       "id": "donghua-no-sekai",
@@ -739,7 +739,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1269
+      "durationMs": 1567
     },
     {
       "id": "donghuastream",
@@ -747,7 +747,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 341
+      "durationMs": 201
     },
     {
       "id": "dora-bash",
@@ -755,7 +755,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 239
+      "durationMs": 165
     },
     {
       "id": "doramas",
@@ -763,7 +763,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 409
+      "durationMs": 182
     },
     {
       "id": "doramas-latino-x",
@@ -771,7 +771,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 723
+      "durationMs": 589
     },
     {
       "id": "doramogo",
@@ -779,7 +779,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 6294
+      "durationMs": 855
     },
     {
       "id": "doramy-world-provider",
@@ -787,7 +787,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 253
+      "durationMs": 150
     },
     {
       "id": "du-lourd-provider",
@@ -795,7 +795,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 302
+      "durationMs": 204
     },
     {
       "id": "dubbindo",
@@ -803,7 +803,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2111
+      "durationMs": 2164
     },
     {
       "id": "dude-films",
@@ -811,7 +811,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(var reurl)\"",
-      "durationMs": 234
+      "durationMs": 248
     },
     {
       "id": "dutamovie",
@@ -819,7 +819,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "search() timed out after 20000ms",
-      "durationMs": 20110
+      "durationMs": 20090
     },
     {
       "id": "egy",
@@ -827,7 +827,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"a:17.0.1\"",
-      "durationMs": 220
+      "durationMs": 155
     },
     {
       "id": "egydead",
@@ -835,7 +835,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2263
+      "durationMs": 1797
     },
     {
       "id": "einthusan-provider",
@@ -843,7 +843,7 @@
       "type": "onlinestream-provider",
       "status": "stream_error",
       "error": "No playable video streams extracted for episode: https://einthusan.tv/#",
-      "durationMs": 534
+      "durationMs": 1221
     },
     {
       "id": "elif",
@@ -851,7 +851,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 549
+      "durationMs": 249
     },
     {
       "id": "embed-tv",
@@ -859,7 +859,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 1376
+      "durationMs": 907
     },
     {
       "id": "eneyida-provider",
@@ -867,7 +867,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 293
+      "durationMs": 146
     },
     {
       "id": "eseek",
@@ -875,7 +875,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1712
+      "durationMs": 679
     },
     {
       "id": "esheaq",
@@ -883,7 +883,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 257
+      "durationMs": 143
     },
     {
       "id": "faselhd",
@@ -891,7 +891,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1438
+      "durationMs": 905
     },
     {
       "id": "fibwatch",
@@ -899,7 +899,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 608
+      "durationMs": 336
     },
     {
       "id": "film-palast",
@@ -907,7 +907,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 726
+      "durationMs": 292
     },
     {
       "id": "filmkita",
@@ -915,7 +915,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "All mirror domains failed for ?s=Jujutsu%20Kaisen",
-      "durationMs": 950
+      "durationMs": 587
     },
     {
       "id": "filmlokal",
@@ -923,7 +923,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(sources:)\"",
-      "durationMs": 503
+      "durationMs": 371
     },
     {
       "id": "filmo",
@@ -931,7 +931,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 938
+      "durationMs": 726
     },
     {
       "id": "fivemovierulz",
@@ -939,7 +939,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 268
+      "durationMs": 169
     },
     {
       "id": "flemmixgf",
@@ -947,7 +947,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 141
+      "durationMs": 90
     },
     {
       "id": "flixi-tv",
@@ -955,7 +955,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1795
+      "durationMs": 1486
     },
     {
       "id": "flixlatam",
@@ -963,7 +963,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 210
+      "durationMs": 191
     },
     {
       "id": "foot-replays",
@@ -971,7 +971,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 203
+      "durationMs": 119
     },
     {
       "id": "footballia",
@@ -979,7 +979,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1238
+      "durationMs": 1060
     },
     {
       "id": "four-khdhub",
@@ -987,7 +987,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(var reurl)\"",
-      "durationMs": 305
+      "durationMs": 382
     },
     {
       "id": "french-stream-provider",
@@ -995,7 +995,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 751
+      "durationMs": 568
     },
     {
       "id": "frenchstreamgf",
@@ -1003,7 +1003,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 162
+      "durationMs": 76
     },
     {
       "id": "fshare-provider",
@@ -1011,7 +1011,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "All mirror domains failed for /search?q=Jujutsu%20Kaisen",
-      "durationMs": 238
+      "durationMs": 162
     },
     {
       "id": "fstreamzz-provider",
@@ -1019,7 +1019,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 435
+      "durationMs": 288
     },
     {
       "id": "full-races",
@@ -1027,7 +1027,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 147
+      "durationMs": 146
     },
     {
       "id": "gnulahd",
@@ -1035,7 +1035,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 713
+      "durationMs": 526
     },
     {
       "id": "gogo-anime-provider",
@@ -1043,7 +1043,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1177
+      "durationMs": 1213
     },
     {
       "id": "gogoflix-provider",
@@ -1051,7 +1051,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 491
+      "durationMs": 257
     },
     {
       "id": "golden-audiobook",
@@ -1059,7 +1059,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2770
+      "durationMs": 2607
     },
     {
       "id": "golden-audiobooks",
@@ -1067,7 +1067,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2868
+      "durationMs": 2524
     },
     {
       "id": "gomunime",
@@ -1075,7 +1075,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1714
+      "durationMs": 1023
     },
     {
       "id": "goojara",
@@ -1083,7 +1083,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1080
+      "durationMs": 911
     },
     {
       "id": "goyabu",
@@ -1091,7 +1091,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 338
+      "durationMs": 301
     },
     {
       "id": "guarda-play",
@@ -1099,7 +1099,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 233
+      "durationMs": 129
     },
     {
       "id": "guarda-serie",
@@ -1107,7 +1107,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 559
+      "durationMs": 426
     },
     {
       "id": "guarda-serie-provider",
@@ -1115,7 +1115,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 465
+      "durationMs": 518
     },
     {
       "id": "hackstore",
@@ -1123,7 +1123,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 762
+      "durationMs": 580
     },
     {
       "id": "hdfilme",
@@ -1131,7 +1131,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2660
+      "durationMs": 1761
     },
     {
       "id": "hdhub4u",
@@ -1139,7 +1139,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(var reurl)\"",
-      "durationMs": 513
+      "durationMs": 391
     },
     {
       "id": "hdmovie2",
@@ -1147,7 +1147,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 760
+      "durationMs": 641
     },
     {
       "id": "hdrezka-provider",
@@ -1155,7 +1155,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 1030
+      "durationMs": 790
     },
     {
       "id": "hdss-provider",
@@ -1163,7 +1163,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 386
+      "durationMs": 168
     },
     {
       "id": "hdssgf",
@@ -1171,7 +1171,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 161
+      "durationMs": 83
     },
     {
       "id": "hdsto-provider",
@@ -1179,7 +1179,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 498
+      "durationMs": 368
     },
     {
       "id": "hentai-ukr-provider",
@@ -1187,7 +1187,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 261
+      "durationMs": 203
     },
     {
       "id": "hi-anime",
@@ -1195,7 +1195,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1626
+      "durationMs": 968
     },
     {
       "id": "hindmoviez",
@@ -1203,7 +1203,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2005
+      "durationMs": 2355
     },
     {
       "id": "idlix",
@@ -1211,7 +1211,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 273
+      "durationMs": 145
     },
     {
       "id": "idlix-provider",
@@ -1219,7 +1219,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 168
+      "durationMs": 100
     },
     {
       "id": "indomax",
@@ -1227,7 +1227,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 2554
+      "durationMs": 1749
     },
     {
       "id": "internet-archive-provider",
@@ -1235,7 +1235,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 456
+      "durationMs": 595
     },
     {
       "id": "iptv-org",
@@ -1243,7 +1243,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXTVLCOPT:(.*)=(.*)\"",
-      "durationMs": 224
+      "durationMs": 90
     },
     {
       "id": "iwatchtheoffice",
@@ -1251,7 +1251,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 288
+      "durationMs": 170
     },
     {
       "id": "jpfilms",
@@ -1259,7 +1259,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 269
+      "durationMs": 175
     },
     {
       "id": "kawanfilm",
@@ -1267,7 +1267,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(sources:)\"",
-      "durationMs": 516
+      "durationMs": 380
     },
     {
       "id": "keller-kino",
@@ -1275,7 +1275,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 256
+      "durationMs": 149
     },
     {
       "id": "kickassanime",
@@ -1283,7 +1283,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 346
+      "durationMs": 387
     },
     {
       "id": "kino-king",
@@ -1291,7 +1291,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1316
+      "durationMs": 2960
     },
     {
       "id": "kino-tron-provider",
@@ -1299,7 +1299,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 2296
+      "durationMs": 2100
     },
     {
       "id": "kino-vezha-provider",
@@ -1307,7 +1307,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 797
+      "durationMs": 593
     },
     {
       "id": "kinoger",
@@ -1315,7 +1315,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 270
+      "durationMs": 203
     },
     {
       "id": "kinostrain-provider",
@@ -1323,7 +1323,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 834
+      "durationMs": 982
     },
     {
       "id": "klik-xxi",
@@ -1331,7 +1331,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2015
+      "durationMs": 1872
     },
     {
       "id": "klon-tvprovider",
@@ -1339,7 +1339,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 285
+      "durationMs": 189
     },
     {
       "id": "krmzy",
@@ -1347,7 +1347,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1188
+      "durationMs": 611
     },
     {
       "id": "kuramanime",
@@ -1355,7 +1355,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 225
+      "durationMs": 350
     },
     {
       "id": "kuronime",
@@ -1363,7 +1363,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 5649
+      "durationMs": 5630
     },
     {
       "id": "latanime",
@@ -1371,7 +1371,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 266
+      "durationMs": 177
     },
     {
       "id": "layar-kaca",
@@ -1379,7 +1379,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 204
+      "durationMs": 118
     },
     {
       "id": "layar-kaca-provider",
@@ -1387,7 +1387,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 163
+      "durationMs": 135
     },
     {
       "id": "layar-warna",
@@ -1395,7 +1395,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(sources:)\"",
-      "durationMs": 312
+      "durationMs": 226
     },
     {
       "id": "layaranime",
@@ -1403,7 +1403,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 276
+      "durationMs": 161
     },
     {
       "id": "libri-vox-audiobook",
@@ -1411,7 +1411,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 952
+      "durationMs": 1065
     },
     {
       "id": "liv-xow-provider",
@@ -1419,7 +1419,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXTHTTP:\"",
-      "durationMs": 232
+      "durationMs": 133
     },
     {
       "id": "lodynet",
@@ -1427,7 +1427,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1178
+      "durationMs": 815
     },
     {
       "id": "m3-uplaylist-player-provider",
@@ -1435,7 +1435,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXTHTTP:\"",
-      "durationMs": 165
+      "durationMs": 106
     },
     {
       "id": "mass-tamilan-provider",
@@ -1443,7 +1443,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 279
+      "durationMs": 292
     },
     {
       "id": "mega-flix",
@@ -1451,7 +1451,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 1068
+      "durationMs": 600
     },
     {
       "id": "megakino",
@@ -1459,7 +1459,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2514
+      "durationMs": 1847
     },
     {
       "id": "mendigo-flix",
@@ -1467,7 +1467,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1063
+      "durationMs": 1051
     },
     {
       "id": "microtv",
@@ -1475,7 +1475,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 390
+      "durationMs": 248
     },
     {
       "id": "midas-xxi",
@@ -1483,7 +1483,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 553
+      "durationMs": 467
     },
     {
       "id": "minioppai",
@@ -1491,7 +1491,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1735
+      "durationMs": 1834
     },
     {
       "id": "mlsbdprovider",
@@ -1499,7 +1499,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 725
+      "durationMs": 516
     },
     {
       "id": "moflix",
@@ -1507,7 +1507,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 249
+      "durationMs": 174
     },
     {
       "id": "moiflixgf",
@@ -1515,7 +1515,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 145
+      "durationMs": 90
     },
     {
       "id": "movie-link-bdprovider",
@@ -1523,7 +1523,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 212
+      "durationMs": 149
     },
     {
       "id": "movies-drive",
@@ -1531,7 +1531,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 300
+      "durationMs": 216
     },
     {
       "id": "movies4u",
@@ -1539,7 +1539,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 255
+      "durationMs": 122
     },
     {
       "id": "moviesmod",
@@ -1547,7 +1547,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 801
+      "durationMs": 396
     },
     {
       "id": "moviezwap-provider",
@@ -1555,7 +1555,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 275
+      "durationMs": 258
     },
     {
       "id": "movix",
@@ -1563,7 +1563,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 223
+      "durationMs": 122
     },
     {
       "id": "mp4-moviez",
@@ -1571,7 +1571,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1209
+      "durationMs": 1184
     },
     {
       "id": "mplayer-provider",
@@ -1579,7 +1579,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 268
+      "durationMs": 131
     },
     {
       "id": "multi-movies-provider",
@@ -1587,7 +1587,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 188
+      "durationMs": 123
     },
     {
       "id": "my-cima-provider",
@@ -1595,7 +1595,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2439
+      "durationMs": 2084
     },
     {
       "id": "nebryxgf",
@@ -1603,7 +1603,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 160
+      "durationMs": 119
     },
     {
       "id": "nekokun",
@@ -1611,7 +1611,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 22318
+      "durationMs": 4581
     },
     {
       "id": "nekopoi",
@@ -1619,7 +1619,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 670
+      "durationMs": 705
     },
     {
       "id": "net-cine",
@@ -1627,7 +1627,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 725
+      "durationMs": 755
     },
     {
       "id": "netcinez",
@@ -1635,7 +1635,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 1938
+      "durationMs": 1253
     },
     {
       "id": "netmirror",
@@ -1643,7 +1643,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 805
+      "durationMs": 556
     },
     {
       "id": "ngefilm",
@@ -1651,7 +1651,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(sources:)\"",
-      "durationMs": 581
+      "durationMs": 324
     },
     {
       "id": "nimegami",
@@ -1659,7 +1659,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2891
+      "durationMs": 3590
     },
     {
       "id": "nomat",
@@ -1667,7 +1667,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(sources:)\"",
-      "durationMs": 725
+      "durationMs": 818
     },
     {
       "id": "nonton-anime-id",
@@ -1675,7 +1675,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 414
+      "durationMs": 178
     },
     {
       "id": "nonton-drama",
@@ -1683,7 +1683,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 1099
+      "durationMs": 1096
     },
     {
       "id": "ohli24",
@@ -1691,7 +1691,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(playerjsSubtitle)\"",
-      "durationMs": 545
+      "durationMs": 394
     },
     {
       "id": "ok",
@@ -1699,7 +1699,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 1526
+      "durationMs": 1312
     },
     {
       "id": "on-short",
@@ -1707,7 +1707,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 718
+      "durationMs": 543
     },
     {
       "id": "one-pace",
@@ -1715,7 +1715,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 194
+      "durationMs": 157
     },
     {
       "id": "online-serie-tv",
@@ -1723,7 +1723,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 2474
+      "durationMs": 1090
     },
     {
       "id": "oploverz",
@@ -1731,7 +1731,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 223
+      "durationMs": 158
     },
     {
       "id": "oppadrama",
@@ -1739,7 +1739,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(sources:)\"",
-      "durationMs": 512
+      "durationMs": 397
     },
     {
       "id": "otakudesu",
@@ -1747,7 +1747,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 616
+      "durationMs": 300
     },
     {
       "id": "over-flix",
@@ -1755,7 +1755,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 387
+      "durationMs": 194
     },
     {
       "id": "papadustreamgf",
@@ -1763,7 +1763,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 153
+      "durationMs": 68
     },
     {
       "id": "pencurimovie",
@@ -1771,7 +1771,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2733
+      "durationMs": 2077
     },
     {
       "id": "pinoymoviepedia",
@@ -1779,7 +1779,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 886
+      "durationMs": 733
     },
     {
       "id": "piratexplay",
@@ -1787,7 +1787,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: unterminated pseudo in \"script:containsData(function(p\"",
-      "durationMs": 335
+      "durationMs": 389
     },
     {
       "id": "play-fy-provider",
@@ -1795,7 +1795,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 233
+      "durationMs": 143
     },
     {
       "id": "play-ztvprovider",
@@ -1803,7 +1803,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-STREAM-INF:\"",
-      "durationMs": 381
+      "durationMs": 130
     },
     {
       "id": "pmsm",
@@ -1811,7 +1811,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 865
+      "durationMs": 552
     },
     {
       "id": "pobre-flix",
@@ -1819,7 +1819,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1341
+      "durationMs": 993
     },
     {
       "id": "purstreamgf",
@@ -1827,7 +1827,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 181
+      "durationMs": 65
     },
     {
       "id": "pusatmovie",
@@ -1835,7 +1835,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(sources:)\"",
-      "durationMs": 302
+      "durationMs": 214
     },
     {
       "id": "radio-india-provider",
@@ -1843,7 +1843,7 @@
       "type": "onlinestream-provider",
       "status": "stream_error",
       "error": "No playable video streams extracted for episode: https://www.radioindia.in/bd/uttorbango-betar",
-      "durationMs": 3405
+      "durationMs": 2937
     },
     {
       "id": "reanime",
@@ -1851,7 +1851,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(video_id)\"",
-      "durationMs": 204
+      "durationMs": 118
     },
     {
       "id": "replaymatch",
@@ -1859,7 +1859,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1976
+      "durationMs": 1420
     },
     {
       "id": "rtally",
@@ -1867,15 +1867,15 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: unexpected \"\\\" in \"section.md\\\\:col-span-3\"",
-      "durationMs": 290
+      "durationMs": 156
     },
     {
       "id": "sadisflix-provider",
       "name": "SadisflixProvider",
       "type": "onlinestream-provider",
-      "status": "no_search_results",
-      "error": null,
-      "durationMs": 4590
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "durationMs": 21927
     },
     {
       "id": "samehadaku",
@@ -1883,7 +1883,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 311
+      "durationMs": 228
     },
     {
       "id": "sarangfilm",
@@ -1891,7 +1891,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(sources:)\"",
-      "durationMs": 312
+      "durationMs": 224
     },
     {
       "id": "savefilm",
@@ -1899,7 +1899,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 754
+      "durationMs": 415
     },
     {
       "id": "senpai-stream-provider",
@@ -1907,7 +1907,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1320
+      "durationMs": 697
     },
     {
       "id": "senpaistreamgf",
@@ -1915,7 +1915,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 156
+      "durationMs": 71
     },
     {
       "id": "serialno-provider",
@@ -1923,7 +1923,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 808
+      "durationMs": 547
     },
     {
       "id": "serie-center-provider",
@@ -1931,7 +1931,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 201
+      "durationMs": 153
     },
     {
       "id": "serienstream",
@@ -1939,7 +1939,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2560
+      "durationMs": 1372
     },
     {
       "id": "shahid4u",
@@ -1947,7 +1947,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 463
+      "durationMs": 308
     },
     {
       "id": "shahidwbas",
@@ -1955,7 +1955,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 230
+      "durationMs": 135
     },
     {
       "id": "show-box",
@@ -1963,7 +1963,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 491
+      "durationMs": 290
     },
     {
       "id": "simkl-provider",
@@ -1971,7 +1971,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 249
+      "durationMs": 157
     },
     {
       "id": "simpsons-uatv-provider",
@@ -1979,7 +1979,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2168
+      "durationMs": 2079
     },
     {
       "id": "sktech-provider",
@@ -1987,7 +1987,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXTHTTP:\"",
-      "durationMs": 199
+      "durationMs": 100
     },
     {
       "id": "sokuja",
@@ -1995,7 +1995,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1475
+      "durationMs": 1096
     },
     {
       "id": "spiegel-tv",
@@ -2003,7 +2003,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1374
+      "durationMs": 881
     },
     {
       "id": "sportzx-provider",
@@ -2011,7 +2011,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "search() timed out after 20000ms",
-      "durationMs": 20113
+      "durationMs": 20059
     },
     {
       "id": "stream-center",
@@ -2019,7 +2019,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 385
+      "durationMs": 272
     },
     {
       "id": "streaming-community",
@@ -2027,7 +2027,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 509
+      "durationMs": 399
     },
     {
       "id": "subsplease",
@@ -2035,7 +2035,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 931
+      "durationMs": 806
     },
     {
       "id": "super-stream",
@@ -2043,7 +2043,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 261
+      "durationMs": 153
     },
     {
       "id": "supercartoons",
@@ -2051,7 +2051,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1106
+      "durationMs": 904
     },
     {
       "id": "syria-live",
@@ -2059,7 +2059,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 578
+      "durationMs": 238
     },
     {
       "id": "tamil-dhool-provider",
@@ -2067,7 +2067,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 495
+      "durationMs": 383
     },
     {
       "id": "tamil-ultra-provider",
@@ -2075,7 +2075,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2265
+      "durationMs": 2649
     },
     {
       "id": "tamilblasters",
@@ -2083,7 +2083,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 399
+      "durationMs": 268
     },
     {
       "id": "tamilian",
@@ -2091,7 +2091,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "search() timed out after 20000ms",
-      "durationMs": 20099
+      "durationMs": 20060
     },
     {
       "id": "toon-hub",
@@ -2099,7 +2099,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 307
+      "durationMs": 140
     },
     {
       "id": "toon-tales",
@@ -2107,7 +2107,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1100
+      "durationMs": 690
     },
     {
       "id": "toonstream",
@@ -2115,7 +2115,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1336
+      "durationMs": 931
     },
     {
       "id": "top-filmes",
@@ -2123,7 +2123,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 418
+      "durationMs": 219
     },
     {
       "id": "topcartoons",
@@ -2131,7 +2131,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1312
+      "durationMs": 1011
     },
     {
       "id": "topcinema",
@@ -2139,7 +2139,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 3998
+      "durationMs": 2966
     },
     {
       "id": "topstreamfilm",
@@ -2147,7 +2147,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 404
+      "durationMs": 309
     },
     {
       "id": "tuk-tukcima",
@@ -2155,7 +2155,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 246
+      "durationMs": 174
     },
     {
       "id": "tuniflex-blog",
@@ -2163,7 +2163,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 733
+      "durationMs": 642
     },
     {
       "id": "tuniflix",
@@ -2171,7 +2171,7 @@
       "type": "onlinestream-provider",
       "status": "no_episodes",
       "error": null,
-      "durationMs": 988
+      "durationMs": 603
     },
     {
       "id": "twitch-provider",
@@ -2179,7 +2179,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 236
+      "durationMs": 152
     },
     {
       "id": "ua-kino-cxprovider",
@@ -2187,7 +2187,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1834
+      "durationMs": 1685
     },
     {
       "id": "uaflix-provider",
@@ -2195,7 +2195,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1063
+      "durationMs": 957
     },
     {
       "id": "uakino-provider",
@@ -2203,7 +2203,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 224
+      "durationMs": 297
     },
     {
       "id": "uaserials-pro-provider",
@@ -2211,7 +2211,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 284
+      "durationMs": 153
     },
     {
       "id": "ufdub-provider",
@@ -2219,7 +2219,7 @@
       "type": "onlinestream-provider",
       "status": "stream_error",
       "error": "No playable video streams extracted for episode: https://ufdub.com/done/",
-      "durationMs": 1574
+      "durationMs": 1329
     },
     {
       "id": "uhdmovies-provider",
@@ -2227,7 +2227,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 208
+      "durationMs": 109
     },
     {
       "id": "ultra-cine",
@@ -2235,7 +2235,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 737
+      "durationMs": 539
     },
     {
       "id": "un-jour-un-film-provider",
@@ -2243,7 +2243,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 369
+      "durationMs": 240
     },
     {
       "id": "vega-movies",
@@ -2251,7 +2251,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 206
+      "durationMs": 109
     },
     {
       "id": "vega-movies-provider",
@@ -2259,15 +2259,15 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(url)\"",
-      "durationMs": 395
+      "durationMs": 266
     },
     {
       "id": "vostfree-provider",
       "name": "VostfreeProvider",
       "type": "onlinestream-provider",
-      "status": "no_search_results",
-      "error": null,
-      "durationMs": 1894
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "durationMs": 20068
     },
     {
       "id": "watch-wrestling",
@@ -2275,7 +2275,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1331
+      "durationMs": 788
     },
     {
       "id": "wcoflix",
@@ -2283,7 +2283,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "All mirror domains failed for /search?keyword=Jujutsu%20Kaisen",
-      "durationMs": 1117
+      "durationMs": 856
     },
     {
       "id": "wecima",
@@ -2291,7 +2291,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 792
+      "durationMs": 761
     },
     {
       "id": "welt",
@@ -2299,7 +2299,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 341
+      "durationMs": 185
     },
     {
       "id": "wgfilm21",
@@ -2307,7 +2307,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "All mirror domains failed for /?s=Jujutsu%20Kaisen",
-      "durationMs": 604
+      "durationMs": 484
     },
     {
       "id": "wiflix-provider",
@@ -2315,7 +2315,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 496
+      "durationMs": 191
     },
     {
       "id": "witanime",
@@ -2323,7 +2323,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2203
+      "durationMs": 1955
     },
     {
       "id": "wooka-frprovider",
@@ -2331,7 +2331,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "All mirror domains failed for /?s=Jujutsu%20Kaisen",
-      "durationMs": 649
+      "durationMs": 653
     },
     {
       "id": "wowfilmsgf",
@@ -2339,7 +2339,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 199
+      "durationMs": 94
     },
     {
       "id": "xalaflixgf",
@@ -2347,7 +2347,7 @@
       "type": "onlinestream-provider",
       "status": "search_timeout",
       "error": "fetch failed",
-      "durationMs": 175
+      "durationMs": 84
     },
     {
       "id": "xdmovies",
@@ -2355,7 +2355,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 342
+      "durationMs": 178
     },
     {
       "id": "yablom",
@@ -2363,7 +2363,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 1025
+      "durationMs": 863
     },
     {
       "id": "yo-turkish",
@@ -2371,7 +2371,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2042
+      "durationMs": 1479
     },
     {
       "id": "youtube",
@@ -2379,7 +2379,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 794
+      "durationMs": 535
     },
     {
       "id": "zdkserials",
@@ -2387,7 +2387,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 2444
+      "durationMs": 2024
     },
     {
       "id": "zinkmovies",
@@ -2395,7 +2395,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":containsData\" in \"script:containsData(var reurl)\"",
-      "durationMs": 159
+      "durationMs": 79
     }
   ],
   "results": [
@@ -2426,7 +2426,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 153
+      "durationMs": 255
     },
     {
       "id": "3isk",
@@ -2460,7 +2460,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1413
+      "durationMs": 827
     },
     {
       "id": "5-tv",
@@ -2494,7 +2494,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 295
+      "durationMs": 399
     },
     {
       "id": "9k-movies",
@@ -2528,7 +2528,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 837
+      "durationMs": 617
     },
     {
       "id": "aflaam",
@@ -2562,7 +2562,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 225
+      "durationMs": 156
     },
     {
       "id": "aia2tv-2",
@@ -2596,7 +2596,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2011
+      "durationMs": 1914
     },
     {
       "id": "akwam",
@@ -2627,7 +2627,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 1275
+      "durationMs": 937
     },
     {
       "id": "all-movie-land-provider",
@@ -2655,7 +2655,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 673
+      "durationMs": 248
     },
     {
       "id": "all-wish",
@@ -2689,7 +2689,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 726
+      "durationMs": 598
     },
     {
       "id": "alooytv",
@@ -2723,7 +2723,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1159
+      "durationMs": 432
     },
     {
       "id": "altadefinizione-provider",
@@ -2752,7 +2752,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 205
+      "durationMs": 364
     },
     {
       "id": "ani-koto",
@@ -2786,7 +2786,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 470
+      "durationMs": 388
     },
     {
       "id": "ani-snatch",
@@ -2820,7 +2820,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 471
+      "durationMs": 150
     },
     {
       "id": "ani-tube",
@@ -2851,7 +2851,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 1905
+      "durationMs": 949
     },
     {
       "id": "ani-vortex",
@@ -2879,7 +2879,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 580
+      "durationMs": 431
     },
     {
       "id": "anichi",
@@ -2913,7 +2913,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 670
+      "durationMs": 507
     },
     {
       "id": "anichin",
@@ -2947,7 +2947,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 322
+      "durationMs": 200
     },
     {
       "id": "anilight",
@@ -2981,7 +2981,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 381
+      "durationMs": 303
     },
     {
       "id": "anim3rb",
@@ -3015,7 +3015,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 231
+      "durationMs": 185
     },
     {
       "id": "animasu",
@@ -3049,7 +3049,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 243
+      "durationMs": 229
     },
     {
       "id": "anime-av",
@@ -3077,7 +3077,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 520
+      "durationMs": 275
     },
     {
       "id": "anime-cloud",
@@ -3105,7 +3105,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 191
+      "durationMs": 131
     },
     {
       "id": "anime-dekho-provider",
@@ -3139,7 +3139,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 227
+      "durationMs": 145
     },
     {
       "id": "anime-fire",
@@ -3173,7 +3173,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 219
+      "durationMs": 117
     },
     {
       "id": "anime-indo",
@@ -3207,7 +3207,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 891
+      "durationMs": 666
     },
     {
       "id": "anime-pahe",
@@ -3241,7 +3241,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 233
+      "durationMs": 162
     },
     {
       "id": "anime-phoenix",
@@ -3275,7 +3275,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 270
+      "durationMs": 157
     },
     {
       "id": "anime-sail",
@@ -3309,7 +3309,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 667
+      "durationMs": 528
     },
     {
       "id": "anime-suge",
@@ -3343,7 +3343,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 793
+      "durationMs": 632
     },
     {
       "id": "anime-uaprovider",
@@ -3377,7 +3377,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 780
+      "durationMs": 568
     },
     {
       "id": "anime-unity",
@@ -3411,7 +3411,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 883
+      "durationMs": 685
     },
     {
       "id": "anime-world",
@@ -3442,7 +3442,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 1430
+      "durationMs": 1449
     },
     {
       "id": "anime-ytx",
@@ -3476,7 +3476,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 766
+      "durationMs": 584
     },
     {
       "id": "anime4up",
@@ -3510,7 +3510,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 231
+      "durationMs": 195
     },
     {
       "id": "animeav1",
@@ -3557,7 +3557,7 @@
         }
       },
       "torrent": null,
-      "durationMs": 1107
+      "durationMs": 1029
     },
     {
       "id": "animedubhindi",
@@ -3591,7 +3591,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 344
+      "durationMs": 114
     },
     {
       "id": "animejara",
@@ -3625,7 +3625,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 218
+      "durationMs": 165
     },
     {
       "id": "animekhor",
@@ -3659,7 +3659,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 396
+      "durationMs": 250
     },
     {
       "id": "animenosub",
@@ -3693,7 +3693,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 252
+      "durationMs": 155
     },
     {
       "id": "animerco",
@@ -3727,7 +3727,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 4601
+      "durationMs": 4104
     },
     {
       "id": "animes-cloud",
@@ -3761,7 +3761,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 732
+      "durationMs": 551
     },
     {
       "id": "animes-digital",
@@ -3792,7 +3792,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 1671
+      "durationMs": 1451
     },
     {
       "id": "animesalt",
@@ -3826,7 +3826,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 904
+      "durationMs": 723
     },
     {
       "id": "animesamagf",
@@ -3855,7 +3855,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 159
+      "durationMs": 81
     },
     {
       "id": "animexin",
@@ -3883,7 +3883,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 340
+      "durationMs": 318
     },
     {
       "id": "anitubeinua-provider",
@@ -3917,7 +3917,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 334
+      "durationMs": 219
     },
     {
       "id": "aniworld",
@@ -3951,7 +3951,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 714
+      "durationMs": 533
     },
     {
       "id": "anizone",
@@ -3985,7 +3985,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 209
+      "durationMs": 122
     },
     {
       "id": "anoboy",
@@ -4019,7 +4019,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 592
+      "durationMs": 372
     },
     {
       "id": "bamboo-uaprovider",
@@ -4053,7 +4053,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1885
+      "durationMs": 1844
     },
     {
       "id": "bangla-plex",
@@ -4087,7 +4087,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 225
+      "durationMs": 174
     },
     {
       "id": "basketball-replays",
@@ -4121,7 +4121,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 696
+      "durationMs": 500
     },
     {
       "id": "bdix-bdip-tv",
@@ -4150,7 +4150,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 20108
+      "durationMs": 20073
     },
     {
       "id": "bdix-dflix",
@@ -4179,7 +4179,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 20106
+      "durationMs": 20067
     },
     {
       "id": "bdix-dhaka-flix",
@@ -4213,7 +4213,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 394
+      "durationMs": 315
     },
     {
       "id": "bollyflix",
@@ -4242,7 +4242,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 282
+      "durationMs": 540
     },
     {
       "id": "bristege",
@@ -4276,7 +4276,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 359
+      "durationMs": 194
     },
     {
       "id": "budi",
@@ -4310,7 +4310,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2207
+      "durationMs": 2507
     },
     {
       "id": "buzz-monclick-provider",
@@ -4339,7 +4339,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 342
+      "durationMs": 152
     },
     {
       "id": "calcio-streaming",
@@ -4373,7 +4373,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1525
+      "durationMs": 1104
     },
     {
       "id": "chikianimation",
@@ -4407,7 +4407,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 698
+      "durationMs": 578
     },
     {
       "id": "cikava-ideya-provider",
@@ -4441,7 +4441,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2014
+      "durationMs": 1914
     },
     {
       "id": "cima-club",
@@ -4475,7 +4475,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1955
+      "durationMs": 1675
     },
     {
       "id": "cimalight",
@@ -4509,7 +4509,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 251
+      "durationMs": 144
     },
     {
       "id": "cimatn",
@@ -4543,7 +4543,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 597
+      "durationMs": 1615
     },
     {
       "id": "cine-agora",
@@ -4572,7 +4572,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 20112
+      "durationMs": 20065
     },
     {
       "id": "cine-doze-provider",
@@ -4606,7 +4606,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1181
+      "durationMs": 989
     },
     {
       "id": "cine-stream",
@@ -4640,7 +4640,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 692
+      "durationMs": 594
     },
     {
       "id": "cine-vood-provider",
@@ -4674,7 +4674,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 247
+      "durationMs": 343
     },
     {
       "id": "cinefreak",
@@ -4702,7 +4702,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 228
+      "durationMs": 213
     },
     {
       "id": "cinemacity",
@@ -4736,7 +4736,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 250
+      "durationMs": 189
     },
     {
       "id": "cineplateformegf",
@@ -4765,7 +4765,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 141
+      "durationMs": 90
     },
     {
       "id": "cnc-verse",
@@ -4799,7 +4799,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 753
+      "durationMs": 586
     },
     {
       "id": "cnc-verse-mobile",
@@ -4833,7 +4833,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 423
+      "durationMs": 349
     },
     {
       "id": "coaninet-provider",
@@ -4867,7 +4867,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 931
+      "durationMs": 734
     },
     {
       "id": "coflix",
@@ -4895,7 +4895,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 787
+      "durationMs": 605
     },
     {
       "id": "coflixgf",
@@ -4924,7 +4924,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 141
+      "durationMs": 81
     },
     {
       "id": "comix",
@@ -4958,7 +4958,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 209
+      "durationMs": 145
     },
     {
       "id": "cricify-provider",
@@ -4986,7 +4986,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1133
+      "durationMs": 878
     },
     {
       "id": "daddy-live-provider",
@@ -5020,7 +5020,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 633
+      "durationMs": 2722
     },
     {
       "id": "darkiworldgf",
@@ -5049,7 +5049,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 142
+      "durationMs": 105
     },
     {
       "id": "dattebayo-br",
@@ -5083,7 +5083,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 269
+      "durationMs": 166
     },
     {
       "id": "desi-serials-provider",
@@ -5117,7 +5117,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 214
+      "durationMs": 140
     },
     {
       "id": "desicinemas",
@@ -5146,7 +5146,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 172
+      "durationMs": 104
     },
     {
       "id": "dima-toon",
@@ -5180,7 +5180,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1705
+      "durationMs": 2293
     },
     {
       "id": "documentary-area",
@@ -5214,7 +5214,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1876
+      "durationMs": 1573
     },
     {
       "id": "donghua-no-sekai",
@@ -5248,7 +5248,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1269
+      "durationMs": 1567
     },
     {
       "id": "donghuastream",
@@ -5282,7 +5282,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 341
+      "durationMs": 201
     },
     {
       "id": "dora-bash",
@@ -5316,7 +5316,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 239
+      "durationMs": 165
     },
     {
       "id": "doramas",
@@ -5345,7 +5345,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 409
+      "durationMs": 182
     },
     {
       "id": "doramas-latino-x",
@@ -5379,7 +5379,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 723
+      "durationMs": 589
     },
     {
       "id": "doramogo",
@@ -5413,7 +5413,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 6294
+      "durationMs": 855
     },
     {
       "id": "doramy-world-provider",
@@ -5447,7 +5447,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 253
+      "durationMs": 150
     },
     {
       "id": "du-lourd-provider",
@@ -5476,7 +5476,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 302
+      "durationMs": 204
     },
     {
       "id": "dubbindo",
@@ -5510,7 +5510,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2111
+      "durationMs": 2164
     },
     {
       "id": "dude-films",
@@ -5538,7 +5538,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 234
+      "durationMs": 248
     },
     {
       "id": "dutamovie",
@@ -5567,7 +5567,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 20110
+      "durationMs": 20090
     },
     {
       "id": "egy",
@@ -5595,7 +5595,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 220
+      "durationMs": 155
     },
     {
       "id": "egydead",
@@ -5629,7 +5629,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2263
+      "durationMs": 1797
     },
     {
       "id": "einthusan-provider",
@@ -5664,7 +5664,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 534
+      "durationMs": 1221
     },
     {
       "id": "elif",
@@ -5698,7 +5698,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 549
+      "durationMs": 249
     },
     {
       "id": "embed-tv",
@@ -5727,7 +5727,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1376
+      "durationMs": 907
     },
     {
       "id": "eneyida-provider",
@@ -5761,7 +5761,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 293
+      "durationMs": 146
     },
     {
       "id": "eseek",
@@ -5795,7 +5795,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1712
+      "durationMs": 679
     },
     {
       "id": "esheaq",
@@ -5824,7 +5824,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 257
+      "durationMs": 143
     },
     {
       "id": "faselhd",
@@ -5858,7 +5858,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1438
+      "durationMs": 905
     },
     {
       "id": "fibwatch",
@@ -5892,7 +5892,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 608
+      "durationMs": 336
     },
     {
       "id": "film-palast",
@@ -5926,7 +5926,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 726
+      "durationMs": 292
     },
     {
       "id": "filmkita",
@@ -5954,7 +5954,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 950
+      "durationMs": 587
     },
     {
       "id": "filmlokal",
@@ -5982,7 +5982,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 503
+      "durationMs": 371
     },
     {
       "id": "filmo",
@@ -6016,7 +6016,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 938
+      "durationMs": 726
     },
     {
       "id": "fivemovierulz",
@@ -6045,7 +6045,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 268
+      "durationMs": 169
     },
     {
       "id": "flemmixgf",
@@ -6074,7 +6074,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 141
+      "durationMs": 90
     },
     {
       "id": "flixi-tv",
@@ -6108,7 +6108,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1795
+      "durationMs": 1486
     },
     {
       "id": "flixlatam",
@@ -6142,7 +6142,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 210
+      "durationMs": 191
     },
     {
       "id": "foot-replays",
@@ -6176,7 +6176,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 203
+      "durationMs": 119
     },
     {
       "id": "footballia",
@@ -6210,7 +6210,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1238
+      "durationMs": 1060
     },
     {
       "id": "four-khdhub",
@@ -6238,7 +6238,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 305
+      "durationMs": 382
     },
     {
       "id": "french-stream-provider",
@@ -6272,7 +6272,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 751
+      "durationMs": 568
     },
     {
       "id": "frenchstreamgf",
@@ -6301,7 +6301,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 162
+      "durationMs": 76
     },
     {
       "id": "fshare-provider",
@@ -6329,7 +6329,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 238
+      "durationMs": 162
     },
     {
       "id": "fstreamzz-provider",
@@ -6358,7 +6358,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 435
+      "durationMs": 288
     },
     {
       "id": "full-races",
@@ -6392,7 +6392,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 147
+      "durationMs": 146
     },
     {
       "id": "gnulahd",
@@ -6426,7 +6426,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 713
+      "durationMs": 526
     },
     {
       "id": "gogo-anime-provider",
@@ -6460,7 +6460,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1177
+      "durationMs": 1213
     },
     {
       "id": "gogoflix-provider",
@@ -6489,7 +6489,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 491
+      "durationMs": 257
     },
     {
       "id": "golden-audiobook",
@@ -6523,7 +6523,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2770
+      "durationMs": 2607
     },
     {
       "id": "golden-audiobooks",
@@ -6557,7 +6557,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2868
+      "durationMs": 2524
     },
     {
       "id": "gomunime",
@@ -6591,7 +6591,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1714
+      "durationMs": 1023
     },
     {
       "id": "goojara",
@@ -6625,7 +6625,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1080
+      "durationMs": 911
     },
     {
       "id": "goyabu",
@@ -6659,7 +6659,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 338
+      "durationMs": 301
     },
     {
       "id": "guarda-play",
@@ -6688,7 +6688,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 233
+      "durationMs": 129
     },
     {
       "id": "guarda-serie",
@@ -6722,7 +6722,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 559
+      "durationMs": 426
     },
     {
       "id": "guarda-serie-provider",
@@ -6751,7 +6751,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 465
+      "durationMs": 518
     },
     {
       "id": "hackstore",
@@ -6785,7 +6785,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 762
+      "durationMs": 580
     },
     {
       "id": "hdfilme",
@@ -6819,7 +6819,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2660
+      "durationMs": 1761
     },
     {
       "id": "hdhub4u",
@@ -6847,7 +6847,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 513
+      "durationMs": 391
     },
     {
       "id": "hdmovie2",
@@ -6881,7 +6881,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 760
+      "durationMs": 641
     },
     {
       "id": "hdrezka-provider",
@@ -6912,7 +6912,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 1030
+      "durationMs": 790
     },
     {
       "id": "hdss-provider",
@@ -6941,7 +6941,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 386
+      "durationMs": 168
     },
     {
       "id": "hdssgf",
@@ -6970,7 +6970,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 161
+      "durationMs": 83
     },
     {
       "id": "hdsto-provider",
@@ -7001,7 +7001,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 498
+      "durationMs": 368
     },
     {
       "id": "hentai-ukr-provider",
@@ -7035,7 +7035,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 261
+      "durationMs": 203
     },
     {
       "id": "hi-anime",
@@ -7069,7 +7069,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1626
+      "durationMs": 968
     },
     {
       "id": "hindmoviez",
@@ -7103,7 +7103,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2005
+      "durationMs": 2355
     },
     {
       "id": "idlix",
@@ -7137,7 +7137,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 273
+      "durationMs": 145
     },
     {
       "id": "idlix-provider",
@@ -7171,7 +7171,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 168
+      "durationMs": 100
     },
     {
       "id": "indomax",
@@ -7202,7 +7202,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 2554
+      "durationMs": 1749
     },
     {
       "id": "internet-archive-provider",
@@ -7236,7 +7236,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 456
+      "durationMs": 595
     },
     {
       "id": "iptv-org",
@@ -7264,7 +7264,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 224
+      "durationMs": 90
     },
     {
       "id": "iwatchtheoffice",
@@ -7298,7 +7298,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 288
+      "durationMs": 170
     },
     {
       "id": "jpfilms",
@@ -7332,7 +7332,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 269
+      "durationMs": 175
     },
     {
       "id": "kawanfilm",
@@ -7360,7 +7360,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 516
+      "durationMs": 380
     },
     {
       "id": "keller-kino",
@@ -7394,7 +7394,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 256
+      "durationMs": 149
     },
     {
       "id": "kickassanime",
@@ -7428,7 +7428,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 346
+      "durationMs": 387
     },
     {
       "id": "kino-king",
@@ -7462,7 +7462,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1316
+      "durationMs": 2960
     },
     {
       "id": "kino-tron-provider",
@@ -7493,7 +7493,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 2296
+      "durationMs": 2100
     },
     {
       "id": "kino-vezha-provider",
@@ -7527,7 +7527,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 797
+      "durationMs": 593
     },
     {
       "id": "kinoger",
@@ -7561,7 +7561,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 270
+      "durationMs": 203
     },
     {
       "id": "kinostrain-provider",
@@ -7595,7 +7595,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 834
+      "durationMs": 982
     },
     {
       "id": "klik-xxi",
@@ -7629,7 +7629,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2015
+      "durationMs": 1872
     },
     {
       "id": "klon-tvprovider",
@@ -7663,7 +7663,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 285
+      "durationMs": 189
     },
     {
       "id": "krmzy",
@@ -7697,7 +7697,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1188
+      "durationMs": 611
     },
     {
       "id": "kuramanime",
@@ -7731,7 +7731,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 225
+      "durationMs": 350
     },
     {
       "id": "kuronime",
@@ -7765,7 +7765,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 5649
+      "durationMs": 5630
     },
     {
       "id": "latanime",
@@ -7799,7 +7799,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 266
+      "durationMs": 177
     },
     {
       "id": "layar-kaca",
@@ -7833,7 +7833,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 204
+      "durationMs": 118
     },
     {
       "id": "layar-kaca-provider",
@@ -7862,7 +7862,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 163
+      "durationMs": 135
     },
     {
       "id": "layar-warna",
@@ -7890,7 +7890,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 312
+      "durationMs": 226
     },
     {
       "id": "layaranime",
@@ -7924,7 +7924,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 276
+      "durationMs": 161
     },
     {
       "id": "libri-vox-audiobook",
@@ -7958,7 +7958,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 952
+      "durationMs": 1065
     },
     {
       "id": "liv-xow-provider",
@@ -7986,7 +7986,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 232
+      "durationMs": 133
     },
     {
       "id": "lodynet",
@@ -8020,7 +8020,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1178
+      "durationMs": 815
     },
     {
       "id": "m3-uplaylist-player-provider",
@@ -8048,7 +8048,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 165
+      "durationMs": 106
     },
     {
       "id": "mass-tamilan-provider",
@@ -8082,7 +8082,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 279
+      "durationMs": 292
     },
     {
       "id": "mega-flix",
@@ -8111,7 +8111,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1068
+      "durationMs": 600
     },
     {
       "id": "megakino",
@@ -8145,7 +8145,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2514
+      "durationMs": 1847
     },
     {
       "id": "mendigo-flix",
@@ -8179,7 +8179,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1063
+      "durationMs": 1051
     },
     {
       "id": "microtv",
@@ -8213,7 +8213,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 390
+      "durationMs": 248
     },
     {
       "id": "midas-xxi",
@@ -8247,7 +8247,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 553
+      "durationMs": 467
     },
     {
       "id": "minioppai",
@@ -8281,7 +8281,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1735
+      "durationMs": 1834
     },
     {
       "id": "mlsbdprovider",
@@ -8315,7 +8315,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 725
+      "durationMs": 516
     },
     {
       "id": "moflix",
@@ -8349,7 +8349,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 249
+      "durationMs": 174
     },
     {
       "id": "moiflixgf",
@@ -8378,7 +8378,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 145
+      "durationMs": 90
     },
     {
       "id": "movie-link-bdprovider",
@@ -8412,7 +8412,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 212
+      "durationMs": 149
     },
     {
       "id": "movies-drive",
@@ -8441,7 +8441,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 300
+      "durationMs": 216
     },
     {
       "id": "movies4u",
@@ -8475,7 +8475,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 255
+      "durationMs": 122
     },
     {
       "id": "moviesmod",
@@ -8509,7 +8509,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 801
+      "durationMs": 396
     },
     {
       "id": "moviezwap-provider",
@@ -8543,7 +8543,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 275
+      "durationMs": 258
     },
     {
       "id": "movix",
@@ -8577,7 +8577,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 223
+      "durationMs": 122
     },
     {
       "id": "mp4-moviez",
@@ -8611,7 +8611,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1209
+      "durationMs": 1184
     },
     {
       "id": "mplayer-provider",
@@ -8645,7 +8645,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 268
+      "durationMs": 131
     },
     {
       "id": "multi-movies-provider",
@@ -8674,7 +8674,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 188
+      "durationMs": 123
     },
     {
       "id": "my-cima-provider",
@@ -8708,7 +8708,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2439
+      "durationMs": 2084
     },
     {
       "id": "nebryxgf",
@@ -8737,7 +8737,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 160
+      "durationMs": 119
     },
     {
       "id": "nekokun",
@@ -8754,13 +8754,9 @@
           {
             "query": "Jujutsu Kaisen",
             "results": 0,
-            "requests": 2,
-            "httpStatus": [
-              0,
-              404
-            ],
-            "networkFailures": 1,
-            "lastError": "timeout after 12000ms"
+            "requests": 1,
+            "httpStatus": 404,
+            "networkFailures": 0
           },
           {
             "query": "JUJUTSU KAISEN",
@@ -8775,7 +8771,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 22318
+      "durationMs": 4581
     },
     {
       "id": "nekopoi",
@@ -8804,7 +8800,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 670
+      "durationMs": 705
     },
     {
       "id": "net-cine",
@@ -8833,7 +8829,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 725
+      "durationMs": 755
     },
     {
       "id": "netcinez",
@@ -8864,7 +8860,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 1938
+      "durationMs": 1253
     },
     {
       "id": "netmirror",
@@ -8898,7 +8894,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 805
+      "durationMs": 556
     },
     {
       "id": "ngefilm",
@@ -8926,7 +8922,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 581
+      "durationMs": 324
     },
     {
       "id": "nimegami",
@@ -8960,7 +8956,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2891
+      "durationMs": 3590
     },
     {
       "id": "nomat",
@@ -8988,7 +8984,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 725
+      "durationMs": 818
     },
     {
       "id": "nonton-anime-id",
@@ -9017,7 +9013,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 414
+      "durationMs": 178
     },
     {
       "id": "nonton-drama",
@@ -9046,7 +9042,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1099
+      "durationMs": 1096
     },
     {
       "id": "ohli24",
@@ -9074,7 +9070,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 545
+      "durationMs": 394
     },
     {
       "id": "ok",
@@ -9097,7 +9093,7 @@
           }
         ],
         "count": 1,
-        "top": "Жесть из Киева: боевики «Азова» пытали 40 мужчин в тайной тюрьме в подвале частного дома — среди заложников был 14-летний ребёнок",
+        "top": "Демократы отобрали у Трампа Конгресс — Зеленский остался без спонсора",
         "score": 0
       },
       "episodes": {
@@ -9105,7 +9101,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 1526
+      "durationMs": 1312
     },
     {
       "id": "on-short",
@@ -9134,7 +9130,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 718
+      "durationMs": 543
     },
     {
       "id": "one-pace",
@@ -9168,7 +9164,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 194
+      "durationMs": 157
     },
     {
       "id": "online-serie-tv",
@@ -9199,7 +9195,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 2474
+      "durationMs": 1090
     },
     {
       "id": "oploverz",
@@ -9233,7 +9229,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 223
+      "durationMs": 158
     },
     {
       "id": "oppadrama",
@@ -9261,7 +9257,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 512
+      "durationMs": 397
     },
     {
       "id": "otakudesu",
@@ -9295,7 +9291,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 616
+      "durationMs": 300
     },
     {
       "id": "over-flix",
@@ -9329,7 +9325,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 387
+      "durationMs": 194
     },
     {
       "id": "papadustreamgf",
@@ -9358,7 +9354,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 153
+      "durationMs": 68
     },
     {
       "id": "pencurimovie",
@@ -9392,7 +9388,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2733
+      "durationMs": 2077
     },
     {
       "id": "pinoymoviepedia",
@@ -9426,7 +9422,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 886
+      "durationMs": 733
     },
     {
       "id": "piratexplay",
@@ -9454,7 +9450,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 335
+      "durationMs": 389
     },
     {
       "id": "play-fy-provider",
@@ -9483,7 +9479,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 233
+      "durationMs": 143
     },
     {
       "id": "play-ztvprovider",
@@ -9511,7 +9507,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 381
+      "durationMs": 130
     },
     {
       "id": "pmsm",
@@ -9545,7 +9541,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 865
+      "durationMs": 552
     },
     {
       "id": "pobre-flix",
@@ -9579,7 +9575,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1341
+      "durationMs": 993
     },
     {
       "id": "purstreamgf",
@@ -9608,7 +9604,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 181
+      "durationMs": 65
     },
     {
       "id": "pusatmovie",
@@ -9636,7 +9632,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 302
+      "durationMs": 214
     },
     {
       "id": "radio-india-provider",
@@ -9671,7 +9667,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 3405
+      "durationMs": 2937
     },
     {
       "id": "reanime",
@@ -9699,7 +9695,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 204
+      "durationMs": 118
     },
     {
       "id": "replaymatch",
@@ -9733,7 +9729,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1976
+      "durationMs": 1420
     },
     {
       "id": "rtally",
@@ -9761,7 +9757,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 290
+      "durationMs": 156
     },
     {
       "id": "sadisflix-provider",
@@ -9770,8 +9766,8 @@
       "version": "1.5.0",
       "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sadisflix-provider/manifest.json",
       "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sadisflix-provider/code.js",
-      "status": "no_search_results",
-      "error": null,
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
       "target": 113415,
       "search": {
         "attempts": [
@@ -9786,8 +9782,10 @@
             "query": "JUJUTSU KAISEN",
             "results": 0,
             "requests": 1,
-            "httpStatus": 200,
-            "networkFailures": 0
+            "httpStatus": 0,
+            "networkFailures": 1,
+            "lastError": "fetch failed",
+            "error": "search() timed out after 20000ms"
           }
         ],
         "count": 0
@@ -9795,7 +9793,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 4590
+      "durationMs": 21927
     },
     {
       "id": "samehadaku",
@@ -9829,7 +9827,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 311
+      "durationMs": 228
     },
     {
       "id": "sarangfilm",
@@ -9857,7 +9855,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 312
+      "durationMs": 224
     },
     {
       "id": "savefilm",
@@ -9891,7 +9889,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 754
+      "durationMs": 415
     },
     {
       "id": "senpai-stream-provider",
@@ -9925,7 +9923,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1320
+      "durationMs": 697
     },
     {
       "id": "senpaistreamgf",
@@ -9954,7 +9952,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 156
+      "durationMs": 71
     },
     {
       "id": "serialno-provider",
@@ -9988,7 +9986,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 808
+      "durationMs": 547
     },
     {
       "id": "serie-center-provider",
@@ -10017,7 +10015,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 201
+      "durationMs": 153
     },
     {
       "id": "serienstream",
@@ -10051,7 +10049,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2560
+      "durationMs": 1372
     },
     {
       "id": "shahid4u",
@@ -10085,7 +10083,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 463
+      "durationMs": 308
     },
     {
       "id": "shahidwbas",
@@ -10119,7 +10117,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 230
+      "durationMs": 135
     },
     {
       "id": "show-box",
@@ -10153,7 +10151,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 491
+      "durationMs": 290
     },
     {
       "id": "simkl-provider",
@@ -10187,7 +10185,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 249
+      "durationMs": 157
     },
     {
       "id": "simpsons-uatv-provider",
@@ -10221,7 +10219,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2168
+      "durationMs": 2079
     },
     {
       "id": "sktech-provider",
@@ -10249,7 +10247,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 199
+      "durationMs": 100
     },
     {
       "id": "sokuja",
@@ -10283,7 +10281,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1475
+      "durationMs": 1096
     },
     {
       "id": "spiegel-tv",
@@ -10317,7 +10315,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1374
+      "durationMs": 881
     },
     {
       "id": "sportzx-provider",
@@ -10346,7 +10344,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 20113
+      "durationMs": 20059
     },
     {
       "id": "stream-center",
@@ -10374,7 +10372,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 385
+      "durationMs": 272
     },
     {
       "id": "streaming-community",
@@ -10408,7 +10406,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 509
+      "durationMs": 399
     },
     {
       "id": "subsplease",
@@ -10442,7 +10440,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 931
+      "durationMs": 806
     },
     {
       "id": "super-stream",
@@ -10476,7 +10474,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 261
+      "durationMs": 153
     },
     {
       "id": "supercartoons",
@@ -10510,7 +10508,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1106
+      "durationMs": 904
     },
     {
       "id": "syria-live",
@@ -10539,7 +10537,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 578
+      "durationMs": 238
     },
     {
       "id": "tamil-dhool-provider",
@@ -10573,7 +10571,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 495
+      "durationMs": 383
     },
     {
       "id": "tamil-ultra-provider",
@@ -10607,7 +10605,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2265
+      "durationMs": 2649
     },
     {
       "id": "tamilblasters",
@@ -10641,7 +10639,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 399
+      "durationMs": 268
     },
     {
       "id": "tamilian",
@@ -10670,7 +10668,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 20099
+      "durationMs": 20060
     },
     {
       "id": "toon-hub",
@@ -10699,7 +10697,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 307
+      "durationMs": 140
     },
     {
       "id": "toon-tales",
@@ -10733,7 +10731,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1100
+      "durationMs": 690
     },
     {
       "id": "toonstream",
@@ -10767,7 +10765,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1336
+      "durationMs": 931
     },
     {
       "id": "top-filmes",
@@ -10801,7 +10799,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 418
+      "durationMs": 219
     },
     {
       "id": "topcartoons",
@@ -10835,7 +10833,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1312
+      "durationMs": 1011
     },
     {
       "id": "topcinema",
@@ -10869,7 +10867,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 3998
+      "durationMs": 2966
     },
     {
       "id": "topstreamfilm",
@@ -10903,7 +10901,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 404
+      "durationMs": 309
     },
     {
       "id": "tuk-tukcima",
@@ -10937,7 +10935,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 246
+      "durationMs": 174
     },
     {
       "id": "tuniflex-blog",
@@ -10955,7 +10953,7 @@
             "query": "Jujutsu Kaisen",
             "results": 0,
             "requests": 1,
-            "httpStatus": 200,
+            "httpStatus": 429,
             "networkFailures": 0
           },
           {
@@ -10971,7 +10969,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 733
+      "durationMs": 642
     },
     {
       "id": "tuniflix",
@@ -11002,7 +11000,7 @@
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 988
+      "durationMs": 603
     },
     {
       "id": "twitch-provider",
@@ -11036,7 +11034,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 236
+      "durationMs": 152
     },
     {
       "id": "ua-kino-cxprovider",
@@ -11070,7 +11068,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1834
+      "durationMs": 1685
     },
     {
       "id": "uaflix-provider",
@@ -11104,7 +11102,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1063
+      "durationMs": 957
     },
     {
       "id": "uakino-provider",
@@ -11138,7 +11136,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 224
+      "durationMs": 297
     },
     {
       "id": "uaserials-pro-provider",
@@ -11172,7 +11170,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 284
+      "durationMs": 153
     },
     {
       "id": "ufdub-provider",
@@ -11195,19 +11193,19 @@
           }
         ],
         "count": 1,
-        "top": "Завершені проєкти \n\t\t\t\tПереглянути всі\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+26\n\t\t\t\t\n\t\t\t\t\t1 757\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t1\n\t\t\t\t\t6\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tPhantom of the Kill: Zero kara no Hangyaku\n\t\tФантом Вбивства: Повстання Зеро / Phantom of the Kill: Zero kara no Hangyaku\n\t\tЖанр: Аніме / Завершені проєкти / Пригоди / Війна\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+55\n\t\t\t\t\n\t\t\t\t\t1 379\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t1\n\t\t\t\t\t5\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tUchuu Show e Youkoso\n\t\tЛаскаво просимо на Космічне Шоу\n\t\tЖанр: Аніме / Фантастика / Пригоди / Драма / Завершені проєкти\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+66\n\t\t\t\t\n\t\t\t\t\t1 476\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t1\n\t\t\t\t\t6\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tTroll Bridge\n\t\tМіст Tролів / Troll Bridge\n\t\tЖанр: Фільми / Завершені проєкти / Фантастика / Комедія\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+3543\n\t\t\t\t\n\t\t\t\t\t11 869\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t6\n\t\t\t\t\t43\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tRadiant\n\t\tРадіант / Radiant\n\t\tЖанр: Аніме / Пригоди / Завершені проєкти",
+        "top": "Завершені проєкти \n\t\t\t\tПереглянути всі\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+44\n\t\t\t\t\n\t\t\t\t\t79\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t0\n\t\t\t\t\t4\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tLupinIII vs Cats Eye Movie / Rupan Sansei VS Kyattsu Ai\n\t\tЛюпен ІІІ проти Ока♥кішки / Lupin III vs Cats Eye Movie\n\t\tЖанр: Аніме / Завершені проєкти / Екшн / Пригоди / Комедія / Кримінал / Бойовик / Детектив\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+22\n\t\t\t\t\n\t\t\t\t\t233\n\t\t\t\t\tПерегляди\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t0\n\t\t\t\t\t2\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tLittle Busters! Ex\n\t\tLittle Busters! Ex/ Маленькі Відчайдухи! Ex\n\t\tЖанр: Аніме / Завершені проєкти / Буденність / Драма / Фентезі\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+4553\n\t\t\t\t\n\t\t\t\t\t9 417\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t8\n\t\t\t\t\t53\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tShikanoko Nokonoko Koshitantan\n\t\tМоя подруга олень Нокотан/My deer friend Nokotan\n\t\tЖанр: Аніме / Комедія / Надприродний / Завершені проєкти\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+2638\n\t\t\t\t\n\t\t\t\t\t10 680\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t0\n\t\t\t\t\t38\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tA Boy Called Christmas\n\t\tХлопчик на ім’я Різдво / A Boy Called Christmas\n\t\tЖанр: Фільми / Завершені проєкти",
         "score": 0
       },
       "episodes": {
         "count": 1,
         "probed": {
-          "number": 2632,
-          "title": "Завершені проєкти \n\t\t\t\tПереглянути всі\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+2632\n\t\t\t\t\n\t\t\t\t\t7 391\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t2\n\t\t\t\t\t32\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tTokyo godfathers / Tokyo Goddofazazu\n\t\tТокійські хресні / Одного разу в Токіо / Tokyo godfathers\n\t\tЖанр: Аніме / Фільми / Завершені проєкти / Буденність / Пригоди / Комедія\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+2230\n\t\t\t\t\n\t\t\t\t\t4 068\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t3\n\t\t\t\t\t30\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tShironeko Project: Zero Chronicle\n\t\tПроєкт біла кішка: Нульова хроніка / Shironeko Project: Zero Chronicle\n\t\tЖанр: Аніме / Пригоди / Фантастика / Війна / Завершені проєкти\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+13\n\t\t\t\t\n\t\t\t\t\t1 456\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t5\n\t\t\t\t\t3\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tOruchuban Ebichu\n\t\tХазяйновита Ебічу / Oruchuban Ebichu\n\t\tЖанр: Аніме / Еччі / Комедія / Романтика / Завершені проєкти\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+2828\n\t\t\t\t\n\t\t\t\t\t8 211\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t5\n\t\t\t\t\t28\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tThe Boys Presents: Diabolical\n\t\tХлопаки представляють: Чисте Зло / The Boys Presents: Diabolical\n\t\tЖанр: Мультсеріали / Пародія / Пригоди / Комедія / Завершені проєкти"
+          "number": 2226,
+          "title": "Завершені проєкти \n\t\t\t\tПереглянути всі\n\t\t\t\n\t\t\t\n\t\t\t\t\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+2226\n\t\t\t\t\n\t\t\t\t\t2 401\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t0\n\t\t\t\t\t26\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tPandora Hearts\n\t\tСерця Пандори / Pandora Hearts\n\t\tЖанр: Аніме / Пригоди / Комедія / Фантастика / Завершені проєкти\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+66\n\t\t\t\t\n\t\t\t\t\t1 280\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t0\n\t\t\t\t\t6\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tNew Game!: Watashi, Shain Ryokou tte Hajimete nano de…\n\t\tНова гра! Моя перша відпустка у компанії / New Game!: Watashi, Shain Ryokou tte\n\t\tЖанр: Аніме / Завершені проєкти / Буденність / Комедія\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+22\n\t\t\t\t\n\t\t\t\t\t1 060\n\t\t\t\t\tПереглядів\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t1\n\t\t\t\t\t2\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tWhat the Health\n\t\tЩось нездорове / What the Health\n\t\tЖанр: Фільми / Завершені проєкти / Історія / Буденність / Жахи\n\t\n\n\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\tМені подобається\n\t\t\t\tДо улюблених\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\t+2929\n\t\t\t\t\n\t\t\t\t\t3 902\n\t\t\t\t\tПерегляди\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t0\n\t\t\t\t\t29\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\tДивитися\n\t\t\t\tДетально\n\t\t\t\n\t\t\n\t\n\t\n\t\tStrange Planet\n\t\tХимерна Планета / Strange Planet\n\t\tЖанр: Мультсеріали / Комедія / Буденність / Фантастика / Завершені проєкти"
         }
       },
       "stream": null,
       "torrent": null,
-      "durationMs": 1574
+      "durationMs": 1329
     },
     {
       "id": "uhdmovies-provider",
@@ -11236,7 +11234,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 208
+      "durationMs": 109
     },
     {
       "id": "ultra-cine",
@@ -11270,7 +11268,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 737
+      "durationMs": 539
     },
     {
       "id": "un-jour-un-film-provider",
@@ -11304,7 +11302,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 369
+      "durationMs": 240
     },
     {
       "id": "vega-movies",
@@ -11333,7 +11331,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 206
+      "durationMs": 109
     },
     {
       "id": "vega-movies-provider",
@@ -11361,7 +11359,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 395
+      "durationMs": 266
     },
     {
       "id": "vostfree-provider",
@@ -11370,8 +11368,8 @@
       "version": "1.3.0",
       "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/vostfree-provider/manifest.json",
       "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/vostfree-provider/code.js",
-      "status": "no_search_results",
-      "error": null,
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
       "target": 113415,
       "search": {
         "attempts": [
@@ -11379,15 +11377,10 @@
             "query": "Jujutsu Kaisen",
             "results": 0,
             "requests": 1,
-            "httpStatus": 200,
-            "networkFailures": 0
-          },
-          {
-            "query": "JUJUTSU KAISEN",
-            "results": 0,
-            "requests": 1,
-            "httpStatus": 200,
-            "networkFailures": 0
+            "httpStatus": 0,
+            "networkFailures": 1,
+            "lastError": "fetch failed",
+            "error": "search() timed out after 20000ms"
           }
         ],
         "count": 0
@@ -11395,7 +11388,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1894
+      "durationMs": 20068
     },
     {
       "id": "watch-wrestling",
@@ -11429,7 +11422,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1331
+      "durationMs": 788
     },
     {
       "id": "wcoflix",
@@ -11457,7 +11450,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1117
+      "durationMs": 856
     },
     {
       "id": "wecima",
@@ -11491,7 +11484,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 792
+      "durationMs": 761
     },
     {
       "id": "welt",
@@ -11525,7 +11518,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 341
+      "durationMs": 185
     },
     {
       "id": "wgfilm21",
@@ -11553,7 +11546,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 604
+      "durationMs": 484
     },
     {
       "id": "wiflix-provider",
@@ -11582,7 +11575,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 496
+      "durationMs": 191
     },
     {
       "id": "witanime",
@@ -11616,7 +11609,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2203
+      "durationMs": 1955
     },
     {
       "id": "wooka-frprovider",
@@ -11644,7 +11637,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 649
+      "durationMs": 653
     },
     {
       "id": "wowfilmsgf",
@@ -11673,7 +11666,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 199
+      "durationMs": 94
     },
     {
       "id": "xalaflixgf",
@@ -11702,7 +11695,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 175
+      "durationMs": 84
     },
     {
       "id": "xdmovies",
@@ -11736,7 +11729,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 342
+      "durationMs": 178
     },
     {
       "id": "yablom",
@@ -11770,7 +11763,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 1025
+      "durationMs": 863
     },
     {
       "id": "yo-turkish",
@@ -11804,7 +11797,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2042
+      "durationMs": 1479
     },
     {
       "id": "youtube",
@@ -11838,7 +11831,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 794
+      "durationMs": 535
     },
     {
       "id": "zdkserials",
@@ -11872,7 +11865,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2444
+      "durationMs": 2024
     },
     {
       "id": "zinkmovies",
@@ -11900,7 +11893,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 159
+      "durationMs": 79
     }
   ]
 }
