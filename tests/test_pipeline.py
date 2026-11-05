@@ -336,6 +336,64 @@ def test_downloader_encodes_spaces_in_package_urls():
 # --------------------------------------------------------------------------- repository state
 
 
+def _resolve_published_report(root, item):
+    """Finds the bundle a marketplace entry was published from.
+
+    Resolves by payloadURI (the bundle actually published) and only falls back to the id,
+    because two provider types can share a kebab-case id.
+    """
+    by_payload, by_id = {}, {}
+    for dirpath, _, files in os.walk(os.path.join(root, "src")):
+        if "manifest.json" in files and "conversion-report.json" in files:
+            with open(os.path.join(dirpath, "manifest.json"), encoding="utf-8") as f:
+                manifest = json.load(f)
+            report_path = os.path.join(dirpath, "conversion-report.json")
+            if manifest.get("payloadURI"):
+                by_payload[manifest["payloadURI"]] = report_path
+            by_id.setdefault(manifest.get("id"), []).append(report_path)
+
+    report_path = by_payload.get(item.get("payloadURI"))
+    if report_path is not None:
+        return report_path
+    candidates = by_id.get(item["id"], [])
+    if not candidates:
+        return None
+    passed = [p for p in candidates
+              if json.load(open(p, encoding="utf-8")).get("overall_status") == "SUCCESS"]
+    return (passed or candidates)[0]
+
+
+def test_published_report_resolves_by_payload_not_by_id(tmp_path):
+    """The regression behind the 2026-11-05 CI failure.
+
+    `il-corsaro-viola` exists under both provider types: the onlinestream bundle is
+    NEEDS_REVIEW, the torrent bundle is SUCCESS and is the one published. Resolving by id
+    alone checked the wrong bundle and failed a correct marketplace.
+    """
+    for p_type, status in (("onlinestream-provider", "NEEDS_REVIEW"), ("anime-torrent-provider", "SUCCESS")):
+        ext = tmp_path / "src" / p_type / "shared-id"
+        ext.mkdir(parents=True)
+        (ext / "manifest.json").write_text(json.dumps({
+            "id": "shared-id",
+            "payloadURI": f"https://example.test/src/{p_type}/shared-id/code.js",
+        }), encoding="utf-8")
+        (ext / "conversion-report.json").write_text(json.dumps({"overall_status": status}), encoding="utf-8")
+
+    published = {
+        "id": "shared-id",
+        "payloadURI": "https://example.test/src/anime-torrent-provider/shared-id/code.js",
+    }
+    report_path = _resolve_published_report(str(tmp_path), published)
+    assert "anime-torrent-provider" in report_path
+    with open(report_path, encoding="utf-8") as f:
+        assert json.load(f)["overall_status"] == "SUCCESS"
+
+    # Without a payloadURI it must still prefer the bundle that passed.
+    fallback = _resolve_published_report(str(tmp_path), {"id": "shared-id"})
+    with open(fallback, encoding="utf-8") as f:
+        assert json.load(f)["overall_status"] == "SUCCESS"
+
+
 def test_marketplace_only_contains_validated_extensions():
     with open(os.path.join(ROOT, "marketplace.json"), encoding="utf-8") as f:
         marketplace = json.load(f)
@@ -347,14 +405,9 @@ def test_marketplace_only_contains_validated_extensions():
         assert item["payloadURI"].endswith("/code.js")
         assert "/OWNER/" not in item["manifestURI"]
 
-    index = {}
-    for root, _, files in os.walk(os.path.join(ROOT, "src")):
-        if "manifest.json" in files and "conversion-report.json" in files:
-            with open(os.path.join(root, "manifest.json"), encoding="utf-8") as f:
-                index[json.load(f).get("id")] = os.path.join(root, "conversion-report.json")
-
     for item in marketplace:
-        report_path = index.get(item["id"])
+        report_path = _resolve_published_report(ROOT, item)
         assert report_path, f"{item['id']} published without a bundle"
         with open(report_path, encoding="utf-8") as f:
-            assert json.load(f)["overall_status"] == "SUCCESS"
+            assert json.load(f)["overall_status"] == "SUCCESS", \
+                f"{item['id']} published from {report_path} which did not pass"
