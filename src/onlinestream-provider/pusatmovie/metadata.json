@@ -15,5 +15,7 @@
   "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [],
-  "convertedAt": "2026-11-05T07:53:48.890806+00:00"
+  "convertedAt": "2026-11-05T07:53:48.890806+00:00",
+  "licenseNotice": false,
+  "republishedAt": "2026-11-05T08:53:59.898293+00:00"
 }

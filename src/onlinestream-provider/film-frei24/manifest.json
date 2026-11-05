@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "de",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/film-frei24/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW.",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW. Licence: upstream repository declares no detectable licence; distributed with attribution only.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/film-frei24/code.js",
   "icon": "https://www.google.com/s2/favicons?domain=filmfrei24.com&sz=%size%"
 }

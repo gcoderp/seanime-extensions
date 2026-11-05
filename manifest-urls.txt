@@ -1,5 +1,7 @@
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/cine-stream/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/il-corsaro-viola/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/nyaa-torrent-provider/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stream-center/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stream-play/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-provider/manifest.json
@@ -101,7 +103,6 @@ https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestre
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/doramas-latino-x/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/doramogo/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/doramy-world-provider/manifest.json
-https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/drama-qu/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/du-lourd-provider/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/dubbindo/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/dude-films/manifest.json
@@ -143,6 +144,7 @@ https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestre
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/guarda-play/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/guarda-serie/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/guarda-serie-provider/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hackstore/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hdfilme/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hdhub4u/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hdmovie2/manifest.json
@@ -179,6 +181,7 @@ https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestre
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/layaranime/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/libri-vox-audiobook/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/liv-xow-provider/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/lodynet/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/m3-uplaylist-player-provider/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mass-tamilan-provider/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mega-flix/manifest.json
@@ -267,6 +270,7 @@ https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestre
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/toonstream/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/top-filmes/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/topcartoons/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/topcinema/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/topstreamfilm/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/tuk-tukcima/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/tuniflex-blog/manifest.json
@@ -285,6 +289,7 @@ https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestre
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/vostfree-provider/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/watch-wrestling/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/wcoflix/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/wecima/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/welt/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/wgfilm21/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/wiflix-provider/manifest.json
@@ -295,6 +300,5 @@ https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestre
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/xdmovies/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/yablom/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/yo-turkish/manifest.json
-https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/youtube/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/zdkserials/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/zinkmovies/manifest.json
