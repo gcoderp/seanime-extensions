@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.blogger.com";
-    private mirrorDomains: string[] = ["https://www.blogger.com", "https://www.blogger.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.blogger.com/"};
+    private mainUrl: string = "https://player.abyssplayer.com";
+    private mirrorDomains: string[] = ["https://player.abyssplayer.com", "https://player.abyssplayer.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://player.abyssplayer.com/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script";
-        const titleSelector = "span:contains(Genre:) a";
+        const itemSelector = "div.listupd div.bs";
+        const titleSelector = "a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script";
-        const epNumSelector = "div.sinopsis p";
+        const epSelector = "div.listupd div.bs";
+        const epNumSelector = "div.tt";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script";
+        const serverSelector = "div.listupd div.bs";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

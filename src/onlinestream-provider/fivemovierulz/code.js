@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://mivalyo.com";
-        this.mirrorDomains = ["https://mivalyo.com", "https://mivalyo.com"];
-        this.defaultHeaders = { "Referer": "https://mivalyo.com/" };
+        this.mainUrl = "https://vidhidepro.com";
+        this.mirrorDomains = ["https://vidhidepro.com", "https://vidhidepro.com"];
+        this.defaultHeaders = { "Referer": "https://vidhidepro.com/" };
     }
     getSettings() {
         return {

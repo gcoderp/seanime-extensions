@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.name";
+        const itemSelector = "div.nk-post-card, div.nk-search-results ul li, a.nk-search-item, div.result ul li, div.eropost, article";
         const titleSelector = "a#download-url";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.name";
-        const epNumSelector = "div.nk-post-card, div.nk-search-results ul li, a.nk-search-item, div.result ul li, div.eropost, article";
+        const epSelector = "div.nk-post-card, div.nk-search-results ul li, a.nk-search-item, div.result ul li, div.eropost, article";
+        const epNumSelector = "h2 a, h3 a, a.nk-search-item, a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

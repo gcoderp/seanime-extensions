@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://d000d.net";
-    private mirrorDomains: string[] = ["https://d000d.net", "https://d000d.net"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://d000d.net/"};
+    private mainUrl: string = "https://www.oneupload.online";
+    private mirrorDomains: string[] = ["https://www.oneupload.online", "https://www.oneupload.online"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.oneupload.online/"};
 
     getSettings(): Settings {
         return {

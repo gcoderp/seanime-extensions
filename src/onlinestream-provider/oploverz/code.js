@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://www.blogger.com";
-        this.mirrorDomains = ["https://www.blogger.com", "https://www.blogger.com"];
-        this.defaultHeaders = { "Referer": "https://www.blogger.com/" };
+        this.mainUrl = "https://filedon.co";
+        this.mirrorDomains = ["https://filedon.co", "https://filedon.co"];
+        this.defaultHeaders = { "Referer": "https://filedon.co/" };
     }
     getSettings() {
         return {

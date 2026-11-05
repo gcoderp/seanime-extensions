@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: IptvOrg
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: IptvOrgLanguageProvider
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://iptv-org.github.io/iptv/languages";
-        this.mirrorDomains = ["https://iptv-org.github.io/iptv/languages", "https://iptv-org.github.io/iptv/index.m3u", "https://iptv-org.github.io/iptv/languages"];
-        this.defaultHeaders = { "Referer": "https://iptv-org.github.io/iptv/languages/" };
+        this.mainUrl = "https://iptv-org.github.io/iptv/languages/$iptvLanguageCode.m3u";
+        this.mirrorDomains = ["https://iptv-org.github.io/iptv/languages/$iptvLanguageCode.m3u", "https://iptv-org.github.io/iptv/index.m3u", "https://iptv-org.github.io/iptv/languages"];
+        this.defaultHeaders = { "Referer": "https://iptv-org.github.io/iptv/languages/$iptvLanguageCode.m3u/" };
     }
     getSettings() {
         return {

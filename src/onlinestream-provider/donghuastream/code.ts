@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://rumble.com";
-    private mirrorDomains: string[] = ["https://rumble.com", "https://rumble.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://rumble.com/"};
+    private mainUrl: string = "https://donghuastream.org";
+    private mirrorDomains: string[] = ["https://donghuastream.org", "https://donghuastream.org"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://donghuastream.org/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/embedJS/u3/?request=video&ver=2&v={query}".replace("{query}", queryEncoded);
+        const searchPath = "/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = "iframe";
-        const epNumSelector = "meta[itemprop=embedUrl]";
+        const epNumSelector = "div.listupd > article";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

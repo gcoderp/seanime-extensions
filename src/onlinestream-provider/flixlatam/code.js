@@ -390,13 +390,13 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://abyssplayer.com";
-        this.mirrorDomains = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
-        this.defaultHeaders = { "Referer": "https://abyssplayer.com/" };
+        this.mainUrl = "https://uqload.io";
+        this.mirrorDomains = ["https://uqload.io", "https://uqload.io"];
+        this.defaultHeaders = { "Referer": "https://uqload.io/" };
     }
     getSettings() {
         return {
-            episodeServers: ["filemoon", "okru", "vidhide", "streamwish"],
+            episodeServers: ["vidhide", "filemoon", "streamwish", "okru"],
             supportsDub: true,
         };
     }
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "[data-module=OKVideo]";
+        const itemSelector = "script:containsData(vplayer)";
         const titleSelector = "meta[property=og:image]";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,7 +458,7 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "[data-module=OKVideo]";
+        const epSelector = "script:containsData(vplayer)";
         const epNumSelector = "article.item";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "[data-module=OKVideo]";
+        const serverSelector = "script:containsData(vplayer)";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://abyssplayer.com";
-    private mirrorDomains: string[] = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://abyssplayer.com/"};
+    private mainUrl: string = "https://player.zilla-networks.com";
+    private mirrorDomains: string[] = ["https://player.zilla-networks.com", "https://player.zilla-networks.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://player.zilla-networks.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "okru", "mp4upload"],
+            episodeServers: ["mp4upload", "filemoon", "okru"],
             supportsDub: true,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/catalogo?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "[data-module=OKVideo]";
+        const itemSelector = "section:has(h2:contains(episo)) div.grid article";
         const titleSelector = "h3";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "[data-module=OKVideo]";
-        const epNumSelector = "section:has(h2:contains(episo)) div.grid article";
+        const epSelector = "section:has(h2:contains(episo)) div.grid article";
+        const epNumSelector = "div.grid.grid-cols-2 article.group\\\\/item";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "[data-module=OKVideo]";
+        const serverSelector = "section:has(h2:contains(episo)) div.grid article";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "mp4upload";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

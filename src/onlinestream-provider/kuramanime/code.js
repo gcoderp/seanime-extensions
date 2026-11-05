@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://v20.kuramanime.ing";
-        this.mirrorDomains = ["https://v20.kuramanime.ing", "https://v20.kuramanime.ing"];
-        this.defaultHeaders = { "Referer": "https://v20.kuramanime.ing/" };
+        this.mainUrl = "https://streamruby.com";
+        this.mirrorDomains = ["https://streamruby.com", "https://streamruby.com"];
+        this.defaultHeaders = { "Referer": "https://streamruby.com/" };
     }
     getSettings() {
         return {
@@ -402,11 +402,11 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/quick/ongoing?order_by=updated&page={query}".replace("{query}", queryEncoded);
+        const searchPath = "/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div#animeList div.product__item, div.product__item";
-        const titleSelector = "a";
+        const itemSelector = "script:containsData(sources:)";
+        const titleSelector = "meta[name=csrf-token]";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div#animeList div.product__item, div.product__item";
-        const epNumSelector = "div.product__item__pic.set-bg, div.set-bg";
+        const epSelector = "script:containsData(sources:)";
+        const epNumSelector = "script[src]";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "div#animeList div.product__item, div.product__item";
+        const serverSelector = "script:containsData(sources:)";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

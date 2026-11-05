@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://furher.in";
-    private mirrorDomains: string[] = ["https://furher.in", "https://furher.in"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://furher.in/"};
+    private mainUrl: string = "https://stream.hownetwork.xyz";
+    private mirrorDomains: string[] = ["https://stream.hownetwork.xyz", "https://cloud.hownetwork.xyz", "https://stream.hownetwork.xyz"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://stream.hownetwork.xyz/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/api.php?id={query}".replace("{query}", queryEncoded);
+        const searchPath = "/populer/page/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

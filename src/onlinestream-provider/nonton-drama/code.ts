@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://tv9.nontondrama.my";
-    private mirrorDomains: string[] = ["https://tv9.nontondrama.my", "https://tv9.nontondrama.my"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://tv9.nontondrama.my/"};
+    private mainUrl: string = "https://videonode.de";
+    private mirrorDomains: string[] = ["https://videonode.de", "https://videonode.de"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://videonode.de/"};
 
     getSettings(): Settings {
         return {

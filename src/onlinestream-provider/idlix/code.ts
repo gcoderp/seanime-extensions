@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://image.tmdb.org";
-    private mirrorDomains: string[] = ["https://image.tmdb.org", "https://image.tmdb.org/t/p/original", "https://image.tmdb.org/t/p/w185", "https://image.tmdb.org/t/p/w300"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://image.tmdb.org/"};
+    private mainUrl: string = "https://z2.idlixku.com";
+    private mirrorDomains: string[] = ["https://z2.idlixku.com", "https://z2.idlixku.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://z2.idlixku.com/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "source";
-        const titleSelector = "script:containsData(subtitles)";
+        const itemSelector = "script";
+        const titleSelector = "script";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "source";
-        const epNumSelector = "script:containsData(subtitles)";
+        const epSelector = "script";
+        const epNumSelector = "source";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "source";
+        const serverSelector = "script";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

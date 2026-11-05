@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.topstreamfilm.live";
-    private mirrorDomains: string[] = ["https://www.topstreamfilm.live", "https://www.topstreamfilm.live"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.topstreamfilm.live/"};
+    private mainUrl: string = "https://dropload.io";
+    private mirrorDomains: string[] = ["https://dropload.io", "https://dropload.io"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://dropload.io/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article";
+        const itemSelector = "script:containsData(function(p,a,c,k,e,d))";
         const titleSelector = "h3";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article";
-        const epNumSelector = "div.Description p:nth-child(2)";
+        const epSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const epNumSelector = "article";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "article";
+        const serverSelector = "script:containsData(function(p,a,c,k,e,d))";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

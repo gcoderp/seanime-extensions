@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vsys-srv.berkasdrive.com";
-    private mirrorDomains: string[] = ["https://vsys-srv.berkasdrive.com", "https://dl.berkasdrive.com", "https://vsys-srv.berkasdrive.com", "https://vsys-srv.berkasdrive.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vsys-srv.berkasdrive.com/"};
+    private mainUrl: string = "https://video.nimegami.id";
+    private mirrorDomains: string[] = ["https://video.nimegami.id", "https://nimegami.id", "https://nimegami.id", "https://video.nimegami.id"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://video.nimegami.id/"};
 
     getSettings(): Settings {
         return {
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = "#player[data-src], video[data-src]";
-        const epNumSelector = "video source[src]";
+        const epNumSelector = "video#player source, video source";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "a[href^='http']";
+        const serverSelector = "#player[data-src], video[data-src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

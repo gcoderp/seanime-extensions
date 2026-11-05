@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://netnaija.film";
-    private mirrorDomains: string[] = ["https://netnaija.film", "https://netnaija.film"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://netnaija.film/"};
+    private mainUrl: string = "https://sflix.film";
+    private mirrorDomains: string[] = ["https://sflix.film", "https://sflix.film"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://sflix.film/"};
 
     getSettings(): Settings {
         return {

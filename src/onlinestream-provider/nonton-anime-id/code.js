@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://nontonanimeid.com";
-        this.mirrorDomains = ["https://nontonanimeid.com", "https://nontonanimeid.com"];
-        this.defaultHeaders = { "Referer": "https://nontonanimeid.com/" };
+        this.mainUrl = "https://embed2.kotakanimeid.com";
+        this.mirrorDomains = ["https://embed2.kotakanimeid.com", "https://embed2.kotakanimeid.com", "https://kotakanimeid.com"];
+        this.defaultHeaders = { "Referer": "https://embed2.kotakanimeid.com/" };
     }
     getSettings() {
         return {

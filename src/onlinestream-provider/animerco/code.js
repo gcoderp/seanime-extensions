@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://gat.animerco.org";
-        this.mirrorDomains = ["https://gat.animerco.org", "https://gat.animerco.org"];
-        this.defaultHeaders = { "Referer": "https://gat.animerco.org/" };
+        this.mainUrl = "https://my.mail.ru";
+        this.mirrorDomains = ["https://my.mail.ru", "https://my.mail.ru"];
+        this.defaultHeaders = { "Referer": "https://my.mail.ru/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/+/video/meta/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.featured-slider div.anime-card";
+        const itemSelector = "error";
         const titleSelector = "a.image";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.featured-slider div.anime-card";
-        const epNumSelector = "div.media-section:contains(\u0622\u062e\u0631 \u0627\u0644\u062d\u0644\u0642\u0627\u062a \u0627\u0644\u0645\u0636\u0627\u0641\u0629) div.episode-card";
+        const epSelector = "error";
+        const epNumSelector = "video_source";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "div.featured-slider div.anime-card";
+        const serverSelector = "error";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

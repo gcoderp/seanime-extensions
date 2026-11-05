@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://abyssplayer.com";
-        this.mirrorDomains = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
-        this.defaultHeaders = { "Referer": "https://abyssplayer.com/" };
+        this.mainUrl = "https://stream.hownetwork.xyz";
+        this.mirrorDomains = ["https://stream.hownetwork.xyz", "https://cloud.hownetwork.xyz", "https://stream.hownetwork.xyz"];
+        this.defaultHeaders = { "Referer": "https://stream.hownetwork.xyz/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "[data-module=OKVideo]";
+        const itemSelector = "div.gallery-grid article a";
         const titleSelector = "h3";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "[data-module=OKVideo]";
-        const epNumSelector = "div.gallery-grid article a";
+        const epSelector = "div.gallery-grid article a";
+        const epNumSelector = "span[itemprop=ratingValue]";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "[data-module=OKVideo]";
+        const serverSelector = "div.gallery-grid article a";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".ultimosAnimesHomeItem, .ultimosEpisodiosHomeItem";
+        const itemSelector = "script";
         const titleSelector = "a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".ultimosAnimesHomeItem, .ultimosEpisodiosHomeItem";
-        const epNumSelector = "script";
+        const epSelector = "script";
+        const epNumSelector = ".epiContainer .ultimosEpisodiosHomeItem";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = ".ultimosAnimesHomeItem, .ultimosEpisodiosHomeItem";
+        const serverSelector = "script";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

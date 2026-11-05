@@ -390,23 +390,23 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://vidhideplus.com";
-        this.mirrorDomains = ["https://vidhideplus.com", "https://vidhideplus.com"];
-        this.defaultHeaders = { "Referer": "https://vidhideplus.com/" };
+        this.mainUrl = "https://luluvdo.store";
+        this.mirrorDomains = ["https://luluvdo.store", "https://luluvdo.store"];
+        this.defaultHeaders = { "Referer": "https://luluvdo.store/" };
     }
     getSettings() {
         return {
-            episodeServers: ["vidhide", "streamwish", "dood", "voe"],
+            episodeServers: ["streamwish", "dood", "vidhide", "voe"],
             supportsDub: false,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/episodes/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/wp-admin/admin-ajax.php?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.items.normal article, div#archive-content article, div.items.full article";
-        const titleSelector = "h3 > a";
+        const itemSelector = "div.data > h1";
+        const titleSelector = "meta[property=og:image]";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,7 +458,7 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.items.normal article, div#archive-content article, div.items.full article";
+        const epSelector = "div.data > h1";
         const epNumSelector = "div.poster img";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "div.items.normal article, div#archive-content article, div.items.full article";
+        const serverSelector = "div.data > h1";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://ghbrisk.com";
-        this.mirrorDomains = ["https://ghbrisk.com", "https://ghbrisk.com"];
-        this.defaultHeaders = { "Referer": "https://ghbrisk.com/" };
+        this.mainUrl = "https://vidshare.rpmvid.com";
+        this.mirrorDomains = ["https://vidshare.rpmvid.com", "https://vidshare.rpmvid.com"];
+        this.defaultHeaders = { "Referer": "https://vidshare.rpmvid.com/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/dist/js/alljs.js?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "script:containsData(sources:)";
@@ -459,7 +459,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes = [];
         const epSelector = "script:containsData(sources:)";
-        const epNumSelector = "iframe";
+        const epNumSelector = "div.gmr-embed-responsive iframe";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

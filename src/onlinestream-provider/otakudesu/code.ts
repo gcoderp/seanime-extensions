@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://desustream.me/desudesuhd";
-    private mirrorDomains: string[] = ["https://desustream.me/desudesuhd", "https://desustream.me/beta", "https://desustream.me/desudesuhd", "https://desustream.me/moedesu"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://desustream.me/desudesuhd/"};
+    private mainUrl: string = "https://desustream.me/beta";
+    private mirrorDomains: string[] = ["https://desustream.me/beta", "https://desustream.me/beta", "https://desustream.me/desudesuhd", "https://desustream.me/moedesu"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://desustream.me/beta/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/wp-admin/admin-ajax.php?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

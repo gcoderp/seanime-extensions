@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://pahe.win";
-        this.mirrorDomains = ["https://pahe.win", "https://pahe.win"];
-        this.defaultHeaders = { "Referer": "https://pahe.win/" };
+        this.mainUrl = "https://kwik.cx";
+        this.mirrorDomains = ["https://kwik.cx", "https://kwik.cx", "https://kwik.cx"];
+        this.defaultHeaders = { "Referer": "https://kwik.cx/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/api?m=airing&page={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "#resolutionMenu button";
+        const itemSelector = "script";
         const titleSelector = "span.badge-warning";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "#resolutionMenu button";
-        const epNumSelector = "div#pickDownload > a";
+        const epSelector = "script";
+        const epNumSelector = "script:containsData(eval)";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "#resolutionMenu button";
+        const serverSelector = "script";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

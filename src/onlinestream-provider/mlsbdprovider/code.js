@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://new2.multicloudlinks.com";
-        this.mirrorDomains = ["https://new2.multicloudlinks.com", "https://new2.multicloudlinks.com"];
-        this.defaultHeaders = { "Referer": "https://new2.multicloudlinks.com/" };
+        this.mainUrl = "https://gdxfiles.com";
+        this.mirrorDomains = ["https://gdxfiles.com", "https://gdxfiles.com"];
+        this.defaultHeaders = { "Referer": "https://gdxfiles.com/" };
     }
     getSettings() {
         return {
@@ -405,8 +405,8 @@ class Provider {
         const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "h1, h2, h3, title";
-        const titleSelector = "a[href]";
+        const itemSelector = "div.title";
+        const titleSelector = "a[href*='/file/r2/']";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "h1, h2, h3, title";
-        const epNumSelector = "ul > li.list-group-item:contains(Name)";
+        const epSelector = "div.title";
+        const epNumSelector = "div.container a";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "h1, h2, h3, title";
+        const serverSelector = "a[href*='/file/r2/']";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

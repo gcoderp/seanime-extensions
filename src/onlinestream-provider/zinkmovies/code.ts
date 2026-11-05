@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.themoviedb.org";
-    private mirrorDomains: string[] = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/search"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
+    private mainUrl: string = "https://hubdrive.space";
+    private mirrorDomains: string[] = ["https://hubdrive.space", "https://hubdrive.space"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://hubdrive.space/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script:containsData(var reurl)";
+        const itemSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
         const titleSelector = "a[href*='hubcloud.php']";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script:containsData(var reurl)";
-        const epNumSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
+        const epSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
+        const epNumSelector = "script:containsData(var reurl)";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script:containsData(var reurl)";
+        const serverSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

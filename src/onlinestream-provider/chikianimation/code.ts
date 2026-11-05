@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://ghbrisk.com";
-    private mirrorDomains: string[] = ["https://ghbrisk.com", "https://ghbrisk.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://ghbrisk.com/"};
+    private mainUrl: string = "https://chikianimation.com";
+    private mirrorDomains: string[] = ["https://chikianimation.com", "https://chikianimation.com", "https://chikianimation.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://chikianimation.com/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.listupd article.bs";
+        const itemSelector = "iframe[src], iframe[data-src]";
         const titleSelector = "a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.listupd article.bs";
-        const epNumSelector = "div.bsx";
+        const epSelector = "iframe[src], iframe[data-src]";
+        const epNumSelector = "div.listupd article.bs";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.listupd article.bs";
+        const serverSelector = "iframe[src], iframe[data-src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

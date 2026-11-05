@@ -413,7 +413,7 @@ class Provider {
 
     getSettings(): Settings {
         return {
-            episodeServers: ["dood", "vidhide", "streamwish", "okru"],
+            episodeServers: ["vidhide", "dood", "streamwish", "okru"],
             supportsDub: true,
         };
     }
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

@@ -17,7 +17,5 @@
   "reviewReasons": [
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-05T08:02:37.521136+00:00",
-  "licenseNotice": true,
-  "republishedAt": "2026-11-05T09:13:30.696537+00:00"
+  "convertedAt": "2026-11-05T09:40:40.951085+00:00"
 }

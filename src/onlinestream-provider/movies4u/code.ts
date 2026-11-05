@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/dist/js/global.js?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/lookup.php?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "ul > li.list-group-item:contains(Name)";
+        const itemSelector = "article";
         const titleSelector = "a[hx-get*='download']";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "ul > li.list-group-item:contains(Name)";
-        const epNumSelector = "ul > li.list-group-item:contains(Size)";
+        const epSelector = "article";
+        const epNumSelector = "div.post-thumbnail img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

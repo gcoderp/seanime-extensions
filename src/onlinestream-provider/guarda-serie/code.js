@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://vixsrc.to";
-        this.mirrorDomains = ["https://vixsrc.to", "https://vixsrc.to", "https://vixsrc.to/tv"];
-        this.defaultHeaders = { "Referer": "https://vixsrc.to/" };
+        this.mainUrl = "https://guarda-serie.ovh";
+        this.mirrorDomains = ["https://guarda-serie.ovh", "https://guarda-serie.ovh"];
+        this.defaultHeaders = { "Referer": "https://guarda-serie.ovh/" };
     }
     getSettings() {
         return {

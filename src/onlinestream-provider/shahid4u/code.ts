@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://fastvid.cam";
-    private mirrorDomains: string[] = ["https://fastvid.cam", "https://fastvid.cam"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://fastvid.cam/"};
+    private mainUrl: string = "https://fastved.cam";
+    private mirrorDomains: string[] = ["https://fastved.cam", "https://fastved.cam"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://fastved.cam/"};
 
     getSettings(): Settings {
         return {

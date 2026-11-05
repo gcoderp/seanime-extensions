@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://w.vidspeed.store";
-        this.mirrorDomains = ["https://w.vidspeed.store", "https://w.vidspeed.store"];
-        this.defaultHeaders = { "Referer": "https://w.vidspeed.store/" };
+        this.mainUrl = "https://vdesk.live";
+        this.mirrorDomains = ["https://vdesk.live", "https://vdesk.live"];
+        this.defaultHeaders = { "Referer": "https://vdesk.live/" };
     }
     getSettings() {
         return {

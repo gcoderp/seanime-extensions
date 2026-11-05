@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.name";
+        const itemSelector = "div.nk-post-card, div.nk-search-results ul li, a.nk-search-item, div.result ul li, div.eropost, article";
         const titleSelector = "a#download-url";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.name";
-        const epNumSelector = "div.nk-post-card, div.nk-search-results ul li, a.nk-search-item, div.result ul li, div.eropost, article";
+        const epSelector = "div.nk-post-card, div.nk-search-results ul li, a.nk-search-item, div.result ul li, div.eropost, article";
+        const epNumSelector = "h2 a, h3 a, a.nk-search-item, a";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

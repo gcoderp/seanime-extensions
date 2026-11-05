@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://animekhor.org";
-    private mirrorDomains: string[] = ["https://animekhor.org", "https://animekhor.org"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://animekhor.org/"};
+    private mainUrl: string = "https://animekhor.p2pstream.vip";
+    private mirrorDomains: string[] = ["https://animekhor.p2pstream.vip", "https://animekhor.p2pstream.vip"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://animekhor.p2pstream.vip/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["vidhide", "streamwish", "mp4upload"],
+            episodeServers: ["vidhide", "mp4upload", "streamwish"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/embedJS/u3/?request=video&ver=2&v={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.listupd > article";
+        const itemSelector = "div.server-item a";
         const titleSelector = "h1.entry-title";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.listupd > article";
-        const epNumSelector = "div.bsx > a";
+        const epSelector = "div.server-item a";
+        const epNumSelector = "div.listupd > article";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.listupd > article";
+        const serverSelector = "div.server-item a";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

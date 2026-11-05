@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://zokoanime.video";
-        this.mirrorDomains = ["https://zokoanime.video", "https://zokoanime.video"];
-        this.defaultHeaders = { "Referer": "https://zokoanime.video/" };
+        this.mainUrl = "https://vidtube.site";
+        this.mirrorDomains = ["https://vidtube.site", "https://vidtube.site"];
+        this.defaultHeaders = { "Referer": "https://vidtube.site/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/recently-updated?page={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = ".anisc-info > .item";

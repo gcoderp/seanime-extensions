@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidhideplus.com";
-    private mirrorDomains: string[] = ["https://vidhideplus.com", "https://vidhideplus.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidhideplus.com/"};
+    private mainUrl: string = "https://wishonly.site";
+    private mirrorDomains: string[] = ["https://wishonly.site", "https://wishonly.site"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://wishonly.site/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["vidhide", "streamwish", "filemoon", "voe"],
+            episodeServers: ["streamwish", "filemoon", "vidhide", "voe"],
             supportsDub: false,
         };
     }
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.md-manga-card";
+        const itemSelector = "#vplayer > #player source";
         const titleSelector = "p.md-manga-card-name";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.md-manga-card";
-        const epNumSelector = "div.cf-movie-cover-wrap a";
+        const epSelector = "#vplayer > #player source";
+        const epNumSelector = "div.md-manga-card";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.md-manga-card";
+        const serverSelector = "#vplayer > #player source";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

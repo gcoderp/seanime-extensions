@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://pahe.win";
-    private mirrorDomains: string[] = ["https://pahe.win", "https://pahe.win"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://pahe.win/"};
+    private mainUrl: string = "https://kwik.cx";
+    private mirrorDomains: string[] = ["https://kwik.cx", "https://kwik.cx", "https://kwik.cx"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://kwik.cx/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#resolutionMenu button";
+        const itemSelector = "script";
         const titleSelector = "span.badge-warning";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "#resolutionMenu button";
-        const epNumSelector = "div#pickDownload > a";
+        const epSelector = "script";
+        const epNumSelector = "script:containsData(eval)";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "#resolutionMenu button";
+        const serverSelector = "script";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vixsrc.to";
-    private mirrorDomains: string[] = ["https://vixsrc.to", "https://vixsrc.to", "https://vixsrc.to/tv"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vixsrc.to/"};
+    private mainUrl: string = "https://guarda-serie.ovh";
+    private mirrorDomains: string[] = ["https://guarda-serie.ovh", "https://guarda-serie.ovh"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://guarda-serie.ovh/"};
 
     getSettings(): Settings {
         return {

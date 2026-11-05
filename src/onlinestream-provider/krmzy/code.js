@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://iplayerhls.com";
-        this.mirrorDomains = ["https://iplayerhls.com", "https://iplayerhls.com", "https://iplayerhls.com/e"];
-        this.defaultHeaders = { "Referer": "https://iplayerhls.com/" };
+        this.mainUrl = "https://v.turkvearab.com";
+        this.mirrorDomains = ["https://v.turkvearab.com", "https://v.turkvearab.com", "https://v.turkvearab.com/embed-"];
+        this.defaultHeaders = { "Referer": "https://v.turkvearab.com/" };
     }
     getSettings() {
         return {

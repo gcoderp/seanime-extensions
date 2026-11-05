@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://abyssplayer.com";
-    private mirrorDomains: string[] = ["https://abyssplayer.com", "https://abyssplayer.com", "https://player.abyssplayer.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://abyssplayer.com/"};
+    private mainUrl: string = "https://uqload.io";
+    private mirrorDomains: string[] = ["https://uqload.io", "https://uqload.io"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://uqload.io/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "okru", "vidhide", "streamwish"],
+            episodeServers: ["vidhide", "filemoon", "streamwish", "okru"],
             supportsDub: true,
         };
     }
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "[data-module=OKVideo]";
+        const itemSelector = "script:containsData(vplayer)";
         const titleSelector = "meta[property=og:image]";
         const results: SearchResult[] = [];
 
@@ -495,7 +495,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "[data-module=OKVideo]";
+        const epSelector = "script:containsData(vplayer)";
         const epNumSelector = "article.item";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "[data-module=OKVideo]";
+        const serverSelector = "script:containsData(vplayer)";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

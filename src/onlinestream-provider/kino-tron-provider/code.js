@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/films/page/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = ".trailer-box iframe[src], .trailer-box iframe[data-src], .trailer-box video[src], .trailer-box source[src]";
+        const itemSelector = ".th-item";
         const titleSelector = "a";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = ".trailer-box iframe[src], .trailer-box iframe[data-src], .trailer-box video[src], .trailer-box source[src]";
-        const epNumSelector = ".tabs-sel span";
+        const epSelector = ".th-item";
+        const epNumSelector = ".th-title";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = ".trailer-box iframe[src], .trailer-box iframe[data-src], .trailer-box video[src], .trailer-box source[src]";
+        const serverSelector = ".th-item";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

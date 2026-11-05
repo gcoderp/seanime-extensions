@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://ghbrisk.com";
-        this.mirrorDomains = ["https://ghbrisk.com", "https://ghbrisk.com"];
-        this.defaultHeaders = { "Referer": "https://ghbrisk.com/" };
+        this.mainUrl = "https://dingtezuni.com";
+        this.mirrorDomains = ["https://dingtezuni.com", "https://dingtezuni.com"];
+        this.defaultHeaders = { "Referer": "https://dingtezuni.com/" };
     }
     getSettings() {
         return {

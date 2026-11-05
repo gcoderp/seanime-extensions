@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://streamplay.to";
-    private mirrorDomains: string[] = ["https://streamplay.to", "https://streamplay.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://streamplay.to/"};
+    private mainUrl: string = "https://www.wootly.ch";
+    private mirrorDomains: string[] = ["https://www.wootly.ch", "https://web.wootly.ch/grabm?t=", "https://www.wootly.ch"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.wootly.ch/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.imrl img";
+        const itemSelector = "iframe";
         const titleSelector = "span.mtl";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.imrl img";
-        const epNumSelector = "div.snfo h1 a";
+        const epSelector = "iframe";
+        const epNumSelector = "div.imrl img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.imrl img";
+        const serverSelector = "iframe";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

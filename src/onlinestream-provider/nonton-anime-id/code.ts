@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://nontonanimeid.com";
-    private mirrorDomains: string[] = ["https://nontonanimeid.com", "https://nontonanimeid.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://nontonanimeid.com/"};
+    private mainUrl: string = "https://embed2.kotakanimeid.com";
+    private mirrorDomains: string[] = ["https://embed2.kotakanimeid.com", "https://embed2.kotakanimeid.com", "https://kotakanimeid.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://embed2.kotakanimeid.com/"};
 
     getSettings(): Settings {
         return {

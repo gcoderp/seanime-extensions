@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://hdm2.biz";
-    private mirrorDomains: string[] = ["https://hdm2.biz", "https://hdm2.biz", "https://hdm2.biz"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://hdm2.biz/"};
+    private mainUrl: string = "https://prvs.top";
+    private mirrorDomains: string[] = ["https://prvs.top", "https://prvs.top"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://prvs.top/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "button";
+        const itemSelector = "div.items.normal article, div#archive-content article, div.items.full article,article";
         const titleSelector = "a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "button";
-        const epNumSelector = "div.items.normal article, div#archive-content article, div.items.full article,article";
+        const epSelector = "div.items.normal article, div#archive-content article, div.items.full article,article";
+        const epNumSelector = "div.poster img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "button";
+        const serverSelector = "a";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

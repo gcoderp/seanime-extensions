@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://gogoanime.me.uk";
-    private mirrorDomains: string[] = ["https://gogoanime.me.uk", "https://gogoanime.me.uk"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://gogoanime.me.uk/"};
+    private mainUrl: string = "https://vidnest.fun";
+    private mirrorDomains: string[] = ["https://vidnest.fun", "https://vidnest.fun"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidnest.fun/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "iframe[src]";
+        const itemSelector = "iframe";
         const titleSelector = "a[href*='/anime/'], .info a.watch, a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "iframe[src]";
-        const epNumSelector = "iframe";
+        const epSelector = "iframe";
+        const epNumSelector = "article.bs";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src]";
+        const serverSelector = "iframe";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

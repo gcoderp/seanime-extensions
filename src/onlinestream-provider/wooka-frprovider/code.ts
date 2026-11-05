@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidhideplus.com";
-    private mirrorDomains: string[] = ["https://vidhideplus.com", "https://vidhideplus.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidhideplus.com/"};
+    private mainUrl: string = "https://www.uqload.cx";
+    private mirrorDomains: string[] = ["https://www.uqload.cx", "https://uqload.cx", "https://www.uqload.cx"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.uqload.cx/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["vidhide", "streamwish", "filemoon", "dood", "voe"],
+            episodeServers: ["voe", "filemoon", "vidhide", "streamwish", "dood"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/e/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#vplayer > #player source";
+        const itemSelector = "div.row:not(.slider-container) > article > figure.hoverable";
         const titleSelector = "img.img-fluid";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "#vplayer > #player source";
-        const epNumSelector = "video#vjsplayer";
+        const epSelector = "div.row:not(.slider-container) > article > figure.hoverable";
+        const epNumSelector = "figcaption.meta-footer > a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "#vplayer > #player source";
+        const serverSelector = "div.row:not(.slider-container) > article > figure.hoverable";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

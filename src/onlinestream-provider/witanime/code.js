@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://videa.hu";
-        this.mirrorDomains = ["https://videa.hu", "https://videa.hu", "https://videa.hu/player/xml?platform=desktop"];
-        this.defaultHeaders = { "Referer": "https://videa.hu/" };
+        this.mainUrl = "https://witanime.site";
+        this.mirrorDomains = ["https://witanime.site", "https://witanime.site", "https://witanime.site/watch"];
+        this.defaultHeaders = { "Referer": "https://witanime.site/" };
     }
     getSettings() {
         return {

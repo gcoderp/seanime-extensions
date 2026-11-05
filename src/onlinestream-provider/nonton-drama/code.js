@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://tv9.nontondrama.my";
-        this.mirrorDomains = ["https://tv9.nontondrama.my", "https://tv9.nontondrama.my"];
-        this.defaultHeaders = { "Referer": "https://tv9.nontondrama.my/" };
+        this.mainUrl = "https://videonode.de";
+        this.mirrorDomains = ["https://videonode.de", "https://videonode.de"];
+        this.defaultHeaders = { "Referer": "https://videonode.de/" };
     }
     getSettings() {
         return {

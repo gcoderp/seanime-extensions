@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://d000d.net";
-        this.mirrorDomains = ["https://d000d.net", "https://d000d.net"];
-        this.defaultHeaders = { "Referer": "https://d000d.net/" };
+        this.mainUrl = "https://www.oneupload.online";
+        this.mirrorDomains = ["https://www.oneupload.online", "https://www.oneupload.online"];
+        this.defaultHeaders = { "Referer": "https://www.oneupload.online/" };
     }
     getSettings() {
         return {

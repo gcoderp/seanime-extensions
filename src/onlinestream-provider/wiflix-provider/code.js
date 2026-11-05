@@ -390,13 +390,13 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://alejandrocenturyoil.com";
-        this.mirrorDomains = ["https://alejandrocenturyoil.com", "https://alejandrocenturyoil.com"];
-        this.defaultHeaders = { "Referer": "https://alejandrocenturyoil.com/" };
+        this.mainUrl = "https://ups2up.fun";
+        this.mirrorDomains = ["https://ups2up.fun", "https://ups2up.fun"];
+        this.defaultHeaders = { "Referer": "https://ups2up.fun/" };
     }
     getSettings() {
         return {
-            episodeServers: ["voe", "vidhide", "dood", "streamwish"],
+            episodeServers: ["streamwish", "vidhide", "dood", "voe"],
             supportsDub: true,
         };
     }
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "ar",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/tuk-tukcima/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS. Licence: upstream repository declares no detectable licence; distributed with attribution only.",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/tuk-tukcima/code.js",
   "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10TEG3tTtkEF9_g3IslEP3xs0wx9EVhBs7b_H5M1gpg&s=10"
 }

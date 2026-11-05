@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.dailymotion.com";
-    private mirrorDomains: string[] = ["https://www.dailymotion.com", "https://www.dailymotion.com", "https://www.dailymotion.com/embed/video"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.dailymotion.com/"};
+    private mainUrl: string = "https://www.tamildhool.tech";
+    private mirrorDomains: string[] = ["https://www.tamildhool.tech", "https://www.tamildhool.tech", "https://www.tamildhool.tech"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.tamildhool.tech/"};
 
     getSettings(): Settings {
         return {

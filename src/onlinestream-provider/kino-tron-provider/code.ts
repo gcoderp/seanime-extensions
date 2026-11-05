@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".trailer-box iframe[src], .trailer-box iframe[data-src], .trailer-box video[src], .trailer-box source[src]";
+        const itemSelector = ".th-item";
         const titleSelector = "a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".trailer-box iframe[src], .trailer-box iframe[data-src], .trailer-box video[src], .trailer-box source[src]";
-        const epNumSelector = ".tabs-sel span";
+        const epSelector = ".th-item";
+        const epNumSelector = ".th-title";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = ".trailer-box iframe[src], .trailer-box iframe[data-src], .trailer-box video[src], .trailer-box source[src]";
+        const serverSelector = ".th-item";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

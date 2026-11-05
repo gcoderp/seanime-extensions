@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://ghbrisk.com";
-    private mirrorDomains: string[] = ["https://ghbrisk.com", "https://ghbrisk.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://ghbrisk.com/"};
+    private mainUrl: string = "https://vidshare.rpmvid.com";
+    private mirrorDomains: string[] = ["https://vidshare.rpmvid.com", "https://vidshare.rpmvid.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidshare.rpmvid.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/dist/js/alljs.js?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = "script:containsData(sources:)";
-        const epNumSelector = "iframe";
+        const epNumSelector = "div.gmr-embed-responsive iframe";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

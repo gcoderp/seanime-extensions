@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.themoviedb.org";
-    private mirrorDomains: string[] = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/movie"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
+    private mainUrl: string = "https://hubdrive.space";
+    private mirrorDomains: string[] = ["https://hubdrive.space", "https://hubdrive.space"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://hubdrive.space/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script:containsData(var reurl)";
-        const titleSelector = "h3";
+        const itemSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
+        const titleSelector = "a[hx-get*='download']";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,7 +495,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script:containsData(var reurl)";
+        const epSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
         const epNumSelector = "div.card-grid a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script:containsData(var reurl)";
+        const serverSelector = "a[hx-get*='download']";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

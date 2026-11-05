@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://wishfast.top";
-    private mirrorDomains: string[] = ["https://wishfast.top", "https://wishfast.top"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://wishfast.top/"};
+    private mainUrl: string = "https://filemoon.sx";
+    private mirrorDomains: string[] = ["https://filemoon.sx", "https://filemoon.sx"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://filemoon.sx/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const itemSelector = "iframe";
         const titleSelector = "h1.entry-title";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script:containsData(function(p,a,c,k,e,d))";
-        const epNumSelector = "iframe";
+        const epSelector = "iframe";
+        const epNumSelector = "div.listupd > article";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const serverSelector = "iframe";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

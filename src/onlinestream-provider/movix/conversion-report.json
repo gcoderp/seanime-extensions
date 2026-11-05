@@ -8,10 +8,10 @@
   "sha256_checksum": "ced9099329347aa0cd994a5cacb1cad1283a265c27ccbbf947c849d6aa78f646",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
-  "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
-  "source_recovery_status": "RECOVERED",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
+  "source_recovery_status": "DEX_FALLBACK",
   "decompilation_status": "JADX_OK",
-  "kotlin_reconstruction_status": "SUCCESS",
+  "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
   "seanime_compatibility_status": "PASS",
@@ -25,11 +25,11 @@
   "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
-    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+    "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
     "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-05T07:58:47.028705+00:00",
+  "conversion_timestamp": "2026-11-05T09:37:38.016205+00:00",
   "passed": true
 }

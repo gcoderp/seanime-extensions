@@ -301,8 +301,8 @@ class AniListResolver {
 }
 
 class Provider {
-    private mainUrl: string = "https://hdstream4u.com";
-    private defaultHeaders: Record<string, string> = {"Referer": "https://hdstream4u.com/"};
+    private mainUrl: string = "https://enc-dec.app";
+    private defaultHeaders: Record<string, string> = {"Referer": "https://enc-dec.app/"};
 
     getSettings(): TorrentProviderSettings {
         return {

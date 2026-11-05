@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://animesuge.cz";
-        this.mirrorDomains = ["https://animesuge.cz", "https://animesuge.cz"];
-        this.defaultHeaders = { "Referer": "https://animesuge.cz/" };
+        this.mainUrl = "https://vidtube.site";
+        this.mirrorDomains = ["https://vidtube.site", "https://vidtube.site"];
+        this.defaultHeaders = { "Referer": "https://vidtube.site/" };
     }
     getSettings() {
         return {

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://gat.animerco.org";
-    private mirrorDomains: string[] = ["https://gat.animerco.org", "https://gat.animerco.org"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://gat.animerco.org/"};
+    private mainUrl: string = "https://my.mail.ru";
+    private mirrorDomains: string[] = ["https://my.mail.ru", "https://my.mail.ru"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://my.mail.ru/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.featured-slider div.anime-card";
+        const itemSelector = "error";
         const titleSelector = "a.image";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.featured-slider div.anime-card";
-        const epNumSelector = "div.media-section:contains(\u0622\u062e\u0631 \u0627\u0644\u062d\u0644\u0642\u0627\u062a \u0627\u0644\u0645\u0636\u0627\u0641\u0629) div.episode-card";
+        const epSelector = "error";
+        const epNumSelector = "video_source";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.featured-slider div.anime-card";
+        const serverSelector = "error";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

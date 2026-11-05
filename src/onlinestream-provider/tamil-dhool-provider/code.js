@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://www.dailymotion.com";
-        this.mirrorDomains = ["https://www.dailymotion.com", "https://www.dailymotion.com", "https://www.dailymotion.com/embed/video"];
-        this.defaultHeaders = { "Referer": "https://www.dailymotion.com/" };
+        this.mainUrl = "https://www.tamildhool.tech";
+        this.mirrorDomains = ["https://www.tamildhool.tech", "https://www.tamildhool.tech", "https://www.tamildhool.tech"];
+        this.defaultHeaders = { "Referer": "https://www.tamildhool.tech/" };
     }
     getSettings() {
         return {

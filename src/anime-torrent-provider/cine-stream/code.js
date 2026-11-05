@@ -300,8 +300,8 @@ class AniListResolver {
 }
 class Provider {
     constructor() {
-        this.mainUrl = "https://hdstream4u.com";
-        this.defaultHeaders = { "Referer": "https://hdstream4u.com/" };
+        this.mainUrl = "https://enc-dec.app";
+        this.defaultHeaders = { "Referer": "https://enc-dec.app/" };
     }
     getSettings() {
         return {

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://fastvid.cam";
-        this.mirrorDomains = ["https://fastvid.cam", "https://fastvid.cam"];
-        this.defaultHeaders = { "Referer": "https://fastvid.cam/" };
+        this.mainUrl = "https://fastved.cam";
+        this.mirrorDomains = ["https://fastved.cam", "https://fastved.cam"];
+        this.defaultHeaders = { "Referer": "https://fastved.cam/" };
     }
     getSettings() {
         return {

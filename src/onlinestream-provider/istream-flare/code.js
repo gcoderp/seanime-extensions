@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://istreamcdn.com";
-        this.mirrorDomains = ["https://istreamcdn.com", "https://istreamcdn.com"];
-        this.defaultHeaders = { "Referer": "https://istreamcdn.com/" };
+        this.mainUrl = "https://exposeworld.art";
+        this.mirrorDomains = ["https://exposeworld.art", "https://exposeworld.art"];
+        this.defaultHeaders = { "Referer": "https://exposeworld.art/" };
     }
     getSettings() {
         return {

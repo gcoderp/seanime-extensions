@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://hexload.com";
-        this.mirrorDomains = ["https://hexload.com", "https://hexload.com"];
-        this.defaultHeaders = { "Referer": "https://hexload.com/" };
+        this.mainUrl = "https://latanime.org";
+        this.mirrorDomains = ["https://latanime.org", "https://latanime.org"];
+        this.defaultHeaders = { "Referer": "https://latanime.org/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/download?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/animes?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.col-6, div.col-md-6, div.col-md-4, div.item, article.group\\\\/item";

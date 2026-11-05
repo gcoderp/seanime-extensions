@@ -11,11 +11,9 @@
   "license": "UNKNOWN",
   "cs3Sha256": "e60c081865d5584f9fa4dec3006be7cd81cc016499c8d558972bede4d855b5b3",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
   "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [],
-  "convertedAt": "2026-11-05T07:59:13.785496+00:00",
-  "licenseNotice": true,
-  "republishedAt": "2026-11-05T09:13:34.680574+00:00"
+  "convertedAt": "2026-11-05T09:37:59.511315+00:00"
 }

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://idmxl.ink";
-        this.mirrorDomains = ["https://idmxl.ink", "https://idmxl.ink"];
-        this.defaultHeaders = { "Referer": "https://idmxl.ink/" };
+        this.mainUrl = "https://imaxstreams.net";
+        this.mirrorDomains = ["https://imaxstreams.net", "https://imaxstreams.net"];
+        this.defaultHeaders = { "Referer": "https://imaxstreams.net/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "article.item-infinite";
+        const itemSelector = "script:containsData(sources:)";
         const titleSelector = "h2.entry-title a";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "article.item-infinite";
-        const epNumSelector = ".gmr-quality-item a";
+        const epSelector = "script:containsData(sources:)";
+        const epNumSelector = "article.item-infinite";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "article.item-infinite";
+        const serverSelector = "script:containsData(sources:)";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://videa.hu";
-    private mirrorDomains: string[] = ["https://videa.hu", "https://videa.hu", "https://videa.hu/player/xml?platform=desktop"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://videa.hu/"};
+    private mainUrl: string = "https://witanime.site";
+    private mirrorDomains: string[] = ["https://witanime.site", "https://witanime.site", "https://witanime.site/watch"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://witanime.site/"};
 
     getSettings(): Settings {
         return {

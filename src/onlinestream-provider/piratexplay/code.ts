@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://ghbrisk.com";
-    private mirrorDomains: string[] = ["https://ghbrisk.com", "https://ghbrisk.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://ghbrisk.com/"};
+    private mainUrl: string = "https://z.awstream.net";
+    private mirrorDomains: string[] = ["https://z.awstream.net", "https://z.awstream.net"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://z.awstream.net/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/myseriesapi?tmdbid={query}".replace("{query}", queryEncoded);
+        const searchPath = "/player/index.php?data={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

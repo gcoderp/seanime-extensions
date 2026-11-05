@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://animesuge.cz";
-    private mirrorDomains: string[] = ["https://animesuge.cz", "https://animesuge.cz"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://animesuge.cz/"};
+    private mainUrl: string = "https://vidtube.site";
+    private mirrorDomains: string[] = ["https://vidtube.site", "https://vidtube.site"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidtube.site/"};
 
     getSettings(): Settings {
         return {

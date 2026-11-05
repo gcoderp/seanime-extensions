@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Wcoflix
-// Original Class: Wcoflix
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://www.wcoforever.net";
-        this.mirrorDomains = ["https://www.wcoforever.net", "https://www.wcoforever.net"];
-        this.defaultHeaders = { "Referer": "https://www.wcoforever.net/" };
+        this.mainUrl = "https://embed.wcostream.com";
+        this.mirrorDomains = ["https://embed.wcostream.com", "https://embed.wcostream.com"];
+        this.defaultHeaders = { "Referer": "https://embed.wcostream.com/" };
     }
     getSettings() {
         return {
@@ -402,11 +402,11 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?catara={query}".replace("{query}", queryEncoded);
+        const searchPath = "/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "ul.items li";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "div.recent-release:has(a[name=dubbed]) + div#sidebar_right ul.items li";
+        const titleSelector = "h2 span.film-name";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.header-tag h2 a";
-        const epNumSelector = "div#sidebar_cat img.img5";
+        const epSelector = "div.recent-release:has(a[name=dubbed]) + div#sidebar_right ul.items li";
+        const epNumSelector = "div.recent-release-main > div#sidebar_right";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "iframe";
+        const serverSelector = "div.recent-release:has(a[name=dubbed]) + div#sidebar_right ul.items li";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

@@ -429,7 +429,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const itemSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
-        const titleSelector = "img";
+        const titleSelector = "a[href*='hubcloud.php']";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
-        const epNumSelector = "div.container div.movie-grid a";
+        const epNumSelector = "i#size";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

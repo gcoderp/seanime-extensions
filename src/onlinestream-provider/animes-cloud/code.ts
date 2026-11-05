@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "ul#playeroptionsul li.dooplay_player_option";
-        const titleSelector = "span.title";
+        const itemSelector = "div.items article, div.content div.items article";
+        const titleSelector = "img";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "ul#playeroptionsul li.dooplay_player_option";
-        const epNumSelector = "div.items article, div.content div.items article";
+        const epSelector = "div.items article, div.content div.items article";
+        const epNumSelector = "div.data h3 a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "ul#playeroptionsul li.dooplay_player_option";
+        const serverSelector = "img";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

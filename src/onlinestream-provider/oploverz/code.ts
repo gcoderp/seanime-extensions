@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.blogger.com";
-    private mirrorDomains: string[] = ["https://www.blogger.com", "https://www.blogger.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.blogger.com/"};
+    private mainUrl: string = "https://filedon.co";
+    private mirrorDomains: string[] = ["https://filedon.co", "https://filedon.co"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://filedon.co/"};
 
     getSettings(): Settings {
         return {

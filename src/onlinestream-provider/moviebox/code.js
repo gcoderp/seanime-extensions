@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://netnaija.film";
-        this.mirrorDomains = ["https://netnaija.film", "https://netnaija.film"];
-        this.defaultHeaders = { "Referer": "https://netnaija.film/" };
+        this.mainUrl = "https://sflix.film";
+        this.mirrorDomains = ["https://sflix.film", "https://sflix.film"];
+        this.defaultHeaders = { "Referer": "https://sflix.film/" };
     }
     getSettings() {
         return {

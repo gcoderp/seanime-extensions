@@ -406,7 +406,7 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
-        const titleSelector = "img";
+        const titleSelector = "a[href*='hubcloud.php']";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -459,7 +459,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes = [];
         const epSelector = ".btn.btn-primary.btn-user.btn-success1.m-1";
-        const epNumSelector = "div.container div.movie-grid a";
+        const epNumSelector = "i#size";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

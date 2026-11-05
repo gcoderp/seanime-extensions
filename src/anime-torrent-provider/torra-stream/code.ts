@@ -320,7 +320,7 @@ class Provider {
         const fallbackQuery = (opts.query || "").trim();
         const candidates = AniListResolver.queries(media, fallbackQuery, 2);
         const q = encodeURIComponent(candidates[0] || fallbackQuery);
-        const searchUrl = CsCompat.fixUrl("/anime/{query}".replace("{query}", q), this.mainUrl);
+        const searchUrl = CsCompat.fixUrl("/stream/movie/{query}".replace("{query}", q), this.mainUrl);
         const res = await fetch(searchUrl, { headers: this.defaultHeaders });
         if (!res || res.status >= 400) {
             return [];

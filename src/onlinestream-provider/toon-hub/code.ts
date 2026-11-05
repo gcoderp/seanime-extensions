@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://multimovies.cloud";
-    private mirrorDomains: string[] = ["https://multimovies.cloud", "https://multimovies.cloud"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://multimovies.cloud/"};
+    private mainUrl: string = "https://allinonedownloader.fun";
+    private mirrorDomains: string[] = ["https://allinonedownloader.fun", "https://allinonedownloader.fun"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://allinonedownloader.fun/"};
 
     getSettings(): Settings {
         return {

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vudeo.ws";
-    private mirrorDomains: string[] = ["https://vudeo.ws", "https://vudeo.ws"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vudeo.ws/"};
+    private mainUrl: string = "https://vostfree.ws";
+    private mirrorDomains: string[] = ["https://vostfree.ws", "https://vostfree.ws"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vostfree.ws/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "ul.content > li";
+        const itemSelector = "div#dle-content > div.watch-top > div.image-bg > div.image-bg-content > div.slide-block ";
         const titleSelector = "span.image > img";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "ul.content > li";
-        const epNumSelector = "div.search-result";
+        const epSelector = "div#dle-content > div.watch-top > div.image-bg > div.image-bg-content > div.slide-block ";
+        const epNumSelector = " div.slide-poster > img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "ul.content > li";
+        const serverSelector = "div#dle-content > div.watch-top > div.image-bg > div.image-bg-content > div.slide-block ";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

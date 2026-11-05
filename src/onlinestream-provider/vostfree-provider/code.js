@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://vudeo.ws";
-        this.mirrorDomains = ["https://vudeo.ws", "https://vudeo.ws"];
-        this.defaultHeaders = { "Referer": "https://vudeo.ws/" };
+        this.mainUrl = "https://vostfree.ws";
+        this.mirrorDomains = ["https://vostfree.ws", "https://vostfree.ws"];
+        this.defaultHeaders = { "Referer": "https://vostfree.ws/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/last-episode.html/page/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "ul.content > li";
+        const itemSelector = "div#dle-content > div.watch-top > div.image-bg > div.image-bg-content > div.slide-block ";
         const titleSelector = "span.image > img";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "ul.content > li";
-        const epNumSelector = "div.search-result";
+        const epSelector = "div#dle-content > div.watch-top > div.image-bg > div.image-bg-content > div.slide-block ";
+        const epNumSelector = " div.slide-poster > img";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "ul.content > li";
+        const serverSelector = "div#dle-content > div.watch-top > div.image-bg > div.image-bg-content > div.slide-block ";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

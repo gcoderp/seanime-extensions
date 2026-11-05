@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://w.vidspeed.store";
-    private mirrorDomains: string[] = ["https://w.vidspeed.store", "https://w.vidspeed.store"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://w.vidspeed.store/"};
+    private mainUrl: string = "https://vdesk.live";
+    private mirrorDomains: string[] = ["https://vdesk.live", "https://vdesk.live"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vdesk.live/"};
 
     getSettings(): Settings {
         return {

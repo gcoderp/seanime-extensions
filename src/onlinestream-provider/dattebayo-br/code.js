@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/animes/letra/todos?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = ".ultimosAnimesHomeItem, .ultimosEpisodiosHomeItem";
+        const itemSelector = "script";
         const titleSelector = "a";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = ".ultimosAnimesHomeItem, .ultimosEpisodiosHomeItem";
-        const epNumSelector = "script";
+        const epSelector = "script";
+        const epNumSelector = ".epiContainer .ultimosEpisodiosHomeItem";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = ".ultimosAnimesHomeItem, .ultimosEpisodiosHomeItem";
+        const serverSelector = "script";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

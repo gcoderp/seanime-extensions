@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article.type-post, article.post-grid, .porto-sicon-wrapper";
-        const titleSelector = "h3.thumb-info-inner a, h2.entry-title a, h5 a.porto-sicon-title-link, h3.porto-post-title a";
+        const itemSelector = "article.type-post";
+        const titleSelector = "h3.thumb-info-inner a, h2.entry-title a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.type-post, article.post-grid, .porto-sicon-wrapper";
-        const epNumSelector = "div.post-image img, span.post-image img, .porto-sicon-img img";
+        const epSelector = "article.type-post";
+        const epNumSelector = "article.type-post, article.post-grid, .porto-sicon-wrapper, li.cat-item";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "article.type-post, article.post-grid, .porto-sicon-wrapper";
+        const serverSelector = "article.type-post";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

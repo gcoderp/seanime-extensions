@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://morencius.com";
-    private mirrorDomains: string[] = ["https://morencius.com", "https://morencius.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://morencius.com/"};
+    private mainUrl: string = "https://vid.oppadrama.cc";
+    private mirrorDomains: string[] = ["https://vid.oppadrama.cc", "https://v1.oppadrama.cc", "https://v1.oppadrama.cc", "https://vid.oppadrama.cc"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vid.oppadrama.cc/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "script:containsData(sources:)";
+        const itemSelector = "article.bs, .listupd article, article";
         const titleSelector = "a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "script:containsData(sources:)";
-        const epNumSelector = "article.bs, .listupd article, article";
+        const epSelector = "article.bs, .listupd article, article";
+        const epNumSelector = "h2, .tt, .entry-title";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script:containsData(sources:)";
+        const serverSelector = "article.bs, .listupd article, article";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

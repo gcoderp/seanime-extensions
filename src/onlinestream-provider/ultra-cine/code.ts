@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://embedplay.upn.one";
-    private mirrorDomains: string[] = ["https://embedplay.upn.one", "https://embedplay.upn.one"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://embedplay.upn.one/"};
+    private mainUrl: string = "https://embedplay.upns.ink";
+    private mirrorDomains: string[] = ["https://embedplay.upns.ink", "https://embedplay.upns.ink"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://embedplay.upns.ink/"};
 
     getSettings(): Settings {
         return {

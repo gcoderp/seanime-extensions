@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".movie-title h3 a";
+        const itemSelector = ".movie-container > div";
         const titleSelector = "a[href*='alooytv']";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".movie-title h3 a";
-        const epNumSelector = ".movie-container > div";
+        const epSelector = ".movie-container > div";
+        const epNumSelector = ".movie-title h3 a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "a[href*='alooytv']";
+        const serverSelector = ".movie-container > div";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

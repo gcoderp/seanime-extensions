@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://multimovies.cloud";
-        this.mirrorDomains = ["https://multimovies.cloud", "https://multimovies.cloud"];
-        this.defaultHeaders = { "Referer": "https://multimovies.cloud/" };
+        this.mainUrl = "https://allinonedownloader.fun";
+        this.mirrorDomains = ["https://allinonedownloader.fun", "https://allinonedownloader.fun"];
+        this.defaultHeaders = { "Referer": "https://allinonedownloader.fun/" };
     }
     getSettings() {
         return {

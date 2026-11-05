@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidhidevip.com";
-    private mirrorDomains: string[] = ["https://vidhidevip.com", "https://vidhidevip.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidhidevip.com/"};
+    private mainUrl: string = "https://z.awstream.net";
+    private mirrorDomains: string[] = ["https://z.awstream.net", "https://z.awstream.net"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://z.awstream.net/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/player/index.php?data={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#movies-a li";
+        const itemSelector = "script:containsData(function(p,a,c,k,e,d))";
         const titleSelector = "a.page-link";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "#movies-a li";
-        const epNumSelector = "article h2.entry-title, h2.entry-title";
+        const epSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const epNumSelector = "#movies-a li";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "#movies-a li";
+        const serverSelector = "script:containsData(function(p,a,c,k,e,d))";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://multimovies.cloud";
-    private mirrorDomains: string[] = ["https://multimovies.cloud", "https://multimovies.cloud"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://multimovies.cloud/"};
+    private mainUrl: string = "https://multimovies.garden";
+    private mirrorDomains: string[] = ["https://multimovies.garden", "https://multimovies.garden", "https://multimovies.garden"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://multimovies.garden/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/myseriesapi?tmdbid={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".cinejoy-ep-card";
+        const itemSelector = "article.poster-card, article.item, .items article";
         const titleSelector = "img";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".cinejoy-ep-card";
-        const epNumSelector = "article.poster-card, article.item, .items article";
+        const epSelector = "article.poster-card, article.item, .items article";
+        const epNumSelector = "article.poster-card, .result-item article, div.result-item";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = ".cinejoy-ep-card";
+        const serverSelector = "img";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

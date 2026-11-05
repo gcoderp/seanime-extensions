@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://idmxl.ink";
-    private mirrorDomains: string[] = ["https://idmxl.ink", "https://idmxl.ink"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://idmxl.ink/"};
+    private mainUrl: string = "https://imaxstreams.net";
+    private mirrorDomains: string[] = ["https://imaxstreams.net", "https://imaxstreams.net"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://imaxstreams.net/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article.item-infinite";
+        const itemSelector = "script:containsData(sources:)";
         const titleSelector = "h2.entry-title a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.item-infinite";
-        const epNumSelector = ".gmr-quality-item a";
+        const epSelector = "script:containsData(sources:)";
+        const epNumSelector = "article.item-infinite";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "article.item-infinite";
+        const serverSelector = "script:containsData(sources:)";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://streamplay.to";
-        this.mirrorDomains = ["https://streamplay.to", "https://streamplay.to"];
-        this.defaultHeaders = { "Referer": "https://streamplay.to/" };
+        this.mainUrl = "https://www.wootly.ch";
+        this.mirrorDomains = ["https://www.wootly.ch", "https://web.wootly.ch/grabm?t=", "https://www.wootly.ch"];
+        this.defaultHeaders = { "Referer": "https://www.wootly.ch/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.imrl img";
+        const itemSelector = "iframe";
         const titleSelector = "span.mtl";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.imrl img";
-        const epNumSelector = "div.snfo h1 a";
+        const epSelector = "iframe";
+        const epNumSelector = "div.imrl img";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "div.imrl img";
+        const serverSelector = "iframe";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

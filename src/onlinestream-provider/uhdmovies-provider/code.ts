@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://driveleech.pro";
-    private mirrorDomains: string[] = ["https://driveleech.pro", "https://driveleech.pro"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://driveleech.pro/"};
+    private mainUrl: string = "https://driveleech.org";
+    private mirrorDomains: string[] = ["https://driveleech.org", "https://driveleech.org"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://driveleech.org/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article.gridlove-post";
-        const titleSelector = "title";
+        const itemSelector = "div.entry-content a.maxbutton-1, div.entry-content a.maxbutton";
+        const titleSelector = "a.btn-success";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.gridlove-post";
-        const epNumSelector = "div.entry-image > a";
+        const epSelector = "div.entry-content a.maxbutton-1, div.entry-content a.maxbutton";
+        const epNumSelector = "script:containsData(replace)";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "title";
+        const serverSelector = "div.entry-content a.maxbutton-1, div.entry-content a.maxbutton";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

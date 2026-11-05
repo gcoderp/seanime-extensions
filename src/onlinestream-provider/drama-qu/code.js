@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "";
-        this.mirrorDomains = [""];
-        this.defaultHeaders = {};
+        this.mainUrl = "https://vidhide.org";
+        this.mirrorDomains = ["https://vidhide.org", "https://s1.vidhide.org/api-config", "https://vidhide.org", "https://vidhide.org"];
+        this.defaultHeaders = { "Referer": "https://vidhide.org/" };
     }
     getSettings() {
         return {

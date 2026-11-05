@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://dropload.io";
-    private mirrorDomains: string[] = ["https://dropload.io", "https://dropload.io"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://dropload.io/"};
+    private mainUrl: string = "https://www.uqload.cx";
+    private mirrorDomains: string[] = ["https://www.uqload.cx", "https://www.uqload.cx"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.uqload.cx/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["voe", "dood"],
+            episodeServers: ["dood", "voe"],
             supportsDub: false,
         };
     }
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".embed > iframe";
-        const titleSelector = "img";
+        const itemSelector = "video#vjsplayer";
+        const titleSelector = "h3";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".embed > iframe";
-        const epNumSelector = "div.OD > li";
+        const epSelector = "video#vjsplayer";
+        const epNumSelector = "track";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = ".embed > iframe";
+        const serverSelector = "video#vjsplayer";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://doramasonline.co";
-        this.mirrorDomains = ["https://doramasonline.co", "https://doramasonline.co"];
-        this.defaultHeaders = { "Referer": "https://doramasonline.co/" };
+        this.mainUrl = "https://embedplay.upns.ink";
+        this.mirrorDomains = ["https://embedplay.upns.ink", "https://embedplay.upns.ink"];
+        this.defaultHeaders = { "Referer": "https://embedplay.upns.ink/" };
     }
     getSettings() {
         return {

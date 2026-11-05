@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://bysevepoin.com";
-    private mirrorDomains: string[] = ["https://bysevepoin.com", "https://bysevepoin.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://bysevepoin.com/"};
+    private mainUrl: string = "https://bysekoze.com";
+    private mirrorDomains: string[] = ["https://bysekoze.com", "https://bysekoze.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://bysekoze.com/"};
 
     getSettings(): Settings {
         return {

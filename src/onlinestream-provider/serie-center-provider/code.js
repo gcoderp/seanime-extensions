@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://illvid.net";
-        this.mirrorDomains = ["https://illvid.net", "https://illvid.net"];
-        this.defaultHeaders = { "Referer": "https://illvid.net/" };
+        this.mainUrl = "https://turbovid.co";
+        this.mirrorDomains = ["https://turbovid.co", "https://turbovid.co"];
+        this.defaultHeaders = { "Referer": "https://turbovid.co/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "iframe#iframe";
+        const itemSelector = "div.items > div.item > a";
         const titleSelector = "meta[name=csrf-token]";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "iframe#iframe";
-        const epNumSelector = "script:containsData(\uff9f\u03c9\uff9f\uff89= /\uff40\uff4d\u00b4\uff09\uff89 ~\u253b\u2501\u253b)";
+        const epSelector = "div.items > div.item > a";
+        const epNumSelector = "div.col-data > p";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "iframe#iframe";
+        const serverSelector = "meta[name=csrf-token]";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://animedekho.tv/aaa/myth";
-    private mirrorDomains: string[] = ["https://animedekho.tv/aaa/myth", "https://animedekho.tv", "https://animedekho.tv", "https://animedekho.tv/aaa/get/play.php"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://animedekho.tv/aaa/myth/"};
+    private mainUrl: string = "https://z.awstream.net";
+    private mirrorDomains: string[] = ["https://z.awstream.net", "https://z.awstream.net"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://z.awstream.net/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/wp-json/dgt/v1/episodes?series={query}".replace("{query}", queryEncoded);
+        const searchPath = "/player/index.php?data={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "[data-snapshot]";
+        const itemSelector = "script:containsData(function(p,a,c,k,e,d))";
         const titleSelector = "meta[name=description]";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "[data-snapshot]";
-        const epNumSelector = "[data-tabs]";
+        const epSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const epNumSelector = "[data-snapshot]";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "[data-snapshot]";
+        const serverSelector = "script:containsData(function(p,a,c,k,e,d))";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

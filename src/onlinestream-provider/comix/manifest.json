@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "en",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/comix/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS. Licence: upstream repository declares no detectable licence; distributed with attribution only.",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/comix/code.js",
   "icon": "https://comix.to/assets/uploads/35595e3de3c99889c1bd2c56f3e3714fc0c457.png"
 }

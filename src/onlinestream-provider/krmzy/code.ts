@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://iplayerhls.com";
-    private mirrorDomains: string[] = ["https://iplayerhls.com", "https://iplayerhls.com", "https://iplayerhls.com/e"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://iplayerhls.com/"};
+    private mainUrl: string = "https://v.turkvearab.com";
+    private mirrorDomains: string[] = ["https://v.turkvearab.com", "https://v.turkvearab.com", "https://v.turkvearab.com/embed-"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://v.turkvearab.com/"};
 
     getSettings(): Settings {
         return {

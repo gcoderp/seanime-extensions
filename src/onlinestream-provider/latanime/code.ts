@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://hexload.com";
-    private mirrorDomains: string[] = ["https://hexload.com", "https://hexload.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://hexload.com/"};
+    private mainUrl: string = "https://latanime.org";
+    private mirrorDomains: string[] = ["https://latanime.org", "https://latanime.org"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://latanime.org/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/download?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/animes?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

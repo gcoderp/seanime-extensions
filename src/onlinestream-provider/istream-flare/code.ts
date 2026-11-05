@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://istreamcdn.com";
-    private mirrorDomains: string[] = ["https://istreamcdn.com", "https://istreamcdn.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://istreamcdn.com/"};
+    private mainUrl: string = "https://exposeworld.art";
+    private mirrorDomains: string[] = ["https://exposeworld.art", "https://exposeworld.art"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://exposeworld.art/"};
 
     getSettings(): Settings {
         return {

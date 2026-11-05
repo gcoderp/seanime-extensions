@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "en",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/libri-vox-audiobook/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS. Licence: upstream repository declares no detectable licence; distributed with attribution only.",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/libri-vox-audiobook/code.js",
   "icon": "https://librivox.org/wp-content/themes/librivox/images/librivox-logo.png"
 }

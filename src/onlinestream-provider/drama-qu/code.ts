@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "";
-    private mirrorDomains: string[] = [""];
-    private defaultHeaders: Record<string, string> = {};
+    private mainUrl: string = "https://vidhide.org";
+    private mirrorDomains: string[] = ["https://vidhide.org", "https://s1.vidhide.org/api-config", "https://vidhide.org", "https://vidhide.org"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidhide.org/"};
 
     getSettings(): Settings {
         return {

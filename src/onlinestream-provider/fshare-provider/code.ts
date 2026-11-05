@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = "#limit-name > div:nth-child(2)";
-        const epNumSelector = "div.data > h3 > a";
+        const epNumSelector = "#content > div > div.post";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
