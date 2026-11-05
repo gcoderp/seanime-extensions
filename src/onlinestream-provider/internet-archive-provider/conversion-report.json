@@ -2,10 +2,10 @@
   "plugin_name": "InternetArchiveProvider",
   "original_plugin_id": "InternetArchiveProvider",
   "original_author": "Luna712",
-  "original_repository": "https://github.com/Luna712/Luna712-CloudStream-Extensions",
-  "original_download_url": "https://raw.githubusercontent.com/Luna712/Luna712-CloudStream-Extensions/builds/InternetArchiveProvider.cs3",
-  "original_version": 22,
-  "sha256_checksum": "dd70f0e9d706d9885e3ce268b426eb24277399adb01c6e2ef1fd1528398686a3",
+  "original_repository": "https://github.com/recloudstream/extensions",
+  "original_download_url": "https://raw.githubusercontent.com/recloudstream/extensions/builds/InternetArchiveProvider.cs3",
+  "original_version": 1,
+  "sha256_checksum": "54f3de560bebeff2e4a10d1163f6146313c59061d21c3a230125611f01b531eb",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-04T10:29:55.662289+00:00",
+  "conversion_timestamp": "2026-11-05T03:40:22.579065+00:00",
   "passed": false
 }

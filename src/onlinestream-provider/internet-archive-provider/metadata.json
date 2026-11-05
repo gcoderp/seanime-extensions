@@ -2,14 +2,14 @@
   "extensionId": "internet-archive-provider",
   "originalPluginName": "InternetArchiveProvider",
   "originalInternalName": "InternetArchiveProvider",
-  "originalVersion": 22,
-  "originalDownloadUrl": "https://raw.githubusercontent.com/Luna712/Luna712-CloudStream-Extensions/builds/InternetArchiveProvider.cs3",
-  "originalRepositoryUrl": "https://github.com/Luna712/Luna712-CloudStream-Extensions",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/recloudstream/extensions/builds/InternetArchiveProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/recloudstream/extensions",
   "originalAuthors": [
     "Luna712"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "dd70f0e9d706d9885e3ce268b426eb24277399adb01c6e2ef1fd1528398686a3",
+  "cs3Sha256": "54f3de560bebeff2e4a10d1163f6146313c59061d21c3a230125611f01b531eb",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,7 +17,5 @@
   "reviewReasons": [
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-04T10:29:59.783506+00:00",
-  "licenseNotice": true,
-  "republishedAt": "2026-11-05T03:35:53.673096+00:00"
+  "convertedAt": "2026-11-05T03:40:24.798914+00:00"
 }
