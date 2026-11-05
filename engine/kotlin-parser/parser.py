@@ -130,6 +130,29 @@ def _finish_search_path(literal: str, param_key: str = None) -> str:
     return value + "?q={query}"
 
 
+_SEARCH_TOKENS = ("search", "find", "?q=", "?s=", "keyword", "query=")
+_PAGINATION = re.compile(r"page=|/page/", re.I)
+_PLAYER = re.compile(r"player|embed|proxy|ajax|csrf", re.I)
+
+
+def _candidate_score(literal: str) -> int:
+    """How likely this string literal is the search endpoint rather than a homepage,
+    a pagination link or an embed player URL."""
+    low = literal.lower()
+    score = 0
+    if any(token in low for token in _SEARCH_TOKENS):
+        score += 100
+    if "{query}" in literal or "$query" in literal or "${query}" in literal:
+        score += 40
+    if _PAGINATION.search(low):
+        score -= 60
+    if _PLAYER.search(low):
+        score -= 50
+    if literal.strip() in ("/", ""):
+        score -= 100
+    return score
+
+
 def _extract_search_url(block: str, generic_pattern: str) -> str:
     """Finds the search URL a provider uses, across Kotlin and JADX-decompiled Java.
 
@@ -152,22 +175,26 @@ def _extract_search_url(block: str, generic_pattern: str) -> str:
         if match:
             param_key = match.group(1)
 
-    # 1. Kotlin string template anchored on $mainUrl
-    match = re.search(r'"\$mainUrl([^"]*)"', block)
-    if match and match.group(1).strip():
-        return _finish_search_path(match.group(1), param_key)
-
-    # 2. Java/Kotlin concatenation: this.mainUrl + "/search?q=" + str
+    # Collect every plausible candidate instead of taking the first one. The search block is
+    # often the whole file (method extraction can fail on decompiled Java), and the first
+    # `$mainUrl` literal in a provider file is usually the homepage -- which produced
+    # "/{query}" for 79 bundles and a pagination link for 24 more.
+    candidates = []
+    for match in re.finditer(r'"\$mainUrl([^"]*)"', block):
+        if match.group(1).strip():
+            candidates.append(match.group(1))
     # JADX renders the property as a field (this.mainUrl) or as a getter (getMainUrl())
-    match = re.search(r'(?:this\.)?(?:mainUrl|getMainUrl\(\))\s*\+\s*"([^"]*)"', block)
-    if match and match.group(1).strip():
-        return _finish_search_path(match.group(1), param_key)
-
-    # 3. Any literal in the search block that looks like a search path
+    for match in re.finditer(r'(?:this\.)?(?:mainUrl|getMainUrl\(\))\s*\+\s*"([^"]*)"', block):
+        if match.group(1).strip():
+            candidates.append(match.group(1))
     for literal in re.findall(r'"([^"]{2,160})"', block):
-        lowered = literal.lower()
-        if literal.startswith("/") and any(token in lowered for token in ("search", "?q=", "?s=", "query=", "find", "keyword")):
-            return _finish_search_path(literal, param_key)
+        if literal.startswith("/") and ("{query}" in literal or "$query" in literal or "${query}" in literal):
+            candidates.append(literal)
+
+    if candidates:
+        best = max(candidates, key=_candidate_score)
+        if _candidate_score(best) > 0:
+            return _finish_search_path(best, param_key)
 
     if param_key:
         return f"/search?{param_key}={{query}}"

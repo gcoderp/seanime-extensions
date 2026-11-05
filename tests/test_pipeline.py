@@ -148,6 +148,42 @@ def test_search_url_shapes_across_kotlin_and_java():
         assert extract(source, generic) == expected, source
 
 
+def test_search_url_ranks_candidates_instead_of_taking_the_first():
+    """Real shapes from the 295 published bundles, where the first literal is the wrong one.
+
+    Taking the first `$mainUrl` literal produced "/{query}" for 79 extensions and a
+    pagination link for 24 more, because the search block is often the whole file and the
+    first URL in a provider file is its homepage.
+    """
+    parser_mod = load_mod("parser", "engine/kotlin-parser/parser.py")
+    extract = parser_mod._extract_search_url
+    generic = "/search?keyword={query}"
+
+    cases = [
+        # homepage literal first, real search second
+        ('app.get("$mainUrl/").document\nval doc = app.get("$mainUrl/search?q=$query").document',
+         "/search?q={query}"),
+        # pagination literal present alongside the search one
+        ('app.get("$mainUrl/page/$query")\nval d = app.get("$mainUrl/search?keyword=$query")',
+         "/search?keyword={query}"),
+        # JADX whole file: homepage call, then the search call
+        ('app.get(this.mainUrl + "/", null, null, null);\napp.get(this.mainUrl + "/search?q=" + str, null, null, null);',
+         "/search?q={query}"),
+        # nothing but a pagination link -> do not pretend it is a search
+        ('app.get("$mainUrl/anime/page/$query")', generic),
+        # nothing but the homepage -> do not pretend it is a search
+        ('app.get("$mainUrl/")', generic),
+        # an embed player is not a search endpoint
+        ('app.get("$mainUrl/player/index.php?data=$query")', generic),
+        # a genuine path-based search
+        ('app.get("$mainUrl/anime/$query")', "/anime/{query}"),
+        # a search API
+        ('app.get("$mainUrl/api/v1/catalog/home?&q=$query")', "/api/v1/catalog/home?&q={query}"),
+    ]
+    for source, expected in cases:
+        assert extract(source, generic) == expected, source
+
+
 # --------------------------------------------------------------------------- codegen
 
 
