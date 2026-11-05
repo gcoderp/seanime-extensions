@@ -105,6 +105,76 @@ def _is_meta_selector(selector: str) -> bool:
     return bool(_META_SELECTOR_RE.match(lowered))
 
 
+_INTERP = re.compile(r"\$\{[^}]*\}|\$query\b|\$q\b")
+
+
+def _finish_search_path(literal: str, param_key: str = None) -> str:
+    """Normalises a captured path fragment into a URL pattern containing {query}.
+
+    `param_key` is the name the provider passes the query under (mapOf("q" to query)); it is
+    the only reliable source when the path itself carries no placeholder.
+    """
+    value = _INTERP.sub("{query}", literal)
+    # JADX leaves the Kotlin method call behind: "/search/$query.encodeUri()}"
+    value = re.sub(r"\.encodeU\w*\(\)\}?", "", value)
+    value = value.strip()
+
+    if "{query}" in value:
+        return value
+    if param_key:
+        return value + ("&" if "?" in value else "?") + f"{param_key}={{query}}"
+    if value.endswith(("=", "/")):
+        return value + "{query}"
+    if "?" in value:
+        return value + "&q={query}"
+    return value + "?q={query}"
+
+
+def _extract_search_url(block: str, generic_pattern: str) -> str:
+    """Finds the search URL a provider uses, across Kotlin and JADX-decompiled Java.
+
+    The old version only recognised one Kotlin shape, `app.get("$mainUrl...")`. JADX output
+    never looks like that -- it becomes `app.get(this.mainUrl + "/search?q=" + str, ...)` --
+    so every strategy-2 provider silently fell back to `/search?keyword={query}`, which 404s
+    on most sites. That single miss affected 365 of 383 bundles.
+    """
+    if not block:
+        return generic_pattern
+
+    # A query parameter map is the strongest hint when the path has no placeholder:
+    # params = mapOf("q" to query)  /  ImmutableMap.of("q", str)
+    param_key = None
+    match = re.search(r'mapOf\(\s*"([\w\[\]]+)"\s+to\s+', block)
+    if match:
+        param_key = match.group(1)
+    else:
+        match = re.search(r'(?:ImmutableMap|HashMap|LinkedHashMap)\.of\(\s*"([\w\[\]]+)"\s*,\s*', block)
+        if match:
+            param_key = match.group(1)
+
+    # 1. Kotlin string template anchored on $mainUrl
+    match = re.search(r'"\$mainUrl([^"]*)"', block)
+    if match and match.group(1).strip():
+        return _finish_search_path(match.group(1), param_key)
+
+    # 2. Java/Kotlin concatenation: this.mainUrl + "/search?q=" + str
+    # JADX renders the property as a field (this.mainUrl) or as a getter (getMainUrl())
+    match = re.search(r'(?:this\.)?(?:mainUrl|getMainUrl\(\))\s*\+\s*"([^"]*)"', block)
+    if match and match.group(1).strip():
+        return _finish_search_path(match.group(1), param_key)
+
+    # 3. Any literal in the search block that looks like a search path
+    for literal in re.findall(r'"([^"]{2,160})"', block):
+        lowered = literal.lower()
+        if literal.startswith("/") and any(token in lowered for token in ("search", "?q=", "?s=", "query=", "find", "keyword")):
+            return _finish_search_path(literal, param_key)
+
+    if param_key:
+        return f"/search?{param_key}={{query}}"
+
+    return generic_pattern
+
+
 class KotlinJavaASTParser:
     """Extracts structural AST semantics from Cloudstream Kotlin source or JADX Java decompilation."""
 
@@ -156,13 +226,8 @@ class KotlinJavaASTParser:
         load_block = raw_methods.get("load", source_code)
         links_block = raw_methods.get("loadLinks", source_code)
 
-        # Discover search URL pattern
-        search_url_m = re.search(r'app\.get\(\s*"\$mainUrl([^"]+)"', search_block)
-        if search_url_m:
-            raw_p = search_url_m.group(1)
-            search_url_pattern = re.sub(r"\$\{?query\}?", "{query}", raw_p)
-        else:
-            search_url_pattern = generic["search_url_pattern"]
+        # Discover search URL pattern (Kotlin templates and JADX Java concatenation)
+        search_url_pattern = _extract_search_url(search_block, generic["search_url_pattern"])
 
         # Discover Jsoup selectors in search, load, loadLinks
         search_sels = re.findall(r'\.select(?:First)?\(\s*"([^"]+)"\s*\)', search_block)

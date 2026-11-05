@@ -99,6 +99,55 @@ def test_site_url_guessing_ignores_player_hosts():
     assert guess == "https://anitaku.pe"
 
 
+JADX_SEARCH = """
+public class XProvider extends MainAPI {
+    public XProvider() {
+        this.mainUrl = "https://example-site.com";
+    }
+
+    public Object search(String str, Continuation<? super List<SearchResponse>> continuation) {
+        NiceResponse response = this.app.get(this.mainUrl + "/search?q=" + str, null, null, null);
+        Document document = response.getDocument();
+        Elements items = document.select("div.movie-item");
+        return new ArrayList();
+    }
+}
+"""
+
+
+def test_search_url_is_recovered_from_jadx_java():
+    """JADX output uses concatenation, not a Kotlin template.
+
+    The old extractor only matched `app.get("$mainUrl...")`, so every strategy-2 provider
+    fell back to "/search?keyword={query}" -- which 404s on most sites. That was 365 of 383
+    bundles in the live repository.
+    """
+    parser_mod = load_mod("parser", "engine/kotlin-parser/parser.py")
+    ast = parser_mod.KotlinJavaASTParser().parse_source(JADX_SEARCH)
+    assert ast.search_url_pattern == "/search?q={query}"
+    assert ast.search_item_selector == "div.movie-item"
+    assert ast.main_url == "https://example-site.com"
+
+
+def test_search_url_shapes_across_kotlin_and_java():
+    parser_mod = load_mod("parser", "engine/kotlin-parser/parser.py")
+    extract = parser_mod._extract_search_url
+    generic = "/search?keyword={query}"
+
+    cases = [
+        ('val d = app.get("$mainUrl/search?q=$query")', "/search?q={query}"),
+        ('app.get("$mainUrl/search/${query.encodeUri()}")', "/search/{query}"),
+        ('app.get("$mainUrl/?s=$query")', "/?s={query}"),
+        ('app.get(this.mainUrl + "/search?q=" + str, null, null, null);', "/search?q={query}"),
+        ('app.get(mainUrl + "/search", null, null, ImmutableMap.of("q", str))', "/search?q={query}"),
+        ('app.get("$mainUrl/search", params = mapOf("keyword" to query))', "/search?keyword={query}"),
+        ('app.get("$mainUrl/videos?fields=id,title&search=${query.encodeUri()}")', "/videos?fields=id,title&search={query}"),
+        ('val x = somethingUnrelated(1)', generic),
+    ]
+    for source, expected in cases:
+        assert extract(source, generic) == expected, source
+
+
 # --------------------------------------------------------------------------- codegen
 
 
