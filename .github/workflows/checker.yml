@@ -39,7 +39,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: checker
+  group: repo-writes
   cancel-in-progress: false
 
 jobs:
@@ -89,16 +89,13 @@ jobs:
           retention-days: 30
 
       - name: Commit report
+        env:
+          GIT_AUTHOR_NAME: "seanime-checker[bot]"
+          GIT_AUTHOR_EMAIL: "seanime-checker@users.noreply.github.com"
         run: |
           set -euo pipefail
-          git config user.name "seanime-checker[bot]"
-          git config user.email "seanime-checker@users.noreply.github.com"
-          git add working-extensions.json
-          if git diff --cached --quiet; then
-            echo "No change in working-extensions.json."
-            exit 0
-          fi
           WORKING=$(python3 -c "import json;print(json.load(open('working-extensions.json'))['summary']['working'])")
           CHECKED=$(python3 -c "import json;print(json.load(open('working-extensions.json'))['summary']['checked'])")
-          git commit -m "chore(checker): ${WORKING}/${CHECKED} extensions verified against AniList"
-          git push
+          bash scripts/commit-and-push.sh \
+            "chore(checker): ${WORKING}/${CHECKED} extensions verified against AniList" \
+            working-extensions.json

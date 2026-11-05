@@ -18,7 +18,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: heal
+  group: repo-writes
   cancel-in-progress: false
 
 jobs:
@@ -44,6 +44,13 @@ jobs:
       - name: Upgrade generated bundles
         run: python3 scripts/migrate-contract.py
 
+      # Brings every manifest/metadata URL in line with config/settings.json and re-triages
+      # bundles against the current licence policy. A no-op when nothing changed, so it is
+      # safe to run every time -- and it means renaming the repository or changing
+      # github_owner is fixed by this workflow rather than by a local script.
+      - name: Re-sync manifests, reports, marketplace and README
+        run: python3 scripts/reindex.py
+
       - name: Verify the repository is clean
         run: |
           set -euo pipefail
@@ -53,14 +60,11 @@ jobs:
           python3 scripts/check_schema.py
 
       - name: Commit the healed bundles
+        env:
+          GIT_AUTHOR_NAME: "seanime-heal[bot]"
+          GIT_AUTHOR_EMAIL: "seanime-heal@users.noreply.github.com"
         run: |
           set -euo pipefail
-          git config user.name "seanime-heal[bot]"
-          git config user.email "seanime-heal@users.noreply.github.com"
-          git add -A src generated marketplace.json reports README.md manifest-urls.txt
-          if git diff --cached --quiet; then
-            echo "Nothing to heal: the repository already matches the current contract."
-            exit 0
-          fi
-          git commit -m "chore(heal): upgrade generated bundles to the current Seanime contract"
-          git push
+          bash scripts/commit-and-push.sh \
+            "chore(heal): upgrade generated bundles to the current Seanime contract" \
+            src generated marketplace.json reports README.md manifest-urls.txt config/license-cache.json

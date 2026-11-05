@@ -148,16 +148,12 @@ jobs:
           name: converted-bundles
 
       - name: Commit validated changes
+        env:
+          GIT_AUTHOR_NAME: "seanime-converter[bot]"
+          GIT_AUTHOR_EMAIL: "seanime-converter@users.noreply.github.com"
         run: |
           set -euo pipefail
-          git config user.name "seanime-converter[bot]"
-          git config user.email "seanime-converter@users.noreply.github.com"
-          git add -A src generated marketplace.json reports README.md manifest-urls.txt
-          [ -f config/license-cache.json ] && git add config/license-cache.json
-          if git diff --cached --quiet; then
-            echo "No validated changes to publish."
-            exit 0
-          fi
           COUNT=$(python3 -c "import json;print(len(json.load(open('marketplace.json'))))")
-          git commit -m "chore(convert): publish ${COUNT} validated extension(s)"
-          git push
+          bash scripts/commit-and-push.sh \
+            "chore(convert): publish ${COUNT} validated extension(s)" \
+            src generated marketplace.json reports README.md manifest-urls.txt config/license-cache.json
