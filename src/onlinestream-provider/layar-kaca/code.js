@@ -390,13 +390,13 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://videonode.de";
-        this.mirrorDomains = ["https://videonode.de", "https://videonode.de", "https://videonode.de", "https://videonode.de/api.php"];
-        this.defaultHeaders = { "Referer": "https://videonode.de/" };
+        this.mainUrl = "https://playcdn.de";
+        this.mirrorDomains = ["https://playcdn.de", "https://playcdn.de", "https://playcdn.de", "https://playcdn.de/verify"];
+        this.defaultHeaders = { "Referer": "https://playcdn.de/" };
     }
     getSettings() {
         return {
-            episodeServers: ["filemoon", "okru"],
+            episodeServers: ["dood", "filemoon", "streamwish", "streamtape", "vidhide", "voe"],
             supportsDub: false,
         };
     }
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "a#openNow";
+        const itemSelector = ".entry-content p";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,7 +458,7 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.gallery-grid article a";
+        const epSelector = ".wp-content p";
         const epNumSelector = ".epl-num, .ep-num";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

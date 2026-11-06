@@ -4,8 +4,8 @@
   "original_author": "NivinCNC",
   "original_repository": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "original_download_url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CastleTvProvider.cs3",
-  "original_version": 41,
-  "sha256_checksum": "fc1308cc9ad0a53b021e757338435c507800ef846b5662d072e6e81766be6db0",
+  "original_version": 47,
+  "sha256_checksum": "205d9af18856f3732790452fe5d3f60c10c4a35175a076d5e604406bc663f183",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-05T13:42:58.921509+00:00",
+  "conversion_timestamp": "2026-11-06T13:26:57.996115+00:00",
   "passed": false
 }

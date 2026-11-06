@@ -19,5 +19,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-05T13:43:46.407434+00:00"
+  "convertedAt": "2026-11-06T13:27:46.150313+00:00"
 }

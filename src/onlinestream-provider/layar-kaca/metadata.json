@@ -2,16 +2,15 @@
   "extensionId": "layar-kaca",
   "originalPluginName": "LayarKaca",
   "originalInternalName": "LayarKaca",
-  "originalVersion": 16,
-  "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/LayarKaca.cs3",
-  "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarKaca.cs3",
+  "originalRepositoryUrl": "https://github.com/Asm0d3usX/CloudX",
   "originalAuthors": [
-    "kraptor",
-    "Phisher98",
-    "Hexated"
+    "Hexated",
+    "Asm0d3usX"
   ],
-  "license": "UNKNOWN",
-  "cs3Sha256": "d0a3842a9fe05b428a9dbe41def7bd502e4b1ab5c1f8ea911f8ff48da3cc45c8",
+  "license": "MIT",
+  "cs3Sha256": "e7a563424684c5c8c1e19781ef5e0eafafbfc8c1516acdda45af354d09dea7d1",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -19,5 +18,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-05T13:44:31.320046+00:00"
+  "convertedAt": "2026-11-06T13:26:34.660336+00:00"
 }

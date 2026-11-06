@@ -2,14 +2,14 @@
   "extensionId": "yacintv",
   "originalPluginName": "Yacintv",
   "originalInternalName": "Yacintv",
-  "originalVersion": 2,
+  "originalVersion": 3,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Yacintv.cs3",
   "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
   "originalAuthors": [
     "Abodabodd"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "001227cc7808356761885395ed677bfb523713385c0349a2f5b40cf6b13f36a3",
+  "cs3Sha256": "b173b63d683d6fe54eadb9d6b4cabc3f1a096f318171f009775399601be6cf4b",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-05T13:42:01.916099+00:00"
+  "convertedAt": "2026-11-06T13:26:03.258369+00:00"
 }

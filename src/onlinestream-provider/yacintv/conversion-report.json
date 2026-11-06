@@ -4,8 +4,8 @@
   "original_author": "Abodabodd",
   "original_repository": "https://github.com/Abodabodd/re-3arabi",
   "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Yacintv.cs3",
-  "original_version": 2,
-  "sha256_checksum": "001227cc7808356761885395ed677bfb523713385c0349a2f5b40cf6b13f36a3",
+  "original_version": 3,
+  "sha256_checksum": "b173b63d683d6fe54eadb9d6b4cabc3f1a096f318171f009775399601be6cf4b",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-05T13:42:01.032634+00:00",
+  "conversion_timestamp": "2026-11-06T13:26:02.330687+00:00",
   "passed": false
 }

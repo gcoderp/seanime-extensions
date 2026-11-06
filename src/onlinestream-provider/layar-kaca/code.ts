@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://videonode.de";
-    private mirrorDomains: string[] = ["https://videonode.de", "https://videonode.de", "https://videonode.de", "https://videonode.de/api.php"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://videonode.de/"};
+    private mainUrl: string = "https://playcdn.de";
+    private mirrorDomains: string[] = ["https://playcdn.de", "https://playcdn.de", "https://playcdn.de", "https://playcdn.de/verify"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://playcdn.de/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "okru"],
+            episodeServers: ["dood", "filemoon", "streamwish", "streamtape", "vidhide", "voe"],
             supportsDub: false,
         };
     }
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "a#openNow";
+        const itemSelector = ".entry-content p";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,7 +495,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.gallery-grid article a";
+        const epSelector = ".wp-content p";
         const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

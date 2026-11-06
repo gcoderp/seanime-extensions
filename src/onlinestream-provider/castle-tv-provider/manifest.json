@@ -1,9 +1,9 @@
 {
   "id": "castle-tv-provider",
   "name": "CastleTvProvider",
-  "description": "Castle TV Movies and Series Provider",
+  "description": "Castle TV Movies and Series Provider (Play in VLC or MPV for multi-audio support)",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/castle-tv-provider/manifest.json",
-  "version": "1.41.0",
+  "version": "1.47.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",
