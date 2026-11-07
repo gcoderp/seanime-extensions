@@ -10,7 +10,7 @@
     "Dilip"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "aeb7fd17b95a9286d1b7b54f7c21db2c15e577f342ee9e2dbb18a28562e03e9b",
+  "cs3Sha256": "faba3cf69004cdb1f2b5b5e2f052920871de23076cb0ba743baa39623b0892ab",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-06T13:24:32.250197+00:00"
+  "convertedAt": "2026-11-07T12:02:23.624429+00:00"
 }

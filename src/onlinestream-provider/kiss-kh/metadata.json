@@ -12,11 +12,12 @@
   "license": "UNKNOWN",
   "cs3Sha256": "8b34a684dfdec534d2bfca1a747ac3babdeeda183cdadbde49e67e62244da7c7",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-06T13:28:05.611348+00:00"
+  "convertedAt": "2026-11-07T12:05:10.963612+00:00"
 }

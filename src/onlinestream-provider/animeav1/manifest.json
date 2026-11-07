@@ -3,7 +3,7 @@
   "name": "Animeav1",
   "description": "(Mexican) Anime Extension",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/animeav1/manifest.json",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

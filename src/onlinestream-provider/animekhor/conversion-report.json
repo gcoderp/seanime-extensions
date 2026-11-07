@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animekhor.cs3",
   "original_version": 13,
-  "sha256_checksum": "68738e6a130f0b0037dc726b907f77d7dcaf08c55a0b1162b46dc8418d562d68",
+  "sha256_checksum": "6a76a8e82c31471297b40fe068a334b5316f53438c625189b658acc6ed0330da",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:24:12.401964+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:08.278221+00:00",
   "passed": false
 }

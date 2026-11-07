@@ -1,12 +1,12 @@
 {
   "plugin_name": "LayarKaca",
   "original_plugin_id": "LayarKaca",
-  "original_author": "Hexated, Asm0d3usX",
-  "original_repository": "https://github.com/Asm0d3usX/CloudX",
-  "original_download_url": "https://raw.githubusercontent.com/Asm0d3usX/CloudX/builds/LayarKaca.cs3",
-  "original_version": 1,
-  "sha256_checksum": "e7a563424684c5c8c1e19781ef5e0eafafbfc8c1516acdda45af354d09dea7d1",
-  "license_spdx": "MIT",
+  "original_author": "kraptor, Phisher98, Hexated",
+  "original_repository": "https://github.com/Kraptor123/Cs-Karma",
+  "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/LayarKaca.cs3",
+  "original_version": 16,
+  "sha256_checksum": "d0a3842a9fe05b428a9dbe41def7bd502e4b1ab5c1f8ea911f8ff48da3cc45c8",
+  "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
   "source_recovery_status": "DEX_FALLBACK",
@@ -24,13 +24,15 @@
   "review_reasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "license_notice": false,
+  "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
+    "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
     "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+    "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:26:33.631553+00:00",
+  "conversion_timestamp": "2026-11-07T12:05:12.280471+00:00",
   "passed": false
 }

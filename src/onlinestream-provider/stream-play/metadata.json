@@ -10,7 +10,7 @@
     "Hexated"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "1e4c77492069b3b8da2c2825c4d40e813436c0c2feed73b193b264ba4e1736ea",
+  "cs3Sha256": "a63bd63f0203db0c62ed0e85a1d3f039a9e98d7cdc9fa79f233af6cce825f805",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-06T13:25:06.508384+00:00"
+  "convertedAt": "2026-11-07T12:02:51.230959+00:00"
 }

@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/DoraBash.cs3",
   "original_version": 14,
-  "sha256_checksum": "ced3f015d0ae0023fe93327a044f6646e40a8ddedc744a2b8896984901b69b13",
+  "sha256_checksum": "cd522eac1c66f7bb1f5e41af25f780f1f8443290b147361f02f2a4ad5b366177",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:24:28.710253+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:20.644542+00:00",
   "passed": false
 }

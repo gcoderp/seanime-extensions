@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/SuperStream.cs3",
   "original_version": 38,
-  "sha256_checksum": "7104a9f6efcb35b091e124ea5562cdda9ec50361a6423f559fdeab8df4da3d14",
+  "sha256_checksum": "15a3d297405c5e7b799294d0bc59f9e5672051295a928e3904a9fcdd0563810a",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:25:08.404555+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:52.620335+00:00",
   "passed": false
 }

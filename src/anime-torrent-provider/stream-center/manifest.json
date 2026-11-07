@@ -3,7 +3,7 @@
   "name": "StreamCenter",
   "description": "Film, Serie TV, Anime e TV in un unico posto.",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stream-center/manifest.json",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "author": "Italiani",
   "type": "anime-torrent-provider",
   "language": "typescript",

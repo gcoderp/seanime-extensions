@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Goojara.cs3",
   "original_version": 5,
-  "sha256_checksum": "029480686a55cef658fa3d1ef62affc3995738b3e1af0e943074b6c0ecdf5c48",
+  "sha256_checksum": "b47524ba95510052025f3f6595d63b5527ce8547b9c2a085ed8680a9ba1932d7",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:24:34.051038+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:24.935487+00:00",
   "passed": false
 }

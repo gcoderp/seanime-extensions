@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anizone.cs3",
   "original_version": 10,
-  "sha256_checksum": "37f9a3068a45855b94194b8cc569203ad8e805b47b0770dd628642c72ca15bc6",
+  "sha256_checksum": "f8aff2e433b84bdb6443ad6cc8962dc44c99db60f12d7eda407aad435174843a",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:24:20.688910+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:14.368190+00:00",
   "passed": false
 }

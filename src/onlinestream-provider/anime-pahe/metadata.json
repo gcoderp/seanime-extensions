@@ -9,7 +9,7 @@
     "Cloudburst,Lorem Ipsum,Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "81fec4589883cc5066e1d15b5a447d79178f3fc14eba71679d5cd92fad51817e",
+  "cs3Sha256": "c2655d7ff019fb789ee12b2f5b7215c86fdf51b0446bfc416c6868758f012b92",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-06T13:24:15.283706+00:00"
+  "convertedAt": "2026-11-07T12:02:10.280571+00:00"
 }

@@ -2,14 +2,14 @@
   "extensionId": "animeav1",
   "originalPluginName": "Animeav1",
   "originalInternalName": "Animeav1",
-  "originalVersion": 9,
+  "originalVersion": 10,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animeav1.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "6a45f7ccbd3ff42805a4f5e3051154b2d2ba172c8d74ae5f0ee4b9d6f8c1ae80",
+  "cs3Sha256": "afed271eafdfe9e5c976f2997c98f19809f35292ea68b260502b380ed2c4330d",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-06T13:24:09.505289+00:00"
+  "convertedAt": "2026-11-07T12:02:06.232671+00:00"
 }

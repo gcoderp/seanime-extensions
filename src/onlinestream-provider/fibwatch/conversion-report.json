@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Fibwatch.cs3",
   "original_version": 12,
-  "sha256_checksum": "75a26f3231e8b224523d5281d23a564a523b5ab68d8a1524a1073c71da240b0f",
+  "sha256_checksum": "1dce7cc9600923d1bae707ed6d71d64de14032af5f58b802317d498e87828011",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:24:30.522475+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:22.289039+00:00",
   "passed": false
 }

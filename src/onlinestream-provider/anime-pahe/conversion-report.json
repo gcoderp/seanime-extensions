@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AnimePahe.cs3",
   "original_version": 48,
-  "sha256_checksum": "81fec4589883cc5066e1d15b5a447d79178f3fc14eba71679d5cd92fad51817e",
+  "sha256_checksum": "c2655d7ff019fb789ee12b2f5b7215c86fdf51b0446bfc416c6868758f012b92",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:24:14.330178+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:09.595216+00:00",
   "passed": false
 }

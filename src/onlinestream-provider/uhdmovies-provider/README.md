@@ -9,7 +9,7 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 - **Language:** `en`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `58afe85d2940da4416c622be373fe75c4723c1377137e7d13ed63d19ee0b214d`
+- **CS3 SHA-256:** `13ef29ef23bd471979edcb844d8f9eb93301a2530e007d5a519a971b1c6642f2`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

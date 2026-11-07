@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://dorabash.in";
-        this.mirrorDomains = ["https://dorabash.in", "https://dorabash.in", "https://dorabash.in"];
-        this.defaultHeaders = { "Referer": "https://dorabash.in/" };
+        this.mainUrl = "https://playhydrax.com";
+        this.mirrorDomains = ["https://playhydrax.com", "https://playhydrax.com", "https://playhydrax.com"];
+        this.defaultHeaders = { "Referer": "https://playhydrax.com/" };
     }
     getSettings() {
         return {

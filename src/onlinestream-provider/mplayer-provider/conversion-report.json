@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/MPlayerProvider.cs3",
   "original_version": 9,
-  "sha256_checksum": "28d6afc56b0eb1fe82efeafda9f61ebe5bb77167407deb47b41785405d7dcf2d",
+  "sha256_checksum": "5a928bcb46883cbe4cd66714e47d156b362fb534b401632efe8202211cc9c8d4",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:24:51.203311+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:39.391908+00:00",
   "passed": false
 }

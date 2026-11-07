@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Pinoymoviepedia.cs3",
   "original_version": 5,
-  "sha256_checksum": "8f66633dcf949cd829108c4037e3ec3b12375e7d20957d088c0f50ea6bbf1f34",
+  "sha256_checksum": "c817e170c473567ab49d6ba9a138a63fa3a46d08a48bab30dec949a37bbb09c3",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:24:58.157223+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:44.866676+00:00",
   "passed": false
 }

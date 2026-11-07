@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://animeav1.com";
-    private mirrorDomains: string[] = ["https://animeav1.com", "https://animeav1.com", "https://animeav1.com/media", "https://cdn.animeav1.com/screenshots"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://animeav1.com/"};
+    private mainUrl: string = "https://api.themoviedb.org";
+    private mirrorDomains: string[] = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/search"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
 
     getSettings(): Settings {
         return {

@@ -3,7 +3,7 @@
   "name": "Hdmovie2",
   "description": "Hdmovie2",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hdmovie2/manifest.json",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

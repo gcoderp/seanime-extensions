@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anilight.cs3",
   "original_version": 4,
-  "sha256_checksum": "15a8d27b9e7137cd037c05952e6009b3065cae0503920fd03b2fad090208845c",
+  "sha256_checksum": "441ec079b275f6ea03cb92701990d08e7c54f572e839ce8b42dc6345626aec3c",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-06T13:24:07.737558+00:00",
+  "conversion_timestamp": "2026-11-07T12:02:04.733077+00:00",
   "passed": false
 }

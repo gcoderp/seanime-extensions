@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://dorabash.in";
-    private mirrorDomains: string[] = ["https://dorabash.in", "https://dorabash.in", "https://dorabash.in"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://dorabash.in/"};
+    private mainUrl: string = "https://playhydrax.com";
+    private mirrorDomains: string[] = ["https://playhydrax.com", "https://playhydrax.com", "https://playhydrax.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://playhydrax.com/"};
 
     getSettings(): Settings {
         return {

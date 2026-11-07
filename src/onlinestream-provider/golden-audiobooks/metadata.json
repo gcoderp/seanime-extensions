@@ -10,7 +10,7 @@
     "Anonymous Contributor"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "21a6b739c49364613fd8c8f38c5fc53f9fdeb914c946002f36ef3339faa5b395",
+  "cs3Sha256": "50d9cba4cdea8e36da6f1ed198fa57914e005a7b6aacd101f53aa80afd8c194a",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-06T13:24:34.049476+00:00"
+  "convertedAt": "2026-11-07T12:02:24.934109+00:00"
 }

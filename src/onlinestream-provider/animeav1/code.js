@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://animeav1.com";
-        this.mirrorDomains = ["https://animeav1.com", "https://animeav1.com", "https://animeav1.com/media", "https://cdn.animeav1.com/screenshots"];
-        this.defaultHeaders = { "Referer": "https://animeav1.com/" };
+        this.mainUrl = "https://api.themoviedb.org";
+        this.mirrorDomains = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/search"];
+        this.defaultHeaders = { "Referer": "https://api.themoviedb.org/" };
     }
     getSettings() {
         return {
