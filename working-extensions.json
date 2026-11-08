@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T15:21:25.656Z",
+  "generatedAt": "2026-11-08T15:43:17.474Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -100,11 +100,11 @@
     "checked": 4,
     "working": 0,
     "failed": 4,
-    "durationMs": 12264,
+    "durationMs": 9837,
     "byStatus": {
       "working": 0,
       "no_search_results": 2,
-      "search_timeout": 1,
+      "search_timeout": 0,
       "no_episodes": 0,
       "no_stream": 0,
       "stream_unreachable": 0,
@@ -112,7 +112,7 @@
       "contract_error": 0,
       "load_error": 0,
       "unsupported_payload": 0,
-      "search_error": 1,
+      "search_error": 2,
       "episodes_error": 0,
       "stream_error": 0,
       "torrent_error": 0,
@@ -123,12 +123,20 @@
   "working": [],
   "failed": [
     {
+      "id": "anime-av",
+      "name": "AnimeAV",
+      "type": "onlinestream-provider",
+      "status": "search_error",
+      "error": "Unsupported selector: unexpected \"\\\" in \"article.group\\\\/item\"",
+      "durationMs": 2914
+    },
+    {
       "id": "cine-stream",
       "name": "CineStream",
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 4087
+      "durationMs": 5375
     },
     {
       "id": "gogo-anime-provider",
@@ -136,15 +144,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 10930
-    },
-    {
-      "id": "movies-drive",
-      "name": "MoviesDrive",
-      "type": "onlinestream-provider",
-      "status": "search_timeout",
-      "error": "fetch failed",
-      "durationMs": 301
+      "durationMs": 8068
     },
     {
       "id": "stream-center",
@@ -152,10 +152,38 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 2428
+      "durationMs": 1894
     }
   ],
   "results": [
+    {
+      "id": "anime-av",
+      "name": "AnimeAV",
+      "type": "onlinestream-provider",
+      "version": "1.20.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-av/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-av/code.js",
+      "status": "search_error",
+      "error": "Unsupported selector: unexpected \"\\\" in \"article.group\\\\/item\"",
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 404,
+            "networkFailures": 0,
+            "error": "Unsupported selector: unexpected \"\\\" in \"article.group\\\\/item\""
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 2914
+    },
     {
       "id": "cine-stream",
       "name": "CineStream",
@@ -181,7 +209,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 4087
+      "durationMs": 5375
     },
     {
       "id": "gogo-anime-provider",
@@ -208,36 +236,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 10930
-    },
-    {
-      "id": "movies-drive",
-      "name": "MoviesDrive",
-      "type": "onlinestream-provider",
-      "version": "1.33.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/movies-drive/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/movies-drive/code.js",
-      "status": "search_timeout",
-      "error": "fetch failed",
-      "target": 21,
-      "search": {
-        "attempts": [
-          {
-            "query": "ONE PIECE",
-            "results": 0,
-            "requests": 2,
-            "httpStatus": 0,
-            "networkFailures": 2,
-            "lastError": "fetch failed",
-            "error": "fetch failed"
-          }
-        ],
-        "count": 0
-      },
-      "episodes": null,
-      "stream": null,
-      "torrent": null,
-      "durationMs": 301
+      "durationMs": 8068
     },
     {
       "id": "stream-center",
@@ -265,7 +264,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2428
+      "durationMs": 1894
     }
   ]
 }
