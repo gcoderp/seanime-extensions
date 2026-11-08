@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://megaplay.buzz";
-        this.mirrorDomains = ["https://megaplay.buzz", "https://megaplay.buzz", "https://megaplay.buzz", "https://megaplay.buzz/v"];
-        this.defaultHeaders = { "Referer": "https://megaplay.buzz/" };
+        this.mainUrl = "https://api.ani.zip";
+        this.mirrorDomains = ["https://api.ani.zip", "https://api.ani.zip/mappings?anilist_id=", "https://api.ani.zip/mappings?mal_id="];
+        this.defaultHeaders = { "Referer": "https://api.ani.zip/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";
+        const itemSelector = ".anisnatch.to";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results = [];
         $(itemSelector).each((_, el) => {

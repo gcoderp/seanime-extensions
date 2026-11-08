@@ -4,8 +4,8 @@
   "original_author": "Abodabodd",
   "original_repository": "https://github.com/Abodabodd/re-3arabi",
   "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Faselhd.cs3",
-  "original_version": 4,
-  "sha256_checksum": "9f39707f5676b56afe46d82fae339bd4253f761470e111a39b86a8d335eb167a",
+  "original_version": 6,
+  "sha256_checksum": "feb3c35b52d437d5e501c547d757e2896613decd213c87f12745e90746254f87",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-07T12:03:24.294098+00:00",
+  "conversion_timestamp": "2026-11-08T12:23:47.055165+00:00",
   "passed": false
 }

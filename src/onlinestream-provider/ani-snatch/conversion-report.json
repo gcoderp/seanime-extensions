@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AniSnatch.cs3",
   "original_version": 2,
-  "sha256_checksum": "952b015daea98c8279848fda5b69bd81548f0e6506303dda40bdf1e2896bc966",
+  "sha256_checksum": "ec1987431a35b8fcebd9b7eba30d6ae48c43b332fff67304db5e09f314812fea",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -22,8 +22,7 @@
   "extractor_test_status": "MOCK_PASS",
   "overall_status": "NEEDS_REVIEW",
   "review_reasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
-    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
   "license_notice": true,
   "known_unsupported_methods": [],
@@ -33,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-07T12:02:12.341816+00:00",
+  "conversion_timestamp": "2026-11-08T12:22:38.650813+00:00",
   "passed": false
 }

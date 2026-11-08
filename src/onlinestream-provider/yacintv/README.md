@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `yacintv`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.3.0` (Upstream CS3 v3)
+- **Version:** `1.4.0` (Upstream CS3 v4)
 - **Language:** `ar`
 - **Original Author(s):** Abodabodd
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `b173b63d683d6fe54eadb9d6b4cabc3f1a096f318171f009775399601be6cf4b`
+- **CS3 SHA-256:** `bcc4906d2ffa43251e5aa057d32b9d1d98675f21797d4afe91381c23f31c26bc`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

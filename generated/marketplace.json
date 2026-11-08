@@ -89,6 +89,21 @@
     "icon": "https://www.google.com/s2/favicons?domain=uncutmaza.cc&sz=%size%"
   },
   {
+    "id": "anime-av",
+    "name": "AnimeAV",
+    "description": "Disfruta de los \u00faltimos episodios y animes agregados en HD y Sub Espa\u00f1ol. Miles de series, pel\u00edculas y OVAs disponibles para ver online totalmente gratis.",
+    "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-av/manifest.json",
+    "version": "1.20.0",
+    "author": "kraptor, ByAyzen",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "mx",
+    "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/anime-av/README.md",
+    "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS.",
+    "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-av/code.js",
+    "icon": "https://www.google.com/s2/favicons?sz=64&domain=animeav1.com"
+  },
+  {
     "id": "cine-stream",
     "name": "CineStream",
     "description": "One stop solution for Movies, Series, Anime, AsianDrama and Torrents",
@@ -116,21 +131,6 @@
     "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/gogo-anime-provider/README.md",
     "notes": "Automatically converted via strategy STRATEGY_1_EMBEDDED_KOTLIN_SOURCE; validation status SUCCESS.",
     "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/code.js"
-  },
-  {
-    "id": "movies-drive",
-    "name": "MoviesDrive",
-    "description": "High Quality Movies and TV Shows",
-    "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/movies-drive/manifest.json",
-    "version": "1.33.0",
-    "author": "megix",
-    "type": "onlinestream-provider",
-    "language": "typescript",
-    "lang": "hi",
-    "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/movies-drive/README.md",
-    "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS.",
-    "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/movies-drive/code.js",
-    "icon": "https://github.com/SaurabhKaperwan/CSX/raw/refs/heads/master/MoviesDrive/icon.png"
   },
   {
     "id": "stream-center",

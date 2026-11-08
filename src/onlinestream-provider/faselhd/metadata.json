@@ -2,14 +2,14 @@
   "extensionId": "faselhd",
   "originalPluginName": "Faselhd",
   "originalInternalName": "Faselhd",
-  "originalVersion": 4,
+  "originalVersion": 6,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Faselhd.cs3",
   "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
   "originalAuthors": [
     "Abodabodd"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "9f39707f5676b56afe46d82fae339bd4253f761470e111a39b86a8d335eb167a",
+  "cs3Sha256": "feb3c35b52d437d5e501c547d757e2896613decd213c87f12745e90746254f87",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-07T12:03:24.943720+00:00"
+  "convertedAt": "2026-11-08T12:23:47.824021+00:00"
 }

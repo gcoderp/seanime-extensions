@@ -3,7 +3,7 @@
   "name": "Faselhd",
   "description": "Automatically converted Cloudstream Faselhd extension",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/faselhd/manifest.json",
-  "version": "1.4.0",
+  "version": "1.6.0",
   "author": "Abodabodd",
   "type": "onlinestream-provider",
   "language": "typescript",

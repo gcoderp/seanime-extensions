@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://megaplay.buzz";
-    private mirrorDomains: string[] = ["https://megaplay.buzz", "https://megaplay.buzz", "https://megaplay.buzz", "https://megaplay.buzz/v"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://megaplay.buzz/"};
+    private mainUrl: string = "https://api.ani.zip";
+    private mirrorDomains: string[] = ["https://api.ani.zip", "https://api.ani.zip/mappings?anilist_id=", "https://api.ani.zip/mappings?mal_id="];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.ani.zip/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";
+        const itemSelector = ".anisnatch.to";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 

@@ -1,12 +1,12 @@
 [
   {
-    "plugin_name": "MoviesDrive",
-    "original_plugin_id": "MoviesDrive",
-    "original_author": "megix",
-    "original_repository": "https://github.com/SaurabhKaperwan/CSX",
-    "original_download_url": "https://raw.githubusercontent.com/SaurabhKaperwan/CSX/builds/MoviesDrive.cs3",
-    "original_version": 33,
-    "sha256_checksum": "52758210caa1cf0a6dc929d0f73fec5919e0ab66e5eddf6386ed30f7c771980a",
+    "plugin_name": "AnimeAV",
+    "original_plugin_id": "AnimeAV",
+    "original_author": "kraptor, ByAyzen",
+    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
+    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/AnimeAV.cs3",
+    "original_version": 20,
+    "sha256_checksum": "e11e556c2eafb5b2aca005a5fe001a785ea40903acd4daba5b6125ab529e06ca",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
     "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
@@ -26,12 +26,11 @@
     "license_notice": true,
     "known_unsupported_methods": [],
     "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
       "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-07T12:03:04.733510+00:00",
+    "conversion_timestamp": "2026-11-08T12:25:21.101642+00:00",
     "passed": true
   }
 ]
