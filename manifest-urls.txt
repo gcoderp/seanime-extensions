@@ -4,7 +4,6 @@ https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torr
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-provider/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-x/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/vi-stream-provider/manifest.json
-https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-av/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cine-stream/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stream-center/manifest.json

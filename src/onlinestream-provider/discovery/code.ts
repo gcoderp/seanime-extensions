@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Discovery
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: DiscoveryPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://dmax.de";
-    private mirrorDomains: string[] = ["https://dmax.de", "https://dmax.de"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://dmax.de/"};
+    private mainUrl: string = "https://tlc.de";
+    private mirrorDomains: string[] = ["https://tlc.de", "https://tlc.de"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://tlc.de/"};
 
     getSettings(): Settings {
         return {

@@ -11,9 +11,11 @@
   "license": "GPL-3.0",
   "cs3Sha256": "2756b2e60e56c4e512864ccd1fb2626ffcdae241d2786baf31631e523adafe5e",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
-  "validationStatus": "SUCCESS",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
-  "reviewReasons": [],
-  "convertedAt": "2026-11-09T11:00:49.759659+00:00"
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+  ],
+  "convertedAt": "2026-11-09T14:39:30.069885+00:00"
 }

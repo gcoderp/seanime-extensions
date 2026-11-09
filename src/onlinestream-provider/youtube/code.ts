@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Youtube
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: YoutubeTokenPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.youtube.com";
-    private mirrorDomains: string[] = ["https://www.youtube.com", "https://www.youtube.com", "https://www.youtube.com/watch?v=", "https://www.youtube.com/youtubei/v1/browse?key="];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.youtube.com/"};
+    private mainUrl: string = "https://i.ytimg.com";
+    private mirrorDomains: string[] = ["https://i.ytimg.com", "https://i.ytimg.com/vi"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://i.ytimg.com/"};
 
     getSettings(): Settings {
         return {
@@ -429,7 +429,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";
-        const titleSelector = "meta[property=og:title]";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = "ul.episodes li a, div.eplister ul li a, .ep-item a, a.ep-link";
-        const epNumSelector = "meta[property=og:title]";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "meta[property=og:title]";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

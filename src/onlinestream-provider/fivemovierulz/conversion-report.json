@@ -4,13 +4,13 @@
   "original_author": "darkdemon, Dilip",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Fivemovierulz.cs3",
-  "original_version": 8,
-  "sha256_checksum": "faba3cf69004cdb1f2b5b5e2f052920871de23076cb0ba743baa39623b0892ab",
+  "original_version": 10,
+  "sha256_checksum": "892f80883877266bf61c0c6c60991748c1c5211bbae6bec03981b818a7489765",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
-  "strategy": "STRATEGY_2_JADX_JAVA_AST",
+  "strategy": "STRATEGY_3_DEX_STRING_IR",
   "source_recovery_status": "DEX_FALLBACK",
-  "decompilation_status": "JADX_OK",
+  "decompilation_status": "BINARY_DEX_IR_OK",
   "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
@@ -20,15 +20,19 @@
   "search_test_status": "MOCK_PASS",
   "episode_test_status": "MOCK_PASS",
   "extractor_test_status": "MOCK_PASS",
-  "overall_status": "SUCCESS",
-  "review_reasons": [],
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+  ],
   "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
+    "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
+    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-09T10:44:39.805331+00:00",
-  "passed": true
+  "conversion_timestamp": "2026-11-09T14:36:17.557128+00:00",
+  "passed": false
 }

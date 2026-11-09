@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Fibwatch
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: FibwatchPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "button#see-more-episodes, a#see-more-episodes";
-        const titleSelector = "meta[property=og:title]";
+        const itemSelector = "a#fwDownloadBtn, a.hidden-button.buttonDownloadnew, a[href*=url=]";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "button#see-more-episodes, a#see-more-episodes";
-        const epNumSelector = "input#video-id";
+        const epSelector = "a.hidden-button.buttonDownloadnew, a#fwDownloadBtn, a[href*=url=]";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "meta[property=og:title]";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

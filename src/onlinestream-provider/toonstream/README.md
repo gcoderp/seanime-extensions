@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `toonstream`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.11.0` (Upstream CS3 v11)
+- **Version:** `1.12.0` (Upstream CS3 v12)
 - **Language:** `hi`
 - **Original Author(s):** Phisher98
-- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
-- **CS3 SHA-256:** `ad85cebf9255cfb5ce1f719f563bcf94e474e18226853b78de58510a325e84d0`
+- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
+- **CS3 SHA-256:** `cbf3d551c7020acb48e309fbeb12322844177a6dc3f38b98444843d8486cc83d`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

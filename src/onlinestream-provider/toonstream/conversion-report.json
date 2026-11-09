@@ -4,13 +4,13 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Toonstream.cs3",
-  "original_version": 11,
-  "sha256_checksum": "ad85cebf9255cfb5ce1f719f563bcf94e474e18226853b78de58510a325e84d0",
+  "original_version": 12,
+  "sha256_checksum": "cbf3d551c7020acb48e309fbeb12322844177a6dc3f38b98444843d8486cc83d",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
-  "strategy": "STRATEGY_2_JADX_JAVA_AST",
+  "strategy": "STRATEGY_3_DEX_STRING_IR",
   "source_recovery_status": "DEX_FALLBACK",
-  "decompilation_status": "JADX_OK",
+  "decompilation_status": "BINARY_DEX_IR_OK",
   "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
@@ -20,15 +20,18 @@
   "search_test_status": "MOCK_PASS",
   "episode_test_status": "MOCK_PASS",
   "extractor_test_status": "MOCK_PASS",
-  "overall_status": "SUCCESS",
-  "review_reasons": [],
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+  ],
   "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
+    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-09T10:47:56.820297+00:00",
-  "passed": true
+  "conversion_timestamp": "2026-11-09T14:36:47.865069+00:00",
+  "passed": false
 }

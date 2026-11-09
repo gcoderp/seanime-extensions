@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: UaKinoCXProvider
-// Original Class: UaKinoCXProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: UaKinoCXProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://uakino.cx";
     private mirrorDomains: string[] = ["https://uakino.cx", "https://uakino.cx"];
-    private defaultHeaders: Record<string, string> = {"Referer": "$mainUrl/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://uakino.cx/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/index.php?do=search&subaction=search&story={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".grid-items__item, .item";
+        const itemSelector = "#trailer-block iframe, .trailer iframe";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".page__header h1, h1";
-        const epNumSelector = "small";
+        const epSelector = ".item__img img, img";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "script";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

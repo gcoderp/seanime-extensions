@@ -11,9 +11,12 @@
   "license": "UNKNOWN",
   "cs3Sha256": "cd1d9cdf380b6bfd024e3057922cf5b1334592e48c2ff1c3b435c9ea417162a0",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
-  "validationStatus": "SUCCESS",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
-  "reviewReasons": [],
-  "convertedAt": "2026-11-09T10:55:21.716350+00:00"
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+  ],
+  "convertedAt": "2026-11-09T14:38:20.663278+00:00"
 }

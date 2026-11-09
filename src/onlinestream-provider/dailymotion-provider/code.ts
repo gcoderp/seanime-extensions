@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: DailymotionProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: DailymotionPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.dailymotion.com";
-    private mirrorDomains: string[] = ["https://api.dailymotion.com", "https://api.dailymotion.com", "https://www.dailymotion.com/embed/video", "https://www.dailymotion.com/video"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.dailymotion.com/"};
+    private mainUrl: string = "https://www.dailymotion.com";
+    private mirrorDomains: string[] = ["https://www.dailymotion.com", "https://api.dailymotion.com", "https://www.dailymotion.com/embed/video", "https://www.dailymotion.com/video"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.dailymotion.com/"};
 
     getSettings(): Settings {
         return {

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: QuickIPTV
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: QuickIPTVPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://raw.githubusercontent.com/dtankdempse/streamed-su-sports/refs/heads/main/vlc_playlist.m3u8";
-    private mirrorDomains: string[] = ["https://raw.githubusercontent.com/dtankdempse/streamed-su-sports/refs/heads/main/vlc_playlist.m3u8", "https://raw.githubusercontent.com/FunctionError/PiratesTvPlus/refs/heads/main/PiratesPlus.m3u", "https://raw.githubusercontent.com/SonyIPTV/Sony-IPTV-Live/refs/heads/main/Sony%20IPTV%20Live.m3u", "https://raw.githubusercontent.com/dtankdempse/streamed-su-sports/refs/heads/main/vlc_playlist.m3u8"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://raw.githubusercontent.com/dtankdempse/streamed-su-sports/refs/heads/main/vlc_playlist.m3u8/"};
+    private mainUrl: string = "https://omg10.com";
+    private mirrorDomains: string[] = ["https://omg10.com", "https://omg10.com/4/11733824"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://omg10.com/"};
 
     getSettings(): Settings {
         return {

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: GoldenAudiobooks
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: GoldenAudiobooksPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://goldenaudiobooks.com";
-    private mirrorDomains: string[] = ["https://goldenaudiobooks.com", "https://goldenaudiobooks.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://goldenaudiobooks.com/"};
+    private mainUrl: string = "https://omg10.com";
+    private mirrorDomains: string[] = ["https://omg10.com", "https://omg10.com/4/11733824"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://omg10.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article, .post, .ilovewp-post, .pt-cv-content-item";
-        const titleSelector = "img";
+        const itemSelector = ".entry-content img, article img";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article, .post, .ilovewp-post, .pt-cv-content-item";
-        const epNumSelector = ".nav-previous a, a.next, .pagination .next";
+        const epSelector = ".entry-content p, article p";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "img";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeYTX
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: AnimeYTXPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://ytplay.rpmvid.com";
-    private mirrorDomains: string[] = ["https://ytplay.rpmvid.com", "https://ytplay.rpmvid.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://ytplay.rpmvid.com/"};
+    private mainUrl: string = "https://enc-dec.app";
+    private mirrorDomains: string[] = ["https://enc-dec.app", "https://enc-dec.app", "https://enc-dec.app/api/dec-abyss"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://enc-dec.app/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article.aniyt-episode-card";
-        const titleSelector = "a.aniyt-anime-poster";
+        const itemSelector = ".aniyt-anime-body h3 a";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.aniyt-episode-card";
-        const epNumSelector = ".aniyt-pagination a.next";
+        const epSelector = ".aniyt-anime-poster img";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "article.aniyt-episode-card";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

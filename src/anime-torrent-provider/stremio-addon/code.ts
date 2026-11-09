@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME TORRENT EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: StremioAddon
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: StremioAddonProvider
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -301,8 +301,8 @@ class AniListResolver {
 }
 
 class Provider {
-    private mainUrl: string = "https://example.com";
-    private defaultHeaders: Record<string, string> = {"Referer": "https://example.com/"};
+    private mainUrl: string = "https://api.themoviedb.org";
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
 
     getSettings(): TorrentProviderSettings {
         return {

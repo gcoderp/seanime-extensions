@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "ar",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/anime-phoenix/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS.",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-phoenix/code.js",
   "icon": "https://yt3.googleusercontent.com/mBIIR5cqQC4Y-o7HaxbkJfs305X6tbHLSNPk6MRMCDJsH8xP0SfGhK-CBDpSmH95wSff9z99sg=s900-c-k-c0x00ffffff-no-rj"
 }

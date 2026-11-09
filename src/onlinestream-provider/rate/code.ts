@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Rate
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: ratePlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json";
-    private mirrorDomains: string[] = ["https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json", "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/refs/heads/builds/plugins.json/"};
+    private mainUrl: string = "https://counterapi.com";
+    private mirrorDomains: string[] = ["https://counterapi.com", "https://counterapi.com/api", "https://counterapi.com/api/cs-"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://counterapi.com/"};
 
     getSettings(): Settings {
         return {

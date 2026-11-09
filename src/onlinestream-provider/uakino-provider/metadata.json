@@ -2,14 +2,14 @@
   "extensionId": "uakino-provider",
   "originalPluginName": "UakinoProvider",
   "originalInternalName": "UakinoProvider",
-  "originalVersion": 33,
+  "originalVersion": 34,
   "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UakinoProvider.cs3",
   "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "originalAuthors": [
     "CakesTwix"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "3271a40740ef1ee96cb5d071cb61d4bd419e53ce62645f462839ac2dac7ecfa9",
+  "cs3Sha256": "6fdbc82b103c12eddb6533708f05d4b104bf1abb3fb5e4954f177e83a735a464",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-08T12:25:56.788847+00:00"
+  "convertedAt": "2026-11-09T14:39:35.144960+00:00"
 }

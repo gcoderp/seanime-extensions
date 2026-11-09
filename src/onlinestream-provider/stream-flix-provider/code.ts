@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: StreamFlixProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: StreamFlixProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.streamflix.app";
-    private mirrorDomains: string[] = ["https://api.streamflix.app", "https://api.streamflix.app", "https://api.streamflix.app"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.streamflix.app/"};
+    private mainUrl: string = "https://image.tmdb.org";
+    private mirrorDomains: string[] = ["https://image.tmdb.org", "https://image.tmdb.org/t/p/original", "https://image.tmdb.org/t/p/w500"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://image.tmdb.org/"};
 
     getSettings(): Settings {
         return {

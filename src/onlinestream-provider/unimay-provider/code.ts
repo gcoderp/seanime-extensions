@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: UnimayProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: UnimayProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.unimay.media";
-    private mirrorDomains: string[] = ["https://www.unimay.media", "https://api.unimay.media", "https://img.unimay.media", "https://www.unimay.media"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.unimay.media/"};
+    private mainUrl: string = "https://api.unimay.media";
+    private mirrorDomains: string[] = ["https://api.unimay.media", "https://api.unimay.media", "https://img.unimay.media", "https://www.unimay.media"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.unimay.media/"};
 
     getSettings(): Settings {
         return {

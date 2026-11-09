@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Kickassanime
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: KickassanimePlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -406,7 +406,7 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.wrapper[class*=container]";
-        const titleSelector = "script[data-name='episode']";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.wrapper[class*=container]";
-        const epNumSelector = "script[data-name='episode']";
+        const epSelector = "ul.episodes li a, div.eplister ul li a, .ep-item a, a.ep-link";
+        const epNumSelector = ".epl-num, .ep-num";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "div.wrapper[class*=container]";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

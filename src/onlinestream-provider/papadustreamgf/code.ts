@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: papadustreamgf
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: Plugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://webpanel.invalid";
-    private mirrorDomains: string[] = ["https://webpanel.invalid", "http://webpanel.invalid", "https://webpanel.invalid"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://webpanel.invalid/"};
+    private mainUrl: string = "https://vidsrc.net";
+    private mirrorDomains: string[] = ["https://vidsrc.net", "https://vidsrc.net", "https://vidsrc.net/embed/movie?imdb=", "https://vidsrc.net/embed/movie?tmdb="];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidsrc.net/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["sibnet", "voe", "dood", "filemoon"],
+            episodeServers: ["dood", "sibnet", "voe", "filemoon"],
             supportsDub: true,
         };
     }
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.sect";
-        const titleSelector = "img";
+        const itemSelector = "#containerAjoutsAnimes a";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.sect";
-        const epNumSelector = ".st-left .st-capt";
+        const epSelector = "#containerClassiques a";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "img";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "sibnet";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

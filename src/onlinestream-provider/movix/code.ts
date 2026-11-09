@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Movix
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: MovixPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://ghbrisk.com";
-    private mirrorDomains: string[] = ["https://ghbrisk.com", "https://ghbrisk.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://ghbrisk.com/"};
+    private mainUrl: string = "https://api.themoviedb.org";
+    private mirrorDomains: string[] = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/discover"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["streamwish", "voe", "vidhide", "sibnet", "dood", "filemoon", "okru"],
+            episodeServers: ["filemoon", "okru", "vidhide", "dood", "streamwish", "voe", "sibnet"],
             supportsDub: false,
         };
     }
@@ -429,7 +429,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const itemSelector = "a.asn-search-result, a[href*=/catalogue/]";
-        const titleSelector = "a.asn-search-result, a[href*=/catalogue/]";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "a.asn-search-result, a[href*=/catalogue/]";
-        const epNumSelector = "script";
+        const epSelector = "a[href]";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "a.asn-search-result, a[href*=/catalogue/]";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

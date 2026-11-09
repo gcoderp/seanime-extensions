@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Doramogo
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: DoramogoPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.doramogo.net";
-    private mirrorDomains: string[] = ["https://www.doramogo.net", "https://www.doramogo.net", "https://www.doramogo.net"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.doramogo.net/"};
+    private mainUrl: string = "https://api.themoviedb.org";
+    private mirrorDomains: string[] = ["https://api.themoviedb.org", "https://api.themoviedb.org/3/movie", "https://api.themoviedb.org/3/search/movie?api_key=", "https://api.themoviedb.org/3/search/tv?api_key="];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search/?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".episode-card";
-        const titleSelector = "a";
+        const itemSelector = "#doramogo-search-result-title a";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".episode-card";
-        const epNumSelector = ".doramogo-search-result-card";
+        const epSelector = "#synopsis p";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = ".episode-card";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

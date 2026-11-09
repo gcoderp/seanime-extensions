@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: NTVProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: NTVPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://ntv.st";
-    private mirrorDomains: string[] = ["https://ntv.st", "https://ntv.st"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://ntv.st/"};
+    private mainUrl: string = "https://cncverse.pages.dev";
+    private mirrorDomains: string[] = ["https://cncverse.pages.dev", "https://cncverse.pages.dev", "https://cncverse.pages.dev/api/stats"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://cncverse.pages.dev/"};
 
     getSettings(): Settings {
         return {

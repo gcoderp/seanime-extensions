@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Doramas
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: DoramasProvider
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://embedplay.upns.ink";
-    private mirrorDomains: string[] = ["https://embedplay.upns.ink", "https://embedplay.upns.ink"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://embedplay.upns.ink/"};
+    private mainUrl: string = "https://seriesboa.live";
+    private mirrorDomains: string[] = ["https://seriesboa.live", "https://seriesboa.live/episodio"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://seriesboa.live/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.aa-cn div#movies-a ul.post-lst li";
-        const titleSelector = "a.lnk-blk";
+        const itemSelector = "a.lnk-blk";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.aa-cn div#movies-a ul.post-lst li";
-        const epNumSelector = "header.entry-header h2.entry-title";
+        const epSelector = "div#player iframe, div.play-overlay iframe";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.aa-cn div#movies-a ul.post-lst li";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

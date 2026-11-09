@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Watch32
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: Watch32Plugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://watch32.bar";
-    private mirrorDomains: string[] = ["https://watch32.bar", "https://watch32.bar"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://watch32.bar/"};
+    private mainUrl: string = "https://providers.peestream.in";
+    private mirrorDomains: string[] = ["https://providers.peestream.in", "https://providers.peestream.in", "https://providers.peestream.in/api/subtitles?", "https://providers.peestream.in/embed/?"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://providers.peestream.in/"};
 
     getSettings(): Settings {
         return {
