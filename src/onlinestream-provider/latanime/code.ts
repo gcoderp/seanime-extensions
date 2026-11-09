@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Latanime
-// Original Class: LatanimePlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: Latanime
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://hexload.com";
-    private mirrorDomains: string[] = ["https://hexload.com", "https://hexload.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://hexload.com/"};
+    private mainUrl: string = "https://latanime.org";
+    private mirrorDomains: string[] = ["https://latanime.org", "https://latanime.org"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://latanime.org/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/buscar?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.col-6, div.col-md-6, div.col-md-4, div.item, article.group\\/item";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "div.col-lg-9 h2";
+        const epNumSelector = "div.serieimgficha img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "ul.cap_repro li a";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

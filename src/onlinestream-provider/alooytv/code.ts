@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Alooytv
-// Original Class: alooyPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://fitnur.com";
-    private mirrorDomains: string[] = ["https://fitnur.com", "https://fitnur.com/alooytv"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://fitnur.com/"};
+    private mainUrl: string = "https://fitnur.com/alooytv";
+    private mirrorDomains: string[] = ["https://fitnur.com/alooytv", "https://fitnur.com/alooytv"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://fitnur.com/alooytv/"};
 
     getSettings(): Settings {
         return {
@@ -429,7 +429,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const itemSelector = ".movie-container > div";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const titleSelector = "a[href*='alooytv']";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".movie-title h3 a";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = ".movie-container > div";
+        const epNumSelector = ".movie-title h3 a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = ".movie-container > div";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

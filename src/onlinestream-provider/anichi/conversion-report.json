@@ -8,9 +8,9 @@
   "sha256_checksum": "3c40d903dc867e0c9eef9a58ad9b69688bfe111dcbfd9f116e547192932a52ad",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
-  "strategy": "STRATEGY_3_DEX_STRING_IR",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
   "source_recovery_status": "DEX_FALLBACK",
-  "decompilation_status": "BINARY_DEX_IR_OK",
+  "decompilation_status": "JADX_OK",
   "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
@@ -20,20 +20,16 @@
   "search_test_status": "MOCK_PASS",
   "episode_test_status": "MOCK_PASS",
   "extractor_test_status": "MOCK_PASS",
-  "overall_status": "NEEDS_REVIEW",
-  "review_reasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
-    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
-  ],
+  "overall_status": "SUCCESS",
+  "review_reasons": [],
   "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
     "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
-    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-08T12:22:29.363349+00:00",
-  "passed": false
+  "conversion_timestamp": "2026-11-09T10:42:32.565377+00:00",
+  "passed": true
 }

@@ -12,11 +12,9 @@
   "license": "GPL-3.0",
   "cs3Sha256": "905b0b1ef8b722a1599ecfee3f65d37954dd6a87e8c13e0624d36f74776441ba",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
-  "validationStatus": "NEEDS_REVIEW",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
-  "reviewReasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-  ],
-  "convertedAt": "2026-11-08T12:26:09.483700+00:00"
+  "reviewReasons": [],
+  "convertedAt": "2026-11-09T11:02:06.901787+00:00"
 }

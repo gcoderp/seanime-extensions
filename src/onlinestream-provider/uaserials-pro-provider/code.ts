@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: UASerialsProProvider
-// Original Class: UASerialsProProviderPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: UASerialsProProvider
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://tortuga.tw";
-    private mirrorDomains: string[] = ["https://tortuga.tw", "https://tortuga.tw"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://tortuga.tw/"};
+    private mainUrl: string = "https://uaserials.com";
+    private mirrorDomains: string[] = ["https://uaserials.com", "https://uaserials.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://uaserials.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search/$encodedQuery/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".img-fit img";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = ".uas-card";
+        const titleSelector = ".uas-card__title";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".short-agerating span";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = ".short-title";
+        const epNumSelector = ".oname";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

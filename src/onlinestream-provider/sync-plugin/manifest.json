@@ -9,6 +9,6 @@
   "language": "typescript",
   "lang": "uk",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/sync-plugin/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
+  "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sync-plugin/code.js"
 }

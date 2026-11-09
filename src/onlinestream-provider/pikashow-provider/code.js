@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: PikashowProvider
-// Original Class: PikashowPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://samui390dod.com";
-        this.mirrorDomains = ["https://samui390dod.com", "https://samui390dod.com", "https://samui390dod.com"];
-        this.defaultHeaders = { "Referer": "https://samui390dod.com/" };
+        this.mainUrl = "https://manoda.co";
+        this.mirrorDomains = ["https://manoda.co", "https://manoda.co"];
+        this.defaultHeaders = { "Referer": "https://manoda.co/" };
     }
     getSettings() {
         return {

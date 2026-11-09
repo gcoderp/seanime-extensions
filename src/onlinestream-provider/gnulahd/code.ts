@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Gnulahd
-// Original Class: GnulaHDPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: GnulaHD
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://enc-dec.app";
-    private mirrorDomains: string[] = ["https://enc-dec.app", "https://enc-dec.app", "https://enc-dec.app/api/dec-abyss"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://enc-dec.app/"};
+    private mainUrl: string = "https://ww3.gnulahd.nu";
+    private mirrorDomains: string[] = ["https://ww3.gnulahd.nu", "https://ww3.gnulahd.nu"];
+    private defaultHeaders: Record<string, string> = {"Referer": "$mainUrl/ver/anime/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36", "X-Requested-With": "gnrd"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "okru", "voe"],
+            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
             supportsDub: true,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/wp-json/gnrd/v1/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "a.gnrd-castc .gnrd-castc-name";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "div.gnrd-qf:has(span.gnrd-qf-l:matchesOwn((?i)a[\u00f1n]o)) span.gnrd-qf-v";
+        const epNumSelector = "div.gnrd-qf:has(span.gnrd-qf-l:matchesOwn((?i)duraci[o\u00f3]n)) span.gnrd-qf-v";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

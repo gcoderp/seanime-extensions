@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: SyncPlugin
-// Original Class: CloudSyncPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: CloudSyncProvider
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -414,7 +414,7 @@ class Provider {
     getSettings(): Settings {
         return {
             episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
-            supportsDub: true,
+            supportsDub: false,
         };
     }
 

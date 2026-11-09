@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME TORRENT EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: IlCorsaroViola
-// Original Class: IlCorsaroViolaPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -301,8 +301,8 @@ class AniListResolver {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.simkl.com";
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.simkl.com/"};
+    private mainUrl: string = "https://db.corsaroviola.dpdns.org";
+    private defaultHeaders: Record<string, string> = {"Referer": "https://db.corsaroviola.dpdns.org/"};
 
     getSettings(): TorrentProviderSettings {
         return {

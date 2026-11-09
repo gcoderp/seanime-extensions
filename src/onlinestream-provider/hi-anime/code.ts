@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: HiAnime
-// Original Class: HiAnimeProviderPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://hianime.at";
-    private mirrorDomains: string[] = ["https://hianime.at", "https://hianime.at", "https://hianime.at"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://hianime.at/"};
+    private mainUrl: string = "https://vidtube.site";
+    private mirrorDomains: string[] = ["https://vidtube.site", "https://vidtube.site"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidtube.site/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#ani_detail div.film-poster img";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = ".anisc-info > .item";
+        const titleSelector = "a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".anisc-detail .tick-dub";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = ".anisc-info > .item";
+        const epNumSelector = "span.item-head";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = ".anisc-info > .item";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

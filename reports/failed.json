@@ -1,12 +1,83 @@
 [
   {
+    "plugin_name": "Footballia",
+    "original_plugin_id": "Footballia",
+    "original_author": "kraptor, ByAyzen",
+    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
+    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Footballia.cs3",
+    "original_version": 9,
+    "sha256_checksum": "86537cb0b500aea1d93ac533ec5eb3cdee56d450276e1a755895bebce3dd4447",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [],
+    "license_notice": true,
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-09T10:58:52.548005+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "UakinoProvider",
+    "original_plugin_id": "UakinoProvider",
+    "original_author": "CakesTwix",
+    "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+    "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UakinoProvider.cs3",
+    "original_version": 34,
+    "sha256_checksum": "6fdbc82b103c12eddb6533708f05d4b104bf1abb3fb5e4954f177e83a735a464",
+    "license_spdx": "GPL-3.0",
+    "detected_provider_type": "onlinestream-provider",
+    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "JADX_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [],
+    "license_notice": false,
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-09T11:01:14.022986+00:00",
+    "passed": false
+  },
+  {
     "plugin_name": "MuiflixGF",
     "original_plugin_id": "muiflixgf",
     "overall_status": "FAILED",
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-08T12:26:57.477307+00:00"
+    "conversion_timestamp": "2026-11-09T11:05:46.296343+00:00"
   },
   {
     "plugin_name": "FanStreamGF",
@@ -15,7 +86,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-08T12:27:06.437202+00:00"
+    "conversion_timestamp": "2026-11-09T11:06:59.492545+00:00"
   },
   {
     "plugin_name": "GogoFlixGF",
@@ -24,7 +95,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-08T12:27:06.551714+00:00"
+    "conversion_timestamp": "2026-11-09T11:06:59.595351+00:00"
   },
   {
     "plugin_name": "FrembedGF",
@@ -33,7 +104,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-08T12:27:06.658265+00:00"
+    "conversion_timestamp": "2026-11-09T11:06:59.652835+00:00"
   },
   {
     "plugin_name": "FilmoFlixGF",
@@ -42,7 +113,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-08T12:27:06.787217+00:00"
+    "conversion_timestamp": "2026-11-09T11:06:59.707972+00:00"
   },
   {
     "plugin_name": "MovixGF",
@@ -51,7 +122,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-08T12:27:06.911665+00:00"
+    "conversion_timestamp": "2026-11-09T11:06:59.850907+00:00"
   },
   {
     "plugin_name": "AfterDarkGF",
@@ -60,7 +131,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-08T12:27:06.999582+00:00"
+    "conversion_timestamp": "2026-11-09T11:06:59.950389+00:00"
   },
   {
     "plugin_name": "SadisflixGF",
@@ -69,7 +140,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-08T12:27:07.858224+00:00"
+    "conversion_timestamp": "2026-11-09T11:07:06.238838+00:00"
   },
   {
     "plugin_name": "WookafrGF",
@@ -78,6 +149,6 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-08T12:27:07.945255+00:00"
+    "conversion_timestamp": "2026-11-09T11:07:06.289069+00:00"
   }
 ]

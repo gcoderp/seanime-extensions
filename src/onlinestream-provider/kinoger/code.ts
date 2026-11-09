@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Kinoger
-// Original Class: KinogerPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://kinoger.be";
-    private mirrorDomains: string[] = ["https://kinoger.be", "https://kinoger.be"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://kinoger.be/"};
+    private mainUrl: string = "https://kinoger.ru";
+    private mirrorDomains: string[] = ["https://kinoger.ru", "https://kinoger.ru"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://kinoger.ru/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["vidhide", "voe"],
+            episodeServers: ["voe", "vidhide"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/?do=search&subaction=search&titleonly=3&story={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -429,7 +429,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const itemSelector = "div#dle-content div.short";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const titleSelector = "a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div#dle-content div.titlecontrol";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "div#dle-content div.short";
+        const epNumSelector = "div.content_text img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "div#dle-content div.short";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

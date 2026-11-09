@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: DailymotionProvider
-// Original Class: DailymotionPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://www.dailymotion.com";
-        this.mirrorDomains = ["https://www.dailymotion.com", "https://api.dailymotion.com", "https://www.dailymotion.com/embed/video", "https://www.dailymotion.com/video"];
-        this.defaultHeaders = { "Referer": "https://www.dailymotion.com/" };
+        this.mainUrl = "https://api.dailymotion.com";
+        this.mirrorDomains = ["https://api.dailymotion.com", "https://api.dailymotion.com", "https://www.dailymotion.com/embed/video", "https://www.dailymotion.com/video"];
+        this.defaultHeaders = { "Referer": "https://api.dailymotion.com/" };
     }
     getSettings() {
         return {

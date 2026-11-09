@@ -8,9 +8,9 @@
   "sha256_checksum": "30dc643628702d6b2fe139339e59996783c95a0c1d41efe0a31872ae4d10908b",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "anime-torrent-provider",
-  "strategy": "STRATEGY_3_DEX_STRING_IR",
+  "strategy": "STRATEGY_2_JADX_JAVA_AST",
   "source_recovery_status": "DEX_FALLBACK",
-  "decompilation_status": "BINARY_DEX_IR_OK",
+  "decompilation_status": "JADX_OK",
   "kotlin_reconstruction_status": "PARTIAL",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
@@ -20,20 +20,17 @@
   "search_test_status": "MOCK_PASS",
   "episode_test_status": "N/A",
   "extractor_test_status": "N/A",
-  "overall_status": "NEEDS_REVIEW",
-  "review_reasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-  ],
+  "overall_status": "SUCCESS",
+  "review_reasons": [],
   "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
     "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
-    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Torrent row selectors are heuristic; live verification against the tracker is required.",
     "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-08T12:23:28.696649+00:00",
-  "passed": false
+  "conversion_timestamp": "2026-11-09T10:48:54.309801+00:00",
+  "passed": true
 }

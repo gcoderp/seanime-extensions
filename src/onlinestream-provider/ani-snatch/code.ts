@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AniSnatch
-// Original Class: AniSnatchPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.ani.zip";
-    private mirrorDomains: string[] = ["https://api.ani.zip", "https://api.ani.zip/mappings?anilist_id=", "https://api.ani.zip/mappings?mal_id="];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.ani.zip/"};
+    private mainUrl: string = "https://vidwish.live";
+    private mirrorDomains: string[] = ["https://vidwish.live", "https://vidwish.live"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidwish.live/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".anisnatch.to";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "#megaplay-player";
+        const titleSelector = "#megaplay-player";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,7 +495,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "ul.episodes li a, div.eplister ul li a, .ep-item a, a.ep-link";
+        const epSelector = "#megaplay-player";
         const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "#megaplay-player";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

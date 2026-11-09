@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Wcoflix
-// Original Class: WcoflixPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.wcoflix.tv";
-    private mirrorDomains: string[] = ["https://www.wcoflix.tv", "https://www.wcoflix.tv/search"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.wcoflix.tv/"};
+    private mainUrl: string = "https://embed.wcostream.com";
+    private mirrorDomains: string[] = ["https://embed.wcostream.com", "https://embed.wcostream.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://embed.wcostream.com/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div#episodeList a.dark-episode-item, div#sidebar_right3 div.cat-eps a";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "div.recent-release:has(a[name=dubbed]) + div#sidebar_right ul.items li";
+        const titleSelector = "h2 span.film-name";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div#sidebar_cat a.genre-buton";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "div.recent-release:has(a[name=dubbed]) + div#sidebar_right ul.items li";
+        const epNumSelector = "div.recent-release-main > div#sidebar_right";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "div.recent-release:has(a[name=dubbed]) + div#sidebar_right ul.items li";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

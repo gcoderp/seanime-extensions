@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: WatchParty
-// Original Class: WatchPartyPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "";
-        this.mirrorDomains = [""];
-        this.defaultHeaders = {};
+        this.mainUrl = "https://github.com/DieGon7771/ItaliaInStreaming";
+        this.mirrorDomains = ["https://github.com/DieGon7771/ItaliaInStreaming", "https://github.com/DieGon7771/ItaliaInStreaming"];
+        this.defaultHeaders = { "Referer": "https://github.com/DieGon7771/ItaliaInStreaming/" };
     }
     getSettings() {
         return {

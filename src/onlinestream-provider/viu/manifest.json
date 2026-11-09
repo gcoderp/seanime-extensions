@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "ar",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/viu/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
+  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/viu/code.js",
   "icon": "https://img.utdstc.com/icon/a99/c9e/a99c9ee56e731144b335282e9981a54a7584be93fc9644ad7a03b45552307876:200"
 }

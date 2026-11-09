@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: SimklProvider
-// Original Class: SimklPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#cast_scroller > .people > li.card";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "div.SimklHeaderBgShaddow > div.SimklMyTVShowAboutDiv > table";
+        const titleSelector = "span.SimklTVRatingAverage";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "#tvdetailrecommendations div.tvdetailrelations";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "div.SimklHeaderBgShaddow > div.SimklMyTVShowAboutDiv > table";
+        const epNumSelector = "div.SimklTVAboutTitleText h1";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "div.SimklHeaderBgShaddow > div.SimklMyTVShowAboutDiv > table";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Gnulahd
-// Original Class: GnulaHDPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: GnulaHD
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,19 +390,19 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://enc-dec.app";
-        this.mirrorDomains = ["https://enc-dec.app", "https://enc-dec.app", "https://enc-dec.app/api/dec-abyss"];
-        this.defaultHeaders = { "Referer": "https://enc-dec.app/" };
+        this.mainUrl = "https://ww3.gnulahd.nu";
+        this.mirrorDomains = ["https://ww3.gnulahd.nu", "https://ww3.gnulahd.nu"];
+        this.defaultHeaders = { "Referer": "$mainUrl/ver/anime/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36", "X-Requested-With": "gnrd" };
     }
     getSettings() {
         return {
-            episodeServers: ["filemoon", "okru", "voe"],
+            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
             supportsDub: true,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/wp-json/gnrd/v1/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "a.gnrd-card";
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "a.gnrd-castc .gnrd-castc-name";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "div.gnrd-qf:has(span.gnrd-qf-l:matchesOwn((?i)a[\u00f1n]o)) span.gnrd-qf-v";
+        const epNumSelector = "div.gnrd-qf:has(span.gnrd-qf-l:matchesOwn((?i)duraci[o\u00f3]n)) span.gnrd-qf-v";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

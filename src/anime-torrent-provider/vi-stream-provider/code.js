@@ -300,8 +300,8 @@ class AniListResolver {
 }
 class Provider {
     constructor() {
-        this.mainUrl = "https://streameeeeee.site";
-        this.defaultHeaders = { "Referer": "https://streameeeeee.site/" };
+        this.mainUrl = "https://api.themoviedb.org";
+        this.defaultHeaders = { "Referer": "https://api.themoviedb.org/" };
     }
     getSettings() {
         return {
