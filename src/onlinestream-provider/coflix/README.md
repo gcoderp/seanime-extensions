@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `coflix`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.19.0` (Upstream CS3 v19)
+- **Version:** `1.20.0` (Upstream CS3 v20)
 - **Language:** `fr`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `5e256016afac7184a5a51bdcb49c3a6f8b32581825884cafad546e5caefc8726`
+- **CS3 SHA-256:** `8a076bad457e39b61072477a77439c866f5df878416d31fe8bbfd75e9bf75b71`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

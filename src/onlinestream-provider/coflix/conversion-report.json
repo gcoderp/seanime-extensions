@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Coflix.cs3",
-  "original_version": 19,
-  "sha256_checksum": "5e256016afac7184a5a51bdcb49c3a6f8b32581825884cafad546e5caefc8726",
+  "original_version": 20,
+  "sha256_checksum": "8a076bad457e39b61072477a77439c866f5df878416d31fe8bbfd75e9bf75b71",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-09T14:36:12.599275+00:00",
+  "conversion_timestamp": "2026-11-10T13:55:13.510618+00:00",
   "passed": false
 }

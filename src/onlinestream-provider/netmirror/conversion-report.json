@@ -4,8 +4,8 @@
   "original_author": "Sushan64",
   "original_repository": "https://github.com/Sushan64/NetMirror-Extension",
   "original_download_url": "https://raw.githubusercontent.com/Sushan64/NetMirror-Extension/builds/Netmirror.cs3",
-  "original_version": 43,
-  "sha256_checksum": "26ea2b1d7c7b3f5ccc2e5bdb7a5dc01376fc767d72d8b62345fe2c6600531079",
+  "original_version": 47,
+  "sha256_checksum": "42595f34da064c2988205f996cc53884ffdb2669b095f42a87d75ca66044d30b",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-09T14:39:48.893294+00:00",
+  "conversion_timestamp": "2026-11-10T13:59:00.788626+00:00",
   "passed": false
 }

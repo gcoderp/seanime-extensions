@@ -3,7 +3,7 @@
   "name": "Netmirror",
   "description": "Netflix, PrimeVideo, Disney+ Hotstar Contents in Multiple Languages",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/netmirror/manifest.json",
-  "version": "1.43.0",
+  "version": "1.47.0",
   "author": "Sushan64",
   "type": "onlinestream-provider",
   "language": "typescript",

@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://imgcdn.kim";
-    private mirrorDomains: string[] = ["https://imgcdn.kim", "https://imgcdn.kim/hs/h", "https://imgcdn.kim/hs/v", "https://imgcdn.kim/hsepimg"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://imgcdn.kim/"};
+    private mainUrl: string = "https://net52.cc";
+    private mirrorDomains: string[] = ["https://net52.cc", "https://net52.cc", "https://net52.cc/verify.php"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://net52.cc/"};
 
     getSettings(): Settings {
         return {

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://imgcdn.kim";
-        this.mirrorDomains = ["https://imgcdn.kim", "https://imgcdn.kim/hs/h", "https://imgcdn.kim/hs/v", "https://imgcdn.kim/hsepimg"];
-        this.defaultHeaders = { "Referer": "https://imgcdn.kim/" };
+        this.mainUrl = "https://net52.cc";
+        this.mirrorDomains = ["https://net52.cc", "https://net52.cc", "https://net52.cc/verify.php"];
+        this.defaultHeaders = { "Referer": "https://net52.cc/" };
     }
     getSettings() {
         return {

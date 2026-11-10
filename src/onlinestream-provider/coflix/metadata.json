@@ -2,14 +2,14 @@
   "extensionId": "coflix",
   "originalPluginName": "Coflix",
   "originalInternalName": "Coflix",
-  "originalVersion": 19,
+  "originalVersion": 20,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Coflix.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "5e256016afac7184a5a51bdcb49c3a6f8b32581825884cafad546e5caefc8726",
+  "cs3Sha256": "8a076bad457e39b61072477a77439c866f5df878416d31fe8bbfd75e9bf75b71",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-09T14:36:13.324089+00:00"
+  "convertedAt": "2026-11-10T13:55:14.296180+00:00"
 }

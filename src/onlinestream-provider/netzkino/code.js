@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Netzkino
-// Original Class: NetzkinoProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: NetzkinoPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://api.netzkino.de.simplecache.net";
-        this.mirrorDomains = ["https://api.netzkino.de.simplecache.net", "https://api.netzkino.de.simplecache.net"];
-        this.defaultHeaders = { "Referer": "https://api.netzkino.de.simplecache.net/" };
+        this.mainUrl = "https://www.netzkino.de";
+        this.mirrorDomains = ["https://www.netzkino.de", "https://pmd.netzkino-seite.netzkino.de", "https://www.netzkino.de"];
+        this.defaultHeaders = { "Referer": "https://www.netzkino.de/" };
     }
     getSettings() {
         return {

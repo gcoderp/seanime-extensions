@@ -1,0 +1,15 @@
+{
+  "id": "easy-play-provider",
+  "name": "EasyPlayProvider",
+  "description": "EasyPlay IPTV Live TV channels (auto-leased Xtream playlist, no login)",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/easy-play-provider/manifest.json",
+  "version": "1.4.0",
+  "author": "NivinCNC",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/easy-play-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/easy-play-provider/code.js",
+  "icon": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/Logos/EasyPlayProvider/icon.png"
+}
