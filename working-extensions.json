@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T19:26:12.911Z",
+  "generatedAt": "2026-11-10T16:43:50.455Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -100,11 +100,11 @@
     "checked": 3,
     "working": 0,
     "failed": 3,
-    "durationMs": 20329,
+    "durationMs": 16414,
     "byStatus": {
       "working": 0,
-      "no_search_results": 1,
-      "search_timeout": 1,
+      "no_search_results": 2,
+      "search_timeout": 0,
       "no_episodes": 0,
       "no_stream": 0,
       "stream_unreachable": 0,
@@ -128,15 +128,15 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 4346
+      "durationMs": 4541
     },
     {
       "id": "gogo-anime-provider",
       "name": "GogoAnime",
       "type": "onlinestream-provider",
-      "status": "search_timeout",
-      "error": "fetch failed",
-      "durationMs": 19110
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 14928
     },
     {
       "id": "stream-center",
@@ -144,7 +144,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 3341
+      "durationMs": 2632
     }
   ],
   "results": [
@@ -173,7 +173,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 4346
+      "durationMs": 4541
     },
     {
       "id": "gogo-anime-provider",
@@ -182,19 +182,17 @@
       "version": "1.12.0",
       "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json",
       "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/code.js",
-      "status": "search_timeout",
-      "error": "fetch failed",
-      "target": 21,
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
       "search": {
         "attempts": [
           {
-            "query": "ONE PIECE",
+            "query": "Doraemon",
             "results": 0,
-            "requests": 2,
-            "httpStatus": 0,
-            "networkFailures": 2,
-            "lastError": "fetch failed",
-            "error": "fetch failed"
+            "requests": 1,
+            "httpStatus": 429,
+            "networkFailures": 0
           }
         ],
         "count": 0
@@ -202,7 +200,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 19110
+      "durationMs": 14928
     },
     {
       "id": "stream-center",
@@ -230,7 +228,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 3341
+      "durationMs": 2632
     }
   ]
 }
