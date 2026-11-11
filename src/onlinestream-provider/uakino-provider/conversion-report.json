@@ -4,8 +4,8 @@
   "original_author": "CakesTwix",
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UakinoProvider.cs3",
-  "original_version": 34,
-  "sha256_checksum": "6fdbc82b103c12eddb6533708f05d4b104bf1abb3fb5e4954f177e83a735a464",
+  "original_version": 35,
+  "sha256_checksum": "5a393fede3d66b624c8d65f9a4325bd2a2eeab13f0f1e19da866d38a9e7a9414",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -27,10 +27,11 @@
   "license_notice": false,
   "known_unsupported_methods": [],
   "warnings": [
+    "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
     "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:44.785826+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:07.989919+00:00",
   "passed": false
 }

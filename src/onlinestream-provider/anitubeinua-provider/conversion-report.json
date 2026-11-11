@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/AnitubeinuaProvider.cs3",
   "original_version": 22,
-  "sha256_checksum": "7403502cc562abe59a66f49b612c00ef74a9302c228df1d5a4a222cc7fb09d10",
+  "sha256_checksum": "0151709a66775fce683573e8bd0f798b853271ebee602a14d1d35d2c63172032",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:32.158147+00:00",
+  "conversion_timestamp": "2026-11-11T13:10:55.373895+00:00",
   "passed": false
 }

@@ -10,7 +10,7 @@
     "deleteBlack666"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "d6d259c6eacc06342e629ec84a75d2528630948be91f54c1cb8a24e593215334",
+  "cs3Sha256": "231b95ae40e038a7fc1affc547b90baa125dd09cdd7a23696c8f61f0c133500e",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -19,5 +19,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-10T13:58:31.510833+00:00"
+  "convertedAt": "2026-11-11T13:10:54.617753+00:00"
 }

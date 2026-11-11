@@ -8,10 +8,10 @@
   "sha256_checksum": "27e674e42ce8966db09fccb277f727e758a4492a94d044e60ff6bf8f161bb6c4",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
-  "strategy": "STRATEGY_3_DEX_STRING_IR",
-  "source_recovery_status": "DEX_FALLBACK",
+  "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "source_recovery_status": "RECOVERED",
   "decompilation_status": "BINARY_DEX_IR_OK",
-  "kotlin_reconstruction_status": "PARTIAL",
+  "kotlin_reconstruction_status": "SUCCESS",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
   "seanime_compatibility_status": "PASS",
@@ -22,7 +22,6 @@
   "extractor_test_status": "MOCK_PASS",
   "overall_status": "NEEDS_REVIEW",
   "review_reasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
   "license_notice": true,
@@ -33,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:59:23.008876+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:52.304142+00:00",
   "passed": false
 }

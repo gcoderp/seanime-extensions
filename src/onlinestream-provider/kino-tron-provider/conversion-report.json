@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/KinoTronProvider.cs3",
   "original_version": 19,
-  "sha256_checksum": "dcd17948b6b6384803613a74ea4b78f640f78f6e5b91a8ae69f8916ae36f0c75",
+  "sha256_checksum": "543933599ead4f2f656d7b9e448f1b4cce8e613563e24160204f93d178e95d9c",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:38.462124+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:01.677834+00:00",
   "passed": false
 }

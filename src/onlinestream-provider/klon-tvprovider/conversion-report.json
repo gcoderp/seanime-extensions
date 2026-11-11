@@ -4,8 +4,8 @@
   "original_author": "CakesTwix",
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/KlonTVProvider.cs3",
-  "original_version": 24,
-  "sha256_checksum": "d39d0bdf3cf9a8a9f8b0bdb8aff7b3048ba5bc4b7f8f7154fde1aac5407137da",
+  "original_version": 25,
+  "sha256_checksum": "a32c9f51be0d5f3f6bdd10d3882b2af5acfffc27aca92fb06f6e764f7c54aff8",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:40.051143+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:03.246839+00:00",
   "passed": false
 }

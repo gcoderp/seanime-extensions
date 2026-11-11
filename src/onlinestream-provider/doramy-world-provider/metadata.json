@@ -2,14 +2,14 @@
   "extensionId": "doramy-world-provider",
   "originalPluginName": "DoramyWorldProvider",
   "originalInternalName": "DoramyWorldProvider",
-  "originalVersion": 2,
+  "originalVersion": 3,
   "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/DoramyWorldProvider.cs3",
   "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "originalAuthors": [
     "CakesTwix"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "87f49601ced2329805caecb60cdc4892b3176df75c77d42a1a1b514651b62dfd",
+  "cs3Sha256": "cfd1b3fac2b50c93e8e1b10f523d9ac96e5f5a05d58b8669a6294add630dc0dd",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-10T13:58:35.985258+00:00"
+  "convertedAt": "2026-11-11T13:10:59.399678+00:00"
 }

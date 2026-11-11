@@ -4,8 +4,8 @@
   "original_author": "CakesTwix",
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UASerialsProProvider.cs3",
-  "original_version": 28,
-  "sha256_checksum": "b9725c353ca62643099a0b3b7b0fab85d3652250ac9a2e3985505d0412499610",
+  "original_version": 29,
+  "sha256_checksum": "d6dff69efb4c3e4a9bed261224650bb7dda694d617a5c5131dcad494ae10a759",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:45.578266+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:08.803632+00:00",
   "passed": false
 }

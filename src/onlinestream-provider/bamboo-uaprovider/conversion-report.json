@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/BambooUAProvider.cs3",
   "original_version": 13,
-  "sha256_checksum": "8cd686f970ca4b0e1e0c842a7f9abaead45aac6755e75b31151af41b4c10d39d",
+  "sha256_checksum": "40b4009a086d6eb4e6bee1086d7693b1c0ee429d8e08da2c4c4d1e60091e2290",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:32.887850+00:00",
+  "conversion_timestamp": "2026-11-11T13:10:56.151289+00:00",
   "passed": false
 }

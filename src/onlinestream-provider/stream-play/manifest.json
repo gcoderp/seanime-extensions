@@ -1,9 +1,9 @@
 {
   "id": "stream-play",
   "name": "StreamPlay",
-  "description": "#1 best extention based on MultiAPI",
+  "description": "#1 best extension based on MultiAPI",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stream-play/manifest.json",
-  "version": "1.695.0",
+  "version": "1.701.0",
   "author": "Phisher98, Hexated",
   "type": "onlinestream-provider",
   "language": "typescript",

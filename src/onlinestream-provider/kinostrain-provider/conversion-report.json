@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/KinostrainProvider.cs3",
   "original_version": 2,
-  "sha256_checksum": "c1cc40a54f5b6265af8efd93ced48a829e26cf0886dbc5f1a90a3d6e8c21ec8b",
+  "sha256_checksum": "24620e20935384ebc9680ea12a934f3797570945402535ea0c9a21aad33ef252",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:37.599125+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:00.915086+00:00",
   "passed": false
 }

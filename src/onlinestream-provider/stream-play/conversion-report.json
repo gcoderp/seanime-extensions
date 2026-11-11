@@ -4,8 +4,8 @@
   "original_author": "Phisher98, Hexated",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/StreamPlay.cs3",
-  "original_version": 695,
-  "sha256_checksum": "a58a27c075c636c59f9dea96592313c4ebee9d401285771c13ab2af4e1d238b7",
+  "original_version": 701,
+  "sha256_checksum": "1263d1e738686b2fb06bd71bc992fea7cd77651d398d9b2ee72adaa3c6da0b87",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:55:49.412657+00:00",
+  "conversion_timestamp": "2026-11-11T13:07:58.819490+00:00",
   "passed": false
 }

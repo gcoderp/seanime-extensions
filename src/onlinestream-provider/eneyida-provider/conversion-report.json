@@ -4,8 +4,8 @@
   "original_author": "CakesTwix",
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/EneyidaProvider.cs3",
-  "original_version": 19,
-  "sha256_checksum": "41d81d5332832599e174637cbe7884ac6b302be61612a978b684c2fddfb3b286",
+  "original_version": 20,
+  "sha256_checksum": "2947d81d3b8aeace00ad5efe95bd753a08fb65853e1fbdd5e495a86026f1079c",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:35.986563+00:00",
+  "conversion_timestamp": "2026-11-11T13:10:59.401239+00:00",
   "passed": false
 }

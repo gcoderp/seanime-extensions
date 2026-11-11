@@ -2,14 +2,14 @@
   "extensionId": "ufdub-provider",
   "originalPluginName": "UFDubProvider",
   "originalInternalName": "UFDubProvider",
-  "originalVersion": 13,
+  "originalVersion": 14,
   "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UFDubProvider.cs3",
   "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "originalAuthors": [
     "CakesTwix"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "beedbe938480377c046d635cec0f374f44bb065a914d35beef525e0dcf4ea677",
+  "cs3Sha256": "b057e9ca41acb208e2bc315ffc868a5e2dcba11b8f1f4a3fff057dbb0392695f",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-10T13:58:47.226055+00:00"
+  "convertedAt": "2026-11-11T13:11:10.460214+00:00"
 }

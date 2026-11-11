@@ -9,7 +9,7 @@
     "CakesTwix"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "5f46c4519fb47b8cbd28504b73b9bcd0faebe717bc8cb7179251257fc62fba80",
+  "cs3Sha256": "ea6b4b466fa40d48a3230e6bd4d12a901ac2c0dfc3afc1f5878e6234c9d33a4e",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-10T13:58:34.306880+00:00"
+  "convertedAt": "2026-11-11T13:10:57.766454+00:00"
 }

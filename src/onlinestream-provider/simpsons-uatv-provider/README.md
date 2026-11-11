@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `simpsons-uatv-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.6.0` (Upstream CS3 v6)
+- **Version:** `1.7.0` (Upstream CS3 v7)
 - **Language:** `uk`
 - **Original Author(s):** deleteBlack666
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `54c79ce42b2d45fcca183af3e10490f5e486892dc7b2040d90d0676a105808c9`
+- **CS3 SHA-256:** `d1b91a395bdce4d1c5e0d3cfdc931cd53a4b4c9561895d3aeb1f5b9bd285aa44`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

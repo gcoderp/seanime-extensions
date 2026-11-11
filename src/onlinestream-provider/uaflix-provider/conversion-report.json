@@ -4,8 +4,8 @@
   "original_author": "CakesTwix",
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UAFlixProvider.cs3",
-  "original_version": 23,
-  "sha256_checksum": "6ffeea729e8f89a99d17088cbfa8eee6c002b524f0d6e5645aa1a7f827bdbb38",
+  "original_version": 24,
+  "sha256_checksum": "84d950d86794c364e991e89ec85f6d0c6d97064d3f8dabad0d8ed4ceb5e6af6e",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:43.166320+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:06.389641+00:00",
   "passed": false
 }

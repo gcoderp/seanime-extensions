@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `ufdub-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.13.0` (Upstream CS3 v13)
+- **Version:** `1.14.0` (Upstream CS3 v14)
 - **Language:** `uk`
 - **Original Author(s):** CakesTwix
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `beedbe938480377c046d635cec0f374f44bb065a914d35beef525e0dcf4ea677`
+- **CS3 SHA-256:** `b057e9ca41acb208e2bc315ffc868a5e2dcba11b8f1f4a3fff057dbb0392695f`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

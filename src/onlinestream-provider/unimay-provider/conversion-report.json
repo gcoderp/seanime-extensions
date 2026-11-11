@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UnimayProvider.cs3",
   "original_version": 13,
-  "sha256_checksum": "68046c39c52a8945d31befb2c81b0f40614a367a7d7a162d88044548d9a37109",
+  "sha256_checksum": "e3ab433d976abd8f187d67759d92e8091f62f74db08200b168b7205e244f93b1",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:47.227044+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:10.461436+00:00",
   "passed": false
 }

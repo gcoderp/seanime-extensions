@@ -104,6 +104,21 @@
     "icon": "https://github.com/SaurabhKaperwan/CSX/raw/refs/heads/master/CineStream/icon.png"
   },
   {
+    "id": "embed-tv",
+    "name": "EmbedTV",
+    "description": "Embed TV - O melhor site de TV online. ",
+    "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/embed-tv/manifest.json",
+    "version": "1.3.0",
+    "author": "lawlietbr",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "pt-br",
+    "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/embed-tv/README.md",
+    "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS.",
+    "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/embed-tv/code.js",
+    "icon": "https://embedtv.best/assets/icon.png"
+  },
+  {
     "id": "gogo-anime-provider",
     "name": "GogoAnime",
     "description": "High-speed GogoAnime / Anitaku provider with sub/dub and multi-server extraction.",
@@ -116,6 +131,51 @@
     "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/gogo-anime-provider/README.md",
     "notes": "Automatically converted via strategy STRATEGY_1_EMBEDDED_KOTLIN_SOURCE; validation status SUCCESS.",
     "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/code.js"
+  },
+  {
+    "id": "goyabu",
+    "name": "Goyabu",
+    "description": "Animes Online em HD gratuitamente no Goyabu",
+    "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/goyabu/manifest.json",
+    "version": "1.2.0",
+    "author": "lawlietbr",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "pt-br",
+    "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/goyabu/README.md",
+    "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS.",
+    "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/goyabu/code.js",
+    "icon": "https://goyabu.io/wp-content/uploads/2025/12/cropped-goyabu-favicon-192x192.png"
+  },
+  {
+    "id": "mendigo-flix",
+    "name": "MendigoFlix",
+    "description": "MendigoFlix - Filmes e S\u00e9ries em Portugu\u00eas",
+    "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mendigo-flix/manifest.json",
+    "version": "1.3.0",
+    "author": "lawlietbr",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "pt-br",
+    "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/mendigo-flix/README.md",
+    "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS.",
+    "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mendigo-flix/code.js",
+    "icon": "https://mendigoflix.lol/assets/favicon.png"
+  },
+  {
+    "id": "nekokun",
+    "name": "Nekokun",
+    "description": "Nekokun adalah tempat nonton dan streaming animu favoritmu! Di sini tersedia berbagai resolusi untuk kalian download mulai dari 480p, 720p, dan 1080p. Selain bisa download kalian juga langsung bisa streaming dengan lancar dan tanpa lag!",
+    "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekokun/manifest.json",
+    "version": "1.5.0",
+    "author": "ByAyzen",
+    "type": "onlinestream-provider",
+    "language": "typescript",
+    "lang": "id",
+    "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/nekokun/README.md",
+    "notes": "Automatically converted via strategy STRATEGY_1_GITHUB_SOURCE_RECOVERY; validation status SUCCESS.",
+    "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekokun/code.js",
+    "icon": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://nekokun.my.id&size=128"
   },
   {
     "id": "stream-center",

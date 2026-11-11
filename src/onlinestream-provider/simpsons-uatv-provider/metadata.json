@@ -2,14 +2,14 @@
   "extensionId": "simpsons-uatv-provider",
   "originalPluginName": "SimpsonsUATvProvider",
   "originalInternalName": "SimpsonsUATvProvider",
-  "originalVersion": 6,
+  "originalVersion": 7,
   "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/SimpsonsUATvProvider.cs3",
   "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "originalAuthors": [
     "deleteBlack666"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "54c79ce42b2d45fcca183af3e10490f5e486892dc7b2040d90d0676a105808c9",
+  "cs3Sha256": "d1b91a395bdce4d1c5e0d3cfdc931cd53a4b4c9561895d3aeb1f5b9bd285aa44",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-10T13:58:42.386305+00:00"
+  "convertedAt": "2026-11-11T13:11:05.602424+00:00"
 }

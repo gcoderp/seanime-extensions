@@ -3,7 +3,7 @@
   "name": "EasyPlayProvider",
   "description": "EasyPlay IPTV Live TV channels (auto-leased Xtream playlist, no login)",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/easy-play-provider/manifest.json",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",

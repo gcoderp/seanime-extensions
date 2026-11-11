@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/HentaiUkrProvider.cs3",
   "original_version": 6,
-  "sha256_checksum": "bd9a0f9ada45b059123adb3593c8c5853ec5c2af43c3a91438165ec548a93d09",
+  "sha256_checksum": "9b4bbc67f398dd1f49abac18a0f685051e3a7ac976a25bc9dea4b90b0fb276f4",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:36.795906+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:00.185077+00:00",
   "passed": false
 }

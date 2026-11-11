@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `ua-kino-cxprovider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.1.0` (Upstream CS3 v1)
+- **Version:** `1.2.0` (Upstream CS3 v2)
 - **Language:** `uk`
 - **Original Author(s):** В'язень Свободи
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `4ec709c64b2a7020d78d9e74bfbf13a25617cc1d6f6e41f8bcabc07324feb2ef`
+- **CS3 SHA-256:** `18f50c34389cb748b29c38039fcd943b495ed3344ab39d6665f91a6834d2e352`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

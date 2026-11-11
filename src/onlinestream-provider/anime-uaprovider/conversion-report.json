@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/AnimeUAProvider.cs3",
   "original_version": 10,
-  "sha256_checksum": "31647bcf6bdd87404e7df5a8db621ee1d100c605ef3d9f2a342d389cd8a386a8",
+  "sha256_checksum": "e2a6a4d776208a6cc11854a5bdf433f13647f84d0f9c56bdded1b9540ba2c41f",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:31.512293+00:00",
+  "conversion_timestamp": "2026-11-11T13:10:54.619174+00:00",
   "passed": false
 }

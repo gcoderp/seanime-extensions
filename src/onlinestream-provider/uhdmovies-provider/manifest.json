@@ -3,7 +3,7 @@
   "name": "UHDmoviesProvider",
   "description": "Indian Multi-language 4K Provider",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/uhdmovies-provider/manifest.json",
-  "version": "1.42.0",
+  "version": "1.45.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/UHDmoviesProvider.cs3",
-  "original_version": 42,
-  "sha256_checksum": "13ef29ef23bd471979edcb844d8f9eb93301a2530e007d5a519a971b1c6642f2",
+  "original_version": 45,
+  "sha256_checksum": "4ae5f0a706c51ef824ccf60cfbee5477514e2a2efd2655526ce3469e7492864c",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:55:58.760332+00:00",
+  "conversion_timestamp": "2026-11-11T13:08:07.240623+00:00",
   "passed": false
 }

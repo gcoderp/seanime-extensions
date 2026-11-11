@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/SerialnoProvider.cs3",
   "original_version": 13,
-  "sha256_checksum": "a17631fb29dd710d59144cb1b80e9b0fdd17fe2b0f1eb816fba66f239855bf54",
+  "sha256_checksum": "62576c1e8d18a095f8eb41bb792a50c4a95f5f038114de3625022290d58c1784",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:40.838745+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:04.091860+00:00",
   "passed": false
 }

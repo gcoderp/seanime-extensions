@@ -2,14 +2,14 @@
   "extensionId": "ua-kino-cxprovider",
   "originalPluginName": "UaKinoCXProvider",
   "originalInternalName": "UaKinoCXProvider",
-  "originalVersion": 1,
+  "originalVersion": 2,
   "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UaKinoCXProvider.cs3",
   "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "originalAuthors": [
     "\u0412'\u044f\u0437\u0435\u043d\u044c \u0421\u0432\u043e\u0431\u043e\u0434\u0438"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "4ec709c64b2a7020d78d9e74bfbf13a25617cc1d6f6e41f8bcabc07324feb2ef",
+  "cs3Sha256": "18f50c34389cb748b29c38039fcd943b495ed3344ab39d6665f91a6834d2e352",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-10T13:58:44.784575+00:00"
+  "convertedAt": "2026-11-11T13:11:07.988468+00:00"
 }

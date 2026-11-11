@@ -2,14 +2,14 @@
   "extensionId": "uaflix-provider",
   "originalPluginName": "UAFlixProvider",
   "originalInternalName": "UAFlixProvider",
-  "originalVersion": 23,
+  "originalVersion": 24,
   "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UAFlixProvider.cs3",
   "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "originalAuthors": [
     "CakesTwix"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "6ffeea729e8f89a99d17088cbfa8eee6c002b524f0d6e5645aa1a7f827bdbb38",
+  "cs3Sha256": "84d950d86794c364e991e89ec85f6d0c6d97064d3f8dabad0d8ed4ceb5e6af6e",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-10T13:58:43.971307+00:00"
+  "convertedAt": "2026-11-11T13:11:07.171831+00:00"
 }

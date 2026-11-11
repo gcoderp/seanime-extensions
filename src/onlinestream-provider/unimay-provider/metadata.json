@@ -9,7 +9,7 @@
     "CakesTwix"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "68046c39c52a8945d31befb2c81b0f40614a367a7d7a162d88044548d9a37109",
+  "cs3Sha256": "e3ab433d976abd8f187d67759d92e8091f62f74db08200b168b7205e244f93b1",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-10T13:58:48.000745+00:00"
+  "convertedAt": "2026-11-11T13:11:11.246729+00:00"
 }

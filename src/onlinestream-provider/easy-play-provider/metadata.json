@@ -2,14 +2,14 @@
   "extensionId": "easy-play-provider",
   "originalPluginName": "EasyPlayProvider",
   "originalInternalName": "EasyPlayProvider",
-  "originalVersion": 4,
+  "originalVersion": 5,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/EasyPlayProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "044441c638148ea8021ce6f570c082753a516f15ee875b7a5ebe1236aa79d69a",
+  "cs3Sha256": "886dcad925ce2274075ef642b8ac178b7b684fb42c17b874f7711d0c6b9d91ea",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-10T13:57:37.532837+00:00"
+  "convertedAt": "2026-11-11T13:09:48.522819+00:00"
 }

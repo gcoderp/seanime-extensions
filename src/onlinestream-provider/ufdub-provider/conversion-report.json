@@ -4,8 +4,8 @@
   "original_author": "CakesTwix",
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UFDubProvider.cs3",
-  "original_version": 13,
-  "sha256_checksum": "beedbe938480377c046d635cec0f374f44bb065a914d35beef525e0dcf4ea677",
+  "original_version": 14,
+  "sha256_checksum": "b057e9ca41acb208e2bc315ffc868a5e2dcba11b8f1f4a3fff057dbb0392695f",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-10T13:58:46.352822+00:00",
+  "conversion_timestamp": "2026-11-11T13:11:09.712242+00:00",
   "passed": false
 }
