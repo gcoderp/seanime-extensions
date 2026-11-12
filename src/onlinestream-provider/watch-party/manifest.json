@@ -1,7 +1,7 @@
 {
   "id": "watch-party",
   "name": "WatchParty",
-  "description": "\u26a0\ufe0f BETA \u26a0\ufe0f Watch movies and TV series together in real-time with live chat (Up to 5 users).",
+  "description": "Watch movies and TV series together in real-time with live chat (Up to 5 users).",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/watch-party/manifest.json",
   "version": "1.5.0",
   "author": "DieGon",

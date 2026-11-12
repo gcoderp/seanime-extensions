@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://videa.hu";
-    private mirrorDomains: string[] = ["https://videa.hu", "https://videa.hu", "https://videa.hu/player/xml?platform=desktop"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://videa.hu/"};
+    private mainUrl: string = "https://www.4shared.com";
+    private mirrorDomains: string[] = ["https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com/web/embed/file"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.4shared.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
+            episodeServers: ["mp4upload", "okru"],
             supportsDub: true,
         };
     }
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "mp4upload";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

@@ -4,8 +4,8 @@
   "original_author": "Nanduuu03, DieGon",
   "original_repository": "https://github.com/DieGon7771/ItaliaInStreaming",
   "original_download_url": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/StreamingCommunity.cs3",
-  "original_version": 53,
-  "sha256_checksum": "2e486e3958b9ab50ee7c0951b142dea870bcbf69db059cef3af0ea7bc109d5f0",
+  "original_version": 54,
+  "sha256_checksum": "d4fe36878fdab17cfc621443fe89166b445ed4e6b62c382a64df0e8c3c0822e7",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -34,6 +34,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-11T13:10:21.036170+00:00",
+  "conversion_timestamp": "2026-11-12T14:12:27.671658+00:00",
   "passed": false
 }

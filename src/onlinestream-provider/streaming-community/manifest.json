@@ -3,7 +3,7 @@
   "name": "StreamingCommunity",
   "description": "Film e SerieTV da StreamingCommunity",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/streaming-community/manifest.json",
-  "version": "1.53.0",
+  "version": "1.54.0",
   "author": "Nanduuu03, DieGon",
   "type": "onlinestream-provider",
   "language": "typescript",

@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `uakino-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.35.0` (Upstream CS3 v35)
+- **Version:** `1.36.0` (Upstream CS3 v36)
 - **Language:** `uk`
 - **Original Author(s):** CakesTwix
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `5a393fede3d66b624c8d65f9a4325bd2a2eeab13f0f1e19da866d38a9e7a9414`
+- **CS3 SHA-256:** `5868652a7aa92e12241e1cc8db9a12ce0fe9c5f7ebb496a816d42cd2d7594548`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

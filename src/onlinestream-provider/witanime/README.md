@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `witanime`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.2.0` (Upstream CS3 v2)
+- **Version:** `1.3.0` (Upstream CS3 v3)
 - **Language:** `ar`
 - **Original Author(s):** Abodabodd
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `61567898515085b543b7a1b17399c93fcbaafca1ca09bdf903546836b0972078`
+- **CS3 SHA-256:** `02cedcc7f14db657f5ae0482edaecfa909b98cff27828b8474b006dde458a595`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

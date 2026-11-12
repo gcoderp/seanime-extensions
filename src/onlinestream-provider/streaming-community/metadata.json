@@ -2,7 +2,7 @@
   "extensionId": "streaming-community",
   "originalPluginName": "StreamingCommunity",
   "originalInternalName": "StreamingCommunity",
-  "originalVersion": 53,
+  "originalVersion": 54,
   "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/StreamingCommunity.cs3",
   "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
   "originalAuthors": [
@@ -10,7 +10,7 @@
     "DieGon"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "2e486e3958b9ab50ee7c0951b142dea870bcbf69db059cef3af0ea7bc109d5f0",
+  "cs3Sha256": "d4fe36878fdab17cfc621443fe89166b445ed4e6b62c382a64df0e8c3c0822e7",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -19,5 +19,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-11T13:10:21.765878+00:00"
+  "convertedAt": "2026-11-12T14:12:28.195920+00:00"
 }

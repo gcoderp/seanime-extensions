@@ -3,7 +3,7 @@
   "name": "AnimePahe",
   "description": "Animes (SUB/DUB)",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-pahe/manifest.json",
-  "version": "1.51.0",
+  "version": "1.52.0",
   "author": "Cloudburst,Lorem Ipsum,Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

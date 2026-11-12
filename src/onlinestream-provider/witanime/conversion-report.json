@@ -4,8 +4,8 @@
   "original_author": "Abodabodd",
   "original_repository": "https://github.com/Abodabodd/re-3arabi",
   "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Witanime.cs3",
-  "original_version": 2,
-  "sha256_checksum": "61567898515085b543b7a1b17399c93fcbaafca1ca09bdf903546836b0972078",
+  "original_version": 3,
+  "sha256_checksum": "02cedcc7f14db657f5ae0482edaecfa909b98cff27828b8474b006dde458a595",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-11T13:08:49.085149+00:00",
+  "conversion_timestamp": "2026-11-12T14:11:12.026820+00:00",
   "passed": false
 }

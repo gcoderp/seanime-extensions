@@ -2,14 +2,14 @@
   "extensionId": "calcio-streaming",
   "originalPluginName": "CalcioStreaming",
   "originalInternalName": "CalcioStreaming",
-  "originalVersion": 21,
+  "originalVersion": 22,
   "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/CalcioStreaming.cs3",
   "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
   "originalAuthors": [
     "DieGon"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "efcc840fae68ae21d19aeb37862751e65b75fd1ab399dd38145f1bc7956b8a99",
+  "cs3Sha256": "639f88d8fdbbcb489827d505a2717edc3bc10af6c8aa34f94ac38d5b6f2c856e",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-11T13:10:15.149873+00:00"
+  "convertedAt": "2026-11-12T14:12:24.752941+00:00"
 }

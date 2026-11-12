@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://terzino.direttecommunity.online";
-        this.mirrorDomains = ["https://terzino.direttecommunity.online", "https://terzino.direttecommunity.online"];
-        this.defaultHeaders = { "Referer": "https://terzino.direttecommunity.online/" };
+        this.mainUrl = "https://action.direttecommunity.online";
+        this.mirrorDomains = ["https://action.direttecommunity.online", "https://action.direttecommunity.online"];
+        this.defaultHeaders = { "Referer": "https://action.direttecommunity.online/" };
     }
     getSettings() {
         return {

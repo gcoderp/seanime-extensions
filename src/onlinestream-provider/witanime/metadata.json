@@ -2,14 +2,14 @@
   "extensionId": "witanime",
   "originalPluginName": "Witanime",
   "originalInternalName": "Witanime",
-  "originalVersion": 2,
+  "originalVersion": 3,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Witanime.cs3",
   "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
   "originalAuthors": [
     "Abodabodd"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "61567898515085b543b7a1b17399c93fcbaafca1ca09bdf903546836b0972078",
+  "cs3Sha256": "02cedcc7f14db657f5ae0482edaecfa909b98cff27828b8474b006dde458a595",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-11T13:08:49.794363+00:00"
+  "convertedAt": "2026-11-12T14:11:12.704636+00:00"
 }

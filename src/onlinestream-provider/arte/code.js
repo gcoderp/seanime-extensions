@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Arte
-// Original Class: Arte
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ArtePlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://www.arte.tv";
-        this.mirrorDomains = ["https://www.arte.tv", "https://api.arte.tv", "https://www.arte.tv"];
-        this.defaultHeaders = { "Referer": "https://www.arte.tv/" };
+        this.mainUrl = "https://api.arte.tv";
+        this.mirrorDomains = ["https://api.arte.tv", "https://api.arte.tv", "https://www.arte.tv"];
+        this.defaultHeaders = { "Referer": "https://api.arte.tv/" };
     }
     getSettings() {
         return {

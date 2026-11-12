@@ -4,8 +4,8 @@
   "original_author": "Abodabodd",
   "original_repository": "https://github.com/Abodabodd/re-3arabi",
   "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Anime4up.cs3",
-  "original_version": 2,
-  "sha256_checksum": "80b5d5f87fb0da6bbe42e0977c765bcce2c6cb918e251d9c17e996f7144d01da",
+  "original_version": 3,
+  "sha256_checksum": "4820460d88ce78e4a8ba0c95bd2a5db15159cc0229237d974fab62e3745b2774",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-11T13:08:23.934952+00:00",
+  "conversion_timestamp": "2026-11-12T14:10:51.414361+00:00",
   "passed": false
 }

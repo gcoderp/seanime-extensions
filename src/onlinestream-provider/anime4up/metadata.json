@@ -2,14 +2,14 @@
   "extensionId": "anime4up",
   "originalPluginName": "Anime4up",
   "originalInternalName": "Anime4up",
-  "originalVersion": 2,
+  "originalVersion": 3,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Anime4up.cs3",
   "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
   "originalAuthors": [
     "Abodabodd"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "80b5d5f87fb0da6bbe42e0977c765bcce2c6cb918e251d9c17e996f7144d01da",
+  "cs3Sha256": "4820460d88ce78e4a8ba0c95bd2a5db15159cc0229237d974fab62e3745b2774",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-11T13:08:24.705067+00:00"
+  "convertedAt": "2026-11-12T14:10:52.082136+00:00"
 }

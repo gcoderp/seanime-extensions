@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Goyabu
-// Original Class: Goyabu
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: GoyabuPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://goyabu.io";
-    private mirrorDomains: string[] = ["https://goyabu.io", "https://goyabu.io", "https://goyabu.io"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://goyabu.io/"};
+    private mainUrl: string = "https://www.blogger.com";
+    private mirrorDomains: string[] = ["https://www.blogger.com", "https://www.blogger.com", "https://www.blogger.com", "https://www.blogger.com/_/BloggerVideoPlayerUi/data/batchexecute"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.blogger.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "$SEARCH_PATH${query.trim().replace(?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "article a, .boxAN a, a[href*='/anime/']";
+        const itemSelector = ".audio-box.dublado, .dublado";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".streamer-poster img, .cover";
-        const epNumSelector = ".streamer-sinopse";
+        const epSelector = ".filter-btn.btn-style, a[href*='/generos/']";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

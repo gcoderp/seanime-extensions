@@ -4,8 +4,8 @@
   "original_author": "CakesTwix",
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UakinoProvider.cs3",
-  "original_version": 35,
-  "sha256_checksum": "5a393fede3d66b624c8d65f9a4325bd2a2eeab13f0f1e19da866d38a9e7a9414",
+  "original_version": 36,
+  "sha256_checksum": "5868652a7aa92e12241e1cc8db9a12ce0fe9c5f7ebb496a816d42cd2d7594548",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-11T13:11:07.989919+00:00",
+  "conversion_timestamp": "2026-11-12T14:13:05.096095+00:00",
   "passed": false
 }

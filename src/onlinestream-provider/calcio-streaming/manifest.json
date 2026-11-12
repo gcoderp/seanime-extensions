@@ -3,7 +3,7 @@
   "name": "CalcioStreaming",
   "description": "Live streams da CalcioStreaming",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/calcio-streaming/manifest.json",
-  "version": "1.21.0",
+  "version": "1.22.0",
   "author": "DieGon",
   "type": "onlinestream-provider",
   "language": "typescript",

@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Nebula
-// Original Class: NebulaPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: Nebula
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://content.api.nebula.app";
-        this.mirrorDomains = ["https://content.api.nebula.app", "https://content.api.nebula.app", "https://content.api.nebula.app/video_channels", "https://content.api.nebula.app/video_episodes"];
-        this.defaultHeaders = { "Referer": "https://content.api.nebula.app/" };
+        this.mainUrl = "https://nebula.tv";
+        this.mirrorDomains = ["https://nebula.tv", "https://nebula.tv"];
+        this.defaultHeaders = { "Referer": "https://nebula.tv/" };
     }
     getSettings() {
         return {

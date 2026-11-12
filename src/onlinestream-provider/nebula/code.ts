@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Nebula
-// Original Class: NebulaPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: Nebula
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://content.api.nebula.app";
-    private mirrorDomains: string[] = ["https://content.api.nebula.app", "https://content.api.nebula.app", "https://content.api.nebula.app/video_channels", "https://content.api.nebula.app/video_episodes"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://content.api.nebula.app/"};
+    private mainUrl: string = "https://nebula.tv";
+    private mirrorDomains: string[] = ["https://nebula.tv", "https://nebula.tv"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://nebula.tv/"};
 
     getSettings(): Settings {
         return {

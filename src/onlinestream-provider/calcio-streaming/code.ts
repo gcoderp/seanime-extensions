@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://terzino.direttecommunity.online";
-    private mirrorDomains: string[] = ["https://terzino.direttecommunity.online", "https://terzino.direttecommunity.online"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://terzino.direttecommunity.online/"};
+    private mainUrl: string = "https://action.direttecommunity.online";
+    private mirrorDomains: string[] = ["https://action.direttecommunity.online", "https://action.direttecommunity.online"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://action.direttecommunity.online/"};
 
     getSettings(): Settings {
         return {

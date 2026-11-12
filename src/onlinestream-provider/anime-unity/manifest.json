@@ -3,7 +3,7 @@
   "name": "AnimeUnity",
   "description": "Anime da AnimeUnity",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-unity/manifest.json",
-  "version": "1.19.0",
+  "version": "1.20.0",
   "author": "DieGon",
   "type": "onlinestream-provider",
   "language": "typescript",

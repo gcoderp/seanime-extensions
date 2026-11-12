@@ -390,13 +390,13 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://videa.hu";
-        this.mirrorDomains = ["https://videa.hu", "https://videa.hu", "https://videa.hu/player/xml?platform=desktop"];
-        this.defaultHeaders = { "Referer": "https://videa.hu/" };
+        this.mainUrl = "https://www.4shared.com";
+        this.mirrorDomains = ["https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com/web/embed/file"];
+        this.defaultHeaders = { "Referer": "https://www.4shared.com/" };
     }
     getSettings() {
         return {
-            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
+            episodeServers: ["mp4upload", "okru"],
             supportsDub: true,
         };
     }
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "mp4upload";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

@@ -4,8 +4,8 @@
   "original_author": "deleteBlack666",
   "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/SimpsonsUATvProvider.cs3",
-  "original_version": 7,
-  "sha256_checksum": "d1b91a395bdce4d1c5e0d3cfdc931cd53a4b4c9561895d3aeb1f5b9bd285aa44",
+  "original_version": 8,
+  "sha256_checksum": "8e38411e90501476bcfbffbc8858b9ee5f047af8a4cbf31946ab08bfd557336c",
   "license_spdx": "GPL-3.0",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -31,6 +31,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-11T13:11:04.828514+00:00",
+  "conversion_timestamp": "2026-11-12T14:13:02.692352+00:00",
   "passed": false
 }
