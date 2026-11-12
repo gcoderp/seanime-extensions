@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T16:50:10.691Z",
+  "generatedAt": "2026-11-12T17:17:49.977Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -100,11 +100,11 @@
     "checked": 7,
     "working": 0,
     "failed": 7,
-    "durationMs": 22477,
+    "durationMs": 32154,
     "byStatus": {
       "working": 0,
-      "no_search_results": 4,
-      "search_timeout": 2,
+      "no_search_results": 5,
+      "search_timeout": 1,
       "no_episodes": 0,
       "no_stream": 0,
       "stream_unreachable": 0,
@@ -128,47 +128,23 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 3845
-    },
-    {
-      "id": "embed-tv",
-      "name": "EmbedTV",
-      "type": "onlinestream-provider",
-      "status": "search_timeout",
-      "error": "fetch failed",
-      "durationMs": 813
+      "durationMs": 3169
     },
     {
       "id": "gogo-anime-provider",
       "name": "GogoAnime",
       "type": "onlinestream-provider",
-      "status": "no_search_results",
-      "error": null,
-      "durationMs": 17733
-    },
-    {
-      "id": "goyabu",
-      "name": "Goyabu",
-      "type": "onlinestream-provider",
-      "status": "no_search_results",
-      "error": null,
-      "durationMs": 2858
-    },
-    {
-      "id": "mendigo-flix",
-      "name": "MendigoFlix",
-      "type": "onlinestream-provider",
       "status": "search_timeout",
-      "error": "fetch failed",
-      "durationMs": 293
+      "error": "search() timed out after 20000ms",
+      "durationMs": 31209
     },
     {
-      "id": "nekokun",
-      "name": "Nekokun",
+      "id": "simkl-provider",
+      "name": "SimklProvider",
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 20133
+      "durationMs": 1692
     },
     {
       "id": "stream-center",
@@ -176,7 +152,31 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 2813
+      "durationMs": 3041
+    },
+    {
+      "id": "supercartoons",
+      "name": "Supercartoons",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 10706
+    },
+    {
+      "id": "watch-wrestling",
+      "name": "WatchWrestling",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 7369
+    },
+    {
+      "id": "yo-turkish",
+      "name": "YoTurkish",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 6161
     }
   ],
   "results": [
@@ -205,36 +205,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 3845
-    },
-    {
-      "id": "embed-tv",
-      "name": "EmbedTV",
-      "type": "onlinestream-provider",
-      "version": "1.3.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/embed-tv/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/embed-tv/code.js",
-      "status": "search_timeout",
-      "error": "fetch failed",
-      "target": 21,
-      "search": {
-        "attempts": [
-          {
-            "query": "ONE PIECE",
-            "results": 0,
-            "requests": 3,
-            "httpStatus": 0,
-            "networkFailures": 3,
-            "lastError": "fetch failed",
-            "error": "fetch failed"
-          }
-        ],
-        "count": 0
-      },
-      "episodes": null,
-      "stream": null,
-      "torrent": null,
-      "durationMs": 813
+      "durationMs": 3169
     },
     {
       "id": "gogo-anime-provider",
@@ -243,17 +214,26 @@
       "version": "1.12.0",
       "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json",
       "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/code.js",
-      "status": "no_search_results",
-      "error": null,
-      "target": 501,
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "target": 5114,
       "search": {
         "attempts": [
           {
-            "query": "Doraemon",
+            "query": "Hagane no Renkinjutsushi: FULLMETAL ALCHEMIST",
             "results": 0,
-            "requests": 1,
+            "requests": 2,
             "httpStatus": 200,
             "networkFailures": 0
+          },
+          {
+            "query": "Fullmetal Alchemist: Brotherhood",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 0,
+            "networkFailures": 1,
+            "lastError": "fetch failed",
+            "error": "search() timed out after 20000ms"
           }
         ],
         "count": 0
@@ -261,15 +241,15 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 17733
+      "durationMs": 31209
     },
     {
-      "id": "goyabu",
-      "name": "Goyabu",
+      "id": "simkl-provider",
+      "name": "SimklProvider",
       "type": "onlinestream-provider",
       "version": "1.2.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/goyabu/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/goyabu/code.js",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/simkl-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/simkl-provider/code.js",
       "status": "no_search_results",
       "error": null,
       "target": 501,
@@ -288,69 +268,13 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2858
-    },
-    {
-      "id": "mendigo-flix",
-      "name": "MendigoFlix",
-      "type": "onlinestream-provider",
-      "version": "1.3.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mendigo-flix/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/mendigo-flix/code.js",
-      "status": "search_timeout",
-      "error": "fetch failed",
-      "target": 21,
-      "search": {
-        "attempts": [
-          {
-            "query": "ONE PIECE",
-            "results": 0,
-            "requests": 2,
-            "httpStatus": 0,
-            "networkFailures": 2,
-            "lastError": "fetch failed",
-            "error": "fetch failed"
-          }
-        ],
-        "count": 0
-      },
-      "episodes": null,
-      "stream": null,
-      "torrent": null,
-      "durationMs": 293
-    },
-    {
-      "id": "nekokun",
-      "name": "Nekokun",
-      "type": "onlinestream-provider",
-      "version": "1.5.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekokun/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekokun/code.js",
-      "status": "no_search_results",
-      "error": null,
-      "target": 501,
-      "search": {
-        "attempts": [
-          {
-            "query": "Doraemon",
-            "results": 0,
-            "requests": 1,
-            "httpStatus": 404,
-            "networkFailures": 0
-          }
-        ],
-        "count": 0
-      },
-      "episodes": null,
-      "stream": null,
-      "torrent": null,
-      "durationMs": 20133
+      "durationMs": 1692
     },
     {
       "id": "stream-center",
       "name": "StreamCenter",
       "type": "onlinestream-provider",
-      "version": "1.13.0",
+      "version": "1.14.0",
       "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stream-center/manifest.json",
       "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stream-center/code.js",
       "status": "search_error",
@@ -372,7 +296,88 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2813
+      "durationMs": 3041
+    },
+    {
+      "id": "supercartoons",
+      "name": "Supercartoons",
+      "type": "onlinestream-provider",
+      "version": "1.2.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/supercartoons/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/supercartoons/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 200,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 10706
+    },
+    {
+      "id": "watch-wrestling",
+      "name": "WatchWrestling",
+      "type": "onlinestream-provider",
+      "version": "1.18.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/watch-wrestling/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/watch-wrestling/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 404,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 7369
+    },
+    {
+      "id": "yo-turkish",
+      "name": "YoTurkish",
+      "type": "onlinestream-provider",
+      "version": "1.5.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/yo-turkish/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/yo-turkish/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 429,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 6161
     }
   ]
 }
