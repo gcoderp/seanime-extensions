@@ -2,14 +2,14 @@
   "extensionId": "anizone",
   "originalPluginName": "Anizone",
   "originalInternalName": "Anizone",
-  "originalVersion": 10,
+  "originalVersion": 15,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anizone.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "ycngmn"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "f8aff2e433b84bdb6443ad6cc8962dc44c99db60f12d7eda407aad435174843a",
+  "cs3Sha256": "26d40dba08259c4c96073a799dec10f3ad8da0ec12a40233b725f74f62c786c9",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:09:56.846469+00:00"
+  "convertedAt": "2026-11-13T13:34:33.950218+00:00"
 }

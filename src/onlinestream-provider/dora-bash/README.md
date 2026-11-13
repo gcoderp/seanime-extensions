@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `dora-bash`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.14.0` (Upstream CS3 v14)
+- **Version:** `1.19.0` (Upstream CS3 v19)
 - **Language:** `hi`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `cd522eac1c66f7bb1f5e41af25f780f1f8443290b147361f02f2a4ad5b366177`
+- **CS3 SHA-256:** `52e9b00535f39f0278939ca9177a68fa1d517187fa80c9dcd5862158d33c43df`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

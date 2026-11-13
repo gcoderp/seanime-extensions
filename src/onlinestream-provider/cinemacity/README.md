@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `cinemacity`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.27.0` (Upstream CS3 v27)
+- **Version:** `1.30.0` (Upstream CS3 v30)
 - **Language:** `en`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `92725fcf1cdb99a4f63037d8795dc75ddf034d1d126f868521d961294c077878`
+- **CS3 SHA-256:** `c2f624e35e22ab9a9fc1418f61bbcde12bdbf6ea43dc9e3417364fd49d4a5f69`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

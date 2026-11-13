@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/IPTVPlayer.cs3",
   "original_version": 9,
-  "sha256_checksum": "6b15e6c20c65ff6f2ec4c807481a28c961bfc3b08801ce078843edbe87b13d59",
+  "sha256_checksum": "6706c779a9d9125e8de9e91cf99851416863940c66c186bb9e52f3c47bc45e8b",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:10.340117+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:49.920382+00:00",
   "passed": false
 }

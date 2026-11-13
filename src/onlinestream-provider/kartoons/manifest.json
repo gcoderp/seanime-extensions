@@ -3,7 +3,7 @@
   "name": "Kartoons",
   "description": "Kartoons (Cartoon & Animes)",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kartoons/manifest.json",
-  "version": "1.6.0",
+  "version": "1.13.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

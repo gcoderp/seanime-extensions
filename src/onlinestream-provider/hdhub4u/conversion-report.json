@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/HDhub4u.cs3",
   "original_version": 57,
-  "sha256_checksum": "419c8ed8b74d23b84d59ca4c613dfdea08af584e9d30c91673da7269d962ff60",
+  "sha256_checksum": "a36fb83d1ca7e39e2a737fe8464e420b35a1ea6c4238484b304b46c2fd2be768",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:06.876896+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:45.282627+00:00",
   "passed": false
 }

@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AniSnatch.cs3",
   "original_version": 2,
-  "sha256_checksum": "7008a0e7d09bee04c653627cab9da36a6815b235962d566ea5b1edc46fc3ed11",
+  "sha256_checksum": "d0979b5023883f109bf6c6a12e56996917d4dc3e169eef90d40bb9c61ce9de9b",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:09:53.311157+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:31.028674+00:00",
   "passed": false
 }

@@ -9,7 +9,7 @@
     "Phisher"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "d500bdca158b3f027aecc167b5625f0a8c69bd220b5255fabe1432ab67226bc4",
+  "cs3Sha256": "37fdebd8d869686d0a02f8f52c90c949d4223549f469109e449c1ce9aabbbe8a",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:10:37.686181+00:00"
+  "convertedAt": "2026-11-13T13:35:18.559443+00:00"
 }

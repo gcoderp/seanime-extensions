@@ -2,14 +2,14 @@
   "extensionId": "animexin",
   "originalPluginName": "Animexin",
   "originalInternalName": "Animexin",
-  "originalVersion": 16,
+  "originalVersion": 23,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animexin.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "8549b035d0cfebd8d0a53c40b82dfb36f7ff7bc632393e1a8cb785a2bd8de198",
+  "cs3Sha256": "0a530c9ba752e1eb04d993bcb8464e93b51603bc06a2dc50ba59c47c59eccfd5",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:09:52.698488+00:00"
+  "convertedAt": "2026-11-13T13:34:30.191444+00:00"
 }

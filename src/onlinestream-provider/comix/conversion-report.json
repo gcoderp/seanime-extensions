@@ -4,8 +4,8 @@
   "original_author": "phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Comix.cs3",
-  "original_version": 3,
-  "sha256_checksum": "01a5853421171b626521c293453c05dbcc47cb33e6c214bb6f92f7d7270951bc",
+  "original_version": 6,
+  "sha256_checksum": "5bc66987a3cb3d883b0a7393746ad25c87791a97c18cb80ac3b0f0c9c96bf934",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:00.098068+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:37.803745+00:00",
   "passed": false
 }

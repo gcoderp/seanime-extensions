@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/KisskhProvider.cs3",
   "original_version": 24,
-  "sha256_checksum": "0be09c8b5232f4ffd9fb41fa775120e68753823b15baf730ecb59aa5391278a0",
+  "sha256_checksum": "db305d3d29f8b911a434a68955c3dfb5020e90512a262350b445482127d27fe8",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:13.885699+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:53.599259+00:00",
   "passed": false
 }

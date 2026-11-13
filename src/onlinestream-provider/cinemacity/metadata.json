@@ -2,14 +2,14 @@
   "extensionId": "cinemacity",
   "originalPluginName": "Cinemacity",
   "originalInternalName": "Cinemacity",
-  "originalVersion": 27,
+  "originalVersion": 30,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Cinemacity.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "92725fcf1cdb99a4f63037d8795dc75ddf034d1d126f868521d961294c077878",
+  "cs3Sha256": "c2f624e35e22ab9a9fc1418f61bbcde12bdbf6ea43dc9e3417364fd49d4a5f69",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:09:59.203065+00:00"
+  "convertedAt": "2026-11-13T13:34:37.003686+00:00"
 }

@@ -3,7 +3,7 @@
   "name": "StremioAddon",
   "description": "[!] Requires Setup \n- Allows you to use any Stremio addon by pasting their manifest.json url",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-addon/manifest.json",
-  "version": "1.16.0",
+  "version": "1.17.0",
   "author": "Hexated,phisher98,erynith",
   "type": "anime-torrent-provider",
   "language": "typescript",

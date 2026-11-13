@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `stremio-x`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.27.0` (Upstream CS3 v27)
+- **Version:** `1.28.0` (Upstream CS3 v28)
 - **Language:** `en`
 - **Original Author(s):** Hexated,phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `271e44ea3fc805dcafde339657ecd2bd277e627beacce5e65d43e8695a9c8875`
+- **CS3 SHA-256:** `a137ca07fb4b7d94fd150765ff3b993d261eeb7bf2aec1b59eadcad26d2a2dbc`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

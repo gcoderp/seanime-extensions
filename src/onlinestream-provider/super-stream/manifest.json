@@ -3,7 +3,7 @@
   "name": "SuperStream",
   "description": "SuperStream (Retrieve the cookie using Login with Google to properly utilize SuperStream.",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/super-stream/manifest.json",
-  "version": "1.38.0",
+  "version": "1.43.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

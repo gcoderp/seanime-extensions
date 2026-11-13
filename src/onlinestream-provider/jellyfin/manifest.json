@@ -3,7 +3,7 @@
   "name": "Jellyfin",
   "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/jellyfin/manifest.json",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

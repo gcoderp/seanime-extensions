@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: TVGarden
-// Original Class: TVGarden
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: TVGardenplugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://tvgarden.world";
-        this.mirrorDomains = ["https://tvgarden.world", "https://tvgarden.world"];
-        this.defaultHeaders = { "Referer": "$mainUrl/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" };
+        this.mainUrl = "https://flagcdn.com";
+        this.mirrorDomains = ["https://flagcdn.com", "https://flagcdn.com/w320"];
+        this.defaultHeaders = { "Referer": "https://flagcdn.com/" };
     }
     getSettings() {
         return {

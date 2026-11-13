@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: TVGarden
-// Original Class: TVGarden
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: TVGardenplugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://tvgarden.world";
-    private mirrorDomains: string[] = ["https://tvgarden.world", "https://tvgarden.world"];
-    private defaultHeaders: Record<string, string> = {"Referer": "$mainUrl/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"};
+    private mainUrl: string = "https://flagcdn.com";
+    private mirrorDomains: string[] = ["https://flagcdn.com", "https://flagcdn.com/w320"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://flagcdn.com/"};
 
     getSettings(): Settings {
         return {

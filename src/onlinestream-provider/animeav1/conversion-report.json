@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animeav1.cs3",
   "original_version": 10,
-  "sha256_checksum": "afed271eafdfe9e5c976f2997c98f19809f35292ea68b260502b380ed2c4330d",
+  "sha256_checksum": "0df6a321d22823ce0ba4484099fd928c9f9af6774f2d0b0e9a006350b34faf20",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:09:47.063418+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:23.641046+00:00",
   "passed": false
 }

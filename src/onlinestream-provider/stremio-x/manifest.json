@@ -3,7 +3,7 @@
   "name": "StremioX",
   "description": "[!] Requires Setup \n- StremioX allows you to use stream addons \n- StremioC allows you to use catalog addons",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stremio-x/manifest.json",
-  "version": "1.27.0",
+  "version": "1.28.0",
   "author": "Hexated,phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

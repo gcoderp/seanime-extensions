@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Fivemovierulz.cs3",
   "original_version": 10,
-  "sha256_checksum": "892f80883877266bf61c0c6c60991748c1c5211bbae6bec03981b818a7489765",
+  "sha256_checksum": "35218144300d71efe3309c843a543c475e8b94bc3e3101d8ae1cf9a80cf18fd8",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:04.097892+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:42.410545+00:00",
   "passed": false
 }

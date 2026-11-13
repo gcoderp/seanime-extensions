@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animesalt.cs3",
   "original_version": 18,
-  "sha256_checksum": "22f40f473b4b627655c32d792579bbb4435c4e0d1dfe716ab2c458bd1be89881",
+  "sha256_checksum": "d0f5bbc9c58a8f9c9b96102f09f18f88a18955c8c0732029096c193aaac34bf2",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:09:51.450743+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:28.766920+00:00",
   "passed": false
 }

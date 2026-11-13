@@ -2,14 +2,14 @@
   "extensionId": "ani-vortex",
   "originalPluginName": "AniVortex",
   "originalInternalName": "AniVortex",
-  "originalVersion": 10,
+  "originalVersion": 15,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AniVortex.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "eba304e444d47a48772a1087ca6ef492775088b4a033d45122b9bf1112643b95",
+  "cs3Sha256": "6fc36cec06a9ee5e5a66d9b8992c386819df3ecbd83ff1a92adcb19732249edc",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:09:55.621319+00:00"
+  "convertedAt": "2026-11-13T13:34:32.496931+00:00"
 }

@@ -3,7 +3,7 @@
   "name": "XDMovies",
   "description": "Watch Latest Movies",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/xdmovies/manifest.json",
-  "version": "1.28.0",
+  "version": "1.29.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

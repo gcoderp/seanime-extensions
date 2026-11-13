@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animedubhindi.cs3",
   "original_version": 9,
-  "sha256_checksum": "b068ae93c23b996d09d97c3f021a55e2c38610e5fa3e484fcafaa1f9ab1b963d",
+  "sha256_checksum": "0e03717f3ca2ce752207a2fd59cb5c2daf4d7633de3a2c6c957fa2470385bdfa",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:09:49.001193+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:25.818220+00:00",
   "passed": false
 }

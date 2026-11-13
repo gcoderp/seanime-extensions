@@ -3,7 +3,7 @@
   "name": "Anizone",
   "description": "Anizone.to streams latest anime content in multiple language.",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anizone/manifest.json",
-  "version": "1.10.0",
+  "version": "1.15.0",
   "author": "ycngmn",
   "type": "onlinestream-provider",
   "language": "typescript",

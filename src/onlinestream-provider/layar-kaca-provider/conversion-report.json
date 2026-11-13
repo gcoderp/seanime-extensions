@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/LayarKacaProvider.cs3",
   "original_version": 10,
-  "sha256_checksum": "c8105962a0d7551c4b1983970579f54ac6352464cc248692e907f51e17346484",
+  "sha256_checksum": "ab4c1576695e5be60d542d19326d2d7180dd1ac4ecf7daa98304a92ab39f4410",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:15.941412+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:55.116729+00:00",
   "passed": false
 }

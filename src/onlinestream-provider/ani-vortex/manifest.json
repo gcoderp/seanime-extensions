@@ -3,7 +3,7 @@
   "name": "AniVortex",
   "description": "AniVortex \u2014 Anime, movies & TV series streaming",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/ani-vortex/manifest.json",
-  "version": "1.10.0",
+  "version": "1.15.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

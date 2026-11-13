@@ -2,14 +2,14 @@
   "extensionId": "comix",
   "originalPluginName": "Comix",
   "originalInternalName": "Comix",
-  "originalVersion": 3,
+  "originalVersion": 6,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Comix.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "01a5853421171b626521c293453c05dbcc47cb33e6c214bb6f92f7d7270951bc",
+  "cs3Sha256": "5bc66987a3cb3d883b0a7393746ad25c87791a97c18cb80ac3b0f0c9c96bf934",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:10:00.759673+00:00"
+  "convertedAt": "2026-11-13T13:34:38.645310+00:00"
 }

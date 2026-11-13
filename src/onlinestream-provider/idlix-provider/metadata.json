@@ -2,14 +2,14 @@
   "extensionId": "idlix-provider",
   "originalPluginName": "IdlixProvider",
   "originalInternalName": "IdlixProvider",
-  "originalVersion": 18,
+  "originalVersion": 25,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/IdlixProvider.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "ae7ba2259de711e51d3fa47398714096e46b51386ebbc066787275f4a1db8a8d",
+  "cs3Sha256": "a44873d2298b32b1d6a5cce44dccd796aa4ece7f0a55a5da7f78fc9dc8417aa2",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:10:10.338511+00:00"
+  "convertedAt": "2026-11-13T13:34:49.919413+00:00"
 }

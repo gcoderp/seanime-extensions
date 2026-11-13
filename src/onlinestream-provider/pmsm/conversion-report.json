@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Pmsm.cs3",
   "original_version": 8,
-  "sha256_checksum": "3289eb2925971271091d48c22082657c94a883f104d6605e9140bdf543d56944",
+  "sha256_checksum": "42551ac1ed9bdb6c429ee12be50b0ee4d0ab087f7a7d598333893fd8b3e5f397",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:26.954490+00:00",
+  "conversion_timestamp": "2026-11-13T13:35:06.287247+00:00",
   "passed": false
 }

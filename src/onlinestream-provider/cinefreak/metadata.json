@@ -2,14 +2,14 @@
   "extensionId": "cinefreak",
   "originalPluginName": "Cinefreak",
   "originalInternalName": "Cinefreak",
-  "originalVersion": 21,
+  "originalVersion": 23,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Cinefreak.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "8845212b5cac2d96a067fbfb468829e996e04fa161c364b1d5a5fadc2abccd20",
+  "cs3Sha256": "2e4e6cec67e6a4757499017b95d5997a4fe05add0933a0cc2b306d6d65bdbbf6",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:09:58.595166+00:00"
+  "convertedAt": "2026-11-13T13:34:36.190764+00:00"
 }

@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/HiAnime.cs3",
   "original_version": 2,
-  "sha256_checksum": "853628f80e83d02348796c87a4d5357b3c1e724eac9d40901a844c9c14cc1f5f",
+  "sha256_checksum": "e1ac02d7cf6f2e0c951223703b9dae2e4632f553cb20c8446b782519500945b8",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:08.290251+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:47.724913+00:00",
   "passed": false
 }

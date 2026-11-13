@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Microtv.cs3",
   "original_version": 3,
-  "sha256_checksum": "1ec909b36389ab3381923fe878c8908cf359fd2e6917d3a63bf8b4ba8b0e22be",
+  "sha256_checksum": "b952d99bad30f90083be6eab5237434c0b98068f3e22fad4fbf5161c70fff965",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:18.676735+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:57.386019+00:00",
   "passed": false
 }

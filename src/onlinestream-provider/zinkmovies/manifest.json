@@ -3,7 +3,7 @@
   "name": "Zinkmovies",
   "description": "Converted from Zinkmovies",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/zinkmovies/manifest.json",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

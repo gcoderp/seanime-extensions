@@ -414,7 +414,7 @@ class Provider {
     getSettings(): Settings {
         return {
             episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
-            supportsDub: false,
+            supportsDub: true,
         };
     }
 

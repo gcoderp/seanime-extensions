@@ -3,7 +3,7 @@
   "name": "Animexin",
   "description": "Anime and Movies",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/animexin/manifest.json",
-  "version": "1.16.0",
+  "version": "1.23.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

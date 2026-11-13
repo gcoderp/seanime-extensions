@@ -2,14 +2,14 @@
   "extensionId": "super-stream",
   "originalPluginName": "SuperStream",
   "originalInternalName": "SuperStream",
-  "originalVersion": 38,
+  "originalVersion": 43,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/SuperStream.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "15a3d297405c5e7b799294d0bc59f9e5672051295a928e3904a9fcdd0563810a",
+  "cs3Sha256": "7214e896a3d42a152812bf5df6b001a7c23b2860ae036c114cf7e45f14e6a199",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:10:33.908239+00:00"
+  "convertedAt": "2026-11-13T13:35:14.243456+00:00"
 }

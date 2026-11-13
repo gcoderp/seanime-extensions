@@ -3,7 +3,7 @@
   "name": "Comix",
   "description": "Comix \u2014 Read Manga, Manhwa, and Comics directly in CloudStream with custom reader.",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/comix/manifest.json",
-  "version": "1.3.0",
+  "version": "1.6.0",
   "author": "phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

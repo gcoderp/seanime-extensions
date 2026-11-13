@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/OHLI24.cs3",
   "original_version": 7,
-  "sha256_checksum": "28b7024946314eaac9b469a211d93a5d686cf4dc0653a3010943fb13be86ae1b",
+  "sha256_checksum": "399d81384cb83052c3cb36fb4c47376bd157acf2b042152a03f7752eff9397db",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:22.796057+00:00",
+  "conversion_timestamp": "2026-11-13T13:35:01.795393+00:00",
   "passed": false
 }

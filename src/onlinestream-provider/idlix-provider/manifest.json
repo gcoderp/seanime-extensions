@@ -3,7 +3,7 @@
   "name": "IdlixProvider",
   "description": "Converted from IdlixProvider",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/idlix-provider/manifest.json",
-  "version": "1.18.0",
+  "version": "1.25.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

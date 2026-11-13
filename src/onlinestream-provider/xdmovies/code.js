@@ -397,7 +397,7 @@ class Provider {
     getSettings() {
         return {
             episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
-            supportsDub: false,
+            supportsDub: true,
         };
     }
     async searchSite(query) {

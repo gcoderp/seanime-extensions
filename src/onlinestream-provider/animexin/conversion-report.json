@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animexin.cs3",
-  "original_version": 16,
-  "sha256_checksum": "8549b035d0cfebd8d0a53c40b82dfb36f7ff7bc632393e1a8cb785a2bd8de198",
+  "original_version": 23,
+  "sha256_checksum": "0a530c9ba752e1eb04d993bcb8464e93b51603bc06a2dc50ba59c47c59eccfd5",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:09:52.094709+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:29.486640+00:00",
   "passed": false
 }

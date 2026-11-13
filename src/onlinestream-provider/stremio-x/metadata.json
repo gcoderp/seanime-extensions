@@ -2,14 +2,14 @@
   "extensionId": "stremio-x",
   "originalPluginName": "StremioX",
   "originalInternalName": "StremioX",
-  "originalVersion": 27,
+  "originalVersion": 28,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/StremioX.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Hexated,phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "271e44ea3fc805dcafde339657ecd2bd277e627beacce5e65d43e8695a9c8875",
+  "cs3Sha256": "a137ca07fb4b7d94fd150765ff3b993d261eeb7bf2aec1b59eadcad26d2a2dbc",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-12T14:10:33.187693+00:00"
+  "convertedAt": "2026-11-13T13:35:13.461435+00:00"
 }

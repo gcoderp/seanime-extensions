@@ -3,7 +3,7 @@
   "name": "Cinemacity",
   "description": "Watch Movies & TvSeries (Multi-Lang/Audio)",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cinemacity/manifest.json",
-  "version": "1.27.0",
+  "version": "1.30.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

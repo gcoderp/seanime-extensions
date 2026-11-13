@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: WatchWrestling
-// Original Class: WatchWrestling
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: WatchWrestlingPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://watchwrestling.ae";
-    private mirrorDomains: string[] = ["https://watchwrestling.ae", "https://watchwrestling.ae"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://watchwrestling.ae/"};
+    private mainUrl: string = "https://451nj1za7g9v2kexgxatdrh.linux-developers.top";
+    private mirrorDomains: string[] = ["https://451nj1za7g9v2kexgxatdrh.linux-developers.top", "https://451nj1za7g9v2kexgxatdrh.linux-developers.top/vgroupWRSc/vsecureWRSc/?line=", "https://451nj1za7g9v2kexgxatdrh.linux-developers.top/vgroupWRSc/vsecureWRSc/?line=251122UC1&waiting=C&background=undefined"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://451nj1za7g9v2kexgxatdrh.linux-developers.top/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.loop-content div.item";
+        const itemSelector = "div#displayContent div.episodeRepeater";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.entry-content p:nth-child(1)";
-        const epNumSelector = "div#extras a";
+        const epSelector = "div#extras a";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div#displayContent div.episodeRepeater";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

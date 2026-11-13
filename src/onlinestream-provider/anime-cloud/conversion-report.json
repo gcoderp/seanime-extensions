@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AnimeCloud.cs3",
   "original_version": 11,
-  "sha256_checksum": "fb348d1b97240910d92df9457d760fd97a944f5f6d2bbc407014ae804f6466e2",
+  "sha256_checksum": "210e64982c0b0a25d9520aab159747d81a73b11b5c0128d965a8d03aa2201908",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:09:47.751442+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:24.348259+00:00",
   "passed": false
 }

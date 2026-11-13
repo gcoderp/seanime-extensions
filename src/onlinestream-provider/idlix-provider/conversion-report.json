@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/IdlixProvider.cs3",
-  "original_version": 18,
-  "sha256_checksum": "ae7ba2259de711e51d3fa47398714096e46b51386ebbc066787275f4a1db8a8d",
+  "original_version": 25,
+  "sha256_checksum": "a44873d2298b32b1d6a5cce44dccd796aa4ece7f0a55a5da7f78fc9dc8417aa2",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:09.715026+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:49.185731+00:00",
   "passed": false
 }

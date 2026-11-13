@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AllWish.cs3",
   "original_version": 18,
-  "sha256_checksum": "d1644ae1f3c00352ba845ef5daa5941c087bd33e78654ebe93cfbbdb57a41f2f",
+  "sha256_checksum": "bd139c832fd67dac10abd23fdea6f7d0dcea6d2886ef407e1deb170fce8d207c",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:09:43.769614+00:00",
+  "conversion_timestamp": "2026-11-13T13:34:19.917100+00:00",
   "passed": false
 }

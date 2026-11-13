@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/ToonTales.cs3",
   "original_version": 5,
-  "sha256_checksum": "d8ac99e5b2a71a0c28d31b8c1fa41ff281e9f7651553406d1e323e6bc9ff7a8c",
+  "sha256_checksum": "aa166c32d92f31f623e245ef244848b6980e522240789fcd0f20213cb6b981ed",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-12T14:10:35.853934+00:00",
+  "conversion_timestamp": "2026-11-13T13:35:16.411020+00:00",
   "passed": false
 }
