@@ -1,12 +1,12 @@
 [
   {
-    "plugin_name": "Shahid4u",
-    "original_plugin_id": "Shahid4u",
-    "original_author": "Abodabodd",
-    "original_repository": "https://github.com/Abodabodd/re-3arabi",
-    "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Shahid4u.cs3",
+    "plugin_name": "PobreFlix",
+    "original_plugin_id": "PobreFlix",
+    "original_author": "lawlietbr",
+    "original_repository": "https://github.com/lawlietbr/lietrepo",
+    "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/PobreFlix.cs3",
     "original_version": 3,
-    "sha256_checksum": "00a54b90e58154fd0e2fe6f603264b3c0896be7b3ea99318494709d35bd3dafb",
+    "sha256_checksum": "e7fbfe9f966beed37f0733b9745177a9a315285fee172766a3e937b9c5f857a3",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
     "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
@@ -26,12 +26,45 @@
     "license_notice": true,
     "known_unsupported_methods": [],
     "warnings": [
-      "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
       "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-13T13:35:50.813157+00:00",
+    "conversion_timestamp": "2026-11-14T12:43:15.759144+00:00",
+    "passed": true
+  },
+  {
+    "plugin_name": "BanglaPlex",
+    "original_plugin_id": "BanglaPlex",
+    "original_author": "Redowan",
+    "original_repository": "https://github.com/redowan99/Redowan-CloudStream",
+    "original_download_url": "https://raw.githubusercontent.com/redowan99/Redowan-CloudStream/builds/BanglaPlex.cs3",
+    "original_version": 1,
+    "sha256_checksum": "0e087450fa944b505ffdad56d21cc7e9413ff4c8d1db586d8040a76c0db345c3",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "BINARY_DEX_IR_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "PASS",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "MOCK_PASS",
+    "episode_test_status": "MOCK_PASS",
+    "extractor_test_status": "MOCK_PASS",
+    "overall_status": "SUCCESS",
+    "review_reasons": [],
+    "license_notice": true,
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [],
+    "conversion_timestamp": "2026-11-14T12:43:21.279033+00:00",
     "passed": true
   }
 ]

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: BanglaPlex
-// Original Class: BanglaPlexPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: BanglaPlexProvider
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://gdflix.io";
-    private mirrorDomains: string[] = ["https://gdflix.io", "https://gdflix.io", "https://new1.gdflix.io", "https://new10.gdflix.io"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://gdflix.io/"};
+    private mainUrl: string = "https://banglaplex.biz";
+    private mirrorDomains: string[] = ["https://banglaplex.biz", "https://banglaplex.biz"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://banglaplex.biz/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "a.btn-success, a.btn-primary, a[href*='download'], a.btn";
+        const itemSelector = ".latest-movie-img-container, .movie-img, div.movie, article, div.latest-movie, div[class*='col']";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "a[href*='/star/']";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "h1, h2.title, .movie-details h1, .single-title";
+        const epNumSelector = ".label-year, .year";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

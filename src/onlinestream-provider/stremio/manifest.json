@@ -1,10 +1,10 @@
 {
   "id": "stremio",
   "name": "Stremio",
-  "description": "Addon di Stremio su Cloudstream",
+  "description": "Addons di Stremio su Cloudstream",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stremio/manifest.json",
-  "version": "1.14.0",
-  "author": "Hexated, phisher98, DieGon",
+  "version": "1.15.0",
+  "author": "DieGon",
   "type": "onlinestream-provider",
   "language": "typescript",
   "lang": "it",

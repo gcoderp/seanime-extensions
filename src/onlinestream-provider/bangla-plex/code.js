@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: BanglaPlex
-// Original Class: BanglaPlexPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: BanglaPlexProvider
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://gdflix.io";
-        this.mirrorDomains = ["https://gdflix.io", "https://gdflix.io", "https://new1.gdflix.io", "https://new10.gdflix.io"];
-        this.defaultHeaders = { "Referer": "https://gdflix.io/" };
+        this.mainUrl = "https://banglaplex.biz";
+        this.mirrorDomains = ["https://banglaplex.biz", "https://banglaplex.biz"];
+        this.defaultHeaders = { "Referer": "https://banglaplex.biz/" };
     }
     getSettings() {
         return {
@@ -402,10 +402,10 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "a.btn-success, a.btn-primary, a[href*='download'], a.btn";
+        const itemSelector = ".latest-movie-img-container, .movie-img, div.movie, article, div.latest-movie, div[class*='col']";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "a[href*='/star/']";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "h1, h2.title, .movie-details h1, .single-title";
+        const epNumSelector = ".label-year, .year";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)

@@ -1,11 +1,11 @@
 {
   "plugin_name": "Stremio",
   "original_plugin_id": "Stremio",
-  "original_author": "Hexated, phisher98, DieGon",
+  "original_author": "DieGon",
   "original_repository": "https://github.com/DieGon7771/ItaliaInStreaming",
   "original_download_url": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/Stremio.cs3",
-  "original_version": 14,
-  "sha256_checksum": "16db0443680843005563f4a32d85a7b35559015aaa6d28f032f2405251d99ee4",
+  "original_version": 15,
+  "sha256_checksum": "d3183eba8d5ea75bc062d947f3774d2ad2a8aa796c559a46b93612fce3adad6b",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-13T13:37:27.939691+00:00",
+  "conversion_timestamp": "2026-11-14T12:42:29.934040+00:00",
   "passed": false
 }

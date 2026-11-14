@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Shahid4u
-// Original Class: Shahid4u
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: Shahid4uProvider
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://shahed4u.im";
-    private mirrorDomains: string[] = ["https://shahed4u.im", "https://shahed4u.im"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://shahed4u.im/", "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Mobile Safari/537.36"};
+    private mainUrl: string = "https://fastved.cam";
+    private mirrorDomains: string[] = ["https://fastved.cam", "https://fastved.cam"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://fastved.cam/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.shows-container.row div[class*=col-]";
+        const itemSelector = "a.btn-down[href], a[href*='/d/']";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.poster-side div.poster";
-        const epNumSelector = "div.poster-side img";
+        const epSelector = "a.show.card, a.glide_post, a";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src]";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
