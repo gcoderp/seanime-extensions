@@ -34,7 +34,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:46.122947+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:45.760952+00:00",
     "passed": false
   },
   {
@@ -72,7 +72,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:46.757317+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:46.554966+00:00",
     "passed": false
   },
   {
@@ -110,7 +110,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:47.370382+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:47.294271+00:00",
     "passed": false
   },
   {
@@ -147,7 +147,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:47.976104+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:48.104057+00:00",
     "passed": false
   },
   {
@@ -186,7 +186,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:48.580694+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:48.831648+00:00",
     "passed": false
   },
   {
@@ -225,7 +225,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:49.197021+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:49.558662+00:00",
     "passed": false
   },
   {
@@ -263,7 +263,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:49.807112+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:50.358897+00:00",
     "passed": false
   },
   {
@@ -301,7 +301,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:50.461795+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:51.152109+00:00",
     "passed": false
   },
   {
@@ -340,7 +340,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:51.083612+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:51.921729+00:00",
     "passed": false
   },
   {
@@ -378,7 +378,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:51.743179+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:52.783405+00:00",
     "passed": false
   },
   {
@@ -387,8 +387,8 @@
     "original_author": "phisher98",
     "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
     "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AniKoto.cs3",
-    "original_version": 6,
-    "sha256_checksum": "da02652fc7fe17a7b904453cb714a447bac87af60371f84eb01afdd95d2cf51d",
+    "original_version": 7,
+    "sha256_checksum": "fd6926b0c08c1cc9ccb832b1f5fa1a34055fe3a468498d1539a4f31168f36dec",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
     "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -415,7 +415,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:52.380585+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:53.597442+00:00",
     "passed": false
   },
   {
@@ -452,7 +452,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:53.002043+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:54.413098+00:00",
     "passed": false
   },
   {
@@ -489,7 +489,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:53.598521+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:55.321307+00:00",
     "passed": false
   },
   {
@@ -527,7 +527,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:54.217339+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:56.158677+00:00",
     "passed": false
   },
   {
@@ -564,7 +564,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:54.873006+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:57.103589+00:00",
     "passed": false
   },
   {
@@ -601,7 +601,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:55.503297+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:58.011045+00:00",
     "passed": false
   },
   {
@@ -638,7 +638,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:56.133608+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:58.834940+00:00",
     "passed": false
   },
   {
@@ -675,7 +675,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:56.782642+00:00",
+    "conversion_timestamp": "2026-11-15T13:05:59.672736+00:00",
     "passed": false
   },
   {
@@ -712,7 +712,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:57.442916+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:00.496392+00:00",
     "passed": false
   },
   {
@@ -750,7 +750,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:58.087007+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:01.447693+00:00",
     "passed": false
   },
   {
@@ -787,7 +787,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:58.715861+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:02.502124+00:00",
     "passed": false
   },
   {
@@ -825,7 +825,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:39:59.409138+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:03.351761+00:00",
     "passed": false
   },
   {
@@ -863,7 +863,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:00.044474+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:04.279576+00:00",
     "passed": false
   },
   {
@@ -900,7 +900,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:00.671076+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:05.207649+00:00",
     "passed": false
   },
   {
@@ -937,7 +937,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:01.325205+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:06.320058+00:00",
     "passed": false
   },
   {
@@ -974,7 +974,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:01.980811+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:07.398817+00:00",
     "passed": false
   },
   {
@@ -1011,7 +1011,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:02.626743+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:08.321185+00:00",
     "passed": false
   },
   {
@@ -1048,7 +1048,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:03.231638+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:09.224770+00:00",
     "passed": false
   },
   {
@@ -1085,7 +1085,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:03.839402+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:10.406261+00:00",
     "passed": false
   },
   {
@@ -1122,7 +1122,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:04.531174+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:11.388219+00:00",
     "passed": false
   },
   {
@@ -1159,7 +1159,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:05.178887+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:12.214926+00:00",
     "passed": false
   },
   {
@@ -1196,7 +1196,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:05.811372+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:13.135539+00:00",
     "passed": false
   },
   {
@@ -1233,7 +1233,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:06.595317+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:14.023291+00:00",
     "passed": false
   },
   {
@@ -1270,7 +1270,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:07.244534+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:14.987907+00:00",
     "passed": false
   },
   {
@@ -1307,7 +1307,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:07.875061+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:15.910878+00:00",
     "passed": false
   },
   {
@@ -1344,7 +1344,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:08.525367+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:16.824212+00:00",
     "passed": false
   },
   {
@@ -1381,7 +1381,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:09.162189+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:17.686901+00:00",
     "passed": false
   },
   {
@@ -1419,7 +1419,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:09.791162+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:18.591772+00:00",
     "passed": false
   },
   {
@@ -1456,7 +1456,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:10.439772+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:19.407359+00:00",
     "passed": false
   },
   {
@@ -1493,7 +1493,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:11.082607+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:20.283858+00:00",
     "passed": false
   },
   {
@@ -1530,7 +1530,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:11.700464+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:21.347113+00:00",
     "passed": false
   },
   {
@@ -1567,7 +1567,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:12.366569+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:22.219441+00:00",
     "passed": false
   },
   {
@@ -1604,7 +1604,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:13.020084+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:23.081752+00:00",
     "passed": false
   },
   {
@@ -1641,7 +1641,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:13.686898+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:23.977097+00:00",
     "passed": false
   },
   {
@@ -1679,7 +1679,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:14.318411+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:24.823051+00:00",
     "passed": false
   },
   {
@@ -1716,7 +1716,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:14.954172+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:25.856655+00:00",
     "passed": false
   },
   {
@@ -1754,7 +1754,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:15.659457+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:26.833034+00:00",
     "passed": false
   },
   {
@@ -1792,7 +1792,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:16.282398+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:27.791097+00:00",
     "passed": false
   },
   {
@@ -1830,7 +1830,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:16.922013+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:28.627335+00:00",
     "passed": false
   },
   {
@@ -1868,7 +1868,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:17.569770+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:29.504746+00:00",
     "passed": false
   },
   {
@@ -1905,7 +1905,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:18.239648+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:30.402878+00:00",
     "passed": false
   },
   {
@@ -1943,7 +1943,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:18.892770+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:31.246497+00:00",
     "passed": false
   },
   {
@@ -1980,7 +1980,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:19.496136+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:32.166991+00:00",
     "passed": false
   },
   {
@@ -2018,7 +2018,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:20.107020+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:32.999298+00:00",
     "passed": false
   },
   {
@@ -2055,7 +2055,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:20.753833+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:34.032377+00:00",
     "passed": false
   },
   {
@@ -2092,7 +2092,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:21.341303+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:35.374968+00:00",
     "passed": false
   },
   {
@@ -2129,7 +2129,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:21.972068+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:36.199088+00:00",
     "passed": false
   },
   {
@@ -2167,7 +2167,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:22.575743+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:37.027532+00:00",
     "passed": false
   },
   {
@@ -2204,7 +2204,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:23.231560+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:37.963785+00:00",
     "passed": false
   },
   {
@@ -2241,7 +2241,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:23.865621+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:39.022025+00:00",
     "passed": false
   },
   {
@@ -2278,7 +2278,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:24.500957+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:39.882654+00:00",
     "passed": false
   },
   {
@@ -2316,7 +2316,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:25.165768+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:40.752967+00:00",
     "passed": false
   },
   {
@@ -2353,7 +2353,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:25.793669+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:41.581584+00:00",
     "passed": false
   },
   {
@@ -2390,7 +2390,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:26.433598+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:42.419378+00:00",
     "passed": false
   },
   {
@@ -2428,7 +2428,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:27.125643+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:43.228136+00:00",
     "passed": false
   },
   {
@@ -2465,7 +2465,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:27.779475+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:44.059852+00:00",
     "passed": false
   },
   {
@@ -2502,7 +2502,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:28.478992+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:44.847693+00:00",
     "passed": false
   },
   {
@@ -2539,7 +2539,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:29.120232+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:45.684915+00:00",
     "passed": false
   },
   {
@@ -2576,7 +2576,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:29.772589+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:46.525783+00:00",
     "passed": false
   },
   {
@@ -2614,7 +2614,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:30.422656+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:47.324536+00:00",
     "passed": false
   },
   {
@@ -2652,7 +2652,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:31.045045+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:48.132611+00:00",
     "passed": false
   },
   {
@@ -2691,7 +2691,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:31.722228+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:48.947157+00:00",
     "passed": false
   },
   {
@@ -2729,7 +2729,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:32.392989+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:49.744922+00:00",
     "passed": false
   },
   {
@@ -2766,7 +2766,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:33.027122+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:50.531633+00:00",
     "passed": false
   },
   {
@@ -2776,7 +2776,7 @@
     "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
     "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/StreamPlay.cs3",
     "original_version": 709,
-    "sha256_checksum": "b4ad26b1d2f18cd30450e4dd75242dd8bfcaf475e30dcca4924613abe9f5397e",
+    "sha256_checksum": "bf58030b4a58e8f919d433e1f5fb1983ac306ed85d625f998ca2afa7742fbaab",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
     "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -2804,7 +2804,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:33.718787+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:52.731267+00:00",
     "passed": false
   },
   {
@@ -2842,7 +2842,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:34.711637+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:53.925376+00:00",
     "passed": false
   },
   {
@@ -2879,7 +2879,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:35.340065+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:54.699095+00:00",
     "passed": false
   },
   {
@@ -2916,7 +2916,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:36.036034+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:55.849593+00:00",
     "passed": false
   },
   {
@@ -2953,7 +2953,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:36.808194+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:56.733144+00:00",
     "passed": false
   },
   {
@@ -2990,7 +2990,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:37.440113+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:57.534349+00:00",
     "passed": false
   },
   {
@@ -3027,7 +3027,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:38.065932+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:58.374766+00:00",
     "passed": false
   },
   {
@@ -3064,7 +3064,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:38.655923+00:00",
+    "conversion_timestamp": "2026-11-15T13:06:59.236710+00:00",
     "passed": false
   },
   {
@@ -3101,7 +3101,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:39.439408+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:00.014097+00:00",
     "passed": false
   },
   {
@@ -3138,7 +3138,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:40.077591+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:00.863849+00:00",
     "passed": false
   },
   {
@@ -3176,7 +3176,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:40.708998+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:01.695484+00:00",
     "passed": false
   },
   {
@@ -3214,7 +3214,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:41.412917+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:02.672547+00:00",
     "passed": false
   },
   {
@@ -3252,7 +3252,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:42.027175+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:03.487453+00:00",
     "passed": false
   },
   {
@@ -3290,7 +3290,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:42.686720+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:04.623615+00:00",
     "passed": false
   },
   {
@@ -3327,7 +3327,45 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:43.343890+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:05.462397+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "XonProvider",
+    "original_plugin_id": "XonProvider",
+    "original_author": "Phisher98",
+    "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
+    "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/XonProvider.cs3",
+    "original_version": 11,
+    "sha256_checksum": "866fc8915b84ebc2664f6cf0edd9945b994c51da16166f6d8955097eb1a821be",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "strategy": "STRATEGY_3_DEX_STRING_IR",
+    "source_recovery_status": "DEX_FALLBACK",
+    "decompilation_status": "BINARY_DEX_IR_OK",
+    "kotlin_reconstruction_status": "PARTIAL",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "PASS",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "MOCK_PASS",
+    "episode_test_status": "MOCK_PASS",
+    "extractor_test_status": "MOCK_PASS",
+    "overall_status": "NEEDS_REVIEW",
+    "review_reasons": [
+      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
+      "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+    ],
+    "license_notice": true,
+    "known_unsupported_methods": [],
+    "warnings": [
+      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [],
+    "conversion_timestamp": "2026-11-15T13:07:06.322980+00:00",
     "passed": false
   },
   {
@@ -3365,7 +3403,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:43.994953+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:07.156953+00:00",
     "passed": false
   },
   {
@@ -3402,7 +3440,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:44.631743+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:07.876190+00:00",
     "passed": false
   },
   {
@@ -3439,7 +3477,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:45.221175+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:08.724342+00:00",
     "passed": false
   },
   {
@@ -3477,7 +3515,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:45.844634+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:09.562470+00:00",
     "passed": false
   },
   {
@@ -3516,7 +3554,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:46.492545+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:10.391641+00:00",
     "passed": false
   },
   {
@@ -3553,7 +3591,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:47.211950+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:11.507391+00:00",
     "passed": false
   },
   {
@@ -3591,7 +3629,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:47.816152+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:12.341510+00:00",
     "passed": false
   },
   {
@@ -3628,7 +3666,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:48.403038+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:13.129708+00:00",
     "passed": false
   },
   {
@@ -3665,7 +3703,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:49.008803+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:13.990146+00:00",
     "passed": false
   },
   {
@@ -3702,7 +3740,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:49.619841+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:14.827048+00:00",
     "passed": false
   },
   {
@@ -3739,7 +3777,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:50.256962+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:15.646708+00:00",
     "passed": false
   },
   {
@@ -3776,7 +3814,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:50.844955+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:16.464770+00:00",
     "passed": false
   },
   {
@@ -3813,7 +3851,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:51.509407+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:17.302771+00:00",
     "passed": false
   },
   {
@@ -3850,7 +3888,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:52.141788+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:18.148855+00:00",
     "passed": false
   },
   {
@@ -3887,7 +3925,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:52.795686+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:18.956769+00:00",
     "passed": false
   },
   {
@@ -3924,7 +3962,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:53.429864+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:19.780181+00:00",
     "passed": false
   },
   {
@@ -3961,7 +3999,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:54.096836+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:20.609334+00:00",
     "passed": false
   },
   {
@@ -3999,7 +4037,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:54.658182+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:21.432482+00:00",
     "passed": false
   },
   {
@@ -4037,7 +4075,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:55.303820+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:22.365953+00:00",
     "passed": false
   },
   {
@@ -4075,7 +4113,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:55.971533+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:23.182014+00:00",
     "passed": false
   },
   {
@@ -4112,7 +4150,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:56.630222+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:24.108680+00:00",
     "passed": false
   },
   {
@@ -4150,7 +4188,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:57.271627+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:24.889228+00:00",
     "passed": false
   },
   {
@@ -4188,7 +4226,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:57.890375+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:25.705111+00:00",
     "passed": false
   },
   {
@@ -4225,7 +4263,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:58.519455+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:26.496286+00:00",
     "passed": false
   },
   {
@@ -4262,7 +4300,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:59.148440+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:27.310498+00:00",
     "passed": false
   },
   {
@@ -4299,7 +4337,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:40:59.760543+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:28.127110+00:00",
     "passed": false
   },
   {
@@ -4337,7 +4375,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:00.403074+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:28.959757+00:00",
     "passed": false
   },
   {
@@ -4374,7 +4412,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:01.080518+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:29.820282+00:00",
     "passed": false
   },
   {
@@ -4411,7 +4449,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:01.704116+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:30.636703+00:00",
     "passed": false
   },
   {
@@ -4448,7 +4486,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:02.367157+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:31.505756+00:00",
     "passed": false
   },
   {
@@ -4485,7 +4523,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:02.975814+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:32.308730+00:00",
     "passed": false
   },
   {
@@ -4522,7 +4560,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:03.596759+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:33.104665+00:00",
     "passed": false
   },
   {
@@ -4559,7 +4597,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:04.176213+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:33.898529+00:00",
     "passed": false
   },
   {
@@ -4597,7 +4635,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:04.809036+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:34.708260+00:00",
     "passed": false
   },
   {
@@ -4634,7 +4672,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:05.383950+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:35.519990+00:00",
     "passed": false
   },
   {
@@ -4671,7 +4709,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:06.006797+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:36.357630+00:00",
     "passed": false
   },
   {
@@ -4708,7 +4746,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:06.605649+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:37.237238+00:00",
     "passed": false
   },
   {
@@ -4746,7 +4784,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:07.360309+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:38.056733+00:00",
     "passed": false
   },
   {
@@ -4783,7 +4821,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:08.102540+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:38.849097+00:00",
     "passed": false
   },
   {
@@ -4820,7 +4858,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:08.735836+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:39.601761+00:00",
     "passed": false
   },
   {
@@ -4858,7 +4896,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:09.336088+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:40.394665+00:00",
     "passed": false
   },
   {
@@ -4895,7 +4933,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:09.987880+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:41.187671+00:00",
     "passed": false
   },
   {
@@ -4932,7 +4970,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:10.620983+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:42.125375+00:00",
     "passed": false
   },
   {
@@ -4969,7 +5007,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:11.274638+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:42.956864+00:00",
     "passed": false
   },
   {
@@ -5007,7 +5045,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:11.862435+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:43.761963+00:00",
     "passed": false
   },
   {
@@ -5045,7 +5083,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:12.519992+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:44.581258+00:00",
     "passed": false
   },
   {
@@ -5083,7 +5121,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:13.161897+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:45.420115+00:00",
     "passed": false
   },
   {
@@ -5120,7 +5158,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:13.854940+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:46.238995+00:00",
     "passed": false
   },
   {
@@ -5158,7 +5196,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:14.493180+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:47.201083+00:00",
     "passed": false
   },
   {
@@ -5196,7 +5234,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:15.115775+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:48.064230+00:00",
     "passed": false
   },
   {
@@ -5234,7 +5272,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:15.814630+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:48.930936+00:00",
     "passed": false
   },
   {
@@ -5271,7 +5309,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:16.491167+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:49.729513+00:00",
     "passed": false
   },
   {
@@ -5308,7 +5346,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:17.134161+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:50.492434+00:00",
     "passed": false
   },
   {
@@ -5345,7 +5383,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:17.809163+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:51.298886+00:00",
     "passed": false
   },
   {
@@ -5382,7 +5420,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:18.454943+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:52.142803+00:00",
     "passed": false
   },
   {
@@ -5419,7 +5457,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:19.101095+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:52.915473+00:00",
     "passed": false
   },
   {
@@ -5457,7 +5495,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:19.740186+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:53.708493+00:00",
     "passed": false
   },
   {
@@ -5494,7 +5532,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:20.434931+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:54.528428+00:00",
     "passed": false
   },
   {
@@ -5531,7 +5569,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:21.067323+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:55.399661+00:00",
     "passed": false
   },
   {
@@ -5568,7 +5606,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:21.673837+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:56.349422+00:00",
     "passed": false
   },
   {
@@ -5606,7 +5644,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:22.326684+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:57.186375+00:00",
     "passed": false
   },
   {
@@ -5645,7 +5683,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:22.978581+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:58.057247+00:00",
     "passed": false
   },
   {
@@ -5682,7 +5720,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:23.618964+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:58.860243+00:00",
     "passed": false
   },
   {
@@ -5719,7 +5757,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:24.260966+00:00",
+    "conversion_timestamp": "2026-11-15T13:07:59.660176+00:00",
     "passed": false
   },
   {
@@ -5756,7 +5794,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:24.900165+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:00.473840+00:00",
     "passed": false
   },
   {
@@ -5793,7 +5831,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:25.547009+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:01.301467+00:00",
     "passed": false
   },
   {
@@ -5830,7 +5868,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:26.202323+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:02.133425+00:00",
     "passed": false
   },
   {
@@ -5867,7 +5905,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:26.858489+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:02.942886+00:00",
     "passed": false
   },
   {
@@ -5904,7 +5942,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:27.536161+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:03.771031+00:00",
     "passed": false
   },
   {
@@ -5941,7 +5979,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:28.146107+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:04.582592+00:00",
     "passed": false
   },
   {
@@ -5978,7 +6016,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:28.784288+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:05.416114+00:00",
     "passed": false
   },
   {
@@ -6015,7 +6053,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:29.451959+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:06.382638+00:00",
     "passed": false
   },
   {
@@ -6052,7 +6090,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:30.095987+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:07.254806+00:00",
     "passed": false
   },
   {
@@ -6089,7 +6127,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:30.741021+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:08.323712+00:00",
     "passed": false
   },
   {
@@ -6126,7 +6164,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:31.367392+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:09.159650+00:00",
     "passed": false
   },
   {
@@ -6163,7 +6201,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:31.991745+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:09.958579+00:00",
     "passed": false
   },
   {
@@ -6200,7 +6238,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:32.631346+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:10.747746+00:00",
     "passed": false
   },
   {
@@ -6236,7 +6274,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:33.271249+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:11.613686+00:00",
     "passed": false
   },
   {
@@ -6272,7 +6310,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:33.878633+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:12.413748+00:00",
     "passed": false
   },
   {
@@ -6308,7 +6346,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:34.527899+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:13.215400+00:00",
     "passed": false
   },
   {
@@ -6345,7 +6383,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:35.145540+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:14.013343+00:00",
     "passed": false
   },
   {
@@ -6381,7 +6419,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:35.835101+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:14.895169+00:00",
     "passed": false
   },
   {
@@ -6417,7 +6455,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:36.461568+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:15.714985+00:00",
     "passed": false
   },
   {
@@ -6453,7 +6491,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:37.096749+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:16.552095+00:00",
     "passed": false
   },
   {
@@ -6489,7 +6527,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:37.746162+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:17.384720+00:00",
     "passed": false
   },
   {
@@ -6525,7 +6563,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:38.428791+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:18.349862+00:00",
     "passed": false
   },
   {
@@ -6561,7 +6599,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:39.078811+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:19.210954+00:00",
     "passed": false
   },
   {
@@ -6598,7 +6636,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:39.733892+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:19.976970+00:00",
     "passed": false
   },
   {
@@ -6634,7 +6672,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:40.339961+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:21.114090+00:00",
     "passed": false
   },
   {
@@ -6670,7 +6708,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:40.974569+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:21.931456+00:00",
     "passed": false
   },
   {
@@ -6706,7 +6744,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:41.602580+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:22.759022+00:00",
     "passed": false
   },
   {
@@ -6742,7 +6780,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:42.195483+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:23.587942+00:00",
     "passed": false
   },
   {
@@ -6778,7 +6816,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:42.836797+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:24.431430+00:00",
     "passed": false
   },
   {
@@ -6814,7 +6852,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:43.480492+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:25.286404+00:00",
     "passed": false
   },
   {
@@ -6850,7 +6888,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:44.148011+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:26.080512+00:00",
     "passed": false
   },
   {
@@ -6887,7 +6925,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:44.767585+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:26.876566+00:00",
     "passed": false
   },
   {
@@ -6924,7 +6962,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:45.359733+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:27.741276+00:00",
     "passed": false
   },
   {
@@ -6962,7 +7000,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:45.979988+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:28.563808+00:00",
     "passed": false
   },
   {
@@ -7001,7 +7039,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:46.599682+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:29.377120+00:00",
     "passed": false
   },
   {
@@ -7039,7 +7077,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:47.446967+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:30.235516+00:00",
     "passed": false
   },
   {
@@ -7078,7 +7116,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:48.151469+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:31.051933+00:00",
     "passed": false
   },
   {
@@ -7116,7 +7154,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:48.783234+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:31.871537+00:00",
     "passed": false
   },
   {
@@ -7153,7 +7191,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:49.394067+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:32.672969+00:00",
     "passed": false
   },
   {
@@ -7192,7 +7230,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:50.007176+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:33.468221+00:00",
     "passed": false
   },
   {
@@ -7230,7 +7268,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:51.198820+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:35.215783+00:00",
     "passed": false
   },
   {
@@ -7269,7 +7307,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:51.861108+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:36.062581+00:00",
     "passed": false
   },
   {
@@ -7307,7 +7345,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:52.499161+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:36.889107+00:00",
     "passed": false
   },
   {
@@ -7320,10 +7358,10 @@
     "sha256_checksum": "577aad4b037e48ea46c6663a49b47d681014227866eb1980327ba071642c5198",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
-    "source_recovery_status": "RECOVERED",
+    "strategy": "STRATEGY_3_DEX_STRING_IR",
+    "source_recovery_status": "DEX_FALLBACK",
     "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "SUCCESS",
+    "kotlin_reconstruction_status": "PARTIAL",
     "translation_status": "SUCCESS",
     "typescript_compilation_status": "SUCCESS",
     "seanime_compatibility_status": "PASS",
@@ -7334,6 +7372,8 @@
     "extractor_test_status": "MOCK_PASS",
     "overall_status": "NEEDS_REVIEW",
     "review_reasons": [
+      "No upstream base URL could be recovered.",
+      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
       "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
     ],
     "license_notice": true,
@@ -7344,7 +7384,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:53.124675+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:37.751377+00:00",
     "passed": false
   },
   {
@@ -7381,7 +7421,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:54.253438+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:38.680424+00:00",
     "passed": false
   },
   {
@@ -7418,7 +7458,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:54.887282+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:39.565289+00:00",
     "passed": false
   },
   {
@@ -7456,7 +7496,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:55.525828+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:40.388836+00:00",
     "passed": false
   },
   {
@@ -7494,7 +7534,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:56.169063+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:41.205842+00:00",
     "passed": false
   },
   {
@@ -7532,7 +7572,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:56.863789+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:42.052217+00:00",
     "passed": false
   },
   {
@@ -7570,7 +7610,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:57.509497+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:42.917333+00:00",
     "passed": false
   },
   {
@@ -7608,7 +7648,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:58.135766+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:43.907811+00:00",
     "passed": false
   },
   {
@@ -7646,7 +7686,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:58.778443+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:44.776310+00:00",
     "passed": false
   },
   {
@@ -7683,7 +7723,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:41:59.436584+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:45.694552+00:00",
     "passed": false
   },
   {
@@ -7720,7 +7760,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:00.077580+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:46.592560+00:00",
     "passed": false
   },
   {
@@ -7757,7 +7797,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:00.702127+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:47.576944+00:00",
     "passed": false
   },
   {
@@ -7794,7 +7834,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:01.322137+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:48.408755+00:00",
     "passed": false
   },
   {
@@ -7832,7 +7872,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:01.960438+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:49.241560+00:00",
     "passed": false
   },
   {
@@ -7870,7 +7910,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:02.599409+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:50.079180+00:00",
     "passed": false
   },
   {
@@ -7907,7 +7947,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:03.233817+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:50.873490+00:00",
     "passed": false
   },
   {
@@ -7944,7 +7984,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:03.818595+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:51.680917+00:00",
     "passed": false
   },
   {
@@ -7981,7 +8021,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:04.412412+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:52.516568+00:00",
     "passed": false
   },
   {
@@ -8018,7 +8058,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:04.997239+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:53.402809+00:00",
     "passed": false
   },
   {
@@ -8055,7 +8095,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:05.631787+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:54.265023+00:00",
     "passed": false
   },
   {
@@ -8092,7 +8132,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:06.286414+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:55.169770+00:00",
     "passed": false
   },
   {
@@ -8130,7 +8170,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:06.923605+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:56.002700+00:00",
     "passed": false
   },
   {
@@ -8168,7 +8208,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:07.559881+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:56.863338+00:00",
     "passed": false
   },
   {
@@ -8206,7 +8246,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:08.232990+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:57.685587+00:00",
     "passed": false
   },
   {
@@ -8243,7 +8283,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:08.859206+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:58.510540+00:00",
     "passed": false
   },
   {
@@ -8280,7 +8320,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:09.459192+00:00",
+    "conversion_timestamp": "2026-11-15T13:08:59.366237+00:00",
     "passed": false
   },
   {
@@ -8318,7 +8358,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:10.053909+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:00.204840+00:00",
     "passed": false
   },
   {
@@ -8356,7 +8396,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:10.761505+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:01.068639+00:00",
     "passed": false
   },
   {
@@ -8393,7 +8433,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:11.454873+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:01.918429+00:00",
     "passed": false
   },
   {
@@ -8430,7 +8470,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:12.169771+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:02.799301+00:00",
     "passed": false
   },
   {
@@ -8468,7 +8508,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:12.870605+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:03.668111+00:00",
     "passed": false
   },
   {
@@ -8505,7 +8545,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:13.500687+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:04.515800+00:00",
     "passed": false
   },
   {
@@ -8543,7 +8583,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:14.135978+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:05.337087+00:00",
     "passed": false
   },
   {
@@ -8580,7 +8620,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:14.837170+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:06.938654+00:00",
     "passed": false
   },
   {
@@ -8617,7 +8657,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:15.482934+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:07.940025+00:00",
     "passed": false
   },
   {
@@ -8655,7 +8695,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:16.359984+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:08.829895+00:00",
     "passed": false
   },
   {
@@ -8693,7 +8733,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:17.384347+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:09.760621+00:00",
     "passed": false
   },
   {
@@ -8731,7 +8771,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:18.214223+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:10.599257+00:00",
     "passed": false
   },
   {
@@ -8769,7 +8809,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:19.039739+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:11.431447+00:00",
     "passed": false
   },
   {
@@ -8806,7 +8846,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:19.629477+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:12.266111+00:00",
     "passed": false
   },
   {
@@ -8843,7 +8883,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:20.240543+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:13.052456+00:00",
     "passed": false
   },
   {
@@ -8881,7 +8921,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:20.861993+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:13.904362+00:00",
     "passed": false
   },
   {
@@ -8919,7 +8959,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:21.476657+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:14.812139+00:00",
     "passed": false
   },
   {
@@ -8957,7 +8997,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:22.116688+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:15.650581+00:00",
     "passed": false
   },
   {
@@ -8994,7 +9034,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:22.739890+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:16.551700+00:00",
     "passed": false
   },
   {
@@ -9032,7 +9072,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:23.364680+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:17.375644+00:00",
     "passed": false
   },
   {
@@ -9071,7 +9111,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:24.049896+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:18.208407+00:00",
     "passed": false
   },
   {
@@ -9110,7 +9150,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:24.730181+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:19.070703+00:00",
     "passed": false
   },
   {
@@ -9148,7 +9188,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:25.402820+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:19.882034+00:00",
     "passed": false
   },
   {
@@ -9186,7 +9226,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:26.071291+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:20.695933+00:00",
     "passed": false
   },
   {
@@ -9225,7 +9265,44 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:26.672053+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:21.502535+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "Nuvio",
+    "original_plugin_id": "Nuvio",
+    "original_author": "DieGon",
+    "original_repository": "https://github.com/DieGon7771/ItaliaInStreaming",
+    "original_download_url": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/Nuvio.cs3",
+    "original_version": 1,
+    "sha256_checksum": "3b9686a41b565589c70ab0471da205fa9a5d683df2e04361fe969e5ea2c4ffa4",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "strategy": "STRATEGY_3_DEX_STRING_IR",
+    "source_recovery_status": "DEX_FALLBACK",
+    "decompilation_status": "BINARY_DEX_IR_OK",
+    "kotlin_reconstruction_status": "PARTIAL",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "PASS",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "MOCK_PASS",
+    "episode_test_status": "MOCK_PASS",
+    "extractor_test_status": "MOCK_PASS",
+    "overall_status": "NEEDS_REVIEW",
+    "review_reasons": [
+      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+    ],
+    "license_notice": true,
+    "known_unsupported_methods": [],
+    "warnings": [
+      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [],
+    "conversion_timestamp": "2026-11-15T13:09:22.319828+00:00",
     "passed": false
   },
   {
@@ -9262,7 +9339,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:27.309906+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:23.211972+00:00",
     "passed": false
   },
   {
@@ -9301,7 +9378,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:27.923274+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:24.060130+00:00",
     "passed": false
   },
   {
@@ -9340,7 +9417,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:28.590421+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:24.884803+00:00",
     "passed": false
   },
   {
@@ -9379,7 +9456,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:29.266326+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:25.855898+00:00",
     "passed": false
   },
   {
@@ -9417,7 +9494,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:29.934040+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:26.857962+00:00",
     "passed": false
   },
   {
@@ -9456,7 +9533,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:30.547426+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:27.658354+00:00",
     "passed": false
   },
   {
@@ -9494,7 +9571,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:31.189561+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:28.540360+00:00",
     "passed": false
   },
   {
@@ -9533,7 +9610,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:31.790643+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:29.360082+00:00",
     "passed": false
   },
   {
@@ -9572,7 +9649,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:32.438384+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:30.228554+00:00",
     "passed": false
   },
   {
@@ -9611,7 +9688,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:33.113796+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:31.116911+00:00",
     "passed": false
   },
   {
@@ -9649,7 +9726,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:33.801866+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:32.030832+00:00",
     "passed": false
   },
   {
@@ -9686,7 +9763,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:34.447470+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:32.914233+00:00",
     "passed": false
   },
   {
@@ -9723,7 +9800,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:35.046955+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:33.764968+00:00",
     "passed": false
   },
   {
@@ -9761,7 +9838,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:35.653450+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:34.565842+00:00",
     "passed": false
   },
   {
@@ -9799,7 +9876,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:36.238029+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:35.580717+00:00",
     "passed": false
   },
   {
@@ -9836,7 +9913,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:36.864489+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:36.532183+00:00",
     "passed": false
   },
   {
@@ -9874,7 +9951,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:37.444899+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:37.367283+00:00",
     "passed": false
   },
   {
@@ -9911,7 +9988,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:38.180802+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:38.206758+00:00",
     "passed": false
   },
   {
@@ -9948,7 +10025,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:38.857778+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:39.026945+00:00",
     "passed": false
   },
   {
@@ -9986,7 +10063,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:39.498650+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:39.922102+00:00",
     "passed": false
   },
   {
@@ -10023,7 +10100,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:40.137466+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:40.754300+00:00",
     "passed": false
   },
   {
@@ -10061,7 +10138,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:40.742103+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:42.445723+00:00",
     "passed": false
   },
   {
@@ -10099,7 +10176,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:41.334775+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:43.364375+00:00",
     "passed": false
   },
   {
@@ -10137,7 +10214,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:41.932322+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:44.157877+00:00",
     "passed": false
   },
   {
@@ -10175,7 +10252,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:42.579826+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:45.062340+00:00",
     "passed": false
   },
   {
@@ -10212,7 +10289,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:43.228586+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:45.849951+00:00",
     "passed": false
   },
   {
@@ -10249,7 +10326,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:43.852664+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:46.665732+00:00",
     "passed": false
   },
   {
@@ -10287,44 +10364,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:44.524931+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "Krmzy",
-    "original_plugin_id": "Krmzy",
-    "original_author": "kraptor",
-    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
-    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Krmzy.cs3",
-    "original_version": 2,
-    "sha256_checksum": "9d37682df1393aa01f4ae3adb584912ce19629bd5dca8256aa2f136206729040",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:45.132015+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:47.516898+00:00",
     "passed": false
   },
   {
@@ -10361,7 +10401,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:45.757645+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:49.668234+00:00",
     "passed": false
   },
   {
@@ -10399,7 +10439,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:46.375219+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:50.457820+00:00",
     "passed": false
   },
   {
@@ -10437,7 +10477,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:46.999689+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:51.328842+00:00",
     "passed": false
   },
   {
@@ -10474,7 +10514,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:47.627992+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:52.333226+00:00",
     "passed": false
   },
   {
@@ -10512,7 +10552,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:48.214604+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:53.162045+00:00",
     "passed": false
   },
   {
@@ -10549,7 +10589,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:48.843967+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:54.003041+00:00",
     "passed": false
   },
   {
@@ -10586,7 +10626,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:49.458966+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:54.841219+00:00",
     "passed": false
   },
   {
@@ -10625,7 +10665,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:50.089492+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:55.792656+00:00",
     "passed": false
   },
   {
@@ -10662,7 +10702,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:50.713634+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:56.627801+00:00",
     "passed": false
   },
   {
@@ -10699,7 +10739,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:51.314206+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:57.451395+00:00",
     "passed": false
   },
   {
@@ -10737,156 +10777,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:51.962818+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "WatchWrestling",
-    "original_plugin_id": "WatchWrestling",
-    "original_author": "kraptor",
-    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
-    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/WatchWrestling.cs3",
-    "original_version": 18,
-    "sha256_checksum": "e60c081865d5584f9fa4dec3006be7cd81cc016499c8d558972bede4d855b5b3",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:52.588922+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "Wcoflix",
-    "original_plugin_id": "Wcoflix",
-    "original_author": "ByAyzen, kraptor",
-    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
-    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Wcoflix.cs3",
-    "original_version": 10,
-    "sha256_checksum": "8f2556de6d18188f43070de47bd4fd5177282e9f58642530083d66d1ca06e4a4",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:53.215594+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "Yablom",
-    "original_plugin_id": "Yablom",
-    "original_author": "ByAyzen",
-    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
-    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Yablom.cs3",
-    "original_version": 5,
-    "sha256_checksum": "006b2f19719b16393adafcf5f9a76deeb1c1d50ae5b5b9fbcbec91d7a52c0dd6",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:53.857647+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "YoTurkish",
-    "original_plugin_id": "YoTurkish",
-    "original_author": "kraptor",
-    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
-    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/YoTurkish.cs3",
-    "original_version": 5,
-    "sha256_checksum": "04f17302b6995b4538477d2e9fd2783b920acec8e88882129960ce42d22ddc51",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:54.480267+00:00",
+    "conversion_timestamp": "2026-11-15T13:09:58.278870+00:00",
     "passed": false
   },
   {
@@ -10923,7 +10814,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:55.113631+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:04.282024+00:00",
     "passed": false
   },
   {
@@ -10959,7 +10850,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:55.755990+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:05.142519+00:00",
     "passed": false
   },
   {
@@ -10995,7 +10886,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:56.416674+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:05.943285+00:00",
     "passed": false
   },
   {
@@ -11031,7 +10922,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:57.008382+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:06.791230+00:00",
     "passed": false
   },
   {
@@ -11067,7 +10958,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:57.670469+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:07.613774+00:00",
     "passed": false
   },
   {
@@ -11103,7 +10994,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:58.322050+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:08.386826+00:00",
     "passed": false
   },
   {
@@ -11139,7 +11030,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:58.988403+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:09.178362+00:00",
     "passed": false
   },
   {
@@ -11175,7 +11066,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:42:59.606764+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:09.991230+00:00",
     "passed": false
   },
   {
@@ -11211,7 +11102,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:00.227631+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:10.778129+00:00",
     "passed": false
   },
   {
@@ -11247,7 +11138,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:00.884936+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:11.568472+00:00",
     "passed": false
   },
   {
@@ -11283,7 +11174,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:01.511660+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:12.376344+00:00",
     "passed": false
   },
   {
@@ -11319,7 +11210,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:02.145113+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:13.239978+00:00",
     "passed": false
   },
   {
@@ -11356,7 +11247,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:02.781174+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:14.048032+00:00",
     "passed": false
   },
   {
@@ -11392,7 +11283,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:03.401959+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:14.868632+00:00",
     "passed": false
   },
   {
@@ -11428,7 +11319,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:04.047991+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:15.728308+00:00",
     "passed": false
   },
   {
@@ -11466,7 +11357,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:04.699972+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:16.550373+00:00",
     "passed": false
   },
   {
@@ -11475,8 +11366,8 @@
     "original_author": "CakesTwix",
     "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
     "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UAFlixProvider.cs3",
-    "original_version": 24,
-    "sha256_checksum": "84d950d86794c364e991e89ec85f6d0c6d97064d3f8dabad0d8ed4ceb5e6af6e",
+    "original_version": 25,
+    "sha256_checksum": "f33890e7812d58519066e216d63b252a0c74337fbf02a0d293eea9285bf8d6aa",
     "license_spdx": "GPL-3.0",
     "detected_provider_type": "onlinestream-provider",
     "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -11502,7 +11393,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:05.370179+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:17.418296+00:00",
     "passed": false
   },
   {
@@ -11539,7 +11430,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:05.989414+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:18.240564+00:00",
     "passed": false
   },
   {
@@ -11548,8 +11439,8 @@
     "original_author": "CakesTwix",
     "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
     "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/UakinoProvider.cs3",
-    "original_version": 36,
-    "sha256_checksum": "5868652a7aa92e12241e1cc8db9a12ce0fe9c5f7ebb496a816d42cd2d7594548",
+    "original_version": 37,
+    "sha256_checksum": "b86689af701a73fff2a744ef19b79f960a38da52327e6e7cf8233fc33043be08",
     "license_spdx": "GPL-3.0",
     "detected_provider_type": "onlinestream-provider",
     "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -11576,7 +11467,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:06.596013+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:19.077962+00:00",
     "passed": false
   },
   {
@@ -11613,7 +11504,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:07.201767+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:19.869216+00:00",
     "passed": false
   },
   {
@@ -11649,7 +11540,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:07.818670+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:20.672780+00:00",
     "passed": false
   },
   {
@@ -11686,7 +11577,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:08.493983+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:21.471343+00:00",
     "passed": false
   },
   {
@@ -11723,7 +11614,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:09.133971+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:22.280824+00:00",
     "passed": false
   },
   {
@@ -11760,7 +11651,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:10.036371+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:23.298673+00:00",
     "passed": false
   },
   {
@@ -11797,44 +11688,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:10.880869+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "DattebayoBR",
-    "original_plugin_id": "DattebayoBR",
-    "original_author": "lawlietbr",
-    "original_repository": "https://github.com/lawlietbr/lietrepo",
-    "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/DattebayoBR.cs3",
-    "original_version": 1,
-    "sha256_checksum": "1494eee14531a69087839019ee25a4a4e3f5d27393b5ec2b6f216d6a96282b5c",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:11.729787+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:24.368982+00:00",
     "passed": false
   },
   {
@@ -11871,44 +11725,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:12.524178+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "EmbedTV",
-    "original_plugin_id": "EmbedTV",
-    "original_author": "lawlietbr",
-    "original_repository": "https://github.com/lawlietbr/lietrepo",
-    "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/EmbedTV.cs3",
-    "original_version": 3,
-    "sha256_checksum": "977a71d2e1a9d0d8cc1d5658141dd00798f3302007422fc7ea542fe6a825bcaf",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:13.356426+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:26.883355+00:00",
     "passed": false
   },
   {
@@ -11945,7 +11762,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:14.134313+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:29.966387+00:00",
     "passed": false
   },
   {
@@ -11982,7 +11799,44 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:14.930904+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:31.137623+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "PobreFlix",
+    "original_plugin_id": "PobreFlix",
+    "original_author": "lawlietbr",
+    "original_repository": "https://github.com/lawlietbr/lietrepo",
+    "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/PobreFlix.cs3",
+    "original_version": 3,
+    "sha256_checksum": "e7fbfe9f966beed37f0733b9745177a9a315285fee172766a3e937b9c5f857a3",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "strategy": "STRATEGY_3_DEX_STRING_IR",
+    "source_recovery_status": "DEX_FALLBACK",
+    "decompilation_status": "BINARY_DEX_IR_OK",
+    "kotlin_reconstruction_status": "PARTIAL",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "PASS",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "MOCK_PASS",
+    "episode_test_status": "MOCK_PASS",
+    "extractor_test_status": "MOCK_PASS",
+    "overall_status": "NEEDS_REVIEW",
+    "review_reasons": [
+      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+    ],
+    "license_notice": true,
+    "known_unsupported_methods": [],
+    "warnings": [
+      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [],
+    "conversion_timestamp": "2026-11-15T13:10:32.234227+00:00",
     "passed": false
   },
   {
@@ -12020,7 +11874,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:16.969399+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:33.274029+00:00",
     "passed": false
   },
   {
@@ -12058,7 +11912,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:17.799825+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:34.322130+00:00",
     "passed": false
   },
   {
@@ -12094,7 +11948,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:18.700234+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:35.365748+00:00",
     "passed": false
   },
   {
@@ -12131,7 +11985,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:19.370313+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:36.157974+00:00",
     "passed": false
   },
   {
@@ -12168,7 +12022,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:20.007786+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:36.943161+00:00",
     "passed": false
   },
   {
@@ -12205,7 +12059,44 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:20.643877+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:37.784677+00:00",
+    "passed": false
+  },
+  {
+    "plugin_name": "BanglaPlex",
+    "original_plugin_id": "BanglaPlex",
+    "original_author": "Redowan",
+    "original_repository": "https://github.com/redowan99/Redowan-CloudStream",
+    "original_download_url": "https://raw.githubusercontent.com/redowan99/Redowan-CloudStream/builds/BanglaPlex.cs3",
+    "original_version": 1,
+    "sha256_checksum": "0e087450fa944b505ffdad56d21cc7e9413ff4c8d1db586d8040a76c0db345c3",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "strategy": "STRATEGY_3_DEX_STRING_IR",
+    "source_recovery_status": "DEX_FALLBACK",
+    "decompilation_status": "BINARY_DEX_IR_OK",
+    "kotlin_reconstruction_status": "PARTIAL",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "PASS",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "MOCK_PASS",
+    "episode_test_status": "MOCK_PASS",
+    "extractor_test_status": "MOCK_PASS",
+    "overall_status": "NEEDS_REVIEW",
+    "review_reasons": [
+      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+    ],
+    "license_notice": true,
+    "known_unsupported_methods": [],
+    "warnings": [
+      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [],
+    "conversion_timestamp": "2026-11-15T13:10:38.602304+00:00",
     "passed": false
   },
   {
@@ -12242,7 +12133,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:22.337749+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:39.418849+00:00",
     "passed": false
   },
   {
@@ -12280,7 +12171,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:24.013214+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:40.220016+00:00",
     "passed": false
   },
   {
@@ -12319,7 +12210,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:24.664033+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:41.049708+00:00",
     "passed": false
   },
   {
@@ -12356,7 +12247,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:25.281905+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:41.851484+00:00",
     "passed": false
   },
   {
@@ -12393,7 +12284,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:25.891885+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:42.642111+00:00",
     "passed": false
   },
   {
@@ -12430,7 +12321,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:26.503745+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:43.426300+00:00",
     "passed": false
   },
   {
@@ -12467,7 +12358,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:27.134625+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:44.274791+00:00",
     "passed": false
   },
   {
@@ -12504,7 +12395,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:27.733097+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:45.146483+00:00",
     "passed": false
   },
   {
@@ -12541,7 +12432,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:28.402643+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:45.974728+00:00",
     "passed": false
   },
   {
@@ -12579,7 +12470,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:29.074370+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:46.908085+00:00",
     "passed": false
   },
   {
@@ -12616,7 +12507,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:29.675321+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:47.736460+00:00",
     "passed": false
   },
   {
@@ -12653,7 +12544,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:30.290777+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:48.562093+00:00",
     "passed": false
   },
   {
@@ -12691,7 +12582,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:30.914207+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:49.446343+00:00",
     "passed": false
   },
   {
@@ -12728,7 +12619,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:31.583485+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:50.304895+00:00",
     "passed": false
   },
   {
@@ -12765,7 +12656,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:32.201008+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:51.125986+00:00",
     "passed": false
   },
   {
@@ -12802,7 +12693,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:32.850835+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:51.931964+00:00",
     "passed": false
   },
   {
@@ -12841,7 +12732,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:33.486229+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:52.793893+00:00",
     "passed": false
   },
   {
@@ -12879,7 +12770,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:34.054163+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:53.348130+00:00",
     "passed": false
   },
   {
@@ -12917,7 +12808,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:34.697054+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:53.926877+00:00",
     "passed": false
   },
   {
@@ -12955,7 +12846,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:35.230937+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:54.455017+00:00",
     "passed": false
   },
   {
@@ -12993,7 +12884,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:35.783456+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:54.985812+00:00",
     "passed": false
   },
   {
@@ -13031,7 +12922,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:36.426994+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:55.607307+00:00",
     "passed": false
   },
   {
@@ -13069,7 +12960,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:36.967209+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:56.128794+00:00",
     "passed": false
   },
   {
@@ -13106,7 +12997,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:37.616191+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:56.699598+00:00",
     "passed": false
   },
   {
@@ -13144,7 +13035,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:38.203399+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:57.514238+00:00",
     "passed": false
   },
   {
@@ -13182,7 +13073,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:38.820265+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:58.370716+00:00",
     "passed": false
   },
   {
@@ -13220,7 +13111,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:39.459577+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:59.217017+00:00",
     "passed": false
   },
   {
@@ -13258,7 +13149,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:40.081368+00:00",
+    "conversion_timestamp": "2026-11-15T13:10:59.997063+00:00",
     "passed": false
   },
   {
@@ -13296,7 +13187,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:40.738154+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:00.861634+00:00",
     "passed": false
   },
   {
@@ -13334,7 +13225,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:41.347944+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:01.831685+00:00",
     "passed": false
   },
   {
@@ -13371,7 +13262,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:41.969926+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:02.632568+00:00",
     "passed": false
   },
   {
@@ -13408,7 +13299,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:42.597035+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:03.448894+00:00",
     "passed": false
   },
   {
@@ -13445,7 +13336,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:43.215495+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:04.219784+00:00",
     "passed": false
   },
   {
@@ -13482,7 +13373,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:43.827990+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:05.000096+00:00",
     "passed": false
   },
   {
@@ -13520,7 +13411,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:44.445171+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:05.887831+00:00",
     "passed": false
   },
   {
@@ -13557,7 +13448,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:45.053439+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:06.761891+00:00",
     "passed": false
   },
   {
@@ -13594,7 +13485,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:45.696920+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:07.552008+00:00",
     "passed": false
   },
   {
@@ -13632,7 +13523,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:46.296497+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:08.349816+00:00",
     "passed": false
   },
   {
@@ -13669,7 +13560,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:46.901341+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:09.195918+00:00",
     "passed": false
   },
   {
@@ -13706,7 +13597,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:47.536593+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:10.043149+00:00",
     "passed": false
   },
   {
@@ -13744,7 +13635,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:48.126425+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:10.870100+00:00",
     "passed": false
   },
   {
@@ -13757,10 +13648,10 @@
     "sha256_checksum": "ad0dcc0bad379949e5bb339597e9faaf61515c7f14c109bd8bd544362cb40363",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
+    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+    "source_recovery_status": "RECOVERED",
     "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
+    "kotlin_reconstruction_status": "SUCCESS",
     "translation_status": "SUCCESS",
     "typescript_compilation_status": "SUCCESS",
     "seanime_compatibility_status": "PASS",
@@ -13771,7 +13662,6 @@
     "extractor_test_status": "MOCK_PASS",
     "overall_status": "NEEDS_REVIEW",
     "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
       "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
     ],
     "license_notice": true,
@@ -13782,7 +13672,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:48.797431+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:11.698515+00:00",
     "passed": false
   },
   {
@@ -13795,10 +13685,10 @@
     "sha256_checksum": "45c3df81e9f22eb008745522217da054c4d77f9a12d349d25c5cdc37be50234a",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
+    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+    "source_recovery_status": "RECOVERED",
     "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
+    "kotlin_reconstruction_status": "SUCCESS",
     "translation_status": "SUCCESS",
     "typescript_compilation_status": "SUCCESS",
     "seanime_compatibility_status": "PASS",
@@ -13809,7 +13699,6 @@
     "extractor_test_status": "MOCK_PASS",
     "overall_status": "NEEDS_REVIEW",
     "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
       "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
     ],
     "license_notice": true,
@@ -13820,44 +13709,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:49.489088+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "Serienstream",
-    "original_plugin_id": "Serienstream",
-    "original_author": "Bnyro",
-    "original_repository": "https://github.com/Bnyro/GermanProviders",
-    "original_download_url": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/Serienstream.cs3",
-    "original_version": 5,
-    "sha256_checksum": "c153da49787d03b50dcb70568bf70bf342927b3492cf90eab5d7912f1c19795b",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:50.171986+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:12.996120+00:00",
     "passed": false
   },
   {
@@ -13870,10 +13722,10 @@
     "sha256_checksum": "2662e9bac61e8549ba6190fafd002842f7c60ede9cfcbceaba64b00ce82e07be",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
+    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+    "source_recovery_status": "RECOVERED",
     "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
+    "kotlin_reconstruction_status": "SUCCESS",
     "translation_status": "SUCCESS",
     "typescript_compilation_status": "SUCCESS",
     "seanime_compatibility_status": "PASS",
@@ -13884,7 +13736,6 @@
     "extractor_test_status": "MOCK_PASS",
     "overall_status": "NEEDS_REVIEW",
     "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
       "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
     ],
     "license_notice": true,
@@ -13895,81 +13746,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:50.787539+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "SpiegelTV",
-    "original_plugin_id": "SpiegelTV",
-    "original_author": "Bnyro",
-    "original_repository": "https://github.com/Bnyro/GermanProviders",
-    "original_download_url": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/SpiegelTV.cs3",
-    "original_version": 1,
-    "sha256_checksum": "ab0d24651dd1da6f2db03e7a3b044b4fdd498ec6f0579114585ac678d9292a4f",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:51.445731+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "Welt",
-    "original_plugin_id": "Welt",
-    "original_author": "Bnyro",
-    "original_repository": "https://github.com/Bnyro/GermanProviders",
-    "original_download_url": "https://raw.githubusercontent.com/Bnyro/GermanProviders/builds/Welt.cs3",
-    "original_version": 2,
-    "sha256_checksum": "ab6991040b581a62d1a0b0f6763fbdf6514f650b4a2cd8e3ed7c89e2fc15b7e2",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "PASS",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "MOCK_PASS",
-    "episode_test_status": "MOCK_PASS",
-    "extractor_test_status": "MOCK_PASS",
-    "overall_status": "NEEDS_REVIEW",
-    "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-    ],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:52.130331+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:15.625484+00:00",
     "passed": false
   },
   {
@@ -13982,10 +13759,10 @@
     "sha256_checksum": "2389355e0229911f3519f63ebb60ffb7049807b20e6d7229072ad7281073f31f",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
+    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+    "source_recovery_status": "RECOVERED",
     "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
+    "kotlin_reconstruction_status": "SUCCESS",
     "translation_status": "SUCCESS",
     "typescript_compilation_status": "SUCCESS",
     "seanime_compatibility_status": "PASS",
@@ -13996,7 +13773,6 @@
     "extractor_test_status": "MOCK_PASS",
     "overall_status": "NEEDS_REVIEW",
     "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
       "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
     ],
     "license_notice": true,
@@ -14007,7 +13783,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:52.767277+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:19.602824+00:00",
     "passed": false
   },
   {
@@ -14020,10 +13796,10 @@
     "sha256_checksum": "dd70f0e9d706d9885e3ce268b426eb24277399adb01c6e2ef1fd1528398686a3",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_3_DEX_STRING_IR",
-    "source_recovery_status": "DEX_FALLBACK",
+    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+    "source_recovery_status": "RECOVERED",
     "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "PARTIAL",
+    "kotlin_reconstruction_status": "SUCCESS",
     "translation_status": "SUCCESS",
     "typescript_compilation_status": "SUCCESS",
     "seanime_compatibility_status": "PASS",
@@ -14034,7 +13810,6 @@
     "extractor_test_status": "MOCK_PASS",
     "overall_status": "NEEDS_REVIEW",
     "review_reasons": [
-      "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
       "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
     ],
     "license_notice": true,
@@ -14045,7 +13820,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:53.407269+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:20.986111+00:00",
     "passed": false
   },
   {
@@ -14083,7 +13858,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:54.049687+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:22.232046+00:00",
     "passed": false
   },
   {
@@ -14121,7 +13896,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:54.893243+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:23.357529+00:00",
     "passed": false
   },
   {
@@ -14158,7 +13933,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:55.556053+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:24.358721+00:00",
     "passed": false
   },
   {
@@ -14196,7 +13971,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:56.158041+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:25.144680+00:00",
     "passed": false
   },
   {
@@ -14233,7 +14008,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:56.767035+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:25.926961+00:00",
     "passed": false
   },
   {
@@ -14270,7 +14045,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:57.440004+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:26.851788+00:00",
     "passed": false
   },
   {
@@ -14307,7 +14082,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:58.046242+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:27.602146+00:00",
     "passed": false
   },
   {
@@ -14344,7 +14119,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:58.675527+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:28.357876+00:00",
     "passed": false
   },
   {
@@ -14381,7 +14156,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:59.322727+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:29.121726+00:00",
     "passed": false
   },
   {
@@ -14418,7 +14193,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:43:59.934138+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:29.869957+00:00",
     "passed": false
   },
   {
@@ -14456,7 +14231,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:00.589439+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:30.625482+00:00",
     "passed": false
   },
   {
@@ -14494,7 +14269,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:01.184745+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:31.430281+00:00",
     "passed": false
   },
   {
@@ -14531,7 +14306,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:01.827623+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:32.202532+00:00",
     "passed": false
   },
   {
@@ -14569,7 +14344,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:02.486122+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:32.995704+00:00",
     "passed": false
   },
   {
@@ -14607,7 +14382,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:03.139338+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:33.779698+00:00",
     "passed": false
   },
   {
@@ -14644,7 +14419,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:03.902992+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:34.630303+00:00",
     "passed": false
   },
   {
@@ -14681,7 +14456,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:04.580781+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:35.621739+00:00",
     "passed": false
   },
   {
@@ -14718,7 +14493,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:05.244650+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:36.631774+00:00",
     "passed": false
   },
   {
@@ -14755,7 +14530,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:06.080206+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:37.787920+00:00",
     "passed": false
   },
   {
@@ -14792,7 +14567,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:06.869648+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:38.821735+00:00",
     "passed": false
   },
   {
@@ -14829,7 +14604,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:07.701037+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:39.699021+00:00",
     "passed": false
   },
   {
@@ -14866,7 +14641,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:08.500414+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:40.591966+00:00",
     "passed": false
   },
   {
@@ -14903,7 +14678,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:09.188444+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:41.494284+00:00",
     "passed": false
   },
   {
@@ -14940,7 +14715,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:09.831631+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:42.578082+00:00",
     "passed": false
   },
   {
@@ -14977,7 +14752,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:10.617023+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:43.471021+00:00",
     "passed": false
   },
   {
@@ -15014,7 +14789,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:11.298113+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:44.456227+00:00",
     "passed": false
   },
   {
@@ -15051,7 +14826,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:11.965900+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:45.305136+00:00",
     "passed": false
   },
   {
@@ -15088,7 +14863,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:12.667333+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:46.162071+00:00",
     "passed": false
   },
   {
@@ -15125,7 +14900,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:13.364098+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:47.046096+00:00",
     "passed": false
   },
   {
@@ -15162,7 +14937,7 @@
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [],
-    "conversion_timestamp": "2026-11-14T12:44:14.823047+00:00",
+    "conversion_timestamp": "2026-11-15T13:11:48.868874+00:00",
     "passed": false
   }
 ]

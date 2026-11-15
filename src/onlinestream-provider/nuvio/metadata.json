@@ -1,0 +1,21 @@
+{
+  "extensionId": "nuvio",
+  "originalPluginName": "Nuvio",
+  "originalInternalName": "Nuvio",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/Nuvio.cs3",
+  "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
+  "originalAuthors": [
+    "DieGon"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "3b9686a41b565589c70ab0471da205fa9a5d683df2e04361fe969e5ea2c4ffa4",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+  ],
+  "convertedAt": "2026-11-15T13:09:23.211482+00:00"
+}

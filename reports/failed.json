@@ -1,12 +1,48 @@
 [
   {
+    "plugin_name": "Yablom",
+    "original_plugin_id": "Yablom",
+    "original_author": "ByAyzen",
+    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
+    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Yablom.cs3",
+    "original_version": 5,
+    "sha256_checksum": "006b2f19719b16393adafcf5f9a76deeb1c1d50ae5b5b9fbcbec91d7a52c0dd6",
+    "license_spdx": "UNKNOWN",
+    "detected_provider_type": "onlinestream-provider",
+    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+    "source_recovery_status": "RECOVERED",
+    "decompilation_status": "BINARY_DEX_IR_OK",
+    "kotlin_reconstruction_status": "SUCCESS",
+    "translation_status": "SUCCESS",
+    "typescript_compilation_status": "SUCCESS",
+    "seanime_compatibility_status": "FAIL",
+    "js_parse_status": "PASS",
+    "live_test_status": "NOT_RUN",
+    "search_test_status": "FAIL",
+    "episode_test_status": "FAIL",
+    "extractor_test_status": "FAIL",
+    "overall_status": "FAILED",
+    "review_reasons": [],
+    "license_notice": true,
+    "known_unsupported_methods": [],
+    "warnings": [
+      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
+      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+    ],
+    "error_messages": [
+      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
+    ],
+    "conversion_timestamp": "2026-11-15T13:10:01.657570+00:00",
+    "passed": false
+  },
+  {
     "plugin_name": "MuiflixGF",
     "original_plugin_id": "muiflixgf",
     "overall_status": "FAILED",
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-14T12:44:05.994244+00:00"
+    "conversion_timestamp": "2026-11-15T13:11:37.572167+00:00"
   },
   {
     "plugin_name": "FanStreamGF",
@@ -15,7 +51,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-14T12:44:14.264439+00:00"
+    "conversion_timestamp": "2026-11-15T13:11:47.897915+00:00"
   },
   {
     "plugin_name": "GogoFlixGF",
@@ -24,7 +60,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-14T12:44:14.377370+00:00"
+    "conversion_timestamp": "2026-11-15T13:11:48.027693+00:00"
   },
   {
     "plugin_name": "FrembedGF",
@@ -33,7 +69,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-14T12:44:14.478108+00:00"
+    "conversion_timestamp": "2026-11-15T13:11:48.154435+00:00"
   },
   {
     "plugin_name": "FilmoFlixGF",
@@ -42,7 +78,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-14T12:44:14.565206+00:00"
+    "conversion_timestamp": "2026-11-15T13:11:48.289680+00:00"
   },
   {
     "plugin_name": "MovixGF",
@@ -51,7 +87,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-14T12:44:14.650564+00:00"
+    "conversion_timestamp": "2026-11-15T13:11:48.495769+00:00"
   },
   {
     "plugin_name": "AfterDarkGF",
@@ -60,7 +96,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-14T12:44:14.733016+00:00"
+    "conversion_timestamp": "2026-11-15T13:11:48.619088+00:00"
   },
   {
     "plugin_name": "SadisflixGF",
@@ -69,7 +105,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-14T12:44:15.799638+00:00"
+    "conversion_timestamp": "2026-11-15T13:11:49.682272+00:00"
   },
   {
     "plugin_name": "WookafrGF",
@@ -78,6 +114,6 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-14T12:44:15.887802+00:00"
+    "conversion_timestamp": "2026-11-15T13:11:49.801852+00:00"
   }
 ]

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Krmzy
-// Original Class: KrmzyPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: Krmzy
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://arabveturk.com";
-    private mirrorDomains: string[] = ["https://arabveturk.com", "https://arabveturk.com", "https://arabveturk.com/embed-"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://arabveturk.com/"};
+    private mainUrl: string = "https://krmzy.org";
+    private mirrorDomains: string[] = ["https://krmzy.org", "https://krmzy.org"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://krmzy.org/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "a.fullscreen-clickable";
+        const itemSelector = "div.block-post";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "article.postEp div.block-post";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "div.story";
+        const epNumSelector = "div.extra span.C a";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "a.fullscreen-clickable";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

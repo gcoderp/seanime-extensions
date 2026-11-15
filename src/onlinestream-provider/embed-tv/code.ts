@@ -4,7 +4,7 @@
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: EmbedTV
 // Original Class: EmbedTvProvider
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://embedtv.cv";
     private mirrorDomains: string[] = ["https://embedtv.cv", "https://embedtv.cv", "https://www4.embedtv.cv"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://embedtv.cv/"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://embedtv.cv/", "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".card[data-channel=\"";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = ".card";
+        const titleSelector = "h3";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = ".session.futebol";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epNumSelector = "img";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "script";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

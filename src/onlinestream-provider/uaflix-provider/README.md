@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `uaflix-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.24.0` (Upstream CS3 v24)
+- **Version:** `1.25.0` (Upstream CS3 v25)
 - **Language:** `uk`
 - **Original Author(s):** CakesTwix
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `84d950d86794c364e991e89ec85f6d0c6d97064d3f8dabad0d8ed4ceb5e6af6e`
+- **CS3 SHA-256:** `f33890e7812d58519066e216d63b252a0c74337fbf02a0d293eea9285bf8d6aa`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:
