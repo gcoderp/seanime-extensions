@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: IPTVPlayer
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: IPTVPlayerPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://raw.githubusercontent.com/phisher98/TVVVV/main/15APR2024.m3u";
-        this.mirrorDomains = ["https://raw.githubusercontent.com/phisher98/TVVVV/main/15APR2024.m3u", "https://raw.githubusercontent.com/phisher98/TVVVV/main/15APR2024.m3u", "https://raw.githubusercontent.com/phisher98/TVVVV/main/goal.json"];
-        this.defaultHeaders = { "Referer": "https://raw.githubusercontent.com/phisher98/TVVVV/main/15APR2024.m3u/" };
+        this.mainUrl = "https://omg10.com";
+        this.mirrorDomains = ["https://omg10.com", "https://omg10.com/4/11733824"];
+        this.defaultHeaders = { "Referer": "https://omg10.com/" };
     }
     getSettings() {
         return {

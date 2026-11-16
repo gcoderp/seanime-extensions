@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: IptvOrg
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: IptvOrgProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://iptv-org.github.io/iptv/index.m3u";
-    private mirrorDomains: string[] = ["https://iptv-org.github.io/iptv/index.m3u", "https://iptv-org.github.io/iptv/index.m3u", "https://iptv-org.github.io/iptv/languages"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://iptv-org.github.io/iptv/index.m3u/"};
+    private mainUrl: string = "https://iptv-org.github.io";
+    private mirrorDomains: string[] = ["https://iptv-org.github.io", "https://iptv-org.github.io/iptv/index.m3u", "https://iptv-org.github.io/iptv/languages"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://iptv-org.github.io/"};
 
     getSettings(): Settings {
         return {

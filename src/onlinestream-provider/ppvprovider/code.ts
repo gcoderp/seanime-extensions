@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: PPVProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: PPVPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://ppv.st";
-    private mirrorDomains: string[] = ["https://ppv.st", "https://api.ppv.st/api/streams", "https://ppv.st"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://ppv.st/"};
+    private mainUrl: string = "https://cncverse.pages.dev";
+    private mirrorDomains: string[] = ["https://cncverse.pages.dev", "https://cncverse.pages.dev", "https://cncverse.pages.dev/api/stats"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://cncverse.pages.dev/"};
 
     getSettings(): Settings {
         return {

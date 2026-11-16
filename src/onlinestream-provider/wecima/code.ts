@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://wecima.ac";
-    private mirrorDomains: string[] = ["https://wecima.ac", "https://wecima.ac"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://wecima.ac/"};
+    private mainUrl: string = "https://www.4shared.com";
+    private mirrorDomains: string[] = ["https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com/web/embed/file"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.4shared.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
+            episodeServers: ["voe", "streamwish", "streamtape", "dood", "mp4upload", "okru", "vidhide"],
             supportsDub: false,
         };
     }
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".Breadcrumb--UX a[href*='/series/']";
+        const itemSelector = "#app[data-page]";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,7 +495,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".EpisodesList.Full--Width a";
+        const epSelector = ".openLinkDown[data-href]";
         const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "voe";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: IStreamFlare
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: IStreamFlareProvider
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://exposeworld.art";
-    private mirrorDomains: string[] = ["https://exposeworld.art", "https://exposeworld.art"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://exposeworld.art/"};
+    private mainUrl: string = "https://v3-cinemeta.strem.io";
+    private mirrorDomains: string[] = ["https://v3-cinemeta.strem.io", "https://v3-cinemeta.strem.io/meta", "https://v3-cinemeta.strem.io/meta"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://v3-cinemeta.strem.io/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/android/searchContent/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

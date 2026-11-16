@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Replaymatch
-// Original Class: MainCategory
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ReplaymatchProvider
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://fullmatchshows.com";
-    private mirrorDomains: string[] = ["https://fullmatchshows.com", "https://fullmatchshows.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://fullmatchshows.com/"};
+    private mainUrl: string = "https://shhahid4u.cam";
+    private mirrorDomains: string[] = ["https://shhahid4u.cam", "https://shhahid4u.cam"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://shhahid4u.cam/"};
 
     getSettings(): Settings {
         return {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "figure.single-featured-image img";
-        const epNumSelector = "div.entry-content.entry.clearfix p";
+        const epSelector = "a.myButton";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

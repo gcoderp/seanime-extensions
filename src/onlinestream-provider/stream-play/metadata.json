@@ -2,7 +2,7 @@
   "extensionId": "stream-play",
   "originalPluginName": "StreamPlay",
   "originalInternalName": "StreamPlay",
-  "originalVersion": 709,
+  "originalVersion": 711,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/StreamPlay.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
@@ -10,7 +10,7 @@
     "Hexated"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "bf58030b4a58e8f919d433e1f5fb1983ac306ed85d625f998ca2afa7742fbaab",
+  "cs3Sha256": "d4b1becaf0dfc304d6228e3414c93b814aa804785482b14dfe77fae1f01442d8",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-15T13:06:53.924244+00:00"
+  "convertedAt": "2026-11-16T14:11:53.817260+00:00"
 }

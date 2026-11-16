@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Carateen
-// Original Class: CarateenProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: CarateenPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://carateen.tv";
     private mirrorDomains: string[] = ["https://carateen.tv", "https://carateen.tv"];
-    private defaultHeaders: Record<string, string> = {"Referer": "$mainUrl/"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://carateen.tv/"};
 
     getSettings(): Settings {
         return {

@@ -2,20 +2,21 @@
   "extensionId": "movie-box-provider",
   "originalPluginName": "MovieBoxProvider",
   "originalInternalName": "MovieBoxProvider",
-  "originalVersion": 54,
+  "originalVersion": 55,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MovieBoxProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "986110c802fb9a116974f2598b97389974c34b0481e990f75e06fe0207f6cffc",
+  "cs3Sha256": "1c72d18e3d5cb85a5aec422096cc7511ea4767636c3ece1870ac68ae4f13846a",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-16T10:41:40.370314+00:00"
+  "convertedAt": "2026-11-16T14:13:50.369885+00:00"
 }

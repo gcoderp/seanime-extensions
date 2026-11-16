@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeONProvider
-// Original Class: AnimeONProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: AnimeONProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://animeon.club";
-    private mirrorDomains: string[] = ["https://animeon.club", "https://animeon.club", "https://animeon.club"];
-    private defaultHeaders: Record<string, string> = {"Referer": "$base/", "X-Requested-With": "mark.via.gp", "Origin": "https://fenixplay.xyz"};
+    private mainUrl: string = "https://fenixplay.xyz";
+    private mirrorDomains: string[] = ["https://fenixplay.xyz", "https://fenixplay.xyz", "https://fenixplay.xyz", "https://fenixplay.xyz/api/playback"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://fenixplay.xyz/"};
 
     getSettings(): Settings {
         return {

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME TORRENT EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: YTS
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: YTSProvider
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -301,8 +301,8 @@ class AniListResolver {
 }
 
 class Provider {
-    private mainUrl: string = "https://www12.yts-official.to";
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www12.yts-official.to/"};
+    private mainUrl: string = "https://yts.bz";
+    private defaultHeaders: Record<string, string> = {"Referer": "https://yts.bz/"};
 
     getSettings(): TorrentProviderSettings {
         return {

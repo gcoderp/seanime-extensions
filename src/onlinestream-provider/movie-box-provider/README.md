@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `movie-box-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.54.0` (Upstream CS3 v54)
+- **Version:** `1.55.0` (Upstream CS3 v55)
 - **Language:** `ta`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
-- **CS3 SHA-256:** `986110c802fb9a116974f2598b97389974c34b0481e990f75e06fe0207f6cffc`
+- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
+- **CS3 SHA-256:** `1c72d18e3d5cb85a5aec422096cc7511ea4767636c3ece1870ac68ae4f13846a`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

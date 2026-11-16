@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeONProvider
-// Original Class: AnimeONProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: AnimeONProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://animeon.club";
-        this.mirrorDomains = ["https://animeon.club", "https://animeon.club", "https://animeon.club"];
-        this.defaultHeaders = { "Referer": "$base/", "X-Requested-With": "mark.via.gp", "Origin": "https://fenixplay.xyz" };
+        this.mainUrl = "https://fenixplay.xyz";
+        this.mirrorDomains = ["https://fenixplay.xyz", "https://fenixplay.xyz", "https://fenixplay.xyz", "https://fenixplay.xyz/api/playback"];
+        this.defaultHeaders = { "Referer": "https://fenixplay.xyz/" };
     }
     getSettings() {
         return {
