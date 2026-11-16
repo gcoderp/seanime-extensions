@@ -2,20 +2,18 @@
   "extensionId": "m3-uplaylist-player-provider",
   "originalPluginName": "M3UPlaylistPlayerProvider",
   "originalInternalName": "M3UPlaylistPlayerProvider",
-  "originalVersion": 20,
+  "originalVersion": 21,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/M3UPlaylistPlayerProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "1739a3f2f7b289eb51f73602feb9ac739545c6b5146c718258cb48ef0bcd7da7",
+  "cs3Sha256": "abe2e18b24a65d38f012b53fe915c2952ff4d5206f34491815d00e9b986d8c61",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
-  "validationStatus": "NEEDS_REVIEW",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
-  "reviewReasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-  ],
-  "convertedAt": "2026-11-15T13:08:56.001533+00:00"
+  "reviewReasons": [],
+  "convertedAt": "2026-11-16T10:41:30.598352+00:00"
 }

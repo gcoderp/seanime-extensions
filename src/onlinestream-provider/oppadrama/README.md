@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `oppadrama`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.2.0` (Upstream CS3 v2)
+- **Version:** `1.3.0` (Upstream CS3 v3)
 - **Language:** `id`
 - **Original Author(s):** TeKuma25
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `a44e8db888b2ddc23927235585064dccd90762c284c19d572383ed8982ce8506`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `b4ba05a8b0f47cdd21d8c0a7bfe92cea02f53b3d4f7bf41d427fcfe96af03a75`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

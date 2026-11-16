@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Kartoons
-// Original Class: KartoonsPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://kartoons.to";
-    private mirrorDomains: string[] = ["https://kartoons.to", "https://api.kartoons.to", "https://kartoons.to", "https://kartoons.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://kartoons.to/"};
+    private mainUrl: string = "https://api.kartoons.to";
+    private mirrorDomains: string[] = ["https://api.kartoons.to", "https://api.kartoons.to", "https://kartoons.to", "https://kartoons.to"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.kartoons.to/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/api/search/suggestions?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

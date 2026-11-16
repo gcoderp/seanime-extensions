@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `liv-xow-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.25.0` (Upstream CS3 v25)
+- **Version:** `1.26.0` (Upstream CS3 v26)
 - **Language:** `ta`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `c57a0d6c12a298de09d1b5d8390573c4f8c6f856edf3cb0f669dbba2db81961b`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `bba323608d6dca4d300747812fdce806063773f4bcf106066f6109d9e0f15fa9`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

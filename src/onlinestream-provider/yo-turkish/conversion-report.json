@@ -10,7 +10,7 @@
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
   "source_recovery_status": "RECOVERED",
-  "decompilation_status": "BINARY_DEX_IR_OK",
+  "decompilation_status": "JADX_OK",
   "kotlin_reconstruction_status": "SUCCESS",
   "translation_status": "SUCCESS",
   "typescript_compilation_status": "SUCCESS",
@@ -30,6 +30,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-15T13:10:02.945001+00:00",
+  "conversion_timestamp": "2026-11-16T10:45:51.724487+00:00",
   "passed": true
 }

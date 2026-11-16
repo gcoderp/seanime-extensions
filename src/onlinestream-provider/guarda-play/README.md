@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `guarda-play`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.1.0` (Upstream CS3 v1)
+- **Version:** `1.2.0` (Upstream CS3 v2)
 - **Language:** `it`
 - **Original Author(s):** DieGon
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `15f46155b79ab8423d14262a3ddc31ee7c64e3fd4f881e495e22a8f5b03a7845`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `67aef6909db5a9838017e7f25093506f883e63d64a114a373656b6249def3509`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

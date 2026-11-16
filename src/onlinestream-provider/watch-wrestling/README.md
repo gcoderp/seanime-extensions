@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `watch-wrestling`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.18.0` (Upstream CS3 v18)
+- **Version:** `1.19.0` (Upstream CS3 v19)
 - **Language:** `en`
 - **Original Author(s):** kraptor
-- **Conversion Strategy:** `STRATEGY_1_GITHUB_SOURCE_RECOVERY`
-- **CS3 SHA-256:** `e60c081865d5584f9fa4dec3006be7cd81cc016499c8d558972bede4d855b5b3`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `87810f2811d5b0e87686b4c7acfa1336aeb252d2ad7c4557bebd99ab4b4c7a06`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

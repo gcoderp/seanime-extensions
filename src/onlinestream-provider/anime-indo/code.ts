@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeIndo
-// Original Class: AnimeIndoPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://gdplayer.to";
-    private mirrorDomains: string[] = ["https://gdplayer.to", "https://gdplayer.to", "https://gdplayer.to", "https://gdplayer.to/api-config"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://gdplayer.to/"};
+    private mainUrl: string = "https://anime-indo.lol";
+    private mirrorDomains: string[] = ["https://anime-indo.lol", "https://anime-indo.lol", "https://anime-indo.lol"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://anime-indo.lol/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search/{query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "a#allmiror, a[data-video]";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "table.otable";
+        const titleSelector = "img";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "a[href*='/anime/']";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "table.otable";
+        const epNumSelector = "div.ngiri div.menu a, div.menu a:has(div.list-anime), div.menu a:has(p)";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "img";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

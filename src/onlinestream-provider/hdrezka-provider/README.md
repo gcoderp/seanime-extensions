@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `hdrezka-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.38.0` (Upstream CS3 v38)
+- **Version:** `1.39.0` (Upstream CS3 v39)
 - **Language:** `ru`
 - **Original Author(s):** Hexated, NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `c1ad6def8d014f6e679da5fd12bcc1414b658bf3b6d9e80a6aa05b65259e30d8`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `be713d0cee8feac0332d430c615ef6c73d113e076f9fb08ee8c44cb74df8ac57`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

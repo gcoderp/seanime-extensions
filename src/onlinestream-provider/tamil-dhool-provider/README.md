@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `tamil-dhool-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.41.0` (Upstream CS3 v41)
+- **Version:** `1.42.0` (Upstream CS3 v42)
 - **Language:** `ta`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `365f611b999fabe344f7e4d664b8b6fa470502bf4ee5acd5bddf193374372535`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `c7208632f75868e5adc5b0dc1bcf2357e9fe5826dc22eb1e35a9073d75ccd435`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

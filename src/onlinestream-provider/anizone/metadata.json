@@ -9,13 +9,11 @@
     "ycngmn"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "26d40dba08259c4c96073a799dec10f3ad8da0ec12a40233b725f74f62c786c9",
+  "cs3Sha256": "2a9d9beed9092612f0e61ad2a5c77698a42af490f92b41751f2d68368dfc1ef0",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
-  "validationStatus": "NEEDS_REVIEW",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
-  "reviewReasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-  ],
-  "convertedAt": "2026-11-15T13:06:08.319972+00:00"
+  "reviewReasons": [],
+  "convertedAt": "2026-11-16T10:28:06.242605+00:00"
 }

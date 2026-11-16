@@ -7,7 +7,7 @@
     ],
     "statuses": [
       "SUCCESS",
-      "NEEDS_REVIEW"
+      "SUCCESS"
     ]
   },
   {
@@ -18,7 +18,18 @@
     ],
     "statuses": [
       "NEEDS_REVIEW",
-      "NEEDS_REVIEW"
+      "SUCCESS"
+    ]
+  },
+  {
+    "id": "nuvio",
+    "paths": [
+      "src/onlinestream-provider/nuvio",
+      "src/anime-torrent-provider/nuvio"
+    ],
+    "statuses": [
+      "NEEDS_REVIEW",
+      "SUCCESS"
     ]
   },
   {
@@ -29,7 +40,7 @@
     ],
     "statuses": [
       "SUCCESS",
-      "NEEDS_REVIEW"
+      "SUCCESS"
     ]
   },
   {

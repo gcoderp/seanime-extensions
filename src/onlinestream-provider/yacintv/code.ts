@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Yacintv
-// Original Class: YacineTVPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://def11.ycnapi.com";
-    private mirrorDomains: string[] = ["https://def11.ycnapi.com", "https://def11.ycnapi.com/api"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://def11.ycnapi.com/"};
+    private mainUrl: string = "https://def11.ycnapi.com/api";
+    private mirrorDomains: string[] = ["https://def11.ycnapi.com/api", "https://def11.ycnapi.com/api"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://def11.ycnapi.com/api/"};
 
     getSettings(): Settings {
         return {

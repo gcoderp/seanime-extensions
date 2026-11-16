@@ -2,20 +2,18 @@
   "extensionId": "nonton-anime-id",
   "originalPluginName": "NontonAnimeID",
   "originalInternalName": "NontonAnimeID",
-  "originalVersion": 28,
+  "originalVersion": 29,
   "originalDownloadUrl": "https://raw.githubusercontent.com/TeKuma25/IndoStream/builds/NontonAnimeID.cs3",
   "originalRepositoryUrl": "https://github.com/TeKuma25/IndoStream",
   "originalAuthors": [
     "TeKuma25"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "56c1c57a53c68b0ed00c910b397b9c8d2129ce2fbea03cc34f179c7f2a2e2c24",
+  "cs3Sha256": "9beb61834b0664bedd9d3bb011fc23e2a7b58aa99249d24629d5ee94a01ad40f",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
-  "validationStatus": "NEEDS_REVIEW",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
-  "reviewReasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-  ],
-  "convertedAt": "2026-11-15T13:08:06.381378+00:00"
+  "reviewReasons": [],
+  "convertedAt": "2026-11-16T10:37:44.582016+00:00"
 }

@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `basketball-replays`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.5.0` (Upstream CS3 v5)
+- **Version:** `1.6.0` (Upstream CS3 v6)
 - **Language:** `en`
 - **Original Author(s):** ByAyzen
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `d7244d846adc02b44306c952dc0e01d3dcb460f57532a4b26fd3286c6bb61842`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `c9b73b8516a9689a55bab37782b85ad95b9f91f799dedd74d3340ee961f80d4c`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

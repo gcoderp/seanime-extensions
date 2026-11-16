@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `golden-audiobook`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.35.0` (Upstream CS3 v35)
+- **Version:** `1.36.0` (Upstream CS3 v36)
 - **Language:** `en`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `8b5b8dddd9d8021502be5472aad549bae435f0f0fff3a848907d3fbf77f4deca`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `c50fb21075caec65763ace2fd6f1c03865d233d369449ad944c0253a10b3b2c2`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

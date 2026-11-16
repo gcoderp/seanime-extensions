@@ -5,11 +5,11 @@ Automatically converted Seanime `anime-torrent-provider` extension from Cloudstr
 ## Overview
 - **Extension ID:** `stream-play`
 - **Provider Type:** `anime-torrent-provider`
-- **Version:** `1.694.0` (Upstream CS3 v694)
+- **Version:** `1.711.0` (Upstream CS3 v711)
 - **Language:** `en`
 - **Original Author(s):** Phisher98, Hexated
 - **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
-- **CS3 SHA-256:** `a63bd63f0203db0c62ed0e85a1d3f039a9e98d7cdc9fa79f233af6cce825f805`
+- **CS3 SHA-256:** `d4b1becaf0dfc304d6228e3414c93b814aa804785482b14dfe77fae1f01442d8`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

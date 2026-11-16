@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `esheaq`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.22.0` (Upstream CS3 v22)
+- **Version:** `1.25.0` (Upstream CS3 v25)
 - **Language:** `ar`
 - **Original Author(s):** kraptor
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `16bda1dbb502620efe1406708207c8f167f6e2cd95937858e51f6ba22fa40543`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `ab7211118162c5a369bc57b9d88274558072cb86c2992065d402889b80dce0e6`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

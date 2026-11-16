@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: MultiMoviesProvider
-// Original Class: MultiMoviesProviderPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidy.st";
-    private mirrorDomains: string[] = ["https://vidy.st", "https://vidy.st/movie", "https://vidy.st/tv"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidy.st/"};
+    private mainUrl: string = "https://multimovies.garden";
+    private mirrorDomains: string[] = ["https://multimovies.garden", "https://multimovies.garden", "https://multimovies.garden"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://multimovies.garden/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "streamwish", "vidhide"],
+            episodeServers: ["streamwish", "filemoon", "vidhide"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#EXT-X-MEDIA:TYPE=AUDIO,[^\\n]*?NAME=\"([^\"]+)\"[^\\n]*?URI=\"([^\"]+)\"";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "article.poster-card, article.item, .items article";
+        const titleSelector = "img";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "#EXT-X-STREAM-INF:[^\\n]*?RESOLUTION=(\\d+)x(\\d+)[^\\n]*\\n\\s*([^\\n]+)";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "article.poster-card, article.item, .items article";
+        const epNumSelector = "article.poster-card, .result-item article, div.result-item";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "img";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

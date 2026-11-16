@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME TORRENT EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: YTS
-// Original Class: YTSProvider
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -300,8 +300,8 @@ class AniListResolver {
 }
 class Provider {
     constructor() {
-        this.mainUrl = "https://yts.bz";
-        this.defaultHeaders = { "Referer": "https://yts.bz/" };
+        this.mainUrl = "https://www12.yts-official.to";
+        this.defaultHeaders = { "Referer": "https://www12.yts-official.to/" };
     }
     getSettings() {
         return {

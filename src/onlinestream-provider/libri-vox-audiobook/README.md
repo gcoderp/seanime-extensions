@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `libri-vox-audiobook`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.35.0` (Upstream CS3 v35)
+- **Version:** `1.36.0` (Upstream CS3 v36)
 - **Language:** `en`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `d7336d8fb29299e789195d966983b732848c5e8e9f7485adfb63007cfa2adee3`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `3e249f8af9a558b80549295bceabc4c7e7494414a520702bd1949b81d18c6031`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

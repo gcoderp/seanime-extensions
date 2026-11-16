@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: MendigoFlix
-// Original Class: MendigoFlixProvider
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: MendigoFlix
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.themoviedb.org";
-    private mirrorDomains: string[] = ["https://api.themoviedb.org", "https://api.themoviedb.org/3/movie", "https://api.themoviedb.org/3/search/movie?api_key=", "https://api.themoviedb.org/3/search/tv?api_key="];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
+    private mainUrl: string = "https://mendigoflix.lol";
+    private mirrorDomains: string[] = ["https://mendigoflix.lol", "https://mendigoflix.lol"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://mendigoflix.lol/"};
 
     getSettings(): Settings {
         return {
             episodeServers: ["filemoon"],
-            supportsDub: true,
+            supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "$SEARCH_PATH?q=${java.net.URLEncoder.encode(query,&q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -429,7 +429,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const itemSelector = ".grid .card, a.card";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const titleSelector = "img";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".recs-grid .rec-card, .recs-grid a";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "h1, .title";
+        const epNumSelector = ".episode-list, .season-list, .seasons";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

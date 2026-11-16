@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeDekhoProvider
-// Original Class: AnimeDekhoPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://animedekho.tv";
-    private mirrorDomains: string[] = ["https://animedekho.tv", "https://animedekho.tv", "https://animedekho.tv", "https://animedekho.tv/aaa/get/play.php"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://animedekho.tv/"};
+    private mainUrl: string = "https://z.awstream.net";
+    private mirrorDomains: string[] = ["https://z.awstream.net", "https://z.awstream.net"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://z.awstream.net/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "streamtape", "streamwish", "vidhide", "voe", "vidstream"],
+            episodeServers: ["vidstream", "streamwish", "vidhide", "filemoon", "voe", "streamtape"],
             supportsDub: true,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/wp-json/dgt/v1/suggest?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "a.btn-success";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const titleSelector = "meta[name=description]";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "a.dgt-card";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const epNumSelector = "[data-snapshot]";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "script:containsData(function(p,a,c,k,e,d))";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidstream";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

@@ -2,22 +2,21 @@
   "extensionId": "sleep-guard",
   "originalPluginName": "SleepGuard",
   "originalInternalName": "SleepGuard",
-  "originalVersion": 1,
+  "originalVersion": 2,
   "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/SleepGuard.cs3",
   "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
   "originalAuthors": [
     "DieGon"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "385a2b82340da8fbcf481c600f76df95e54f1834ec7bed1abb9582f47d41740c",
+  "cs3Sha256": "e5625aa2b8cb2a487adf4fdd366e63dbe6931fb56b1add7dfb1e2906f7bb6c07",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
     "No upstream base URL could be recovered.",
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-15T13:09:25.854789+00:00"
+  "convertedAt": "2026-11-16T10:43:34.626699+00:00"
 }

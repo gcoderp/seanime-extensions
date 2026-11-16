@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `cine-doze-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.1.0` (Upstream CS3 v1)
+- **Version:** `1.2.0` (Upstream CS3 v2)
 - **Language:** `bn`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `befad2d15470f9f11d06a0fdd89589e84758a33ab2a5d0a5d48b6bccc1cac383`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `968fc75bc82fb094e5d1dca9861f1c7675486fe3966b90ee0dd150b8cb860ad0`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

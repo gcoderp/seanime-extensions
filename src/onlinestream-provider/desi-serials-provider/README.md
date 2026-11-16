@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `desi-serials-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.34.0` (Upstream CS3 v34)
+- **Version:** `1.35.0` (Upstream CS3 v35)
 - **Language:** `hi`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `faeeb2f7a8ebfa969a5e502acc54695d590a1b06554f59fc4cd4f5e7d9e4bb3a`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `c4fac416454e861ede1c55ff0900b2bbaf56b8e3e9f0f351fa7986d8e6cc23cc`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

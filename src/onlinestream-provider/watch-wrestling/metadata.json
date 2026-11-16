@@ -2,18 +2,18 @@
   "extensionId": "watch-wrestling",
   "originalPluginName": "WatchWrestling",
   "originalInternalName": "WatchWrestling",
-  "originalVersion": 18,
+  "originalVersion": 19,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/WatchWrestling.cs3",
   "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
   "originalAuthors": [
     "kraptor"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "e60c081865d5584f9fa4dec3006be7cd81cc016499c8d558972bede4d855b5b3",
+  "cs3Sha256": "87810f2811d5b0e87686b4c7acfa1336aeb252d2ad7c4557bebd99ab4b4c7a06",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
   "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [],
-  "convertedAt": "2026-11-15T13:10:00.299929+00:00"
+  "convertedAt": "2026-11-16T10:45:45.776468+00:00"
 }

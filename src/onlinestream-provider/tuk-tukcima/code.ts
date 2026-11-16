@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: TukTukcima
-// Original Class: TukTukHdPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://videoland.sbs";
-    private mirrorDomains: string[] = ["https://videoland.sbs", "https://videoland.sbs", "https://videoland.sbs"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://videoland.sbs/"};
+    private mainUrl: string = "https://tuktukhd.com";
+    private mirrorDomains: string[] = ["https://tuktukhd.com", "https://tuktukhd.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://tuktukhd.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".MainSingle .left .image img";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = ".allepcont a, .SeriesEpisodesGrid a.SeriesEpisodeCard";
+        const titleSelector = "h3";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".RightTaxContent a[href*='release-year']";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = ".allepcont a, .SeriesEpisodesGrid a.SeriesEpisodeCard";
+        const epNumSelector = ".ep-info h2, .SeriesEpisodeInfo h3";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "h3";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

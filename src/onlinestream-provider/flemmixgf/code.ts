@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: flemmixgf
-// Original Class: Plugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidsrc.net";
-    private mirrorDomains: string[] = ["https://vidsrc.net", "https://vidsrc.net", "https://vidsrc.net/embed/movie?imdb=", "https://vidsrc.net/embed/movie?tmdb="];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidsrc.net/"};
+    private mainUrl: string = "https://vidzy.org";
+    private mirrorDomains: string[] = ["https://vidzy.org", "https://vidzy.org", "https://vidzy.org"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://vidzy.org/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["dood", "filemoon", "voe", "sibnet"],
+            episodeServers: ["filemoon", "voe", "sibnet", "dood"],
             supportsDub: true,
         };
     }
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#containerAjoutsAnimes a";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const titleSelector = "h1";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "#containerClassiques a";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "script:containsData(function(p,a,c,k,e,d))";
+        const epNumSelector = "h2, .card-title";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "script:containsData(function(p,a,c,k,e,d))";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: ObejrzyjTo
-// Original Class: ObejrzyjToPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidneo.cc";
-    private mirrorDomains: string[] = ["https://vidneo.cc", "https://vidneo.cc", "https://vidneo.cc", "https://vidneo.cc/api"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidneo.cc/"};
+    private mainUrl: string = "https://bysekoze.com";
+    private mirrorDomains: string[] = ["https://bysekoze.com", "https://bysekoze.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://bysekoze.com/"};
 
     getSettings(): Settings {
         return {

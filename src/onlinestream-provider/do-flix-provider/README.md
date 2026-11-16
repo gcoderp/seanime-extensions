@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `do-flix-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.38.0` (Upstream CS3 v38)
+- **Version:** `1.39.0` (Upstream CS3 v39)
 - **Language:** `ta`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `628b3a92208fd980bd7b52bbafeab6338a8561349470af21f8f57e8e3a346acb`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `9861bea92fb9545549955e2d6cb92888c72d0bb606cc0f1f509f9b09344fec54`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `nonton-drama`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.4.0` (Upstream CS3 v4)
+- **Version:** `1.5.0` (Upstream CS3 v5)
 - **Language:** `id`
 - **Original Author(s):** TeKuma25
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `9e59820cd273654dddc4a85f0d6e4685ff88b68c108d91d26325ce3c453530c5`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `f9c3e7046b442ac7263a6ad90abff5e25208960087846fe9ca987151d7514b0b`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

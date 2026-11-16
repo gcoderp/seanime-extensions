@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: PikashowProvider
-// Original Class: PikashowPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://samui390dod.com";
-    private mirrorDomains: string[] = ["https://samui390dod.com", "https://samui390dod.com", "https://samui390dod.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://samui390dod.com/"};
+    private mainUrl: string = "https://manoda.co";
+    private mirrorDomains: string[] = ["https://manoda.co", "https://manoda.co"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://manoda.co/"};
 
     getSettings(): Settings {
         return {

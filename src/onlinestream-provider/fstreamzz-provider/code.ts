@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: FStreamzzProvider
-// Original Class: FStreamzzProviderPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.themoviedb.org";
-    private mirrorDomains: string[] = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/discover/movie?api_key=16ee5583bee38b1e9d9f37ec5013e369&include_adult=false&include_video=false&page=1&region=FR&release_date.gte=1980-01-01&release_date.lte=1989-12-31&&sort_by=vote_count.desc&vote_average.gte=5&vote_count.gte=50"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
+    private mainUrl: string = "https://www.uqload.cx";
+    private mirrorDomains: string[] = ["https://www.uqload.cx", "https://www.uqload.cx"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.uqload.cx/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".embed > iframe";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "video#vjsplayer";
+        const titleSelector = "h3";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".flex-1 > .items-center > span:eq(1):not(.hidden)";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "video#vjsplayer";
+        const epNumSelector = "track";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "video#vjsplayer";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

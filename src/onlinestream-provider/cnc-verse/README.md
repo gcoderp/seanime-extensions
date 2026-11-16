@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `cnc-verse`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.115.0` (Upstream CS3 v115)
+- **Version:** `1.116.0` (Upstream CS3 v116)
 - **Language:** `ta`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `cd1d9cdf380b6bfd024e3057922cf5b1334592e48c2ff1c3b435c9ea417162a0`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `66278a65fac657e57c11d37121ac448f0276f850d80dd4dabf471eb4e0f330cd`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

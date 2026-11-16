@@ -2,20 +2,18 @@
   "extensionId": "flixlatam",
   "originalPluginName": "Flixlatam",
   "originalInternalName": "Flixlatam",
-  "originalVersion": 9,
+  "originalVersion": 10,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Flixlatam.cs3",
   "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
   "originalAuthors": [
     "ByAyzen"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "00c99bdd57e1628924143a9010688e5e5e40b860b95e2947672b9d7f97e4cb79",
+  "cs3Sha256": "070bf24473aa40223c239712a05f57c2af8086ec8d1bea796907f33d7db25e6a",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
-  "validationStatus": "NEEDS_REVIEW",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "validationStatus": "SUCCESS",
   "liveTestStatus": "NOT_RUN",
-  "reviewReasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
-  ],
-  "convertedAt": "2026-11-15T13:09:40.753019+00:00"
+  "reviewReasons": [],
+  "convertedAt": "2026-11-16T10:44:34.792297+00:00"
 }

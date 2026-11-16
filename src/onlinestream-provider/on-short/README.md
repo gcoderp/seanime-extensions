@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `on-short`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.3.0` (Upstream CS3 v3)
+- **Version:** `1.4.0` (Upstream CS3 v4)
 - **Language:** `en`
 - **Original Author(s):** kraptor
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `6e87e9b6ad2422698829c07e4262f987605fb71339434061d898faf78e589aad`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `ce7f50c2caf1eff1cf39b13589e68a434bda258fc252aa8a6fd36be340124c7f`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

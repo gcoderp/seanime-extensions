@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `jpfilms`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.9.0` (Upstream CS3 v9)
+- **Version:** `1.10.0` (Upstream CS3 v10)
 - **Language:** `en`
 - **Original Author(s):** ByAyzen
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `1b736e0cda249cbac483658a2abe2b8c90075c232dd26fd8739797b79a5e5f5f`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `cfb3559349aacc4138567f4492b5e6943d7820bb0e88ebdeec251bef355849ab`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

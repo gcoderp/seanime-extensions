@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `moviezwap-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.33.0` (Upstream CS3 v33)
+- **Version:** `1.34.0` (Upstream CS3 v34)
 - **Language:** `te`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `183be86149d36717cf2c540e29737870fa1af3f9d23c3282d9399750f9a81a54`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `5d8fae1c94925bff9dadc1bc7a060f41f6b20d44373bf073dfb70beb4680f4f3`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

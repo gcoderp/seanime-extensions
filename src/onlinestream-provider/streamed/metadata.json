@@ -2,21 +2,20 @@
   "extensionId": "streamed",
   "originalPluginName": "Streamed",
   "originalInternalName": "Streamed",
-  "originalVersion": 29,
+  "originalVersion": 30,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Streamed.cs3",
   "originalRepositoryUrl": "https://github.com/Kraptor123/Cs-Karma",
   "originalAuthors": [
     "kraptor"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "3ac142f8ccfcc3be876418f9034e982c9753d29ee1fe411dfebcbd6048359164",
+  "cs3Sha256": "ca97ea8a05797c90e282fafaef6668088f8e88df15028336a7c59d9ba729223a",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-15T13:09:56.626600+00:00"
+  "convertedAt": "2026-11-16T10:45:34.919019+00:00"
 }

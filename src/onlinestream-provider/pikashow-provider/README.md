@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `pikashow-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.33.0` (Upstream CS3 v33)
+- **Version:** `1.34.0` (Upstream CS3 v34)
 - **Language:** `ta`
 - **Original Author(s):** NivinCNC
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `1ea7c40ebcf1372b0df2182a41c554de0a4bd2c628fdc0ecfe3dd49e6e82fbc1`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `d66b55f33700d2ca203e81a216b8af2652f69f8ce1925afb1656ec63d5173806`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:
