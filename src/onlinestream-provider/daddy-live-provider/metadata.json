@@ -2,14 +2,14 @@
   "extensionId": "daddy-live-provider",
   "originalPluginName": "DaddyLiveProvider",
   "originalInternalName": "DaddyLiveProvider",
-  "originalVersion": 3,
+  "originalVersion": 8,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/DaddyLiveProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "9c39536e728c24ccebe2efcb935e0bf735738dc3cddc969d4e30282dc75ce6f7",
+  "cs3Sha256": "65e96c1260fcf23db35155f5c8934a5eaeefb9732a3a8adcfca57800bf4eb1f1",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-16T14:13:41.341735+00:00"
+  "convertedAt": "2026-11-17T15:07:30.455784+00:00"
 }

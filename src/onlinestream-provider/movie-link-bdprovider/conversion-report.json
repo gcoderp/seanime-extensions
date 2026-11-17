@@ -4,8 +4,8 @@
   "original_author": "NivinCNC",
   "original_repository": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "original_download_url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MovieLinkBDProvider.cs3",
-  "original_version": 27,
-  "sha256_checksum": "0de2d292f255f91ec7439bbe2f39b1fd6f5c9f300d3086d2c4c376c1eadaebdc",
+  "original_version": 28,
+  "sha256_checksum": "9f33044d7f643fbf2ed7de68cf0085b9398a39eed582ee680bfbfe7f299075c9",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-16T14:13:51.204171+00:00",
+  "conversion_timestamp": "2026-11-17T15:07:38.655554+00:00",
   "passed": false
 }

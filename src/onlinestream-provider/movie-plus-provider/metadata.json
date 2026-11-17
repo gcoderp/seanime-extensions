@@ -1,0 +1,22 @@
+{
+  "extensionId": "movie-plus-provider",
+  "originalPluginName": "MoviePlusProvider",
+  "originalInternalName": "MoviePlusProvider",
+  "originalVersion": 3,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MoviePlusProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
+  "originalAuthors": [
+    "NivinCNC"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "210409abbc79d39ac833566308ccdde8543214c8600a7e1d7574e32065e0cab9",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+  ],
+  "convertedAt": "2026-11-17T15:07:40.016564+00:00"
+}

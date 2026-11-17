@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-16T14:11:21.506349+00:00"
+  "convertedAt": "2026-11-17T15:05:21.588389+00:00"
 }

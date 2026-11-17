@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `daddy-live-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.3.0` (Upstream CS3 v3)
+- **Version:** `1.8.0` (Upstream CS3 v8)
 - **Language:** `en`
 - **Original Author(s):** NivinCNC
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `9c39536e728c24ccebe2efcb935e0bf735738dc3cddc969d4e30282dc75ce6f7`
+- **CS3 SHA-256:** `65e96c1260fcf23db35155f5c8934a5eaeefb9732a3a8adcfca57800bf4eb1f1`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

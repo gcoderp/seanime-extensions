@@ -3,7 +3,7 @@
   "name": "MovieLinkBDProvider",
   "description": "MovieLinkBD - Largest Movie Download Site in Bangladesh",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/movie-link-bdprovider/manifest.json",
-  "version": "1.27.0",
+  "version": "1.28.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",

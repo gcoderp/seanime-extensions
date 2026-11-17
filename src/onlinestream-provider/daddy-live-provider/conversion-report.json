@@ -4,8 +4,8 @@
   "original_author": "NivinCNC",
   "original_repository": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "original_download_url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/DaddyLiveProvider.cs3",
-  "original_version": 3,
-  "sha256_checksum": "9c39536e728c24ccebe2efcb935e0bf735738dc3cddc969d4e30282dc75ce6f7",
+  "original_version": 8,
+  "sha256_checksum": "65e96c1260fcf23db35155f5c8934a5eaeefb9732a3a8adcfca57800bf4eb1f1",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-16T14:13:40.617913+00:00",
+  "conversion_timestamp": "2026-11-17T15:07:29.864118+00:00",
   "passed": false
 }

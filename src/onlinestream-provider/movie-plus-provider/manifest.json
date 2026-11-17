@@ -1,0 +1,15 @@
+{
+  "id": "movie-plus-provider",
+  "name": "MoviePlusProvider",
+  "description": "Movie! Plus \u2014 Spanish/Latino movies & series (TMDB metadata, Yandex.Disk sources, no login)",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/movie-plus-provider/manifest.json",
+  "version": "1.3.0",
+  "author": "NivinCNC",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "mx",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/movie-plus-provider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/movie-plus-provider/code.js",
+  "icon": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/Logos/MoviePlusProvider/icon.png"
+}

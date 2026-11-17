@@ -2,14 +2,14 @@
   "extensionId": "wecima",
   "originalPluginName": "WeCima",
   "originalInternalName": "Wecima",
-  "originalVersion": 3,
+  "originalVersion": 4,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Wecima.cs3",
   "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
   "originalAuthors": [
     "Abodabodd"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "d7d3271f227ec545529a2f2a8f1768a665a82185339c8b5a2d02e0a9fcbd4412",
+  "cs3Sha256": "89a52544b366ba42e53cd85ce5e8ecff604e9775dcb6531c160558b1c6178ad7",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-16T14:12:44.340481+00:00"
+  "convertedAt": "2026-11-17T15:06:36.190559+00:00"
 }
