@@ -1,0 +1,38 @@
+{
+  "plugin_name": "AnimeUnion",
+  "original_plugin_id": "AnimeUnion",
+  "original_author": "DieGon",
+  "original_repository": "https://github.com/DieGon7771/ItaliaInStreaming",
+  "original_download_url": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/AnimeUnion.cs3",
+  "original_version": 1,
+  "sha256_checksum": "466eeaae2a32dfcd543ae2f7082615830862039d4025297447f06558d7e7deb4",
+  "license_spdx": "UNKNOWN",
+  "detected_provider_type": "onlinestream-provider",
+  "strategy": "STRATEGY_3_DEX_STRING_IR",
+  "source_recovery_status": "DEX_FALLBACK",
+  "decompilation_status": "BINARY_DEX_IR_OK",
+  "kotlin_reconstruction_status": "PARTIAL",
+  "translation_status": "SUCCESS",
+  "typescript_compilation_status": "SUCCESS",
+  "seanime_compatibility_status": "PASS",
+  "js_parse_status": "PASS",
+  "live_test_status": "NOT_RUN",
+  "search_test_status": "MOCK_PASS",
+  "episode_test_status": "MOCK_PASS",
+  "extractor_test_status": "MOCK_PASS",
+  "overall_status": "NEEDS_REVIEW",
+  "review_reasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+  ],
+  "license_notice": true,
+  "known_unsupported_methods": [],
+  "warnings": [
+    "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
+    "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
+    "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
+    "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
+  ],
+  "error_messages": [],
+  "conversion_timestamp": "2026-11-18T14:48:14.707062+00:00",
+  "passed": false
+}

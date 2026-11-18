@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://img.animeunity.co";
-    private mirrorDomains: string[] = ["https://img.animeunity.co", "https://img.animeunity.co/anime"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://img.animeunity.co/"};
+    private mainUrl: string = "https://animeunity.cx";
+    private mirrorDomains: string[] = ["https://animeunity.cx", "https://animeunity.cx"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://animeunity.cx/"};
 
     getSettings(): Settings {
         return {

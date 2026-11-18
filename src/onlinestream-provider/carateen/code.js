@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Carateen
-// Original Class: CarateenPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: CarateenProvider
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -392,7 +392,7 @@ class Provider {
     constructor() {
         this.mainUrl = "https://carateen.tv";
         this.mirrorDomains = ["https://carateen.tv", "https://carateen.tv"];
-        this.defaultHeaders = { "Referer": "https://carateen.tv/" };
+        this.defaultHeaders = { "Referer": "$mainUrl/" };
     }
     getSettings() {
         return {

@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://img.animeunity.co";
-        this.mirrorDomains = ["https://img.animeunity.co", "https://img.animeunity.co/anime"];
-        this.defaultHeaders = { "Referer": "https://img.animeunity.co/" };
+        this.mainUrl = "https://animeunity.cx";
+        this.mirrorDomains = ["https://animeunity.cx", "https://animeunity.cx"];
+        this.defaultHeaders = { "Referer": "https://animeunity.cx/" };
     }
     getSettings() {
         return {

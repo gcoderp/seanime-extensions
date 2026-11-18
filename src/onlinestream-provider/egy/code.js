@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Egy
-// Original Class: EgyWatchPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: EgyWatchProvider
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -392,7 +392,7 @@ class Provider {
     constructor() {
         this.mainUrl = "https://rn62mwg.com";
         this.mirrorDomains = ["https://rn62mwg.com", "https://rn62mwg.com/egywatchapp/public/api"];
-        this.defaultHeaders = { "Referer": "https://rn62mwg.com/" };
+        this.defaultHeaders = { "Referer": "https://rn62mwg.com/", "User-Agent": "okhttp/5.0.0-alpha.6" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search/$encodedQuery/$apiKey?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "a:17.0.1";

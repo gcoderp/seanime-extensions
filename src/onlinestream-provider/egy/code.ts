@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Egy
-// Original Class: EgyWatchPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: EgyWatchProvider
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://rn62mwg.com";
     private mirrorDomains: string[] = ["https://rn62mwg.com", "https://rn62mwg.com/egywatchapp/public/api"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://rn62mwg.com/"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://rn62mwg.com/", "User-Agent": "okhttp/5.0.0-alpha.6"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search/$encodedQuery/$apiKey?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

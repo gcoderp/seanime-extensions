@@ -1,0 +1,21 @@
+{
+  "extensionId": "anime-union",
+  "originalPluginName": "AnimeUnion",
+  "originalInternalName": "AnimeUnion",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/AnimeUnion.cs3",
+  "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
+  "originalAuthors": [
+    "DieGon"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "466eeaae2a32dfcd543ae2f7082615830862039d4025297447f06558d7e7deb4",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+  ],
+  "convertedAt": "2026-11-18T14:48:15.484702+00:00"
+}

@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Kinoger
-// Original Class: KinogerPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: Kinoger
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://kinoger.be";
-    private mirrorDomains: string[] = ["https://kinoger.be", "https://kinoger.be"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://kinoger.be/"};
+    private mainUrl: string = "https://kinoger.com";
+    private mirrorDomains: string[] = ["https://kinoger.com", "https://kinoger.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://kinoger.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["vidhide", "voe"],
+            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/?do=search&subaction=search&titleonly=3&story={query}&x=0&y=0&submit=submit".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div#dle-content div.short";
+        const itemSelector = "div#dle-content div.titlecontrol";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div#dle-content div.titlecontrol";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "div.images-border img";
+        const epNumSelector = "div.images-border";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 
