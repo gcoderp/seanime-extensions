@@ -1,13 +1,13 @@
 [
   {
-    "plugin_name": "Dima toon",
-    "original_plugin_id": "dima-toon",
-    "original_author": "Abodabodd",
-    "original_repository": "https://github.com/Abodabodd/re-3arabi",
-    "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/dima-toon.cs3",
-    "original_version": 2,
-    "sha256_checksum": "cc92b98d7eb1eac19ef9c450363ec88fc881ad2deb36aa51a93ae48d3ab45b85",
-    "license_spdx": "UNKNOWN",
+    "plugin_name": "AnitubeinuaProvider",
+    "original_plugin_id": "AnitubeinuaProvider",
+    "original_author": "CakesTwix",
+    "original_repository": "https://github.com/CakesTwix/cloudstream-extensions-uk",
+    "original_download_url": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/AnitubeinuaProvider.cs3",
+    "original_version": 22,
+    "sha256_checksum": "0151709a66775fce683573e8bd0f798b853271ebee602a14d1d35d2c63172032",
+    "license_spdx": "GPL-3.0",
     "detected_provider_type": "onlinestream-provider",
     "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
     "source_recovery_status": "RECOVERED",
@@ -23,52 +23,15 @@
     "extractor_test_status": "FAIL",
     "overall_status": "FAILED",
     "review_reasons": [],
-    "license_notice": true,
+    "license_notice": false,
     "known_unsupported_methods": [],
     "warnings": [
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
       "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
     ],
     "error_messages": [
       "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
     ],
-    "conversion_timestamp": "2026-11-18T14:46:20.640676+00:00",
-    "passed": false
-  },
-  {
-    "plugin_name": "LodyNet",
-    "original_plugin_id": "Lodynet",
-    "original_author": "Abodabodd",
-    "original_repository": "https://github.com/Abodabodd/re-3arabi",
-    "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Lodynet.cs3",
-    "original_version": 3,
-    "sha256_checksum": "79a853a9b5a84ead13bc7ee474d2acf58c734758c4ab0741d98300b6539fdf2e",
-    "license_spdx": "UNKNOWN",
-    "detected_provider_type": "onlinestream-provider",
-    "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
-    "source_recovery_status": "RECOVERED",
-    "decompilation_status": "BINARY_DEX_IR_OK",
-    "kotlin_reconstruction_status": "SUCCESS",
-    "translation_status": "SUCCESS",
-    "typescript_compilation_status": "SUCCESS",
-    "seanime_compatibility_status": "FAIL",
-    "js_parse_status": "PASS",
-    "live_test_status": "NOT_RUN",
-    "search_test_status": "FAIL",
-    "episode_test_status": "FAIL",
-    "extractor_test_status": "FAIL",
-    "overall_status": "FAILED",
-    "review_reasons": [],
-    "license_notice": true,
-    "known_unsupported_methods": [],
-    "warnings": [
-      "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
-      "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
-    ],
-    "error_messages": [
-      "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
-    ],
-    "conversion_timestamp": "2026-11-18T14:46:27.223489+00:00",
+    "conversion_timestamp": "2026-11-19T14:54:15.818189+00:00",
     "passed": false
   },
   {
@@ -78,7 +41,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-18T14:50:35.765277+00:00"
+    "conversion_timestamp": "2026-11-19T14:55:30.814141+00:00"
   },
   {
     "plugin_name": "FanStreamGF",
@@ -87,7 +50,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-18T14:50:46.281652+00:00"
+    "conversion_timestamp": "2026-11-19T14:55:39.776417+00:00"
   },
   {
     "plugin_name": "GogoFlixGF",
@@ -96,7 +59,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-18T14:50:46.406491+00:00"
+    "conversion_timestamp": "2026-11-19T14:55:39.898716+00:00"
   },
   {
     "plugin_name": "FrembedGF",
@@ -105,7 +68,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-18T14:50:46.552584+00:00"
+    "conversion_timestamp": "2026-11-19T14:55:40.010174+00:00"
   },
   {
     "plugin_name": "FilmoFlixGF",
@@ -114,7 +77,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-18T14:50:46.671106+00:00"
+    "conversion_timestamp": "2026-11-19T14:55:40.107137+00:00"
   },
   {
     "plugin_name": "MovixGF",
@@ -123,7 +86,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-18T14:50:46.771488+00:00"
+    "conversion_timestamp": "2026-11-19T14:55:40.224539+00:00"
   },
   {
     "plugin_name": "AfterDarkGF",
@@ -132,7 +95,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-18T14:50:46.902874+00:00"
+    "conversion_timestamp": "2026-11-19T14:55:40.359542+00:00"
   },
   {
     "plugin_name": "SadisflixGF",
@@ -141,7 +104,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-18T14:50:47.989053+00:00"
+    "conversion_timestamp": "2026-11-19T14:55:41.335076+00:00"
   },
   {
     "plugin_name": "WookafrGF",
@@ -150,6 +113,6 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-18T14:50:48.086958+00:00"
+    "conversion_timestamp": "2026-11-19T14:55:41.442507+00:00"
   }
 ]

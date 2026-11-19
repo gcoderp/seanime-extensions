@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/StremioX.cs3",
   "original_version": 28,
-  "sha256_checksum": "4024a54b1681ba4b9158ccc85eb2ee3989aa30f6b12f4cf45085397d57569440",
+  "sha256_checksum": "4866737eb17d0b8cb0cc92100f4b88fa08c15cb8e683ce4da4acd15b27bc0596",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:45:38.267812+00:00",
+  "conversion_timestamp": "2026-11-19T14:51:35.907332+00:00",
   "passed": false
 }

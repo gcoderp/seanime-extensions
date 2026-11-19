@@ -3,7 +3,7 @@
   "name": "MoviePlusProvider",
   "description": "Movie! Plus \u2014 Spanish/Latino movies & series (TMDB metadata, Yandex.Disk sources, no login)",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/movie-plus-provider/manifest.json",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",

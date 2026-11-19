@@ -2,14 +2,14 @@
   "extensionId": "xdmovies",
   "originalPluginName": "XDMovies",
   "originalInternalName": "XDMovies",
-  "originalVersion": 29,
+  "originalVersion": 30,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/XDMovies.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "eada61f35e4301fc79d396a3a1aece1973716f340b931a119b4c150c6ad40671",
+  "cs3Sha256": "6ab88facbb6ac1873f46144eab294b3cf603fd9b3a5fe98a03fd96db402ed7ee",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-18T14:45:52.812959+00:00"
+  "convertedAt": "2026-11-19T14:51:45.974090+00:00"
 }

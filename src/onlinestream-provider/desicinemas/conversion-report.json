@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Desicinemas.cs3",
   "original_version": 19,
-  "sha256_checksum": "a7c74fb740e4cff5088332aa61077cebfd00e1efd9239d68610274e10cc9c1b2",
+  "sha256_checksum": "924023d13af0db43c671608918de532a29dd063d2ee02b151c89c3a46b326f75",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:44:55.749447+00:00",
+  "conversion_timestamp": "2026-11-19T14:51:02.935813+00:00",
   "passed": false
 }

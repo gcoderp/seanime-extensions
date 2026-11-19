@@ -295,5 +295,16 @@
     "needs_review_count": 402,
     "skipped_count": 0,
     "published_in_marketplace": 18
+  },
+  {
+    "last_run_timestamp": "2026-11-19T14:55:41.602035+00:00",
+    "converter_version": "2.6.0",
+    "mode": "live",
+    "total_processed": 422,
+    "successful_count": 1,
+    "failed_count": 10,
+    "needs_review_count": 411,
+    "skipped_count": 0,
+    "published_in_marketplace": 11
   }
 ]

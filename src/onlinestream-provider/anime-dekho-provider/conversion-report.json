@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AnimeDekhoProvider.cs3",
   "original_version": 73,
-  "sha256_checksum": "c1d2c8ae91b1877f16d02cf5fa570429e550c7d1d29516a528b0dd369b27e8f4",
+  "sha256_checksum": "904863ed52be82409d8d29a44ff4195e3b20b477d15a47840f2d43d0de11a4e5",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:44:36.990290+00:00",
+  "conversion_timestamp": "2026-11-19T14:50:50.129593+00:00",
   "passed": false
 }

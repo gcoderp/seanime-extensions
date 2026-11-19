@@ -9,7 +9,7 @@ Automatically converted Seanime `anime-torrent-provider` extension from Cloudstr
 - **Language:** `en`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `6bd5225c3e3a7dec83dc23fea140c294d9f6845ef36481b3dddeac4f6b8cc193`
+- **CS3 SHA-256:** `3dbcd35bb83b0b61a20f484e9d1c2d304a0381431a50fce03a2036e6a9a3602a`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

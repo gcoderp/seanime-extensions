@@ -4,8 +4,8 @@
   "original_author": "TeKuma25",
   "original_repository": "https://github.com/TeKuma25/IndoStream",
   "original_download_url": "https://raw.githubusercontent.com/TeKuma25/IndoStream/builds/Anichin.cs3",
-  "original_version": 5,
-  "sha256_checksum": "74428c3edc02c2f3799e8f8ac9ada2f694636d4efdc1e2d7d43e61e9dc715c0f",
+  "original_version": 6,
+  "sha256_checksum": "491ef64ecb53af4371082cd6145d5face22279fc4d95d008a2a2b1138531091c",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:46:42.995289+00:00",
+  "conversion_timestamp": "2026-11-19T14:52:21.425710+00:00",
   "passed": false
 }

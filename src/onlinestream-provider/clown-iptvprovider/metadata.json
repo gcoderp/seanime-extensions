@@ -1,0 +1,22 @@
+{
+  "extensionId": "clown-iptvprovider",
+  "originalPluginName": "ClownIPTVProvider",
+  "originalInternalName": "ClownIPTVProvider",
+  "originalVersion": 2,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/ClownIPTVProvider.cs3",
+  "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
+  "originalAuthors": [
+    "NivinCNC"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "3fb6c407392733b6294355ad2483bc4320535243df71c1b4c4bd12f66c150329",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+  ],
+  "convertedAt": "2026-11-19T14:53:10.331045+00:00"
+}

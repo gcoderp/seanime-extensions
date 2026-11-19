@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animenosub.cs3",
   "original_version": 12,
-  "sha256_checksum": "f9afc174adfe996f0b4335570acb8a77c1bdaf88caac7c3d7882f24fcd0ccffb",
+  "sha256_checksum": "235c2fdd406de4e25fd1625262d5dfbeb8e245a2999e31d88780dbb908dc9fa9",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:44:39.511451+00:00",
+  "conversion_timestamp": "2026-11-19T14:50:52.357685+00:00",
   "passed": false
 }

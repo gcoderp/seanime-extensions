@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `zinkmovies`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.13.0` (Upstream CS3 v13)
+- **Version:** `1.14.0` (Upstream CS3 v14)
 - **Language:** `hi`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `52eb7038beb7d0723426e2bbd88f488653c4d393d986ec6e2fb5ced57473dda0`
+- **CS3 SHA-256:** `544977d7794be27765de464945cf33d7c65af1e3472102870ea213c1adcc30c6`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

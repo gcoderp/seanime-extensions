@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/IStreamFlare.cs3",
   "original_version": 6,
-  "sha256_checksum": "2dfb9c159a6f2310c35a9c9140d377b66c7f7a3c89f23ceb6c23ea4556d6637e",
+  "sha256_checksum": "ce33b393303cff56a1fdd9f9fd5735b5afeee362bf9b09d90d5f2c963da26c9e",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:45:10.041400+00:00",
+  "conversion_timestamp": "2026-11-19T14:51:13.922785+00:00",
   "passed": false
 }

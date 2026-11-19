@@ -9,7 +9,7 @@
     "ycngmn"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "2a9d9beed9092612f0e61ad2a5c77698a42af490f92b41751f2d68368dfc1ef0",
+  "cs3Sha256": "810983fa2916ebf5a77e4c1959cbd281288c7a6e2d0d32a0d4e63eed6bc11152",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-18T14:44:50.162949+00:00"
+  "convertedAt": "2026-11-19T14:50:58.806957+00:00"
 }

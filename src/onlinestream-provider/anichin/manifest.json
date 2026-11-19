@@ -3,7 +3,7 @@
   "name": "Anichin",
   "description": "Nonton streaming anime terlengkap dan terupdate dari Anichin.",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anichin/manifest.json",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "author": "TeKuma25",
   "type": "onlinestream-provider",
   "language": "typescript",

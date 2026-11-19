@@ -15,7 +15,7 @@ In Seanime: **Extensions → Marketplace → Change repository**, paste the URL 
 To install a single extension instead: **Extensions → Add extensions**, paste the
 `manifest.json` link from the table below, then click **Find**.
 
-## Extensions (18)
+## Extensions (11)
 
 | # | Extension | Type | Recovered from | Version | Manifest link |
 | --- | --- | --- | --- | --- | --- |
@@ -26,21 +26,14 @@ To install a single extension instead: **Extensions → Add extensions**, paste 
 | 5 | **StremioProvider** <br>`stremio-provider` | Anime torrent | JADX (Java) | 1.7.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-provider/manifest.json) |
 | 6 | **StremioX** <br>`stremio-x` | Anime torrent | JADX (Java) | 1.28.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-x/manifest.json) |
 | 7 | **ViStreamProvider** <br>`vi-stream-provider` | Anime torrent | JADX (Java) | 1.35.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/vi-stream-provider/manifest.json) |
-| 8 | **Brstej** <br>`bristege` | Online streaming | Kotlin source | 1.2.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/bristege/manifest.json) |
-| 9 | **CimaClub** <br>`cima-club` | Online streaming | Kotlin source | 1.2.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cima-club/manifest.json) |
-| 10 | **Cimalight** <br>`cimalight` | Online streaming | Kotlin source | 1.3.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cimalight/manifest.json) |
-| 11 | **CineStream** <br>`cine-stream` | Online streaming | Kotlin source | 1.487.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cine-stream/manifest.json) |
-| 12 | **EgyWatch** <br>`egy` | Online streaming | Kotlin source | 1.2.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/egy/manifest.json) |
-| 13 | **GogoAnime** <br>`gogo-anime-provider` | Online streaming | Kotlin source | 1.12.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json) |
-| 14 | **Kinoger** <br>`kinoger` | Online streaming | Kotlin source | 1.6.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kinoger/manifest.json) |
-| 15 | **KinoKing** <br>`kino-king` | Online streaming | Kotlin source | 1.1.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kino-king/manifest.json) |
-| 16 | **Mycima** <br>`my-cima-provider` | Online streaming | Kotlin source | 1.2.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/my-cima-provider/manifest.json) |
-| 17 | **Serienstream** <br>`serienstream` | Online streaming | Kotlin source | 1.5.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/serienstream/manifest.json) |
-| 18 | **StreamCenter** <br>`stream-center` | Online streaming | Kotlin source | 1.14.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stream-center/manifest.json) |
+| 8 | **CineStream** <br>`cine-stream` | Online streaming | Kotlin source | 1.487.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cine-stream/manifest.json) |
+| 9 | **GogoAnime** <br>`gogo-anime-provider` | Online streaming | Kotlin source | 1.12.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json) |
+| 10 | **StreamCenter** <br>`stream-center` | Online streaming | Kotlin source | 1.14.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stream-center/manifest.json) |
+| 11 | **Wcoflix** <br>`wcoflix` | Online streaming | Kotlin source | 1.10.0 | [manifest.json](https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/wcoflix/manifest.json) |
 
-> 413 further conversion(s) are held in `reports/needs-review.json` and are **not** published: they parse, but their scraper could not be recovered with enough confidence (string-pool reconstruction, generic selectors, or no base URL).
+> 421 further conversion(s) are held in `reports/needs-review.json` and are **not** published: they parse, but their scraper could not be recovered with enough confidence (string-pool reconstruction, generic selectors, or no base URL).
 
-_Generated by cloudstream-seanime-converter 2.6.0 on 2026-11-18 14:50 UTC. Every extension above passed the static, parse and contract gates; `liveTestStatus` is recorded per extension in `reports/`._
+_Generated by cloudstream-seanime-converter 2.6.0 on 2026-11-19 14:55 UTC. Every extension above passed the static, parse and contract gates; `liveTestStatus` is recorded per extension in `reports/`._
 
 <!-- END GENERATED:EXTENSIONS -->
 

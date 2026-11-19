@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Kartoons.cs3",
-  "original_version": 13,
-  "sha256_checksum": "16c715f89790d578a6154c814d6f57f5aa5ba95a02a5ad10728e0a22f0ac77c3",
+  "original_version": 14,
+  "sha256_checksum": "8445a80eeefa33966fc4651db8f7a5c9d50398384a94dc789569a1924b9b4c00",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:45:11.871785+00:00",
+  "conversion_timestamp": "2026-11-19T14:51:15.436462+00:00",
   "passed": false
 }

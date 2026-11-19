@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/GoldenAudiobooks.cs3",
   "original_version": 1,
-  "sha256_checksum": "2438974033403a8df826d33ad12fc9d5a18139c01fc000a9a8acdb9f8ee28588",
+  "sha256_checksum": "612f9c4c21d20d7e4808339bbb34a54e4d9ad404fbe881ccdcf1b853132dae7f",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:45:02.914132+00:00",
+  "conversion_timestamp": "2026-11-19T14:51:08.032881+00:00",
   "passed": false
 }

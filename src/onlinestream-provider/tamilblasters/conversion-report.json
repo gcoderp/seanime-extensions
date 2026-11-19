@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Tamilblasters.cs3",
   "original_version": 12,
-  "sha256_checksum": "a0c005e97f7bba0c4a107e2778ee21a5696121079bf95daf11d83850e69875b2",
+  "sha256_checksum": "e2e7a4584cfe22a0e97b5160913363ffe07420dbc9434c7e6596147e63a65e9a",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:45:40.559651+00:00",
+  "conversion_timestamp": "2026-11-19T14:51:37.574072+00:00",
   "passed": false
 }

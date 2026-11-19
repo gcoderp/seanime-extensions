@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/ShowBox.cs3",
   "original_version": 15,
-  "sha256_checksum": "a87bb95ea883a7a14aa31950e08af60003374bf160956cdfdfcaa9d7aee4dd60",
+  "sha256_checksum": "148a0da211133b91acaa520790a184aa2fd1447d668c5108a04123b6649966fe",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-18T14:45:35.019980+00:00",
+  "conversion_timestamp": "2026-11-19T14:51:33.509177+00:00",
   "passed": false
 }
