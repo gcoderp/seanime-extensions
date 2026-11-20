@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T17:55:04.974Z",
+  "generatedAt": "2026-11-20T17:28:30.367Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -97,13 +97,13 @@
     }
   ],
   "summary": {
-    "checked": 4,
+    "checked": 3,
     "working": 0,
-    "failed": 4,
-    "durationMs": 15185,
+    "failed": 3,
+    "durationMs": 19444,
     "byStatus": {
       "working": 0,
-      "no_search_results": 3,
+      "no_search_results": 2,
       "search_timeout": 0,
       "no_episodes": 0,
       "no_stream": 0,
@@ -128,7 +128,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 5179
+      "durationMs": 3660
     },
     {
       "id": "gogo-anime-provider",
@@ -136,7 +136,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 13473
+      "durationMs": 18282
     },
     {
       "id": "stream-center",
@@ -144,15 +144,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 2280
-    },
-    {
-      "id": "wcoflix",
-      "name": "Wcoflix",
-      "type": "onlinestream-provider",
-      "status": "no_search_results",
-      "error": null,
-      "durationMs": 2864
+      "durationMs": 3186
     }
   ],
   "results": [
@@ -181,7 +173,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 5179
+      "durationMs": 3660
     },
     {
       "id": "gogo-anime-provider",
@@ -199,7 +191,7 @@
             "query": "Doraemon",
             "results": 0,
             "requests": 1,
-            "httpStatus": 429,
+            "httpStatus": 200,
             "networkFailures": 0
           }
         ],
@@ -208,7 +200,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 13473
+      "durationMs": 18282
     },
     {
       "id": "stream-center",
@@ -236,34 +228,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2280
-    },
-    {
-      "id": "wcoflix",
-      "name": "Wcoflix",
-      "type": "onlinestream-provider",
-      "version": "1.10.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/wcoflix/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/wcoflix/code.js",
-      "status": "no_search_results",
-      "error": null,
-      "target": 501,
-      "search": {
-        "attempts": [
-          {
-            "query": "Doraemon",
-            "results": 0,
-            "requests": 1,
-            "httpStatus": 403,
-            "networkFailures": 0
-          }
-        ],
-        "count": 0
-      },
-      "episodes": null,
-      "stream": null,
-      "torrent": null,
-      "durationMs": 2864
+      "durationMs": 3186
     }
   ]
 }
