@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `ani-vortex`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.15.0` (Upstream CS3 v15)
+- **Version:** `1.16.0` (Upstream CS3 v16)
 - **Language:** `hi`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `b3b8a5d1a1f18ceefdfd3746ffa394647676f29f25e8ad16a44ec0cc40645e62`
+- **CS3 SHA-256:** `7daeb39ab890743194a1a0d726cc8fc8faef8af0073948a5836df6c575b345d8`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

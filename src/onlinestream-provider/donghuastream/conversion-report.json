@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Donghuastream.cs3",
   "original_version": 22,
-  "sha256_checksum": "3675c718bf7f0b650cd7e1a7948090a660310802a005b0741da8c99895691924",
+  "sha256_checksum": "cf9422ba56a23623da51294d5be48b47c3fb3ad9989c1709ad104613a1863e0c",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:03.624260+00:00",
+  "conversion_timestamp": "2026-11-20T14:32:30.458754+00:00",
   "passed": false
 }

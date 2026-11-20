@@ -4,8 +4,8 @@
   "original_author": "Hexated,phisher98,erynith",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/StremioAddon.cs3",
-  "original_version": 17,
-  "sha256_checksum": "f70c932f842b23e066aef7a482c6106630a706b7e0426d2571e2fd64d5219108",
+  "original_version": 18,
+  "sha256_checksum": "e0d03ca31609dc67cfcccbf4e72f650f722ba85d82fc8a5623f274aed959d847",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "anime-torrent-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:35.243980+00:00",
+  "conversion_timestamp": "2026-11-20T14:33:05.715186+00:00",
   "passed": false
 }

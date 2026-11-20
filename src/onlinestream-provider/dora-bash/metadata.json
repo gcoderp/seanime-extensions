@@ -2,14 +2,14 @@
   "extensionId": "dora-bash",
   "originalPluginName": "DoraBash",
   "originalInternalName": "DoraBash",
-  "originalVersion": 20,
+  "originalVersion": 21,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/DoraBash.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "d2b428fb9d4ed7ad51bbd6622f329585e6b8c2ecba43215ab051122fb9d3dfa8",
+  "cs3Sha256": "703ef1636e69e14212fb3e114a88b5d263642efadc44aa1ce00697972037fef0",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-19T14:51:04.985064+00:00"
+  "convertedAt": "2026-11-20T14:32:32.205491+00:00"
 }

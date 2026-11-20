@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `idlix-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.25.0` (Upstream CS3 v25)
+- **Version:** `1.26.0` (Upstream CS3 v26)
 - **Language:** `id`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `da0857c745733e29232fd1ecb4913326ee37d8fe6674940e6e4821c0d168a30f`
+- **CS3 SHA-256:** `b0b43f844043a657b6787f120a39de81ba9c31aa025494475d2065266e800c83`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

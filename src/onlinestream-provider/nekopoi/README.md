@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `nekopoi`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.15.0` (Upstream CS3 v15)
+- **Version:** `1.16.0` (Upstream CS3 v16)
 - **Language:** `id`
 - **Original Author(s):** TeKuma25
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `2b26907e59dc4da491d44782711f359c1fa0558d82a64e7ae904bb27cdb14f6f`
+- **CS3 SHA-256:** `6a48613e149a1cd51ae6ed1a8630ff920b8d271b84a6d6b82cf20ddc3e40b4d8`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

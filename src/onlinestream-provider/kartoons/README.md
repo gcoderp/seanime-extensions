@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `kartoons`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.14.0` (Upstream CS3 v14)
+- **Version:** `1.15.0` (Upstream CS3 v15)
 - **Language:** `hi`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `8445a80eeefa33966fc4651db8f7a5c9d50398384a94dc789569a1924b9b4c00`
+- **CS3 SHA-256:** `558532e388d304324def0135b9c25f212a5b962def355120dbaefecb542b2c8b`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

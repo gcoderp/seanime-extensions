@@ -2,14 +2,14 @@
   "extensionId": "torra-stream",
   "originalPluginName": "TorraStream",
   "originalInternalName": "TorraStream",
-  "originalVersion": 98,
+  "originalVersion": 99,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/TorraStream.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "a2e62099e589f2660c84e4ec4768c8851b8a6f3d8f427d56368de99dc9132c61",
+  "cs3Sha256": "94c1dd5b259411bcb9f0d46ae8e6039137599bbb7eb0126d995476c01b5a6f33",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-19T14:51:42.895335+00:00"
+  "convertedAt": "2026-11-20T14:33:13.894646+00:00"
 }

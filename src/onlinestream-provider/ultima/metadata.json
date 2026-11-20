@@ -2,14 +2,14 @@
   "extensionId": "ultima",
   "originalPluginName": "Ultima",
   "originalInternalName": "Ultima",
-  "originalVersion": 71,
+  "originalVersion": 73,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Ultima.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "RowdyRushya,Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "7dd87a8bf60dd69924b894611571718baa23bdd922c3d97cd921813bda3c1ee3",
+  "cs3Sha256": "011c713ee48dcfe94349376ef54fdf0da7f26202b00cab4c39078134665188d9",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-19T14:51:44.498648+00:00"
+  "convertedAt": "2026-11-20T14:33:15.562374+00:00"
 }

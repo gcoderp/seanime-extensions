@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AniPm.cs3",
   "original_version": 1,
-  "sha256_checksum": "ed7a335bb562c8e4c87e2eb85317073b9de1c14590565a295d7bea36cc8a34b5",
+  "sha256_checksum": "306eb0fa34383d840bc554057930868fa5ea2fae9876066491b05e73242c99a8",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:50:55.158373+00:00",
+  "conversion_timestamp": "2026-11-20T14:32:20.815711+00:00",
   "passed": false
 }

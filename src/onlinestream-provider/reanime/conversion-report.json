@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Reanime.cs3",
   "original_version": 3,
-  "sha256_checksum": "a80c0a5608fd171cba23b9f69248a60a660909199f4a995956298734463e4636",
+  "sha256_checksum": "8a5bc0d69548c1ccde7f7e29d56d160841fc5c49f83df1aa36abafb77ae3c0c8",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -34,6 +34,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:32.226164+00:00",
+  "conversion_timestamp": "2026-11-20T14:33:02.004795+00:00",
   "passed": false
 }

@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/DudeFilms.cs3",
   "original_version": 14,
-  "sha256_checksum": "e414ab7ad7d303a0d3ee663161af17a413bd1461f7c2bebb74f2f929ffabf226",
+  "sha256_checksum": "505fabde6bae17c8f8c2f7766d26dc3317b79bee84c872695da07054adab8143",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:04.986307+00:00",
+  "conversion_timestamp": "2026-11-20T14:32:32.206874+00:00",
   "passed": false
 }

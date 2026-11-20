@@ -3,7 +3,7 @@
   "name": "Nekopoi",
   "description": "Nonton streaming video dan animasi dewasa sub Indo terlengkap dari Nekopoi.",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekopoi/manifest.json",
-  "version": "1.15.0",
+  "version": "1.16.0",
   "author": "TeKuma25",
   "type": "onlinestream-provider",
   "language": "typescript",

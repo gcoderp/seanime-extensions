@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Piratexplay.cs3",
   "original_version": 5,
-  "sha256_checksum": "b13e63804474d1951bb0ac31ed6185c5c8cdac3ca61f280d2b96abc038f4b03d",
+  "sha256_checksum": "e205c9af2db17decb8f74e1ddad266f3ebba2ba04d9827084c69cb8e866a4821",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:29.301703+00:00",
+  "conversion_timestamp": "2026-11-20T14:32:59.054956+00:00",
   "passed": false
 }

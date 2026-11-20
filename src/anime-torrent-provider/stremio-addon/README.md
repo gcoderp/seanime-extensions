@@ -5,11 +5,11 @@ Automatically converted Seanime `anime-torrent-provider` extension from Cloudstr
 ## Overview
 - **Extension ID:** `stremio-addon`
 - **Provider Type:** `anime-torrent-provider`
-- **Version:** `1.17.0` (Upstream CS3 v17)
+- **Version:** `1.18.0` (Upstream CS3 v18)
 - **Language:** `en`
 - **Original Author(s):** Hexated,phisher98,erynith
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `f70c932f842b23e066aef7a482c6106630a706b7e0426d2571e2fd64d5219108`
+- **CS3 SHA-256:** `e0d03ca31609dc67cfcccbf4e72f650f722ba85d82fc8a5623f274aed959d847`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

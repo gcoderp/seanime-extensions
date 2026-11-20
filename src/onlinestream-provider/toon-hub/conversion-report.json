@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/ToonHub.cs3",
   "original_version": 12,
-  "sha256_checksum": "a7d3db996211a5f9747d553965303010110458e733c9319d8296e37df367975c",
+  "sha256_checksum": "1e6a5de625002101a44689aec75361e49614736e95062c668a2c5d45fda26054",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:38.249933+00:00",
+  "conversion_timestamp": "2026-11-20T14:33:08.960742+00:00",
   "passed": false
 }

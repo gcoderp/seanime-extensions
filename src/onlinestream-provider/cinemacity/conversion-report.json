@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Cinemacity.cs3",
-  "original_version": 31,
-  "sha256_checksum": "f558ece95d247fd7cfda18106f86901c1ee90d54213c68574e0d64e6c31a80b5",
+  "original_version": 32,
+  "sha256_checksum": "ec2b7d03bb7c218b265673c1be83d66559c2981177becbbde57b817b8f5d1c17",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:00.863400+00:00",
+  "conversion_timestamp": "2026-11-20T14:32:27.259641+00:00",
   "passed": false
 }

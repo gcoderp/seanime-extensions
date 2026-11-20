@@ -4,8 +4,8 @@
   "original_author": "TeKuma25",
   "original_repository": "https://github.com/TeKuma25/IndoStream",
   "original_download_url": "https://raw.githubusercontent.com/TeKuma25/IndoStream/builds/Nekopoi.cs3",
-  "original_version": 15,
-  "sha256_checksum": "2b26907e59dc4da491d44782711f359c1fa0558d82a64e7ae904bb27cdb14f6f",
+  "original_version": 16,
+  "sha256_checksum": "6a48613e149a1cd51ae6ed1a8630ff920b8d271b84a6d6b82cf20ddc3e40b4d8",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -27,11 +27,12 @@
   "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
+    "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
     "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:52:33.806361+00:00",
+  "conversion_timestamp": "2026-11-20T14:34:08.457966+00:00",
   "passed": false
 }

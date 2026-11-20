@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/QuickIPTV.cs3",
   "original_version": 8,
-  "sha256_checksum": "0d26b5ab6fcc7a472927c9073f7ec37fc8d5e72ecc6c6727a67272901b001edc",
+  "sha256_checksum": "e00fb0cb041d1756855ac2f0623db2b720b11424f853cfa9f5ddb2f85556e3bb",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:31.463644+00:00",
+  "conversion_timestamp": "2026-11-20T14:33:01.298199+00:00",
   "passed": false
 }

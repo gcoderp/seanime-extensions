@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Movies4u.cs3",
   "original_version": 18,
-  "sha256_checksum": "07242ac8560740c13a31a7bf2b2e1f2b5155fe892a172a203eb3cc6c4b9a5d13",
+  "sha256_checksum": "dc5c1f4dbce02f11a0a0990e5054a5e8c1d7bafacddb85174d2cd6ad6fcae281",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:21.953947+00:00",
+  "conversion_timestamp": "2026-11-20T14:32:51.124286+00:00",
   "passed": false
 }

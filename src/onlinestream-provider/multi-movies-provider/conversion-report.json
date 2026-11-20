@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/MultiMoviesProvider.cs3",
   "original_version": 55,
-  "sha256_checksum": "1337c68aeabddcc985f4f16d7fb455b70e706f2eb2a10301674e128441b2e482",
+  "sha256_checksum": "a4043ae3190515615ffc46502ddcb7ef228c50270f18a057ecc40ea87c955434",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:23.439412+00:00",
+  "conversion_timestamp": "2026-11-20T14:32:52.649300+00:00",
   "passed": false
 }

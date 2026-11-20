@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/PublicSportsIPTV.cs3",
   "original_version": 5,
-  "sha256_checksum": "c86c1016581eecac7a122e3a650c30cb0f78e82535335528611a4362d591a1ee",
+  "sha256_checksum": "5722d8cec7f3dedfb8872204294936df126b60b1c897dea874b74afe0a7491ef",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:30.808625+00:00",
+  "conversion_timestamp": "2026-11-20T14:33:00.592760+00:00",
   "passed": false
 }

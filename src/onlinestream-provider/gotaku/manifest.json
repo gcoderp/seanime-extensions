@@ -1,0 +1,15 @@
+{
+  "id": "gotaku",
+  "name": "Gotaku",
+  "description": "Gotaku (gotaku.to) - anime with soft sub, hard sub and dub. Ported from the Aniyomi extension.",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gotaku/manifest.json",
+  "version": "1.2.0",
+  "author": "manavchaudhary1 (original Aniyomi ext)",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/gotaku/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gotaku/code.js",
+  "icon": "https://www.google.com/s2/favicons?domain=gotaku.to&sz=%size%"
+}

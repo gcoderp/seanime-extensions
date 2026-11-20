@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.cs3",
-  "original_version": 14,
-  "sha256_checksum": "544977d7794be27765de464945cf33d7c65af1e3472102870ea213c1adcc30c6",
+  "original_version": 15,
+  "sha256_checksum": "6b09afe3cb439a18b14e70e54ed13181f603a271b20f99db8e23cc2bad29cb58",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:47.982991+00:00",
+  "conversion_timestamp": "2026-11-20T14:33:19.577379+00:00",
   "passed": false
 }

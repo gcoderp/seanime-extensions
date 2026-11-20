@@ -4,8 +4,8 @@
   "original_author": "RowdyRushya,Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Ultima.cs3",
-  "original_version": 71,
-  "sha256_checksum": "7dd87a8bf60dd69924b894611571718baa23bdd922c3d97cd921813bda3c1ee3",
+  "original_version": 73,
+  "sha256_checksum": "011c713ee48dcfe94349376ef54fdf0da7f26202b00cab4c39078134665188d9",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-19T14:51:43.578648+00:00",
+  "conversion_timestamp": "2026-11-20T14:33:14.685528+00:00",
   "passed": false
 }
