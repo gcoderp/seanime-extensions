@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T17:28:30.367Z",
+  "generatedAt": "2026-11-21T16:34:07.345Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -97,15 +97,15 @@
     }
   ],
   "summary": {
-    "checked": 3,
+    "checked": 15,
     "working": 0,
-    "failed": 3,
-    "durationMs": 19444,
+    "failed": 15,
+    "durationMs": 41598,
     "byStatus": {
       "working": 0,
-      "no_search_results": 2,
-      "search_timeout": 0,
-      "no_episodes": 0,
+      "no_search_results": 10,
+      "search_timeout": 2,
+      "no_episodes": 2,
       "no_stream": 0,
       "stream_unreachable": 0,
       "no_magnet": 0,
@@ -123,20 +123,116 @@
   "working": [],
   "failed": [
     {
+      "id": "bdix-bdip-tv",
+      "name": "BdixBdipTV",
+      "type": "onlinestream-provider",
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "durationMs": 20083
+    },
+    {
       "id": "cine-stream",
       "name": "CineStream",
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 3660
+      "durationMs": 3171
+    },
+    {
+      "id": "coaninet-provider",
+      "name": "CoaninetProvider",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 6274
+    },
+    {
+      "id": "doramy-world-provider",
+      "name": "DoramyWorldProvider",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 1353
+    },
+    {
+      "id": "eneyida-provider",
+      "name": "EneyidaProvider",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 1272
+    },
+    {
+      "id": "flixlatam",
+      "name": "Flixlatam",
+      "type": "onlinestream-provider",
+      "status": "no_episodes",
+      "error": null,
+      "durationMs": 8790
+    },
+    {
+      "id": "foot-replays",
+      "name": "FootReplays",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 11159
+    },
+    {
+      "id": "full-races",
+      "name": "FullRaces",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 1244
     },
     {
       "id": "gogo-anime-provider",
       "name": "GogoAnime",
       "type": "onlinestream-provider",
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "durationMs": 33188
+    },
+    {
+      "id": "hentai-ukr-provider",
+      "name": "HentaiUkrProvider",
+      "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 18282
+      "durationMs": 1334
+    },
+    {
+      "id": "kino-tron-provider",
+      "name": "KinoTronProvider",
+      "type": "onlinestream-provider",
+      "status": "no_episodes",
+      "error": null,
+      "durationMs": 19879
+    },
+    {
+      "id": "kino-vezha-provider",
+      "name": "KinoVezhaProvider",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 4243
+    },
+    {
+      "id": "kinostrain-provider",
+      "name": "KinostrainProvider",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 6195
+    },
+    {
+      "id": "simkl-provider",
+      "name": "SimklProvider",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 1165
     },
     {
       "id": "stream-center",
@@ -144,10 +240,39 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 3186
+      "durationMs": 2755
     }
   ],
   "results": [
+    {
+      "id": "bdix-bdip-tv",
+      "name": "BdixBdipTV",
+      "type": "onlinestream-provider",
+      "version": "1.10.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/bdix-bdip-tv/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/bdix-bdip-tv/code.js",
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "target": 21,
+      "search": {
+        "attempts": [
+          {
+            "query": "ONE PIECE",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 0,
+            "networkFailures": 1,
+            "lastError": "fetch failed",
+            "error": "search() timed out after 20000ms"
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 20083
+    },
     {
       "id": "cine-stream",
       "name": "CineStream",
@@ -173,15 +298,15 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 3660
+      "durationMs": 3171
     },
     {
-      "id": "gogo-anime-provider",
-      "name": "GogoAnime",
+      "id": "coaninet-provider",
+      "name": "CoaninetProvider",
       "type": "onlinestream-provider",
-      "version": "1.12.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/code.js",
+      "version": "1.2.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/coaninet-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/coaninet-provider/code.js",
       "status": "no_search_results",
       "error": null,
       "target": 501,
@@ -200,7 +325,321 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 18282
+      "durationMs": 6274
+    },
+    {
+      "id": "doramy-world-provider",
+      "name": "DoramyWorldProvider",
+      "type": "onlinestream-provider",
+      "version": "1.3.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/doramy-world-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/doramy-world-provider/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 403,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 1353
+    },
+    {
+      "id": "eneyida-provider",
+      "name": "EneyidaProvider",
+      "type": "onlinestream-provider",
+      "version": "1.20.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/eneyida-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/eneyida-provider/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 403,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 1272
+    },
+    {
+      "id": "flixlatam",
+      "name": "Flixlatam",
+      "type": "onlinestream-provider",
+      "version": "1.10.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/flixlatam/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/flixlatam/code.js",
+      "status": "no_episodes",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 6,
+            "requests": 1,
+            "httpStatus": 200,
+            "networkFailures": 0
+          }
+        ],
+        "count": 6,
+        "top": "7\n            \n            \n                Doraemon y la revolución de los robots\n                2011",
+        "score": 0.9
+      },
+      "episodes": {
+        "count": 0
+      },
+      "stream": null,
+      "torrent": null,
+      "durationMs": 8790
+    },
+    {
+      "id": "foot-replays",
+      "name": "FootReplays",
+      "type": "onlinestream-provider",
+      "version": "1.2.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/foot-replays/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/foot-replays/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 200,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 11159
+    },
+    {
+      "id": "full-races",
+      "name": "FullRaces",
+      "type": "onlinestream-provider",
+      "version": "1.16.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/full-races/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/full-races/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 403,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 1244
+    },
+    {
+      "id": "gogo-anime-provider",
+      "name": "GogoAnime",
+      "type": "onlinestream-provider",
+      "version": "1.12.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/code.js",
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "target": 269,
+      "search": {
+        "attempts": [
+          {
+            "query": "BLEACH",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 200,
+            "networkFailures": 0
+          },
+          {
+            "query": "Bleach",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 0,
+            "networkFailures": 1,
+            "lastError": "fetch failed",
+            "error": "search() timed out after 20000ms"
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 33188
+    },
+    {
+      "id": "hentai-ukr-provider",
+      "name": "HentaiUkrProvider",
+      "type": "onlinestream-provider",
+      "version": "1.6.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hentai-ukr-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/hentai-ukr-provider/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 403,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 1334
+    },
+    {
+      "id": "kino-tron-provider",
+      "name": "KinoTronProvider",
+      "type": "onlinestream-provider",
+      "version": "1.19.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kino-tron-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kino-tron-provider/code.js",
+      "status": "no_episodes",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 18,
+            "requests": 1,
+            "httpStatus": 200,
+            "networkFailures": 0
+          }
+        ],
+        "count": 18,
+        "top": "1 Сезон, 1 серія\n\n\n\n\n\t\tСупердівчина\n\t\t\n\t\t\t2015 • \n\t\t\tСеріали, Бойовик, Драма, Пригоди, Фантастика, Фентезі, Всесвіт героїв DC\n\t\t\n\t\t6.2",
+        "score": 0
+      },
+      "episodes": {
+        "count": 0
+      },
+      "stream": null,
+      "torrent": null,
+      "durationMs": 19879
+    },
+    {
+      "id": "kino-vezha-provider",
+      "name": "KinoVezhaProvider",
+      "type": "onlinestream-provider",
+      "version": "1.14.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kino-vezha-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kino-vezha-provider/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 404,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 4243
+    },
+    {
+      "id": "kinostrain-provider",
+      "name": "KinostrainProvider",
+      "type": "onlinestream-provider",
+      "version": "1.2.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kinostrain-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kinostrain-provider/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 200,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 6195
+    },
+    {
+      "id": "simkl-provider",
+      "name": "SimklProvider",
+      "type": "onlinestream-provider",
+      "version": "1.2.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/simkl-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/simkl-provider/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 403,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 1165
     },
     {
       "id": "stream-center",
@@ -228,7 +667,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 3186
+      "durationMs": 2755
     }
   ]
 }
