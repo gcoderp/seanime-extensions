@@ -4,8 +4,8 @@
   "original_author": "DieGon",
   "original_repository": "https://github.com/DieGon7771/ItaliaInStreaming",
   "original_download_url": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/SyncStream.cs3",
-  "original_version": 11,
-  "sha256_checksum": "5d8c1ebc0965ee437f009fa89d0f5145c94ec3b37bd2acc12c19d115bc84b0a1",
+  "original_version": 12,
+  "sha256_checksum": "b77b274760adaea003ab21f7f7364d2a2e78ee64abcd6843a753af5b3443854d",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -34,6 +34,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:35:27.671930+00:00",
+  "conversion_timestamp": "2026-11-21T13:53:21.455340+00:00",
   "passed": false
 }

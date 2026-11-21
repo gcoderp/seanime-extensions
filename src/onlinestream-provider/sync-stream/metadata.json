@@ -2,14 +2,14 @@
   "extensionId": "sync-stream",
   "originalPluginName": "SyncStream",
   "originalInternalName": "SyncStream",
-  "originalVersion": 11,
+  "originalVersion": 12,
   "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/SyncStream.cs3",
   "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
   "originalAuthors": [
     "DieGon"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "5d8c1ebc0965ee437f009fa89d0f5145c94ec3b37bd2acc12c19d115bc84b0a1",
+  "cs3Sha256": "b77b274760adaea003ab21f7f7364d2a2e78ee64abcd6843a753af5b3443854d",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -19,5 +19,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-20T14:35:28.445399+00:00"
+  "convertedAt": "2026-11-21T13:53:22.096110+00:00"
 }

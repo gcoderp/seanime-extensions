@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `gotaku`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.2.0` (Upstream CS3 v2)
+- **Version:** `1.3.0` (Upstream CS3 v3)
 - **Language:** `en`
-- **Original Author(s):** manavchaudhary1 (original Aniyomi ext)
+- **Original Author(s):** phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `6e800e1598dc012e1710a940541f57aa94d06ec2fab2d548abfea93008d45915`
+- **CS3 SHA-256:** `cf07b59d41bd80a45c9db0f1f08f78b99e8a3b54d61fe19fd70b9c05559b4d73`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

@@ -2,14 +2,14 @@
   "extensionId": "my-cima-provider",
   "originalPluginName": "Mycima",
   "originalInternalName": "MyCimaProvider",
-  "originalVersion": 2,
+  "originalVersion": 3,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/MyCimaProvider.cs3",
   "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
   "originalAuthors": [
     "Abodabodd"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "5509bf74326ff713809ba3aad86474fbf57ccf94c8fbd22304885b43d549963f",
+  "cs3Sha256": "9f60e9c323d36a8cc86db3a5d588991b562d6af20117a617ec60d19c1da8b446",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-20T14:33:44.215706+00:00"
+  "convertedAt": "2026-11-21T13:51:54.315274+00:00"
 }

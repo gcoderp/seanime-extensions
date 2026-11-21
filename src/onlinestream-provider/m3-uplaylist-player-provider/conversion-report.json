@@ -4,8 +4,8 @@
   "original_author": "NivinCNC",
   "original_repository": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "original_download_url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/M3UPlaylistPlayerProvider.cs3",
-  "original_version": 21,
-  "sha256_checksum": "abe2e18b24a65d38f012b53fe915c2952ff4d5206f34491815d00e9b986d8c61",
+  "original_version": 22,
+  "sha256_checksum": "514ebc2e96c3ef7ba22db1088f19e70a42b0eb65313096ecd38427256fc6c74e",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:34:57.278280+00:00",
+  "conversion_timestamp": "2026-11-21T13:52:56.536769+00:00",
   "passed": false
 }

@@ -9,7 +9,7 @@
     "lawlietbr"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "7d9bc0f8ad2cd986ec021d67ec83625a870af7a8a95a05e60430d379c331003f",
+  "cs3Sha256": "7b340000d3e6f7e2424ffe8bf03f2db0fc3b0cdbe49c3cc74f89c1479e287a9d",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-20T14:36:18.216392+00:00"
+  "convertedAt": "2026-11-21T13:54:06.119907+00:00"
 }

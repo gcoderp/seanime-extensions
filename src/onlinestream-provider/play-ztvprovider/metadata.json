@@ -2,14 +2,14 @@
   "extensionId": "play-ztvprovider",
   "originalPluginName": "PlayZTVProvider",
   "originalInternalName": "PlayZTVProvider",
-  "originalVersion": 48,
+  "originalVersion": 49,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/PlayZTVProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "b0608b45769e3e7bc5f664293ad7b72ebdddff171e87d7a0beb5abbe58f8aeb4",
+  "cs3Sha256": "8541a6dbf0c8fdd6dbf698548e85a856cdd11be27d99db0ee3a1ccda5f4226b5",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-20T14:35:06.139421+00:00"
+  "convertedAt": "2026-11-21T13:53:03.678501+00:00"
 }

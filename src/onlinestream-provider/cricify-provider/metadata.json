@@ -2,14 +2,14 @@
   "extensionId": "cricify-provider",
   "originalPluginName": "CricifyProvider",
   "originalInternalName": "CricifyProvider",
-  "originalVersion": 77,
+  "originalVersion": 78,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CricifyProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "583eee338e0aa91ba57baec13c6228cbe7d919f4099346563734e953ae614db0",
+  "cs3Sha256": "422c6458a196043b6816496b7bb30da90ffc3f7f3b7ed1d8d087cc91d48b336d",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-20T14:34:50.404350+00:00"
+  "convertedAt": "2026-11-21T13:52:50.061370+00:00"
 }

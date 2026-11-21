@@ -3,7 +3,7 @@
   "name": "SyncStream",
   "description": "Sincronizza Cloudstream tra dispositivi",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sync-stream/manifest.json",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "author": "DieGon",
   "type": "onlinestream-provider",
   "language": "typescript",

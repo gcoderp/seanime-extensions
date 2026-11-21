@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/lawlietbr/lietrepo",
   "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/DattebayoBR.cs3",
   "original_version": 1,
-  "sha256_checksum": "1494eee14531a69087839019ee25a4a4e3f5d27393b5ec2b6f216d6a96282b5c",
+  "sha256_checksum": "36faadd6b9306fe5a09b7a7a4ac2250457c6ab95321951798d5a60c39e685f8d",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:36:19.666520+00:00",
+  "conversion_timestamp": "2026-11-21T13:54:06.838881+00:00",
   "passed": false
 }

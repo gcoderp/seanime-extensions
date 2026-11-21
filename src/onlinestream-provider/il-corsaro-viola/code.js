@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "http://icv-api.vercel.app";
-        this.mirrorDomains = ["http://icv-api.vercel.app", "http://icv-api.vercel.app", "http://icv-api.vercel.app"];
-        this.defaultHeaders = { "Referer": "http://icv-api.vercel.app/" };
+        this.mainUrl = "https://api.simkl.com";
+        this.mirrorDomains = ["https://api.simkl.com", "https://api.simkl.com"];
+        this.defaultHeaders = { "Referer": "https://api.simkl.com/" };
     }
     getSettings() {
         return {

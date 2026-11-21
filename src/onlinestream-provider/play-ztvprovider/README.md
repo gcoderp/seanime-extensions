@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `play-ztvprovider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.48.0` (Upstream CS3 v48)
+- **Version:** `1.49.0` (Upstream CS3 v49)
 - **Language:** `ta`
 - **Original Author(s):** NivinCNC
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `b0608b45769e3e7bc5f664293ad7b72ebdddff171e87d7a0beb5abbe58f8aeb4`
+- **CS3 SHA-256:** `8541a6dbf0c8fdd6dbf698548e85a856cdd11be27d99db0ee3a1ccda5f4226b5`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

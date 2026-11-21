@@ -1,11 +1,11 @@
 {
-  "last_run_timestamp": "2026-11-20T14:37:38.153741+00:00",
+  "last_run_timestamp": "2026-11-21T13:55:07.513204+00:00",
   "converter_version": "2.6.0",
   "mode": "live",
-  "total_processed": 423,
-  "successful_count": 0,
+  "total_processed": 424,
+  "successful_count": 13,
   "failed_count": 10,
-  "needs_review_count": 413,
+  "needs_review_count": 401,
   "skipped_count": 0,
-  "published_in_marketplace": 10
+  "published_in_marketplace": 22
 }

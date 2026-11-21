@@ -2,7 +2,7 @@
   "extensionId": "anime-onprovider",
   "originalPluginName": "AnimeONProvider",
   "originalInternalName": "AnimeONProvider",
-  "originalVersion": 48,
+  "originalVersion": 49,
   "originalDownloadUrl": "https://raw.githubusercontent.com/CakesTwix/cloudstream-extensions-uk/builds/AnimeONProvider.cs3",
   "originalRepositoryUrl": "https://github.com/CakesTwix/cloudstream-extensions-uk",
   "originalAuthors": [
@@ -10,7 +10,7 @@
     "deleteBlack666"
   ],
   "license": "GPL-3.0",
-  "cs3Sha256": "231b95ae40e038a7fc1affc547b90baa125dd09cdd7a23696c8f61f0c133500e",
+  "cs3Sha256": "b95a4e971a40a80f56f99bc5e15418c9486503db8d8535552762aecde91850cd",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -19,5 +19,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-20T14:35:59.092330+00:00"
+  "convertedAt": "2026-11-21T13:53:47.968315+00:00"
 }

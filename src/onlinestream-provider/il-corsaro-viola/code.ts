@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "http://icv-api.vercel.app";
-    private mirrorDomains: string[] = ["http://icv-api.vercel.app", "http://icv-api.vercel.app", "http://icv-api.vercel.app"];
-    private defaultHeaders: Record<string, string> = {"Referer": "http://icv-api.vercel.app/"};
+    private mainUrl: string = "https://api.simkl.com";
+    private mirrorDomains: string[] = ["https://api.simkl.com", "https://api.simkl.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.simkl.com/"};
 
     getSettings(): Settings {
         return {

@@ -4,8 +4,8 @@
   "original_author": "Cloudburst,Lorem Ipsum,Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AnimePahe.cs3",
-  "original_version": 59,
-  "sha256_checksum": "4d66134d20bddbb5c1dc71fe2f91f362e7a06a2d8bad1978b0ce75633fd39cd9",
+  "original_version": 62,
+  "sha256_checksum": "e45d4ef24e0bda028c2512e1148a88b56332fa60e52b507387df3a73d3f6c12e",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:32:18.327529+00:00",
+  "conversion_timestamp": "2026-11-21T13:50:42.672044+00:00",
   "passed": false
 }

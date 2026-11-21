@@ -4,8 +4,8 @@
   "original_author": "NivinCNC",
   "original_repository": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "original_download_url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/CricifyProvider.cs3",
-  "original_version": 77,
-  "sha256_checksum": "583eee338e0aa91ba57baec13c6228cbe7d919f4099346563734e953ae614db0",
+  "original_version": 78,
+  "sha256_checksum": "422c6458a196043b6816496b7bb30da90ffc3f7f3b7ed1d8d087cc91d48b336d",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:34:49.389025+00:00",
+  "conversion_timestamp": "2026-11-21T13:52:49.389121+00:00",
   "passed": false
 }

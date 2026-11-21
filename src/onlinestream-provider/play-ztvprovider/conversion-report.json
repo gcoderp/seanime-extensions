@@ -4,8 +4,8 @@
   "original_author": "NivinCNC",
   "original_repository": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "original_download_url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/PlayZTVProvider.cs3",
-  "original_version": 48,
-  "sha256_checksum": "b0608b45769e3e7bc5f664293ad7b72ebdddff171e87d7a0beb5abbe58f8aeb4",
+  "original_version": 49,
+  "sha256_checksum": "8541a6dbf0c8fdd6dbf698548e85a856cdd11be27d99db0ee3a1ccda5f4226b5",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:35:05.323752+00:00",
+  "conversion_timestamp": "2026-11-21T13:53:03.033899+00:00",
   "passed": false
 }

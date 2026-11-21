@@ -3,7 +3,7 @@
   "name": "SportzxProvider",
   "description": "Watch Live Sports Events via SportzX",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sportzx-provider/manifest.json",
-  "version": "1.32.0",
+  "version": "1.33.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",

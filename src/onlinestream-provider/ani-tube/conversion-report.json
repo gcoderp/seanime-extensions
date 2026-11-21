@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/lawlietbr/lietrepo",
   "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/AniTube.cs3",
   "original_version": 2,
-  "sha256_checksum": "7d9bc0f8ad2cd986ec021d67ec83625a870af7a8a95a05e60430d379c331003f",
+  "sha256_checksum": "7b340000d3e6f7e2424ffe8bf03f2db0fc3b0cdbe49c3cc74f89c1479e287a9d",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:36:17.213719+00:00",
+  "conversion_timestamp": "2026-11-21T13:54:05.361941+00:00",
   "passed": false
 }

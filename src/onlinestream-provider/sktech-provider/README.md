@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `sktech-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.64.0` (Upstream CS3 v64)
+- **Version:** `1.65.0` (Upstream CS3 v65)
 - **Language:** `ta`
 - **Original Author(s):** NivinCNC
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `b745ab7706db8f80cdd9bfc1a3495e2be26ba7d196b2d8f1d4a19a1d7bda0178`
+- **CS3 SHA-256:** `28cbd8c39151920fff25c745d3dfde13a214e431872ce53b39a36defb048563a`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

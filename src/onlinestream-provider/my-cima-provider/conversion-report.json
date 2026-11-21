@@ -4,8 +4,8 @@
   "original_author": "Abodabodd",
   "original_repository": "https://github.com/Abodabodd/re-3arabi",
   "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/MyCimaProvider.cs3",
-  "original_version": 2,
-  "sha256_checksum": "5509bf74326ff713809ba3aad86474fbf57ccf94c8fbd22304885b43d549963f",
+  "original_version": 3,
+  "sha256_checksum": "9f60e9c323d36a8cc86db3a5d588991b562d6af20117a617ec60d19c1da8b446",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:33:43.495049+00:00",
+  "conversion_timestamp": "2026-11-21T13:51:53.671605+00:00",
   "passed": false
 }

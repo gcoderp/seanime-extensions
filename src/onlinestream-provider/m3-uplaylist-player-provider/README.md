@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `m3-uplaylist-player-provider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.21.0` (Upstream CS3 v21)
+- **Version:** `1.22.0` (Upstream CS3 v22)
 - **Language:** `en`
 - **Original Author(s):** NivinCNC
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `abe2e18b24a65d38f012b53fe915c2952ff4d5206f34491815d00e9b986d8c61`
+- **CS3 SHA-256:** `514ebc2e96c3ef7ba22db1088f19e70a42b0eb65313096ecd38427256fc6c74e`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

@@ -4,8 +4,8 @@
   "original_author": "NivinCNC",
   "original_repository": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "original_download_url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/PlayFyProvider.cs3",
-  "original_version": 20,
-  "sha256_checksum": "6c4f25917a848a7ce6e71d922cf347128a65d0e039a2e128edebaa8646aa60d0",
+  "original_version": 21,
+  "sha256_checksum": "3035053ba05a11b65e2a6473adff668513f26f12daacceb28e283eb708564d1d",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:35:04.494397+00:00",
+  "conversion_timestamp": "2026-11-21T13:53:02.410307+00:00",
   "passed": false
 }

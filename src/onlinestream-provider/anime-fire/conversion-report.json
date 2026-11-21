@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/lawlietbr/lietrepo",
   "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/AnimeFire.cs3",
   "original_version": 2,
-  "sha256_checksum": "ebbc833dc3d475fcf66c27df858cac76ace7a04b4ba7a9797cfb5b040ffe85fc",
+  "sha256_checksum": "f3ba41bdb27387cee96901b6063d4741f9d1ed860d840b5d2ef6abfa2bee0342",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:36:16.156213+00:00",
+  "conversion_timestamp": "2026-11-21T13:54:03.854494+00:00",
   "passed": false
 }

@@ -3,7 +3,7 @@
   "name": "PlayFyProvider",
   "description": "Watch Live sports and TV channels via PlayFy",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/play-fy-provider/manifest.json",
-  "version": "1.20.0",
+  "version": "1.21.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",

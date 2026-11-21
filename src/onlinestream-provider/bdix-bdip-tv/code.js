@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: BdixBdipTV
-// Original Class: BdixBdipTVPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: LiveChannelData
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "http://iptvidn.com";
-        this.mirrorDomains = ["http://iptvidn.com", "http://iptvidn.com"];
-        this.defaultHeaders = { "Referer": "http://iptvidn.com/" };
+        this.mainUrl = "http://tv.bdiptv.net";
+        this.mirrorDomains = ["http://tv.bdiptv.net", "http://tv.bdiptv.net"];
+        this.defaultHeaders = { "Referer": "http://tv.bdiptv.net/" };
     }
     getSettings() {
         return {
@@ -405,8 +405,8 @@ class Provider {
         const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.item.";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "div.item_content > a";
+        const titleSelector = "img";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,7 +458,7 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.item_content > a";
+        const epSelector = "iframe";
         const epNumSelector = ".epl-num, .ep-num";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

@@ -4,8 +4,8 @@
   "original_author": "NivinCNC",
   "original_repository": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "original_download_url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/LivXowProvider.cs3",
-  "original_version": 26,
-  "sha256_checksum": "bba323608d6dca4d300747812fdce806063773f4bcf106066f6109d9e0f15fa9",
+  "original_version": 27,
+  "sha256_checksum": "f2055853524260c5a8679b7091486a2ab435beefb9cf0cfbaa5405e2d82cdc53",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:34:56.544162+00:00",
+  "conversion_timestamp": "2026-11-21T13:52:55.847218+00:00",
   "passed": false
 }

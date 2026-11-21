@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/lawlietbr/lietrepo",
   "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/Doramogo.cs3",
   "original_version": 2,
-  "sha256_checksum": "e3903c01899d23e2909223abacd11dd87cd9f387ec4b1786854d84659f8c715d",
+  "sha256_checksum": "542978ca4ed56a9db75f1db689c5fe93ac950c9171261ca956c9bde60c9948f7",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:36:20.659654+00:00",
+  "conversion_timestamp": "2026-11-21T13:54:07.660950+00:00",
   "passed": false
 }

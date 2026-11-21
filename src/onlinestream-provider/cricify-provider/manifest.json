@@ -3,7 +3,7 @@
   "name": "CricifyProvider",
   "description": "Watch Live sports and TV channels",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cricify-provider/manifest.json",
-  "version": "1.77.0",
+  "version": "1.78.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",

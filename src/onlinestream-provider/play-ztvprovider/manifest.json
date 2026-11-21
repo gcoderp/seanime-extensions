@@ -3,7 +3,7 @@
   "name": "PlayZTVProvider",
   "description": "Watch Live TV channels & sports via PlayZTV",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/play-ztvprovider/manifest.json",
-  "version": "1.48.0",
+  "version": "1.49.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",

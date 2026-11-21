@@ -3,7 +3,7 @@
   "name": "SKTechProvider",
   "description": "Watch Live sports and TV channels via SK Tech",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sktech-provider/manifest.json",
-  "version": "1.64.0",
+  "version": "1.65.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",

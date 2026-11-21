@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/lawlietbr/lietrepo",
   "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/EmbedTV.cs3",
   "original_version": 3,
-  "sha256_checksum": "977a71d2e1a9d0d8cc1d5658141dd00798f3302007422fc7ea542fe6a825bcaf",
+  "sha256_checksum": "8c93323016583e5b151cbd0ed3c04600117360d36772a552875fc2d68dba3c7b",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-20T14:36:22.037616+00:00",
+  "conversion_timestamp": "2026-11-21T13:54:08.454000+00:00",
   "passed": false
 }

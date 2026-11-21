@@ -2,14 +2,14 @@
   "extensionId": "anime-pahe",
   "originalPluginName": "AnimePahe",
   "originalInternalName": "AnimePahe",
-  "originalVersion": 59,
+  "originalVersion": 62,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AnimePahe.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Cloudburst,Lorem Ipsum,Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "4d66134d20bddbb5c1dc71fe2f91f362e7a06a2d8bad1978b0ce75633fd39cd9",
+  "cs3Sha256": "e45d4ef24e0bda028c2512e1148a88b56332fa60e52b507387df3a73d3f6c12e",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-20T14:32:19.146941+00:00"
+  "convertedAt": "2026-11-21T13:50:43.350845+00:00"
 }

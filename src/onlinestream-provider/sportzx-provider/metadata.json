@@ -2,14 +2,14 @@
   "extensionId": "sportzx-provider",
   "originalPluginName": "SportzxProvider",
   "originalInternalName": "SportzxProvider",
-  "originalVersion": 32,
+  "originalVersion": 33,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/SportzxProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "de12918aa52a6ba8cb5cbbe5dc557c45b67ec44dd9e42c74bb4eecd0f8d56499",
+  "cs3Sha256": "814950e65834e929d8d3eb66fa4c50223bbd9c3c786188a3ba934d4e185d6ab4",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-20T14:35:09.971864+00:00"
+  "convertedAt": "2026-11-21T13:53:06.850436+00:00"
 }

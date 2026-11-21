@@ -1,12 +1,12 @@
 [
   {
-    "plugin_name": "CineAgora",
-    "original_plugin_id": "CineAgora",
-    "original_author": "lawlietbr",
-    "original_repository": "https://github.com/lawlietbr/lietrepo",
-    "original_download_url": "https://github.com/lawlietbr/lietrepo/raw/refs/heads/main/builds/CineAgora.cs3",
-    "original_version": 1,
-    "sha256_checksum": "7e1b1e4c398e4037eebf0e0444289b93a3c331b5b795b1f8424268c9e4de31bd",
+    "plugin_name": "Footballia",
+    "original_plugin_id": "Footballia",
+    "original_author": "kraptor, ByAyzen",
+    "original_repository": "https://github.com/Kraptor123/Cs-Karma",
+    "original_download_url": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/builds/Footballia.cs3",
+    "original_version": 9,
+    "sha256_checksum": "86537cb0b500aea1d93ac533ec5eb3cdee56d450276e1a755895bebce3dd4447",
     "license_spdx": "UNKNOWN",
     "detected_provider_type": "onlinestream-provider",
     "strategy": "STRATEGY_1_GITHUB_SOURCE_RECOVERY",
@@ -32,7 +32,7 @@
     "error_messages": [
       "Forbidden non-Goja API pattern detected: \\bXMLHttpRequest\\b"
     ],
-    "conversion_timestamp": "2026-11-20T14:36:18.217771+00:00",
+    "conversion_timestamp": "2026-11-21T13:53:31.316955+00:00",
     "passed": false
   },
   {
@@ -42,7 +42,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-20T14:37:26.714572+00:00"
+    "conversion_timestamp": "2026-11-21T13:54:58.576452+00:00"
   },
   {
     "plugin_name": "FanStreamGF",
@@ -51,7 +51,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-20T14:37:36.349583+00:00"
+    "conversion_timestamp": "2026-11-21T13:55:06.287612+00:00"
   },
   {
     "plugin_name": "GogoFlixGF",
@@ -60,7 +60,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-20T14:37:36.448485+00:00"
+    "conversion_timestamp": "2026-11-21T13:55:06.345632+00:00"
   },
   {
     "plugin_name": "FrembedGF",
@@ -69,7 +69,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-20T14:37:36.552224+00:00"
+    "conversion_timestamp": "2026-11-21T13:55:06.401741+00:00"
   },
   {
     "plugin_name": "FilmoFlixGF",
@@ -78,7 +78,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-20T14:37:36.642897+00:00"
+    "conversion_timestamp": "2026-11-21T13:55:06.465379+00:00"
   },
   {
     "plugin_name": "MovixGF",
@@ -87,7 +87,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-20T14:37:36.744224+00:00"
+    "conversion_timestamp": "2026-11-21T13:55:06.522895+00:00"
   },
   {
     "plugin_name": "AfterDarkGF",
@@ -96,7 +96,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-20T14:37:36.867602+00:00"
+    "conversion_timestamp": "2026-11-21T13:55:06.583882+00:00"
   },
   {
     "plugin_name": "SadisflixGF",
@@ -105,7 +105,7 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-20T14:37:37.839216+00:00"
+    "conversion_timestamp": "2026-11-21T13:55:07.337881+00:00"
   },
   {
     "plugin_name": "WookafrGF",
@@ -114,6 +114,6 @@
     "error_messages": [
       "HTTP Error 404: Not Found"
     ],
-    "conversion_timestamp": "2026-11-20T14:37:37.952996+00:00"
+    "conversion_timestamp": "2026-11-21T13:55:07.384859+00:00"
   }
 ]

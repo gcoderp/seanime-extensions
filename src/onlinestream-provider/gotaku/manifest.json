@@ -1,10 +1,10 @@
 {
   "id": "gotaku",
   "name": "Gotaku",
-  "description": "Gotaku (gotaku.to) - anime with soft sub, hard sub and dub. Ported from the Aniyomi extension.",
+  "description": "Gotaku Anime with Soft sub, Hard sub and Dub",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gotaku/manifest.json",
-  "version": "1.2.0",
-  "author": "manavchaudhary1 (original Aniyomi ext)",
+  "version": "1.3.0",
+  "author": "phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",
   "lang": "en",
