@@ -2,14 +2,14 @@
   "extensionId": "jio-tvplus-provider",
   "originalPluginName": "JioTVPlusProvider",
   "originalInternalName": "JioTVPlusProvider",
-  "originalVersion": 1,
+  "originalVersion": 2,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/JioTVPlusProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "883acd765a1ee611553c4095f999753d75f91e69bf7cb19c95cfec3b58c8aeec",
+  "cs3Sha256": "1bd6a043a951bf5988bbbee6f18ffc10805ddc66a90a51eb5c04955ba262d8a8",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-21T13:52:55.251480+00:00"
+  "convertedAt": "2026-11-22T13:46:16.488695+00:00"
 }

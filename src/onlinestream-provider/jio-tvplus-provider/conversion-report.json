@@ -4,8 +4,8 @@
   "original_author": "NivinCNC",
   "original_repository": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "original_download_url": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/JioTVPlusProvider.cs3",
-  "original_version": 1,
-  "sha256_checksum": "883acd765a1ee611553c4095f999753d75f91e69bf7cb19c95cfec3b58c8aeec",
+  "original_version": 2,
+  "sha256_checksum": "1bd6a043a951bf5988bbbee6f18ffc10805ddc66a90a51eb5c04955ba262d8a8",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-21T13:52:54.611431+00:00",
+  "conversion_timestamp": "2026-11-22T13:46:15.894160+00:00",
   "passed": false
 }
