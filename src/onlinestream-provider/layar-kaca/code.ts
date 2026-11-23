@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: LayarKaca
-// Original Class: LayarKacaPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://videonode.de";
-    private mirrorDomains: string[] = ["https://videonode.de", "https://videonode.de", "https://videonode.de", "https://videonode.de/api.php"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://videonode.de/"};
+    private mainUrl: string = "https://co4nxtrl.com";
+    private mirrorDomains: string[] = ["https://co4nxtrl.com", "https://co4nxtrl.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://co4nxtrl.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "okru"],
+            episodeServers: ["okru", "filemoon"],
             supportsDub: false,
         };
     }
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "a#openNow";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "div.gallery-grid article a";
+        const titleSelector = "h3";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = "div.gallery-grid article a";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epNumSelector = "span[itemprop=ratingValue]";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "div.gallery-grid article a";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "okru";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

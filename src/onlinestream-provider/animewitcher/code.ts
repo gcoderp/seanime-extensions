@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Animewitcher
-// Original Class: animewitcherPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://vidtube.one";
-    private mirrorDomains: string[] = ["https://vidtube.one", "https://vidtube.one"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://vidtube.one/"};
+    private mainUrl: string = "https://animewitcher.com";
+    private mirrorDomains: string[] = ["https://animewitcher.com", "https://animewitcher.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://animewitcher.com/"};
 
     getSettings(): Settings {
         return {

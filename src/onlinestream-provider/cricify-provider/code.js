@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: CricifyProvider
-// Original Class: CricifyPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://ranapk.short.gy";
-        this.mirrorDomains = ["https://ranapk.short.gy", "https://bdix.short.gy/EPLxBDIX/playlist.php", "https://bdix2.short.gy/AYNA/playlist.php", "https://ranapk.short.gy/BDIX/tata.php"];
-        this.defaultHeaders = { "Referer": "https://ranapk.short.gy/" };
+        this.mainUrl = "https://cfyhljddgbkkufh82.top";
+        this.mirrorDomains = ["https://cfyhljddgbkkufh82.top", "https://cfyhljddgbkkufh82.top"];
+        this.defaultHeaders = { "Referer": "https://cfyhljddgbkkufh82.top/" };
     }
     getSettings() {
         return {

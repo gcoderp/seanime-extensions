@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: FootReplays
-// Original Class: FootreplaysPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://hgcloud.to";
-    private mirrorDomains: string[] = ["https://hgcloud.to", "https://hgcloud.to", "https://hgcloud.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://hgcloud.to/"};
+    private mainUrl: string = "https://odnoklassniki.ru";
+    private mirrorDomains: string[] = ["https://odnoklassniki.ru", "https://odnoklassniki.ru"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://odnoklassniki.ru/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "okru"],
+            episodeServers: ["okru", "filemoon"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "a.p-category";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "[data-module=OKVideo]";
+        const titleSelector = "a.p-category";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "a.p-flink, h4.entry-title a";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "[data-module=OKVideo]";
+        const epNumSelector = "div.p-wrap";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "[data-module=OKVideo]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "okru";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

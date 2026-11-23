@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `gomunime`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.9.0` (Upstream CS3 v9)
+- **Version:** `1.10.0` (Upstream CS3 v10)
 - **Language:** `id`
 - **Original Author(s):** TeKuma25
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `b946791e43e4105e2dbcf2f563b66d3fb3e48dcde15f5518b460135dd836188c`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `bbbd86dd8e85fe62902c773ad182695da9836b935f4ba850d15f93cbf9596da4`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

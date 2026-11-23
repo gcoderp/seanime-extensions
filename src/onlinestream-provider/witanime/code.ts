@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Witanime
-// Original Class: WitAnimePlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.4shared.com";
-    private mirrorDomains: string[] = ["https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com/web/embed/file"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.4shared.com/"};
+    private mainUrl: string = "https://mega.nz";
+    private mirrorDomains: string[] = ["https://mega.nz", "https://mega.nz", "https://mega.nz"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://mega.nz/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["mp4upload", "okru"],
+            episodeServers: ["okru", "mp4upload"],
             supportsDub: true,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "a[href*='/anime/']";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "div.shrink-0 img";
+        const titleSelector = "h1 span[dir='ltr']";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "a[href*='/watch/'], a[href*='/anime/'], a[href*='/movie/']";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "div.shrink-0 img";
+        const epNumSelector = "div.flex-wrap.gap-2 span.rounded-full";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "h1 span[dir='ltr']";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "mp4upload";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "okru";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

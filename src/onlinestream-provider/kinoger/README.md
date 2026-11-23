@@ -8,7 +8,7 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 - **Version:** `1.6.0` (Upstream CS3 v6)
 - **Language:** `de`
 - **Original Author(s):** Hexated, Bnyro
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
 - **CS3 SHA-256:** `32adc2ee2f022452b0f80290390cb72427e602d2b48d4ff45a7047371768e409`
 
 ## Installation in Seanime

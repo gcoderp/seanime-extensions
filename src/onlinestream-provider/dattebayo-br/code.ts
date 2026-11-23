@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: DattebayoBR
-// Original Class: DattebayoBRPlugin
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://www.dattebayo-br.com";
     private mirrorDomains: string[] = ["https://www.dattebayo-br.com", "https://www.dattebayo-br.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.dattebayo-br.com/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.dattebayo-br.com/"};
 
     getSettings(): Settings {
         return {
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".aniInfosSingleCapa img";
-        const titleSelector = "a[href]";
+        const itemSelector = ".ultimosAnimesHomeItem, .ultimosEpisodiosHomeItem";
+        const titleSelector = "a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".aniInfosSingleGeneros span";
-        const epNumSelector = "a[href]";
+        const epSelector = ".ultimosAnimesHomeItem, .ultimosEpisodiosHomeItem";
+        const epNumSelector = "script";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = ".ultimosAnimesHomeItem, .ultimosEpisodiosHomeItem";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

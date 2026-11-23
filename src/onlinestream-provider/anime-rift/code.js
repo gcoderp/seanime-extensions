@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeRift
-// Original Class: AnimeRiftPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,13 +390,13 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://gateway.embrassme.top";
-        this.mirrorDomains = ["https://gateway.embrassme.top", "https://gateway.embrassme.top/api/v4"];
-        this.defaultHeaders = { "Referer": "https://gateway.embrassme.top/" };
+        this.mainUrl = "https://gateway.embrassme.top/api/v4";
+        this.mirrorDomains = ["https://gateway.embrassme.top/api/v4", "https://gateway.embrassme.top/api/v4"];
+        this.defaultHeaders = { "Referer": "https://gateway.embrassme.top/api/v4/" };
     }
     getSettings() {
         return {
-            episodeServers: ["streamtape"],
+            episodeServers: ["default", "vidstreaming", "streamwish", "mp4upload"],
             supportsDub: true,
         };
     }
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamtape";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "default";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

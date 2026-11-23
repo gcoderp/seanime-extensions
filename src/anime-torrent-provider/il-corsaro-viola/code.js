@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME TORRENT EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: IlCorsaroViola
-// Original Class: IlCorsaroViolaPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -300,8 +300,8 @@ class AniListResolver {
 }
 class Provider {
     constructor() {
-        this.mainUrl = "https://api.simkl.com";
-        this.defaultHeaders = { "Referer": "https://api.simkl.com/" };
+        this.mainUrl = "https://db.corsaroviola.dpdns.org";
+        this.defaultHeaders = { "Referer": "https://db.corsaroviola.dpdns.org/" };
     }
     getSettings() {
         return {

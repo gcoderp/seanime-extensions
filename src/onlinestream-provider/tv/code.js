@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: TV
-// Original Class: TVPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "";
-        this.mirrorDomains = [""];
-        this.defaultHeaders = {};
+        this.mainUrl = "https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists";
+        this.mirrorDomains = ["https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists", "https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists"];
+        this.defaultHeaders = { "Referer": "https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/" };
     }
     getSettings() {
         return {

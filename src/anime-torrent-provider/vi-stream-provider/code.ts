@@ -301,8 +301,8 @@ class AniListResolver {
 }
 
 class Provider {
-    private mainUrl: string = "https://api.themoviedb.org";
-    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
+    private mainUrl: string = "https://megaup.live";
+    private defaultHeaders: Record<string, string> = {"Referer": "https://megaup.live/"};
 
     getSettings(): TorrentProviderSettings {
         return {

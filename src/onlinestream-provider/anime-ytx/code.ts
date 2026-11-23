@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeYTX
-// Original Class: AnimeYTXPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://enc-dec.app";
-    private mirrorDomains: string[] = ["https://enc-dec.app", "https://enc-dec.app", "https://enc-dec.app/api/dec-abyss"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://enc-dec.app/"};
+    private mainUrl: string = "https://odnoklassniki.ru";
+    private mirrorDomains: string[] = ["https://odnoklassniki.ru", "https://odnoklassniki.ru"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://odnoklassniki.ru/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "okru"],
+            episodeServers: ["okru", "filemoon"],
             supportsDub: true,
         };
     }
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".aniyt-anime-body h3 a";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "[data-module=OKVideo]";
+        const titleSelector = "a.mytsumi-download-button[href]";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".aniyt-anime-poster img";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "[data-module=OKVideo]";
+        const epNumSelector = "button[data-player-url]";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "[data-module=OKVideo]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "okru";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

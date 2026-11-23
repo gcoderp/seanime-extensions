@@ -300,8 +300,8 @@ class AniListResolver {
 }
 class Provider {
     constructor() {
-        this.mainUrl = "https://api.themoviedb.org";
-        this.defaultHeaders = { "Referer": "https://api.themoviedb.org/" };
+        this.mainUrl = "https://megaup.live";
+        this.defaultHeaders = { "Referer": "https://megaup.live/" };
     }
     getSettings() {
         return {

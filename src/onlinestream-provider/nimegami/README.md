@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `nimegami`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.16.0` (Upstream CS3 v16)
+- **Version:** `1.17.0` (Upstream CS3 v17)
 - **Language:** `id`
 - **Original Author(s):** TeKuma25
-- **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `9cb11072ed19f39455737f0d505dd3b8dc6c566881ea889f668de77933e9577d`
+- **Conversion Strategy:** `STRATEGY_2_JADX_JAVA_AST`
+- **CS3 SHA-256:** `cfd59abea9a0fed58a3d05a872798d62a1fdaeac9b960292d9445cc381250ce8`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

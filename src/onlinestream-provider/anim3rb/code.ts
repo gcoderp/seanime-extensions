@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Anim3rb
-// Original Class: anim3rbPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#videos a.video-card";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = ".glide__slide:not(.glide__slide--clone) a.video-card";
+        const titleSelector = "h2:contains(\u0627\u0644\u0623\u0646\u0645\u064a\u0627\u062a \u0627\u0644\u0645\u062b\u0628\u062a\u0629)";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -496,7 +496,7 @@ class Provider {
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
         const epSelector = ".glide__slide:not(.glide__slide--clone) a.video-card";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epNumSelector = "#videos a.video-card";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "h2:contains(\u0627\u0644\u0623\u0646\u0645\u064a\u0627\u062a \u0627\u0644\u0645\u062b\u0628\u062a\u0629)";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

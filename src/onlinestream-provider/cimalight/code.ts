@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Cimalight
-// Original Class: eishkPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.4shared.com";
-    private mirrorDomains: string[] = ["https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com/web/embed/file"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.4shared.com/"};
+    private mainUrl: string = "https://voe.sx";
+    private mirrorDomains: string[] = ["https://voe.sx", "https://voe.sx"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://voe.sx/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["voe", "streamwish", "streamtape", "dood", "mp4upload", "okru", "vidhide"],
+            episodeServers: ["voe", "dood", "streamwish", "streamtape", "vidhide", "okru", "mp4upload"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search.php?keywords={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#app[data-page]";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const itemSelector = "video source[src], video[src]";
+        const titleSelector = "h2 a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "a.xtgo";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "video source[src], video[src]";
+        const epNumSelector = "script#video-data";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "video source[src], video[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

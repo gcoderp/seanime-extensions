@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: WookaFRProvider
-// Original Class: WookaFRProviderPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ConvertedCloudstreamProvider
+// Strategy Used: STRATEGY_2_JADX_JAVA_AST
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://veev.to";
-    private mirrorDomains: string[] = ["https://veev.to", "https://veev.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://veev.to/"};
+    private mainUrl: string = "https://uqload.cx";
+    private mirrorDomains: string[] = ["https://uqload.cx", "https://uqload.cx", "https://www.uqload.cx"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://uqload.cx/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["dood", "filemoon", "vidhide", "voe", "streamwish"],
+            episodeServers: ["dood", "filemoon", "vidhide", "streamwish", "voe"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -429,7 +429,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const itemSelector = "#vplayer > #player source";
-        const titleSelector = "h3 a, .film-name a, .title, a";
+        const titleSelector = "img.img-fluid";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "a.btn-primary";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "#vplayer > #player source";
+        const epNumSelector = "div.row:not(.slider-container) > article > figure.hoverable";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
+        const serverSelector = "#vplayer > #player source";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
