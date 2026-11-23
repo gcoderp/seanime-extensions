@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T16:50:44.912Z",
+  "generatedAt": "2026-11-23T20:48:51.159Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -97,13 +97,13 @@
     }
   ],
   "summary": {
-    "checked": 5,
+    "checked": 3,
     "working": 0,
-    "failed": 5,
-    "durationMs": 17021,
+    "failed": 3,
+    "durationMs": 19325,
     "byStatus": {
       "working": 0,
-      "no_search_results": 4,
+      "no_search_results": 2,
       "search_timeout": 0,
       "no_episodes": 0,
       "no_stream": 0,
@@ -128,23 +128,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 6162
-    },
-    {
-      "id": "dattebayo-br",
-      "name": "DattebayoBR",
-      "type": "onlinestream-provider",
-      "status": "no_search_results",
-      "error": null,
-      "durationMs": 1643
-    },
-    {
-      "id": "doramogo",
-      "name": "Doramogo",
-      "type": "onlinestream-provider",
-      "status": "no_search_results",
-      "error": null,
-      "durationMs": 15513
+      "durationMs": 3828
     },
     {
       "id": "gogo-anime-provider",
@@ -152,7 +136,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 11157
+      "durationMs": 18022
     },
     {
       "id": "stream-center",
@@ -160,7 +144,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 2122
+      "durationMs": 2698
     }
   ],
   "results": [
@@ -189,42 +173,15 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 6162
+      "durationMs": 3828
     },
     {
-      "id": "dattebayo-br",
-      "name": "DattebayoBR",
+      "id": "gogo-anime-provider",
+      "name": "GogoAnime",
       "type": "onlinestream-provider",
-      "version": "1.1.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/dattebayo-br/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/dattebayo-br/code.js",
-      "status": "no_search_results",
-      "error": null,
-      "target": 501,
-      "search": {
-        "attempts": [
-          {
-            "query": "Doraemon",
-            "results": 0,
-            "requests": 1,
-            "httpStatus": 403,
-            "networkFailures": 0
-          }
-        ],
-        "count": 0
-      },
-      "episodes": null,
-      "stream": null,
-      "torrent": null,
-      "durationMs": 1643
-    },
-    {
-      "id": "doramogo",
-      "name": "Doramogo",
-      "type": "onlinestream-provider",
-      "version": "1.2.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/doramogo/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/doramogo/code.js",
+      "version": "1.12.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/code.js",
       "status": "no_search_results",
       "error": null,
       "target": 501,
@@ -243,34 +200,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 15513
-    },
-    {
-      "id": "gogo-anime-provider",
-      "name": "GogoAnime",
-      "type": "onlinestream-provider",
-      "version": "1.12.0",
-      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json",
-      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/code.js",
-      "status": "no_search_results",
-      "error": null,
-      "target": 501,
-      "search": {
-        "attempts": [
-          {
-            "query": "Doraemon",
-            "results": 0,
-            "requests": 1,
-            "httpStatus": 429,
-            "networkFailures": 0
-          }
-        ],
-        "count": 0
-      },
-      "episodes": null,
-      "stream": null,
-      "torrent": null,
-      "durationMs": 11157
+      "durationMs": 18022
     },
     {
       "id": "stream-center",
@@ -298,7 +228,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2122
+      "durationMs": 2698
     }
   ]
 }
