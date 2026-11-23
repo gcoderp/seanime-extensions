@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Anikage
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: AnikagePlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://anikage.cc";
-    private mirrorDomains: string[] = ["https://anikage.cc", "https://anikage.cc"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://anikage.cc/"};
+    private mainUrl: string = "https://omg10.com";
+    private mirrorDomains: string[] = ["https://omg10.com", "https://omg10.com/4/11733824"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://omg10.com/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/api/media/anime/browse?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

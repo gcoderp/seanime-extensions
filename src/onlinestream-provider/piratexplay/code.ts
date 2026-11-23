@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Piratexplay
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: PiratexplayProvider
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://myanimeworld.in";
-    private mirrorDomains: string[] = ["https://myanimeworld.in", "https://myanimeworld.in"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://myanimeworld.in/"};
+    private mainUrl: string = "https://playhydrax.com";
+    private mirrorDomains: string[] = ["https://playhydrax.com", "https://playhydrax.com", "https://playhydrax.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://playhydrax.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["streamwish"],
+            episodeServers: ["vidhide", "streamwish"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/?s={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "iframe";
-        const titleSelector = "a";
+        const itemSelector = "#episode_by_temp li";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "iframe";
-        const epNumSelector = ".server-option[data-link]";
+        const epSelector = "#movies-a ul li";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "iframe";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamwish";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "vidhide";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

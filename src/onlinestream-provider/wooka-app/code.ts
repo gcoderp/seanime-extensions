@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: WookaAPP
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: WookaFRappPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.uqload.to";
-    private mirrorDomains: string[] = ["https://www.uqload.to", "https://www.uqload.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.uqload.to/"};
+    private mainUrl: string = "https://wookafr.app";
+    private mirrorDomains: string[] = ["https://wookafr.app", "https://wookafr.app"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://wookafr.app/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/wp-json/wpreact/v1/search?query={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

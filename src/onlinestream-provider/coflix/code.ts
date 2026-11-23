@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Coflix
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: CoflixProvider
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://uqload.cx";
-    private mirrorDomains: string[] = ["https://uqload.cx", "https://uqload.cx"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://uqload.cx/"};
+    private mainUrl: string = "https://api.themoviedb.org";
+    private mirrorDomains: string[] = ["https://api.themoviedb.org", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3", "https://api.themoviedb.org/3/search"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.themoviedb.org/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["filemoon", "vidhide", "voe", "streamwish"],
+            episodeServers: ["filemoon", "vidhide", "streamwish", "voe"],
             supportsDub: false,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/recherche/?s={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "li[onclick]";
-        const titleSelector = "p.md-manga-card-name";
+        const itemSelector = "#cfCastPanelCasting a.cf-cast-tag--photo";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "li[onclick]";
-        const epNumSelector = "div.md-manga-card";
+        const epSelector = "#cfCastPanelRealisateurs span.cf-cast-name";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "li[onclick]";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

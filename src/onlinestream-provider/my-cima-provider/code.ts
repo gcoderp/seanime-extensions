@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: MyCimaProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: eishkPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://voe.sx";
-    private mirrorDomains: string[] = ["https://voe.sx", "https://voe.sx"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://voe.sx/"};
+    private mainUrl: string = "https://www.4shared.com";
+    private mirrorDomains: string[] = ["https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com/web/embed/file"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.4shared.com/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["voe", "dood", "streamwish", "streamtape", "vidhide", "okru", "mp4upload"],
+            episodeServers: ["voe", "streamwish", "streamtape", "dood", "mp4upload", "okru", "vidhide"],
             supportsDub: false,
         };
     }
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "video source[src], video[src]";
-        const titleSelector = "a[href]";
+        const itemSelector = "#app[data-page]";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "video source[src], video[src]";
-        const epNumSelector = "script#video-data";
+        const epSelector = ".openLinkDown[data-href]";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "video source[src], video[src]";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {

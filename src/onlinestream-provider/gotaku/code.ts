@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Gotaku
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: GotakuPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://gotaku.to";
-    private mirrorDomains: string[] = ["https://gotaku.to", "https://gotaku.to"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://gotaku.to/"};
+    private mainUrl: string = "https://api.ani.zip";
+    private mirrorDomains: string[] = ["https://api.ani.zip", "https://api.ani.zip/mappings", "https://api.ani.zip/mappings?"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.ani.zip/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/browse?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

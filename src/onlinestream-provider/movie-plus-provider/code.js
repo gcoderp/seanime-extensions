@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: MoviePlusProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: MoviePlusProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://api.appsxploit.dev";
-        this.mirrorDomains = ["https://api.appsxploit.dev", "https://api.appsxploit.dev"];
-        this.defaultHeaders = { "Referer": "https://api.appsxploit.dev/" };
+        this.mainUrl = "https://image.tmdb.org";
+        this.mirrorDomains = ["https://image.tmdb.org", "https://image.tmdb.org/t/p", "https://image.tmdb.org/t/p"];
+        this.defaultHeaders = { "Referer": "https://image.tmdb.org/" };
     }
     getSettings() {
         return {

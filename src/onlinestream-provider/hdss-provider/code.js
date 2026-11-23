@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: HdssProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: HdssProviderPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://fembed.one";
-        this.mirrorDomains = ["https://fembed.one", "https://fembed.one"];
-        this.defaultHeaders = { "Referer": "https://fembed.one/" };
+        this.mainUrl = "https://vudeo.ws";
+        this.mirrorDomains = ["https://vudeo.ws", "https://vudeo.ws"];
+        this.defaultHeaders = { "Referer": "https://vudeo.ws/" };
     }
     getSettings() {
         return {
@@ -402,11 +402,11 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/index.php?do=search&subaction=search&search_start=0&full_search=0&result_from=1&story={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "a.short-item__img";
-        const titleSelector = "img";
+        const itemSelector = ".sect:eq(0) .short-item > a";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "a.short-item__img";
-        const epNumSelector = ".page__text";
+        const epSelector = ".select > option";
+        const epNumSelector = ".epl-num, .ep-num";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "a.short-item__img";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")

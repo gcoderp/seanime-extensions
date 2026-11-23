@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: LayarKaca
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: LayarKacaPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,13 +407,13 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://co4nxtrl.com";
-    private mirrorDomains: string[] = ["https://co4nxtrl.com", "https://co4nxtrl.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://co4nxtrl.com/"};
+    private mainUrl: string = "https://playcdn.de";
+    private mirrorDomains: string[] = ["https://playcdn.de", "https://playcdn.de", "https://playcdn.de", "https://playcdn.de/verify"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://playcdn.de/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["okru", "filemoon"],
+            episodeServers: ["dood", "filemoon", "streamwish", "streamtape", "vidhide", "voe"],
             supportsDub: false,
         };
     }
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "div.gallery-grid article a";
-        const titleSelector = "h3";
+        const itemSelector = ".entry-content p";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.gallery-grid article a";
-        const epNumSelector = "span[itemprop=ratingValue]";
+        const epSelector = ".wp-content p";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = "div.gallery-grid article a";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "okru";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

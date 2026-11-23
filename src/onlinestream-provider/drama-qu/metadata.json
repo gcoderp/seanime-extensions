@@ -11,11 +11,12 @@
   "license": "UNKNOWN",
   "cs3Sha256": "ad41adafa66ef018bcf5c09c7e54f3823f30551e05eb780fc545cd739aa9ebf5",
   "converterVersion": "2.6.0",
-  "conversionStrategy": "STRATEGY_2_JADX_JAVA_AST",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
-    "No upstream base URL could be recovered."
+    "No upstream base URL could be recovered.",
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-23T11:43:06.631055+00:00"
+  "convertedAt": "2026-11-23T16:46:03.249272+00:00"
 }

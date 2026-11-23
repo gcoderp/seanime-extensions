@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: ClownIPTVProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: ClownIPTVPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://sxcce.dpdns.org";
-    private mirrorDomains: string[] = ["https://sxcce.dpdns.org", "https://sxcce.dpdns.org"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://sxcce.dpdns.org/"};
+    private mainUrl: string = "https://cncverse.pages.dev";
+    private mirrorDomains: string[] = ["https://cncverse.pages.dev", "https://cncverse.pages.dev", "https://cncverse.pages.dev/api/stats"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://cncverse.pages.dev/"};
 
     getSettings(): Settings {
         return {

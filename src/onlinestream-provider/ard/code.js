@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: ARD
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: ARDPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://api.ardmediathek.de";
-        this.mirrorDomains = ["https://api.ardmediathek.de", "https://api.ardmediathek.de", "https://api.ardmediathek.de/page-gateway/widgets/ard/asset"];
-        this.defaultHeaders = { "Referer": "https://api.ardmediathek.de/" };
+        this.mainUrl = "https://www.zdf.de";
+        this.mirrorDomains = ["https://www.zdf.de", "https://www.zdf.de/assets/2400-zdf-100~768x432", "https://www.zdf.de/assets/2400-zdfinfo-100~768x432", "https://www.zdf.de/assets/2400-zdfneo-100~768x432"];
+        this.defaultHeaders = { "Referer": "https://www.zdf.de/" };
     }
     getSettings() {
         return {
@@ -402,7 +402,7 @@ class Provider {
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search-system/search/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";

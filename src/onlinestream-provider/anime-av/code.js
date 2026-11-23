@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimeAV
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: AnimeAVPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,23 +390,23 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://www.mp4upload.com";
-        this.mirrorDomains = ["https://www.mp4upload.com", "https://www.mp4upload.com"];
-        this.defaultHeaders = { "Referer": "https://www.mp4upload.com/" };
+        this.mainUrl = "https://enc-dec.app";
+        this.mirrorDomains = ["https://enc-dec.app", "https://enc-dec.app", "https://enc-dec.app/api/dec-abyss"];
+        this.defaultHeaders = { "Referer": "https://enc-dec.app/" };
     }
     getSettings() {
         return {
-            episodeServers: ["mp4upload", "filemoon", "okru"],
+            episodeServers: ["filemoon", "okru", "mp4upload"],
             supportsDub: true,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/catalogo?search={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "section:has(h2:contains(episo)) div.grid article";
-        const titleSelector = "h3";
+        const itemSelector = "article.bg-mute";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "section:has(h2:contains(episo)) div.grid article";
-        const epNumSelector = "div.grid.grid-cols-2 article.group\\\\/item";
+        const epSelector = "div.entry.text-lead p";
+        const epNumSelector = ".epl-num, .ep-num";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "section:has(h2:contains(episo)) div.grid article";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "mp4upload";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "filemoon";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

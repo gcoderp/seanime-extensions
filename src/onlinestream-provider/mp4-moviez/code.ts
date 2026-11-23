@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Mp4Moviez
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: Mp4MoviezPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,20 +407,20 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.mp4moviez.capital";
-    private mirrorDomains: string[] = ["https://www.mp4moviez.capital", "https://www.mp4moviez.capital"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.mp4moviez.capital/"};
+    private mainUrl: string = "https://streamtape.to";
+    private mirrorDomains: string[] = ["https://streamtape.to", "https://streamtape.to"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://streamtape.to/"};
 
     getSettings(): Settings {
         return {
-            episodeServers: ["streamtape", "dood"],
+            episodeServers: ["dood", "streamtape"],
             supportsDub: true,
         };
     }
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search/{query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -428,8 +428,8 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = ".fl";
-        const titleSelector = "a";
+        const itemSelector = ".col-sm-8.col-sm-offset-2.well.view-well a";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
         $(itemSelector).each((_: number, el: GojaDocElement) => {
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = ".fl";
-        const epNumSelector = ".moviename";
+        const epSelector = "div[style=\"text-align:left;\"]";
+        const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
@@ -529,7 +529,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const serverSelector = ".fl";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds: string[] = [];
 
         $(serverSelector).each((_: number, el: GojaDocElement) => {
@@ -542,7 +542,7 @@ class Provider {
             }
         });
 
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "streamtape";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "dood";
         const preferred = candidateEmbeds.filter((u: string) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u: string) => preferred.indexOf(u) === -1));
 

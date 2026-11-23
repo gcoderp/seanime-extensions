@@ -9,7 +9,7 @@
   "language": "typescript",
   "lang": "ar",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/youtube/README.md",
-  "notes": "Automatically converted via strategy STRATEGY_2_JADX_JAVA_AST; validation status SUCCESS.",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/youtube/code.js",
   "icon": "https://raw.githubusercontent.com/Abodabodd/Oldarabrepo/refs/heads/main/img/IMG_%D9%A2%D9%A0%D9%A2%D9%A5%D9%A1%D9%A2%D9%A0%D9%A6_%D9%A1%D9%A7%D9%A2%D9%A6%D9%A1%D9%A6.jpg"
 }

@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Witanime
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: WitAnimePlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -390,23 +390,23 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://mega.nz";
-        this.mirrorDomains = ["https://mega.nz", "https://mega.nz", "https://mega.nz"];
-        this.defaultHeaders = { "Referer": "https://mega.nz/" };
+        this.mainUrl = "https://www.4shared.com";
+        this.mirrorDomains = ["https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com", "https://www.4shared.com/web/embed/file"];
+        this.defaultHeaders = { "Referer": "https://www.4shared.com/" };
     }
     getSettings() {
         return {
-            episodeServers: ["okru", "mp4upload"],
+            episodeServers: ["mp4upload", "okru"],
             supportsDub: true,
         };
     }
     async searchSite(query) {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?q={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "div.shrink-0 img";
-        const titleSelector = "h1 span[dir='ltr']";
+        const itemSelector = "a[href*='/anime/']";
+        const titleSelector = "h3 a, .film-name a, .title, a";
         const results = [];
         $(itemSelector).each((_, el) => {
             const titleEl = el.find(titleSelector).first();
@@ -458,8 +458,8 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div.shrink-0 img";
-        const epNumSelector = "div.flex-wrap.gap-2 span.rounded-full";
+        const epSelector = "a[href*='/watch/'], a[href*='/anime/'], a[href*='/movie/']";
+        const epNumSelector = ".epl-num, .ep-num";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";
             if (!rawHref)
@@ -483,7 +483,7 @@ class Provider {
         const epUrl = CsCompat.fixUrl(episode.url || episode.id, this.mainUrl);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(epUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const serverSelector = "h1 span[dir='ltr']";
+        const serverSelector = "iframe[src], div.server-item[data-embed], a[data-video], source[src]";
         const candidateEmbeds = [];
         $(serverSelector).each((_, el) => {
             const rawEmbed = el.attr("data-embed") || el.attr("data-video") || el.attr("data-src")
@@ -495,7 +495,7 @@ class Provider {
                 candidateEmbeds.push(embedUrl);
             }
         });
-        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "okru";
+        const requestedServer = (server && server !== "default") ? server.toLowerCase() : "mp4upload";
         const preferred = candidateEmbeds.filter((u) => u.toLowerCase().indexOf(requestedServer) !== -1);
         const ordered = preferred.concat(candidateEmbeds.filter((u) => preferred.indexOf(u) === -1));
         const videoSources = [];

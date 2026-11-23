@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: CricifyProvider
-// Original Class: ConvertedCloudstreamProvider
-// Strategy Used: STRATEGY_2_JADX_JAVA_AST
+// Original Class: CricifyPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://cfyhljddgbkkufh82.top";
-    private mirrorDomains: string[] = ["https://cfyhljddgbkkufh82.top", "https://cfyhljddgbkkufh82.top"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://cfyhljddgbkkufh82.top/"};
+    private mainUrl: string = "https://ranapk.short.gy";
+    private mirrorDomains: string[] = ["https://ranapk.short.gy", "https://bdix.short.gy/EPLxBDIX/playlist.php", "https://bdix2.short.gy/AYNA/playlist.php", "https://ranapk.short.gy/BDIX/tata.php"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://ranapk.short.gy/"};
 
     getSettings(): Settings {
         return {
