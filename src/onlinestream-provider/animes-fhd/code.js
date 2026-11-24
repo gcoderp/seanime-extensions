@@ -2,8 +2,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimesFHD
-// Original Class: AnimesFHDPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: AnimesFHD
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -392,7 +392,7 @@ class Provider {
     constructor() {
         this.mainUrl = "https://animesfhd.net";
         this.mirrorDomains = ["https://animesfhd.net", "https://animesfhd.net"];
-        this.defaultHeaders = { "Referer": "https://animesfhd.net/" };
+        this.defaultHeaders = { "Referer": "$mainUrl/" };
     }
     getSettings() {
         return {

@@ -1,15 +1,15 @@
 {
   "id": "layar-kaca",
   "name": "LayarKaca",
-  "description": "\ud83d\udcfa Streaming Movie and TV Series",
+  "description": "Nonton dan download film & series terbaru di LK21. Streaming sub Indo gratis, kualitas HD. Tersedia drama Korea, anime, film barat, dan Asia lengkap!",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/layar-kaca/manifest.json",
-  "version": "1.1.0",
-  "author": "Hexated, Asm0d3usX",
+  "version": "1.16.0",
+  "author": "kraptor, Phisher98, Hexated",
   "type": "onlinestream-provider",
   "language": "typescript",
   "lang": "id",
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/layar-kaca/README.md",
   "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/layar-kaca/code.js",
-  "icon": "https://i.ibb.co.com/9HDVpFFT/layarkaca.png"
+  "icon": "https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://tv12.lk21official.cc&size=256"
 }
