@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-23T20:48:51.159Z",
+  "generatedAt": "2026-11-24T19:52:27.284Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -100,7 +100,7 @@
     "checked": 3,
     "working": 0,
     "failed": 3,
-    "durationMs": 19325,
+    "durationMs": 12629,
     "byStatus": {
       "working": 0,
       "no_search_results": 2,
@@ -128,7 +128,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 3828
+      "durationMs": 4986
     },
     {
       "id": "gogo-anime-provider",
@@ -136,7 +136,7 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 18022
+      "durationMs": 11130
     },
     {
       "id": "stream-center",
@@ -144,7 +144,7 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 2698
+      "durationMs": 2201
     }
   ],
   "results": [
@@ -173,7 +173,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 3828
+      "durationMs": 4986
     },
     {
       "id": "gogo-anime-provider",
@@ -191,7 +191,7 @@
             "query": "Doraemon",
             "results": 0,
             "requests": 1,
-            "httpStatus": 200,
+            "httpStatus": 429,
             "networkFailures": 0
           }
         ],
@@ -200,7 +200,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 18022
+      "durationMs": 11130
     },
     {
       "id": "stream-center",
@@ -228,7 +228,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2698
+      "durationMs": 2201
     }
   ]
 }
