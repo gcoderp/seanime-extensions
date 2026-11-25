@@ -2,14 +2,14 @@
   "extensionId": "bristege",
   "originalPluginName": "Brstej",
   "originalInternalName": "Bristege",
-  "originalVersion": 2,
+  "originalVersion": 4,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Bristege.cs3",
   "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
   "originalAuthors": [
     "Abodabodd"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "245c5e85b6e5dc40afd0ed8fbd11571327ee06fbc7dd24ff52f0b6de67aa73df",
+  "cs3Sha256": "8812f5dbe5fe5dd926a90dab1fe47c298d79ab5641b25e48cb3cb27204e5881c",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-24T16:41:15.401673+00:00"
+  "convertedAt": "2026-11-25T16:24:05.481233+00:00"
 }

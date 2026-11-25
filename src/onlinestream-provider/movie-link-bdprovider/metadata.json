@@ -2,14 +2,14 @@
   "extensionId": "movie-link-bdprovider",
   "originalPluginName": "MovieLinkBDProvider",
   "originalInternalName": "MovieLinkBDProvider",
-  "originalVersion": 28,
+  "originalVersion": 29,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/MovieLinkBDProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "9f33044d7f643fbf2ed7de68cf0085b9398a39eed582ee680bfbfe7f299075c9",
+  "cs3Sha256": "0aed7f8078304190bf60d0b41870188230131e1bcce9b4ecb8dfe3983d4fcb64",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-24T16:42:52.074943+00:00"
+  "convertedAt": "2026-11-25T16:25:32.567506+00:00"
 }

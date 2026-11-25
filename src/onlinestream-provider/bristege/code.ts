@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://amd.brstej.com";
-    private mirrorDomains: string[] = ["https://amd.brstej.com", "https://amd.brstej.com"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://amd.brstej.com/"};
+    private mainUrl: string = "https://hd1.brstej.com";
+    private mirrorDomains: string[] = ["https://hd1.brstej.com", "https://hd1.brstej.com"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://hd1.brstej.com/"};
 
     getSettings(): Settings {
         return {
@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "a.xtgo";
+        const itemSelector = ".pcg-series-name span";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 
@@ -495,7 +495,7 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div#Playerholder iframe";
+        const epSelector = ".pds-art img, .pwu-poster-image, #BiBplayer img";
         const epNumSelector = ".epl-num, .ep-num";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {

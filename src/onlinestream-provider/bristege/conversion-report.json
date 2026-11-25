@@ -4,8 +4,8 @@
   "original_author": "Abodabodd",
   "original_repository": "https://github.com/Abodabodd/re-3arabi",
   "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Bristege.cs3",
-  "original_version": 2,
-  "sha256_checksum": "245c5e85b6e5dc40afd0ed8fbd11571327ee06fbc7dd24ff52f0b6de67aa73df",
+  "original_version": 4,
+  "sha256_checksum": "8812f5dbe5fe5dd926a90dab1fe47c298d79ab5641b25e48cb3cb27204e5881c",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-24T16:41:14.628897+00:00",
+  "conversion_timestamp": "2026-11-25T16:24:04.816145+00:00",
   "passed": false
 }

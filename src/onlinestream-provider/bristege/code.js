@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://amd.brstej.com";
-        this.mirrorDomains = ["https://amd.brstej.com", "https://amd.brstej.com"];
-        this.defaultHeaders = { "Referer": "https://amd.brstej.com/" };
+        this.mainUrl = "https://hd1.brstej.com";
+        this.mirrorDomains = ["https://hd1.brstej.com", "https://hd1.brstej.com"];
+        this.defaultHeaders = { "Referer": "https://hd1.brstej.com/" };
     }
     getSettings() {
         return {
@@ -405,7 +405,7 @@ class Provider {
         const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(searchPath, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
-        const itemSelector = "a.xtgo";
+        const itemSelector = ".pcg-series-name span";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results = [];
         $(itemSelector).each((_, el) => {
@@ -458,7 +458,7 @@ class Provider {
         const { text: html } = await CsCompat.fetchWithMirrorFallback(targetUrl, this.mirrorDomains, { headers: this.defaultHeaders });
         const $ = LoadDoc(html);
         const episodes = [];
-        const epSelector = "div#Playerholder iframe";
+        const epSelector = ".pds-art img, .pwu-poster-image, #BiBplayer img";
         const epNumSelector = ".epl-num, .ep-num";
         $(epSelector).each((idx, el) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `bristege`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.2.0` (Upstream CS3 v2)
+- **Version:** `1.4.0` (Upstream CS3 v4)
 - **Language:** `ar`
 - **Original Author(s):** Abodabodd
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `245c5e85b6e5dc40afd0ed8fbd11571327ee06fbc7dd24ff52f0b6de67aa73df`
+- **CS3 SHA-256:** `8812f5dbe5fe5dd926a90dab1fe47c298d79ab5641b25e48cb3cb27204e5881c`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

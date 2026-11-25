@@ -2,20 +2,21 @@
   "extensionId": "idlix-provider",
   "originalPluginName": "IdlixProvider",
   "originalInternalName": "IdlixProvider",
-  "originalVersion": 26,
+  "originalVersion": 27,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/IdlixProvider.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "b0b43f844043a657b6787f120a39de81ba9c31aa025494475d2065266e800c83",
+  "cs3Sha256": "630d9e976a3211b2bfdfeacbaff31771dc27d5491f1b4def8129c91a59838c49",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
   "liveTestStatus": "NOT_RUN",
   "reviewReasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-24T16:40:18.494845+00:00"
+  "convertedAt": "2026-11-25T16:23:24.176125+00:00"
 }

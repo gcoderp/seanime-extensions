@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/IdlixProvider.cs3",
-  "original_version": 26,
-  "sha256_checksum": "b0b43f844043a657b6787f120a39de81ba9c31aa025494475d2065266e800c83",
+  "original_version": 27,
+  "sha256_checksum": "630d9e976a3211b2bfdfeacbaff31771dc27d5491f1b4def8129c91a59838c49",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -22,16 +22,18 @@
   "extractor_test_status": "MOCK_PASS",
   "overall_status": "NEEDS_REVIEW",
   "review_reasons": [
-    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
   "license_notice": true,
   "known_unsupported_methods": [],
   "warnings": [
+    "Upstream plugin references WebViewResolver/CloudflareKiller; only mirror fallback is available in Goja.",
     "No provider-specific CSS selectors were recovered; generic fallbacks are in use.",
     "Upstream licence is 'UNKNOWN'. Published under the 'publish_with_notice' policy: attribution only, verify redistribution rights before relying on it.",
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-24T16:40:17.669789+00:00",
+  "conversion_timestamp": "2026-11-25T16:23:23.495697+00:00",
   "passed": false
 }

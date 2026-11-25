@@ -4,7 +4,7 @@
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: ReiDosEmbeds
 // Original Class: ReiDosEmbedsProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://v2.rde.lat";
     private mirrorDomains: string[] = ["https://v2.rde.lat", "https://v2.rde.lat"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://v2.rde.lat/", "Origin": "https://v2.rde.lat", "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://v2.rde.lat/"};
 
     getSettings(): Settings {
         return {

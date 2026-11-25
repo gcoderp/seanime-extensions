@@ -428,7 +428,7 @@ class Provider {
         );
 
         const $ = LoadDoc(html);
-        const itemSelector = "#EXT-X-STREAM-INF:";
+        const itemSelector = "div.film_list-wrap div.flw-item, article.bs, ul.items li, .result-item";
         const titleSelector = "h3 a, .film-name a, .title, a";
         const results: SearchResult[] = [];
 

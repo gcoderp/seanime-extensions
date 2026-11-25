@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: AnimesFHD
-// Original Class: AnimesFHD
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Original Class: AnimesFHDPlugin
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://animesfhd.net";
     private mirrorDomains: string[] = ["https://animesfhd.net", "https://animesfhd.net"];
-    private defaultHeaders: Record<string, string> = {"Referer": "$mainUrl/"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://animesfhd.net/"};
 
     getSettings(): Settings {
         return {

@@ -1,0 +1,15 @@
+{
+  "id": "sony-livprovider",
+  "name": "SonyLIVProvider",
+  "description": "SonyLIV movies & shows via the JioTV+ aggregation (POC VOD template)",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sony-livprovider/manifest.json",
+  "version": "1.1.0",
+  "author": "NivinCNC",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "en",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/sony-livprovider/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sony-livprovider/code.js",
+  "icon": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/refs/heads/master/Logos/SonyLIVProvider/logo.png"
+}

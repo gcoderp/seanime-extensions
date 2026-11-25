@@ -3,7 +3,7 @@
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: ReiDosEmbeds
 // Original Class: ReiDosEmbedsProvider
-// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
+// Strategy Used: STRATEGY_3_DEX_STRING_IR
 // ============================================================================
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
 // Injected into converted TypeScript extensions to bridge Cloudstream Kotlin idioms cleanly inside Goja.
@@ -392,7 +392,7 @@ class Provider {
     constructor() {
         this.mainUrl = "https://v2.rde.lat";
         this.mirrorDomains = ["https://v2.rde.lat", "https://v2.rde.lat"];
-        this.defaultHeaders = { "Referer": "https://v2.rde.lat/", "Origin": "https://v2.rde.lat", "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36" };
+        this.defaultHeaders = { "Referer": "https://v2.rde.lat/" };
     }
     getSettings() {
         return {

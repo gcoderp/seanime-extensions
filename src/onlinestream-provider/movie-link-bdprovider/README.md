@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `movie-link-bdprovider`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.28.0` (Upstream CS3 v28)
+- **Version:** `1.29.0` (Upstream CS3 v29)
 - **Language:** `bn`
 - **Original Author(s):** NivinCNC
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `9f33044d7f643fbf2ed7de68cf0085b9398a39eed582ee680bfbfe7f299075c9`
+- **CS3 SHA-256:** `0aed7f8078304190bf60d0b41870188230131e1bcce9b4ecb8dfe3983d4fcb64`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:
