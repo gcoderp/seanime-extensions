@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://sxcce.dpdns.org";
-    private mirrorDomains: string[] = ["https://sxcce.dpdns.org", "https://sxcce.dpdns.org", "https://sxcce.dpdns.org/jvod/play", "https://sxcce.dpdns.org/jvod/sonyliv"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://sxcce.dpdns.org/"};
+    private mainUrl: string = "https://apiv2.sonyliv.com";
+    private mirrorDomains: string[] = ["https://apiv2.sonyliv.com", "https://apiv2.sonyliv.com/AGL", "https://apiv2.sonyliv.com/AGL/1.4/A/ENG/WEB/ALL/GETTOKEN", "https://apiv2.sonyliv.com/AGL/1.4/A/ENG/WEB/IN/CONTENT/DETAIL/BUNDLE"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://apiv2.sonyliv.com/"};
 
     getSettings(): Settings {
         return {

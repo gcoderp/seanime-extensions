@@ -2,14 +2,14 @@
   "extensionId": "sony-livprovider",
   "originalPluginName": "SonyLIVProvider",
   "originalInternalName": "SonyLIVProvider",
-  "originalVersion": 1,
+  "originalVersion": 2,
   "originalDownloadUrl": "https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/builds/SonyLIVProvider.cs3",
   "originalRepositoryUrl": "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension",
   "originalAuthors": [
     "NivinCNC"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "71b3b7960905b1b9ec0fb42df42efbc0849d8ef7160203699fdd3b1012b4a74f",
+  "cs3Sha256": "210cac2137bb3fb5baab7996a764714253db342e956e6ccdd1898f0fc305b4ad",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-25T16:25:40.184871+00:00"
+  "convertedAt": "2026-11-26T15:59:07.624330+00:00"
 }

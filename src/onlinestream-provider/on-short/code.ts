@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: OnShort
-// Original Class: OnShortPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: OnShort
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "div.tag-cloud span";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = "#onshort-player";
+        const epNumSelector = "div.tag-cloud span";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

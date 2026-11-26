@@ -2,14 +2,14 @@
   "extensionId": "stream-center",
   "originalPluginName": "StreamCenter",
   "originalInternalName": "StreamCenter",
-  "originalVersion": 14,
+  "originalVersion": 15,
   "originalDownloadUrl": "https://raw.githubusercontent.com/doGior/doGiorsHadEnough/builds/StreamCenter.cs3",
   "originalRepositoryUrl": "https://github.com/doGior/doGiorsHadEnough",
   "originalAuthors": [
     "Italiani"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "76081259eddf1dae9a59149374c94484f55dac1175a2d225325163e54808f592",
+  "cs3Sha256": "de0a52aab63e43446b96dc3c364711c2253136def629988c689dc7409a93b0d8",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-25T16:25:00.009041+00:00"
+  "convertedAt": "2026-11-26T15:58:42.207049+00:00"
 }

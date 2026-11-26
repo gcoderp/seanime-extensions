@@ -390,9 +390,9 @@ class ExtractorDispatcher {
 ExtractorDispatcher.MAX_DEPTH = 3;
 class Provider {
     constructor() {
-        this.mainUrl = "https://sxcce.dpdns.org";
-        this.mirrorDomains = ["https://sxcce.dpdns.org", "https://sxcce.dpdns.org", "https://sxcce.dpdns.org/jvod/play", "https://sxcce.dpdns.org/jvod/sonyliv"];
-        this.defaultHeaders = { "Referer": "https://sxcce.dpdns.org/" };
+        this.mainUrl = "https://apiv2.sonyliv.com";
+        this.mirrorDomains = ["https://apiv2.sonyliv.com", "https://apiv2.sonyliv.com/AGL", "https://apiv2.sonyliv.com/AGL/1.4/A/ENG/WEB/ALL/GETTOKEN", "https://apiv2.sonyliv.com/AGL/1.4/A/ENG/WEB/IN/CONTENT/DETAIL/BUNDLE"];
+        this.defaultHeaders = { "Referer": "https://apiv2.sonyliv.com/" };
     }
     getSettings() {
         return {

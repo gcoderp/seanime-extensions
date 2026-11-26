@@ -1,9 +1,9 @@
 {
   "id": "sony-livprovider",
   "name": "SonyLIVProvider",
-  "description": "SonyLIV movies & shows via the JioTV+ aggregation (POC VOD template)",
+  "description": "SonyLIV movies & shows via jio",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sony-livprovider/manifest.json",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "NivinCNC",
   "type": "onlinestream-provider",
   "language": "typescript",

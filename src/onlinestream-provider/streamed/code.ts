@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Streamed
-// Original Class: StreamedPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: Streamed
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://embed.st";
-    private mirrorDomains: string[] = ["https://embed.st", "https://embed.st", "https://embed.st/embed"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://embed.st/"};
+    private mainUrl: string = "https://mutstreams.pk";
+    private mirrorDomains: string[] = ["https://mutstreams.pk", "https://mutstreams.pk"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://mutstreams.pk/", "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0"};
 
     getSettings(): Settings {
         return {

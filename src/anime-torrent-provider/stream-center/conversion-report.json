@@ -4,8 +4,8 @@
   "original_author": "Italiani",
   "original_repository": "https://github.com/doGior/doGiorsHadEnough",
   "original_download_url": "https://raw.githubusercontent.com/doGior/doGiorsHadEnough/builds/StreamCenter.cs3",
-  "original_version": 14,
-  "sha256_checksum": "76081259eddf1dae9a59149374c94484f55dac1175a2d225325163e54808f592",
+  "original_version": 15,
+  "sha256_checksum": "de0a52aab63e43446b96dc3c364711c2253136def629988c689dc7409a93b0d8",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "anime-torrent-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -34,6 +34,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-25T16:24:57.480276+00:00",
+  "conversion_timestamp": "2026-11-26T15:58:41.011655+00:00",
   "passed": false
 }
