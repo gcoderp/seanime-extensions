@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T18:57:06.829Z",
+  "generatedAt": "2026-11-26T18:47:41.514Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -97,15 +97,15 @@
     }
   ],
   "summary": {
-    "checked": 3,
+    "checked": 10,
     "working": 0,
-    "failed": 3,
-    "durationMs": 11684,
+    "failed": 10,
+    "durationMs": 36610,
     "byStatus": {
       "working": 0,
-      "no_search_results": 2,
-      "search_timeout": 0,
-      "no_episodes": 0,
+      "no_search_results": 7,
+      "search_timeout": 1,
+      "no_episodes": 1,
       "no_stream": 0,
       "stream_unreachable": 0,
       "no_magnet": 0,
@@ -123,12 +123,36 @@
   "working": [],
   "failed": [
     {
+      "id": "9k-movies",
+      "name": "9kMovies",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 16339
+    },
+    {
+      "id": "anime-uaprovider",
+      "name": "AnimeUAProvider",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 7447
+    },
+    {
+      "id": "bdix-bdip-tv",
+      "name": "BdixBdipTV",
+      "type": "onlinestream-provider",
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "durationMs": 20180
+    },
+    {
       "id": "cine-stream",
       "name": "CineStream",
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 4535
+      "durationMs": 4880
     },
     {
       "id": "gogo-anime-provider",
@@ -136,7 +160,31 @@
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 10134
+      "durationMs": 11353
+    },
+    {
+      "id": "nekokun",
+      "name": "Nekokun",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 13155
+    },
+    {
+      "id": "on-short",
+      "name": "OnShort",
+      "type": "onlinestream-provider",
+      "status": "no_episodes",
+      "error": null,
+      "durationMs": 13350
+    },
+    {
+      "id": "sokuja",
+      "name": "Sokuja",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 18378
     },
     {
       "id": "stream-center",
@@ -144,10 +192,101 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 3148
+      "durationMs": 2211
+    },
+    {
+      "id": "supercartoons",
+      "name": "Supercartoons",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 13166
     }
   ],
   "results": [
+    {
+      "id": "9k-movies",
+      "name": "9kMovies",
+      "type": "onlinestream-provider",
+      "version": "1.11.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/9k-movies/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/9k-movies/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 401,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 16339
+    },
+    {
+      "id": "anime-uaprovider",
+      "name": "AnimeUAProvider",
+      "type": "onlinestream-provider",
+      "version": "1.10.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-uaprovider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anime-uaprovider/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 404,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 7447
+    },
+    {
+      "id": "bdix-bdip-tv",
+      "name": "BdixBdipTV",
+      "type": "onlinestream-provider",
+      "version": "1.10.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/bdix-bdip-tv/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/bdix-bdip-tv/code.js",
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "target": 21,
+      "search": {
+        "attempts": [
+          {
+            "query": "ONE PIECE",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 0,
+            "networkFailures": 1,
+            "lastError": "fetch failed",
+            "error": "search() timed out after 20000ms"
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 20180
+    },
     {
       "id": "cine-stream",
       "name": "CineStream",
@@ -173,7 +312,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 4535
+      "durationMs": 4880
     },
     {
       "id": "gogo-anime-provider",
@@ -200,7 +339,92 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 10134
+      "durationMs": 11353
+    },
+    {
+      "id": "nekokun",
+      "name": "Nekokun",
+      "type": "onlinestream-provider",
+      "version": "1.5.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekokun/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekokun/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 404,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 13155
+    },
+    {
+      "id": "on-short",
+      "name": "OnShort",
+      "type": "onlinestream-provider",
+      "version": "1.4.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/on-short/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/on-short/code.js",
+      "status": "no_episodes",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 12,
+            "requests": 1,
+            "httpStatus": 200,
+            "networkFailures": 0
+          }
+        ],
+        "count": 12,
+        "top": "64 EPAltarboyReelShort",
+        "score": 0
+      },
+      "episodes": {
+        "count": 0
+      },
+      "stream": null,
+      "torrent": null,
+      "durationMs": 13350
+    },
+    {
+      "id": "sokuja",
+      "name": "Sokuja",
+      "type": "onlinestream-provider",
+      "version": "1.3.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sokuja/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/sokuja/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 404,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 18378
     },
     {
       "id": "stream-center",
@@ -228,7 +452,34 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 3148
+      "durationMs": 2211
+    },
+    {
+      "id": "supercartoons",
+      "name": "Supercartoons",
+      "type": "onlinestream-provider",
+      "version": "1.2.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/supercartoons/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/supercartoons/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 200,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 13166
     }
   ]
 }
