@@ -4,8 +4,8 @@
   "original_author": "Abodabodd",
   "original_repository": "https://github.com/Abodabodd/re-3arabi",
   "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Egy.cs3",
-  "original_version": 2,
-  "sha256_checksum": "99393044291b6558d6058c070f31139424a6c146623fab5ddf9df237d2d7f6bf",
+  "original_version": 3,
+  "sha256_checksum": "5b904ae7bb6d4665df5452c2772d98aa0cbb06981e911f39b16872eee9f573a2",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-26T15:57:54.486996+00:00",
+  "conversion_timestamp": "2026-11-27T15:46:46.673004+00:00",
   "passed": false
 }

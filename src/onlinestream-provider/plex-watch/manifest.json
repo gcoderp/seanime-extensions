@@ -1,0 +1,15 @@
+{
+  "id": "plex-watch",
+  "name": "PlexWatch",
+  "description": "Film e serie TV gratuiti di PlexWatch",
+  "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/plex-watch/manifest.json",
+  "version": "1.1.0",
+  "author": "DieGon",
+  "type": "onlinestream-provider",
+  "language": "typescript",
+  "lang": "it",
+  "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/plex-watch/README.md",
+  "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
+  "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/plex-watch/code.js",
+  "icon": "https://watch.plex.tv/favicon.ico"
+}

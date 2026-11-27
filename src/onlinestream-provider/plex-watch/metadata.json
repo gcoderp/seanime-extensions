@@ -1,0 +1,22 @@
+{
+  "extensionId": "plex-watch",
+  "originalPluginName": "PlexWatch",
+  "originalInternalName": "PlexWatch",
+  "originalVersion": 1,
+  "originalDownloadUrl": "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/builds/PlexWatch.cs3",
+  "originalRepositoryUrl": "https://github.com/DieGon7771/ItaliaInStreaming",
+  "originalAuthors": [
+    "DieGon"
+  ],
+  "license": "UNKNOWN",
+  "cs3Sha256": "7160bd5f7d82b15213404a8ab27bb2ed32669bdbc7be0fab8977bc20f4b42426",
+  "converterVersion": "2.6.0",
+  "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
+  "validationStatus": "NEEDS_REVIEW",
+  "liveTestStatus": "NOT_RUN",
+  "reviewReasons": [
+    "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
+    "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
+  ],
+  "convertedAt": "2026-11-27T15:48:35.761331+00:00"
+}
