@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `show-box`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.16.0` (Upstream CS3 v16)
+- **Version:** `1.17.0` (Upstream CS3 v17)
 - **Language:** `en`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `b31c214c4e5c9cc647a64af74897e467ef4a75346d736b052c342f2a9b7c4739`
+- **CS3 SHA-256:** `78bb51926151b0cd8cd612476b566acac6605c4583ed6e8e9e9441435fc684f8`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

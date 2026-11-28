@@ -2,14 +2,14 @@
   "extensionId": "multi-movies-provider",
   "originalPluginName": "MultiMoviesProvider",
   "originalInternalName": "MultiMoviesProvider",
-  "originalVersion": 55,
+  "originalVersion": 56,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/MultiMoviesProvider.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "2f90eb45aebbc7f0edcbdc53c6f60916e9883f5274d7a41cd8edec5856b23c1b",
+  "cs3Sha256": "e5dca794e74dcbd5a96507999c15a8e73cf44a50a0cdb32db4dc26e7345c81c5",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:46:02.669269+00:00"
+  "convertedAt": "2026-11-28T14:42:26.474279+00:00"
 }

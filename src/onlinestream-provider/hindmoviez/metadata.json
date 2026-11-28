@@ -2,14 +2,14 @@
   "extensionId": "hindmoviez",
   "originalPluginName": "Hindmoviez",
   "originalInternalName": "Hindmoviez",
-  "originalVersion": 17,
+  "originalVersion": 18,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Hindmoviez.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "5f29785647a4f1639da8df0ca7fe133f88d5b69fbb91c4a74f22f298fc0181ea",
+  "cs3Sha256": "b02a0e511d773d646d5c6fb69fbfe41623246fc0650ed59e8ca5d0995ad2dddc",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:45:50.160360+00:00"
+  "convertedAt": "2026-11-28T14:42:11.148769+00:00"
 }

@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Jellyfin.cs3",
   "original_version": 10,
-  "sha256_checksum": "cc96d2e29a3f04fef88c76bf5efcbc6f02e3642553638ec78501c681e3f13362",
+  "sha256_checksum": "f4b9159b2c6eb77d352399931e53e2ea99963f8aa07a372d20427b41134ca26a",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:45:52.463364+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:13.987293+00:00",
   "passed": false
 }

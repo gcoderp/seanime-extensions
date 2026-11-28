@@ -2,14 +2,14 @@
   "extensionId": "fibwatch",
   "originalPluginName": "Fibwatch",
   "originalInternalName": "Fibwatch",
-  "originalVersion": 12,
+  "originalVersion": 13,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Fibwatch.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "af5066908a9644b1bdfe0abccf1e1cf4eb5646a5024dbd19cd177e7989a857c0",
+  "cs3Sha256": "c7d38aec685540df81536e668a19fe2040f48b2e80b54f23026f7d6855cf2ae0",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:45:43.192003+00:00"
+  "convertedAt": "2026-11-28T14:42:03.399327+00:00"
 }

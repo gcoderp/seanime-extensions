@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anikage.cs3",
   "original_version": 8,
-  "sha256_checksum": "83eb9e4ffbd209aee8e4b54b2641619432eb2ccc1bf180cca17833866cf7cded",
+  "sha256_checksum": "8698df47d1c901cfa3e554daa0f26f976707efc130f1f150aea0f4c4a321f28d",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:45:20.624352+00:00",
+  "conversion_timestamp": "2026-11-28T14:41:38.893652+00:00",
   "passed": false
 }

@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `tamilblasters`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.12.0` (Upstream CS3 v12)
+- **Version:** `1.13.0` (Upstream CS3 v13)
 - **Language:** `ta`
 - **Original Author(s):** rockhero1234,phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `be543bc58f15f285d2943aef98f328fc094f2bbc101478c740e9ed396367fa76`
+- **CS3 SHA-256:** `38a25c0fe52b737bec179e78dfc1821ee90346eaf048581870a8ff7067830b3c`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

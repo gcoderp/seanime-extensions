@@ -2,14 +2,14 @@
   "extensionId": "animedubhindi",
   "originalPluginName": "Animedubhindi",
   "originalInternalName": "Animedubhindi",
-  "originalVersion": 9,
+  "originalVersion": 10,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Animedubhindi.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "635d6fadf62dd051b2be234796686c6e304aabcabdcc85b56f6e0da8d2d57bd8",
+  "cs3Sha256": "4884eeeaf041de12231543b6c56cb7fe5317cecfca044d80f831eee71d44d886",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:45:26.138260+00:00"
+  "convertedAt": "2026-11-28T14:41:45.400085+00:00"
 }

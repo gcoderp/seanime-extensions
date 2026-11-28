@@ -3,7 +3,7 @@
   "name": "KisskhProvider",
   "description": "Converted from KisskhProvider",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/kisskh-provider/manifest.json",
-  "version": "1.24.0",
+  "version": "1.25.0",
   "author": "Phisher98,Hexated,Peerless",
   "type": "onlinestream-provider",
   "language": "typescript",

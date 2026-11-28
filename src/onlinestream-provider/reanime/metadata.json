@@ -2,14 +2,14 @@
   "extensionId": "reanime",
   "originalPluginName": "Reanime",
   "originalInternalName": "Reanime",
-  "originalVersion": 3,
+  "originalVersion": 4,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Reanime.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "8a5bc0d69548c1ccde7f7e29d56d160841fc5c49f83df1aa36abafb77ae3c0c8",
+  "cs3Sha256": "7cf9fe95c347674b05ddbad0969844e31558fb375ed21701a0a9170a16102517",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-27T15:46:11.959468+00:00"
+  "convertedAt": "2026-11-28T14:42:35.979313+00:00"
 }

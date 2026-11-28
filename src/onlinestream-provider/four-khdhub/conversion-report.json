@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/FourKHDHub.cs3",
-  "original_version": 41,
-  "sha256_checksum": "6111ed4148c6713a19d58ec1fba46aa21b0c6de380d594ad7c2e732520ba2d2f",
+  "original_version": 42,
+  "sha256_checksum": "6beac68457da8879a430496375454a264d1a3fc93578373af4c25953272e0469",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:45:44.005255+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:04.133299+00:00",
   "passed": false
 }

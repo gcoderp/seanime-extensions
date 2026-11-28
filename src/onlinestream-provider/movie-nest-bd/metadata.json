@@ -2,14 +2,14 @@
   "extensionId": "movie-nest-bd",
   "originalPluginName": "MovieNestBD",
   "originalInternalName": "MovieNestBD",
-  "originalVersion": 1,
+  "originalVersion": 2,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/MovieNestBD.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "b5d8d3344f2d968a05d794b7061e09c0f538f3aad9fbaa4387bc4f3c15b545d5",
+  "cs3Sha256": "26f81a760c474867b15ad72fdc28a521b75521b145069d8b13bf64bf6ca042c1",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:46:01.110481+00:00"
+  "convertedAt": "2026-11-28T14:42:22.788222+00:00"
 }

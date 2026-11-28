@@ -2,14 +2,14 @@
   "extensionId": "iptvplayer",
   "originalPluginName": "IPTVPlayer",
   "originalInternalName": "IPTVPlayer",
-  "originalVersion": 9,
+  "originalVersion": 10,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/IPTVPlayer.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98,Adippe"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "dcd68f4182e7a4f44badcb9f368b1243a5a61eb64f44722f0539356dd60d64ca",
+  "cs3Sha256": "ae01cddf78807501eac22140d0d85e80ca072d66d2ce84e941407676aa6a6371",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-27T15:45:51.709257+00:00"
+  "convertedAt": "2026-11-28T14:42:12.975300+00:00"
 }

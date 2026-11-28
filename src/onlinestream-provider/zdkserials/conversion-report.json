@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/ZDKSerials.cs3",
   "original_version": 2,
-  "sha256_checksum": "351865d4d02f190ecdd68040fce5d92be2fd0996ae226cf023ede58b80c9ea38",
+  "sha256_checksum": "c6449b050b372883f393e8c8e1bf32259bd14632a58cfb5b9d9f904af578cb63",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:27.356952+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:52.867071+00:00",
   "passed": false
 }

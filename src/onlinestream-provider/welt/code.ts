@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: Welt
-// Original Class: WeltDePlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: WeltDe
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -409,7 +409,7 @@ class ExtractorDispatcher {
 class Provider {
     private mainUrl: string = "https://www.welt.de";
     private mirrorDomains: string[] = ["https://www.welt.de", "https://www.welt.de"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.welt.de/"};
+    private defaultHeaders: Record<string, string> = {"Referer": "https://www.welt.de/", "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:149.0) Gecko/20100101 Firefox/149.0"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/api/search/{query}?offset={query}&section=mediathek".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,
@@ -495,8 +495,8 @@ class Provider {
 
         const $ = LoadDoc(html);
         const episodes: EpisodeDetails[] = [];
-        const epSelector = "section.c-stage";
-        const epNumSelector = ".epl-num, .ep-num";
+        const epSelector = ".c-article-page";
+        const epNumSelector = ".c-article-header h2";
 
         $(epSelector).each((idx: number, el: GojaDocElement) => {
             const rawHref = el.attr("href") || el.find("a").first().attr("href") || "";

@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/AniVortex.cs3",
   "original_version": 16,
-  "sha256_checksum": "7daeb39ab890743194a1a0d726cc8fc8faef8af0073948a5836df6c575b345d8",
+  "sha256_checksum": "0d1346d436078586e3f8d88772215f4ee5753f3d4695791469b3e7a18948c47a",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:45:31.774426+00:00",
+  "conversion_timestamp": "2026-11-28T14:41:51.525238+00:00",
   "passed": false
 }

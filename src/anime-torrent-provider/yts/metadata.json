@@ -2,14 +2,14 @@
   "extensionId": "yts",
   "originalPluginName": "YTS",
   "originalInternalName": "YTS",
-  "originalVersion": 11,
+  "originalVersion": 12,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/YTS.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "d06c2784dd7c8856cf25ad832efbaca3d32f128a507ee5e21103d8be219cf23c",
+  "cs3Sha256": "d26333c742f8ea8ae62919fc085cf0f6be99881c985595d9df507a9eda06ded6",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:46:27.355663+00:00"
+  "convertedAt": "2026-11-28T14:42:52.865732+00:00"
 }

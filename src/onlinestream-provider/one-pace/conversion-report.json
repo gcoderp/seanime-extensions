@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/OnePace.cs3",
   "original_version": 24,
-  "sha256_checksum": "bd086ec181924e867d72374ca00f0791099c60be4a54c247ed73a4d869a52311",
+  "sha256_checksum": "9356beb581b542a5c010390306e8d9db443a82de3c8264022d3bf6308b02283c",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:04.985995+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:28.858260+00:00",
   "passed": false
 }

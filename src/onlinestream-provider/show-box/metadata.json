@@ -2,14 +2,14 @@
   "extensionId": "show-box",
   "originalPluginName": "ShowBox",
   "originalInternalName": "ShowBox",
-  "originalVersion": 16,
+  "originalVersion": 17,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/ShowBox.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "b31c214c4e5c9cc647a64af74897e467ef4a75346d736b052c342f2a9b7c4739",
+  "cs3Sha256": "78bb51926151b0cd8cd612476b566acac6605c4583ed6e8e9e9441435fc684f8",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:46:13.621298+00:00"
+  "convertedAt": "2026-11-28T14:42:37.498636+00:00"
 }

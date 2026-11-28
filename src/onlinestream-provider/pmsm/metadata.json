@@ -2,14 +2,14 @@
   "extensionId": "pmsm",
   "originalPluginName": "Pmsm",
   "originalInternalName": "Pmsm",
-  "originalVersion": 8,
+  "originalVersion": 9,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Pmsm.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98,Duro92"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "13a7973b8b9b9e669cc53c2b1c8c939ad12a3fe6521094d42c5738e803ce5165",
+  "cs3Sha256": "b281ab6571be7177b30fe8d0ed9e1691a5430b1ee2dd399941c1df84d1679b90",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:46:09.617886+00:00"
+  "convertedAt": "2026-11-28T14:42:33.744736+00:00"
 }

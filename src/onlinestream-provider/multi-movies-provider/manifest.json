@@ -3,7 +3,7 @@
   "name": "MultiMoviesProvider",
   "description": "Indian Multi-language HD Provider",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/multi-movies-provider/manifest.json",
-  "version": "1.55.0",
+  "version": "1.56.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

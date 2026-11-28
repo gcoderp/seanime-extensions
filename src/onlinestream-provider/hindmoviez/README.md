@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `hindmoviez`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.17.0` (Upstream CS3 v17)
+- **Version:** `1.18.0` (Upstream CS3 v18)
 - **Language:** `hi`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `5f29785647a4f1639da8df0ca7fe133f88d5b69fbb91c4a74f22f298fc0181ea`
+- **CS3 SHA-256:** `b02a0e511d773d646d5c6fb69fbfe41623246fc0650ed59e8ca5d0995ad2dddc`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

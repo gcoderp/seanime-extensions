@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/ObejrzyjTo.cs3",
   "original_version": 3,
-  "sha256_checksum": "cfe9ddf9e74a4947e45c713907ffc51f7e979c4f88f879d615e53375e4d84248",
+  "sha256_checksum": "b6fdfec62540006f1ad80d9d438e162b4cf2b2e793d1b17feb3ad7f7819c8f30",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:03.476361+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:27.237714+00:00",
   "passed": false
 }

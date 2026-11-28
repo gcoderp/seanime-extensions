@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/RingZ.cs3",
   "original_version": 12,
-  "sha256_checksum": "06bebcdff72492e0f09d3422146883d76cf5062b6d50679e9a71990c518ddd54",
+  "sha256_checksum": "cdb886dd4e5a668ff7139ead71486e63bc5ad89be787b0e586e683a10d0876ea",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:11.960772+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:35.980671+00:00",
   "passed": false
 }

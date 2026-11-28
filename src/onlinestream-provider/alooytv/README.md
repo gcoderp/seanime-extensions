@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `alooytv`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.2.0` (Upstream CS3 v2)
+- **Version:** `1.3.0` (Upstream CS3 v3)
 - **Language:** `ar`
 - **Original Author(s):** Abodabodd
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `8dc3850bb169fad209b545cd6de5ef4a1c666db7ec0c45bea95ae26d373961b9`
+- **CS3 SHA-256:** `9b39d99a0ac442bab6b43ebd9e53d8267a73781466352199b06620848dd5ac0b`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

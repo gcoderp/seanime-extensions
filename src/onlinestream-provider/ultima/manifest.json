@@ -3,7 +3,7 @@
   "name": "Ultima",
   "description": "The ultimate All-in-One home screen to access all of your extensions at one place (You need to select/deselect sections in Ultima's settings to load other extensions on home screen)",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/ultima/manifest.json",
-  "version": "1.73.0",
+  "version": "1.74.0",
   "author": "RowdyRushya,Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",
@@ -11,5 +11,5 @@
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/ultima/README.md",
   "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/ultima/code.js",
-  "icon": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Ultima.jpg"
+  "icon": "https://raw.githubusercontent.com/phisher98/Utils/refs/heads/main/Icons/Ultima.jpg"
 }

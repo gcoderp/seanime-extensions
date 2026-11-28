@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Chikianimation.cs3",
   "original_version": 2,
-  "sha256_checksum": "4d83dfd9dd236394f754dd5b9b4e6e88eb4c2090837a37062bf7d9b233c6b1bc",
+  "sha256_checksum": "a570db57d0c371675473e4c5960ba87e1ca6298fff43ef063b87e39d1d380ff9",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:45:34.956494+00:00",
+  "conversion_timestamp": "2026-11-28T14:41:55.289385+00:00",
   "passed": false
 }

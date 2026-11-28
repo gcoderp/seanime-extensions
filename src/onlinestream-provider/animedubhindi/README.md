@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `animedubhindi`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.9.0` (Upstream CS3 v9)
+- **Version:** `1.10.0` (Upstream CS3 v10)
 - **Language:** `hi`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `635d6fadf62dd051b2be234796686c6e304aabcabdcc85b56f6e0da8d2d57bd8`
+- **CS3 SHA-256:** `4884eeeaf041de12231543b6c56cb7fe5317cecfca044d80f831eee71d44d886`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

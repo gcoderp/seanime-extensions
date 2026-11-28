@@ -3,7 +3,7 @@
   "name": "Reanime",
   "description": "Converted from Reanime",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/reanime/manifest.json",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

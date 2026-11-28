@@ -9,7 +9,7 @@
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "0f70c5beadedecfbeeeeedb4a678bc6d8f391de9e55232446b46e3bcb8438461",
+  "cs3Sha256": "ba744bb8c01f0c91486ddc05f7a4dad1b10832bb12158248f65e3334ca284a0a",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-27T15:45:24.525081+00:00"
+  "convertedAt": "2026-11-28T14:41:43.734088+00:00"
 }

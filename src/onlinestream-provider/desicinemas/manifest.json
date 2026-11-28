@@ -3,7 +3,7 @@
   "name": "Desicinemas",
   "description": "Contains BollyZone",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/desicinemas/manifest.json",
-  "version": "1.19.0",
+  "version": "1.20.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

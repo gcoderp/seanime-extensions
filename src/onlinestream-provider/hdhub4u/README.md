@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `hdhub4u`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.57.0` (Upstream CS3 v57)
+- **Version:** `1.58.0` (Upstream CS3 v58)
 - **Language:** `hi`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `5c38524ba62269f71cae21ad91151d692694542fe9b60a320cc8511ec00b3b1d`
+- **CS3 SHA-256:** `09d5548d87ba90a0e0e2bb660b4c91905803aea051f640a740c8ac789ebc287f`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

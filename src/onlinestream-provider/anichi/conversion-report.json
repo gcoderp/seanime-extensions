@@ -4,8 +4,8 @@
   "original_author": "Hexated,Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anichi.cs3",
-  "original_version": 29,
-  "sha256_checksum": "26e03db469551acb14992fc129ba1326b16c00e7f29eeabe573934cc84f18d8c",
+  "original_version": 30,
+  "sha256_checksum": "a183d60ce60b5b705f2d1d37b218e745170055b58082c687fcb2259b90238c91",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -34,6 +34,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:45:19.794023+00:00",
+  "conversion_timestamp": "2026-11-28T14:41:37.830838+00:00",
   "passed": false
 }

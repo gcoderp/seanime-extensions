@@ -3,7 +3,7 @@
   "name": "Anichi",
   "description": "AllManga/Mkissa Source",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anichi/manifest.json",
-  "version": "1.29.0",
+  "version": "1.30.0",
   "author": "Hexated,Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",
@@ -11,5 +11,5 @@
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/anichi/README.md",
   "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/anichi/code.js",
-  "icon": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/Allanime.png"
+  "icon": "https://raw.githubusercontent.com/phisher98/Utils/refs/heads/main/Icons/Allanime.png"
 }

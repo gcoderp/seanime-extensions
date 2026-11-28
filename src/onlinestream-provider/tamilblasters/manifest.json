@@ -3,7 +3,7 @@
   "name": "Tamilblasters",
   "description": "Movies & Series",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/tamilblasters/manifest.json",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "author": "rockhero1234,phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

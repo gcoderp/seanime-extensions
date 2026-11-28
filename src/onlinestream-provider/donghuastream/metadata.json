@@ -2,14 +2,14 @@
   "extensionId": "donghuastream",
   "originalPluginName": "Donghuastream",
   "originalInternalName": "Donghuastream",
-  "originalVersion": 22,
+  "originalVersion": 23,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Donghuastream.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "cf9422ba56a23623da51294d5be48b47c3fb3ad9989c1709ad104613a1863e0c",
+  "cs3Sha256": "8c195d6d41c2704617fd490f48a0824975d23cf7c096288ab734ad47b1381db6",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:45:40.781292+00:00"
+  "convertedAt": "2026-11-28T14:42:00.747612+00:00"
 }

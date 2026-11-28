@@ -2,14 +2,14 @@
   "extensionId": "alooytv",
   "originalPluginName": "Alooytv",
   "originalInternalName": "Alooytv",
-  "originalVersion": 2,
+  "originalVersion": 3,
   "originalDownloadUrl": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Alooytv.cs3",
   "originalRepositoryUrl": "https://github.com/Abodabodd/re-3arabi",
   "originalAuthors": [
     "Abodabodd"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "8dc3850bb169fad209b545cd6de5ef4a1c666db7ec0c45bea95ae26d373961b9",
+  "cs3Sha256": "9b39d99a0ac442bab6b43ebd9e53d8267a73781466352199b06620848dd5ac0b",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:46:36.975411+00:00"
+  "convertedAt": "2026-11-28T14:43:02.689185+00:00"
 }

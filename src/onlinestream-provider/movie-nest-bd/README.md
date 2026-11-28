@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `movie-nest-bd`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.1.0` (Upstream CS3 v1)
+- **Version:** `1.2.0` (Upstream CS3 v2)
 - **Language:** `bn`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `b5d8d3344f2d968a05d794b7061e09c0f538f3aad9fbaa4387bc4f3c15b545d5`
+- **CS3 SHA-256:** `26f81a760c474867b15ad72fdc28a521b75521b145069d8b13bf64bf6ca042c1`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

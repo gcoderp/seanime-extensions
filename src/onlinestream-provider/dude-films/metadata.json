@@ -2,14 +2,14 @@
   "extensionId": "dude-films",
   "originalPluginName": "DudeFilms",
   "originalInternalName": "DudeFilms",
-  "originalVersion": 14,
+  "originalVersion": 15,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/DudeFilms.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "5046f24c942785b4275d9d746ef0f3c324dab52bdffa1ba151fff63024cf323d",
+  "cs3Sha256": "0864d10606610adbf621e95e83ae02a1018cdb42a4874eb6b3d004e0dd757bfd",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:45:42.355546+00:00"
+  "convertedAt": "2026-11-28T14:42:02.494397+00:00"
 }

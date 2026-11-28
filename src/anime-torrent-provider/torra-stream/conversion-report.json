@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/TorraStream.cs3",
-  "original_version": 100,
-  "sha256_checksum": "dc438cd3c63e3e4aac5bc7da0a3aaacfac839ea58e5f889efd38406c8420df2a",
+  "original_version": 101,
+  "sha256_checksum": "73b1b551c4b4d554fa4278fc315a837a7c7e5511a8093739a25fd91b1e64e6f1",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "anime-torrent-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:21.850670+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:45.861213+00:00",
   "passed": false
 }

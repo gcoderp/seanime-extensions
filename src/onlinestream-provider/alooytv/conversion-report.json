@@ -4,8 +4,8 @@
   "original_author": "Abodabodd",
   "original_repository": "https://github.com/Abodabodd/re-3arabi",
   "original_download_url": "https://raw.githubusercontent.com/Abodabodd/re-3arabi/builds/Alooytv.cs3",
-  "original_version": 2,
-  "sha256_checksum": "8dc3850bb169fad209b545cd6de5ef4a1c666db7ec0c45bea95ae26d373961b9",
+  "original_version": 3,
+  "sha256_checksum": "9b39d99a0ac442bab6b43ebd9e53d8267a73781466352199b06620848dd5ac0b",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:36.244091+00:00",
+  "conversion_timestamp": "2026-11-28T14:43:01.950916+00:00",
   "passed": false
 }

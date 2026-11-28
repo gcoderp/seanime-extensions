@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Topstreamfilm.cs3",
   "original_version": 9,
-  "sha256_checksum": "81d73424fc5af819eebb072e37afa65641064bb52bd3af421ef3f32fc521a86a",
+  "sha256_checksum": "56e5f4fc4560e5c572a5c7bdeff69195c2926a16d5683f40638569e50966bd08",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:21.066093+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:45.105519+00:00",
   "passed": false
 }

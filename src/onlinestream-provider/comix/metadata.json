@@ -9,7 +9,7 @@
     "phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "ab5c15469a2331b5a0ccdc0efd0d279a0f56a5ab75811c39647c2dfa0734ee8b",
+  "cs3Sha256": "abaa76f9878e6ff6e62985597cfd32c08217de2daf32234e864965dc8088c8b0",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:45:39.227147+00:00"
+  "convertedAt": "2026-11-28T14:41:59.247261+00:00"
 }

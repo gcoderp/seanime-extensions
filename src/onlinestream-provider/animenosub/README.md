@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `animenosub`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.12.0` (Upstream CS3 v12)
+- **Version:** `1.13.0` (Upstream CS3 v13)
 - **Language:** `en`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `db1d02f62e9e5803dabf6952d3a4229d4b742c6c9558e7feb0d168e4f9b3b8f2`
+- **CS3 SHA-256:** `5313201b7b3c3bad030d71c9014a17950a3b994b2a1f4acd0588ad83c3d82664`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

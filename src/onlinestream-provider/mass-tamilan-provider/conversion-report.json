@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/MassTamilanProvider.cs3",
   "original_version": 9,
-  "sha256_checksum": "7c58d262a569eede77195137afaf2c91b7cd9b47de31e1338f29e842a128c040",
+  "sha256_checksum": "de0e5f6a640790656f88372936403f9b0c1a53030ecb8c295109277acdcfc1f9",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:45:57.254559+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:18.666968+00:00",
   "passed": false
 }

@@ -3,7 +3,7 @@
   "name": "YTS",
   "description": "YTS Movies 4K Support (Torrent)",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/yts/manifest.json",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "author": "Phisher98",
   "type": "anime-torrent-provider",
   "language": "typescript",
@@ -11,5 +11,5 @@
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/anime-torrent-provider/yts/README.md",
   "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/yts/code.js",
-  "icon": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/yts.png"
+  "icon": "https://raw.githubusercontent.com/phisher98/Utils/refs/heads/main/Icons/yts.png"
 }

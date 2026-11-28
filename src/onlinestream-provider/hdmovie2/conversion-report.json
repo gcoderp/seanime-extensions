@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Hdmovie2.cs3",
-  "original_version": 7,
-  "sha256_checksum": "9c167498191b1fc679a5f60e8a5f2d0873b25f82ed69a80a129677a8a7224f36",
+  "original_version": 8,
+  "sha256_checksum": "b23d033406b5d3781c218b0323a2478497c3e972d8aa17c7cf4f95a9d88fedf9",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:45:47.834397+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:08.355562+00:00",
   "passed": false
 }

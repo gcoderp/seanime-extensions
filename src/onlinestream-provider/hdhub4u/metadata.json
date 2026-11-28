@@ -2,14 +2,14 @@
   "extensionId": "hdhub4u",
   "originalPluginName": "HDhub4u",
   "originalInternalName": "HDhub4u",
-  "originalVersion": 57,
+  "originalVersion": 58,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/HDhub4u.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "5c38524ba62269f71cae21ad91151d692694542fe9b60a320cc8511ec00b3b1d",
+  "cs3Sha256": "09d5548d87ba90a0e0e2bb660b4c91905803aea051f640a740c8ac789ebc287f",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:45:47.833057+00:00"
+  "convertedAt": "2026-11-28T14:42:08.354176+00:00"
 }

@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/OneTouchTV.cs3",
   "original_version": 5,
-  "sha256_checksum": "5c70e87b94bde32ef29d1c7460991791f54ebbfcf38a91a95e064f54cf7d0b8d",
+  "sha256_checksum": "85f72c9b8a908a3b3d959b8d8aeeeecdd7d532ae8f39988cdc54be3aa6f11e83",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:05.738777+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:29.629515+00:00",
   "passed": false
 }

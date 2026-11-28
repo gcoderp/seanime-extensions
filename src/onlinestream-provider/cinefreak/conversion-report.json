@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Cinefreak.cs3",
-  "original_version": 26,
-  "sha256_checksum": "e8a536330bfec2e71962aba08eb688300091fea368d799a6b2f50c5fc2eaaa07",
+  "original_version": 27,
+  "sha256_checksum": "608599f4f26320feeb048c61a6f8d53d1d4bef198cb1076eb165e3d932e1a47c",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:45:35.789135+00:00",
+  "conversion_timestamp": "2026-11-28T14:41:56.047304+00:00",
   "passed": false
 }

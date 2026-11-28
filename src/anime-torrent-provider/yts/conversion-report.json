@@ -4,8 +4,8 @@
   "original_author": "Phisher98",
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/YTS.cs3",
-  "original_version": 11,
-  "sha256_checksum": "d06c2784dd7c8856cf25ad832efbaca3d32f128a507ee5e21103d8be219cf23c",
+  "original_version": 12,
+  "sha256_checksum": "d26333c742f8ea8ae62919fc085cf0f6be99881c985595d9df507a9eda06ded6",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "anime-torrent-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -33,6 +33,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:26.634564+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:51.945973+00:00",
   "passed": false
 }

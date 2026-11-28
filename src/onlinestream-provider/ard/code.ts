@@ -3,8 +3,8 @@
 // ============================================================================
 // AUTO-GENERATED SEANIME EXTENSION FROM CLOUDSTREAM (.cs3)
 // Plugin ID: ARD
-// Original Class: ARDPlugin
-// Strategy Used: STRATEGY_3_DEX_STRING_IR
+// Original Class: ARD
+// Strategy Used: STRATEGY_1_GITHUB_SOURCE_RECOVERY
 // ============================================================================
 
 // Cloudstream-to-Seanime Goja Runtime Compatibility Layer
@@ -407,9 +407,9 @@ class ExtractorDispatcher {
 }
 
 class Provider {
-    private mainUrl: string = "https://www.zdf.de";
-    private mirrorDomains: string[] = ["https://www.zdf.de", "https://www.zdf.de/assets/2400-zdf-100~768x432", "https://www.zdf.de/assets/2400-zdfinfo-100~768x432", "https://www.zdf.de/assets/2400-zdfneo-100~768x432"];
-    private defaultHeaders: Record<string, string> = {"Referer": "https://www.zdf.de/"};
+    private mainUrl: string = "https://api.ardmediathek.de";
+    private mirrorDomains: string[] = ["https://api.ardmediathek.de", "https://api.ardmediathek.de", "https://api.ardmediathek.de/page-gateway/widgets/ard/asset"];
+    private defaultHeaders: Record<string, string> = {"Referer": "https://api.ardmediathek.de/"};
 
     getSettings(): Settings {
         return {
@@ -420,7 +420,7 @@ class Provider {
 
     private async searchSite(query: string): Promise<SearchResult[]> {
         const queryEncoded = encodeURIComponent((query || "").trim());
-        const searchPath = "/search?keyword={query}".replace("{query}", queryEncoded);
+        const searchPath = "/search-system/search/{query}/ard?query={query}&pageSize={query}&platform=MEDIA_THEK&sortingCriteria=SCORE_DESC".replace("{query}", queryEncoded);
         const { text: html } = await CsCompat.fetchWithMirrorFallback(
             searchPath,
             this.mirrorDomains,

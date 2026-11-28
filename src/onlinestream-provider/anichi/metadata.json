@@ -2,14 +2,14 @@
   "extensionId": "anichi",
   "originalPluginName": "Anichi",
   "originalInternalName": "Anichi",
-  "originalVersion": 29,
+  "originalVersion": 30,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Anichi.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Hexated,Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "26e03db469551acb14992fc129ba1326b16c00e7f29eeabe573934cc84f18d8c",
+  "cs3Sha256": "a183d60ce60b5b705f2d1d37b218e745170055b58082c687fcb2259b90238c91",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -18,5 +18,5 @@
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses.",
     "All CSS selectors are generic fallbacks; no provider-specific selectors were recovered."
   ],
-  "convertedAt": "2026-11-27T15:45:20.623597+00:00"
+  "convertedAt": "2026-11-28T14:41:38.893105+00:00"
 }

@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `xdmovies`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.31.0` (Upstream CS3 v31)
+- **Version:** `1.32.0` (Upstream CS3 v32)
 - **Language:** `en`
 - **Original Author(s):** Phisher98
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `63393e0111b6f48580715bd043829200cfc34fbeb43adc87cb48358b49c5cf59`
+- **CS3 SHA-256:** `59e7af033d375365e460b6f0fdfa0a24ad0e8ab7414efe76f3382a10ef0eebe2`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

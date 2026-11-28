@@ -3,7 +3,7 @@
   "name": "Fivemovierulz",
   "description": "Movies & Series",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/fivemovierulz/manifest.json",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "author": "darkdemon, Dilip",
   "type": "onlinestream-provider",
   "language": "typescript",

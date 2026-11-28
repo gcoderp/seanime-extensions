@@ -3,7 +3,7 @@
   "name": "MovieNestBD",
   "description": "Watch Movies & TV Series from MovieNestBD",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/movie-nest-bd/manifest.json",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Phisher98",
   "type": "onlinestream-provider",
   "language": "typescript",

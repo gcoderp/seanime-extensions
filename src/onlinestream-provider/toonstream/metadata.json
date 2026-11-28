@@ -2,14 +2,14 @@
   "extensionId": "toonstream",
   "originalPluginName": "Toonstream",
   "originalInternalName": "Toonstream",
-  "originalVersion": 12,
+  "originalVersion": 13,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Toonstream.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "2713ce85379a63dfff906664f690bfb8ba4c2e87c68ceae616b007b2b0bd1b3c",
+  "cs3Sha256": "ac17c747f1195b3f7f2d21c3be1c19ef26403c1b578d8ba08c85d57b32172343",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:46:19.535174+00:00"
+  "convertedAt": "2026-11-28T14:42:43.445846+00:00"
 }

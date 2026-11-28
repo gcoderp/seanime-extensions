@@ -2,14 +2,14 @@
   "extensionId": "four-khdhub",
   "originalPluginName": "FourKHDHub",
   "originalInternalName": "FourKHDHub",
-  "originalVersion": 41,
+  "originalVersion": 42,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/FourKHDHub.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "6111ed4148c6713a19d58ec1fba46aa21b0c6de380d594ad7c2e732520ba2d2f",
+  "cs3Sha256": "6beac68457da8879a430496375454a264d1a3fc93578373af4c25953272e0469",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:45:44.746248+00:00"
+  "convertedAt": "2026-11-28T14:42:05.058218+00:00"
 }

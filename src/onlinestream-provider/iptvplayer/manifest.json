@@ -3,7 +3,7 @@
   "name": "IPTVPlayer",
   "description": "IPTV Player",
   "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/iptvplayer/manifest.json",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "author": "Phisher98,Adippe",
   "type": "onlinestream-provider",
   "language": "typescript",
@@ -11,5 +11,5 @@
   "readme": "https://github.com/gcoderp/seanime-extensions/blob/main/src/onlinestream-provider/iptvplayer/README.md",
   "notes": "Automatically converted via strategy STRATEGY_3_DEX_STRING_IR; validation status NEEDS_REVIEW.",
   "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/iptvplayer/code.js",
-  "icon": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/IPTV.png"
+  "icon": "https://raw.githubusercontent.com/phisher98/Utils/refs/heads/main/Icons/IPTV.png"
 }

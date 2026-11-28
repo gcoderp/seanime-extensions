@@ -5,7 +5,7 @@
   "original_repository": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "original_download_url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Netcinez.cs3",
   "original_version": 5,
-  "sha256_checksum": "99db4d18e06c0594dfecce5b38b1316e2102b776a06a7bd745cab94d11167f05",
+  "sha256_checksum": "733439d4590c0fa9fdad99396c41d77f180c04a51429cd85631818746fe3e975",
   "license_spdx": "UNKNOWN",
   "detected_provider_type": "onlinestream-provider",
   "strategy": "STRATEGY_3_DEX_STRING_IR",
@@ -32,6 +32,6 @@
     "Live end-to-end test against the upstream site has NOT been run (live_test_status=NOT_RUN)."
   ],
   "error_messages": [],
-  "conversion_timestamp": "2026-11-27T15:46:02.670629+00:00",
+  "conversion_timestamp": "2026-11-28T14:42:26.475665+00:00",
   "passed": false
 }

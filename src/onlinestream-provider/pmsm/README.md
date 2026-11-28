@@ -5,11 +5,11 @@ Automatically converted Seanime `onlinestream-provider` extension from Cloudstre
 ## Overview
 - **Extension ID:** `pmsm`
 - **Provider Type:** `onlinestream-provider`
-- **Version:** `1.8.0` (Upstream CS3 v8)
+- **Version:** `1.9.0` (Upstream CS3 v9)
 - **Language:** `id`
 - **Original Author(s):** Phisher98,Duro92
 - **Conversion Strategy:** `STRATEGY_3_DEX_STRING_IR`
-- **CS3 SHA-256:** `13a7973b8b9b9e669cc53c2b1c8c939ad12a3fe6521094d42c5738e803ce5165`
+- **CS3 SHA-256:** `b281ab6571be7177b30fe8d0ed9e1691a5430b1ee2dd399941c1df84d1679b90`
 
 ## Installation in Seanime
 Use the direct manifest URL below in Seanime's Extension settings:

@@ -2,14 +2,14 @@
   "extensionId": "hdmovie2",
   "originalPluginName": "Hdmovie2",
   "originalInternalName": "Hdmovie2",
-  "originalVersion": 7,
+  "originalVersion": 8,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Hdmovie2.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "9c167498191b1fc679a5f60e8a5f2d0873b25f82ed69a80a129677a8a7224f36",
+  "cs3Sha256": "b23d033406b5d3781c218b0323a2478497c3e972d8aa17c7cf4f95a9d88fedf9",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:45:48.605571+00:00"
+  "convertedAt": "2026-11-28T14:42:09.484807+00:00"
 }

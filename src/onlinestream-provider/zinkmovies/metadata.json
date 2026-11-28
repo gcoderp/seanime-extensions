@@ -2,14 +2,14 @@
   "extensionId": "zinkmovies",
   "originalPluginName": "Zinkmovies",
   "originalInternalName": "Zinkmovies",
-  "originalVersion": 15,
+  "originalVersion": 16,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Zinkmovies.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "6b09afe3cb439a18b14e70e54ed13181f603a271b20f99db8e23cc2bad29cb58",
+  "cs3Sha256": "9837565c59559c11ac7669b66c6fb50402435f3ab497e6ea276c85bec5fee21a",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:46:28.892441+00:00"
+  "convertedAt": "2026-11-28T14:42:54.350113+00:00"
 }

@@ -2,14 +2,14 @@
   "extensionId": "piratexplay",
   "originalPluginName": "Piratexplay",
   "originalInternalName": "Piratexplay",
-  "originalVersion": 5,
+  "originalVersion": 6,
   "originalDownloadUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/Piratexplay.cs3",
   "originalRepositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
   "originalAuthors": [
     "Phisher98"
   ],
   "license": "UNKNOWN",
-  "cs3Sha256": "e205c9af2db17decb8f74e1ddad266f3ebba2ba04d9827084c69cb8e866a4821",
+  "cs3Sha256": "7cf3d0959223121cc19e55aa00458cdac6c97dd00fa62601b7d577bd8d09b741",
   "converterVersion": "2.6.0",
   "conversionStrategy": "STRATEGY_3_DEX_STRING_IR",
   "validationStatus": "NEEDS_REVIEW",
@@ -17,5 +17,5 @@
   "reviewReasons": [
     "Only DEX string-pool reconstruction was possible (STRATEGY_3); the scraper's control flow was not recovered, so the emitted selectors are guesses."
   ],
-  "convertedAt": "2026-11-27T15:46:08.854450+00:00"
+  "convertedAt": "2026-11-28T14:42:32.806861+00:00"
 }

@@ -5,6 +5,11 @@ https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torr
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-provider/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/stremio-x/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/anime-torrent-provider/vi-stream-provider/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cikava-ideya-provider/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cine-stream/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/moflix/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekokun/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/serienstream/manifest.json
 https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/stream-center/manifest.json
+https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/welt/manifest.json
