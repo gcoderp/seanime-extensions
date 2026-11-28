@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T18:38:56.323Z",
+  "generatedAt": "2026-11-28T17:18:44.795Z",
   "marketplace": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/marketplace.json",
   "runtime": "seanime-goja-compat/1",
   "options": {
@@ -97,14 +97,14 @@
     }
   ],
   "summary": {
-    "checked": 3,
+    "checked": 8,
     "working": 0,
-    "failed": 3,
-    "durationMs": 8820,
+    "failed": 8,
+    "durationMs": 34353,
     "byStatus": {
       "working": 0,
-      "no_search_results": 2,
-      "search_timeout": 0,
+      "no_search_results": 6,
+      "search_timeout": 1,
       "no_episodes": 0,
       "no_stream": 0,
       "stream_unreachable": 0,
@@ -123,20 +123,52 @@
   "working": [],
   "failed": [
     {
+      "id": "cikava-ideya-provider",
+      "name": "CikavaIdeyaProvider",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 5888
+    },
+    {
       "id": "cine-stream",
       "name": "CineStream",
       "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 6539
+      "durationMs": 3337
     },
     {
       "id": "gogo-anime-provider",
       "name": "GogoAnime",
       "type": "onlinestream-provider",
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "durationMs": 33470
+    },
+    {
+      "id": "moflix",
+      "name": "Moflix",
+      "type": "onlinestream-provider",
       "status": "no_search_results",
       "error": null,
-      "durationMs": 7339
+      "durationMs": 1538
+    },
+    {
+      "id": "nekokun",
+      "name": "Nekokun",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 14902
+    },
+    {
+      "id": "serienstream",
+      "name": "Serienstream",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 29136
     },
     {
       "id": "stream-center",
@@ -144,10 +176,45 @@
       "type": "onlinestream-provider",
       "status": "search_error",
       "error": "Unsupported selector: pseudo \":\" in \"#EXT-X-I-FRAME-STREAM-INF:\"",
-      "durationMs": 2754
+      "durationMs": 2663
+    },
+    {
+      "id": "welt",
+      "name": "Welt",
+      "type": "onlinestream-provider",
+      "status": "no_search_results",
+      "error": null,
+      "durationMs": 1304
     }
   ],
   "results": [
+    {
+      "id": "cikava-ideya-provider",
+      "name": "CikavaIdeyaProvider",
+      "type": "onlinestream-provider",
+      "version": "1.5.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cikava-ideya-provider/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/cikava-ideya-provider/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 404,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 5888
+    },
     {
       "id": "cine-stream",
       "name": "CineStream",
@@ -173,7 +240,7 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 6539
+      "durationMs": 3337
     },
     {
       "id": "gogo-anime-provider",
@@ -182,6 +249,42 @@
       "version": "1.12.0",
       "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/manifest.json",
       "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/gogo-anime-provider/code.js",
+      "status": "search_timeout",
+      "error": "search() timed out after 20000ms",
+      "target": 136,
+      "search": {
+        "attempts": [
+          {
+            "query": "HUNTER×HUNTER",
+            "results": 0,
+            "requests": 2,
+            "httpStatus": 200,
+            "networkFailures": 0
+          },
+          {
+            "query": "Hunter x Hunter",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 0,
+            "networkFailures": 1,
+            "lastError": "fetch failed",
+            "error": "search() timed out after 20000ms"
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 33470
+    },
+    {
+      "id": "moflix",
+      "name": "Moflix",
+      "type": "onlinestream-provider",
+      "version": "1.5.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/moflix/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/moflix/code.js",
       "status": "no_search_results",
       "error": null,
       "target": 501,
@@ -191,7 +294,7 @@
             "query": "Doraemon",
             "results": 0,
             "requests": 1,
-            "httpStatus": 429,
+            "httpStatus": 403,
             "networkFailures": 0
           }
         ],
@@ -200,7 +303,61 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 7339
+      "durationMs": 1538
+    },
+    {
+      "id": "nekokun",
+      "name": "Nekokun",
+      "type": "onlinestream-provider",
+      "version": "1.5.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekokun/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/nekokun/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 404,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 14902
+    },
+    {
+      "id": "serienstream",
+      "name": "Serienstream",
+      "type": "onlinestream-provider",
+      "version": "1.5.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/serienstream/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/serienstream/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 200,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 29136
     },
     {
       "id": "stream-center",
@@ -228,7 +385,34 @@
       "episodes": null,
       "stream": null,
       "torrent": null,
-      "durationMs": 2754
+      "durationMs": 2663
+    },
+    {
+      "id": "welt",
+      "name": "Welt",
+      "type": "onlinestream-provider",
+      "version": "1.2.0",
+      "manifestURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/welt/manifest.json",
+      "payloadURI": "https://raw.githubusercontent.com/gcoderp/seanime-extensions/main/src/onlinestream-provider/welt/code.js",
+      "status": "no_search_results",
+      "error": null,
+      "target": 501,
+      "search": {
+        "attempts": [
+          {
+            "query": "Doraemon",
+            "results": 0,
+            "requests": 1,
+            "httpStatus": 403,
+            "networkFailures": 0
+          }
+        ],
+        "count": 0
+      },
+      "episodes": null,
+      "stream": null,
+      "torrent": null,
+      "durationMs": 1304
     }
   ]
 }
